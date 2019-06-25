@@ -66,13 +66,13 @@ land <- lapply(masks, function(m) {
 sea <- lapply(masks, function(m) {
               s <- gridArithmetics(m, 0.1, operator = "-")
               s$Data[which(s$Data) > 0] <-  NA
-              gridArithmetics(s, 0, 1, operator = c("*", "+"))
+              gridArithmetics(s, 0, operator = "*")
 })
 
 ### Apply the masks to the index and interpolate te results to the common grid
 index.ens <- lapply(1:length(index), function(i){
   li <- gridArithmetics(index[[i]], land, operator = "*")
-  si <- gridArithmetics(index[[i]], sea, operator = "*")
+  si <- gridArithmetics(index[[i]], sea, operator = "+")
   li.i <- interpGrid(li, ref.grid.reg, method = "bilinear")
   si.i <- interpGrid(si, ref.grid.reg, method = "bilinear")
   sili <- bindGrid(si.i, li.i, dimension = "member")
@@ -86,12 +86,7 @@ index.ens <- lapply(1:length(index), function(i){
 land.i <- lapply(land, function(l) interpGrid(l, ref.grid.reg, method = "bilinear"))
 sea.i <- lapply(sea, function(s) interpGrid(s, ref.grid.reg, method = "bilinear"))
 
-### Make the masks binary
-land01 <- bindGrid(land.i, dimension = "member")
-land01$Data[which(is.na(land01$Data))] <- 0
 
-sea01 <- bindGrid(sea.i, dimension = "member")
-sea01$Data[which(is.na(sea01$Data))] <- 0
 
 ### Calculate the ensemble mean of the masks (for Dani):
 ### This mean is computed from values of 0 and 1, thus, the resulting ensemble mask contains values from 0 to 1.
@@ -100,8 +95,9 @@ sea01$Data[which(is.na(sea01$Data))] <- 0
 ### thus, the threshold applied to the resulting ensemble is based in model agreement
 ### If the land-threshold is e.g. 0.9, a high agreement is considered for land regions.
 ### In the case of the sea, a high agreement is given by a threshold value close to 0.
-land.ens <- aggregateGrid(land01, aggr.mem = list(FUN = mean))
-sea.ens <- aggregateGrid(sea01, aggr.mem = list(FUN = mean))
+
+land.ens <- bindGrid(land.i, dimension = "member")
+sea.ens <- bindGrid(sea.i, dimension = "member")
 
 mask.ens <- aggregateGrid(bindGrid(land.ens, sea.ens, dimension = "member"), aggr.mem = list(FUN = sum))
  
