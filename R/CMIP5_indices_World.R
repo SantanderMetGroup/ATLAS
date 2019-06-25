@@ -116,9 +116,9 @@ land <- gridArithmetics(l, 0, 1, operator = c("*", "+"))
 
 s <- gridArithmetics(mask.ens, sea.th, operator = "-")
 s$Data[which(s$Data) > 0] <-  NA
-sea <- gridArithmetics(s, 0, 1, operator = c("*", "+"))
+sea <- gridArithmetics(s, 0, 1, operator = "*")
 
 land.index <- gridArithmetics(index.ens, land, operator = "*")
-sea.index <- gridArithmetics(index.ens, sea, operator = "*")
+sea.index <- gridArithmetics(index.ens, sea, operator = "+")
 
 land.sea.index <- aggregateGrid(bindGrid(land.index, sea.index, dimension = "member"), aggr.mem = list(FUN = max))
