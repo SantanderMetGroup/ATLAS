@@ -52,7 +52,9 @@ save(index, file = paste0(out.dir, "/", pattern, "_", out.file))
 datasets <- UDG.datasets(paste0(pattern, ".*historical"))$name
 datasets <- datasets[-6]
 
-masks <- lapply(datasets, function(d) loadGridData(d, var = "sflt"))
+masks <- lapply(datasets, function(d) loadGridData(d, var = "sftlf"))
+
+a <- loadGridData(datasets[1], var = "sftlf")
 
 ## Apply original masks and interpolate
 
