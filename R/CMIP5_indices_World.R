@@ -8,6 +8,7 @@ library(loadeR.2nc)
 ## Output directory
 
 out.dir <- getwd()
+out.file <- "tasmax_monthly_max.rda"
 
 ## Datasets
 pattern <- "CMIP5"
@@ -18,12 +19,11 @@ datasets <- datasets[-6]
 
 ## Argument setting for the C4R function:
 
-code <- "mean"
 var <- "tasmax"
 
 ## Argument setting for the loadGridData function
-lonLim <- c(40, 50)
-latLim <- c(-20, 0)
+lonLim <- c(-10, 5)
+latLim <- c(36, 46)
 
 
 # THE COMMON SPATIAL GRID --------------------------------------------------------------------------------------
@@ -35,13 +35,18 @@ ref.grid.reg <- limitArea(ref.grid, lonLim = lonLim, latLim = latLim)
 
 
 # COMPUTE INDEX ----------------------------------------------------------------------------------------------------
-index <- lapply(datasets, function(d) climate4R.chunk(n.chunks = 5,
+
+# Uncomment the following line if you are not loged in 
+# loginUDG("", "") 
+
+index <- lapply(datasets, function(d) climate4R.chunk(n.chunks = 4,
                                                       C4R.FUN.args = list(FUN = "aggregateGrid",
                                                                           grid = list(dataset = d, var = var),
-                                                                          aggr.m = code),
+                                                                          aggr.m = list(FUN = max, na.rm = TRUE)),
                                                       loadGridData.args = list(lonLim = lonLim,
                                                                                latLim = latLim)))
-
+# spatialPlot(climatology(index[[1]]), backdrop.theme = "coastline")
+save(index, file = paste0(out.dir, "/", pattern, "_", out.file))
 
 # LOAD MASKS AND INTERPOLATE --------------------------------------------------------------------------------------------------
 datasets <- UDG.datasets(paste0(pattern, ".*historical"))$name
@@ -88,7 +93,7 @@ land01$Data[which(is.na(land01$Data))] <- 0
 sea01 <- bindGrid(sea.i, dimension = "member")
 sea01$Data[which(is.na(sea01$Data))] <- 0
 
-### Calculate the ensemble mean of the masks:
+### Calculate the ensemble mean of the masks (for Dani):
 ### This mean is computed from values of 0 and 1, thus, the resulting ensemble mask contains values from 0 to 1.
 ### Considering the hipothetical situation of having 10 models; If 9 up to 10 of the 
 ### masks show land in a particular pixel the mean would be 0.9, 
@@ -102,6 +107,22 @@ mask.ens <- aggregateGrid(bindGrid(land.ens, sea.ens, dimension = "member"), agg
  
 grid2nc(mask.ens, NetCDFOutFile = paste0(out.dir, "/", pattern, "_ensemble_mask.nc4"))
 
+# APPLY THE ENSEMBLE MASK TO THE ENSEMBLE MEAN -----------------------------------------------------------------------
 
+spatialPlot(mask.ens, backdrop.theme = "coastline")
 
+land.th <- 5/6
+sea.th <- 1/6
 
+l <- gridArithmetics(mask.ens, land.th, operator = "-")
+l$Data[which(l$Data) <= 0] <-  NA
+land <- gridArithmetics(l, 0, 1, operator = c("*", "+"))
+
+s <- gridArithmetics(mask.ens, sea.th, operator = "-")
+s$Data[which(s$Data) > 0] <-  NA
+sea <- gridArithmetics(s, 0, 1, operator = c("*", "+"))
+
+land.index <- gridArithmetics(index.ens, land, operator = "*")
+sea.index <- gridArithmetics(index.ens, sea, operator = "*")
+
+land.sea.index <- aggregateGrid(bindGrid(land.index, sea.index, dimension = "member"), aggr.mem = list(FUN = max))
