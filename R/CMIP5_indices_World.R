@@ -107,8 +107,8 @@ grid2nc(mask.ens, NetCDFOutFile = paste0(out.dir, "/", pattern, "_ensemble_mask.
 
 spatialPlot(mask.ens, backdrop.theme = "coastline")
 
-land.th <- 5/6
-sea.th <- 1/6
+land.th <- 8/9
+sea.th <- 1/9
 
 l <- gridArithmetics(mask.ens, land.th, operator = "-")
 l$Data[which(l$Data) <= 0] <-  NA
