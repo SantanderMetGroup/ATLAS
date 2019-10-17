@@ -1,8 +1,9 @@
-source("climate4R/R/climate4R.chunk.R")
+source("/media/maialen/work/WORK/GIT/climate4R/R/climate4R.chunk.R")
 library(loadeR)
 library(transformeR)
 library(loadeR.2nc)
-
+library(visualizeR)
+library(raster)
 # PARAMETER SETTING FOR DATA LOADING, INDEX CALCULATION AND EXPORT---------------------------------------------------------------------------
 
 ## Output directory
@@ -22,9 +23,11 @@ datasets <- datasets[-6]
 var <- "tasmax"
 
 ## Argument setting for the loadGridData function
-lonLim <- c(-10, 5)
-latLim <- c(36, 46)
+lonLim <- c(-10, 30)
+latLim <- c(36, 70)
 
+th.land <- 0.6
+th.sea <- 0.1
 
 # THE COMMON SPATIAL GRID --------------------------------------------------------------------------------------
 ref.grid <- list(x = c(-179, 179), y = c(-89, 89))
@@ -32,57 +35,91 @@ attr(ref.grid, "resX") <- 2
 attr(ref.grid, "resY") <- 2
 
 ref.grid.reg <- limitArea(ref.grid, lonLim = lonLim, latLim = latLim)
-
+# ref.grid.reg <- ref.grid
 
 # COMPUTE INDEX ----------------------------------------------------------------------------------------------------
 
 # Uncomment the following line if you are not loged in 
 # loginUDG("", "") 
 
-index <- lapply(datasets, function(d) climate4R.chunk(n.chunks = 4,
+index <- lapply(datasets, function(d) climate4R.chunk(n.chunks = 3,
                                                       C4R.FUN.args = list(FUN = "aggregateGrid",
                                                                           grid = list(dataset = d, var = var),
                                                                           aggr.m = list(FUN = max, na.rm = TRUE)),
-                                                      loadGridData.args = list(lonLim = lonLim,
+                                                      loadGridData.args = list(years = 2000,
+                                                                               lonLim = lonLim,
                                                                                latLim = latLim)))
+
+index <- lapply(index, function(r) redim(r, drop = TRUE))
 # spatialPlot(climatology(index[[1]]), backdrop.theme = "coastline")
-save(index, file = paste0(out.dir, "/", pattern, "_", out.file))
+ save(index, file = paste0(out.dir, "/", pattern, "_", out.file))
+# load(paste0(out.dir, "/", pattern, "_", out.file))
 
 # LOAD MASKS AND INTERPOLATE --------------------------------------------------------------------------------------------------
 datasets <- UDG.datasets(paste0(pattern, ".*historical"))$name
 datasets <- datasets[-6]
 
-masks <- lapply(datasets, function(d) loadGridData(d, var = "sftlf"))
+masks <- lapply(datasets, function(d) loadGridData(d, var = "sftlf", lonLim = lonLim + c(-2, 2), latLim = latLim + c(-2, 2)))
 
-a <- loadGridData(datasets[1], var = "sftlf")
+masks <- lapply(1:length(masks), function(m) intersectGrid(index[[m]], masks[[m]], 
+                                                           type = "spatial", which.return = 2))
+
+masks <- lapply(1:length(masks), function(m) {
+  masks[[m]]$Dates <- masks[[1]]$Dates
+  masks[[m]]})
+
+save(masks, file = "masks.rda")
 
 ## Apply original masks and interpolate
 
-### Ceate sea and land masks separately
+### Create sea and land masks separately
+
 land <- lapply(masks, function(m) {
-                l <- gridArithmetics(m, 0.9, operator = "-")
-                l$Data[which(l$Data) <= 0] <-  NA
-                gridArithmetics(l, 0, 1, operator = c("*", "+"))
+  binaryGrid(m, condition = "GT", threshold = th.land, values = c(NA, 1))
 })
 
 sea <- lapply(masks, function(m) {
-              s <- gridArithmetics(m, 0.1, operator = "-")
-              s$Data[which(s$Data) > 0] <-  NA
-              gridArithmetics(s, 0, operator = "*")
+  binaryGrid(m, condition = "LT", threshold = th.sea, values = c(NA, 0))
 })
 
 ### Apply the masks to the index and interpolate te results to the common grid
+
+#### Aux functions:
+mean.fun <- function(x, n) {
+  if (any(!is.na(x))) {
+    sum(x, na.rm = TRUE)/n
+  } else {
+    NA
+  }
+}
+na.fun <- function(x) {
+  if (any(!is.na(x))) {
+    x[!is.na(x)]
+  } else {
+    NA
+  }
+}
+
+#### Apply
 index.ens <- lapply(1:length(index), function(i){
-  li <- gridArithmetics(index[[i]], land, operator = "*")
-  si <- gridArithmetics(index[[i]], sea, operator = "+")
+  landredim <- bindGrid(rep(list(land[[i]]), getShape(index[[i]])["time"]), dimension = "time")
+  searedim <- bindGrid(rep(list(sea[[i]]), getShape(index[[i]])["time"]), dimension = "time")
+
+  li <- gridArithmetics(index[[i]], landredim, operator = "*")
+  si <- gridArithmetics(index[[i]], searedim, operator = "+")
   li.i <- interpGrid(li, ref.grid.reg, method = "bilinear")
   si.i <- interpGrid(si, ref.grid.reg, method = "bilinear")
   sili <- bindGrid(si.i, li.i, dimension = "member")
-  aggregateGrid(sili, aggr.mem = list(FUN = "sum", na.rm = TRUE))
+  aggregateGrid(sili, aggr.mem = list(FUN = na.fun))
 })
 
+index.ens <- intersectGrid(index.ens, type = "temporal", which.return = 1:length(index.ens))
+index.ens <- bindGrid(index.ens, dimension = "member")
+index.ens$Members <- gsub(gsub(datasets, pattern = "_historical", replacement = ""), pattern = "-", replacement = ".")
 
-## ENSEMBLE OF THE MASKS (do not need to repeat this part)----------------------------------------------------------------------------------------
+spatialPlot(climatology(index.ens), backdrop.theme = "coastline")
+
+## ENSEMBLE OF THE MASKS ----------------------------------------------------------------------------------------
 
 ### Interpolate the masks to the common grid
 land.i <- lapply(land, function(l) interpGrid(l, ref.grid.reg, method = "bilinear"))
@@ -101,26 +138,68 @@ sea.i <- lapply(sea, function(s) interpGrid(s, ref.grid.reg, method = "bilinear"
 land.ens <- bindGrid(land.i, dimension = "member")
 sea.ens <- bindGrid(sea.i, dimension = "member")
 
-mask.ens <- aggregateGrid(bindGrid(land.ens, sea.ens, dimension = "member"), aggr.mem = list(FUN = sum))
- 
+
+
+mask.ens <- aggregateGrid(bindGrid(land.ens, sea.ens, dimension = "member"), aggr.mem = list(FUN = mean.fun, n = length(datasets)))
+
+spatialPlot(mask.ens, backdrop.theme = "coastline")
 grid2nc(mask.ens, NetCDFOutFile = paste0(out.dir, "/", pattern, "_ensemble_mask.nc4"))
 
-# APPLY THE ENSEMBLE MASK TO THE ENSEMBLE MEAN -----------------------------------------------------------------------
+
+# DRAW MASK: 2 approaches -----------------------------------------------------------------------
+
+## The mask without applying a threshold:
 
 spatialPlot(mask.ens, backdrop.theme = "coastline")
 
-land.th <- 8/9
+a <- grid2sp(mask.ens)
+
+index.ens.aggr <- aggregateGrid(index.ens, aggr.mem = list(FUN = mean, na.rm = TRUE))
+spatialPlot(climatology(index.ens.aggr), color.theme = "Reds", 
+            backdrop.theme = "coastline", 
+            sp.layout = list(list(a, first = F,
+                                  col = c(c("transparent", rev(grey.colors(10, alpha = 0.5))), 
+                                          c(grey.colors(10, alpha = 0.5), "transparent")))))
+
+## The mask applying a threshold:
+
+land.th <- 7/9
 sea.th <- 1/9
 
-l <- gridArithmetics(mask.ens, land.th, operator = "-")
-l$Data[which(l$Data) <= 0] <-  NA
-land <- gridArithmetics(l, 0, 1, operator = c("*", "+"))
 
-s <- gridArithmetics(mask.ens, sea.th, operator = "-")
-s$Data[which(s$Data) > 0] <-  NA
-sea <- gridArithmetics(s, 0, 1, operator = "*")
+land <- binaryGrid(mask.ens, condition = "GT", threshold = land.th, values = c(NA, 1))
+sea <- binaryGrid(mask.ens, condition = "LT", threshold = sea.th, values = c(NA, 0))
+landsea <- aggregateGrid(bindGrid(land, sea, dimension = "member"), aggr.mem = list(FUN = na.fun))
 
-land.index <- gridArithmetics(index.ens, land, operator = "*")
-sea.index <- gridArithmetics(index.ens, sea, operator = "+")
+spatialPlot(climatology(landsea), backdrop.theme = "coastline")
 
-land.sea.index <- aggregateGrid(bindGrid(land.index, sea.index, dimension = "member"), aggr.mem = list(FUN = max))
+
+b <- grid2sp(landsea)
+eo <- rasterToPolygons(raster(b), dissolve = T)
+
+
+spatialPlot(climatology(index.ens), color.theme = "Reds", 
+            backdrop.theme = "coastline", 
+            sp.layout = list(list(eo, first = F, 
+                                  fill = c(rgb(0, 0, 1, 0.2),
+                                 rgb(0, 1, 0, 0.2)
+                                 ),
+                                 col = c("blue",
+                                          "green"
+                                 ))))
+
+
+
+spatialPlot(climatology(index.ens.aggr), color.theme = "Reds", 
+            backdrop.theme = "coastline", 
+            sp.layout = list(list(eo, first = F, 
+                                  fill = c(rgb(0, 0, 1, 0.2),
+                                           rgb(0, 1, 0, 0.2)
+                                  ),
+                                  col = c("blue",
+                                          "green"
+                                  ))))
+
+
+
+
