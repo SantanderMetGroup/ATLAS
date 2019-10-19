@@ -55,7 +55,7 @@ varInventoryTable <- function(datasets, output.file = NULL) {
 # destfile <- "" #without extension
 # 
 # pattern <- "CMIP6"
-# destfile <- "AtlasHub-inventory/" #without extension
+# destfile <- "AtlasHub-inventory/CMIP6_inventory" #without extension
 # 
 # datasets <- UDG.datasets(pattern)$CMIP6
 # InvTable <- varInventoryTable(datasets, output.file = paste0(destfile, ".csv"))
