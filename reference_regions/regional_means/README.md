@@ -9,4 +9,4 @@ Spatially aggregated monthly results over the different AR6 reference regions ha
 [CMIP6Amon_tas_landsea.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_tas_landsea.zip)\
 [CMIP6Amon_tas_sea.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_tas_sea.zip)
 
-The results for the subset of CMIP6 models (runs) used in the Interactive Atlas (denoted by the Atlas label in the inventory), are also available in the data folder.
+The landsea results for the subset of CMIP6 models (runs) used in the Interactive Atlas (denoted by the Atlas label in the inventory), are also available in the data folder.
