@@ -19,9 +19,9 @@
 #' @title Global Warming Level timing calculation
 #' @description Atomic function to compute the timing of a user-defined Global Warming Level.
 #' @param data A named numeric vector of mean global annual temperature projections. Names are years.
-#' @param base.period Integer vector of length two, indicating the star/end year of the pre-industrial baseline period. Default to \code{c(1861, 1890)}
+#' @param base.period Integer vector of length two, indicating the star/end year of the pre-industrial baseline period. Default to \code{c(1850, 1900)}
 #' @param proj.period Same as \code{base.period}, but for the projected period.
-#' @param window Integer. Moving window width (in years). Default to 30.
+#' @param window Integer. Moving window width (in years). Default to 20.
 #' @param GWL Floating point number indicating the global warming level (degrees)
 #' @return The central year of the interval for which the specified GWL is reached. NA if the GWL is not reached within the projected period.
 #' In addition, an attribute (\code{"interval"}) provides the closed interval boundaries.
@@ -30,7 +30,7 @@
 #' @author J. Bedia
 
 
-getGWL <- function(data, base.period = c(1861, 1890), proj.period = c(1971, 2100), window = 30, GWL = 2) {
+getGWL <- function(data, base.period = c(1850, 1900), proj.period = c(1971, 2100), window = 20, GWL = 2) {
     if (length(base.period) != 2) stop("\'base.period\' argument must be of length two")
     if (base.period[1] >= base.period[2]) stop("\'base.period\' must indicate the start/end year, in this order")
     f <- rep(1/window, window)
@@ -101,7 +101,11 @@ b <- doGWLtable("rcp85")
 
 require(xtable)
 
-cbind.data.frame(a,b) %>% xtable() %>% print.xtable(type = "html", file = "/tmp/gwltable.html")
+cap = "Time periods for which the +1.5, +2, +3 and +4 degree Global Warming Levels (compared to pre-industrial times) are reached by the CMIP5 global climate projections for RCP 4.5 (first 4 columns) and RCP 8.5 (last 4 columns). Values correspond to the central year (n) of the 30-year window (the GWL period is thus calculated as [n-9, n+10]). Empty table cells indicate that the GWL was not reached before (the central year) 2100. \'9999\' correspond to models with no available experiment results."
+xt <- cbind.data.frame(a,b) %>% xtable(caption = cap) 
+# Force integers
+digits(xt)[2:(length(xt) + 1)] <- 0
+print.xtable(x = xt, type = "html", file = "/tmp/gwltable.html")
 
 # %>% xtable() %>% print.xtable(type = "html", file = "/tmp/rc85table.html")
 
@@ -116,8 +120,8 @@ gcms <- list.files("GWL/data/CMIP5_global_tas") %>%
     gsub("_hist.*_|_rcp.*_", "_", .) %>% 
     gsub("\\.dat$", "", .) %>%
     unique()
-ref.years <- 1861:2100
-piper <- 1861:1890
+ref.years <- 1850:2100
+piper <- 1850:1900
 
 out.list <- lapply(1:length(gcms), function(i) {
     model <- gsub("_r.*", "_", gcms[i])
