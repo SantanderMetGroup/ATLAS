@@ -1,7 +1,7 @@
 library(magrittr)
 library(httr)
 
-source("GWL/R/warming_periods.R")
+source("GWL/R/getGWL.R")
 
 # https://stackoverflow.com/questions/25485216/how-to-get-list-files-from-a-github-repository-folder-using-r
 myurl <- "https://api.github.com/repos/SantanderMetGroup/IPCC-Atlas/git/trees/devel?recursive=1"
