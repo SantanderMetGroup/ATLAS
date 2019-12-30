@@ -7,7 +7,7 @@ The **accessibility and reproducibility** of results has been a major concern du
 ### New Reference Regions 
 A new set of reference regions is produced building on the popular [AR5 IPCC reference regions](http://www.ipcc-data.org/guidelines/pages/ar5_regions.html) developed for reporting sub-continental CMIP5 (with typical resolution of 2º) projections over a reduced number of regions. The increased reasolution (typically 1º in CMIP6) allows to increase the number of regions for a better climatic representatio (this results in **43 land and 12 open ocean reference regions**). 
 
-<img src="/man/new_eference_regions.png" align="left" alt="" width="3600" />
+<img src="/man/new_eference_regions.png" align="left" alt="" width="360" />
 
 
 ### Aggregated CMIP6 datasets
