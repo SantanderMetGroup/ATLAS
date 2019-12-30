@@ -1,4 +1,4 @@
-# The Climate Change ATLAS: Datasets, code and virtual workspace
+## The Climate Change ATLAS: Datasets, code and virtual workspace
 
 The Climate Change ATLAS is an initiative to develop ready-to-use code and datasets for regional analysis of observed and model projected (e.g. CMIP6 and CORDEX) climate change information using both time-slices (e.g. 2081-2100) and warming levels (e.g. +1.5º). An updated set of sub-continental reference regions is provided as the basis for regional synthesis (building on AR5 reference regions) and monthly spatially aggregated datasets are produced to facilitate the development of regional climate change proudcts. 
 
