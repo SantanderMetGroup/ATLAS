@@ -1,4 +1,4 @@
-# Updated AR5 Reference Regions and CMIP6 averaged results
+## Updated AR5 Reference Regions and CMIP6 averaged results
 
 The new references regions are provided as polygons in different formats (csv with coordinates, R data, and shapefile, *CMIP6_refereceRegions*) together with R and Python notebooks illustrating the use of these regions with worked out examples.
 
