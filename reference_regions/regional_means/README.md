@@ -1,4 +1,4 @@
-## Spatial averages of CMIP6 projections over the AR6-WGI reference regions
+## Spatial averages of CMIP5 and CMIP6 projections over the AR6-WGI reference regions
 
 Spatially aggregated monthly results over the different reference regions have been calculated for all CMIP5 and CMIP6 models and runs available in the Altas Hub (see the [inventories](https://github.com/SantanderMetGroup/IPCC-Atlas/tree/devel/AtlasHub-inventory/Hub), CMIP6Amon_Hub version 20191028, CMIP5_Hub version 20191212) separately for land, sea, and land-sea gridboxes. These results are provided in the following links:
 
