@@ -8,5 +8,8 @@ Spatially aggregated monthly results over the different reference regions have b
 [CMIP6Amon_tas_land.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_tas_land.zip)\
 [CMIP6Amon_tas_landsea.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_tas_landsea.zip)\
 [CMIP6Amon_tas_sea.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_tas_sea.zip)
+[CMIP5_tas_land.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP5_tas_land.zip)\
+[CMIP5_tas_landsea.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP5_tas_landsea.zip)\
+[CMIP5_tas_sea.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP5_tas_sea.zip)
 
 The landsea results for a subset of CMIP6 model runs (a single run per model) used in the Atlas (CMIP6Amon_Atlas version 20191211 in the [inventory](https://github.com/SantanderMetGroup/IPCC-Atlas/tree/devel/AtlasHub-inventory)), are also available in the data folder.
