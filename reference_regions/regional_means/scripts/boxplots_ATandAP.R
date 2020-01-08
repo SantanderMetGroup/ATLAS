@@ -79,7 +79,7 @@ return(data)
 
 ########## tas CMIP5 WL ##########------------------------------------
 aggr.fun <- "mean"
-ls <- grep("CMIP5_tas_landsea", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+ls <- grep("CMIP5_tas_land", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
 aux <- grep("historical", ls, value = TRUE)
 
@@ -102,7 +102,7 @@ tasWLp10.cmip5 <- lapply(tasWL.cmip5, apply, 2, quantile, 0.1, na.rm = T)
 
 ########## tas CMIP6 WL ##########------------------------------------
 aggr.fun <- "mean"
-ls <- grep("CMIP6Amon_tas_landsea", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+ls <- grep("CMIP6Amon_tas_land", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
 aux <- grep("historical", ls, value = TRUE)
 
@@ -122,10 +122,10 @@ tasWLp90.cmip6 <- lapply(tasWL.cmip6, apply, 2, quantile, 0.9, na.rm = T)
 tasWLp10.cmip6 <- lapply(tasWL.cmip6, apply, 2, quantile, 0.1, na.rm = T)
 
 ########## tas CMIP5##########------------------------------------
-ls <- grep("CMIP5_tas_landsea", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+ls <- grep("CMIP5_tas_land", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
 aux <- grep("historical", ls, value = TRUE)
-modelruns <- gsub("reference_regions/regional_means/data/CMIP5_tas_landsea/CMIP5_|_historical.csv", "", aux)
+modelruns <- gsub("reference_regions/regional_means/data/CMIP5_tas_land/CMIP5_|_historical.csv", "", aux)
 
 exp <- c("rcp26", "rcp45", "rcp85")
 periods <- list( "near" = cbind(rep(2021, length(modelruns)),rep(2040, length(modelruns))), 
@@ -139,10 +139,10 @@ tasp90.cmip5 <- lapply(tas.cmip5, apply, 2, quantile, 0.9, na.rm = T)
 tasp10.cmip5 <- lapply(tas.cmip5, apply, 2, quantile, 0.1, na.rm = T)
 
 ########## tas CMIP6##########------------------------------------
-ls <- grep("CMIP6Amon_tas_landsea", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+ls <- grep("CMIP6Amon_tas_land", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
 aux <- grep("historical", ls, value = TRUE)
-modelruns <- gsub("reference_regions/regional_means/data/CMIP6Amon_tas_landsea/CMIP6Amon_|_historical.csv", "", aux)
+modelruns <- gsub("reference_regions/regional_means/data/CMIP6Amon_tas_land/CMIP6Amon_|_historical.csv", "", aux)
 
 exp <- c("ssp126", "ssp245", "ssp585")
 periods <- list( "near" = cbind(rep(2021, length(modelruns)),rep(2040, length(modelruns))), 
@@ -156,10 +156,10 @@ tasp90.cmip6 <- lapply(tas.cmip6, apply, 2, quantile, 0.9, na.rm = T)
 tasp10.cmip6 <- lapply(tas.cmip6, apply, 2, quantile, 0.1, na.rm = T)
 
 ######## pr CMIP5 ###########------------------------------------
-ls <- grep("CMIP5_pr_landsea", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+ls <- grep("CMIP5_pr_land", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
 aux <- grep("historical", ls, value = TRUE)
-modelruns <- gsub("reference_regions/regional_means/data/CMIP5_pr_landsea/CMIP5_|_historical.csv", "", aux)
+modelruns <- gsub("reference_regions/regional_means/data/CMIP5_pr_land/CMIP5_|_historical.csv", "", aux)
 
 pr.cmip5 <- prepareData(allfiles, modelruns, "sum", periods, exp)
 
@@ -169,10 +169,10 @@ prp10.cmip5 <- lapply(tas.cmip6, apply, 2, quantile, 0.1, na.rm = T)
 
 
 ######## pr CMIP6 ###########------------------------------------
-ls <- grep("CMIP6Amon_pr_landsea", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+ls <- grep("CMIP6Amon_pr_land", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
 aux <- grep("historical", ls, value = TRUE)
-modelruns <- gsub("reference_regions/regional_means/data/CMIP6Amon_pr_landsea/CMIP6Amon_|_historical.csv", "", aux)
+modelruns <- gsub("reference_regions/regional_means/data/CMIP6Amon_pr_land/CMIP6Amon_|_historical.csv", "", aux)
 
 pr.cmip6 <- prepareData(allfiles, modelruns, "sum")
 

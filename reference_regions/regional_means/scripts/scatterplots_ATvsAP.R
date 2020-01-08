@@ -11,10 +11,10 @@ ref.period <- 1986:2005
 periods <- list(2021:2040, 2041:2060, 2061:2080, 2081:2100)
 
 ########## tas ##########------------------------------------
-ls <- grep("CMIP6Amon_tas_landsea", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+ls <- grep("CMIP6Amon_tas_land/", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
 aux <- grep("historical", ls, value = TRUE)
-modelruns <- gsub("reference_regions/regional_means/data/CMIP6Amon_tas_landsea/CMIP6Amon_|_historical.csv", "", aux)
+modelruns <- gsub("reference_regions/regional_means/data/CMIP6Amon_tas_land/CMIP6Amon_|_historical.csv", "", aux)
 
 tas <- lapply(modelruns, function(i) {
   modelfiles <- grep(i, allfiles, value = TRUE) 
@@ -83,10 +83,10 @@ tasp10 <- lapply(data, apply, 2, quantile, 0.1, na.rm = T)
 
 
 ######## pr ###########------------------------------------
-ls <- grep("CMIP6Amon_pr_landsea", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+ls <- grep("CMIP6Amon_pr_land/", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
 aux <- grep("historical", ls, value = TRUE)
-modelruns <- gsub("reference_regions/regional_means/data/CMIP6Amon_pr_landsea/CMIP6Amon_|_historical.csv", "", aux)
+modelruns <- gsub("reference_regions/regional_means/data/CMIP6Amon_pr_land/CMIP6Amon_|_historical.csv", "", aux)
 
 pr <- lapply(modelruns, function(i) {
   modelfiles <- grep(i, allfiles, value = TRUE) 
@@ -154,13 +154,16 @@ prp10 <- lapply(data, apply, 2, quantile, 0.1, na.rm = T)
 
 
 ########## plot #######------------------------------------------------------------------------
-pdf("figs/scatterplots_ATvsAP.pdf", width = 20, height = 25)
+region <- region[1:44]
+pdf("/oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/figs/scatterplots_land_fixed_ranges_DOWN_ATvsAP.pdf", width = 20, height = 25)
 par(mfrow= c(7, 8))
 for(i in region) {
-plot(tasmediana[[i]], prmediana[[i]], pch = 21, 
+plot(tasmediana[[i]], prmediana[[i]], pch = 21,
      bg = rgb(1,0,0,0), col = rgb(1,0,0,0), 
-     xlim = c(min(tasp10[[i]]), max(tasp90[[i]])), 
-     ylim = c(min(prp10[[i]]), max(prp90[[i]])), 
+     # xlim = c(min(tasp10[[i]]), max(tasp90[[i]])), 
+     # ylim = c(min(prp10[[i]]), max(prp90[[i]])), 
+     xlim = c(0, 8), 
+     ylim = c(-25, 5), 
      main = i,
      xlab = "AT(ºC)", ylab = "AP(%)")
 segments(tasp10[[i]], prmediana[[i]], tasp90[[i]], prmediana[[i]], col = c(rep(rgb(0,0,0.6,0.4),4), rep(rgb(0.2,0.6,1,0.4),4), rep(rgb(1,0,0,0.4),4)), lwd = 4)
