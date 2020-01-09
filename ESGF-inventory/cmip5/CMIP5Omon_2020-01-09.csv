@@ -1,4 +1,4 @@
-instance_id,size,o2,ph
+instance_id,o2,ph,size
 "cmip5.output.CCCma.CanESM2.historical.mon.ocnBgchem.r1i1p1.v20130331",false,true,9571015740
 "cmip5.output.CCCma.CanESM2.historical.mon.ocnBgchem.r2i1p1.v20130331",false,true,9571015740
 "cmip5.output.CCCma.CanESM2.historical.mon.ocnBgchem.r3i1p1.v20130331",false,true,9571015740

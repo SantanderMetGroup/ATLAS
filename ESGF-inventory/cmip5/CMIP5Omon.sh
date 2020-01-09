@@ -6,7 +6,7 @@ experiments="historical,rcp26,rcp45,rcp85"
 query="project=CMIP5&variable=o2,ph&time_frequency=mon&experiment=${experiments}"
 inventory="CMIP5Omon_$(date +%Y-%m-%d).csv"
 
-echo 'instance_id,size,o2,ph' > ${inventory}
+echo 'instance_id,o2,ph,size' > ${inventory}
 query_esgf "${query}" | jq --slurp '
 	{o2: false, ph: false} as $vars |
 	map({instance_id, size, variables: .variable}) |
