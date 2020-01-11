@@ -8,7 +8,8 @@ filelist <- unlist(lapply(content(req)$tree, "[", "path"), use.names = FALSE)
 root <- "https://raw.githubusercontent.com/SantanderMetGroup/IPCC-Atlas/devel/"
 ref.period <- 1986:2005
 
-
+area <- "land"
+area <- "sea"
 
 #### FUNCTION FOR PREPEARING DATA (standard periods)#####--------------------------
 
@@ -79,7 +80,7 @@ return(data)
 
 ########## tas CMIP5 WL ##########------------------------------------
 aggr.fun <- "mean"
-ls <- grep("CMIP5_tas_land/", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+ls <- grep(paste0("CMIP5_tas_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
 aux <- grep("historical", ls, value = TRUE)
 
@@ -102,7 +103,7 @@ tasWLp10.cmip5 <- lapply(tasWL.cmip5, apply, 2, quantile, 0.1, na.rm = T)
 
 ########## tas CMIP6 WL ##########------------------------------------
 aggr.fun <- "mean"
-ls <- grep("CMIP6Amon_tas_land/", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+ls <- grep(paste0("CMIP6Amon_tas_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
 aux <- grep("historical", ls, value = TRUE)
 
@@ -122,10 +123,10 @@ tasWLp90.cmip6 <- lapply(tasWL.cmip6, apply, 2, quantile, 0.9, na.rm = T)
 tasWLp10.cmip6 <- lapply(tasWL.cmip6, apply, 2, quantile, 0.1, na.rm = T)
 
 ########## tas CMIP5##########------------------------------------
-ls <- grep("CMIP5_tas_land/", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+ls <- grep(paste0("CMIP5_tas_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
 aux <- grep("historical", ls, value = TRUE)
-modelruns <- gsub("reference_regions/regional_means/data/CMIP5_tas_land/CMIP5_|_historical.csv", "", aux)
+modelruns <- gsub(paste0("reference_regions/regional_means/data/CMIP5_tas_",area,"/CMIP5_|_historical.csv"), "", aux)
 
 exp <- c("rcp26", "rcp45", "rcp85")
 periods <- list( "near" = cbind(rep(2021, length(modelruns)),rep(2040, length(modelruns))), 
@@ -139,10 +140,10 @@ tasp90.cmip5 <- lapply(tas.cmip5, apply, 2, quantile, 0.9, na.rm = T)
 tasp10.cmip5 <- lapply(tas.cmip5, apply, 2, quantile, 0.1, na.rm = T)
 
 ########## tas CMIP6##########------------------------------------
-ls <- grep("CMIP6Amon_tas_land/", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+ls <- grep(paste0("CMIP6Amon_tas_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
 aux <- grep("historical", ls, value = TRUE)
-modelruns <- gsub("reference_regions/regional_means/data/CMIP6Amon_tas_land/CMIP6Amon_|_historical.csv", "", aux)
+modelruns <- gsub(paste0("reference_regions/regional_means/data/CMIP6Amon_tas_",area,"/CMIP6Amon_|_historical.csv"), "", aux)
 
 exp <- c("ssp126", "ssp245", "ssp585")
 periods <- list( "near" = cbind(rep(2021, length(modelruns)),rep(2040, length(modelruns))), 
@@ -189,11 +190,11 @@ p <- lapply(1:length(tasmediana.cmip5), function(i){
   xj <- c("+1.5º5","+1.5º6", "+2º5","+2º6", "anear5", "anear6", "bmid5", "bmid6", "clong5", "clong6")
   dfj <- data.frame("term" = xj, "WL1" = a1j, "WL2" = a2j, "ssp126" = aj, "ssp245" = bj, "ssp585" = dj)
   
-  xyplot(WL1+WL2+ssp126+ssp245+ssp585~term, data = df, ylim = c(0, 8), pch = 19, ylab = "AT(ºC)",
+  xyplot(WL1+WL2+ssp126+ssp245+ssp585~term, data = df, ylim = c(0, 14), pch = 19, ylab = "AT(ºC)",
          col = col, cex = 1.5, xlab = "", 
          main = names(tasmediana.cmip5)[i],
          panel = function(...){
-           panel.abline(h = seq(0, 10, 1),
+           panel.abline(h = seq(0, 14, 1),
                         col = "gray65", lwd = 0.5, lty = 2)
            panel.segments(df$term, dfi$WL1, df$term, dfj$WL1, col = "darkmagenta", lwd=3, alpha = 0.5)
            panel.segments(df$term, dfi$WL2, df$term, dfj$WL2, col = "darkgoldenrod1", lwd=3, alpha = 0.5)
@@ -203,7 +204,7 @@ p <- lapply(1:length(tasmediana.cmip5), function(i){
            panel.xyplot(...)
          })
 })
-pdf("/home/maialen/WORK/boxplots_AT_0_8.pdf", width = 40, height = 50)
+pdf(paste0("/oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/figs/boxplots_",area,"_AT_0_14.pdf"), width = 40, height = 50)
 do.call("grid.arrange", p)
 dev.off()
 
@@ -219,7 +220,8 @@ filelist <- unlist(lapply(content(req)$tree, "[", "path"), use.names = FALSE)
 root <- "https://raw.githubusercontent.com/SantanderMetGroup/IPCC-Atlas/devel/"
 ref.period <- 1986:2005
 
-
+area <- "land"
+area <- "sea"
 
 #### FUNCTION FOR PREPEARING DATA (standard periods)#####--------------------------
 
@@ -291,7 +293,7 @@ prepareData <- function(allfiles, modelruns, aggr.fun, periods, exp){
 ########pr##########
 ########## pr CMIP5 WL ##########------------------------------------
 aggr.fun <- "sum"
-ls <- grep("CMIP5_pr_land/", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+ls <- grep(paste0("CMIP5_pr_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
 aux <- grep("historical", ls, value = TRUE)
 
@@ -314,7 +316,7 @@ prWLp10.cmip5 <- lapply(prWL.cmip5, apply, 2, quantile, 0.1, na.rm = T)
 
 ########## pr CMIP6 WL ##########------------------------------------
 aggr.fun <- "sum"
-ls <- grep("CMIP6Amon_pr_land/", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+ls <- grep(paste0("CMIP6Amon_pr_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
 aux <- grep("historical", ls, value = TRUE)
 
@@ -334,10 +336,10 @@ prWLp90.cmip6 <- lapply(prWL.cmip6, apply, 2, quantile, 0.9, na.rm = T)
 prWLp10.cmip6 <- lapply(prWL.cmip6, apply, 2, quantile, 0.1, na.rm = T)
 
 ########## pr CMIP5##########------------------------------------
-ls <- grep("CMIP5_pr_land/", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+ls <- grep(paste0("CMIP5_pr_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
 aux <- grep("historical", ls, value = TRUE)
-modelruns <- gsub("reference_regions/regional_means/data/CMIP5_pr_land/CMIP5_|_historical.csv", "", aux)
+modelruns <- gsub(paste0("reference_regions/regional_means/data/CMIP5_pr_",area,"/CMIP5_|_historical.csv"), "", aux)
 
 exp <- c("rcp26", "rcp45", "rcp85")
 periods <- list( "near" = cbind(rep(2021, length(modelruns)),rep(2040, length(modelruns))), 
@@ -351,10 +353,10 @@ prp90.cmip5 <- lapply(pr.cmip5, apply, 2, quantile, 0.9, na.rm = T)
 prp10.cmip5 <- lapply(pr.cmip5, apply, 2, quantile, 0.1, na.rm = T)
 
 ########## pr CMIP6##########------------------------------------
-ls <- grep("CMIP6Amon_pr_land/", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+ls <- grep(paste0("CMIP6Amon_pr_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
 aux <- grep("historical", ls, value = TRUE)
-modelruns <- gsub("reference_regions/regional_means/data/CMIP6Amon_pr_land/CMIP6Amon_|_historical.csv", "", aux)
+modelruns <- gsub(paste0("reference_regions/regional_means/data/CMIP6Amon_pr_",area,"/CMIP6Amon_|_historical.csv"), "", aux)
 
 exp <- c("ssp126", "ssp245", "ssp585")
 periods <- list( "near" = cbind(rep(2021, length(modelruns)),rep(2040, length(modelruns))), 
@@ -402,11 +404,14 @@ p <- lapply(1:length(prmediana.cmip5), function(i){
       xj <- c("+1.5º5","+1.5º6", "+2º5","+2º6", "anear5", "anear6", "bmid5", "bmid6", "clong5", "clong6")
       dfj <- data.frame("term" = xj, "WL1" = a1j, "WL2" = a2j, "ssp126" = aj, "ssp245" = bj, "ssp585" = dj)
       
-      xyplot(WL1+WL2+ssp126+ssp245+ssp585~term, data = df, ylim = c(-5, 50), pch = 19, ylab = "AT(ºC)",
+      ylim <- c(min(c(prWLp10.cmip5[[i]], prWLp10.cmip6[[i]], prp10.cmip5[[i]], prp10.cmip6[[i]]), na.rm = T)-5,
+                max(c(prWLp90.cmip5[[i]], prWLp90.cmip6[[i]], prp90.cmip5[[i]], prp90.cmip6[[i]]), na.rm = T)+5)
+      if (any(is.infinite(ylim))) ylim <- c(-50, 50)
+      xyplot(WL1+WL2+ssp126+ssp245+ssp585~term, data = df, ylim = ylim, pch = 19, ylab = "AT(ºC)",
              col = col, cex = 1.5, xlab = "", 
              main = names(prmediana.cmip5)[i],
              panel = function(...){
-                   panel.abline(h = seq(0, 10, 1),
+                   panel.abline(h = seq(-50, 50, 10),
                                 col = "gray65", lwd = 0.5, lty = 2)
                    panel.segments(df$term, dfi$WL1, df$term, dfj$WL1, col = "darkmagenta", lwd=3, alpha = 0.5)
                    panel.segments(df$term, dfi$WL2, df$term, dfj$WL2, col = "darkgoldenrod1", lwd=3, alpha = 0.5)
@@ -416,7 +421,7 @@ p <- lapply(1:length(prmediana.cmip5), function(i){
                    panel.xyplot(...)
              })
 })
-pdf("/oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/figs/boxplots_AP_-5_50.pdf", width = 40, height = 50)
+pdf(paste0("/oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/figs/boxplots_",area,"_AP_allranges.pdf"), width = 40, height = 50)
 do.call("grid.arrange", p)
 dev.off()
 
