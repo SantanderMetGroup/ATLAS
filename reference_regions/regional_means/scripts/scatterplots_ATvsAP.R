@@ -12,7 +12,7 @@ root <- "https://raw.githubusercontent.com/SantanderMetGroup/IPCC-Atlas/devel/"
 
 
 # select reference and target periods, scenarios, and the area ("land", "sea", "landsea"):-----------
-ref.period <- 1986:2005
+ref.period <- 1995:2014
 periods <- list(2021:2040, 2041:2060, 2061:2080, 2081:2100)
 exp <- c("ssp126", "ssp245", "ssp585")
 area <- "land"
