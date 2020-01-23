@@ -12,17 +12,18 @@ root <- "https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/"
 
 
 # select reference and target periods, scenarios, and the area ("land", "sea", "landsea"):-----------
-ref.period <- 1995:2014
+ref.period <- 1995:2010
+season <- c(12, 1, 2)
 periods <- list(2021:2040, 2041:2060, 2061:2080, 2081:2100)
-exp <- c("rcp26", "rcp45", "rcp85") #c("ssp126", "ssp245", "ssp585")
+exp <- c("ssp126", "ssp245", "ssp585")#c("rcp26", "rcp45", "rcp85") 
 area <- "land" #sea #landsea
-project <- "CMIP5" #CMIP6Amon
+project <- "CMIP6Amon"#"CMIP5" 
 
 
 
 ##### function to get the data and compute deltas: -------------------------------
 
-computeDeltas <- function(allfiles, modelruns, exp, ref.period, periods){ 
+computeDeltas <- function(allfiles, modelruns, exp, ref.period, periods, season){ 
   var <- scan(allfiles[1], "character", n = 7)[4]
   region <- colnames(read.table(allfiles[1], header = TRUE, sep = ",", skip = 7))[-1]
   aggrfun <- "mean"
@@ -30,7 +31,12 @@ computeDeltas <- function(allfiles, modelruns, exp, ref.period, periods){
   out <- lapply(modelruns, function(i) {
     modelfiles <- grep(i, allfiles, value = TRUE) 
     hist <- grep("historical", modelfiles, value = TRUE) %>% read.table(header = TRUE, sep = ",", skip = 7)
-    yrs <- grep("historical", modelfiles, value = TRUE) %>% read.table(header = TRUE, sep = ",", skip = 7) %>% subset(select = "date", drop = TRUE) %>% gsub("-.*", "", .) %>% as.integer()
+    seas <- hist %>% subset(select = "date", drop = TRUE) %>% gsub(".*-", "", .) %>% as.integer()
+    z <- sort(unlist(lapply(season, function(s) which(seas == s))))
+    hist <- hist[z, ]
+    firstind <- which(seas[z] == season[1])[1]
+    yrs <- c(rep(1, firstind-1), rep(2:ceiling(nrow(hist)/length(season)+1), each = length(season), length.out = nrow(hist)-(firstind-1)))
+    # yrs <-  hist %>% subset(select = "date", drop = TRUE) %>% gsub("-.*", "", .) %>% as.integer()
     hist <- lapply(split(hist[,-1], f = yrs), function(x) apply(x, MARGIN = 2, FUN = aggrfun, na.rm = TRUE))
     hist <- do.call("rbind", hist)
     start <- which(rownames(hist) == range(ref.period)[1])
@@ -46,7 +52,12 @@ computeDeltas <- function(allfiles, modelruns, exp, ref.period, periods){
         grep(exp[j], modelfiles, value = TRUE) %>% read.table(header = TRUE, sep = ",", skip = 7)
       }, error = function(err) return(NULL))
       dates <- tryCatch({
-        yrs <- grep(exp[j], modelfiles, value = TRUE) %>% read.table(header = TRUE, sep = ",", skip = 7) %>% subset(select = "date", drop = TRUE) %>% gsub("-.*", "", .) %>% as.integer()
+        seas <- rcp %>% subset(select = "date", drop = TRUE) %>% gsub(".*-", "", .) %>% as.integer()
+        z <- sort(unlist(lapply(season, function(s) which(seas == s))))
+        rcp <- rcp[z, ]
+        firstind <- which(seas[z] == season[1])[1]
+        yrs <- c(rep(1, firstind-1), rep(2:ceiling(nrow(rcp)/length(season)+1), each = length(season), length.out = nrow(rcp)-(firstind-1)))
+        # yrs <- rcp %>% subset(select = "date", drop = TRUE) %>% gsub("-.*", "", .) %>% as.integer()
         rcp <- lapply(split(rcp[,-1], f = yrs), function(x) apply(x, MARGIN = 2, FUN = aggrfun, na.rm = TRUE))
       }, error = function(err) return(NULL))
       if (!is.null(rcp)) {
@@ -109,7 +120,7 @@ aux <- grep("historical", ls, value = TRUE)
 modelruns <- gsub(paste0("reference_regions/regional_means/data/", project, "_tas_", area, "/",project, "_|_historical.csv"), "", aux)
 
 # compute (apply computeDeltas)
-tas <- computeDeltas(allfiles, modelruns, exp, ref.period, periods)
+tas <- computeDeltas(allfiles, modelruns, exp, ref.period, periods, season)
 #str(tas)
 
 # calculate percentiles
@@ -125,7 +136,7 @@ allfiles <- paste0(root, ls)
 aux <- grep("historical", ls, value = TRUE)
 modelruns <- gsub(paste0("reference_regions/regional_means/data/", project, "_pr_", area, "/",project, "_|_historical.csv"), "", aux)
 
-pr <- computeDeltas(allfiles, modelruns, exp, ref.period, periods)
+pr <- computeDeltas(allfiles, modelruns, exp, ref.period, periods, season)
 
 prmediana <- lapply(pr, apply, 2, median, na.rm = T)
 prp90 <- lapply(pr, apply, 2, quantile, 0.9, na.rm = T)
@@ -137,7 +148,7 @@ if (area == "land") region.subset <- names(tas)[c(1:44, 56)]
 if(area == "sea") region.subset <-  names(tas)[44:56]
 
 #select the output figure file name
-outfilename <- paste0(project, "_scatterplots_", area, "_ATvsAP.pdf")
+outfilename <- paste0(project, "_scatterplots_", area, "_", paste(season, collapse = "-"), "_ATvsAP.pdf")
 
 #plot and write figure
 pdf(outfilename, width = 20, height = 25)
