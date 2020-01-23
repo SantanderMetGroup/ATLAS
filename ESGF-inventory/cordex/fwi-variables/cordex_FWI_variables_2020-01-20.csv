@@ -469,7 +469,10 @@
 "CORDEX.output.EUR-11.DMI.NCC-NorESM1-M.rcp85.r1i1p1.HIRHAM5.v3.day",true,true,true,true,true,true,true,true
 "CORDEX.output.EUR-11.DMI.NCC-NorESM1-M.rcp45.r1i1p1.HIRHAM5.v3.day",true,true,true,true,true,true,true,true
 "CORDEX.output.EUR-11.DMI.NCC-NorESM1-M.historical.r1i1p1.HIRHAM5.v3.day",true,true,true,true,true,true,true,true
+"CORDEX.output.EUR-11.DMI.MPI-M-MPI-ESM-LR.rcp85.r1i1p1.HIRHAM5.v1.day",true,true,true,true,true,true,true,true
+"CORDEX.output.EUR-11.DMI.MPI-M-MPI-ESM-LR.historical.r1i1p1.HIRHAM5.v1.day",true,true,true,true,true,true,true,true
 "CORDEX.output.EUR-11.DMI.MOHC-HadGEM2-ES.rcp85.r1i1p1.HIRHAM5.v2.day",true,true,true,true,true,true,true,true
+"CORDEX.output.EUR-11.DMI.MOHC-HadGEM2-ES.rcp45.r1i1p1.HIRHAM5.v2.day",true,true,true,true,true,true,true,true
 "CORDEX.output.EUR-11.DMI.MOHC-HadGEM2-ES.historical.r1i1p1.HIRHAM5.v2.day",true,true,true,true,true,true,true,true
 "CORDEX.output.EUR-11.DMI.ICHEC-EC-EARTH.rcp85.r3i1p1.HIRHAM5.v2.day",true,true,true,true,true,true,true,true
 "CORDEX.output.EUR-11.DMI.ICHEC-EC-EARTH.rcp85.r1i1p1.HIRHAM5.v1.day",true,true,true,true,true,true,true,true
