@@ -43,7 +43,7 @@ lapply(1:length(datasets), function(i) {
     years <- years[which(years<2101)]
     years <- years[which(years>1949)]
     lapply(years, function(x){
-      if (!file.exists(paste0(out.dir, datasets[i], "_", index,"_", x, ".nc4"))) {
+      if (!file.exists(paste0(out.dir, "/", datasets[i], "_", index,"_", x, ".nc4"))) {
         print(paste0(x, "----------------------------------------------------------------"))
         index <- climate4R.chunk(n.chunks = n.chunks,
                                  C4R.FUN.args = C4R.FUN.args,
@@ -51,7 +51,7 @@ lapply(1:length(datasets), function(i) {
         index[["Variable"]][["varName"]] <- index
         index <- redim(index, drop = TRUE)
         message(x, ".........", i)
-        grid2nc(index, NetCDFOutFile = paste0(out.dir, datasets[i], "_", index , "_", x, ".nc4"))
+        grid2nc(index, NetCDFOutFile = paste0(out.dir, "/", datasets[i], "_", index , "_", x, ".nc4"))
       }
     })
   } 
