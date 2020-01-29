@@ -24,9 +24,10 @@ datasets <- UDG.datasets("CMIP5")[["CMIP5_AR5_1run"]]
 n.chunks <- 2
 # Arguments of the climate4R function to be applied and the corresponding function arguments, e.g.:
 ## see https://github.com/SantanderMetGroup/climate4R/tree/master/R !!!!!!!!!!!!!!!!!!!
+var <- "tasmin"
 index <- "FD"
 C4R.FUN.args = list(FUN = "indexGrid",
-                    tn = list(dataset = datasets[i], var = "tasmin"),
+                    tn = list(dataset = datasets[i], var = var),
                     index.code = index,
                     time.resolution = "month")
 # Note that [i] is added in datasets, this is because the index calculation is 
@@ -36,8 +37,8 @@ C4R.FUN.args = list(FUN = "indexGrid",
 
 lapply(1:length(datasets), function(i) {
   di <- dataInventory(datasets[i])
-  if (any(names(di) %in% "tasmin")) {
-    ch <- strsplit(di$tasmin$Dimensions$time$Date_range, "-")[[1]][c(1,4)]
+  if (any(names(di) %in% var)) {
+    ch <- strsplit(di[[var]]$Dimensions$time$Date_range, "-")[[1]][c(1,4)]
     years <- as.numeric(ch[1]):as.numeric(ch[2])
     years <- years[which(years<2101)]
     years <- years[which(years>1949)]
