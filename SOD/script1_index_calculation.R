@@ -22,10 +22,13 @@ out.dir <- ""
 datasets <- UDG.datasets("CMIP5")[["CMIP5_AR5_1run"]]
 # Number of chunks, e.g.:
 n.chunks <- 2
-# Arguments of the climate4R function to be applied and the corresponding function arguments, e.g.:
-## see https://github.com/SantanderMetGroup/climate4R/tree/master/R !!!!!!!!!!!!!!!!!!!
+
+# Variable and index
 var <- "tasmin"
 index <- "FD"
+
+# The climate4R function to be applied and the corresponding function arguments, e.g.:
+## see https://github.com/SantanderMetGroup/climate4R/tree/master/R !!!!!!!!!!!!!!!!!!!
 C4R.FUN.args = list(FUN = "indexGrid",
                     tn = list(dataset = datasets[i], var = var),
                     index.code = index,
