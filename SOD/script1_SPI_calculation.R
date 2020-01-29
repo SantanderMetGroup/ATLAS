@@ -5,8 +5,6 @@ library(loadeR)
 library(loadeR.2nc)
 # Index calculation libraries:
 library(transformeR)
-library(climate4R.indices)
-library(climate4R.climdex)
 library(drought4R)
 # Function for latitudinal chunking (read script from website):
 ## see https://github.com/SantanderMetGroup/climate4R/tree/master/R !!!!!!!!!!!!!!!!!!!
