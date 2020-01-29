@@ -12,7 +12,7 @@ area <- "land"
 var = "pr"
 season = 6:8
 
-#### FUNCTION FOR PREPEARING DATA (standard periods)#####--------------------------
+#### FUNCTION FOR PREPEARING DATA --------------------------
 
 computeDeltas <- function(allfiles, modelruns, ref.period, periods, exp, season){ 
   var <- scan(allfiles[1], "character", n = 7)[4]
