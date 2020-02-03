@@ -2,13 +2,14 @@ library(magrittr)
 library(httr)
 
 ## Source getGWL function
-source("GWL/R/getGWL.R")
+devtools::source_url("https://github.com/SantanderMetGroup/ATLAS/blob/devel/GWL/scripts/getGWL.R?raw=TRUE")
+# source("GWL/scripts/getGWL.R")
 
 ## Set source directory storing the files 
 # remote = https://github.com/SantanderMetGroup/ATLAS/tree/devel/reference_regions/regional_means/data/CMIP5_tas_landsea)
 # local = updated cloned ATLAS repo
 
-sourcefrom <- "local" # "remote"
+sourcefrom <- "remote"# "local" # "remote"
 sourcefrom <- match.arg(sourcefrom, choices = c("local", "remote"))
 
 if (sourcefrom == "remote") {
