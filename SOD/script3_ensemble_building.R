@@ -25,10 +25,7 @@ for (i in 1:length(years)) {
     aux <- subsetGrid(g[-ind][[1]], season = 12)
     aux$Data <- aux$Data * NA
     aux <- redim(aux, member = FALSE)
-    g <- lapply(ind, function(k) {
-      g[[k]] <- bindGrid(g[[k]], aux, dimension = "time")
-      g
-    })
+    for (k in ind) g[[k]] <- bindGrid(g[[k]], aux, dimension = "time")
   }
   mg <- bindGrid(g, dimension = "member")
   mg[["Members"]] <- models
