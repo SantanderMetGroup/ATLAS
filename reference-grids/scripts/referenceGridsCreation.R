@@ -13,7 +13,7 @@ ref <- loadGridData(watch, var = "tas", year = 2000, season = 1, aggr.m = "mean"
 mask <- gridArithmetics(ref, 0, 1, operator = c("*", "+"))
 mask$Data[which(is.na(mask$Data))] <- 0
 
-mask$Variable$varName <- "mask"
+mask$Variable$varName <- "sftlf"
 attr(mask$Variable, "description") <- "land sea mask"
 attr(mask$Variable, "longname") <- "land sea mask"
 
