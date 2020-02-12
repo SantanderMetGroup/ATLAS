@@ -3,7 +3,7 @@
 #Area: sea
 #Interpolation_method: cdo remapbil
 #Spatial_resolution: 2º
-#Creation_Date: 2020-01-08
+#Creation_Date: 2020-02-11
 #Author: IPCC-WGI Atlas Hub (https://github.com/SantanderMetGroup/IPCC-Atlas). Santander Meteorology Group.
 "date","GIC","NEC","CNA","ENA","NWN","WNA","NCA","SCA","CAR","NWS","SAM","SSA","SWS","SES","NSA","NES","NEU","CEU","EEU","MED","WAF","SAH","NEAF","CEAF","SWAF","SEAF","CAF","RAR","RFE","ESB","WSB","WCA","TIB","EAS","ARP","SAS","SEA","NAU","CAU","SAU","NZ","EAN","WAN","ARO","SPO","EPO","NPO","SAO","EAO","NAO","EIO","SIO","ARS","BOB","SOO","world"
 "1850-01",-23.75,-32.38,18.831,18.642,-32.078,8.822,20.861,24.988,24.383,24.947,NA,8.001,18.342,19.573,25.324,27.683,-10.708,11.173,NA,12.863,27.68,19.02,24.697,27.027,20.456,23.733,28.629,-30.665,-9.562,NA,NA,-2.854,NA,13.542,21.024,26.151,27.093,28.468,24.208,14.533,17.621,-0.27,-1.872,-35.23,21.5,27.346,19.656,19.316,27.614,17.437,28.091,25.306,25.606,26.628,4.516,15.953
