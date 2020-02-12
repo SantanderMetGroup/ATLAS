@@ -45,6 +45,7 @@ spifun <- function(h, f, scale, ref.start, ref.end) {
   speiGrid(hf, scale = scale, ref.start = ref.start, ref.end = ref.end)
 }
 
+# Application
 lapply(1:length(datasets1), function(i) {
   di <- dataInventory(datasets1[i])
   if (any(names(di) %in% var)) {
