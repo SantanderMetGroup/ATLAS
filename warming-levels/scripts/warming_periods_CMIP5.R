@@ -2,7 +2,7 @@ library(magrittr)
 library(httr)
 
 ## Source getGWL function
-devtools::source_url("https://github.com/SantanderMetGroup/ATLAS/blob/devel/GWL/scripts/getGWL.R?raw=TRUE")
+devtools::source_url("https://github.com/SantanderMetGroup/ATLAS/blob/devel/warming-levels/scripts/getGWL.R?raw=TRUE")
 # source("GWL/scripts/getGWL.R")
 
 ## Set source directory storing the files 
@@ -14,21 +14,21 @@ sourcefrom <- match.arg(sourcefrom, choices = c("local", "remote"))
 
 if (sourcefrom == "remote") {
     # https://stackoverflow.com/questions/25485216/how-to-get-list-files-from-a-github-repository-folder-using-r
-    myurl <- "https://api.github.com/repos/SantanderMetGroup/IPCC-Atlas/git/trees/devel?recursive=1"
+    myurl <- "https://api.github.com/repos/SantanderMetGroup/Atlas/git/trees/devel?recursive=1"
     req <- GET(myurl) %>% stop_for_status(req)
     filelist <- unlist(lapply(content(req)$tree, "[", "path"), use.names = FALSE)
     ls <- grep("CMIP5_tas_landsea", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
-    root <- "https://raw.githubusercontent.com/SantanderMetGroup/IPCC-Atlas/devel/"
+    root <- "https://raw.githubusercontent.com/SantanderMetGroup/Atlas/devel/"
     allfiles <- paste0(root, ls)
 } else {
-    allfiles <- ls <- list.files("reference_regions/regional_means/data/CMIP5_tas_landsea", full.names = TRUE)  
+    allfiles <- ls <- list.files("aggregated-datasets/data/CMIP5_tas_landsea", full.names = TRUE)  
 }
 
 # exp <- c("ssp126", "ssp245", "ssp585")
 exp <- c("rcp26", "rcp45", "rcp85")
 gwls <- c(1.5, 2 ,3, 4)
 aux <- grep("historical", ls, value = TRUE)
-modelruns <- gsub("reference_regions/regional_means/data/CMIP5_tas_landsea/CMIP5_|_historical.csv", "", aux)
+modelruns <- gsub("aggregated-datasets/data/CMIP5_tas_landsea/CMIP5_|_historical.csv", "", aux)
 
 l <- lapply(1:length(modelruns), function(i) {
     # grep(modelruns[i], ls, value = TRUE) %>% length() %>% print()
