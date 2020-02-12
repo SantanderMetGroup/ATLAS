@@ -5,4 +5,4 @@ The 0.5 degree, 1 degree and 2 degree reference grids are land/sea fractions tha
 
 Folder *scripts* contains the R script used to create these grids and folder *notebooks* contains a jupyter notebook illustrating a simple example of their use in R. 
 
-<img src="/man/reference_grids.png" align="left" alt="" width="500" />
+<img src="/man/reference_grids.png" align="center" alt="" width="500" />
