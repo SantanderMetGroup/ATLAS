@@ -4,7 +4,7 @@ library(transformeR)
 
 watch <- UDG.datasets("WFDEI")[["OBSERVATIONS"]]
 
-loginUDG("", "")
+loginUDG(username = "", password = "")
 
 ref <- loadGridData(watch, var = "tas", year = 2000, season = 1, aggr.m = "mean")
 
@@ -29,3 +29,4 @@ out.dir <- ""
 grid2nc(mask, NetCDFOutFile = paste0(out.dir, "land_sea_mask_05degree.nc4"))
 grid2nc(mask1, NetCDFOutFile = paste0(out.dir, "land_sea_mask_1degree.nc4"))
 grid2nc(mask2, NetCDFOutFile = paste0(out.dir, "land_sea_mask_2degree.nc4"))
+
