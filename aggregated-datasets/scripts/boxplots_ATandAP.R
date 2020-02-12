@@ -2,10 +2,10 @@ library(magrittr)
 library(httr)
 
 # https://stackoverflow.com/questions/25485216/how-to-get-list-files-from-a-github-repository-folder-using-r
-myurl <- "https://api.github.com/repos/SantanderMetGroup/IPCC-Atlas/git/trees/devel?recursive=1"
+myurl <- "https://api.github.com/repos/SantanderMetGroup/ATLAS/git/trees/devel?recursive=1"
 req <- GET(myurl) %>% stop_for_status(req)
 filelist <- unlist(lapply(content(req)$tree, "[", "path"), use.names = FALSE)
-root <- "https://raw.githubusercontent.com/SantanderMetGroup/IPCC-Atlas/devel/"
+root <- "https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/"
 
 ref.period <- 1986:2005
 area <- "land"
@@ -85,7 +85,7 @@ computeDeltas <- function(allfiles, modelruns, ref.period, periods, exp, season)
             startyear <- startyear + 1
           }
           rcpk <- rcp[which(rownames(rcp) == startyear) : which(rownames(rcp) == endyear),]
-          (var == "tas") {
+          if (var == "tas") {
             apply(rcpk, MARGIN = 2, FUN = mean, na.rm = TRUE) - histexp
           } else if (var == "pr") {
             (apply(rcpk, MARGIN = 2, FUN = mean, na.rm = TRUE) - histexp) / histexp * 100
