@@ -2,8 +2,8 @@ library(devtools)
 
 # PARAMETER SETTING ---------------------------------------------------------------------------
 
-# Bash script performing the interpolation
-script <- ""
+# Bash script performing the interpolation available at https://github.com/SantanderMetGroup/ATLAS/tree/mai-devel/SOD-scripts, e.g.: 
+script <- "AtlasCDOremappeR_CMIP.sh"
 # Path to the destination mask, available at https://github.com/SantanderMetGroup/ATLAS/tree/master/reference_masks, e.g.:
 refmask <- "land_sea_mask_2degree.nc4"
 # Path to the directory containing the NetCDFs to be interpolated
