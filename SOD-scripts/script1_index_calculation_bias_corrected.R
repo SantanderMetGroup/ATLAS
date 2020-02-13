@@ -1,3 +1,7 @@
+# This script builds on the climate4R framework 
+# https://github.com/SantanderMetGroup/climate4R
+
+
 library(devtools)
 # Data loading and writting libraries:
 library(loadeR)
@@ -8,6 +12,10 @@ library(climate4R.indices)
 ## see https://github.com/SantanderMetGroup/climate4R/tree/master/R !!!!!!!!!!!!!!!!!!!
 source_url("https://github.com/SantanderMetGroup/climate4R/blob/master/R/climate4R.chunk.R?raw=TRUE")
 
+# DATA ACCESS ------------------------------------------------------------------------------------
+# Data is accessed remotely from the Santander Climate Data Service
+# Obtain a user and password at http://meteo.unican.es/udg-wiki
+loginUDG(username = "yourUser", password = "yourPassword")
 
 # USER PARAMETER SETTING: SELECT INDEX, SCENARIO, DATASETS, NUMBER OF CHUNKS AND OUTPUT DIRECTORY--------------
 
