@@ -59,7 +59,7 @@ out.dir <- getwd()
 
 
 
-# AUTHOMATIC PARAMETER DEFINITION BASED ON OBJECT `AtlasIndex`` and COMPUTE INDEX-------------------------------------------------
+# AUTHOMATIC PARAMETER DEFINITION BASED ON OBJECT `AtlasIndex` and COMPUTE INDEX-------------------------------------------------
 
 lapply(1:length(datasets), function(i) {
   # PARAMETER DEFINITION
