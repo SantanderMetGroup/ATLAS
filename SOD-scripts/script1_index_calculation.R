@@ -34,8 +34,8 @@ source_url("https://github.com/SantanderMetGroup/climate4R/blob/master/R/climate
 # | SPI12  | SPI-12                                |            | script1_index_calculation_SPI.R
 # | Rx1day | maximum 1-day precipitation           | mm         | script1_index_calculation.R
 # | Rx5day | maximum 5-day precipitation           | mm         | script1_index_calculation.R
-# | DS*     | dry spell, consecutive dry days CDD  | days       | script1_index_calculation.R
-# | CDD*    | cooling degree days                  | degreedays | script1_index_calculation.R
+# | DS*    | dry spell, consecutive dry days CDD   | days       | script1_index_calculation.R
+# | CDD*   | cooling degree days                   | degreedays | script1_index_calculation.R
 # | HDD    | heating degree days                   | degreedays | script1_index_calculation.R
 # | FD     | frost days                            | days       | script1_index_calculation.R
 # | T21.5  | mean temperature above 21.5degC       | days       | script1_index_calculation.R
