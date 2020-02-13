@@ -62,7 +62,7 @@ out.dir <- getwd()
 
 # PARAMETER DEFINITION BASED ON OBJECT `AtlasIndex` and COMPUTE INDEX -------------------------------------------------
 
-# Match commong datasets among scenarios
+# Match common datasets among scenarios
 datasets1.aux <- gsub("_historical", "", datasets1)
 datasets2.aux <- gsub(paste0("_", scenario), "", datasets2)
 
