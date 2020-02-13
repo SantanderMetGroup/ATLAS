@@ -1,4 +1,4 @@
-# This script builds uses bash interpolation scripts:
+# This script uses bash interpolation scripts:
 # https://github.com/SantanderMetGroup/ATLAS/tree/mai-devel/SOD-scripts
 
 library(devtools)
