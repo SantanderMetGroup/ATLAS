@@ -1,6 +1,6 @@
 library(devtools)
 
-# PARAMETER SETTING ---------------------------------------------------------------------------
+# USER PARAMETER SETTING ---------------------------------------------------------------------------
 
 # Bash script performing the interpolation available at https://github.com/SantanderMetGroup/ATLAS/tree/mai-devel/SOD-scripts, e.g.: 
 script <- "AtlasCDOremappeR_CMIP.sh"
