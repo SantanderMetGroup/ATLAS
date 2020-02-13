@@ -81,7 +81,7 @@ switch(AtlasIndex,
          scale <- 6
        },
        SPI12 = {
-         scale = 12
+         scale <- 12
        })
 # COMPUTE INDEX 
 lapply(1:length(datasets1), function(i) {
