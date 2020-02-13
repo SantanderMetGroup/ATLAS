@@ -52,6 +52,10 @@ dataset.obs <- "ncml_to_the_daily_observational_dataset.ncml"
 datasets1 <- UDG.datasets("CMIP5.*historical")[["CMIP5_AR5_1run"]]
 datasets2 <-  UDG.datasets(paste0("CMIP5.*", scenario))[["CMIP5_AR5_1run"]]
 
+# Years to be corrected
+target.years <- 2006:2100
+
+
 # Number of chunks, e.g.:
 n.chunks <- 2
 
@@ -70,9 +74,8 @@ datasets2.aux <- gsub(paste0("_", scenario), "", datasets2)
 datasets1 <- datasets1[which(datasets1.aux %in% datasets2.aux)]
 datasets2 <- datasets2[which(datasets2.aux %in% datasets1.aux)]
 
-# Years for calibration and years to be corrected
+# Years for calibration
 years.cal <- 1980:2005
-years.target <- 2006:2100
 
 
 lapply(1:length(datasets1), function(x) {
@@ -91,7 +94,7 @@ lapply(1:length(datasets1), function(x) {
            }
              C4R.FUN.args = list(FUN = "funfun",  obs = list(dataset = dataset.obs, var = var, years = years.cal),
                                  hist = list(dataset = datasets1[x], var = var, years = years.cal),
-                                 ssp = list(dataset = datasets2[x], var = var, years = years.target),
+                                 ssp = list(dataset = datasets2[x], var = var, years = target.years),
                                  th = 35)
          },
          TX40bc = {
@@ -106,7 +109,7 @@ lapply(1:length(datasets1), function(x) {
            }
            C4R.FUN.args = list(FUN = "funfun",  obs = list(dataset = dataset.obs, var = var, years = years.cal),
                                hist = list(dataset = datasets1[x], var = var, years = years.cal),
-                               ssp = list(dataset = datasets2[x], var = var, years = years.target),
+                               ssp = list(dataset = datasets2[x], var = var, years = target.years),
                                th = 40)
          })
   # COMPUTE INDEX
@@ -116,7 +119,7 @@ lapply(1:length(datasets1), function(x) {
     index <- climate4R.chunk(n.chunks = n.chunks, C4R.FUN.args = C4R.FUN.args)
     index[["Variable"]][["varName"]] <- AtlasIndex
     index <- redim(index, drop = TRUE)
-    lapply(years.target, function(y) {
+    lapply(target.years, function(y) {
       index.x <- subsetGrid(index, years = y)
       grid2nc(index.x, paste0(out.dir, datasets2[x], "_", AtlasIndex, "_", y, ".nc4"))
     })
