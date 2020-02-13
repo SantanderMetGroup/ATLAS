@@ -11,6 +11,7 @@ The **scripts and code** are available under the [GNU General Public License v3.
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
-**CMIP6 aggregated datasets** build on CMIP6 data and are licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0, following the [CMIP6 Terms of Use](https://pcmdi.llnl.gov/CMIP6/TermsOfUse). Note that some models publish the data under a more open Creative Commons Attribution-ShareAlike 4.0 (which is encouraged by CMIP). Therefore, the results corresponding to this subset of models can be used under this license.
-The same general conditions apply to **CMIP5** data and information on the "unrestricted" or "non-commercial" user of the data for the individual models is provided [here](http://cmip5.whoi.edu/?page_id=339)
+**CMIP6 aggregated datasets** build on CMIP6 data and are licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0), following the [CMIP6 Terms of Use](https://pcmdi.llnl.gov/CMIP6/TermsOfUse). Note that some models publish the data under a more open Creative Commons Attribution-ShareAlike 4.0 (which is encouraged by CMIP). Therefore, the results corresponding to this subset of models can be used under this license.
+
+The same general conditions apply to **CMIP5** data and information on the "unrestricted" or "non-commercial" use of the data for the individual models is provided [here](http://cmip5.whoi.edu/?page_id=339).
 
