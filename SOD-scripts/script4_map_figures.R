@@ -11,20 +11,20 @@ library(geoprocessoR)
 ## see https://github.com/SantanderMetGroup/climate4R/tree/master/R !!!!!!!!!!!!!!!!!!!
 source_url("https://github.com/SantanderMetGroup/climate4R/blob/master/R/climate4R.chunk.R?raw=TRUE")
 
-# PARAMETER SETTING ---------------------------------------------------------------------------
+# USER PARAMETER SETTING ---------------------------------------------------------------------------
 
 # Number of chunks
 n.chunks <- 2
 
-# Variable, scenario and season, reference period, and target future periods, e.g.:
-var <- "tas"
+# Atlas Index, scenario and season, reference period, and target future periods, e.g.:
+AtlasIndex <- "tas"
 scenario <- "rcp85"
 season <- 1:12 #(entire year, for winter: season = c(12, 1, 2))
 years.hist <- 1986:2005
 years.ssp <- list(2021:2040, 2041:2060, 2080:2099)
 
 # Graphical parameters (n <- min value, m <- max value, s, cut value frequency, ct = Brewer color code), e.g.:
-if (var == "tas") {
+if (AtlasIndex != "pr") {
   m <- 8
   n <- 0
   s <- 0.5
@@ -52,10 +52,10 @@ out.dir <- ""
 
 # AUXILIARY FUNCTIONS ---------------------------------------------------------------------------------
 
-aggrfun <- function(grid, var, season = 1:12) {
-  if (var == "tas") {
+aggrfun <- function(grid, AtlasIndex, season = 1:12) {
+  if (AtlasIndex == "tas") {
     gy <- aggregateGrid(subsetGrid(grid, season = season), aggr.y = list(FUN = mean, na.rm = TRUE))
-  } else if (var == "pr") {
+  } else if (AtlasIndex == "pr") {
     gy <- aggregateGrid(subsetGrid(grid, season = season), aggr.y = list(FUN = sum, na.rm = TRUE))
   }
   climatology(gy, clim.fun = list(FUN = mean, na.rm = TRUE))
@@ -81,28 +81,28 @@ agrfun.sig <- function(x, th) {
 
 ## COMPUTE DELTAS -------------------------------------------------------------------------------------------------
 
-dataset.hist <- list.files(source.dir, pattern = paste0("historical_", var, ".ncml"))
-dataset.ssp <- list.files(source.dir, pattern = paste0(scenario,"_", var, ".ncml"))
+dataset.hist <- list.files(source.dir, pattern = paste0("historical_", AtlasIndex, ".ncml"))
+dataset.ssp <- list.files(source.dir, pattern = paste0(scenario,"_", AtlasIndex, ".ncml"))
 
-hist.members <- open.nc(paste0("/oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/data/CMIP5/",var, "/cdo/ensemble/CMIP5_historical_", var, "_2000.nc4"))
-hist.members <- gsub(var.get.nc(hist.members, "member"), pattern = paste0("_historical_", var, ".*"), replacement = "")
+hist.members <- open.nc(paste0("/oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/data/CMIP5/",AtlasIndex, "/cdo/ensemble/CMIP5_historical_", AtlasIndex, "_2000.nc4"))
+hist.members <- gsub(var.get.nc(hist.members, "member"), pattern = paste0("_historical_", AtlasIndex, ".*"), replacement = "")
 
-ssp.members <- open.nc(paste0("/oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/data/CMIP5/",var, "/cdo/ensemble/CMIP5_", scenario, "_", var, "_2020.nc4"))
-ssp.members <- gsub(var.get.nc(ssp.members, "member"), pattern = paste0("_", scenario,"_", var, ".*"), replacement = "")
+ssp.members <- open.nc(paste0("/oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/data/CMIP5/",AtlasIndex, "/cdo/ensemble/CMIP5_", scenario, "_", AtlasIndex, "_2020.nc4"))
+ssp.members <- gsub(var.get.nc(ssp.members, "member"), pattern = paste0("_", scenario,"_", AtlasIndex, ".*"), replacement = "")
 
 hist.m.ind <- which(hist.members %in% ssp.members)
 ssp.m.ind <- which(ssp.members %in% hist.members)
 
-membernames <- open.nc(paste0("/oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/data/CMIP5/",var, "/cdo/ensemble/CMIP5_", scenario, "_", var, "_2020.nc4"))
-membernames <- gsub(var.get.nc(membernames, "member"), pattern = paste0("_", var, ".*"), replacement = "")
+membernames <- open.nc(paste0("/oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/data/CMIP5/",AtlasIndex, "/cdo/ensemble/CMIP5_", scenario, "_", AtlasIndex, "_2020.nc4"))
+membernames <- gsub(var.get.nc(membernames, "member"), pattern = paste0("_", AtlasIndex, ".*"), replacement = "")
 membernames <- membernames[ssp.m.ind]
 nmodels <- length(membernames)
 
 ## Data loading and aggregation
 hist <- climate4R.chunk(n.chunks = 2,
                         C4R.FUN.args = list(FUN = "funfun",
-                                            grid = list(dataset = dataset.hist, var = var),
-                                            var = var,
+                                            grid = list(dataset = dataset.hist, var = AtlasIndex),
+                                            AtlasIndex = AtlasIndex,
                                             season = season,
                                             members = hist.m.ind),
                         loadGridData.args = list(years = years.hist))
@@ -110,15 +110,15 @@ hist <- redim(hist, drop = TRUE); hist <- redim(hist)
 
 ssp <- lapply(years.ssp, function(y) climate4R.chunk(n.chunks = 2,
                         C4R.FUN.args = list(FUN = "funfun",
-                                            grid = list(dataset = dataset.ssp, var = var),
-                                            var = var,
+                                            grid = list(dataset = dataset.ssp, var = AtlasIndex),
+                                            AtlasIndex = AtlasIndex,
                                             season = season,
                                             members = ssp.m.ind),
                         loadGridData.args = list(years = y)))
 ssp <- lapply(ssp, function(x) redim(x, drop = TRUE)); ssp <- lapply(ssp, function(x) redim(x))
 
 ## delta 
-if (var == "tas") {
+if (AtlasIndex != "pr") {
   delta <- lapply(ssp, function(x) gridArithmetics(x, hist, operator = "-"))
 } else {
   delta <- lapply(ssp, function(x) gridArithmetics(x, hist, operator = "-"))
@@ -130,10 +130,10 @@ delta <- lapply(delta, function(x) {
   x
 })
 
-save(delta, file = paste0(out.dir, "delta_", var, "_", scenario, "_",  paste(season, collapse = "-"),".rda"))
+save(delta, file = paste0(out.dir, "delta_", AtlasIndex, "_", scenario, "_",  paste(season, collapse = "-"),".rda"))
 
 
-# load(paste0(out.dir, "delta_", var, "_", scenario, "_",  paste(season, collapse = "-"),".rda"), verbose = TRUE)
+# load(paste0(out.dir, "delta_", AtlasIndex, "_", scenario, "_",  paste(season, collapse = "-"),".rda"), verbose = TRUE)
 
 
 # PLOT MAPS ----------------------------------------------------------------------------------------------------
@@ -178,7 +178,7 @@ p <- spatialPlot(delta.m, set.min = n, set.max = m, at = seq(n, m, s),
 
 
 
-pdf(paste0(out.dir, "/World_delta_", var, "_", scenario, "_",  paste(season, collapse = "-"),".pdf"), width = 10, height = 10)
+pdf(paste0(out.dir, "/World_delta_", AtlasIndex, "_", scenario, "_",  paste(season, collapse = "-"),".pdf"), width = 10, height = 10)
 p
 dev.off()
 
@@ -247,7 +247,7 @@ dev.off()
 #                 # xlim = xlim,
 #                 # ylim = ylim,
 #                 layout = c(1, 3),
-#                 main = paste0(var, " change under the ", scenario, " scenario"),
+#                 main = paste0(AtlasIndex, " change under the ", scenario, " scenario"),
 #                 as.table = TRUE,
 #                 color.theme = ct, #backdrop.theme = "coastline",
 #                 colorkey = list(at = seq(n, m, s),
@@ -260,7 +260,7 @@ dev.off()
 #                 xlim = xlim,
 #                 ylim = ylim,
 #                 layout = c(1, 3),
-#                 main = paste0(var, " change under the ", scenario, " scenario"),
+#                 main = paste0(AtlasIndex, " change under the ", scenario, " scenario"),
 #                 as.table = TRUE,
 #                 color.theme = ct, #backdrop.theme = "coastline",
 #                 colorkey = list(at = seq(n, m, s),
@@ -271,7 +271,7 @@ dev.off()
 #   }
 # })
 # 
-# pdf(paste0(out.dir, "/delta_", var, "_", scenario, "_",  paste(season, collapse = "-"),".pdf"), width = 10, height = 15)
+# pdf(paste0(out.dir, "/delta_", AtlasIndex, "_", scenario, "_",  paste(season, collapse = "-"),".pdf"), width = 10, height = 15)
 # lapply(delta.plot, function(x) {
 #   x
 # })

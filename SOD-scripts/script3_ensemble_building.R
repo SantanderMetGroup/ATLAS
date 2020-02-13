@@ -2,15 +2,15 @@ library(loadeR)
 library(loadeR.2nc)
 library(transformeR)
 
-# PARAMETER SETTING ---------------------------------------------------------------------------
+# USER PARAMETER SETTING ---------------------------------------------------------------------------
 
-# Path to the directory containing the interpolated NetCDFs 
-source.dir <- ""
+# Path to the directory containing the interpolated NetCDFs, e.g.:
+source.dir <- paste0(getwd(), "/interpolatedData")
 # Output path
-out.dir <- ""
+out.dir <- paste0(getwd(), "/ensembleData")
 # Project, variable, scenario and period, e.g.:
 project <- "CMIP5"
-var <- "tasmin"
+AtlasIndex <- "FD"
 scenario <- "historical"; years <- 1950:2005
 
 
@@ -19,7 +19,7 @@ for (i in 1:length(years)) {
   in.files <- list.files(source.dir, pattern = paste0(scenario, ".*", as.character(years[i])), full.names = TRUE)
   models <-  list.files(source.dir, pattern = paste0(scenario, ".*", as.character(years[i])))
   models <- gsub(models, pattern = paste0(project, "_|_", scenario, ".*"), replacement = "")
-  g <- lapply(in.files, function(x) loadGridData(x, var = var))
+  g <- lapply(in.files, function(x) loadGridData(x, var = AtlasIndex))
   ind <- which(unlist(lapply(g, function(x) getShape(x, "time"))) < 12)
   if (length(ind) > 0) { # exception for hadgem
     aux <- subsetGrid(g[-ind][[1]], season = 12)
@@ -29,17 +29,17 @@ for (i in 1:length(years)) {
   }
   mg <- bindGrid(g, dimension = "member")
   mg[["Members"]] <- models
-  file.remove(paste0(out.dir, scenario, "_", var, "_", years[i], ".nc4"))
-  grid2nc(mg, paste0(out.dir, scenario, "_", var, "_", years[i], ".nc4"))
+  file.remove(paste0(out.dir, "/", project, "_", scenario, "_", AtlasIndex, "_", years[i], ".nc4"))
+  grid2nc(mg, paste0(out.dir, "/", project, "_", scenario, "_", AtlasIndex, "_", years[i], ".nc4"))
 }
 
-# NCML construction ------------------------------------------------------------------------------
+# optional NCML construction ------------------------------------------------------------------------------
 
 out.ncml.dir <- paste0(out.dir, "/ncml")
 dir.create(out.ncml.dir)
 makeAggregatedDataset(out.dir, 
-                      ncml.file = paste0(out.ncml.dir, "/", project, "_", scenario, "_", var, ".ncml")
-                      pattern = paste0(scenario, "_", var, "_.*.nc4"))
+                      ncml.file = paste0(out.ncml.dir, "/", project, "_", scenario, "_", AtlasIndex, ".ncml")
+                      pattern = paste0(scenario, "_", AtlasIndex, "_.*.nc4"))
 
 
 
