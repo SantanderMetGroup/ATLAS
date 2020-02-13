@@ -39,7 +39,7 @@ source_url("https://github.com/SantanderMetGroup/climate4R/blob/master/R/climate
 # | HDD    | heating degree days                   | degreedays | script1_index_calculation.R
 # | FD     | frost days                            | days       | script1_index_calculation.R
 # | T21.5   | mean temperature above 21.5degC       | days       | script1_index_calculation.R
-# Indices with * still not ready
+# Indices with * not ready yet
 # Indices TX35bc, TX35bc, SPI6, SPI12 are calculated in scripts 
 # "script1_index_calculation_bias_correction.R" and "script1_index_calculation_SPI.R"
 
