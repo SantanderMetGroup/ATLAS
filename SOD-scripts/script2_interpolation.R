@@ -1,3 +1,6 @@
+# This script builds uses bash interpolation scripts:
+# https://github.com/SantanderMetGroup/ATLAS/tree/mai-devel/SOD-scripts
+
 library(devtools)
 
 # USER PARAMETER SETTING ---------------------------------------------------------------------------

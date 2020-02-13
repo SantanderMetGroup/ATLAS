@@ -1,3 +1,6 @@
+# This script builds on the climate4R framework 
+# https://github.com/SantanderMetGroup/climate4R
+
 library(loadeR)
 library(loadeR.2nc)
 library(transformeR)
