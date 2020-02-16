@@ -1,4 +1,4 @@
-# Warming levels for the IPCC Interactive Atlas
+# Warming levels 
 
 Time periods for which +1.5, +2, +3 and +4 degree Global Warming Levels (GWL) are reached (with respect to pre-industrial 1850-1900 mean value) are computed for CMIP5 and CMIP6 data using 20-year moving windows (for those datasets used in the Interactive Atlas, see [IPCC-Altas Hub inventory](https://github.com/SantanderMetGroup/IPCC-Atlas/tree/devel/AtlasHub-inventory), version 20191211). **Values correspond to the central year (n) of the 20-year window** where the warming is first reached (the GWL period is thus calculated as **[n-9, n+10]**). Cells with **'NA'** indicate that the GWL was not reached before (the central year) 2100. Cells with **'9999'** correspond to models with no available data (for the particular scenario). 
 
