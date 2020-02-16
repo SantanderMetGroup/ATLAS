@@ -18,5 +18,3 @@ Besides the analysis of time-slices (e.g. near-, mid- and long-term, 2021-2040, 
 
 ### Virtual Workspace: The Atlas Hub
 The Atlas Hub is a cloud facility providing virtual workspace for the Climate Change Atlas code and data (with preinstalled software and accesible data). The Atlas Hub is based on **Jupyter** to create and run notebooks on a remote machine where all the software is pre-installed (instructions available in the *Atlas_hub_instructions.pdf* document). The Atlas Hub builds on the R **climate4R** package, allowing for transparent climate data access, collocation, post-processing (including bias correction) and visualization. Instructions to start working with the Hub are available at the document [Atlas_hub_instructions.pdf](https://github.com/SantanderMetGroup/ATLAS/blob/master/man/Atlas_Hub_instructions.pdf) in the *man* folder on this repository.
-
-### **Important**: This initiative contributes to the development of the IPCC AR6 Atlas, but this is not an official IPCC site. This repository is fully managed by the [Santander Met Group](https://github.com/SantanderMetGroup) and it is only intended to keep track of internal research activities.
