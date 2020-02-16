@@ -1,4 +1,4 @@
-## Spatial averages of CMIP6 and CMIP5 projections over the updated AR5 reference regions
+## CMIP6 and CMIP5 spatial averages over the reference regions
 
 Spatially aggregated monthly results over the different reference regions have been calculated for all CMIP6 and CMIP5 models (a single run per model) available in the Altas Hub (see the [inventories](https://github.com/SantanderMetGroup/IPCC-Atlas/tree/devel/AtlasHub-inventory), CMIP6Amon_Atlas and CMIP5_Atlas, versions 20191211) separately for land, sea, and land-sea gridboxes, and are stored in the *data* folder.
 
