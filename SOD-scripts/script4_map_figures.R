@@ -11,6 +11,8 @@ library(geoprocessoR)
 ## see https://github.com/SantanderMetGroup/climate4R/tree/master/R !!!!!!!!!!!!!!!!!!!
 source_url("https://github.com/SantanderMetGroup/climate4R/blob/master/R/climate4R.chunk.R?raw=TRUE")
 
+
+
 # USER PARAMETER SETTING ---------------------------------------------------------------------------
 
 # Number of chunks
@@ -48,6 +50,8 @@ source.dir <- ""
 
 # Output path to save the .rda object of the computed deltas and to export the pdf of the figure
 out.dir <- ""
+
+
 
 
 
