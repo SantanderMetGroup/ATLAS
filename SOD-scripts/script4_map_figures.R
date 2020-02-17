@@ -138,19 +138,23 @@ agrfun.sig <- function(x, th) {
 
 
 ## WORLD MAP 
+# spatial objects (regions and coastline)
 regs <- as(regions, "SpatialPolygons")
 coast <- readOGR(coast.dir)
 proj4string(coast) <- proj4string(regs)
+
+# project to Robinson
 rregs <- spTransform(regs, CRS("+proj=robin +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs"))
 ccoast <- spTransform(coast, CRS("+proj=robin +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs"))
-
 delta.p <- lapply(delta, function(x) warpGrid(x, original.CRS = CRS("+init=epsg:4326"), new.CRS = CRS("+proj=robin +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs")))
 
+# prepare the hatching spatial object
 l1 <- lapply(1:length(delta.p), function(x){
   deltaagr1 <- aggregateGrid(delta.p[[x]], aggr.mem = list(FUN = agrfun.cons, th = th))
   c(map.hatching(clim = climatology(deltaagr1), threshold = 0.5, condition = "LT", density = 2), "which" = x, lwd = 0.6)
 })
 
+# calculate the ensemble mean for all periods
 delta.w <- lapply(1:length(delta.p), function(x){
   deltamean <- aggregateGrid(delta.p[[x]], aggr.mem = list(FUN = "mean", na.rm = TRUE))
   deltamean$Dates$start <- "2021-01-16 00:00:00 GMT"
@@ -158,9 +162,11 @@ delta.w <- lapply(1:length(delta.p), function(x){
   deltamean
 })
 
+# manage periods as members
 delta.m <- bindGrid(delta.w, dimension = "member")
-delta.m[["Members"]] <- paste0("p", unlist(lapply(years.ssp, function(l) paste(range(l), collapse = "_"))), "_", nmodels, "_models")
+delta.m[["Members"]] <- paste0("p", unlist(lapply(years.ssp, function(l) paste(range(l), collapse = "_"))), "_", length(membernames), "_models")
 
+# plot
 p <- spatialPlot(delta.m, set.min = n, set.max = m, at = seq(n, m, s),
                  layout = c(1, length(years.ssp)),
                  as.table = TRUE,
@@ -175,7 +181,7 @@ p <- spatialPlot(delta.m, set.min = n, set.max = m, at = seq(n, m, s),
 
 
 
-
+# Export the figure
 pdf(paste0(out.dir, "/World_delta_", AtlasIndex, "_", scenario, "_",  paste(season, collapse = "-"),".pdf"), width = 10, height = 10)
 p
 dev.off()
