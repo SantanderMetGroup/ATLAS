@@ -24,7 +24,7 @@ AtlasIndex <- "tas"
 scenario <- "rcp85"
 season <- 1:12 #(entire year, for winter: season = c(12, 1, 2))
 years.hist <- 1986:2005
-years.ssp <- list(2021:2040, 2041:2060, 2080:2099)
+years.ssp <- list(2021:2040, 2041:2060, 2080:2100)
 
 # Graphical parameters (n <- min value, m <- max value, s, cut value frequency, ct = Brewer color code), e.g.:
 if (AtlasIndex != "pr") {
@@ -56,24 +56,27 @@ out.dir <- ""
 
 ## COMPUTE DELTAS -------------------------------------------------------------------------------------------------
 
-dataset.hist <- list.files(source.dir, pattern = paste0("historical_", AtlasIndex, ".ncml"))
-dataset.ssp <- list.files(source.dir, pattern = paste0(scenario,"_", AtlasIndex, ".ncml"))
+dataset.hist <- list.files(source.dir, pattern = paste0("historical_", AtlasIndex, ".ncml"), full.names = TRUE)
+dataset.ssp <- list.files(source.dir, pattern = paste0(scenario,"_", AtlasIndex, ".ncml"), full.names = TRUE)
 
-hist.members <- open.nc(paste0("/oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/data/CMIP5/",AtlasIndex, "/cdo/ensemble/CMIP5_historical_", AtlasIndex, "_2000.nc4"))
-hist.members <- gsub(var.get.nc(hist.members, "member"), pattern = paste0("_historical_", AtlasIndex, ".*"), replacement = "")
-
-ssp.members <- open.nc(paste0("/oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/data/CMIP5/",AtlasIndex, "/cdo/ensemble/CMIP5_", scenario, "_", AtlasIndex, "_2020.nc4"))
-ssp.members <- gsub(var.get.nc(ssp.members, "member"), pattern = paste0("_", scenario,"_", AtlasIndex, ".*"), replacement = "")
-
+# Retain common members among scenarios
+hist.members <- dataInventory(dataset.hist)[[AtlasIndex]][["Dimensions"]][["member"]][["Values"]]
+ssp.members <- dataInventory(dataset.ssp)[[AtlasIndex]][["Dimensions"]][["member"]][["Values"]]
 hist.m.ind <- which(hist.members %in% ssp.members)
 ssp.m.ind <- which(ssp.members %in% hist.members)
 
-membernames <- open.nc(paste0("/oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/data/CMIP5/",AtlasIndex, "/cdo/ensemble/CMIP5_", scenario, "_", AtlasIndex, "_2020.nc4"))
-membernames <- gsub(var.get.nc(membernames, "member"), pattern = paste0("_", AtlasIndex, ".*"), replacement = "")
-membernames <- membernames[ssp.m.ind]
-nmodels <- length(membernames)
+membernames <- ssp.members[ssp.m.ind]
 
 ## Data loading and aggregation
+funfun <- function(grid, var, season = 1:12) {
+  if (var == "tas") {
+    gy <- aggregateGrid(subsetGrid(grid, season = season), aggr.y = list(FUN = mean, na.rm = TRUE))
+  } else if (var == "pr") {
+    gy <- aggregateGrid(subsetGrid(grid, season = season), aggr.y = list(FUN = sum, na.rm = TRUE))
+  }
+  climatology(gy, clim.fun = list(FUN = mean, na.rm = TRUE))
+}
+
 hist <- climate4R.chunk(n.chunks = 2,
                         C4R.FUN.args = list(FUN = "funfun",
                                             grid = list(dataset = dataset.hist, var = AtlasIndex),
@@ -92,7 +95,7 @@ ssp <- lapply(years.ssp, function(y) climate4R.chunk(n.chunks = 2,
                         loadGridData.args = list(years = y)))
 ssp <- lapply(ssp, function(x) redim(x, drop = TRUE)); ssp <- lapply(ssp, function(x) redim(x))
 
-## delta 
+## compute delta 
 if (AtlasIndex != "pr") {
   delta <- lapply(ssp, function(x) gridArithmetics(x, hist, operator = "-"))
 } else {
@@ -105,24 +108,13 @@ delta <- lapply(delta, function(x) {
   x
 })
 
-save(delta, file = paste0(out.dir, "delta_", AtlasIndex, "_", scenario, "_",  paste(season, collapse = "-"),".rda"))
-
-
+# save(delta, file = paste0(out.dir, "delta_", AtlasIndex, "_", scenario, "_",  paste(season, collapse = "-"),".rda"))
 # load(paste0(out.dir, "delta_", AtlasIndex, "_", scenario, "_",  paste(season, collapse = "-"),".rda"), verbose = TRUE)
 
 
 # PLOT MAPS ----------------------------------------------------------------------------------------------------
 
-# AUXILIARY FUNCTIONS ---------------------------------------------------------------------------------
-
-aggrfun <- function(grid, AtlasIndex, season = 1:12) {
-  if (AtlasIndex == "tas") {
-    gy <- aggregateGrid(subsetGrid(grid, season = season), aggr.y = list(FUN = mean, na.rm = TRUE))
-  } else if (AtlasIndex == "pr") {
-    gy <- aggregateGrid(subsetGrid(grid, season = season), aggr.y = list(FUN = sum, na.rm = TRUE))
-  }
-  climatology(gy, clim.fun = list(FUN = mean, na.rm = TRUE))
-}
+## AUXILIARY FUNCTIONS (for hatching)
 
 agrfun.cons <- function(x, th) {
   mp <- mean(x, na.rm = TRUE)

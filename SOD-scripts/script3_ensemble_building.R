@@ -36,7 +36,7 @@ for (i in 1:length(years)) {
   grid2nc(mg, paste0(out.dir, "/", project, "_", scenario, "_", AtlasIndex, "_", years[i], ".nc4"))
 }
 
-# optional NCML construction ------------------------------------------------------------------------------
+# NCML construction ------------------------------------------------------------------------------
 
 out.ncml.dir <- paste0(out.dir, "/ncml")
 dir.create(out.ncml.dir)
