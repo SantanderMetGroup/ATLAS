@@ -57,7 +57,14 @@ AtlasIndex <- "FD"
 
 
 #select datasets, e.g.:
-datasets <- UDG.datasets("CMIP5")[["CMIP5_AR5_1run"]]
+datasets <- UDG.datasets()[["CMIP5_AR5_1run"]]
+#or, e.g.:
+# datasets <- UDG.datasets()[["CMIP6_1run"]]
+
+# to use the same subset of datasets used in the Atlas so far, use the *.csv files 
+# of the inventories () 
+# and read the first column as follows:
+# datasets <- read.csv("AtlasHub-inventory/CMIP5_Atlas_20191211.csv")[,1]
 
 # Number of chunks, e.g.:
 n.chunks <- 2

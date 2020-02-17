@@ -59,6 +59,13 @@ scenario <- "rcp85"
 datasets1 <- UDG.datasets("CMIP5.*historical")[["CMIP5_AR5_1run"]]
 datasets2 <-  UDG.datasets(paste0("CMIP5.*", scenario))[["CMIP5_AR5_1run"]]
 
+# to use the subset of datasets used in the Atlas so far, use the *.csv files 
+# of the inventories () 
+# and read the first column as follows:
+# datasets <- read.csv("AtlasHub-inventory/CMIP5_Atlas_20191211.csv")[,1]
+# datasets1 <- grep(datasets, pattern = "historical", value = TRUE)
+# datasets2 <- grep(datasets, pattern = scenario, value = TRUE)
+
 # Number of chunks, e.g.:
 n.chunks <- 2
 
