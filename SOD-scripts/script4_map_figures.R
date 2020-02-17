@@ -25,6 +25,19 @@ season <- 1:12 #(entire year, for winter: season = c(12, 1, 2))
 years.hist <- 1986:2005
 years.ssp <- list(2021:2040, 2041:2060, 2080:2100)
 
+# Path of the shapefile of World coastlines, e.g. 
+## available for download: https://github.com/SantanderMetGroup/ATLAS/tree/devel/man !!!!!!!!!!!!!!!!!!!
+coast.dir <- "WORLD_coastline.shp"
+
+# Level of aggrement of the models, e.g.:
+th <- 80 # 80%
+
+# Source path where the ncml-s are
+source.dir <- ""
+
+# Output path to save the .rda object of the computed deltas and to export the pdf of the figure
+out.dir <- ""
+
 # Graphical parameters (n <- min value, m <- max value, s, cut value frequency, ct = Brewer color code), e.g.:
 if (AtlasIndex != "pr") {
   m <- 8
@@ -38,18 +51,7 @@ if (AtlasIndex != "pr") {
   ct <- "BrBG"
 }
 
-# Path of the shapefile of World coastlines, e.g. 
-## available for download: https://github.com/SantanderMetGroup/ATLAS/tree/devel/man !!!!!!!!!!!!!!!!!!!
-coast.dir <- "WORLD_coastline.shp"
 
-# Level of aggrement of the models, e.g.:
-th <- 80 # 80%
-
-# Source path where the ncml-s are
-source.dir <- ""
-
-# Output path to save the .rda object of the computed deltas and to export the pdf of the figure
-out.dir <- ""
 
 
 
