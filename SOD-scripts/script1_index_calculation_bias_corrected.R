@@ -76,7 +76,7 @@ target.years <- 2006:2100
 
 
 # Number of chunks, e.g.:
-n.chunks <- 2
+n.chunks <- 10
 
 #output path, e.g.
 out.dir <- getwd()
