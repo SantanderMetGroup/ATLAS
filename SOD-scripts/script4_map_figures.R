@@ -53,34 +53,6 @@ source.dir <- ""
 out.dir <- ""
 
 
-# AUXILIARY FUNCTIONS ---------------------------------------------------------------------------------
-
-aggrfun <- function(grid, AtlasIndex, season = 1:12) {
-  if (AtlasIndex == "tas") {
-    gy <- aggregateGrid(subsetGrid(grid, season = season), aggr.y = list(FUN = mean, na.rm = TRUE))
-  } else if (AtlasIndex == "pr") {
-    gy <- aggregateGrid(subsetGrid(grid, season = season), aggr.y = list(FUN = sum, na.rm = TRUE))
-  }
-  climatology(gy, clim.fun = list(FUN = mean, na.rm = TRUE))
-}
-
-agrfun.cons <- function(x, th) {
-  mp <- mean(x, na.rm = TRUE)
-  if (is.na(mp)){
-    1
-  } else {
-    if (mp > 0) {
-      as.numeric(sum(as.numeric(x > 0), na.rm = TRUE) > as.integer(length(x) * th / 100))
-    } else {
-      as.numeric(sum(as.numeric(x < 0), na.rm = TRUE) > as.integer(length(x) * th / 100))
-    }
-  }
-}
-
-agrfun.sig <- function(x, th) {
-  as.numeric((mean(x, na.rm = TRUE)/sd(x, na.rm = TRUE)) > 1)
-}
-
 
 ## COMPUTE DELTAS -------------------------------------------------------------------------------------------------
 
@@ -141,6 +113,34 @@ save(delta, file = paste0(out.dir, "delta_", AtlasIndex, "_", scenario, "_",  pa
 
 # PLOT MAPS ----------------------------------------------------------------------------------------------------
 
+# AUXILIARY FUNCTIONS ---------------------------------------------------------------------------------
+
+aggrfun <- function(grid, AtlasIndex, season = 1:12) {
+  if (AtlasIndex == "tas") {
+    gy <- aggregateGrid(subsetGrid(grid, season = season), aggr.y = list(FUN = mean, na.rm = TRUE))
+  } else if (AtlasIndex == "pr") {
+    gy <- aggregateGrid(subsetGrid(grid, season = season), aggr.y = list(FUN = sum, na.rm = TRUE))
+  }
+  climatology(gy, clim.fun = list(FUN = mean, na.rm = TRUE))
+}
+
+agrfun.cons <- function(x, th) {
+  mp <- mean(x, na.rm = TRUE)
+  if (is.na(mp)){
+    1
+  } else {
+    if (mp > 0) {
+      as.numeric(sum(as.numeric(x > 0), na.rm = TRUE) > as.integer(length(x) * th / 100))
+    } else {
+      as.numeric(sum(as.numeric(x < 0), na.rm = TRUE) > as.integer(length(x) * th / 100))
+    }
+  }
+}
+
+agrfun.sig <- function(x, th) {
+  as.numeric((mean(x, na.rm = TRUE)/sd(x, na.rm = TRUE)) > 1)
+}
+
 
 ## WORLD MAP 
 regs <- as(regions, "SpatialPolygons")
@@ -184,99 +184,4 @@ p <- spatialPlot(delta.m, set.min = n, set.max = m, at = seq(n, m, s),
 pdf(paste0(out.dir, "/World_delta_", AtlasIndex, "_", scenario, "_",  paste(season, collapse = "-"),".pdf"), width = 10, height = 10)
 p
 dev.off()
-
-
-
-# # REGION BY REGIONS --------------------------------------
-# 
-# AR6_WGI_AtlasSynthesisRegions <- get(load("Atlas_synthregions.rda", verbose = T))
-# plot(AR6_WGI_AtlasSynthesisRegions)
-# proj4string(AR6_WGI_AtlasSynthesisRegions) <- CRS("+init=epsg:4326")
-# regs <- as(regions, "SpatialPolygons")
-# coast <- readOGR(coast.dir)
-# proj4string(coast) <- proj4string(AR6_WGI_AtlasSynthesisRegions)
-# 
-# delta.regions <- lapply(1:length(AR6_WGI_AtlasSynthesisRegions), function(r){
-#   lapply(delta, function(x){
-#     attr(x[["xyCoords"]], "projection") <- "+init=epsg:4326"
-#     overGrid(x, AR6_WGI_AtlasSynthesisRegions[r], subset = TRUE)
-#   })
-# })
-# names(delta.regions) <- names(AR6_WGI_AtlasSynthesisRegions)
-# 
-# 
-# dens <- ceiling(c(2, 4, 2, 3, 2, 4, 4, 2, 2, 2, 2, 2, 2)/2)
-# delta.plot <- lapply(1:length(delta.regions), function(r){
-#   z <- delta.regions[[r]]
-#   dm <- lapply(1:length(z), function(x){
-#     deltamean <- aggregateGrid(z[[x]], aggr.mem = list(FUN = "mean", na.rm = TRUE))
-#     deltamean$Dates$start <- "2021-01-16 00:00:00 GMT"
-#     deltamean$Dates$end <- "2100-12-16 00:00:00 GMT"
-#     deltamean
-#   })
-#   ccoast <- coast
-#   rregs <- regs
-#   dmp <- bindGrid(dm, dimension = "member")
-#   dmp[["Members"]] <- paste0("p", unlist(lapply(years.ssp, function(l) paste(range(l), collapse = "_"))), "_", nmodels, "_models")
-#   xlim = AR6_WGI_AtlasSynthesisRegions[r]@bbox["x",]
-#   ylim = AR6_WGI_AtlasSynthesisRegions[r]@bbox["y",]
-#   if (r == 1) projstring <- "+proj=stere +lat_0=90 +lat_ts=71 +lon_0=0 +k=1 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs"
-#   if (r == length(delta.regions)) projstring <- "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +k=1 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs "
-#   if (r == 1 | r == length(delta.regions)) {
-#     z <- lapply(1:length(z), function(x) {
-#       redim(
-#         redim(
-#         upscaleGrid(
-#         warpGrid(z[[x]], new.CRS = CRS(projstring)), times = 10, aggr.fun = list(FUN = "mean", na.rm = TRUE)), drop = TRUE))
-#     })
-#     dmp <- warpGrid(dmp, new.CRS = CRS(projstring))
-#     dmp <- redim(redim(upscaleGrid(dmp, times = 10, aggr.fun = list(FUN = "mean", na.rm = TRUE)), drop = TRUE))
-#     ccoast <- spTransform(coast, CRS(projstring))
-#     rregs <- spTransform(regs, CRS(projstring))
-#     xlim = NULL
-#     ylim = NULL
-#   }
-#   l1 <- lapply(1:length(z), function(x){
-#     deltaagr1 <- aggregateGrid(z[[x]], aggr.mem = list(FUN = agrfun.cons, th = th))
-#     c(map.hatching(clim = climatology(deltaagr1), angle = "-45", threshold = 0.5, condition = "LT", density = dens[r]), "which" = x)
-#   })
-#   # l2 <- lapply(1:length(z), function(x){
-#   #   deltaagr1 <- aggregateGrid(z[[x]], aggr.mem = list(FUN = agrfun.sig, th = th))
-#   #   c(map.hatching(clim = climatology(deltaagr1), angle = "45", threshold = 0.5, condition = "LT", density = dens[r]), "which" = x)
-#   # })
-#   dmp <- dmp[1:5]
-#   if (r == 1 | r == length(delta.regions)) {
-#     spatialPlot(dmp, set.min = n, set.max = m, at = seq(n, m, s),
-#                 # xlim = xlim,
-#                 # ylim = ylim,
-#                 layout = c(1, 3),
-#                 main = paste0(AtlasIndex, " change under the ", scenario, " scenario"),
-#                 as.table = TRUE,
-#                 color.theme = ct, #backdrop.theme = "coastline",
-#                 colorkey = list(at = seq(n, m, s),
-#                                 labels = list(at = seq(n, m, s*2),
-#                                               labels = c(as.character(seq(n, m, s*2)[-c(length(seq(n, m, s*2)))]),
-#                                                          paste0(">=", seq(n, m, s*2)[length(seq(n, m, s*2))])))),
-#                 sp.layout = list(list(ccoast, first = FALSE), l1,  list(rregs, first = FALSE, lwd = 1.5)))
-#   } else {
-#     spatialPlot(dmp, set.min = n, set.max = m, at = seq(n, m, s),
-#                 xlim = xlim,
-#                 ylim = ylim,
-#                 layout = c(1, 3),
-#                 main = paste0(AtlasIndex, " change under the ", scenario, " scenario"),
-#                 as.table = TRUE,
-#                 color.theme = ct, #backdrop.theme = "coastline",
-#                 colorkey = list(at = seq(n, m, s),
-#                                 labels = list(at = seq(n, m, s*2),
-#                                               labels = c(as.character(seq(n, m, s*2)[-c(length(seq(n, m, s*2)))]),
-#                                                          paste0(">=", seq(n, m, s*2)[length(seq(n, m, s*2))])))),
-#                 sp.layout = list(list(ccoast, first = FALSE), l1,  list(rregs, first = FALSE, lwd = 1.5)))
-#   }
-# })
-# 
-# pdf(paste0(out.dir, "/delta_", AtlasIndex, "_", scenario, "_",  paste(season, collapse = "-"),".pdf"), width = 10, height = 15)
-# lapply(delta.plot, function(x) {
-#   x
-# })
-# dev.off()
 
