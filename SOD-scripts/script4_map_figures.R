@@ -3,9 +3,6 @@
 
 library(loadeR)
 library(visualizeR)
-library(transformeR)
-library(raster)
-library(RNetCDF)
 library(sp)
 library(rgdal)
 library(geoprocessoR)
