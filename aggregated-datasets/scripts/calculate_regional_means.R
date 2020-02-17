@@ -6,24 +6,34 @@ library(visualizeR)
 library(geoprocessoR)
 
 
+
+project <- "CMIP6Amon" # CMIP5
+
+scenario <- "historical" # ssp126, ssp245, ssp585, rcp26, rcp45, rcp85
+
+# Variable
+var <- "pr" # tas
+
+# Path to the destination mask, available at https://github.com/SantanderMetGroup/ATLAS/tree/master/reference_masks, e.g.:
+refmask <- "land_sea_mask_1.nc4"
+
+# Path to the NetCDFs of the original masks (variable sftlf), e.g.:
+mask.dir <- paste0(getwd(), "/masks")
+
+# Path to the directory containing the NetCDFs of monthly data (each file is 1 model, 1 year)
+source.dir <- getwd()
+# Output path, e.g.:
+out.dir <- getwd()
+
 regs <- as(regions, "SpatialPolygons")
-
-project <- "CMIP6Amon"
-scenario <- "historical"
-var <- "pr"
-
-root.dir <- ""
-
-out.dir <- "
-
-orig.masks <- list.files(paste0(root.dir, ""))
-mask <- loadGridData("land_sea_mask_1.nc4", var = "sftlf")
+orig.masks <- list.files(mask.dir)
+mask <- loadGridData(refmask, var = "sftlf")
 maskland <- binaryGrid(mask, condition = "GT", threshold = 0.999, values = c(NA, 1))
 masksea <- binaryGrid(mask, condition = "LT", threshold = 0.001, values = c(NA, 1))
 attr(maskland$xyCoords, "projection") <- "+init=epsg:4326"
 attr(masksea$xyCoords, "projection") <- "+init=epsg:4326"
 
-lf <-  list.files(paste0(root.dir, ""), full.names = TRUE, pattern = scenario)
+lf <-  list.files(paste0(source.dir), full.names = TRUE, pattern = scenario)
 filename <- gsub(lf, pattern = ".*//", replacement = "")
 mods <- unique(gsub(filename, pattern = paste0("_", var, ".*"), replacement = ""))
 
