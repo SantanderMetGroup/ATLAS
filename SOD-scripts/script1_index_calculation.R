@@ -61,10 +61,14 @@ datasets <- UDG.datasets()[["CMIP5_AR5_1run"]]
 #or, e.g.:
 # datasets <- UDG.datasets()[["CMIP6_1run"]]
 
-# to use the same subset of datasets used in the Atlas so far, use the *.csv files 
-# of the inventories () 
-# and read the first column as follows:
-# datasets <- read.csv("AtlasHub-inventory/CMIP5_Atlas_20191211.csv")[,1]
+# # TO USE THE SAME SET OF MODELS USED IN THE ATLAS uncomment this paragraph. 
+# # Use the *.csv files of the inventories 
+# # (https://github.com/SantanderMetGroup/ATLAS/tree/devel/AtlasHub-inventory).
+# # This is the root of the ATLAS repo content:
+# root <- "https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/"
+# # read the first column of the desired *.csv file (e.g. CMIP5_Atlas_20191211.csv) as follows:
+# file <- "AtlasHub-inventory/CMIP5_Atlas_20191211.csv"
+# datasets <- read.csv(paste0(root, file))[,1]
 
 # Number of chunks, e.g.:
 n.chunks <- 2

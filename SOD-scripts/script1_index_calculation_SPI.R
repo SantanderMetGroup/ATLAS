@@ -59,10 +59,14 @@ scenario <- "rcp85"
 datasets1 <- UDG.datasets("CMIP5.*historical")[["CMIP5_AR5_1run"]]
 datasets2 <-  UDG.datasets(paste0("CMIP5.*", scenario))[["CMIP5_AR5_1run"]]
 
-# to use the subset of datasets used in the Atlas so far, use the *.csv files 
-# of the inventories () 
-# and read the first column as follows:
-# datasets <- read.csv("AtlasHub-inventory/CMIP5_Atlas_20191211.csv")[,1]
+# # TO USE THE SAME SET OF MODELS USED IN THE ATLAS uncomment this paragraph. 
+# # Use the *.csv files of the inventories 
+# # (https://github.com/SantanderMetGroup/ATLAS/tree/devel/AtlasHub-inventory).
+# # This is the root of the ATLAS repo content:
+# root <- "https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/"
+# # read the first column of the desired *.csv file (e.g. CMIP5_Atlas_20191211.csv) as follows:
+# file <- "AtlasHub-inventory/CMIP5_Atlas_20191211.csv"
+# datasets <- read.csv(paste0(root, file))[,1]
 # datasets1 <- grep(datasets, pattern = "historical", value = TRUE)
 # datasets2 <- grep(datasets, pattern = scenario, value = TRUE)
 
