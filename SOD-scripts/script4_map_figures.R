@@ -69,10 +69,10 @@ ssp.m.ind <- which(ssp.members %in% hist.members)
 membernames <- ssp.members[ssp.m.ind]
 
 ## Data loading and aggregation
-funfun <- function(grid, var, season = 1:12) {
-  if (var == "tas") {
+funfun <- function(grid, AtlasIndex, season = 1:12) {
+  if (AtlasIndex != "pr") {
     gy <- aggregateGrid(subsetGrid(grid, season = season), aggr.y = list(FUN = mean, na.rm = TRUE))
-  } else if (var == "pr") {
+  } else if (AtlasIndex == "pr") {
     gy <- aggregateGrid(subsetGrid(grid, season = season), aggr.y = list(FUN = sum, na.rm = TRUE))
   }
   climatology(gy, clim.fun = list(FUN = mean, na.rm = TRUE))
