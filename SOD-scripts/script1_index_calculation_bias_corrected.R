@@ -134,7 +134,7 @@ lapply(1:length(datasets1), function(x) {
   # COMPUTE INDEX
   di <- dataInventory(datasets1[x])
   di2 <- dataInventory(datasets2[x])
-  if (all(unlist(lapply(var, function(v) any(names(di) %in% v)))) | all(unlist(lapply(var, function(v) any(names(di2) %in% v))))) {
+  if (all(unlist(lapply(var, function(v) any(names(di) %in% v)))) & all(unlist(lapply(var, function(v) any(names(di2) %in% v))))) {
     index <- climate4R.chunk(n.chunks = n.chunks, C4R.FUN.args = C4R.FUN.args)
     index[["Variable"]][["varName"]] <- AtlasIndex
     index <- redim(index, drop = TRUE)

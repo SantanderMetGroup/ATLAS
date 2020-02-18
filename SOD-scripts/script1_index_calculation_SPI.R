@@ -106,7 +106,7 @@ switch(AtlasIndex,
 lapply(1:length(datasets1), function(i) {
   di <- dataInventory(datasets1[i])
   di2 <- dataInventory(datasets2[i])
-  if (any(names(di) %in% "pr") | any(names(di2) %in% "pr")) {
+  if (any(names(di) %in% "pr") & any(names(di2) %in% "pr")) {
     ch <- strsplit(di[["pr"]]$Dimensions$time$Date_range, "-")[[1]][c(1,4)]
     years <- as.numeric(ch[1]):as.numeric(ch[2])
     years <- years[which(years < 2101)]
