@@ -39,18 +39,17 @@ ind <- numeric()
 for (i in 1:nrow(hub)) {
   k <- grep(x.hub[i], esgf[,1])
   if (length(k) < 1) k <- NA
-  ind[i] <- k
   if (!is.na(k)) {
     for (j in nam) {
-      exists <- esgf[ind[i], j]
+      exists <- esgf[k, j]
       if (exists) {
         if (hub[i, j]) {
-          diff[ind[i], j] <- 1L
+          diff[k, j] <- 1L
         } else {
-          diff[ind[i], j] <- 0L
+          diff[k, j] <- 0L
         }
       } else {
-        diff[ind[i], j] <- NA
+        diff[k, j] <- NA
       }
     }
   }
