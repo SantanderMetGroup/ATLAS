@@ -1,14 +1,10 @@
 #!/bin/bash
 
-source ../../esgf.sh
-
 frequencies="day"
 # no hursmin, hussmin, tdps, dpds, wss
 variables="hurs,huss,uas,vas,tas,tasmax,ps,psl"
-query="project=CORDEX&product=output&time_frequency=${frequencies}&variable=${variables}"
-inventory="cordex_FWI_variables_$(date +%Y-%m-%d).csv"
 
-query_esgf "${query}" | jq --slurp ' 
+../../esgf-search project=CORDEX product=output time_frequency=${frequencies} variable=${variables} | jq --slurp ' 
 	map(. + map_values(arrays|first)) | 
 	map(. + {
 		group: [
@@ -30,4 +26,4 @@ query_esgf "${query}" | jq --slurp '
 	map(del(.variables)|del(.crs))' | jq -r '
 	(map(keys) | add | unique) as $cols |
 	map(. as $row | $cols | map($row[.])) as $rows |
-	$cols,$rows[] | @csv' |sort -r > "$inventory"
+	$cols,$rows[] | @csv' |sort -r > cordex_FWI_variables.csv

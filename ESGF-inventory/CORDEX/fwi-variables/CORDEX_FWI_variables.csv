@@ -85,6 +85,7 @@
 "CORDEX.output.WAS-22.CLMcom-ETH.NCC-NorESM1-M.rcp85.r1i1p1.COSMO-crCLIM-v1-1.v1.day",true,true,true,true,true,true,true,true
 "CORDEX.output.WAS-22.CLMcom-ETH.NCC-NorESM1-M.historical.r1i1p1.COSMO-crCLIM-v1-1.v1.day",true,true,true,true,true,true,true,true
 "CORDEX.output.WAS-22.CLMcom-ETH.MPI-M-MPI-ESM-LR.rcp85.r1i1p1.COSMO-crCLIM-v1-1.v1.day",true,true,true,true,true,true,true,true
+"CORDEX.output.WAS-22.CLMcom-ETH.MPI-M-MPI-ESM-LR.rcp26.r1i1p1.COSMO-crCLIM-v1-1.v1.day",true,true,true,true,true,true,true,true
 "CORDEX.output.WAS-22.CLMcom-ETH.MPI-M-MPI-ESM-LR.historical.r1i1p1.COSMO-crCLIM-v1-1.v1.day",true,true,true,true,true,true,true,true
 "CORDEX.output.WAS-22.CLMcom-ETH.ICHEC-EC-EARTH.rcp85.r12i1p1.COSMO-crCLIM-v1-1.v1.day",true,true,true,true,true,true,true,true
 "CORDEX.output.WAS-22.CLMcom-ETH.ICHEC-EC-EARTH.historical.r12i1p1.COSMO-crCLIM-v1-1.v1.day",true,true,true,true,true,true,true,true
@@ -512,6 +513,7 @@
 "CORDEX.output.EUR-11.CLMcom-ETH.NCC-NorESM1-M.rcp85.r1i1p1.COSMO-crCLIM-v1-1.v1.day",true,true,true,true,true,true,true,true
 "CORDEX.output.EUR-11.CLMcom-ETH.NCC-NorESM1-M.historical.r1i1p1.COSMO-crCLIM-v1-1.v1.day",true,true,true,true,true,true,true,true
 "CORDEX.output.EUR-11.CLMcom-ETH.MPI-M-MPI-ESM-LR.rcp85.r1i1p1.COSMO-crCLIM-v1-1.v1.day",true,true,true,true,true,true,true,true
+"CORDEX.output.EUR-11.CLMcom-ETH.MPI-M-MPI-ESM-LR.historical.r2i1p1.COSMO-crCLIM-v1-1.v1.day",true,true,true,true,true,true,true,true
 "CORDEX.output.EUR-11.CLMcom-ETH.MPI-M-MPI-ESM-LR.historical.r1i1p1.COSMO-crCLIM-v1-1.v1.day",true,true,true,true,true,true,true,true
 "CORDEX.output.EUR-11.CLMcom-ETH.ICHEC-EC-EARTH.historical.r12i1p1.COSMO-crCLIM-v1-1.v1.day",true,true,true,true,true,true,true,true
 "CORDEX.output.EUR-11.CLMcom-ETH.ECMWF-ERAINT.evaluation.r1i1p1.COSMO-crCLIM-v1-1.v1.day",true,true,true,true,true,true,true,true
@@ -554,6 +556,11 @@
 "CORDEX.output.CAS-44.BOUN.MOHC-HadGEM2-ES.rcp45.r1i1p1.RegCM4-3.v5.day",false,false,false,false,true,true,false,false
 "CORDEX.output.CAS-44.BOUN.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-3.v5.day",false,false,false,false,true,true,false,false
 "CORDEX.output.CAS-44.BOUN.ECMWF-ERAINT.evaluation.r1i1p1.RegCM4-3.v5.day",false,false,false,false,true,true,false,false
+"CORDEX.output.CAS-22.RMIB-UGent.ECMWF-ERAINT.evaluation.r1i1p1.ALARO-0.v1.day",false,false,false,false,true,false,false,false
+"CORDEX.output.CAS-22.RMIB-UGent.CNRM-CERFACS-CNRM-CM5.rcp85.r1i1p1.ALARO-0.v1.day",false,false,false,false,true,false,false,false
+"CORDEX.output.CAS-22.RMIB-UGent.CNRM-CERFACS-CNRM-CM5.rcp45.r1i1p1.ALARO-0.v1.day",false,false,false,false,true,false,false,false
+"CORDEX.output.CAS-22.RMIB-UGent.CNRM-CERFACS-CNRM-CM5.rcp26.r1i1p1.ALARO-0.v1.day",false,false,false,false,true,false,false,false
+"CORDEX.output.CAS-22.RMIB-UGent.CNRM-CERFACS-CNRM-CM5.historical.r1i1p1.ALARO-0.v1.day",false,false,false,false,true,false,false,false
 "CORDEX.output.CAS-22.GERICS.NCC-NorESM1-M.rcp85.r1i1p1.REMO2015.v1.day",true,true,true,false,true,true,false,false
 "CORDEX.output.CAS-22.GERICS.NCC-NorESM1-M.rcp26.r1i1p1.REMO2015.v1.day",true,true,true,false,true,true,false,false
 "CORDEX.output.CAS-22.GERICS.NCC-NorESM1-M.historical.r1i1p1.REMO2015.v1.day",true,true,true,false,true,true,false,false
