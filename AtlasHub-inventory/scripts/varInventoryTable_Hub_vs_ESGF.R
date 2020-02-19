@@ -35,7 +35,6 @@ x.esgf <- as.character(esgf[,1])
 esgf[,-1] <- data.frame(lapply(esgf[,-1], as.logical))
 diff <- esgf
 nam <- colnames(esgf[,-1])
-ind <- numeric()
 for (i in 1:nrow(hub)) {
   k <- grep(x.hub[i], esgf[,1])
   if (length(k) < 1) k <- NA
