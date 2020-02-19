@@ -66,6 +66,7 @@ pdf(paste0(out.dir, "/", gsub(".csv", ".pdf", gsub(paste0(".*", datasets), datas
 levelplot(t(diff.p), scales=list(x=list(alternating=2, rot=90, cex = 0.5),
                                      y=list(cex = 0.5)),
                   border = "black", bw = 10, ylab = NULL, colorkey = FALSE,
+                  xlab = "",
                   col.regions = c("red", "green"),
                   main = list("green = available    red = not available   white = not available in ESGF", cex = 0.8))
 dev.off()
