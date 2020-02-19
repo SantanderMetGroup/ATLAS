@@ -2,11 +2,16 @@ library(magrittr)
 library(httr)
 library(lattice)
 
+# USER PARAMETER SETTING -----------------------------------------------------------------------
+
 # datasets
 datasets <- "CMIP6"# "CMIP6Amon"
 
-# list files in Url -----------------------------------------------------------------------------
+# output directory, e.g.:
+out.dir <- "AtlasHub-inventory/Hub/Hub_vs_ESGF"
 
+
+# LIST FILES IN URL -----------------------------------------------------------------------------
 # https://stackoverflow.com/questions/25485216/how-to-get-list-files-from-a-github-repository-folder-using-r
 myurl <- "https://api.github.com/repos/SantanderMetGroup/ATLAS/git/trees/devel?recursive=1"
 req <- GET(myurl) %>% stop_for_status(req)
@@ -19,7 +24,7 @@ esgffile <- paste0(root, ls)
 ls <- grep(paste0("AtlasHub-inventory/Hub/", datasets, "_"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 hubfile <- paste0(root, ls)
 
-
+# FIND MATCHES AND EXPORT PDF AND CSV -------------------------------------------------------------
 hub <- read.csv(hubfile)
 esgf <- read.csv(esgffile)
 x.hub <- strsplit(as.character(hub[,1]), "_")
@@ -35,7 +40,7 @@ for (i in 1:nrow(hub)) {
   k <- grep(x.hub[i], esgf[,1])
   if (length(k) < 1) k <- NA
   ind[i] <- k
-  if(!is.na(k)){
+  if (!is.na(k)) {
     for (j in nam) {
       exists <- esgf[ind[i], j]
       if (exists) {
@@ -52,16 +57,16 @@ for (i in 1:nrow(hub)) {
 }
 
 # csv
-write.csv(diff, paste0("AtlasHub-inventory/Hub/ESGF_vs_Hub/", gsub(paste0(".*", datasets), datasets, ls)))
+write.csv(diff, paste0(out.dir, "/", gsub(paste0(".*", datasets), datasets, ls)))
 
 # figure
 diff.p <- as.matrix(diff[,-1])
 rownames(diff.p) <- as.character(diff[,1])
-pdf(paste0("AtlasHub-inventory/Hub/ESGF_vs_Hub/", gsub(".csv", ".pdf", gsub(paste0(".*", datasets), datasets, ls))), width = 6, height = 110)
+pdf(paste0(out.dir, "/", gsub(".csv", ".pdf", gsub(paste0(".*", datasets), datasets, ls))), width = 5, height = 60)
 levelplot(t(diff.p), scales=list(x=list(alternating=2, rot=90, cex = 0.5),
                                      y=list(cex = 0.5)),
                   border = "black", bw = 10, ylab = NULL, colorkey = FALSE,
                   col.regions = c("red", "green"),
-                  xlab = list("green = available    red = not available   white = not available in ESGF", cex = 0.8))
+                  main = list("green = available    red = not available   white = not available in ESGF", cex = 0.8))
 dev.off()
 
