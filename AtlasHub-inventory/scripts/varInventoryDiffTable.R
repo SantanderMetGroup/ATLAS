@@ -19,7 +19,7 @@ filelist <- unlist(lapply(content(req)$tree, "[", "path"), use.names = FALSE)
 root <- "https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/"
 
 # list the subset of target files
-ls <- grep(paste0("ESGF-inventory/", "cmip6", "/", "cmip6-day"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+ls <- grep(paste0("ESGF-inventory/", gsub("Amon", "", datasets), "/", datasets, ".csv"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 esgffile <- paste0(root, ls)
 ls <- grep(paste0("AtlasHub-inventory/Hub/", datasets, "_"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 hubfile <- paste0(root, ls)
