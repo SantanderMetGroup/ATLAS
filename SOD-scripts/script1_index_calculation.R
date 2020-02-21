@@ -76,6 +76,10 @@ climate4R.UDG::loginUDG(username = "yourUser", password = "yourPassword")
 
 ## In the next example, the climate index FD (frost days) is selected:
 AtlasIndex <- "FD"
+# Note: DS and CDD are not yet included in the list of valid choices:
+AtlasIndex <- match.arg(AtlasIndex, choices = c("pr", "pr99", "tas", "tasmin",
+                                                "tasmax", "TNn", "TXx", "TX35", "TX40",
+                                                "Rx1day", "Rx5day", "HDD", "FD", "T21.5")) 
 
 # select datasets, e.g., the CMIP5 datasets:
 datasets <- UDG.datasets()[["CMIP5_AR5_1run"]]
