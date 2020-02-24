@@ -1,6 +1,11 @@
 # This script uses bash interpolation scripts:
 # https://github.com/SantanderMetGroup/ATLAS/tree/mai-devel/SOD-scripts
 
+# The interpolation procedure followed is the one used in CORDEX, where the land, 
+# the sea and the area in between are interpolated separately. Land fraction thresholds 
+# used where > 0.999 and < 0.001 for land and sea respectively. The interpolation bash scripts 
+# are available at the 'bash-interpolation-scripts' directory. 
+
 library(devtools)
 
 # USER PARAMETER SETTING ---------------------------------------------------------------------------
