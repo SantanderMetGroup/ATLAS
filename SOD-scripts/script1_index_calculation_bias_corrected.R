@@ -27,6 +27,9 @@ library(transformeR)
 library(loadeR)
 library(loadeR.2nc)
 
+# Climate4R package for bias correction
+library(downscaleR)
+
 # Climate4R libraries for climate index calculation:
 library(climate4R.indices)
 library(climate4R.climdex)
@@ -120,41 +123,33 @@ datasets2 <- datasets2[which(datasets2.aux %in% datasets1.aux)]
 # Years for calibration
 years.cal <- 1980:2005
 
+# myfun is a wrapper function in order to undertake bias correction and index calculation in one step
+# It includes a call to biasCorrection (pkg downscaleR) and indexGrid (pkg climate4R.indices)
+
+myfun <- function(obs, hist, ssp, th) {
+  # Empirical quantile mapping (EQM) with a 30-day moving window
+  bc.ssp <- biasCorrection(obs, hist, ssp, method = "eqm", precipitation = FALSE, window = c(30, 30))
+  obs <- NULL; hist <- NULL; ssp <- NULL
+  # Index calculation from the EQM-corrected temperature series
+  index.ssp <- indexGrid(tx = bc.ssp, index.code = "TXth", time.resolution = "month", th = th)
+  bc.ssp <- NULL
+  index.ssp <- redim(index.ssp, drop = TRUE)
+  return(index.ssp)
+}
 
 lapply(1:length(datasets1), function(x) {
   # PARAMETER DEFINITION
   C4R.FUN.args <- switch(AtlasIndex, 
                          TX35bc = {
                            var <- "tasmax"
-                           # The climate4R function to be applied.
-                           funfun <- function(obs, hist, ssp, th) {
-                             # Empirical quantile mapping (EQM) with a 30-day moving window
-                             bc.ssp <- biasCorrection(obs, hist, ssp, method = "eqm", precipitation = FALSE, window = c(30, 30))
-                             obs <- NULL; hist <- NULL; ssp <- NULL
-                             # Index calculation from the EQM-corrected temperature series
-                             index.ssp <- indexGrid(tx = bc.ssp, index.code = "TXth", th = th, time.resolution = "month")
-                             bc.ssp <- NULL
-                             index.ssp <- redim(index.ssp, drop = TRUE)
-                             return(index.ssp)
-                           }
-                           list(FUN = "funfun",  obs = list(dataset = dataset.obs, var = var, years = years.cal),
+                           list(FUN = "myfun",  obs = list(dataset = dataset.obs, var = var, years = years.cal),
                                 hist = list(dataset = datasets1[x], var = var, years = years.cal),
                                 ssp = list(dataset = datasets2[x], var = var, years = target.years),
                                 th = 35)
                          },
                          TX40bc = {
                            var <- "tasmax"
-                           funfun <- function(obs, hist, ssp, th){
-                             # Empirical quantile mapping (EQM) with a 30-day moving window
-                             bc.ssp <- biasCorrection(obs, hist, ssp, method = "eqm", precipitation = FALSE, window = c(30, 30))
-                             obs <- NULL; hist <- NULL; ssp <- NULL
-                             # Index calculation from the EQM-corrected temperature series
-                             index.ssp <- indexGrid(tx = bc.ssp, index.code = "TXth", th = th, time.resolution = "month")
-                             bc.ssp <- NULL
-                             index.ssp <- redim(index.ssp, drop = TRUE)
-                             return(index.ssp)
-                           }
-                           list(FUN = "funfun",  obs = list(dataset = dataset.obs, var = var, years = years.cal),
+                           list(FUN = "myfun",  obs = list(dataset = dataset.obs, var = var, years = years.cal),
                                 hist = list(dataset = datasets1[x], var = var, years = years.cal),
                                 ssp = list(dataset = datasets2[x], var = var, years = target.years),
                                 th = 40)
