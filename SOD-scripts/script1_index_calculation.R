@@ -65,7 +65,7 @@ climate4R.UDG::loginUDG(username = "yourUser", password = "yourPassword")
 # | Rx1day | maximum 1-day precipitation           | mm         | script1_index_calculation.R
 # | Rx5day | maximum 5-day precipitation           | mm         | script1_index_calculation.R
 # | DS*    | dry spell, consecutive dry days CDD   | days       | script1_index_calculation.R
-# | CDD*   | cooling degree days                   | degreedays | script1_index_calculation.R
+# | CDD    | cooling degree days                   | degreedays | script1_index_calculation.R
 # | HDD    | heating degree days                   | degreedays | script1_index_calculation.R
 # | FD     | frost days                            | days       | script1_index_calculation.R
 # | T21.5  | mean temperature above 21.5degC       | days       | script1_index_calculation.R
@@ -123,6 +123,16 @@ lapply(1:length(datasets), function(i) {
                          HDD = {
                            var <- c("tasmin", "tasmax", "tas")
                            index <- "HDD"
+                           list(FUN = "indexGrid",
+                                tn = list(dataset = datasets[i], var = "tasmin"),
+                                tx = list(dataset = datasets[i], var = "tasmax"),
+                                tm = list(dataset = datasets[i], var = "tas"),
+                                index.code = index,
+                                time.resolution = "year")
+                         },
+                         CDD = {
+                           var <- c("tasmin", "tasmax", "tas")
+                           index <- "CDD"
                            list(FUN = "indexGrid",
                                 tn = list(dataset = datasets[i], var = "tasmin"),
                                 tx = list(dataset = datasets[i], var = "tasmax"),
