@@ -32,7 +32,7 @@ coast.dir <- "WORLD_coastline.shp"
 # Level of aggrement of the models, e.g.:
 th <- 80 # 80%
 
-# Source path where the ncml-s are
+# Source path where the ncml-s are (those created in script3_ensemble_building.R)
 source.dir <- ""
 
 # Output path to save the .rda object of the computed deltas and to export the pdf of the figure
