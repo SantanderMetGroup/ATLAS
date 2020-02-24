@@ -81,7 +81,7 @@ AtlasIndex <- match.arg(AtlasIndex, choices = c("TX35bc", "TX40bc"))
 
 # scenario, e.g.:
 scenario <- "rcp85"
-scenario <- match.arg(scenario, choices = c("historical", "rcp45", "rcp85"))
+scenario <- match.arg(scenario, choices = c("historical", "rcp26", "rcp45", "rcp85", "ssp126", "ssp585"))
 
 # select datasets, for the observational reference and the historical (datasets1) 
 # and rcp (datasets2) scenarios, e.g.:
