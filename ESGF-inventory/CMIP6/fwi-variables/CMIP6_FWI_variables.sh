@@ -1,14 +1,11 @@
 #!/bin/bash
 
-source ../../esgf.sh
-
 frequencies="day"
 # no hussmin, dpds, wss
 variables="hurs,hursmin,huss,uas,vas,tas,tasmax,ps,psl,tdps,zg"
-query="project=CMIP6&frequency=${frequencies}&variable=${variables}"
-inventory="cmip6_FWI_variables_$(date +%Y-%m-%d).csv"
+query="project=CMIP6 frequency=${frequencies} variable=${variables}"
 
-query_esgf "${query}" | jq --slurp ' 
+../../esgf-search "${query}" | jq --slurp ' 
 	map(. + map_values(arrays|first)) | 
     map(. + {group: (.master_id|split(".")|del(.[6,7])|join("."))} ) |
 	group_by(.group) | 
@@ -19,5 +16,4 @@ query_esgf "${query}" | jq --slurp '
 	map(del(.variables)|del(.crs))' | jq -r '
 	(map(keys) | add | unique) as $cols |
 	map(. as $row | $cols | map($row[.])) as $rows |
-	$cols,$rows[] | @csv' |sort -r > ${inventory}
-
+	$cols,$rows[] | @csv' |sort -r > cmip6_FWI_variables.csv

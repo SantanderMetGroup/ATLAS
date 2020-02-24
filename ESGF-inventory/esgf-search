@@ -1,0 +1,72 @@
+#!/bin/bash
+
+print_err() {
+    echo "$1" >&2
+}
+
+while [[ $# -gt 0 ]]
+do
+	case "$1" in
+	-f | --fields)
+		fields="$2"
+		shift 2
+		;;
+	-h | --help)
+		usage
+		shift
+		;;
+	-i | --index)
+		index="$2"
+		shift 2
+		;;
+	-*)
+		print_err "Error: Unknown options: $1"
+		exit 1
+		;;
+	*)
+		q=$@
+		query="${q// /&}"
+		break
+		;;
+	esac
+done
+
+if [ -z "$index" ]; then
+	index="esgf-data.dkrz.de"
+fi
+
+if [ -z "$fields" ]; then
+	fields="project,product,domain,institute,driving_model,experiment,ensemble,rcm_name,rcm_version,time_frequency,variable,master_id,size,instance_id,url"
+fi
+
+if ! command -v jq >/dev/null; then
+	print_err 'jq is not installed, install jq>=1.6'
+	exit 1
+fi
+
+base_url="https://${index}/esg-search/search?format=application%2Fsolr%2Bjson&latest=true&replica=false&type=Dataset"
+if ! curl -f -s "${base_url}&${query}&limit=0"&>/dev/null; then
+    print_err "Query: ${base_url}&${query}&limit=0"
+    print_err 'HTTP invalid request. Exiting...'
+    exit 1
+fi
+
+end=$(curl -s "${base_url}&${query}&limit=0" | jq '.response.numFound')
+if [ "$end" -eq 0 ]; then
+    print_err "No results found. Query: ${base_url}&${query}&limit=0"
+    exit 1
+fi
+
+limit=10000
+i=0
+pending=$end
+while [ $pending -gt 0 ]; do
+    current=$(expr $i \* $limit)
+	url="${base_url}&fields=${fields}&${query}&limit=${limit}&offset=${current}"
+
+	print_err "Pending: ${pending}, i=${i}, URL=${url}"
+	curl -s "$url" | jq '.response.docs|.[]'
+	
+	pending=$(expr $pending - $limit)
+	let i=i+1
+done
