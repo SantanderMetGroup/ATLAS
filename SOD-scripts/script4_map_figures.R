@@ -206,7 +206,8 @@ l1 <- lapply(1:length(delta.p), function(x) {
   c(map.hatching(clim = climatology(deltaagr1),
                  threshold = .5,
                  condition = "LT",
-                 density = 2), "which" = x, lwd = 0.6)
+                 density = 2),
+    "which" = x, lwd = 0.6)
 })
 
 # calculate the ensemble mean for all periods
