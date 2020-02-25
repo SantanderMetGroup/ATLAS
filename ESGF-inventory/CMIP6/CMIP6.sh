@@ -1,6 +1,6 @@
 #!/bin/bash
 
-query="project=CMIP6 activity_id=CMIP,ScenarioMIP experiment_id=historical,esm-hist,ssp126,ssp245,ssp370,ssp585,ssp460 table_id=Amon,fx frequency=fx,mon variable_id=sftlf,pr,tas,tasmin,tasmax"
+query="project=CMIP6 activity_id=CMIP,ScenarioMIP experiment_id=historical,esm-hist,ssp126,ssp245,ssp370,ssp585,ssp460 table_id=Amon,fx frequency=fx,mon variable_id=sftlf,pr,tas,tasmin,tasmax,psl"
 fields="master_id,variable,size"
 
 to_inventory() {
@@ -13,6 +13,7 @@ to_inventory() {
 				tasmin: .variables|join(" ")|test("\\btasmin\\b"),
 				tas: .variables|join(" ")|test("\\btas\\b"),
 				pr: .variables|join(" ")|test("\\bpr\\b"),
+				psl: .variables|join(" ")|test("\\bpsl\\b"),
 				sftlf: .variables|join(" ")|test("\\bsftlf\\b")})' | jq -r '
 		(map(keys) | add | unique) as $cols |
 		map(. as $row | $cols | map($row[.])) as $rows |

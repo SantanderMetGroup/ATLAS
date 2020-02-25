@@ -44,7 +44,7 @@ if ! command -v jq >/dev/null; then
 	exit 1
 fi
 
-base_url="https://${index}/esg-search/search?format=application%2Fsolr%2Bjson&latest=true&replica=false&type=Dataset"
+base_url="https://${index}/esg-search/search?format=application%2Fsolr%2Bjson&latest=true&replica=false"
 if ! curl -f -s "${base_url}&${query}&limit=0"&>/dev/null; then
     print_err "Query: ${base_url}&${query}&limit=0"
     print_err 'HTTP invalid request. Exiting...'
