@@ -137,8 +137,13 @@ myfun <- function(obs, hist, ssp, th) {
   return(index.ssp)
 }
 
+# The following loop will compute the bias-corrected target index, and write a netcdf4 file of the corrected 
+# index for each model output and year:
+
 lapply(1:length(datasets1), function(x) {
-  # PARAMETER DEFINITION
+  
+  # PARAMETER DEFINITION (the function will grow as new indices are introduced in the Atlas product catalogue)
+  
   C4R.FUN.args <- switch(AtlasIndex, 
                          TX35bc = {
                            var <- "tasmax"
@@ -154,13 +159,20 @@ lapply(1:length(datasets1), function(x) {
                                 ssp = list(dataset = datasets2[x], var = var, years = target.years),
                                 th = 40)
                          })
-  # COMPUTE INDEX
+  
+  # Data inventories ensure that the required ECV for the target index is available in the model output database
   di <- dataInventory(datasets1[x])
   di2 <- dataInventory(datasets2[x])
   if (all(unlist(lapply(var, function(v) any(names(di) %in% v)))) & all(unlist(lapply(var, function(v) any(names(di2) %in% v))))) {
+    
+    # COMPUTE INDEX
+    
     index <- climate4R.chunk(n.chunks = n.chunks, C4R.FUN.args = C4R.FUN.args)
     index[["Variable"]][["varName"]] <- AtlasIndex
     index <- redim(index, drop = TRUE)
+    
+    # WRITE .nc FILES
+    
     lapply(target.years, function(y) {
       index.x <- subsetGrid(index, years = y)
       grid2nc(index.x, paste0(out.dir, datasets2[x], "_", AtlasIndex, "_", y, ".nc4"))
@@ -168,3 +180,5 @@ lapply(1:length(datasets1), function(x) {
     index <- NULL
   }
 })
+
+# End

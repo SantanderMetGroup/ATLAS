@@ -17,19 +17,21 @@
 #     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-
-
 # This script uses bash interpolation scripts:
 # https://github.com/SantanderMetGroup/ATLAS/tree/mai-devel/SOD-scripts
 
-# The interpolation procedure followed is the one used in CORDEX, where the land, 
-# the sea and the area in between are interpolated separately. Land fraction thresholds 
-# used where > 0.999 and < 0.001 for land and sea respectively. The interpolation bash scripts 
-# are available at the 'bash-interpolation-scripts' directory. 
+# The interpolation procedure followed is the one used in EURO-CORDEX
+# It is a Conservative Remapping procedure in which parameters sensitive to land-sea transitions
+# are dually interpolated, i.e. land-sea separated, and then re-combined in one file.
+# Residual missing values (NaN) in the interior domain are filled with values from a straighforward remap.
+# Land fraction thresholds used were > 0.999 and < 0.001 for land and sea respectively.
+# The interpolation bash scripts are available at the 'bash-interpolation-scripts' directory
+# at <https://github.com/SantanderMetGroup/ATLAS/tree/mai-devel/SOD-scripts>
 
+# Misc utilities for remote repo interaction:
 library(devtools)
 
-# USER PARAMETER SETTING ---------------------------------------------------------------------------
+# USER PARAMETER SETTING -------------------------------------------------------
 
 # Bash script performing the interpolation available at https://github.com/SantanderMetGroup/ATLAS/tree/mai-devel/SOD-scripts, e.g.: 
 script <- "AtlasCDOremappeR_CMIP.sh"
@@ -42,11 +44,16 @@ out.dir <- getwd()
 # Path to the NetCDFs of the original masks (variable sftlf), e.g.:
 mask.dir <- paste0(getwd(), "/masks")
 
-# INTERPOLATION ------------------------------------------------------------------------------------------------------
+# INTERPOLATION ----------------------------------------------------------------
 
-orig.masks <- list.files(mask.dir, full.names = T)
+# List of nectcdf files containing the land/sea masks of each model
+orig.masks <- list.files(mask.dir, full.names = TRUE)
 gridsdir <- list.files(source.dir, pattern = "nc4", full.names = TRUE)
 grids <- list.files(source.dir, pattern = "nc4")
+
+# The loop iterates over models and performs the Conservative Remapping described above,
+# writing the interpolated files in the output directory (out.dir):
+
 for (m in 1:length(grids)) {
   grid <- grids[m]
   griddir <- gridsdir[m]
@@ -62,3 +69,4 @@ for (m in 1:length(grids)) {
     }
   }
 }
+# End
