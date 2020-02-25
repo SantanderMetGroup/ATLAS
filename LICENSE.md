@@ -11,7 +11,7 @@ The **scripts and code** are available under the [GNU General Public License v3.
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
-**CMIP6 aggregated datasets** build on CMIP6 data and are licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0), following the [CMIP6 Terms of Use](https://pcmdi.llnl.gov/CMIP6/TermsOfUse). Note that some models publish the data under a more open Creative Commons Attribution-ShareAlike 4.0 (which is encouraged by CMIP). Therefore, the results corresponding to this subset of models can be used under this license (a table with this information will be provided).
+**CMIP6 aggregated datasets** build on CMIP6 data and are licensed under [Creative Commons Attribution-ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0), following the [CMIP6 Terms of Use](https://pcmdi.llnl.gov/CMIP6/TermsOfUse). Note that some models publish the data under a non-commercial license, although this is discouraged by CMIP; a table with this information will be provided shortly.
 
 **CMIP5 aggregated datasets** were first published under the [CMIP5 terms of use](https://pcmdi.llnl.gov/mips/cmip5/terms-of-use.html). Data from some modelling centres are licensed for use in non-commercial research and for educational purposes, other for unrestricted use. Please check the [current model restrictions](https://pcmdi.llnl.gov/mips/cmip5/availability.html). 
 
@@ -20,6 +20,6 @@ The **scripts and code** are available under the [GNU General Public License v3.
     climate modeling groups (listed in the Atlas inventory folders in this 
     repository) for producing and making available their model output. 
     
-Please read the following document if you are planning to use CMIP data for commercial applications [CMIP Licensing and Access Control, by B.N. Lawrence](https://www.earthsystemcog.org/site_media/projects/wip/CMIP6_Licensing_and_Access_Control.pdf).
+Please read the following document if you are planning to use CMIP data for commercial applications: [CMIP Licensing and Access Control, by B.N. Lawrence](https://www.earthsystemcog.org/site_media/projects/wip/CMIP6_Licensing_and_Access_Control.pdf).
 
 
