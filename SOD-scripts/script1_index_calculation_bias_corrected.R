@@ -44,7 +44,7 @@ source_url("https://github.com/SantanderMetGroup/climate4R/blob/master/R/climate
 # Obtain a user and password at http://meteo.unican.es/udg-wiki
 climate4R.UDG::loginUDG(username = "yourUser", password = "yourPassword")
 
-# USER PARAMETER SETTING: SELECT INDEX, SCENARIO, DATASETS, NUMBER OF CHUNKS AND OUTPUT DIRECTORY--------------
+# USER PARAMETER SETTING: SELECT INDEX, SCENARIO, DATASETS, NUMBER OF CHUNKS AND OUTPUT DIRECTORY------------
 
 
 # SELECT THE ATLAS INDEX
