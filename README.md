@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/179907799.svg)](https://zenodo.org/badge/latestdoi/179907799)
+[![DOI](https://zenodo.org/badge/190203356.svg)](https://zenodo.org/badge/latestdoi/190203356)
 
 ## The Climate Change ATLAS: Datasets, code and virtual workspace
 
