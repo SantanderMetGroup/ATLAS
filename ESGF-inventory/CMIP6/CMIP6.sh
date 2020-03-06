@@ -7,15 +7,18 @@ to_inventory() {
 	jq --slurp '
 		map(. + { dataset_id: (.master_id|split(".")|del(.[6,7])|join(".")),master_id}) |
 		group_by(.dataset_id) |
-		map(reduce .[] as $item ({variables: []}; {dataset_id: $item.dataset_id, variables: (.variables + $item.variable)}))' | jq -r '
+		map(reduce .[] as $item (
+			{variables: [], size: 0};
+			{dataset_id: $item.dataset_id, variables: (.variables + $item.variable), size: (.size + $item.size)}))' | jq -r '
 		map({	dataset_id,
+				size,
 				tasmax: .variables|join(" ")|test("\\btasmax\\b"),
 				tasmin: .variables|join(" ")|test("\\btasmin\\b"),
 				tas: .variables|join(" ")|test("\\btas\\b"),
 				pr: .variables|join(" ")|test("\\bpr\\b"),
 				psl: .variables|join(" ")|test("\\bpsl\\b"),
 				sftlf: .variables|join(" ")|test("\\bsftlf\\b")})' | jq -r '
-		(map(keys) | add | unique) as $cols |
+		["dataset_id", "size", "pr", "psl", "tas", "tasmax", "tasmin", "sftlf"] as $cols |
 		map(. as $row | $cols | map($row[.])) as $rows |
 		$cols, $rows[] |@csv' 
 }
