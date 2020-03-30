@@ -1,17 +1,6 @@
-# Comprehensive CMIP6 inventories
+# Hub inventories
 
-Comprehensive inventories of model simulations, experiments and scenarios available in the Hub included here. These files show the inventories that allow to compare and monitor the progress of data availability with reference to what is becoming available in ESGF (shown in [ESGF-inventory](https://github.com/SantanderMetGroup/ATLAS/tree/devel/ESGF-inventory)).
+Inventories of model simulations, experiments and scenarios available in the Hub are included here. 
 
-CMIP6 data is being monitored so far. 
+To observe and check the progress of data availability with reference to which is available on ESGF (shown in [ESGF-inventory](https://github.com/SantanderMetGroup/ATLAS/tree/devel/ESGF-inventory)) got to [Hub/Hub_vs_ESGF/](https://github.com/SantanderMetGroup/ATLAS/tree/devel/AtlasHub-inventory/Hub/Hub_vs_ESGF).
 
-These inventories show **three possible cases**:
-
----
-* **1 or green**: Available in ESGF & available in the Hub 
-* **0 or red**: Available in ESGF & Not available in the Hub yet.
-* **NA or white** : Not available in ESGF (and therefore not in the Hub either)
----
-
-Note that these inventories are built from the information that is available in the [ESGF-inventory](https://github.com/SantanderMetGroup/ATLAS/tree/devel/ESGF-inventory) and [AtlasHub-inventory](https://github.com/SantanderMetGroup/ATLAS/tree/devel/AtlasHub-inventory) folders of this repository. 
-
-**NOTE!**: Check the last file updates to know the date to which each inventory corresponds.
