@@ -4,11 +4,13 @@ Comprehensive inventories of model simulations, experiments and scenarios used i
 
 CMIP6 data is being monitored so far. 
 
-These inventories show three possible cases:
-* 1 or green: Available in ESGF & available in the Hub 
-* 0 or red: Available in ESGF & Not available in the Hub yet.
-* NA or white : Not available in ESGF (and therefore not in the Hub either)
+These inventories show **three possible cases**:
 
+---
+* **1 or green**: Available in ESGF & available in the Hub 
+* **0 or red**: Available in ESGF & Not available in the Hub yet.
+* **NA or white** : Not available in ESGF (and therefore not in the Hub either)
+---
 
 Note that these inventories ar built from the information that is available in the [ESGF-inventory](https://github.com/SantanderMetGroup/ATLAS/tree/devel/ESGF-inventory) and [AtlasHub-inventory](https://github.com/SantanderMetGroup/ATLAS/tree/devel/AtlasHub-inventory) folders of this repository. 
 
