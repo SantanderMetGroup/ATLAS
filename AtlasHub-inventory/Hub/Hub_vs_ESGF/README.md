@@ -10,6 +10,6 @@ These inventories show three possible cases:
 * NA or white : Not available in ESGF (and therefore not in the Hub either)
 
 
-Note that these inventories ar built from the information that is available in [ESGF-inventory](https://github.com/SantanderMetGroup/ATLAS/tree/devel/ESGF-inventory) and in [AtlasHub-inventory](https://github.com/SantanderMetGroup/ATLAS/tree/devel/AtlasHub-inventory). 
+Note that these inventories ar built from the information that is available in the [ESGF-inventory](https://github.com/SantanderMetGroup/ATLAS/tree/devel/ESGF-inventory) and [AtlasHub-inventory](https://github.com/SantanderMetGroup/ATLAS/tree/devel/AtlasHub-inventory) folders of this repository. 
 
 NOTE!: Check the last file updates to know the date to which each inventory corresponds.
