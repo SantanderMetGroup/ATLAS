@@ -36,7 +36,7 @@ if [ -z "$index" ]; then
 fi
 
 if [ -z "$fields" ]; then
-	fields="project,product,domain,institute,driving_model,experiment,ensemble,rcm_name,rcm_version,time_frequency,variable,master_id,size,instance_id,url"
+	fields="project,product,domain,institute,driving_model,experiment,ensemble,rcm_name,rcm_version,time_frequency,variable,master_id,size,instance_id,url,replica,checksum,checksum_type"
 fi
 
 if ! command -v jq >/dev/null; then
@@ -44,7 +44,7 @@ if ! command -v jq >/dev/null; then
 	exit 1
 fi
 
-base_url="https://${index}/esg-search/search?format=application%2Fsolr%2Bjson&latest=true&replica=false"
+base_url="https://${index}/esg-search/search?format=application%2Fsolr%2Bjson&latest=true"
 if ! curl -f -s "${base_url}&${query}&limit=0"&>/dev/null; then
     print_err "Query: ${base_url}&${query}&limit=0"
     print_err 'HTTP invalid request. Exiting...'
