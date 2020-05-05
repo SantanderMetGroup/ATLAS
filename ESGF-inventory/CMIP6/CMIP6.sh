@@ -1,6 +1,6 @@
 #!/bin/bash
 
-query="project=CMIP6 activity_id=CMIP,ScenarioMIP experiment_id=historical,esm-hist,ssp126,ssp245,ssp370,ssp585,ssp460 table_id=Amon,fx frequency=fx,mon variable_id=sftlf,pr,tas,tasmin,tasmax,psl"
+query="project=CMIP6 activity_id=CMIP,ScenarioMIP experiment_id=historical,esm-hist,ssp126,ssp245,ssp370,ssp585,ssp460 variable_id=sftlf,pr,tas,tasmin,tasmax,psl"
 fields="master_id,variable,size"
 
 to_inventory() {
@@ -24,4 +24,4 @@ to_inventory() {
 }
 
 ../esgf-search -f $fields $query table_id=Amon,fx frequency=fx,mon | to_inventory > CMIP6Amon.csv
-../esgf-search -f $fields $query table_id=day,fx frequency=fx,day | to_inventory > CMIP6.csv
+../esgf-search -f $fields $query table_id=day,fx frequency=fx,day | to_inventory > CMIP6day.csv
