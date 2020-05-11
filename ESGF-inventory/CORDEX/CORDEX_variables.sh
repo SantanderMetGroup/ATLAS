@@ -4,7 +4,7 @@ experiments="historical,evaluation,rcp26,rcp45,rcp85"
 frequencies="day,fx"
 variables="tas,tasmin,tasmax,pr,sftlf,orog"
 query="project=CORDEX product=output experiment=${experiments} time_frequency=${frequencies} variable=${variables}"
-inventory="cordex_variables_$(date +%Y-%m-%d).csv"
+inventory="CORDEX_variables.csv"
 header="domain,driving_model,experiment,ensemble,rcm_name,rcm_version,group,orog,sftlf,tas,tasmax,tasmin,pr"
 
 echo ${header} > ${inventory}
