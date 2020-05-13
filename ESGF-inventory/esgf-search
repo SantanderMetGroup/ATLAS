@@ -1,72 +1,119 @@
 #!/bin/bash
 
-print_err() {
-    echo "$1" >&2
+usage() {
+    echo "esgf-search [ -h ] [ -f FIELDS ] [ -i INDEX ] [ -q QUERY ] SELECTION-FILE..." >&2
+}
+
+check() {
+    if ! command -v "$1" &>/dev/null; then
+        echo "$1 is not installed, install $1" >&2
+        exit 1
+    fi
+}
+
+check jq
+check curl
+
+# $1 params
+# globals: index, fields
+search() {
+    if [ -z "$fields" ]; then
+        url="https://${index}/esg-search/search?format=application%2Fsolr%2Bjson&${1// /&}"
+    else
+        url="https://${index}/esg-search/search?format=application%2Fsolr%2Bjson&fields=${fields}&${1// /&}"
+    fi
+
+    test_url="${url}&limit=0"
+    if ! curl -f -s "${url}&limit=0"&>/dev/null; then
+        echo "HTTP invalid request. Query: $test_url" >&2
+        return 0
+    fi
+
+    end=$(curl -s "${url}&limit=0" | jq '.response.numFound')
+    if [ "$end" -eq 0 ]; then
+        echo "No results found. Query: ${url}&limit=0" >&2
+        return 0
+    fi
+
+    # Search
+    limit=10000
+    i=0
+    pending=$end
+    while [ $pending -gt 0 ]; do
+        current=$(expr $i \* $limit)
+
+        echo "Pending: ${pending}, i=${i}, URL=${url}" >&2
+        curl -s "${url}&limit=${limit}&offset=${current}" | jq '.response.docs|.[]'
+
+        pending=$(expr $pending - $limit)
+        let i=i+1
+    done
 }
 
 while [[ $# -gt 0 ]]
 do
-	case "$1" in
-	-f | --fields)
-		fields="$2"
-		shift 2
-		;;
-	-h | --help)
-		usage
-		shift
-		;;
-	-i | --index)
-		index="$2"
-		shift 2
-		;;
-	-*)
-		print_err "Error: Unknown options: $1"
-		exit 1
-		;;
-	*)
-		q=$@
-		query="${q// /&}"
-		break
-		;;
-	esac
+    case "$1" in
+    -f | --fields)
+        fields="$2"
+        shift 2
+        ;;
+    -h | --help)
+        usage
+        exit 1
+        shift
+        ;;
+    -i | --index)
+        index="$2"
+        shift 2
+        ;;
+    -q | --query)
+        q="$2"
+        query="${q// /&}"
+        shift 2
+        ;;
+    -*)
+        echo "Error: Unknown options: $1" >&2
+        exit 1
+        ;;
+    *)
+        files="$@"
+        break
+        ;;
+    esac
 done
 
+if [ -z "$files" ] && [ -z "$query" ] ; then
+    usage
+    exit 1
+fi
+
 if [ -z "$index" ]; then
-	index="esgf-data.dkrz.de"
+    index="esgf-data.dkrz.de"
 fi
 
-if [ -z "$fields" ]; then
-	fields="project,product,domain,institute,driving_model,experiment,ensemble,rcm_name,rcm_version,time_frequency,variable,master_id,size,instance_id,url,replica,checksum,checksum_type"
+if [ ! -z "$query" ]; then
+    search "$query"
+
+    if [ -z "$files" ]; then
+        exit 0
+    fi
 fi
 
-if ! command -v jq >/dev/null; then
-	print_err 'jq is not installed, install jq>=1.6'
-	exit 1
-fi
-
-base_url="https://${index}/esg-search/search?format=application%2Fsolr%2Bjson&latest=true"
-if ! curl -f -s "${base_url}&${query}&limit=0"&>/dev/null; then
-    print_err "Query: ${base_url}&${query}&limit=0"
-    print_err 'HTTP invalid request. Exiting...'
-    exit 1
-fi
-
-end=$(curl -s "${base_url}&${query}&limit=0" | jq '.response.numFound')
-if [ "$end" -eq 0 ]; then
-    print_err "No results found. Query: ${base_url}&${query}&limit=0"
-    exit 1
-fi
-
-limit=10000
-i=0
-pending=$end
-while [ $pending -gt 0 ]; do
-    current=$(expr $i \* $limit)
-	url="${base_url}&fields=${fields}&${query}&limit=${limit}&offset=${current}"
-
-	print_err "Pending: ${pending}, i=${i}, URL=${url}"
-	curl -s "$url" | jq '.response.docs|.[]'
-	
-	pending=$(expr $pending - $limit)
-	let i=i+1
+# Concatenate selection files with an empty line as separator and
+# also remove redundant whitespaces
+params=""
+awk 'FNR==1 && NR > 1{print ""}{print $0}END{print ""}' $files | \
+    sed 's/  */ /g; s/    *$//; s/^  *//' | \
+    while IFS= read -r line
+do
+    # Empty line, perform search
+    if [ -z "$line" ] && [ ! -z "$params" ]; then
+        search "$params"
+        params=""
+    # Avoid leading whitespaces
+    elif [ -z "$params" ]; then
+        params="$line"
+    else
+        params="$params $line"
+    fi
 done

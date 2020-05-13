@@ -1,0 +1,8 @@
+project=CMIP6
+activity_id=CMIP,ScenarioMIP
+experiment_id=historical,esm-hist,ssp126,ssp245,ssp370,ssp585,ssp460
+variable_id=sftlf,pr,tas,tasmin,tasmax,psl
+frequency=mon,monC,day,fx
+table_id=Amon,day,fx
+latest=True
+replica=False
