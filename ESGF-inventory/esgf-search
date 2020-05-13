@@ -29,7 +29,7 @@ search() {
         return 0
     fi
 
-    end=$(curl -s "${url}&limit=0" | jq '.response.numFound')
+    end=$(curl -s -S "${url}&limit=0" | jq '.response.numFound')
     if [ "$end" -eq 0 ]; then
         echo "No results found. Query: ${url}&limit=0" >&2
         return 0
@@ -43,7 +43,7 @@ search() {
         current=$(expr $i \* $limit)
 
         echo "Pending: ${pending}, i=${i}, URL=${url}" >&2
-        curl -s "${url}&limit=${limit}&offset=${current}" | jq '.response.docs|.[]'
+        curl -s -S "${url}&limit=${limit}&offset=${current}" | jq '.response.docs|.[]'
 
         pending=$(expr $pending - $limit)
         let i=i+1

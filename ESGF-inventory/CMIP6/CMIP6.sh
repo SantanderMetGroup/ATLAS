@@ -1,7 +1,8 @@
 #!/bin/bash
 
 fields="master_id,variable,size,table_id"
-variables=$(awk -F"=" '/variable_id/{print $2}' selection)
+variables=$(awk -F"=" '/variable_id/{print $2}' selection | paste -sd,)
+index="esgf-index1.ceda.ac.uk"
 
 to_inventory() {
 	jq -r --slurp --arg variables "${variables}" '
@@ -19,7 +20,7 @@ to_inventory() {
 		(["dataset_id", "size"] + ($variables|split(",")|sort)) as $keys | $keys, map([.[ $keys[] ]])[] | @csv'
 }
 
-../esgf-search -i "esgf-node.llnl.gov" -f $fields selection > CMIP6.json
+../esgf-search -i "$index" -f $fields selection > CMIP6.json
 
-jq 'select((.table_id|first == "Amon") or (.table_id|first == "fx"))' CMIP6.json | to_inventory > CMIP6Amon.csv
+jq 'select((.table_id|first == "Amon") or (.table_id|first == "fx"))' CMIP6.json | to_inventory > CMIP6mon.csv
 jq 'select((.table_id|first == "day") or (.table_id|first == "fx"))' CMIP6.json | to_inventory > CMIP6day.csv
