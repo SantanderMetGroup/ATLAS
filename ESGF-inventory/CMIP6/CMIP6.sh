@@ -1,18 +1,25 @@
 #!/bin/bash
 
-variables="sftlf,pr,tas,tasmin,tasmax,psl"
-query="project=CMIP6 activity_id=CMIP,ScenarioMIP experiment_id=historical,esm-hist,ssp126,ssp245,ssp370,ssp585,ssp460 variable_id=${variables}"
-fields="master_id,variable,size"
+fields="master_id,variable,size,table_id"
+variables=$(awk -F"=" '/variable_id/{print $2}' selection)
 
 to_inventory() {
 	jq -r --slurp --arg variables "${variables}" '
 		map(. + { dataset_id: (.master_id|split(".")|del(.[6,7])|join(".")),master_id}) |
 		group_by(.dataset_id) |
 		map(reduce .[] as $item (
-		    ($variables|split(",")|map({(.): false})|reduce .[] as $i ({size: 0}; . + $i));
-		    . + { dataset_id: $item.dataset_id, size: (.size + $item.size), ($item.variable|first): true } )) |
+		    ($variables|split(",")|map({(.): false}) | reduce .[] as $i ({size: 0, variables: []}; . + $i));
+		    . + {
+					dataset_id: $item.dataset_id,
+					size: (.size + $item.size),
+					variables: (.variables + $item.variable),
+					($item.variable|first): true
+				})) |
+		map(select( ((.variables|length == 1) and (.variables[0] == "sftlf"))|not )) |
 		(["dataset_id", "size"] + ($variables|split(",")|sort)) as $keys | $keys, map([.[ $keys[] ]])[] | @csv'
 }
 
-../esgf-search -i "esgf-node.llnl.gov" -f $fields $query table_id=Amon,fx frequency=fx,mon | to_inventory > CMIP6Amon.csv
-../esgf-search -i "esgf-node.llnl.gov" -f $fields $query table_id=day,fx frequency=fx,day | to_inventory > CMIP6day.csv
+../esgf-search -i "esgf-node.llnl.gov" -f $fields selection > CMIP6.json
+
+jq 'select((.table_id|first == "Amon") or (.table_id|first == "fx"))' CMIP6.json | to_inventory > CMIP6Amon.csv
+jq 'select((.table_id|first == "day") or (.table_id|first == "fx"))' CMIP6.json | to_inventory > CMIP6day.csv
