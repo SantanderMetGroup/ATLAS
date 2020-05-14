@@ -22,5 +22,5 @@ to_inventory() {
 
 ../esgf-search -i "$index" -f $fields selection > CMIP6.json
 
-jq 'select((.table_id|first == "Amon") or (.table_id|first == "fx"))' CMIP6.json | to_inventory > CMIP6mon.csv
-jq 'select((.table_id|first == "day") or (.table_id|first == "fx"))' CMIP6.json | to_inventory > CMIP6day.csv
+jq 'select((.table_id|first == "Amon") or (.table_id|first == "fx"))' CMIP6.json | to_inventory > CMIP6_mon.csv
+jq 'select((.table_id|first == "day") or (.table_id|first == "fx"))' CMIP6.json | to_inventory > CMIP6_day.csv
