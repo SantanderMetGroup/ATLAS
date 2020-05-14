@@ -12,4 +12,4 @@ query="project=CORDEX product=output experiment=${experiments} time_frequency=${
 	map(reduce .[] as $item (
 	    ($variables|split(",")|map({(.): false})|reduce .[] as $i ({size: 0}; . + $i));
 	    . + { dataset_id: $item.dataset_id, size: (.size + $item.size), ($item.variable): true } )) |
-	(["dataset_id", "size"] + ($variables|split(",")|sort)) as $keys | $keys, map([.[ $keys[] ]])[] | @csv' > CORDEX_variables.csv
+	(["dataset_id", "size"] + ($variables|split(",")|sort)) as $keys | $keys, map([.[ $keys[] ]])[] | @csv' > CORDEX_day.csv
