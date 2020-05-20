@@ -103,6 +103,7 @@
 "CMIP6.CMIP.CNRM-CERFACS.CNRM-CM6-1.historical.r8i1p1f2.day.gr",24087424451,true,true,true,true,true
 "CMIP6.CMIP.CNRM-CERFACS.CNRM-CM6-1.historical.r9i1p1f2.day.gr",24085164012,true,true,true,true,true
 "CMIP6.CMIP.CNRM-CERFACS.CNRM-ESM2-1.historical.r10i1p1f2.day.gr",24071496624,true,true,true,true,true
+"CMIP6.CMIP.CNRM-CERFACS.CNRM-ESM2-1.historical.r11i1p1f2.day.gr",24071962506,true,true,true,true,true
 "CMIP6.CMIP.CNRM-CERFACS.CNRM-ESM2-1.historical.r1i1p1f2.day.gr",24079629626,true,true,true,true,true
 "CMIP6.CMIP.CNRM-CERFACS.CNRM-ESM2-1.historical.r2i1p1f2.day.gr",24081623405,true,true,true,true,true
 "CMIP6.CMIP.CNRM-CERFACS.CNRM-ESM2-1.historical.r3i1p1f2.day.gr",24081363728,true,true,true,true,true
@@ -704,6 +705,7 @@
 "CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3.ssp245.r12i1p1f1.day.gr",59332341862,true,true,true,true,true
 "CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3.ssp245.r13i1p1f1.day.gr",60115094243,true,true,true,true,true
 "CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3.ssp245.r14i1p1f1.day.gr",59338970755,true,true,true,true,true
+"CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3.ssp245.r15i1p1f1.day.gr",60120087392,true,true,true,true,true
 "CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3.ssp245.r16i1p1f1.day.gr",59347923218,true,true,true,true,true
 "CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3.ssp245.r17i1p1f1.day.gr",59344662780,true,true,true,true,true
 "CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3.ssp245.r18i1p1f1.day.gr",59346236007,true,true,true,true,true

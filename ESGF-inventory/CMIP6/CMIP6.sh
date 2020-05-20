@@ -1,11 +1,11 @@
 #!/bin/bash
 
-fields="master_id,variable,size,table_id"
+fields="master_id,variable,size,table_id,id,instance_id,url,checksum,checksum_type,replica"
 index="esgf-index1.ceda.ac.uk"
 
 to_inventory() {
 	jq -r --slurp '
-		map(. + { dataset_id: (.master_id|split(".")|del(.[7])|join(".")),master_id}) |
+		map(. + { dataset_id: (.master_id|split(".")[:9]|del(.[7])|join(".")),master_id}) |
 		(map(.variable|first)|unique) as $variables |
 		group_by(.dataset_id) |
 		map(reduce .[] as $item (
@@ -22,14 +22,13 @@ to_inventory() {
 one_run() {
   jq --slurp '
     map(. + {
-		dataset_id: (.master_id|split(".")|del(.[7])|join(".")),
-		dataset_run: (.master_id|split(".")|del(.[5,7])|join(".")) }) |
+		dataset_id: (.master_id|split(".")[:9]|del(.[7])|join(".")),
+		dataset_run: (.master_id|split(".")[:9]|del(.[5,7])|join(".")) }) |
     group_by(.dataset_id) |
-    map({   
-        dataset_id: .[0].dataset_id,
+    map({dataset_id: .[0].dataset_id,
         dataset_run: .[0].dataset_run,
-        nvariables: length,
-        run: (.[0].master_id|split(".")[5]|sub("r";"")|gsub("[ipf]";".")|split(".")|map(tonumber)),
+        nvariables: map(.variable|first)|unique|length,
+        run: (.[0].dataset_id|split(".")[5]|sub("r";"")|gsub("[ipf]";".")|split(".")|map(tonumber)),
         datasets: .}) |
     group_by(.dataset_run) |
     map({
@@ -41,10 +40,10 @@ one_run() {
 
 ../esgf-search -i "$index" -f $fields selection > CMIP6.json
 
-jq 'select(.table_id|first == "Amon")' CMIP6.json | to_inventory > all_runs/CMIP6_mon.csv
-jq 'select(.table_id|first == "day")' CMIP6.json | to_inventory > all_runs/CMIP6_day.csv
-jq 'select(.table_id|first == "fx")' CMIP6.json | to_inventory > all_runs/CMIP6_fx.csv
+jq 'select(.replica|not)|select(.table_id|first == "Amon")' CMIP6.json | to_inventory > all_runs/CMIP6_mon.csv
+jq 'select(.replica|not)|select(.table_id|first == "day")' CMIP6.json | to_inventory > all_runs/CMIP6_day.csv
+jq 'select(.replica|not)|select(.table_id|first == "fx")' CMIP6.json | to_inventory > all_runs/CMIP6_fx.csv
 
-jq 'select(.table_id|first == "Amon")' CMIP6.json | one_run | to_inventory > one_run/CMIP6_mon.csv
-jq 'select(.table_id|first == "day")' CMIP6.json | one_run | to_inventory > one_run/CMIP6_day.csv
-jq 'select(.table_id|first == "fx")' CMIP6.json | one_run | to_inventory > one_run/CMIP6_fx.csv
+jq 'select(.replica|not)|select(.table_id|first == "Amon")' CMIP6.json | one_run | to_inventory > one_run/CMIP6_mon.csv
+jq 'select(.replica|not)|select(.table_id|first == "day")' CMIP6.json | one_run | to_inventory > one_run/CMIP6_day.csv
+jq 'select(.replica|not)|select(.table_id|first == "fx")' CMIP6.json | one_run | to_inventory > one_run/CMIP6_fx.csv
