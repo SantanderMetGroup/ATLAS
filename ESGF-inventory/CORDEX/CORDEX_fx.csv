@@ -488,7 +488,6 @@
 "cordex.output.EUR-11.KNMI.MPI-M-MPI-ESM-LR.historical.r1i1p1.RACMO22E.v1.fx",4449681,true,true
 "cordex.output.EUR-11.KNMI.MPI-M-MPI-ESM-LR.rcp85.r1i1p1.RACMO22E.v1.fx",4449653,true,true
 "cordex.output.EUR-11.KNMI.NCC-NorESM1-M.historical.r1i1p1.RACMO22E.v1.fx",4449675,true,true
-"cordex.output.EUR-11.KNMI.NCC-NorESM1-M.rcp26.r1i1p1.RACMO22E.v1.fx",4451735,true,true
 "cordex.output.EUR-11.KNMI.NCC-NorESM1-M.rcp85.r1i1p1.RACMO22E.v1.fx",4449647,true,true
 "cordex.output.EUR-11.MPI-CSC.ECMWF-ERAINT.evaluation.r0i0p0.REMO2009.v1.fx",7379181,true,true
 "cordex.output.EUR-11.MPI-CSC.MPI-M-MPI-ESM-LR.historical.r0i0p0.REMO2009.v1.fx",7379181,true,true
