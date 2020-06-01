@@ -40,10 +40,15 @@ one_run() {
 
 ../esgf-search -i "$index" -f $fields selection > CMIP6.json
 
-jq 'select(.replica|not)|select(.table_id|first == "Amon")' CMIP6.json | to_inventory > all_runs/CMIP6_mon.csv
-jq 'select(.replica|not)|select(.table_id|first == "day")' CMIP6.json | to_inventory > all_runs/CMIP6_day.csv
-jq 'select(.replica|not)|select(.table_id|first == "fx")' CMIP6.json | to_inventory > all_runs/CMIP6_fx.csv
+jq 'select(.replica|not)|select(.table_id|first == "Amon")' CMIP6.json | to_inventory > CMIP6_mon.csv
+jq 'select(.replica|not)|select(.table_id|first == "day")' CMIP6.json | to_inventory > CMIP6_day.csv
+jq 'select(.replica|not)|select(.table_id|first == "fx")' CMIP6.json | to_inventory > CMIP6_fx.csv
 
-jq 'select(.replica|not)|select(.table_id|first == "Amon")' CMIP6.json | one_run | to_inventory > one_run/CMIP6_mon.csv
-jq 'select(.replica|not)|select(.table_id|first == "day")' CMIP6.json | one_run | to_inventory > one_run/CMIP6_day.csv
-jq 'select(.replica|not)|select(.table_id|first == "fx")' CMIP6.json | one_run | to_inventory > one_run/CMIP6_fx.csv
+# Do not pick one run, just create global inventories
+#jq 'select(.replica|not)|select(.table_id|first == "Amon")' CMIP6.json | to_inventory > all_runs/CMIP6_mon.csv
+#jq 'select(.replica|not)|select(.table_id|first == "day")' CMIP6.json | to_inventory > all_runs/CMIP6_day.csv
+#jq 'select(.replica|not)|select(.table_id|first == "fx")' CMIP6.json | to_inventory > all_runs/CMIP6_fx.csv
+#
+#jq 'select(.replica|not)|select(.table_id|first == "Amon")' CMIP6.json | one_run | to_inventory > one_run/CMIP6_mon.csv
+#jq 'select(.replica|not)|select(.table_id|first == "day")' CMIP6.json | one_run | to_inventory > one_run/CMIP6_day.csv
+#jq 'select(.replica|not)|select(.table_id|first == "fx")' CMIP6.json | one_run | to_inventory > one_run/CMIP6_fx.csv
