@@ -3,12 +3,12 @@
 echo '<metalink xmlns="urn:ietf:params:xml:ns:metalink">'
 jq --slurp -r '
 	map({	url: .url[0]|split("|")[0],
-		size,
-		instance_id,
-		checksum: .checksum|first,
-		checksum_type: .checksum_type|first,
-		replica}) |
-	group_by(.instance_id) |
+			size,
+			instance_id,
+			checksum: .checksum|first,
+			checksum_type: .checksum_type|first,
+			replica}) |
+	group_by(.instance_id|sub("\\.nc_[0-9]+";".nc")|gsub("\\.(?!nc$)";"/")) |
 	map(reduce .[] as $i ({urls: []}; {urls: [.urls[],$i.url]} + $i)) |
 	map(	"\t<file name=\""+(.instance_id|sub("\\.nc_[0-9]+";".nc")|gsub("\\.(?!nc$)";"/"))+"\">",
 			"\t\t<size>"+(.size|tostring)+"</size>",
