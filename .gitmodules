@@ -1,0 +1,7 @@
+[submodule "ESGF-inventory/tds-content"]
+	path = ESGF-inventory/tds-content
+	url = git@gitlab.com:scds/tds-content.git
+	branch = atlas
+[submodule "ESGF-inventory/publisher"]
+	path = ESGF-inventory/publisher
+	url = git@github.com:SantanderMetGroup/publisher.git
