@@ -22,6 +22,6 @@ BEGIN{
   printf("name,type,url,dicname\n")
 }
 {
-  template="%s_%s_%s_%s_%s_%s_Amon,projection,https://data.meteo.unican.es/thredds/dodsC/devel/atlas/cmip6/%s/%s/%s/%s/Amon/cmip6_%s_%s_%s_%s_%s_Amon,CMIP6.dic\n"
+  template="%s_%s_%s_%s_%s_%s_Amon,projection,https://data.meteo.unican.es/thredds/dodsC/devel/atlas/cmip6/%s/%s/%s/%s/Amon/cmip6_%s_%s_%s_%s_%s_Amon,CMIP6Amon.dic\n"
   printf(template, $1, $2, $3, $4, $5, $6, $2, $3, $4, $5, $2, $3, $4, $5, $6)
 }' > datasets_CMIP6Amon.txt
