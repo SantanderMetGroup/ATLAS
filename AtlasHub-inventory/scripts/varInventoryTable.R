@@ -18,7 +18,10 @@
 varInventoryTable <- function(datasets, output.file = NULL) {
   require(abind)
   require(lattice)
-  di <- lapply(datasets, function(x) dataInventory(x))
+  di <- lapply(datasets, function(x) {
+    print(x)
+    dataInventory(x)
+  })
   names(di) <- datasets
   divar <- lapply(di, function(x) names(x))
   divarc <- unique(unname(do.call("abind", divar)))
