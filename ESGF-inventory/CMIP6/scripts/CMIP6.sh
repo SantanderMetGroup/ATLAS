@@ -44,7 +44,7 @@ jq 'select(.replica|not)|select(.table_id|first == "Amon")' CMIP6.json | to_inve
 jq 'select(.replica|not)|select(.table_id|first == "day")' CMIP6.json | to_inventory > CMIP6_day.csv
 jq 'select(.replica|not)|select(.table_id|first == "fx")' CMIP6.json | to_inventory > CMIP6_fx.csv
 
-# Do not pick one run, just create global inventories
+# This is commented since I was told not to perform the one_run filter
 #jq 'select(.replica|not)|select(.table_id|first == "Amon")' CMIP6.json | to_inventory > all_runs/CMIP6_mon.csv
 #jq 'select(.replica|not)|select(.table_id|first == "day")' CMIP6.json | to_inventory > all_runs/CMIP6_day.csv
 #jq 'select(.replica|not)|select(.table_id|first == "fx")' CMIP6.json | to_inventory > all_runs/CMIP6_fx.csv

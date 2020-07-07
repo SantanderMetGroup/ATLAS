@@ -33,9 +33,7 @@ mkdir -p metalinks
 
 # Data from esg-dn1.ru.ac.th is commercial
 sed -n '1{p}; ${p}; /<file name/{h;n}; H; /<\/file>/{x; /esg-dn1.ru.ac.th/{p}}' metalink > metalinks/esg-dn1.ru.ac.th.metalink
-
 # Data from esgf-ictp.hpc.cineca.it has incorrect size on the server so we remove <size> element from metalink
 sed -n '1{p}; ${p}; /<file name/{h;n}; H; /<\/file>/{x; /esgf-ictp.hpc.cineca.it/{s|<size>.*</size>||;p}}' metalink > metalinks/esgf-ictp.hpc.cineca.it.metalink
-
 # Remove all previous cases from general metalink
 sed -n '1{p}; ${p}; /<file name/{h;n}; /\(esg-dn1.ru.ac.th\|esgf-ictp.hpc.cineca.it\)/,/<\/file>/{x;d}; H; /<\/file>/{x;p}' metalink > metalinks/all.metalink
