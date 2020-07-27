@@ -15,7 +15,7 @@ SOUTH-AMERICA,Land,S.W.South-America,SWS,-72.0|-15.0,-66.4|-20.0,-71.5|-47.0,-79
 SOUTH-AMERICA,Land,S.E.South-America,SES,-34.0|-20.0,-56.0|-40.0,-70.2|-40.0,-66.4|-20.0,,,,,,,,,,
 SOUTH-AMERICA,Land,S.South-America,SSA,-79.0|-56.0,-79.0|-47.0,-71.5|-47.0,-70.2|-40.0,-56.0|-40,-56.0|-56.0,,,,,,,,
 EUROPE,Land,N.Europe,NEU,-10.0|48.0,-10.0|72.6,40.0|72.6,40.0|61.3,,,,,,,,,,
-EUROPE,Land,C.Europe,CEU,-10.0|45.0,-10.0|48.0,40.0|61.3,40.0|45.0,,,,,,,,,,
+EUROPE,Land,West&Central-Europe,WCE,-10.0|45.0,-10.0|48.0,40.0|61.3,40.0|45.0,,,,,,,,,,
 EUROPE,Land,E.Europe,EEU,40.0|45.0,40.0|65.0,60.0|65.0,60.0|45.0,,,,,,,,,,
 EUROPE-AFRICA,Land-Ocean,Mediterranean,MED,-10.0|30.0,-10.0|45.0,40.0|45.0,40.0|30.0,,,,,,,,,,
 AFRICA,Land,Sahara,SAH,-20.0|14.7,-20.0|30.0,33.0|30.0,42.1|14.7,,,,,,,,,,
