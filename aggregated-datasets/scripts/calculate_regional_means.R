@@ -1,12 +1,11 @@
 
-library(RNetCDF)
+library(sp)
 library(loadeR)
 library(transformeR)
-library(visualizeR)
 library(geoprocessoR)
 
 
-
+# PARAMETER SETTING --------------------------------
 project <- "CMIP6Amon" # CMIP5
 
 scenario <- "historical" # ssp126, ssp245, ssp585, rcp26, rcp45, rcp85
@@ -25,25 +24,28 @@ source.dir <- getwd()
 # Output path, e.g.:
 out.dir <- getwd()
 
+# PREPARE REGIONS, MASKS AND DATA --------------------------------
+
+regions <- get(load("reference_regions_R.rda")) # download reference_regions_R.rda from the "reference-regions" folder of this repo.
 regs <- as(regions, "SpatialPolygons")
 orig.masks <- list.files(mask.dir)
 mask <- loadGridData(refmask, var = "sftlf")
 maskland <- binaryGrid(mask, condition = "GT", threshold = 0.999, values = c(NA, 1))
 masksea <- binaryGrid(mask, condition = "LT", threshold = 0.001, values = c(NA, 1))
-attr(maskland$xyCoords, "projection") <- "+init=epsg:4326"
-attr(masksea$xyCoords, "projection") <- "+init=epsg:4326"
+attr(maskland$xyCoords, "projection") <- proj4string(regions)
+attr(masksea$xyCoords, "projection") <- proj4string(regions)
 
 lf <-  list.files(paste0(source.dir), full.names = TRUE, pattern = scenario)
 filename <- gsub(lf, pattern = ".*//", replacement = "")
 mods <- unique(gsub(filename, pattern = paste0("_", var, ".*"), replacement = ""))
 
-
+# CALCULATE AND WRITE REGIONAL MEANS ------------------------------
 lapply(1:length(mods), function(m){ 
   ind <- grep(mods[m], lf)
   lfi <- lf[ind]
   ydatal <- lapply(1:length(lfi), function(i){
     grid <- loadGridData(lfi[i], var = var)
-    attr(grid$xyCoords, "projection") <- "+init=epsg:4326"
+    attr(grid$xyCoords, "projection") <- proj4string(regions)
     regdatal <- lapply(1:length(regs), function(r){
       ov <- overGrid(grid, regs[r], subset = TRUE)
       mland <- overGrid(maskland, regs[r], subset = TRUE)
