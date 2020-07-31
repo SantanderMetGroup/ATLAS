@@ -6,6 +6,8 @@ The csv file contains the corner coordinates defining each region in [EPSG:4326]
 
 Spatially averaged results of CMIP5 and CMIP6 models (see [Altas Hub inventory](https://github.com/SantanderMetGroup/IPCC-Atlas/tree/devel/AtlasHub-inventory), version 20191211) have been computed for the different reference regions and are available at the [*aggregated-datasets*](https://github.com/SantanderMetGroup/ATLAS/tree/devel/aggregated-datasets) folder. 
 
+More info at https://doi.org/10.5194/essd-2019-258
+
 <img src="../man/reference_regions_names.png" align="left" alt="" width="500" />
 
 ***
