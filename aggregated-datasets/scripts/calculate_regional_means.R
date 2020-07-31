@@ -95,7 +95,7 @@ lapply(1:length(mods), function(m){
                   paste("#Interpolation_method:", interp),
                   paste("#Spatial_resolution:", "1º"),
                   paste("#Creation_Date:", as.character(Sys.Date())),
-                  paste("#Author: IPCC-WGI Atlas Hub (https://github.com/SantanderMetGroup/IPCC-Atlas). Santander Meteorology Group.")), collapse = "\n")
+                  paste("#Author: IPCC-WGI Atlas Hub (https://github.com/SantanderMetGroup/ATLAS). Santander Meteorology Group.")), collapse = "\n")
   writeLines(meta, file)
   write.table(dfw, file, row.names = FALSE, sep = ",", append = TRUE)
   ####
@@ -108,7 +108,7 @@ lapply(1:length(mods), function(m){
                   paste("#Interpolation_method:", interp),
                   paste("#Spatial_resolution:", "1º"),
                   paste("#Creation_Date:", as.character(Sys.Date())),
-                  paste("#Author: IPCC-WGI Atlas Hub (https://github.com/SantanderMetGroup/IPCC-Atlas). Santander Meteorology Group.")), collapse = "\n")
+                  paste("#Author: IPCC-WGI Atlas Hub (https://github.com/SantanderMetGroup/ATLAS). Santander Meteorology Group.")), collapse = "\n")
   writeLines(meta, file)
   write.table(dfwland, file, row.names = FALSE, sep = ",", append = TRUE)
   #####
@@ -121,7 +121,7 @@ lapply(1:length(mods), function(m){
                   paste("#Interpolation_method:", interp),
                   paste("#Spatial_resolution:", "1º"),
                   paste("#Creation_Date:", as.character(Sys.Date())),
-                  paste("#Author: IPCC-WGI Atlas Hub (https://github.com/SantanderMetGroup/IPCC-Atlas). Santander Meteorology Group.")), collapse = "\n")
+                  paste("#Author: IPCC-WGI Atlas Hub (https://github.com/SantanderMetGroup/ATLAS). Santander Meteorology Group.")), collapse = "\n")
   writeLines(meta, file)
   write.table(dfwsea, file, row.names = FALSE, sep = ",", append = TRUE)
 })
