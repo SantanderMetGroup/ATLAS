@@ -81,6 +81,7 @@
 "CMIP6.CMIP.CCCma.CanESM5.historical.r8i1p2f1.fx.gn",59765,true
 "CMIP6.CMIP.CCCma.CanESM5.historical.r9i1p1f1.fx.gn",59765,true
 "CMIP6.CMIP.CCCma.CanESM5.historical.r9i1p2f1.fx.gn",59765,true
+"CMIP6.CMIP.CMCC.CMCC-CM2-HR4.historical.r1i1p1f1.fx.gn",82865,true
 "CMIP6.CMIP.CMCC.CMCC-CM2-SR5.historical.r1i1p1f1.fx.gn",77031,true
 "CMIP6.CMIP.CNRM-CERFACS.CNRM-CM6-1-HR.historical.r1i1p1f2.fx.gr",121611,true
 "CMIP6.CMIP.CNRM-CERFACS.CNRM-CM6-1.historical.r10i1p1f2.fx.gr",53801,true
@@ -333,6 +334,8 @@
 "CMIP6.CMIP.NCC.NorESM2-LM.historical.r2i1p1f1.fx.gn",65249,true
 "CMIP6.CMIP.NCC.NorESM2-LM.historical.r3i1p1f1.fx.gn",65249,true
 "CMIP6.CMIP.NCC.NorESM2-MM.historical.r1i1p1f1.fx.gn",74591,true
+"CMIP6.CMIP.NCC.NorESM2-MM.historical.r2i1p1f1.fx.gn",74591,true
+"CMIP6.CMIP.NCC.NorESM2-MM.historical.r3i1p1f1.fx.gn",74591,true
 "CMIP6.CMIP.NOAA-GFDL.GFDL-CM4.historical.r1i1p1f1.fx.gr1",84777,true
 "CMIP6.CMIP.NOAA-GFDL.GFDL-CM4.historical.r1i1p1f1.fx.gr2",53078,true
 "CMIP6.CMIP.SNU.SAM0-UNICON.historical.r1i1p1f1.fx.gn",69323,true
