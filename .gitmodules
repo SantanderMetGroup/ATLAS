@@ -1,0 +1,4 @@
+[submodule "ESGF-inventory/esgf-utils"]
+	path = ESGF-inventory/esgf-utils
+	url = git@github.com:SantanderMetGroup/esgf-utils.git
+	branch = master
