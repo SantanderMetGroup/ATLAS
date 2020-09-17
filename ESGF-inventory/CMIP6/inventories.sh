@@ -53,11 +53,5 @@ jq 'select(.table_id|first == "Amon")' CMIP6.json | to_inventory > CMIP6_mon.csv
 jq 'select(.table_id|first == "day")' CMIP6.json | to_inventory > CMIP6_day.csv
 jq 'select(.table_id|first == "fx")' CMIP6.json | to_inventory > CMIP6_fx.csv
 
-# This is commented since I was told not to perform the one_run filter
-#jq 'select(.replica|not)|select(.table_id|first == "Amon")' CMIP6.json | to_inventory > all_runs/CMIP6_mon.csv
-#jq 'select(.replica|not)|select(.table_id|first == "day")' CMIP6.json | to_inventory > all_runs/CMIP6_day.csv
-#jq 'select(.replica|not)|select(.table_id|first == "fx")' CMIP6.json | to_inventory > all_runs/CMIP6_fx.csv
-#
-#jq 'select(.replica|not)|select(.table_id|first == "Amon")' CMIP6.json | one_run | to_inventory > one_run/CMIP6_mon.csv
-#jq 'select(.replica|not)|select(.table_id|first == "day")' CMIP6.json | one_run | to_inventory > one_run/CMIP6_day.csv
-#jq 'select(.replica|not)|select(.table_id|first == "fx")' CMIP6.json | one_run | to_inventory > one_run/CMIP6_fx.csv
+# oceanic variables
+jq 'select(.variable|first == ["tos", "ph", "o2"][])' CMIP6.json | to_inventory > CMIP6_Omon.csv
