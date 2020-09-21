@@ -6,7 +6,7 @@ trap exit SIGINT SIGKILL
 
 esgf_utils="../esgf-utils"
 
-fields="master_id,variable,size,table_id,id,instance_id,url,checksum,checksum_type,replica"
+#fields="master_id,variable,size,table_id,id,instance_id,url,checksum,checksum_type,replica"
 
 # first I group by checksum to pick only one replica of every file
 # I could group by instance_id but that field often contains bad data... (I hope checksums are OK)
@@ -47,11 +47,11 @@ one_run() {
     .[].runs.datasets[]|del(.dataset_id, .dataset_run)'
 }
 
-xargs -a ${esgf_utils}/indexnodes -I{} ${esgf_utils}/esgf-search -i "{}" -f $fields selection > CMIP6.json
+xargs -a ${esgf_utils}/indexnodes -I{} ${esgf_utils}/esgf-search -i "{}" selection | jq -c '.' > CMIP6.json
 
-jq 'select(.table_id|first == "Amon")' CMIP6.json | to_inventory > CMIP6_mon.csv
+jq 'select((.table_id|first == "Amon") and (.variable|first == ("pr", "tas" ,"tasmin", "tasmax", "psl", "sfcWind")))' CMIP6.json | to_inventory > CMIP6_mon.csv
 jq 'select(.table_id|first == "day")' CMIP6.json | to_inventory > CMIP6_day.csv
 jq 'select(.table_id|first == "fx")' CMIP6.json | to_inventory > CMIP6_fx.csv
 
 # oceanic variables
-jq 'select(.variable|first == ["tos", "ph", "o2"][])' CMIP6.json | to_inventory > CMIP6_Omon.csv
+jq 'select(.variable|first == ("tos", "ph", "o2"))' CMIP6.json | to_inventory > CMIP6_Omon.csv
