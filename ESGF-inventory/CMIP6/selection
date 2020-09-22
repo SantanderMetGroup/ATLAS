@@ -21,3 +21,10 @@ variable_id=sfcWind
 frequency=mon
 table_id=Amon
 latest=True type=File distrib=False
+
+project=CMIP6
+activity_id=CMIP,ScenarioMIP
+frequency=mon
+variable_id=tos,o2,ph
+experiment_id=historical,ssp126,ssp245,ssp370,ssp585,ssp460
+latest=True type=File distrib=False
