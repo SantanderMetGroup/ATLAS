@@ -79,7 +79,7 @@ climate4R.UDG::loginUDG(username = "yourUser", password = "yourPassword")
 AtlasIndex <- "TX35bc"
 
 # Select scenario, e.g.:
-scenario <- "rcp85"  # possible choices are c("historical", "rcp26", "rcp45", "rcp85", "ssp126", "ssp585")
+scenario <- "rcp85"  # possible choices are c("rcp26", "rcp45", "rcp85", "ssp126", "ssp585")
 
 # Select datasets(s) of interest, for the observational reference and the historical (datasets1) 
 # and rcp scenarios (datasets2), e.g.:
