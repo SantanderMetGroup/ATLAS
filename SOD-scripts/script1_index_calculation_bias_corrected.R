@@ -35,8 +35,7 @@ library(climate4R.indices)
 library(climate4R.climdex)
 library(drought4R)
 
-# Function for latitudinal chunking (read script from remote master branch):
-## For further details: https://github.com/SantanderMetGroup/climate4R/tree/master/R 
+# Function for latitudinal chunking 
 source_url("https://github.com/SantanderMetGroup/climate4R/blob/master/R/climate4R.chunk.R?raw=TRUE")
 
 # DATA ACCESS ------------------------------------------------------------------------------------
@@ -103,7 +102,7 @@ target.years <- 2006:2100
 
 # Select number of chunks
 # Note: chunking sequentially splits the task into manageable data chunks to avoid memory problems
-# chunking operates by spliting the data into a predefined number latitudinal slices (n=10 in this example).
+# Chunking operates by spliting the data into a predefined number latitudinal slices (n=10 in this example).
 # Further details: https://github.com/SantanderMetGroup/climate4R/tree/master/R 
 n.chunks <- 10
 
