@@ -1,4 +1,4 @@
-#     script1_index_calculation_bias_corrected.R Generate bias-corrected Climate Index NetCDF4 files from CMIP5 and CMIP6 Model Outputs for Atlas Product Reproducibility
+#     script1_index_calculation_bias_corrected.R Generate bias-corrected Climate Index NetCDF4 files from CMIP5 and CMIP6 Model Outputs for Atlas Product Reproducibility. Bias correction is partcularly recommended for climate indices which depend on absolute threshold values (e.g. TX35)
 #
 #     Copyright (C) 2020 Santander Meteorology Group (http://www.meteo.unican.es)
 #
