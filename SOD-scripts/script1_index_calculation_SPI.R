@@ -45,7 +45,7 @@ loginUDG(username = "yourUser", password = "yourPassword")
 # | HDD    | heating degree days                   | degreedays | script1_index_calculation.R
 # | FD     | frost days                            | days       | script1_index_calculation.R
 # | T21.5  | mean temperature above 21.5degC       | days       | script1_index_calculation.R
-# Indices with * are not ready yet
+# Indices marked with * are not ready yet
 # Indices SPI6, SPI12 are calculated with the sript "script1_index_calculation_SPI.R"
 # Indices TX35bc, TX35bc are calculated with the script "script1_index_calculation_bias_correction.R"
 
@@ -70,10 +70,13 @@ datasets2 <-  UDG.datasets(paste0("CMIP5.*", scenario))[["CMIP5_AR5_1run"]]
 # datasets1 <- grep(datasets, pattern = "historical", value = TRUE)
 # datasets2 <- grep(datasets, pattern = scenario, value = TRUE)
 
-# Select the number of chunks, e.g.:
+# Select number of chunks
+# Note: chunking sequentially splits the task into manageable data chunks to avoid memory problems
+# chunking operates by spliting the data into a predefined number latitudinal slices (n=2 in this example).
+# Further details: https://github.com/SantanderMetGroup/climate4R/tree/master/R 
 n.chunks <- 2
 
-# Output directory to save results, e.g.
+# Output directory where the generated results will be saved, e.g. the current one:
 out.dir <- getwd()
 
 
