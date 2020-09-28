@@ -69,19 +69,15 @@ climate4R.UDG::loginUDG(username = "yourUser", password = "yourPassword")
 # | HDD    | heating degree days                   | degreedays | script1_index_calculation.R
 # | FD     | frost days                            | days       | script1_index_calculation.R
 # | T21.5  | mean temperature above 21.5degC       | days       | script1_index_calculation.R
-# Indices with * not ready yet
-# Indices TX35bc, TX35bc, SPI6, SPI12 are calculated in scripts 
-# "script1_index_calculation_bias_correction.R" and "script1_index_calculation_SPI.R"
+# Indices marked with * are not ready yet
+# Indices SPI6, SPI12 are calculated with the sript "script1_index_calculation_SPI.R"
+# Indices TX35bc, TX35bc are calculated with the script "script1_index_calculation_bias_correction.R"
 
 
 ## In the next example, the climate index FD (frost days) is selected:
 AtlasIndex <- "FD"
-# Note: DS and CDD are not yet included in the list of valid choices:
-AtlasIndex <- match.arg(AtlasIndex, choices = c("pr", "pr99", "tas", "tasmin",
-                                                "tasmax", "TNn", "TXx", "TX35", "TX40",
-                                                "Rx1day", "Rx5day", "HDD", "FD", "T21.5")) 
 
-# select datasets, e.g., the CMIP5 datasets:
+# Select dataset(s) of interest, e.g., the CMIP5 datasets:
 datasets <- UDG.datasets()[["CMIP5_AR5_1run"]]
 # or, e.g., for CMIP6:
 # datasets <- UDG.datasets()[["CMIP6_1run"]]
@@ -95,13 +91,13 @@ datasets <- UDG.datasets()[["CMIP5_AR5_1run"]]
 # file <- "AtlasHub-inventory/CMIP5_Atlas_20191211.csv"
 # datasets <- read.csv(paste0(root, file))[,1]
 
-# Number of chunks
+# Select number of chunks
 # Note: chunking sequentially splits the task into manageable data chunks to avoid memory problems
 # chunking operates by spliting the data into a predefined number latitudinal slices (n=2 in this example).
 # Further details: https://github.com/SantanderMetGroup/climate4R/tree/master/R 
 n.chunks <- 2
 
-# outputs are stored in this directory (the working directory by default):
+# Output directory where the generated results will be saved, e.g. the current one:
 out.dir <- getwd()
 
 # AUTOMATIC PARAMETER DEFINITION and INDEX CALCULATION -------------------------
