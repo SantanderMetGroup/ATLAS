@@ -1,4 +1,4 @@
-#     script4_map_figures.R Generate map figures from the ncml-s created 
+#     script4_map_figures.R Generate map figures from the NcMLs created 
 #     using script3_ensemble_building.R, for Atlas Product Reproducibility.
 #
 #     Copyright (C) 2020 Santander Meteorology Group (http://www.meteo.unican.es)
@@ -34,38 +34,38 @@ library(geoprocessoR)
 library(sp)
 library(rgdal)
 
-# Function for latitudinal chunking
-# Note: chunking sequentially splits the task into manageable data chunks to avoid memory problems
-# chunking operates by spliting the data into a predefined number latitudinal slices.
-# Further details: https://github.com/SantanderMetGroup/climate4R/tree/master/R 
+# Function for latitudinal chunking 
 source_url("https://github.com/SantanderMetGroup/climate4R/blob/master/R/climate4R.chunk.R?raw=TRUE")
 
 
 # USER PARAMETER SETTINGS ------------------------------------------------------
 
-# Number of chunks
+# Select number of chunks
+# Note: chunking sequentially splits the task into manageable data chunks to avoid memory problems
+# Chunking operates by spliting the data into a predefined number latitudinal slices (n=2 in this example).
+# Further details: https://github.com/SantanderMetGroup/climate4R/tree/master/R 
 n.chunks <- 2
 
-# Atlas Index, scenario and season, reference period, and target future periods, e.g.:
-AtlasIndex <- "tas"
-scenario <- "rcp85"
+# Index, scenario, season and reference and future period(s) of interest, e.g.:
+AtlasIndex <- "FD"  # index (frost days)
+scenario <- "rcp85"  # scenario
 season <- 1:12  # (entire year: season = 1:12; boreal winter (DJF): season = c(12, 1, 2); boreal summer (JJA): season = 6:8, and so on...)
-years.hist <- 1986:2005
-years.ssp <- list(2021:2040,
+years.hist <- 1986:2005  # reference period
+years.ssp <- list(2021:2040,  # future periods
                   2041:2060,
                   2080:2100)
 
 # Path of the shapefile of World coastlines, e.g. 
-## available for download: https://github.com/SantanderMetGroup/ATLAS/tree/devel/man 
+## downloable from https://github.com/SantanderMetGroup/ATLAS/tree/devel/man 
 coast.dir <- "WORLD_coastline.shp"
 
-# Level of aggrement of the models (in %), e.g.:
-th <- 80 # 80% multimode agreement
+# Level of aggrement across models (in %), e.g.:
+th <- 80  # asking for 80% of models agreement 
 
-# Source path where the ncml-s are (those created in script3_ensemble_building.R)
+# Source directory where the NcMLs (those created by script3_ensemble_building.R) are located
 source.dir <- ""
 
-# Output path to save the .rda object of the computed deltas and to export the pdf of the figure
+# Output directory to save the .rda object of the computed deltas and to export the pdf of the figure
 out.dir <- ""
 
 # Color key graphical parameter:
@@ -74,7 +74,7 @@ out.dir <- ""
   # s = cut value frequency
   # ct = Brewer color code (see 'RColorBrewer::display.brewer.all()')
 
-if (AtlasIndex != "pr") {
+if (AtlasIndex != "pr") {  # case of precipitation
   m <- 8
   n <- 0
   s <- 0.5
@@ -103,7 +103,7 @@ membernames <- ssp.members[ssp.m.ind]
 # For convenience, the auxiliary wrapper 'aux.fun' is next defined, performing the following actions in one single step:
 #  1. Performs data subsetting along the time dimension to extract the target season
 #  2. Undertakes annual aggregation of the data, using a suitable aggregation function to that aim (i.e. sum of flux variables, i.e. precip, and averaging of other quantities, such as temperature)
-#  3. Compute the climatology of the annualy aggregated data. This is the temporal mean for the whole target period
+#  3. Computes the climatology of the annualy aggregated data. This is the temporal mean for the whole target period
 
 aux.fun <- function(grid, AtlasIndex, season = 1:12) {
   gy <- if (AtlasIndex != "pr") {
@@ -141,7 +141,7 @@ ssp <- lapply(years.ssp, function(y) climate4R.chunk(n.chunks = n.chunks,
 ssp <- lapply(ssp, function(x) redim(x, drop = TRUE)); ssp <- lapply(ssp, function(x) redim(x))
 
 ## CALCULATE DELTAS ------------------------------------------------------------
-# Deltas are the arithmetic difference between future and historical time slices.
+# Deltas are the arithmetic difference between future and historical time slices
 # NOTE: Relative deltas are calculated in the case of precipitation (i.e.: future / historical, in %)
 
 if (AtlasIndex != "pr") {
@@ -187,12 +187,12 @@ agrfun.sig <- function(x, th) {
 
 ## WORLD MAP -------------------------------------------------------------------
 
-# spatial objects (regions and coastline)
+# Spatial objects (regions and coastline)
 regs <- as(regions, "SpatialPolygons")
 coast <- readOGR(coast.dir)
 proj4string(coast) <- proj4string(regs)
 
-# project to Robinson
+# Apply the Robinson's projection
 robin.proj.string <- "+proj=robin +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs"
 rregs <- spTransform(regs, CRS(robin.proj.string))
 ccoast <- spTransform(coast, CRS(robin.proj.string))
@@ -200,7 +200,7 @@ delta.p <- lapply(delta, function(x) {
   warpGrid(x, original.CRS = CRS("+init=epsg:4326"), new.CRS = CRS(robin.proj.string))
 })
 
-# prepare the hatching spatial object
+# Prepare the hatching spatial object
 l1 <- lapply(1:length(delta.p), function(x) {
   deltaagr1 <- aggregateGrid(delta.p[[x]], aggr.mem = list(FUN = agrfun.cons, th = th))
   c(map.hatching(clim = climatology(deltaagr1),
@@ -210,7 +210,7 @@ l1 <- lapply(1:length(delta.p), function(x) {
     "which" = x, lwd = 0.6)
 })
 
-# calculate the ensemble mean for all periods
+# Calculate the ensemble mean for all periods
 delta.w <- lapply(1:length(delta.p), function(x) {
   deltamean <- aggregateGrid(delta.p[[x]], aggr.mem = list(FUN = "mean", na.rm = TRUE))
   deltamean$Dates$start <- "2021-01-16 00:00:00 GMT"
@@ -218,13 +218,13 @@ delta.w <- lapply(1:length(delta.p), function(x) {
   return(deltamean)
 })
 
-# handle periods as members to create a multipanel
+# Handle periods as members to create a multipanel
 delta.m <- bindGrid(delta.w, dimension = "member")
 delta.m[["Members"]] <- paste0("p", unlist(lapply(years.ssp, function(l) {
   paste(range(l), collapse = "_")
 })), "_", length(membernames), "_models")
 
-# plot
+# Plot final maps 
 p <- spatialPlot(delta.m, set.min = n, set.max = m, at = seq(n, m, s),
                  layout = c(1, length(years.ssp)),
                  as.table = TRUE,
@@ -244,3 +244,4 @@ pdf(paste0(out.dir, "/World_delta_", AtlasIndex, "_", scenario, "_",  paste(seas
 print(p)
 dev.off()
 
+# END                  
