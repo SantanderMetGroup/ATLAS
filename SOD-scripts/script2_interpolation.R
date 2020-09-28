@@ -20,29 +20,28 @@
 # This script uses bash interpolation scripts:
 # https://github.com/SantanderMetGroup/ATLAS/tree/mai-devel/SOD-scripts
 
-# The interpolation procedure followed is the one used in EURO-CORDEX
+# The interpolation followed is the one used in EURO-CORDEX
 # It is a Conservative Remapping procedure in which parameters sensitive to land-sea transitions
 # are dually interpolated, i.e. land-sea separated, and then re-combined in one file.
-# Residual missing values (NaN) in the interior domain are filled with values from a straighforward remap.
+# Residual missing values (NAs) in the interior domain are filled with values from a straighforward remap.
 # Land fraction thresholds used were > 0.999 and < 0.001 for land and sea respectively.
-# The interpolation bash scripts are available at the 'bash-interpolation-scripts' directory
-# at <https://github.com/SantanderMetGroup/ATLAS/tree/mai-devel/SOD-scripts>
+# The interpolation bash scripts are available at https://github.com/SantanderMetGroup/ATLAS/tree/mai-devel/SOD-scripts/bash-interpolation-scripts
 
 # Misc utilities for remote repo interaction:
 library(devtools)
 
 # USER PARAMETER SETTING -------------------------------------------------------
 
-# Bash script performing the interpolation available at https://github.com/SantanderMetGroup/ATLAS/tree/mai-devel/SOD-scripts, e.g.: 
-script <- "AtlasCDOremappeR_CMIP.sh"
-# Path to the destination mask, available at https://github.com/SantanderMetGroup/ATLAS/tree/master/reference_masks, e.g.:
-refmask <- "land_sea_mask_2degree.nc4"
-# Path to the directory containing the NetCDFs to be interpolated
+# Path to the bash script performing the interpolation (AtlasCDOremappeR_CMIP.sh), downloable from https://github.com/SantanderMetGroup/ATLAS/tree/mai-devel/SOD-scripts/bash-interpolation-scripts: 
+script <- "AtlasCDOremappeR_CMIP.sh"  # supposing the bash script is in the current directory
+# Path to the directory containing the NetCDFs to be interpolated, e.g. the current directory:
 source.dir <- getwd()
-# Output path, e.g.:
+# Path to the output directory, e.g.:
 out.dir <- getwd()
 # Path to the NetCDFs of the original masks (variable sftlf), e.g.:
 mask.dir <- paste0(getwd(), "/masks")
+# Path to the destination mask (land_sea_mask_2degree.nc4), downloable from https://github.com/SantanderMetGroup/ATLAS/tree/master/reference-grids:
+refmask = paste0(mask.dir, "/land_sea_mask_2degree.nc4")
 
 # INTERPOLATION ----------------------------------------------------------------
 
@@ -69,4 +68,4 @@ for (m in 1:length(grids)) {
     }
   }
 }
-# End
+# END
