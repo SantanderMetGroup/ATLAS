@@ -53,7 +53,7 @@ loginUDG(username = "yourUser", password = "yourPassword")
 AtlasIndex <- "SPI6"
 
 # Select scenario, e.g.:
-scenario <- "rcp85"
+scenario <- "rcp85"  # possible choices are c("historical", "rcp26", "rcp45", "rcp85", "ssp126", "ssp585")
 
 # Select datasets, for the historical (datasets1) and rcp scenarios (datasets2), e.g.:
 datasets1 <- UDG.datasets("CMIP5.*historical")[["CMIP5_AR5_1run"]]
