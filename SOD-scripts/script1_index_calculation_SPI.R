@@ -27,8 +27,8 @@ library(loadeR.2nc)
 # Index calculation libraries:
 library(transformeR)
 library(drought4R)
-# Function for latitudinal chunking (read script from website):
-## See https://github.com/SantanderMetGroup/climate4R/tree/master/R !!!!!!!!!!!!!!!!!!!
+
+# Function for latitudinal chunking 
 source_url("https://github.com/SantanderMetGroup/climate4R/blob/master/R/climate4R.chunk.R?raw=TRUE")
 
 # DATA ACCESS ------------------------------------------------------------------------------------
@@ -91,7 +91,7 @@ datasets2 <-  UDG.datasets(paste0("CMIP5.*", scenario))[["CMIP5_AR5_1run"]]
 
 # Select number of chunks
 # Note: chunking sequentially splits the task into manageable data chunks to avoid memory problems
-# chunking operates by spliting the data into a predefined number latitudinal slices (n=2 in this example).
+# Chunking operates by spliting the data into a predefined number latitudinal slices (n=2 in this example).
 # Further details: https://github.com/SantanderMetGroup/climate4R/tree/master/R 
 n.chunks <- 2
 
