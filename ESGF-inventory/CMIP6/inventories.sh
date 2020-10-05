@@ -55,3 +55,4 @@ jq 'select(.table_id|first == "fx")' CMIP6.json | to_inventory > CMIP6_fx.csv
 
 # oceanic variables
 jq 'select(.variable|first == ("tos", "ph", "o2"))' CMIP6.json | to_inventory > CMIP6_Omon.csv
+jq 'select(.variable|first == "siconc")' CMIP6.json | to_inventory > CMIP6_SImon.csv

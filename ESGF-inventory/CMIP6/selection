@@ -28,3 +28,11 @@ frequency=mon
 variable_id=tos,o2,ph
 experiment_id=historical,ssp126,ssp245,ssp370,ssp585,ssp460
 latest=True type=File distrib=False
+
+project=CMIP6
+activity_id=ScenarioMIP,CMIP
+experiment_id=historical,ssp119,ssp126,ssp245,ssp370,ssp585,ssp460
+frequency=mon
+realm=seaIce
+variable_id=siconc
+latest=True type=File distrib=False
