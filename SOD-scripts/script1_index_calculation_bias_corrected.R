@@ -1,4 +1,4 @@
-#     script1_index_calculation_bias_corrected.R Generate bias-corrected Climate Index NetCDF4 files from CMIP5 and CMIP6 Model Outputs for Atlas Product Reproducibility
+#     script1_index_calculation_bias_corrected.R Generate bias-corrected Climate Index NetCDF4 files from CMIP5 and CMIP6 Model Outputs for Atlas Product Reproducibility. Bias correction is partcularly recommended for climate indices which depend on absolute threshold values (e.g. TX35)
 #
 #     Copyright (C) 2020 Santander Meteorology Group (http://www.meteo.unican.es)
 #
@@ -35,8 +35,7 @@ library(climate4R.indices)
 library(climate4R.climdex)
 library(drought4R)
 
-# Function for latitudinal chunking (read script from remote master branch):
-## For further details: https://github.com/SantanderMetGroup/climate4R/tree/master/R 
+# Function for latitudinal chunking 
 source_url("https://github.com/SantanderMetGroup/climate4R/blob/master/R/climate4R.chunk.R?raw=TRUE")
 
 # DATA ACCESS ------------------------------------------------------------------------------------
@@ -71,20 +70,18 @@ climate4R.UDG::loginUDG(username = "yourUser", password = "yourPassword")
 # | HDD    | heating degree days                   | degreedays | script1_index_calculation.R
 # | FD     | frost days                            | days       | script1_index_calculation.R
 # | T21.5  | mean temperature above 21.5degC       | days       | script1_index_calculation.R
-# Indices with * not ready yet
-# Indices TX35bc, TX35bc, SPI6, SPI12 are calculated in scripts 
-# "script1_index_calculation_bias_correction.R" and "script1_index_calculation_SPI.R"
+# Indices marked with * are not ready yet
+# Indices SPI6, SPI12 are calculated with the sript "script1_index_calculation_SPI.R"
+# Indices TX35bc, TX35bc are calculated with the script "script1_index_calculation_bias_correction.R"
 
-# Next select one of TX35bc and TX40bc:
+# Next select either TX35bc or TX40bc:
 AtlasIndex <- "TX35bc"
-AtlasIndex <- match.arg(AtlasIndex, choices = c("TX35bc", "TX40bc"))
 
-# scenario, e.g.:
-scenario <- "rcp85"
-scenario <- match.arg(scenario, choices = c("historical", "rcp26", "rcp45", "rcp85", "ssp126", "ssp585"))
+# Select scenario, e.g.:
+scenario <- "rcp85"  # possible choices are c("rcp26", "rcp45", "rcp85", "ssp126", "ssp585")
 
-# select datasets, for the observational reference and the historical (datasets1) 
-# and rcp (datasets2) scenarios, e.g.:
+# Select datasets(s) of interest, for the observational reference and the historical (datasets1) 
+# and rcp scenarios (datasets2), e.g.:
 dataset.obs <- "ncml_to_the_daily_observational_dataset.ncml"
 datasets1 <- UDG.datasets("CMIP5.*historical")[["CMIP5_AR5_1run"]]
 datasets2 <-  UDG.datasets(paste0("CMIP5.*", scenario))[["CMIP5_AR5_1run"]]
@@ -100,14 +97,16 @@ datasets2 <-  UDG.datasets(paste0("CMIP5.*", scenario))[["CMIP5_AR5_1run"]]
 # datasets1 <- grep(datasets, pattern = "historical", value = TRUE)
 # datasets2 <- grep(datasets, pattern = scenario, value = TRUE)
 
-# Years to be corrected
+# Select target years to be bias corrected, e.g.:
 target.years <- 2006:2100
 
-
-# Number of chunks, e.g.:
+# Select number of chunks
+# Note: chunking sequentially splits the task into manageable data chunks to avoid memory problems
+# Chunking operates by spliting the data into a predefined number latitudinal slices (n=10 in this example).
+# Further details: https://github.com/SantanderMetGroup/climate4R/tree/master/R 
 n.chunks <- 10
 
-#output path, e.g.
+# Output directory where the generated results will be saved, e.g. the current one:
 out.dir <- getwd()
 
 
@@ -120,7 +119,7 @@ datasets2.aux <- gsub(paste0("_", scenario), "", datasets2)
 datasets1 <- datasets1[which(datasets1.aux %in% datasets2.aux)]
 datasets2 <- datasets2[which(datasets2.aux %in% datasets1.aux)]
 
-# Years for calibration
+# Select years used for calibration
 years.cal <- 1980:2005
 
 # myfun is a wrapper function in order to undertake bias correction and index calculation in one step
@@ -181,4 +180,4 @@ lapply(1:length(datasets1), function(x) {
   }
 })
 
-# End
+# END

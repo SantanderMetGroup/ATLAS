@@ -1,3 +1,22 @@
+#     script1_index_calculation_SPI.R Generate SPI6-12 (see table below) NetCDF4 files from CMIP5 and CMIP6 Model Outputs for Atlas Product Reproducibility
+#
+#     Copyright (C) 2020 Santander Meteorology Group (http://www.meteo.unican.es)
+#
+#     This program is free software: you can redistribute it and/or modify
+#     it under the terms of the GNU General Public License as published by
+#     the Free Software Foundation, either version 3 of the License, or
+#     (at your option) any later version.
+# 
+#     This program is distributed in the hope that it will be useful,
+#     but WITHOUT ANY WARRANTY; without even the implied warranty of
+#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#     GNU General Public License for more details.
+# 
+#     You should have received a copy of the GNU General Public License
+#     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+
 # This script builds on the climate4R framework 
 # https://github.com/SantanderMetGroup/climate4R
 
@@ -8,8 +27,8 @@ library(loadeR.2nc)
 # Index calculation libraries:
 library(transformeR)
 library(drought4R)
-# Function for latitudinal chunking (read script from website):
-## see https://github.com/SantanderMetGroup/climate4R/tree/master/R !!!!!!!!!!!!!!!!!!!
+
+# Function for latitudinal chunking 
 source_url("https://github.com/SantanderMetGroup/climate4R/blob/master/R/climate4R.chunk.R?raw=TRUE")
 
 # DATA ACCESS ------------------------------------------------------------------------------------
@@ -45,17 +64,17 @@ loginUDG(username = "yourUser", password = "yourPassword")
 # | HDD    | heating degree days                   | degreedays | script1_index_calculation.R
 # | FD     | frost days                            | days       | script1_index_calculation.R
 # | T21.5  | mean temperature above 21.5degC       | days       | script1_index_calculation.R
-# Indices with * not ready yet
-# Indices TX35bc, TX35bc, SPI6, SPI12 are calculated in scripts 
-# "script1_index_calculation_bias_correction.R" and "script1_index_calculation_SPI.R"
+# Indices marked with * are not ready yet
+# Indices SPI6, SPI12 are calculated with the sript "script1_index_calculation_SPI.R"
+# Indices TX35bc, TX35bc are calculated with the script "script1_index_calculation_bias_correction.R"
 
-# Next select one of SPI6 and SPI12, e.g.
+# Select one of SPI6 and SPI12, e.g.:
 AtlasIndex <- "SPI6"
 
-#scenario, e.g.:
-scenario <- "rcp85"
+# Select scenario, e.g.:
+scenario <- "rcp85"  # possible choices are c("rcp26", "rcp45", "rcp85", "ssp126", "ssp585")
 
-#select datasets, for the historical (datasets1) and rcp (datasets2) scenarios, e.g.:
+# Select datasets, for the historical (datasets1) and rcp scenarios (datasets2), e.g.:
 datasets1 <- UDG.datasets("CMIP5.*historical")[["CMIP5_AR5_1run"]]
 datasets2 <-  UDG.datasets(paste0("CMIP5.*", scenario))[["CMIP5_AR5_1run"]]
 
@@ -70,13 +89,14 @@ datasets2 <-  UDG.datasets(paste0("CMIP5.*", scenario))[["CMIP5_AR5_1run"]]
 # datasets1 <- grep(datasets, pattern = "historical", value = TRUE)
 # datasets2 <- grep(datasets, pattern = scenario, value = TRUE)
 
-# Number of chunks, e.g.:
+# Select number of chunks
+# Note: chunking sequentially splits the task into manageable data chunks to avoid memory problems
+# Chunking operates by spliting the data into a predefined number latitudinal slices (n=2 in this example).
+# Further details: https://github.com/SantanderMetGroup/climate4R/tree/master/R 
 n.chunks <- 2
 
-#output path, e.g.
+# Output directory where the generated results will be saved, e.g. the current one:
 out.dir <- getwd()
-
-
 
 
 # PARAMETER DEFINITION BASED ON OBJECT `AtlasIndex` and COMPUTE INDEX -------------------------------------------------
