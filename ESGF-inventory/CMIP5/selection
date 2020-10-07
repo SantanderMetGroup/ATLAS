@@ -1,0 +1,11 @@
+project=CMIP5
+variable=o2,ph,tos
+time_frequency=mon
+experiment=historical,rcp26,rcp45,rcp85
+type=File latest=True distrib=False
+
+project=CMIP5
+experiment=historical,rcp26,rcp45,rcp85
+time_frequency=fx,day
+variable=pr,tas,tasmax,tasmin,sftlf
+type=File latest=True distrib=False
