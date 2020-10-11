@@ -37,6 +37,9 @@ l <- lapply(1:length(modelruns), function(i) {
     yrs <- grep("historical", modelfiles, value = TRUE) %>% read.table(header = TRUE, sep = ",", skip = 7) %>% subset(select = "date", drop = TRUE) %>% gsub("-.*", "", .) %>% as.integer()
     hist <- tapply(hist, INDEX = yrs, FUN = "mean", na.rm = TRUE)
     names(hist) <- unique(yrs)
+    # Ensure historical period does not go beyond 2005
+    na.ind <- which(as.integer(names(hist)) > 2005)
+    if (length(na.ind) > 0) hist <- hist[-na.ind]
     l1 <- lapply(1:length(exp), FUN = function(j) {
         rcp <- tryCatch({
             grep(exp[j], modelfiles, value = TRUE) %>% read.table(header = TRUE, sep = ",", skip = 7) %>% subset(select = "world", drop = TRUE)
