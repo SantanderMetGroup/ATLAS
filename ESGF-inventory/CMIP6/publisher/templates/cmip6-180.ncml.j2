@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+{% set localpath = ('GLOBALS', 'localpath') %}
+{% set variable = ('GLOBALS', '_DRS_variable') %}
+{% set size = ('GLOBALS', 'size') %}
+{% set frequency = ('GLOBALS', 'frequency') %}
+{% set lat_coord = df.iloc[0][(df.iloc[0] =='latitude')].index[0][0] %}
+{% set lon_coord = df.iloc[0][(df.iloc[0] =='longitude')].index[0][0] %}
+{% set fxs = (['areacella', 'areacello', 'areacellr', 'basin', 'deptho',
+               'gridspec', 'hfgeou', 'lm', 'mrsofc', 'orog', 'orograw',
+               'rootd', 'sftgif', 'sftlf', 'sftof', 'thkcello', 'volcello', 'zfull']) %}
+<netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
+  <attribute name="primary_variables" value="{{ ','.join(df[variable].unique()) }}"/>
+  <attribute name="size" type="int" value="{{ df[size].sum()|int }}" />
+  <attribute name="size_human" value="{{ df[size].sum()|filesizeformat }}" />
+
+  <remove name="tracking_id" type="attribute" />
+  <remove name="variable_id" type="attribute" />
+  <remove name="version" type="attribute" />
+
+  <variable name="{{ lon_coord }}" type="double" shape="{{ df[(lon_coord, '_dimensions')].iloc[0] }}">
+    <values>{{ df[(lon_coord, '_values')].iloc[0].ravel() | join(" ") }}</values>
+  </variable>
+
+  {% for v, group in df[df[frequency] != 'fx'].groupby((variable)) %}
+  <dimension name="time_{{ v }}" length="{{ group[('_d_time', 'size')].sum()|int }}" />
+  <variable name="time_{{ v }}" type="double" shape="time_{{ v }}">
+    {% for i in group['time'].columns %}
+    {% if i not in ['_values', '_dimensions'] %}
+    <attribute name="{{ i }}" value="{{ group.iloc[0][('time', i)] }}" />
+    {% endif %}
+    {% endfor %}
+    <values>{{ group.sort_values(by=[('GLOBALS', '_DRS_period1')])[('time', '_values')]|_values|join(' ') }}</values>
+  </variable>
+  {% endfor %}
+
+  {% for name,group in df[df[frequency] != 'fx'].groupby((variable)) %}
+  <variable name="{{ group[variable].iloc[0] }}" shape="time_{{ name }} {{ lat_coord }} {{ lon_coord }}">
+    <attribute name="version" type="string" value="v{{ ','.join(group[('GLOBALS', '_DRS_version')].unique()|list|map('string')) }}" />
+    <attribute name="tracking_ids" type="string" value="{{ ','.join(group[('GLOBALS', 'tracking_id')]) }}" />
+  </variable>
+  {% endfor %}
+
+  <aggregation type="union">
+    {% for name,group in df[df[variable].isin(fxs).eq(False)].sort_values(by=[variable]).groupby(variable) %}
+    <netcdf>
+      <aggregation type="joinExisting" dimName="time">
+        {% for index, row in group.sort_values(by=[('GLOBALS', '_DRS_period1')]).iterrows() %}
+        {% set lon_dim = df[(row[('GLOBALS', '_grid_lon')], '_dimensions')].iloc[0] %}
+        {% set lon_nitems = (row[(lon_dim, '_values')].ravel())|list|length %}
+        {% set lon_positive = (row[(lon_dim, '_values')].ravel())|list|reject('<', 0)|list|length %}
+        {% set lon_negative = (row[(lon_dim, '_values')].ravel())|list|reject('>=', 0)|list|length %}
+        <netcdf ncoords="{{ row[('_d_time', 'size')]|int }}">
+          <aggregation type="tiled" dimName="lon">
+            <netcdf section="(0:{{ lon_positive - 1 }})">
+              <dimension name="lon" length="{{ lon_positive }}" />
+              <variable name="{{ name }}" shape="{{ row[(name, '_dimensions')]|replace(',', ' ') }}" />
+              <aggregation type="union">
+                <remove name="lon" type="variable" />
+                <remove name="lon_bnds" type="variable" />
+                <netcdf location="{{ row[localpath] }}">
+                  <variable name="{{ name }}">
+                    <logicalSection section="(:,:,{{ lon_positive }}:{{ lon_nitems - 1 }})" />
+                  </variable>
+                </netcdf>
+              </aggregation>
+            </netcdf>
+            <netcdf section="({{ lon_positive }}:{{ lon_nitems }})">
+              <dimension name="lon" length="{{ lon_nitems - lon_positive }}" />
+              <variable name="{{ name }}" shape="{{ row[(name, '_dimensions')]|replace(',', ' ') }}" />
+              <aggregation type="union">
+                <remove name="lon" type="variable" />
+                <remove name="lon_bnds" type="variable" />
+                <netcdf location="{{ row[localpath] }}">
+                  <variable name="{{ name }}">
+                    <logicalSection section="(:,:,0:{{ lon_positive - 1 }})" />
+                  </variable>
+                </netcdf>
+              </aggregation>
+            </netcdf>
+          </aggregation>
+        </netcdf>
+        {% endfor %}
+      </aggregation>
+    </netcdf>
+    {% endfor %}
+
+    {% for index, row in df[df[variable].isin(fxs)].iterrows() %}
+    {% set lon_nitems = (row[('lon', '_values')].ravel())|list|length %}
+    {% set lon_positive = (row[('lon', '_values')].ravel())|list|reject('<', 0)|list|length %}
+    {% set lon_negative = (row[('lon', '_values')].ravel())|list|reject('>=', 0)|list|length %}
+    <netcdf>
+      <aggregation type="tiled" dimName="lon">
+        <netcdf section="(0:{{ lon_positive - 1 }})">
+          <dimension name="lon" length="{{ lon_positive }}" />
+          <variable name="{{ row[variable] }}" shape="{{ row[(row[variable], '_dimensions')]|replace(',', ' ') }}" />
+          <aggregation type="union">
+            <remove name="lon" type="variable" />
+            <remove name="lon_bnds" type="variable" />
+            <netcdf location="{{ row[localpath] }}">
+              <variable name="{{ row[variable] }}">
+                <logicalSection section="(:,{{ lon_positive }}:{{ lon_nitems - 1 }})" />
+              </variable>
+            </netcdf>
+          </aggregation>
+        </netcdf>
+        <netcdf section="({{ lon_positive }}:{{ lon_nitems }})">
+          <dimension name="lon" length="{{ lon_nitems - lon_positive }}" />
+          <variable name="{{ row[variable] }}" shape="{{ row[(row[variable], '_dimensions')]|replace(',', ' ') }}" />
+          <aggregation type="union">
+            <remove name="lon" type="variable" />
+            <remove name="lon_bnds" type="variable" />
+            <netcdf location="{{ row[localpath] }}">
+              <variable name="{{ row[variable] }}">
+                <logicalSection section="(:,0:{{ lon_positive - 1 }})" />
+              </variable>
+            </netcdf>
+          </aggregation>
+        </netcdf>
+      </aggregation>
+    </netcdf>
+    {% endfor %}
+  </aggregation>
+  <!--<aggregation type="union">
+    {% for name,group in df[df[frequency] != 'fx'].sort_values(by=[variable]).groupby(variable) %}
+    <netcdf>
+      <aggregation type="joinExisting" dimName="time">
+        {% for index, row in group.sort_values(by=[('GLOBALS', '_DRS_period1')]).iterrows() %}
+        <netcdf location="{{ row[localpath] }}" ncoords="{{ row[('_d_time', 'size')]|int }}" />
+        {% endfor %}
+      </aggregation>
+    </netcdf>
+    {% endfor %}
+
+    {% for index, row in df[df[frequency] == 'fx']['GLOBALS'].iterrows() %}
+    <netcdf location="{{ row['localpath'] }}" />
+    {% endfor %}
+  </aggregation>-->
+</netcdf>
