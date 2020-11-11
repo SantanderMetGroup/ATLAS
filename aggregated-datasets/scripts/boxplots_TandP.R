@@ -13,8 +13,7 @@ req <- GET(myurl) %>% stop_for_status(req)
 filelist <- unlist(lapply(content(req)$tree, "[", "path"), use.names = FALSE)
 root <- "https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/"
 
-ref.period <- 1986:2005
-area <- "land"
+area <- "landsea"
 var = "tas"
 season = 1:12
 
@@ -49,6 +48,9 @@ computeDeltas <- function(allfiles, modelruns, ref.period, periods, exp, season)
     if (length(end) == 0) {
       fill <- TRUE
       end <- which(rownames(hist) == 2005)
+    }
+    if (length(start) == 0) {
+      start <- rownames(hist)[1]
     }
     hist <- hist[start:end,]
     l1 <- lapply(1:length(exp), FUN = function(j) {
@@ -132,6 +134,7 @@ computeDeltas <- function(allfiles, modelruns, ref.period, periods, exp, season)
 
 
 ##########  CMIP5 WL ##########------------------------------------
+ref.period <- 1850:1900
 
 ls <- grep(paste0("CMIP5_", var,"_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
@@ -158,6 +161,8 @@ WLp10.cmip5 <- lapply(WL.cmip5, apply, 2, quantile, 0.1, na.rm = T)
 
 
 ##########  CMIP6 WL ##########------------------------------------
+ref.period <- 1850:1900
+
 aggr.fun <- "mean"
 ls <- grep(paste0("CMIP6_", var,"_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
@@ -183,6 +188,7 @@ WLp90.cmip6 <- lapply(WL.cmip6, apply, 2, quantile, 0.9, na.rm = T)
 WLp10.cmip6 <- lapply(WL.cmip6, apply, 2, quantile, 0.1, na.rm = T)
 
 ##########  CMIP5##########------------------------------------
+ref.period <- 1986:2005
 ls <- grep(paste0("CMIP5_", var,"_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
 aux <- grep("historical", ls, value = TRUE)
@@ -200,6 +206,7 @@ p90.cmip5 <- lapply(cmip5, apply, 2, quantile, 0.9, na.rm = T)
 p10.cmip5 <- lapply(cmip5, apply, 2, quantile, 0.1, na.rm = T)
 
 ##########  CMIP6##########------------------------------------
+ref.period <- 1986:2005
 ls <- grep(paste0("CMIP6_", var,"_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
 aux <- grep("historical", ls, value = TRUE)
