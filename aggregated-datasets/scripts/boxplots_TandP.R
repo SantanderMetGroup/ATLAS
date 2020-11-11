@@ -9,8 +9,8 @@ root <- "https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/"
 
 ref.period <- 1986:2005
 area <- "land"
-var = "pr"
-season = 6:8
+var = "tas"
+season = 1:12
 
 #### FUNCTION FOR PREPEARING DATA --------------------------
 
@@ -126,18 +126,22 @@ computeDeltas <- function(allfiles, modelruns, ref.period, periods, exp, season)
 
 
 ##########  CMIP5 WL ##########------------------------------------
+
 ls <- grep(paste0("CMIP5_", var,"_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
 aux <- grep("historical", ls, value = TRUE)
 
 wlls <- grep("CMIP5_Atlas_WarmingLevels", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 wlfiles <- paste0(root, wlls)
-aux1.5 <- read.table(wlfiles, header = TRUE, sep = ",")[["X1.5_RCP85"]]
-aux2 <- read.table(wlfiles, header = TRUE, sep = ",")[["X2_RCP85"]]
-modelruns <- as.character(read.table(wlfiles, header = TRUE, sep = ",")[,1])[-which(aux1.5 == 9999)]
-modelruns[18] <- "HadGEM2-ES_r1i1p1"
-per1.5 <- cbind(aux1.5-9, aux1.5+10)[-which(aux1.5 == 9999),]
-per2 <- cbind(aux2-9, aux2+10)[-which(aux1.5 == 9999),]
+aux1.5 <- read.table(wlfiles, header = TRUE, sep = ",")[["X1.5_rcp85"]]
+aux2 <- read.table(wlfiles, header = TRUE, sep = ",")[["X2_rcp85"]]
+modelruns <- as.character(read.table(wlfiles, header = TRUE, sep = ",")[,1])
+modelruns[modelruns == "HadGEM2-CC_r1i1p1"] <- "HadGEM2-ES_r1i1p1"
+ind <- which(aux1.5 != 9999 & !is.na(aux1.5) & modelruns != "EC-EARTH_r3i1p1")
+modelruns <- modelruns[ind]
+per1.5 <- cbind(aux1.5-9, aux1.5+10)[ind,]
+per2 <- cbind(aux2-9, aux2+10)[ind,]
+
 exp <- "rcp85"
 
 WL.cmip5 <- computeDeltas(allfiles, modelruns, ref.period, periods = list("+1.5º" = per1.5, "+2º" = per2), exp, season)
@@ -149,17 +153,21 @@ WLp10.cmip5 <- lapply(WL.cmip5, apply, 2, quantile, 0.1, na.rm = T)
 
 ##########  CMIP6 WL ##########------------------------------------
 aggr.fun <- "mean"
-ls <- grep(paste0("CMIP6Amon_", var,"_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+ls <- grep(paste0("CMIP6_", var,"_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
 aux <- grep("historical", ls, value = TRUE)
 
 wlls <- grep("CMIP6_Atlas_WarmingLevels", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 wlfiles <- paste0(root, wlls)
-aux1.5 <- read.table(wlfiles, header = TRUE, sep = ",")[["X1.5_ssp5.85"]]
-aux2 <- read.table(wlfiles, header = TRUE, sep = ",")[["X2_ssp5.85"]]
-modelruns <- as.character(read.table(wlfiles, header = TRUE, sep = ",")[,1])[-which(aux1.5 == 9999)]
-per1.5 <- cbind(aux1.5-9, aux1.5+10)[-which(aux1.5 == 9999),]
-per2 <- cbind(aux2-9, aux2+10)[-which(aux1.5 == 9999),]
+aux1.5 <- read.table(wlfiles, header = TRUE, sep = ",")[["X1.5_ssp585"]]
+aux2 <- read.table(wlfiles, header = TRUE, sep = ",")[["X2_ssp585"]]
+modelruns <- as.character(read.table(wlfiles, header = TRUE, sep = ",")[,1])
+ind <- which(aux1.5 != 9999 & !is.na(aux1.5))
+modelruns <- modelruns[ind]
+per1.5 <- cbind(aux1.5-9, aux1.5+10)[ind,]
+per2 <- cbind(aux2-9, aux2+10)[ind,]
+modelruns <- gsub("_", "_.*", modelruns)
+
 exp <- "ssp585"
 
 WL.cmip6 <- computeDeltas(allfiles, modelruns, ref.period, periods = list("+1.5º" = per1.5, "+2º" = per2), exp, season)
@@ -186,10 +194,10 @@ p90.cmip5 <- lapply(cmip5, apply, 2, quantile, 0.9, na.rm = T)
 p10.cmip5 <- lapply(cmip5, apply, 2, quantile, 0.1, na.rm = T)
 
 ##########  CMIP6##########------------------------------------
-ls <- grep(paste0("CMIP6Amon_", var,"_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+ls <- grep(paste0("CMIP6_", var,"_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
 aux <- grep("historical", ls, value = TRUE)
-modelruns <- gsub(paste0("reference_regions/regional_means/data/CMIP6Amon_", var,"_",area,"/CMIP6Amon_|_historical.csv"), "", aux)
+modelruns <- gsub(paste0("reference_regions/regional_means/data/CMIP6_", var,"_",area,"/CMIP6_|historical_|.csv"), ".*", aux)
 
 exp <- c("ssp126", "ssp245", "ssp585")
 periods <- list( "near" = cbind(rep(2021, length(modelruns)),rep(2040, length(modelruns))), 
@@ -210,7 +218,7 @@ p10.cmip6 <- lapply(cmip6, apply, 2, quantile, 0.1, na.rm = T)
 library(lattice)
 library(gridExtra)
 
-ylim <- c(-50, 50); step <- 5
+ylim <- c(0, 10); step <- 1
 
 p <- lapply(1:length(mediana.cmip5), function(i){
   col = c("darkmagenta", "darkgoldenrod1", "green", "blue", "red")
@@ -255,7 +263,7 @@ p <- lapply(1:length(mediana.cmip5), function(i){
 
 nn <- "AT"
 if (var == "pr") nn <- "AP"
-pdf(paste0("/oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/figs/boxplots/boxplots_",area,"_", nn, "_season_", paste(season, collapse = "-"), "_ylim_", paste(ylim, collapse = "-"), ".pdf"), width = 40, height = 50)
+pdf(paste0("/oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/figs/boxplots/AAAAboxplots_",area,"_", nn, "_season_", paste(season, collapse = "-"), "_ylim_", paste(ylim, collapse = "-"), ".pdf"), width = 40, height = 50)
 do.call("grid.arrange", p)
 dev.off()
 
