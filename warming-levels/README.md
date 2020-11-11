@@ -6,4 +6,11 @@ Time periods for which +1.5, +2, +3 and +4 degree Global Warming Levels (GWL) ar
 
 The use of a 20-year moving window is selected to be consistent with 20-year time slices typically used for future projections: the near-term (2021-2040), mid-term (2041-2060) and long-term (2081-2100). However, figures *CMIP5_WarmingLevels_spread_scenario.pdf* compares the results for 20-year and 30-year windows using the large CMIP5 ensemble. 
 
+**Potential errors from CMIP6***
+- MPI-ESM-1-2-HAM_r1i1p1f1.
+
+For 1.5_ssp126 (from inconsistencies with https://github.com/mathause/cmip_warming_levels)
+FGOALS-g3_r1i1p1f1 (grid gr, 2020)
+GFDL-CM4_r1i1p1f1 (grid gr1, 2031)
+
 
