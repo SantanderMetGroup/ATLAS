@@ -19,5 +19,4 @@ Spatially averaged results of CMIP5 and CMIP6 models (see [Atlas Hub inventory](
 ***
 **NOTE!**: Region acronyms followed by the `*` suffix in the csv file define the part of the polygon of the same name that extends beyond the 180º meridian (i.e. RAR, NPO, EPO and SPO). This necessary distinction in the csv disappears in the spatial objects (the R data object and the shapefile), as the regions separated by the 180º meridian are merged and considered as a single polygon.
 
-## Pacific small islands
 
