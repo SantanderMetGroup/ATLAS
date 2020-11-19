@@ -1,3 +1,13 @@
+# THIS SCRIPT COMPUTES TEMPERATURE AND PRECIPITATION CHANGES FROM DATA FILES THAT ARE
+# AVAILABLE IN THIS REPOSITORY (CSV FILES IN AGGREGATED-DATASETS) AND 
+# PRODUCES BOXPLOTS CONSIDERING THE MEDIAN, P10 AND P90.
+# REQUIREMENTS TO RUN THE SCRIPT:
+# - R 
+# - R packages magrittr and httr
+
+#----------------------------------------------------------------------------------------------
+
+
 ## The package magrittr is used to pipe (%>%) sequences of data operations improving readability
 #install.packages("magrittr")
 library(magrittr)
@@ -5,238 +15,78 @@ library(magrittr)
 #install.packages("httr")
 library(httr)
 
-## Some help on how to read files from a GitHub repository
-## https://stackoverflow.com/questions/25485216/how-to-get-list-files-from-a-github-repository-folder-using-r
+# Function computeDeltas available at this repo is used:
+source("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/aggregated-datasets/scripts/computeDeltas.R")
 
-myurl <- "https://api.github.com/repos/SantanderMetGroup/ATLAS/git/trees/devel?recursive=1"
-req <- GET(myurl) %>% stop_for_status(req)
-filelist <- unlist(lapply(content(req)$tree, "[", "path"), use.names = FALSE)
-root <- "https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/"
+### CMIP5 WL ----------------------------------
 
-area <- "land"
-var = "tas"
-season = c(12, 1, 2)
-
-
-#### FUNCTION FOR PREPEARING DATA --------------------------
-
-computeDeltas <- function(allfiles, modelruns, ref.period, periods, exp, season){ 
-  var <- scan(allfiles[1], "character", n = 7)[4]
-  region <- colnames(read.table(allfiles[1], header = TRUE, sep = ",", skip = 7))[-1]
-  aggrfun <- "mean"
-  if (var == "pr") aggrfun <- "sum"
-  out <- lapply(1:length(modelruns), function(i) {
-    modelfiles <- grep(modelruns[i], allfiles, value = TRUE) 
-    hist <- grep("historical", modelfiles, value = TRUE) %>% read.table(header = TRUE, sep = ",", skip = 7)
-    seas <- hist %>% subset(select = "date", drop = TRUE) %>% gsub(".*-", "", .) %>% as.integer()
-    z <- sort(unlist(lapply(season, function(s) which(seas == s))))
-    hist <- hist[z, ]
-    yearshist <-  unique(hist %>% subset(select = "date", drop = TRUE) %>% gsub("-.*", "", .) %>% as.integer())
-    firstind <- which(seas[z] == season[1])[1]
-    if (firstind > 1) {
-      yrs <- c(rep(1, firstind-1), rep(2:ceiling(nrow(hist)/length(season)+1), each = length(season), length.out = nrow(hist)-(firstind-1)))
-      yearshist <- c(yearshist, yearshist[length(yearshist)] + 1)
-    } else {
-      yrs <-  hist %>% subset(select = "date", drop = TRUE) %>% gsub("-.*", "", .) %>% as.integer()
-      yearshist <-  unique(yrs)
-    }
-    hist <- lapply(split(hist[,-1], f = yrs), function(x) apply(x, MARGIN = 2, FUN = aggrfun, na.rm = TRUE))
-    hist <- do.call("rbind", hist)
-    rownames(hist) <- yearshist[1:nrow(hist)]
-    start <- which(rownames(hist) == range(ref.period)[1])
-    end <- which(rownames(hist) == range(ref.period)[2])
-    fill <- FALSE
-    if (length(end) == 0) {
-      fill <- TRUE
-      end <- which(rownames(hist) == 2005)
-    }
-    if (length(start) == 0) {
-      start <-  1
-    }
-    hist <- hist[start:end,]
-    l1 <- lapply(1:length(exp), FUN = function(j) {
-      rcp <- tryCatch({
-        grep(exp[j], modelfiles, value = TRUE) %>% read.table(header = TRUE, sep = ",", skip = 7)
-      }, error = function(err) return(NULL))
-      dates <- tryCatch({
-        seas <- rcp %>% subset(select = "date", drop = TRUE) %>% gsub(".*-", "", .) %>% as.integer()
-        z <- sort(unlist(lapply(season, function(s) which(seas == s))))
-        rcp <- rcp[z, ]
-        yearsrcp <-  unique(rcp %>% subset(select = "date", drop = TRUE) %>% gsub("-.*", "", .) %>% as.integer())
-        firstind <- which(seas[z] == season[1])[1]
-        if (firstind > 1) {
-          yrs <- c(rep(1, firstind-1), rep(2:ceiling(nrow(rcp)/length(season)+1), each = length(season), length.out = nrow(rcp)-(firstind-1)))
-          yearsrcp <- c(yearsrcp, yearsrcp[length(yearsrcp)] + 1)
-        } else {
-          yrs <-  rcp %>% subset(select = "date", drop = TRUE) %>% gsub("-.*", "", .) %>% as.integer()
-          yearsrcp <-  unique(yrs)
-        }
-        rcp <- lapply(split(rcp[,-1], f = yrs), function(x) apply(x, MARGIN = 2, FUN = aggrfun, na.rm = TRUE))
-      }, error = function(err) return(NULL))
-      if (!is.null(rcp)) {
-        rcp <- do.call("rbind", rcp)
-        rownames(rcp) <- yearsrcp[1:nrow(rcp)]
-        if (fill) {
-          message("i =", i, ".......", exp[j], "------filling reference period with rcp data")
-          rcphist <- rcp[which(rownames(rcp) == 2006) : which(rownames(rcp) == range(ref.period)[2]),]
-          histexp <- apply(rbind(hist, rcphist), MARGIN = 2, FUN = mean, na.rm = TRUE)
-        } else {
-          message("i =", i, ".......", exp[j], "------")
-          histexp <- apply(hist, MARGIN = 2, FUN = mean, na.rm = TRUE)
-        }
-        delta <- lapply (periods, function(k){
-          endyear <- k[i,][2]
-          startyear <- k[i,][1]
-          if (!is.na(endyear) & !is.na(startyear)) {
-            while (length(which(rownames(rcp) == endyear)) == 0) {
-              endyear <- endyear - 1
-            }
-            while (length(which(rownames(rcp) == startyear)) == 0) {
-              startyear <- startyear + 1
-            }
-            
-            rcpk <- rcp[which(rownames(rcp) == startyear) : which(rownames(rcp) == endyear),]
-            if (var == "tas") {
-              apply(rcpk, MARGIN = 2, FUN = mean, na.rm = TRUE) - histexp
-            } else if (var == "pr") {
-              (apply(rcpk, MARGIN = 2, FUN = mean, na.rm = TRUE) - histexp) / histexp * 100
-            }  
-          } else {
-            message("i =", i, ".......", exp[j], "------NO period")
-            a <- rep(NA, ncol(rcp))
-            names(a) <- colnames(rcp)
-            a
-          }
-        })
-      } else {
-        message("i =", i, ".......", exp[j], "------NO DATA")
-        delta <- rep(list(NULL), length(periods))
-      }
-      
-      names(delta) <- names(periods)
-      delta
-    })
-    names(l1) <- exp
-    l1
-  })
-  names(out) <- modelruns
-  
-  
-  data <- lapply(region, function(i) {
-    eo <- lapply(exp, function(l){
-      z <- lapply(out, function(x){
-        values <- unname(do.call("cbind", lapply(x[[l]], "[[", i)))
-        if (is.null(values)) values <- rep(NA, length(periods))
-        values
-      })
-      df <- do.call("rbind", z)
-      rownames(df) <- names(z)
-      colnames(df) <- rep(l, length(periods))
-      df
-    })
-    do.call("cbind", eo)
-  })
-  names(data) <- region
-  return(data)
-}
-
-
-
-##########  CMIP5 WL ##########------------------------------------
+# select project "CMIP5", "CMIP6" ("CORDEX" will be available soon)
+project = "CMIP5"
+# select variable, i.e. "tas" or "pr"
+var <- "tas"
+# select scenario, i.e. "rcp26", "rcp45", "rcp85", "ssp126", "spp245", "ssp585" (select a single scenario for computing WLs)
+experiment <- "rcp85"
+# select season, use c(12,1,2) for winter
+season <- 1:12
+# select reference period
 ref.period <- 1850:1900
+# select warming levels or list of future periods, e.g. list(c(2021, 2040), c(2041, 2060), c(2081, 2100))
+periods <- c("1.5", "2", "3", "4")
+# select the area, i.e. "land", "sea" or "landsea"
+area <- "landsea"
 
-ls <- grep(paste0("CMIP5_", var,"_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
-allfiles <- paste0(root, ls)
-aux <- grep("historical", ls, value = TRUE)
-
-wlls <- grep("CMIP5_Atlas_WarmingLevels", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
-wlfiles <- paste0(root, wlls)
-aux1.5 <- read.table(wlfiles, header = TRUE, sep = ",")[["X1.5_rcp85"]]
-aux2 <- read.table(wlfiles, header = TRUE, sep = ",")[["X2_rcp85"]]
-aux3 <- read.table(wlfiles, header = TRUE, sep = ",")[["X3_rcp85"]]
-aux4 <- read.table(wlfiles, header = TRUE, sep = ",")[["X4_rcp85"]]
-modelruns <- as.character(read.table(wlfiles, header = TRUE, sep = ",")[,1])
-# modelruns[modelruns == "HadGEM2-CC_r1i1p1"] <- "HadGEM2-ES_r1i1p1"
-ind <- which(aux1.5 != 9999 & modelruns != "EC-EARTH_r3i1p1")
-modelruns <- modelruns[ind]
-per1.5 <- cbind(aux1.5-9, aux1.5+10)[ind,]
-per2 <- cbind(aux2-9, aux2+10)[ind,]
-per3 <- cbind(aux3-9, aux3+10)[ind,]
-per4 <- cbind(aux4-9, aux4+10)[ind,]
-
-exp <- "rcp85"
-
-WL.cmip5 <- computeDeltas(allfiles, modelruns, ref.period, periods = list("+1.5º" = per1.5, "+2º" = per2, "+3º" = per3, "+4º" = per4), exp, season)
+WL.cmip5 <- computeDeltas(project, var, experiment, season, ref.period, periods, area)
 
 WLmediana.cmip5 <- lapply(WL.cmip5, apply, 2, median, na.rm = T)
 WLp90.cmip5 <- lapply(WL.cmip5, apply, 2, quantile, 0.9, na.rm = T)
 WLp10.cmip5 <- lapply(WL.cmip5, apply, 2, quantile, 0.1, na.rm = T)
 
 
-##########  CMIP6 WL ##########------------------------------------
+
+##########  CMIP6 WL ------------------------------------
+
+project = "CMIP6"
+var <- "tas"
+experiment <- "ssp585"
+season <- 1:12
 ref.period <- 1850:1900
+periods <- c("1.5", "2", "3", "4")
+area <- "landsea"
 
-aggr.fun <- "mean"
-ls <- grep(paste0("CMIP6_", var,"_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
-allfiles <- paste0(root, ls)
-aux <- grep("historical", ls, value = TRUE)
-
-wlls <- grep("CMIP6_Atlas_WarmingLevels", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
-wlfiles <- paste0(root, wlls)
-aux1.5 <- read.table(wlfiles, header = TRUE, sep = ",")[["X1.5_ssp585"]]
-aux2 <- read.table(wlfiles, header = TRUE, sep = ",")[["X2_ssp585"]]
-aux3 <- read.table(wlfiles, header = TRUE, sep = ",")[["X3_ssp585"]]
-aux4 <- read.table(wlfiles, header = TRUE, sep = ",")[["X4_ssp585"]]
-modelruns <- as.character(read.table(wlfiles, header = TRUE, sep = ",")[,1])
-# modelruns[modelruns == "HadGEM2-CC_r1i1p1"] <- "HadGEM2-ES_r1i1p1"
-ind <- which(aux1.5 != 9999 & modelruns != "EC-EARTH_r3i1p1")
-modelruns <- modelruns[ind]
-per1.5 <- cbind(aux1.5-9, aux1.5+10)[ind,]
-per2 <- cbind(aux2-9, aux2+10)[ind,]
-per3 <- cbind(aux3-9, aux3+10)[ind,]
-per4 <- cbind(aux4-9, aux4+10)[ind,]
-
-modelruns <- gsub("_", "_.*", modelruns)
-
-exp <- "ssp585"
-
-WL.cmip6 <- computeDeltas(allfiles, modelruns, ref.period, periods = list("+1.5º" = per1.5, "+2º" = per2, "+3º" = per3, "+4º" = per4), exp, season)
+WL.cmip6 <- computeDeltas(project, var, experiment, season, ref.period, periods, area)
 
 WLmediana.cmip6 <- lapply(WL.cmip6, apply, 2, median, na.rm = T)
 WLp90.cmip6 <- lapply(WL.cmip6, apply, 2, quantile, 0.9, na.rm = T)
 WLp10.cmip6 <- lapply(WL.cmip6, apply, 2, quantile, 0.1, na.rm = T)
 
-##########  CMIP5##########------------------------------------
+##########  CMIP5 ------------------------------------
+
+project = "CMIP5"
+var <- "tas"
+experiment <- c("rcp26", "rcp45", "rcp85")
+season <- 1:12
 ref.period <- 1995:2014
-ls <- grep(paste0("CMIP5_", var,"_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
-allfiles <- paste0(root, ls)
-aux <- grep("historical", ls, value = TRUE)
-modelruns <- gsub(paste0("reference_regions/regional_means/data/CMIP5_", var,"_",area,"/CMIP5_|_historical.csv"), "", aux)
+periods <- list(c(2021, 2040), c(2041, 2060), c(2081, 2100))
+area <- "landsea"
 
-exp <- c("rcp26", "rcp45", "rcp85")
-periods <- list( "near" = cbind(rep(2021, length(modelruns)),rep(2040, length(modelruns))), 
-                 "mid"= cbind(rep(2041, length(modelruns)),rep(2060, length(modelruns))), 
-                 "far" = cbind(rep(2081, length(modelruns)),rep(2100, length(modelruns))))
 
-cmip5 <- computeDeltas(allfiles, modelruns, ref.period, periods, exp, season)
+cmip5 <- computeDeltas(project, var, experiment, season, ref.period, periods, area)
 
 mediana.cmip5 <- lapply(cmip5, apply, 2, median, na.rm = T)
 p90.cmip5 <- lapply(cmip5, apply, 2, quantile, 0.9, na.rm = T)
 p10.cmip5 <- lapply(cmip5, apply, 2, quantile, 0.1, na.rm = T)
 
-##########  CMIP6##########------------------------------------
+##########  CMIP6 ------------------------------------
+
+project = "CMIP6"
+var <- "tas"
+experiment <- c("ssp126", "ssp245", "ssp585")
+season <- 1:12
 ref.period <- 1995:2014
-ls <- grep(paste0("CMIP6_", var,"_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
-allfiles <- paste0(root, ls)
-aux <- grep("historical", ls, value = TRUE)
-modelruns <- gsub(paste0("reference_regions/regional_means/data/CMIP6_", var,"_",area,"/CMIP6_|historical_|.csv"), ".*", aux)
+periods <- list(c(2021, 2040), c(2041, 2060), c(2081, 2100))
+area <- "landsea"
 
-exp <- c("ssp126", "ssp245", "ssp585")
-periods <- list( "near" = cbind(rep(2021, length(modelruns)),rep(2040, length(modelruns))), 
-                 "mid"= cbind(rep(2041, length(modelruns)),rep(2060, length(modelruns))), 
-                 "far" = cbind(rep(2081, length(modelruns)),rep(2100, length(modelruns))))
-
-cmip6 <- computeDeltas(allfiles, modelruns, ref.period, periods, exp, season)
+cmip6 <- computeDeltas(project, var, experiment, season, ref.period, periods, area)
 
 mediana.cmip6 <- lapply(cmip6, apply, 2, median, na.rm = T)
 p90.cmip6 <- lapply(cmip6, apply, 2, quantile, 0.9, na.rm = T)
@@ -244,24 +94,9 @@ p10.cmip6 <- lapply(cmip6, apply, 2, quantile, 0.1, na.rm = T)
 
 
 
-# ##########  CORDEX##########------------------------------------
-# 
-# ref.period <- 1986:2005
-# ls <- grep(paste0("CORDEX_", var,"_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
-# allfiles <- paste0(root, ls)
-# aux <- grep("historical", ls, value = TRUE)
-# modelruns <- gsub(paste0("reference_regions/regional_means/data/CORDEX_", var,"_",area,"/CORDEX_|historical_|.csv"), ".*", aux)
-# 
-# exp <- c("rcp26", "rcp45", "rcp85")
-# periods <- list( "near" = cbind(rep(2021, length(modelruns)),rep(2040, length(modelruns))), 
-#                  "mid"= cbind(rep(2041, length(modelruns)),rep(2060, length(modelruns))), 
-#                  "far" = cbind(rep(2081, length(modelruns)),rep(2100, length(modelruns))))
-# 
-# cordex <- computeDeltas(allfiles, modelruns, ref.period, periods, exp, season)
-# 
-# mediana.cordex <- lapply(cordex, apply, 2, median, na.rm = T)
-# p90.cordex <- lapply(cordex, apply, 2, quantile, 0.9, na.rm = T)
-# p10.cordex <- lapply(cordex, apply, 2, quantile, 0.1, na.rm = T)
+# ##########  CORDEX ------------------------------------
+
+# Under development
 
 
 ########## plot #######------------------------------------------------------------------------
@@ -269,7 +104,8 @@ p10.cmip6 <- lapply(cmip6, apply, 2, quantile, 0.1, na.rm = T)
 library(lattice)
 library(gridExtra)
 
-ylim <- c(0, 10); step <- 1
+out.dir <- ""
+ylim <- c(0, 18); step <- 1
 ylab <- bquote(Delta*"T(ºC)")
 
 p <- lapply(1:length(mediana.cmip5), function(i){
@@ -328,7 +164,7 @@ p <- lapply(1:length(mediana.cmip5), function(i){
 
 nn <- "AT"
 if (var == "pr") nn <- "AP"
-pdf(paste0("/oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/figs/boxplots/FGD_boxplots_",area,"_", nn, "_season_", paste(season, collapse = "-"), "_ylim_", paste(ylim, collapse = "-"), ".pdf"), width = 40, height = 50)
+pdf(paste0(out.dir, "/FGD_boxplots_",area,"_", nn, "_season_", paste(season, collapse = "-"), "_ylim_", paste(ylim, collapse = "-"), ".pdf"), width = 40, height = 50)
 do.call("grid.arrange", p)
 dev.off()
 

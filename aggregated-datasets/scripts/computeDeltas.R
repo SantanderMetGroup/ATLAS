@@ -18,7 +18,8 @@
 
 #' @title Compute temperature and precipitation changes from data files of this repository (aggregated-datasets).
 #' @description Function to Compute CMIP5, CMIP6 and CORDEX regional temperature and 
-#' precipitation changes. 
+#' precipitation changes. This function can be used to produce summary climate change information 
+#' (see scatterplots_TvsP.R and boxplots_TandP.R).
 #' 
 #' @param n.chunks number of latitude chunks over which iterate
 #' @param C4R.FUN.args list of arguments being the name of the C4R function (character)
@@ -50,34 +51,41 @@ computeDeltas <- function(project,
                           periods = c("1.5", "2", "3", "4"), 
                           area = "land"){ 
   
-  library(magrittr)
-  library(httr)
-  
+  ## root Url
   # https://stackoverflow.com/questions/25485216/how-to-get-list-files-from-a-github-repository-folder-using-r
   myurl <- "https://api.github.com/repos/SantanderMetGroup/ATLAS/git/trees/devel?recursive=1"
   req <- GET(myurl) %>% stop_for_status(req)
   filelist <- unlist(lapply(content(req)$tree, "[", "path"), use.names = FALSE)
   root <- "https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/"
   
-  
+  ## data files Urls
   ls <- grep(paste0(project, "_", var,"_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
   allfiles <- paste0(root, ls)
-  aux <- grep("historical", ls, value = TRUE)
-  
-  prefix <- "ssp"
-  if (project == "CMIP5" | project == "CORDEX.*") prefix <- "rcp"
-  
+
+  exp <- experiment
   if (is.character(periods)) {
+    ## define periods for WL
     wlls <- grep(paste0(project, "_Atlas_WarmingLevels"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
     wlfiles <- paste0(root, wlls)
-    aux <- lapply(periods, function(p) read.table(wlfiles, header = TRUE, sep = ",")[[paste0("X", p, "_", prefix, "85")]])
+    aux <- lapply(periods, function(p) read.table(wlfiles, header = TRUE, sep = ",")[[paste0("X", p, "_", exp)]])
     modelruns <- as.character(read.table(wlfiles, header = TRUE, sep = ",")[,1])
-    ind <- lapply(aux, function(p) which(p != 9999 & modelruns != "EC-EARTH_r3i1p1"))
-    modelruns <- modelruns[ind[[1]]]
+    ind <- which(aux[[1]] != 9999 & modelruns != "EC-EARTH_r3i1p1")
+    if (var == "pr" & project == "CMIP5") ind <- which(aux[[1]] != 9999 & modelruns != "EC-EARTH_r3i1p1" & modelruns != "GFDL-CM3_r1i1p1" & modelruns != "GFDL-ESM2M_r1i1p1" & modelruns != "HadGEM2-CC_r1i1p1")
+    if (var == "pr" & project == "CMIP6") ind <- which(aux[[1]] != 9999 & modelruns != "EC-EARTH_r3i1p1" & modelruns != "AWI-CM-1-1-MR_r1i1p1f1"  & modelruns != "FGOALS-g3_r1i1p1f1")
+    modelruns <- modelruns[ind]
     p <- paste0("+", periods, "º")
-    periods <- lapply(1:length(aux), function(p) cbind(aux[[p]] - 9, aux[[p]] + 10)[ind[[p]],])
+    periods <- lapply(aux, function(p) cbind(p - 9, p + 10)[ind,])
+    names(periods) <- p
+  } else {
+    aux <- grep("historical", ls, value = TRUE)
+    modelruns <- lapply(strsplit(aux, "/"), function(x) x[length(x)])
+    modelruns <- gsub(paste0(project, "_|_historical|.csv"), "", modelruns)
+    p <- lapply(periods, paste, collapse = "_")
+    periods <- lapply(periods, function(p) cbind(rep(p[1], length(modelruns)), rep(p[2], length(modelruns)))) 
     names(periods) <- p
   }
+  if (project == "CMIP6") modelruns <- gsub("_", "_.*", modelruns)
+  
   if (!is.list(periods)) stop("please provide the correct object in periods.")
   region <- colnames(read.table(allfiles[1], header = TRUE, sep = ",", skip = 7))[-1]
   aggrfun <- "mean"
