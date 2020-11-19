@@ -24,6 +24,7 @@ varInventoryTable <- function(datasets, output.file = NULL) {
   })
   names(di) <- datasets
   divar <- lapply(di, function(x) names(x))
+  divers <- lapply(di, function(x) unlist(lapply(x, function(v) v[["Version"]])))
   divarc <- unique(unname(do.call("abind", divar)))
   dilevel <- list()
   for(i in 1:length(di)) {
@@ -32,8 +33,17 @@ varInventoryTable <- function(datasets, output.file = NULL) {
   names(dilevel) <- names(di)
   levels <- unique(unlist(dilevel))
   df <- array(dim = c(length(divar), length(divarc)), dimnames = list(names(divar), divarc))
-  for(i in 1:length(divarc)) {
-    df[,i] <- unlist(lapply(divar, function(x) divarc[i] %in% x))
+  for (i in 1:length(divarc)) {
+    df[,i] <- unlist(
+      lapply(1:length(divar), function(x) {
+        logi <- divarc[i] %in% divar[x]
+        if (isTRUE(logi)) {
+          divers[x]
+        } else {
+          logi
+        } 
+      })
+    )
   }
   dd <- lapply(dilevel, function(l) unlist(l))
   dflevels <- array(dim = c(length(di), length(levels)), dimnames = list(names(di), levels))

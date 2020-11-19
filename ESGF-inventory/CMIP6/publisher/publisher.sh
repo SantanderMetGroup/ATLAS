@@ -1,16 +1,15 @@
 #!/bin/bash
 #PBS -N cmip6
-#PBS -l nodes=3:ppn=4
+#PBS -l nodes=3:ppn=1
+#PBS -l pmem=4Gb
 #PBS -q tlustre
 #PBS -M cimadevillae@unican.es
 
-#quitando el apply os.splitext
-#--drs 'Dproject,Dproduct,Dinstitution,Dmodel,Dexperiment,Densemble,Dtable,Dvariable,Dgrid,version,variable,table,model,experiment,ensemble,grid,period1,period2,extension' --drs-sep '([-a-zA-Z0-9]+)/([-a-zA-Z0-9]+)/([-a-zA-Z0-9]+)/([-a-zA-Z0-9]+)/([-a-zA-Z0-9]+)/([-a-zA-Z0-9]+)/([-a-zA-Z0-9]+)/([-a-zA-Z0-9]+)/([-a-zA-Z0-9]+)/([-a-zA-Z0-9]+)/([-a-zA-Z0-9]+)_([-a-zA-Z0-9]+)_([-a-zA-Z0-9]+)_([-a-zA-Z0-9]+)_([-a-zA-Z0-9]+)_([-a-zA-Z0-9]+)_?([0-9]+)?-?([0-9]+)?'
-
 trap exit SIGINT SIGKILL
 
-export JOBS_PER_NODE=4
-export WORKDIR=/oceano/gmeteo/WORK/zequi/atlas-cmip6/data-management/issues/8/publisher
+export PROJECT=/oceano/gmeteo/WORK/zequi/ATLAS/ESGF-inventory
+export JOBS_PER_NODE=1
+export WORKDIR=${PROJECT}/CMIP6/publisher
 cd $WORKDIR
 
 if [ -n "$PBS_NODEFILE" ]; then
@@ -20,48 +19,60 @@ fi
 # Not before because of PBS_NODEFILE
 set -u
 
-ncs=/oceano/gmeteo/DATA/ESGF/REPLICA/DATA
-content=/oceano/gmeteo/WORK/zequi/atlas-cmip6/tds-content
-ncmls=${content}/public
-catalogs=${content}/devel/atlas
+publisher="${PROJECT}/publisher"
+tds_content="${PROJECT}/tds-content"
+template="${WORKDIR}/templates/cmip6.ncml.j2"
 
-publisher="${WORK}/publisher"
-hdfs=hdfs
+nc_inventory=${WORKDIR}/inventory
+nc_inventory=${WORKDIR}/fix
+raw_inventory=${WORKDIR}/inventory_raw
+hdfs_raw="${WORKDIR}/hdfs/raw/CMIP6_{_DRS_Dactivity}_{_DRS_Dinstitute}_{_DRS_model}_{_DRS_experiment}.hdf"
+facets="root,Dproject,Dactivity,Dinstitute,Dmodel,Dexperiment,Densemble,Dtable,Dvariable,Dgrid_label,version,variable,table,model,experiment,ensemble,grid_label,period,period1,period2"
+drs="(.*)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/v([^/]+)/([^_]+)_([^_]+)_([^_]+)_([^_]+)_([^_]+)_([^_]+)_?(([0-9]+)-([0-9]+))?\.nc"
+coordinates="time,x,lon,rlon,lon_bnds,y,i,j,latitude,longitude"
+facets_numeric="version,period1,period2"
 
-rm -rf $hdfs/*
-mkdir -p $hdfs/{raw,processed}
+processed_inventory=inventory_processed
+group_time="_DRS_Dproject,_DRS_Dactivity,_DRS_Dinstitute,_DRS_model,_DRS_experiment,_DRS_ensemble,_DRS_Dtable,_DRS_grid_label"
+group_fx="_DRS_Dproject,_DRS_Dactivity,_DRS_Dinstitute,_DRS_model,_DRS_experiment,_DRS_ensemble,_DRS_grid_label"
+hdfs_processed="${WORKDIR}/hdfs/processed/CMIP6_{_DRS_Dactivity}_{_DRS_Dinstitute}_{_DRS_model}_{_DRS_experiment}_{_DRS_ensemble}_{_synthetic_DRS_Dtable}.hdf" 
 
-# Ignore non downloaded or downloaded files with errors
-awk -F"=" '/out=/{print "'$ncs'/"$2}' ../inventories/{day,mon,fx}.aria > ../inventories/inventory
-parallel --gnu -a ../inventories/inventory -j$JOBS_PER_NODE --slf nodes --wd $WORKDIR "../../../esgf-check {}" > check
+ncmls_inventory=inventory_ncmls
+ncmls="${tds_content}/public/CMIP6/{_DRS_Dactivity}/{_DRS_Dinstitute}/{_DRS_model}/{_DRS_experiment}/{_synthetic_DRS_Dtable}/CMIP6_{_DRS_Dactivity}_{_DRS_Dinstitute}_{_DRS_model}_{_DRS_experiment}_{_DRS_ensemble}_{_synthetic_DRS_Dtable}.ncml"
 
-# Remove errors from inventory
-awk '
-/out=/{
-    split($0, parts, "=")
-    print "'$ncs'/"parts[2]
-}
-$1=="ERROR"{
-    print $3
-}' ../inventories/{day,mon,fx}.aria check | sort | uniq -u > inventory
+catalogs="${tds_content}/devel/c3s34d"
+namespace="devel/c3s34d"
+root_catalog="${catalogs}/catalog.xml"
 
-# Inputs file for parallel
-awk -F/ '
-{
-  f=$0
-  printf "'$ncs'/%s/%s/%s/%s/%s/%s %s_%s_%s_%s_%s_%s\n", $8, $9, $10, $11, $12, $13, $8, $9, $10, $11, $12, $13
-}' inventory | sort -u > inputs
+find /oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6 -mindepth 5 -maxdepth 5 -type d > directories
 
-# Dataframes
-parallel -a inputs --gnu -j$JOBS_PER_NODE --slf nodes --wd $WORKDIR --joblog joblog --colsep " " "
-    echo '* HDF5 for {1}'
-    grep {1} inventory | python ${publisher}/todf.py ${hdfs}/raw/{2}.hdf
-    echo '* Processing CMIP6 for ${hdfs}/raw/{2}.hdf'
-    python ${publisher}/contrib/esgf/cmip6.py --dest ${hdfs}/processed/{_drs_filename}.hdf ${hdfs}/raw/{2}.hdf"
+# todf.py
+parallel --gnu -a directories -j$JOBS_PER_NODE --slf nodes --wd $WORKDIR "
+    if grep -q -F {} ${nc_inventory} ; then
+        echo '* todf.py on directory {}' >&2
+        grep -F {} ${nc_inventory} | python -W ignore ${publisher}/todf.py \
+            --drs \"$drs\" \
+            -v $coordinates \
+            --facets $facets \
+            --facets-numeric $facets_numeric \
+            ${hdfs_raw}
+    fi" | tee ${raw_inventory}
 
-# NcMLs
-rm -rf $ncmls/CMIP6
-find $hdfs/processed -type f | grep -v 'CESM2-WACCM' | parallel --gnu -j$JOBS_PER_NODE --slf nodes --wd $WORKDIR "echo '* NcML for {}'; python ${publisher}/jdataset.py -t templates/cmip6.ncml.j2 --dest ${ncmls}/{_drs}.ncml {}"
+# cmip6.py
+parallel --gnu -a ${raw_inventory} -j$JOBS_PER_NODE --slf nodes --wd $WORKDIR "
+    echo '* cmip6.py on {}' >&2
+    python ${publisher}/contrib/esgf/cmip6.py \
+        --lon-180 \
+        --group-time ${group_time} \
+        --group-fx ${group_fx} \
+        --dest ${hdfs_processed} {}" | tee ${ncmls_inventory}
+
+# jdataset.py
+parallel --gnu -a ${ncmls_inventory} -j$JOBS_PER_NODE --slf nodes --wd $WORKDIR "
+    echo '* jdataset on {}' >&2
+    python -W ignore ${publisher}/jdataset.py -t templates/cmip6.ncml.j2 --dest ${ncmls} {}"
+
+exit 0
 
 ## different template because of time:coordinates
 find $hdfs/processed -type f | grep 'CESM2-WACCM' | parallel --gnu -j$JOBS_PER_NODE --slf nodes --wd $WORKDIR "echo '* NcML for {}'; python ${publisher}/jdataset.py -t templates/CESM2-WACCM.cmip6.ncml.j2 --dest ${ncmls}/{_drs}.ncml {}"
@@ -112,9 +123,6 @@ init_catalog() {
   </service>
 EOF
 }
-
-# Remove existing catalogs
-rm -rf $catalogs/CMIP6
 
 # Insert datasets into catalogs
 find $ncmls/CMIP6 -type f | sort -V | while read ncml

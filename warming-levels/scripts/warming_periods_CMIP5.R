@@ -14,11 +14,11 @@ sourcefrom <- match.arg(sourcefrom, choices = c("local", "remote"))
 
 if (sourcefrom == "remote") {
     # https://stackoverflow.com/questions/25485216/how-to-get-list-files-from-a-github-repository-folder-using-r
-    myurl <- "https://api.github.com/repos/SantanderMetGroup/Atlas/git/trees/devel?recursive=1"
+    myurl <- "https://api.github.com/repos/SantanderMetGroup/ATLAS/git/trees/devel?recursive=1"
     req <- GET(myurl) %>% stop_for_status(req)
     filelist <- unlist(lapply(content(req)$tree, "[", "path"), use.names = FALSE)
     ls <- grep("CMIP5_tas_landsea", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
-    root <- "https://raw.githubusercontent.com/SantanderMetGroup/Atlas/devel/"
+    root <- "https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/"
     allfiles <- paste0(root, ls)
 } else {
     allfiles <- ls <- list.files("aggregated-datasets/data/CMIP5_tas_landsea", full.names = TRUE)  
@@ -37,6 +37,9 @@ l <- lapply(1:length(modelruns), function(i) {
     yrs <- grep("historical", modelfiles, value = TRUE) %>% read.table(header = TRUE, sep = ",", skip = 7) %>% subset(select = "date", drop = TRUE) %>% gsub("-.*", "", .) %>% as.integer()
     hist <- tapply(hist, INDEX = yrs, FUN = "mean", na.rm = TRUE)
     names(hist) <- unique(yrs)
+    # Ensure historical period does not go beyond 2005
+    na.ind <- which(as.integer(names(hist)) > 2005)
+    if (length(na.ind) > 0) hist <- hist[-na.ind]
     l1 <- lapply(1:length(exp), FUN = function(j) {
         rcp <- tryCatch({
             grep(exp[j], modelfiles, value = TRUE) %>% read.table(header = TRUE, sep = ",", skip = 7) %>% subset(select = "world", drop = TRUE)

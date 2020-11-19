@@ -11,24 +11,22 @@ root <- "https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/"
 
 
 # select reference and target periods, scenarios, and the area ("land", "sea", "landsea"):-----------
-ref.period <- 1995:2014
-season <- c(12, 1, 2)
-periods <- list(2021:2040, 2041:2060, 2061:2080, 2081:2100)
-exp <- c("rcp26", "rcp45", "rcp85") #c("ssp126", "ssp245", "ssp585")
+season <- 1:12
 area <- "land" #sea #landsea
-project <- "CMIP5" #"CMIP6Amon"
 
 
 
 ##### function to get the data and compute deltas: -------------------------------
 
-computeDeltas <- function(allfiles, modelruns, exp, ref.period, periods, season){ 
+#### FUNCTION FOR PREPEARING DATA --------------------------
+
+computeDeltas <- function(allfiles, modelruns, ref.period, periods, exp, season){ 
   var <- scan(allfiles[1], "character", n = 7)[4]
   region <- colnames(read.table(allfiles[1], header = TRUE, sep = ",", skip = 7))[-1]
   aggrfun <- "mean"
   if (var == "pr") aggrfun <- "sum"
-  out <- lapply(modelruns, function(i) {
-    modelfiles <- grep(i, allfiles, value = TRUE) 
+  out <- lapply(1:length(modelruns), function(i) {
+    modelfiles <- grep(modelruns[i], allfiles, value = TRUE) 
     hist <- grep("historical", modelfiles, value = TRUE) %>% read.table(header = TRUE, sep = ",", skip = 7)
     seas <- hist %>% subset(select = "date", drop = TRUE) %>% gsub(".*-", "", .) %>% as.integer()
     z <- sort(unlist(lapply(season, function(s) which(seas == s))))
@@ -51,6 +49,9 @@ computeDeltas <- function(allfiles, modelruns, exp, ref.period, periods, season)
     if (length(end) == 0) {
       fill <- TRUE
       end <- which(rownames(hist) == 2005)
+    }
+    if (length(start) == 0) {
+      start <-  1
     }
     hist <- hist[start:end,]
     l1 <- lapply(1:length(exp), FUN = function(j) {
@@ -83,38 +84,54 @@ computeDeltas <- function(allfiles, modelruns, exp, ref.period, periods, season)
           message("i =", i, ".......", exp[j], "------")
           histexp <- apply(hist, MARGIN = 2, FUN = mean, na.rm = TRUE)
         }
-        delta <- lapply(periods, function(k){
-          endyear <- range(k)[2]
-          while (length(which(yearsrcp == endyear)) == 0) {
-            endyear <- endyear - 1
-          }
-          rcpk <- rcp[which(yearsrcp == range(k)[1]) : which(yearsrcp == endyear),]
-          if (var == "tas") {
-            apply(rcpk, MARGIN = 2, FUN = mean, na.rm = TRUE) - histexp
-          } else if (var == "pr") {
-            (apply(rcpk, MARGIN = 2, FUN = mean, na.rm = TRUE) - histexp) / histexp * 100
+        delta <- lapply (periods, function(k){
+          endyear <- k[i,][2]
+          startyear <- k[i,][1]
+          if (!is.na(endyear) & !is.na(startyear)) {
+            while (length(which(rownames(rcp) == endyear)) == 0) {
+              endyear <- endyear - 1
+            }
+            while (length(which(rownames(rcp) == startyear)) == 0) {
+              startyear <- startyear + 1
+            }
+            
+            rcpk <- rcp[which(rownames(rcp) == startyear) : which(rownames(rcp) == endyear),]
+            if (var == "tas") {
+              apply(rcpk, MARGIN = 2, FUN = mean, na.rm = TRUE) - histexp
+            } else if (var == "pr") {
+              (apply(rcpk, MARGIN = 2, FUN = mean, na.rm = TRUE) - histexp) / histexp * 100
+            }  
+          } else {
+            message("i =", i, ".......", exp[j], "------NO period")
+            a <- rep(NA, ncol(rcp))
+            names(a) <- colnames(rcp)
+            a
           }
         })
       } else {
         message("i =", i, ".......", exp[j], "------NO DATA")
-        delta <- rep(list(NULL), 4)
+        delta <- rep(list(NULL), length(periods))
       }
+      
+      names(delta) <- names(periods)
       delta
     })
     names(l1) <- exp
     l1
   })
   names(out) <- modelruns
+  
+  
   data <- lapply(region, function(i) {
     eo <- lapply(exp, function(l){
       z <- lapply(out, function(x){
         values <- unname(do.call("cbind", lapply(x[[l]], "[[", i)))
-        if(is.null(values)) values <- rep(NA, 4)
+        if (is.null(values)) values <- rep(NA, length(periods))
         values
       })
       df <- do.call("rbind", z)
       rownames(df) <- names(z)
-      colnames(df) <- rep(l, 4)
+      colnames(df) <- rep(l, length(periods))
       df
     })
     do.call("cbind", eo)
@@ -123,61 +140,189 @@ computeDeltas <- function(allfiles, modelruns, exp, ref.period, periods, season)
   return(data)
 }
 
-
 ########## tas ##########------------------------------------
-# list the subset of target files
-ls <- grep(paste0(project, "_tas_", area, "/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+project <- "CMIP5"
+ref.period <- ref.period <- 1850:1900
+ls <- grep(paste0(project, "_tas_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
-# extract model names 
 aux <- grep("historical", ls, value = TRUE)
-modelruns <- gsub(paste0("reference_regions/regional_means/data/", project, "_tas_", area, "/",project, "_|_historical.csv"), "", aux)
+modelruns <- gsub(paste0("reference_regions/regional_means/data/CMIP5_tas_",area,"/",project,"_|historical_|.csv"), ".*", aux)
 
-# compute (apply computeDeltas)
-tas <- computeDeltas(allfiles, modelruns, exp, ref.period, periods, season)
-#str(tas)
+wlls <- grep("CMIP5_Atlas_WarmingLevels", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+wlfiles <- paste0(root, wlls)
+aux1.5 <- read.table(wlfiles, header = TRUE, sep = ",")[["X1.5_rcp85"]]
+aux2 <- read.table(wlfiles, header = TRUE, sep = ",")[["X2_rcp85"]]
+aux3 <- read.table(wlfiles, header = TRUE, sep = ",")[["X3_rcp85"]]
+aux4 <- read.table(wlfiles, header = TRUE, sep = ",")[["X4_rcp85"]]
+modelruns <- as.character(read.table(wlfiles, header = TRUE, sep = ",")[,1])
+# modelruns[modelruns == "HadGEM2-CC_r1i1p1"] <- "HadGEM2-ES_r1i1p1"
+ind <- which(aux1.5 != 9999 & modelruns != "EC-EARTH_r3i1p1" & modelruns != "FGOALS-g2_r1i1p1")
+modelruns <- modelruns[ind]
+per1.5 <- cbind(aux1.5 - 9, aux1.5 + 10)[ind,]
+per2 <- cbind(aux2 - 9, aux2 + 10)[ind,]
+per3 <- cbind(aux3 - 9, aux3 + 10)[ind,]
+per4 <- cbind(aux4 - 9, aux4 + 10)[ind,]
 
-# calculate percentiles
-tasmediana <- lapply(tas, apply, 2, median, na.rm = T)
-tasp90 <- lapply(tas, apply, 2, quantile, 0.9, na.rm = T)
-tasp10 <- lapply(tas, apply, 2, quantile, 0.1, na.rm = T)
+
+exp <- "rcp85"
+
+periods <- list( "near" = cbind(rep(2021, length(modelruns)),rep(2040, length(modelruns))), 
+                 "mid" = cbind(rep(2041, length(modelruns)),rep(2060, length(modelruns))), 
+                 "far" = cbind(rep(2081, length(modelruns)),rep(2100, length(modelruns))))
+
+tas.cmip5 <- computeDeltas(allfiles, modelruns, ref.period, periods = list("+1.5º" = per1.5, "+2º" = per2, "+3º" = per3, "+4º" = per4), exp, season)
+
+tasmediana.cmip5 <- lapply(tas.cmip5, apply, 2, median, na.rm = T)
+tasp90.cmip5 <- lapply(tas.cmip5, apply, 2, quantile, 0.9, na.rm = T)
+tasp10.cmip5 <- lapply(tas.cmip5, apply, 2, quantile, 0.1, na.rm = T)
+
 
 
 
 ######## pr ###########------------------------------------
-ls <- grep(paste0(project, "_pr_", area, "/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+project <- "CMIP5"
+ref.period <- 1850:1900
+ls <- grep(paste0(project, "_pr_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
 allfiles <- paste0(root, ls)
 aux <- grep("historical", ls, value = TRUE)
-modelruns <- gsub(paste0("reference_regions/regional_means/data/", project, "_pr_", area, "/",project, "_|_historical.csv"), "", aux)
+modelruns <- gsub(paste0("reference_regions/regional_means/data/",project,"_pr_",area,"/",project,"_|historical_|.csv"), ".*", aux)
 
-pr <- computeDeltas(allfiles, modelruns, exp, ref.period, periods, season)
+wlls <- grep("CMIP5_Atlas_WarmingLevels", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+wlfiles <- paste0(root, wlls)
+aux1.5 <- read.table(wlfiles, header = TRUE, sep = ",")[["X1.5_rcp85"]]
+aux2 <- read.table(wlfiles, header = TRUE, sep = ",")[["X2_rcp85"]]
+aux3 <- read.table(wlfiles, header = TRUE, sep = ",")[["X3_rcp85"]]
+aux4 <- read.table(wlfiles, header = TRUE, sep = ",")[["X4_rcp85"]]
+modelruns <- as.character(read.table(wlfiles, header = TRUE, sep = ",")[,1])
+# modelruns[modelruns == "HadGEM2-CC_r1i1p1"] <- "HadGEM2-ES_r1i1p1"
+ind <- which(aux1.5 != 9999 & modelruns != "EC-EARTH_r3i1p1" & modelruns != "FGOALS-g2_r1i1p1")
+modelruns <- modelruns[ind]
+per1.5 <- cbind(aux1.5 - 9, aux1.5 + 10)[ind,]
+per2 <- cbind(aux2 - 9, aux2 + 10)[ind,]
+per3 <- cbind(aux3 - 9, aux3 + 10)[ind,]
+per4 <- cbind(aux4 - 9, aux4 + 10)[ind,]
 
-prmediana <- lapply(pr, apply, 2, median, na.rm = T)
-prp90 <- lapply(pr, apply, 2, quantile, 0.9, na.rm = T)
-prp10 <- lapply(pr, apply, 2, quantile, 0.1, na.rm = T)
+
+exp <- "rcp85"
+
+periods <- list( "near" = cbind(rep(2021, length(modelruns)),rep(2040, length(modelruns))), 
+                 "mid"= cbind(rep(2041, length(modelruns)),rep(2060, length(modelruns))), 
+                 "far" = cbind(rep(2081, length(modelruns)),rep(2100, length(modelruns))))
+
+pr.cmip5 <- computeDeltas(allfiles, modelruns, ref.period, periods = list("+1.5º" = per1.5, "+2º" = per2, "+3º" = per3, "+4º" = per4), exp, season)
+
+prmediana.cmip5 <- lapply(pr.cmip5, apply, 2, median, na.rm = T)
+prp90.cmip5 <- lapply(pr.cmip5, apply, 2, quantile, 0.9, na.rm = T)
+prp10.cmip5 <- lapply(pr.cmip5, apply, 2, quantile, 0.1, na.rm = T)
+
+########## tas ##########------------------------------------
+project <- "CMIP6"
+ref.period <- ref.period <- 1850:1900
+ls <- grep(paste0(project, "_tas_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+allfiles <- paste0(root, ls)
+aux <- grep("historical", ls, value = TRUE)
+modelruns <- gsub(paste0("reference_regions/regional_means/data/CMIP6_tas_",area,"/",project,"_|historical_|.csv"), ".*", aux)
+
+wlls <- grep("CMIP6_Atlas_WarmingLevels", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+wlfiles <- paste0(root, wlls)
+aux1.5 <- read.table(wlfiles, header = TRUE, sep = ",")[["X1.5_ssp585"]]
+aux2 <- read.table(wlfiles, header = TRUE, sep = ",")[["X2_ssp585"]]
+aux3 <- read.table(wlfiles, header = TRUE, sep = ",")[["X3_ssp585"]]
+aux4 <- read.table(wlfiles, header = TRUE, sep = ",")[["X4_ssp585"]]
+modelruns <- as.character(read.table(wlfiles, header = TRUE, sep = ",")[,1])
+# modelruns[modelruns == "HadGEM2-CC_r1i1p1"] <- "HadGEM2-ES_r1i1p1"
+ind <- which(aux1.5 != 9999 & modelruns != "EC-EARTH_r3i1p1")
+modelruns <- modelruns[ind]
+per1.5 <- cbind(aux1.5 - 9, aux1.5 + 10)[ind,]
+per2 <- cbind(aux2 - 9, aux2 + 10)[ind,]
+per3 <- cbind(aux3 - 9, aux3 + 10)[ind,]
+per4 <- cbind(aux4 - 9, aux4 + 10)[ind,]
+
+modelruns <- gsub("_", "_.*", modelruns)
+
+exp <- "ssp585"
+
+periods <- list( "near" = cbind(rep(2021, length(modelruns)),rep(2040, length(modelruns))), 
+                 "mid" = cbind(rep(2041, length(modelruns)),rep(2060, length(modelruns))), 
+                 "far" = cbind(rep(2081, length(modelruns)),rep(2100, length(modelruns))))
+
+tas.cmip6 <- computeDeltas(allfiles, modelruns, ref.period, periods = list("+1.5º" = per1.5, "+2º" = per2, "+3º" = per3, "+4º" = per4), exp, season)
+
+tasmediana.cmip6 <- lapply(tas.cmip6, apply, 2, median, na.rm = T)
+tasp90.cmip6 <- lapply(tas.cmip6, apply, 2, quantile, 0.9, na.rm = T)
+tasp10.cmip6 <- lapply(tas.cmip6, apply, 2, quantile, 0.1, na.rm = T)
+
+
+
+
+######## pr ###########------------------------------------
+project <- "CMIP6"
+ref.period <- 1850:1900
+ls <- grep(paste0(project, "_pr_",area,"/"), filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+allfiles <- paste0(root, ls)
+aux <- grep("historical", ls, value = TRUE)
+modelruns <- gsub(paste0("reference_regions/regional_means/data/",project,"_pr_",area,"/",project,"_|historical_|.csv"), ".*", aux)
+
+wlls <- grep("CMIP6_Atlas_WarmingLevels", filelist, value = TRUE, fixed = TRUE) %>% grep("\\.csv$", ., value = TRUE)
+wlfiles <- paste0(root, wlls)
+aux1.5 <- read.table(wlfiles, header = TRUE, sep = ",")[["X1.5_ssp585"]]
+aux2 <- read.table(wlfiles, header = TRUE, sep = ",")[["X2_ssp585"]]
+aux3 <- read.table(wlfiles, header = TRUE, sep = ",")[["X3_ssp585"]]
+aux4 <- read.table(wlfiles, header = TRUE, sep = ",")[["X4_ssp585"]]
+modelruns <- as.character(read.table(wlfiles, header = TRUE, sep = ",")[,1])
+# modelruns[modelruns == "HadGEM2-CC_r1i1p1"] <- "HadGEM2-ES_r1i1p1"
+ind <- which(aux1.5 != 9999 & modelruns != "EC-EARTH_r3i1p1" & modelruns != "AWI-CM-1-1-MR_r1i1p1f1")
+modelruns <- modelruns[ind]
+per1.5 <- cbind(aux1.5 - 9, aux1.5 + 10)[ind,]
+per2 <- cbind(aux2 - 9, aux2 + 10)[ind,]
+per3 <- cbind(aux3 - 9, aux3 + 10)[ind,]
+per4 <- cbind(aux4 - 9, aux4 + 10)[ind,]
+
+modelruns <- gsub("_", "_.*", modelruns)
+
+exp <- "ssp585"
+
+periods <- list( "near" = cbind(rep(2021, length(modelruns)),rep(2040, length(modelruns))), 
+                 "mid"= cbind(rep(2041, length(modelruns)),rep(2060, length(modelruns))), 
+                 "far" = cbind(rep(2081, length(modelruns)),rep(2100, length(modelruns))))
+
+pr.cmip6 <- computeDeltas(allfiles, modelruns, ref.period, periods = list("+1.5º" = per1.5, "+2º" = per2, "+3º" = per3, "+4º" = per4), exp, season)
+
+prmediana.cmip6 <- lapply(pr.cmip6, apply, 2, median, na.rm = T)
+prp90.cmip6 <- lapply(pr.cmip6, apply, 2, quantile, 0.9, na.rm = T)
+prp10.cmip6 <- lapply(pr.cmip6, apply, 2, quantile, 0.1, na.rm = T)
 
 
 ########## plot #######------------------------------------------------------------------------
-if (area == "land") region.subset <- names(tas)[c(1:44, 56)]
-if(area == "sea") region.subset <-  names(tas)[44:56]
+if (area == "land") region.subset <- names(tas.cmip6)[c(1:46, 59)]
+if (area == "sea") region.subset <-  names(tas.cmip6)[47:59]
 
 #select the output figure file name
-outfilename <- paste0(project, "_scatterplots_", area, "_", paste(season, collapse = "-"), "_ATvsAP.pdf")
+outfilename <- paste0("/oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/figs/scatterplots/FGD_", project, "_scatterplots_", area, "_", paste(season, collapse = "-"), "_ATvsAP.pdf")
 
 #plot and write figure
+col1 <- c(rgb(0.55,0,0.55,0.5), rgb(1, 0.73, 0.06, 0.5),rgb(0, 0, 0, 0.5), rgb(0.5, 0.3, 0.16, 0.5))
+col2 <- c(rgb(0.55,0,0.55), rgb(1, 0.73, 0.06), rgb(0, 0, 0), rgb(0.5, 0.3, 0.16))
+
 pdf(outfilename, width = 20, height = 25)
 par(mfrow= c(7, 8))
 for(i in region.subset) {
-  plot(tasmediana[[i]], prmediana[[i]], pch = 21,
+  plot(tasmediana.cmip6[[i]], prmediana.cmip6[[i]], pch = 21,
        bg = rgb(1,0,0,0), col = rgb(1,0,0,0), 
-       xlim = c(min(tasp10[[i]]), max(tasp90[[i]])),
-       ylim = c(min(prp10[[i]]), max(prp90[[i]])),
+       xlim = c(min(tasp10.cmip6[[i]]), max(tasp90.cmip6[[i]])),
+       ylim = c(min(prp10.cmip6[[i]]), max(prp90.cmip6[[i]])),
        # xlim = c(0, 8),
        # ylim = c(-10, 50),
        main = i,
        xlab = "AT(ºC)", ylab = "AP(%)")
-  segments(tasp10[[i]], prmediana[[i]], tasp90[[i]], prmediana[[i]], col = c(rep(rgb(0,0,0.6,0.4),4), rep(rgb(0.2,0.6,1,0.4),4), rep(rgb(1,0,0,0.4),4)), lwd = 4)
-  segments(tasmediana[[i]], prp10[[i]], tasmediana[[i]], prp90[[i]], col = c(rep(rgb(0,0,0.6,0.4),4), rep(rgb(0.2,0.6,1,0.4),4), rep(rgb(1,0,0,0.4),4)), lwd = 4)
-  points(tasmediana[[i]], prmediana[[i]], pch = 21, bg = c(rep(rgb(0,0,0.6),4), rep(rgb(0.2,0.6,1),4), rep(rgb(1,0,0),4)), xlim = c(0, 7))
+  segments(tasp10.cmip6[[i]], prmediana.cmip6[[i]], tasp90.cmip6[[i]], prmediana.cmip6[[i]], col = col2, lwd = 4)
+  segments(tasmediana.cmip6[[i]], prp10.cmip6[[i]], tasmediana.cmip6[[i]], prp90.cmip6[[i]], col = col2, lwd = 4)
+  segments(min(tasp10.cmip6[[i]]), 0, max(tasp90.cmip6[[i]]), 0, lty = 3)
+  # segments(tasp10.cmip5[[i]], prmediana.cmip5[[i]], tasp90.cmip5[[i]], prmediana.cmip5[[i]], col = col1, lwd = 4)
+  # segments(tasmediana.cmip5[[i]], prp10.cmip5[[i]], tasmediana.cmip5[[i]], prp90.cmip5[[i]], col = col1, lwd = 4)
+
+  points(tasmediana.cmip6[[i]], prmediana.cmip6[[i]], pch = 21, bg = col2, xlim = c(0, 7))
+  # points(tasmediana.cmip5[[i]], prmediana.cmip5[[i]], pch = 21, bg = col1, xlim = c(0, 7))
 }
 dev.off()
 
