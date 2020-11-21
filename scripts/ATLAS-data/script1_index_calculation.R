@@ -33,7 +33,7 @@ library(climate4R.climdex)
 library(drought4R)
 
 # Function for latitudinal chunking 
-source_url("https://github.com/SantanderMetGroup/climate4R/blob/master/R/climate4R.chunk.R?raw=TRUE")
+source_url("https://github.com/SantanderMetGroup/climate4R/blob/devel/R/climate4R.chunk.R?raw=TRUE")
 
 
 # DATA ACCESS ------------------------------------------------------------------
@@ -233,10 +233,16 @@ lapply(1:length(datasets), function(i) {
     years <- seq(ch[1], ch[2])
     years <- years[which(years < 2101 & years > 1949)]
     
+    # prepare output directory chain
+    fol <- paste0(out.dir, "/", var,"/raw/", strsplit(datasets[i], "_")[[1]][2])
+    if (!dir.exists(fol)) dir.create(fol) 
+    fol <- paste0(fol, "/", strsplit(datasets[i], "_")[[1]][3])
+    if (!dir.exists(fol)) dir.create(fol)
+    
     # The function iterates over years, generating one NetCDF4 file per dataset and year:
     lapply(years, function(x){
       # Check that the file does not exist already
-      if (!file.exists(paste0(out.dir, "/", datasets[i], "_", AtlasIndex, "_", x, ".nc4"))) {
+      if (!file.exists(paste0(fol, "/", datasets[i], "_", AtlasIndex, "_", x, ".nc4"))) {
         message(paste0(x, "----------------------------------------------------------------"))
         index <- climate4R.chunk(n.chunks = n.chunks,
                                  C4R.FUN.args = C4R.FUN.args,
@@ -245,7 +251,7 @@ lapply(1:length(datasets), function(i) {
         index <- redim(index, drop = TRUE)
         message(x, ".........", datasets[i])
         # Write NetCDF4
-        grid2nc(index, NetCDFOutFile = paste0(out.dir, "/", datasets[i], "_", AtlasIndex, "_", x, ".nc4"))
+        grid2nc(index, NetCDFOutFile = paste0(fol, "/", datasets[i], "_", AtlasIndex, "_", x, ".nc4"))
       }
     })
   } 

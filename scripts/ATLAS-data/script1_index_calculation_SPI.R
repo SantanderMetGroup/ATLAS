@@ -29,7 +29,7 @@ library(transformeR)
 library(drought4R)
 
 # Function for latitudinal chunking 
-source_url("https://github.com/SantanderMetGroup/climate4R/blob/master/R/climate4R.chunk.R?raw=TRUE")
+source_url("https://github.com/SantanderMetGroup/climate4R/blob/devel/R/climate4R.chunk.R?raw=TRUE")
 
 # DATA ACCESS ------------------------------------------------------------------------------------
 # Data is accessed remotely from the Santander Climate Data Service
@@ -122,7 +122,9 @@ switch(AtlasIndex,
        SPI12 = {
          scale <- 12
        })
+
 # COMPUTE INDEX 
+
 lapply(1:length(datasets1), function(i) {
   di <- dataInventory(datasets1[i])
   di2 <- dataInventory(datasets2[i])
@@ -131,20 +133,31 @@ lapply(1:length(datasets1), function(i) {
     years <- as.numeric(ch[1]):as.numeric(ch[2])
     years <- years[which(years < 2101)]
     years <- years[which(years > 1949)]
+    
+    # prepare output directory chain
+    fol <- paste0(out.dir, "/", AtlasIndex,"/raw/", strsplit(datasets2[i], "_")[[1]][2])
+    if (!dir.exists(fol)) dir.create(fol) 
+    fol <- paste0(fol, "/", strsplit(datasets2[i], "_")[[1]][4])
+    if (!dir.exists(fol)) dir.create(fol)
+    
+    # calculate index
+    index <- climate4R.chunk(n.chunks = n.chunks,
+                             C4R.FUN.args = list(FUN = "spifun", h = list(dataset = datasets1[i], var = "pr", years = 1971:2005), 
+                                                 f = list(dataset = datasets2[i], var = "pr", years = years), 
+                                                 scale = scale,
+                                                 ref.start = c(1971, 1), ref.end = c(2010, 12)),
+                             loadGridData.args = list(aggr.m = "sum"))
+    index[["Variable"]][["varName"]] <- AtlasIndex
+    index <- redim(index, drop = TRUE)
+    message(".........", i)
+    
+    # WRITE .nc FILES (write each year in separate files)
+    
     lapply(years, function(x){
-      if (!file.exists(paste0(out.dir, "/", datasets2[i], "_", AtlasIndex,"_", x, ".nc4"))) {
-        print(paste0(x, "----------------------------------------------------------------"))
-        index <- climate4R.chunk(n.chunks = n.chunks,
-                                 C4R.FUN.args = list(FUN = "spifun", h = list(dataset = datasets1[i], var = "pr", years = 1971:2005), 
-                                                                     f = list(dataset = datasets2[i], var = "pr", years = years), 
-                                                                     scale = scale,
-                                                                     ref.start = c(1971, 1), ref.end = c(2010, 12)),
-                                 loadGridData.args = list(aggr.m = "sum"))
-        index[["Variable"]][["varName"]] <- AtlasIndex
-        index <- redim(index, drop = TRUE)
-        message(x, ".........", i)
-        grid2nc(index, NetCDFOutFile = paste0(out.dir, "/", datasets2[i], "_", AtlasIndex , "_", x, ".nc4"))
-      }
+      print(paste0("------", i, "-----------------------------------------------"))
+      index.x <- subsetGrid(index, years = x)
+      grid2nc(index.x, NetCDFOutFile = paste0(fol, "/", datasets2[i], "_" , AtlasIndex, "_", x, ".nc4"))
     })
-  } 
+  }
 })
+

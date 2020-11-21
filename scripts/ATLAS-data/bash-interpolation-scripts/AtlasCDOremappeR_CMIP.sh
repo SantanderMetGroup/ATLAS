@@ -34,9 +34,11 @@ cdo -P 4 gencon,${maskdestnc} -seltimestep,1 ${datanc} weights.nc
 
 #if test "${LSMASK}" -eq 1; then
   cdo div ${datanc} -setctomiss,0 maskland.nc land.nc  
-  cdo div ${datanc} -setctomiss,0 masksea.nc sea.nc  
-  cdo remap,${maskdestnc},weights.nc land.nc landr.nc
-  cdo remap,${maskdestnc},weights.nc sea.nc sear.nc
+  cdo div ${datanc} -setctomiss,0 masksea.nc sea.nc 
+  cdo -P 4 gencon,${maskdestnc} land.nc weight_land.nc
+  cdo -P 4 gencon,${maskdestnc} sea.nc  weight_sea.nc
+  cdo remap,${maskdestnc},weight_land.nc land.nc landr.nc
+  cdo remap,${maskdestnc},weight_sea.nc sea.nc sear.nc
   cdo ifthenelse -setmisstoc,0 ${maskdestnc} landr.nc sear.nc merged.nc
   # Fill the gaps with unconstrained remapping (doremap preferred option)
   cdo setmisstoc,1 -setrtoc,-9999999,9999999,0 merged.nc gaps.nc

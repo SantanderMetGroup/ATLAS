@@ -36,7 +36,7 @@ library(climate4R.climdex)
 library(drought4R)
 
 # Function for latitudinal chunking 
-source_url("https://github.com/SantanderMetGroup/climate4R/blob/master/R/climate4R.chunk.R?raw=TRUE")
+source_url("https://github.com/SantanderMetGroup/climate4R/blob/devel/R/climate4R.chunk.R?raw=TRUE")
 
 # DATA ACCESS ------------------------------------------------------------------------------------
 # Data is accessed remotely from the Santander Climate Data Service
@@ -170,7 +170,7 @@ lapply(1:length(datasets1), function(x) {
     index[["Variable"]][["varName"]] <- AtlasIndex
     index <- redim(index, drop = TRUE)
     
-    # WRITE .nc FILES
+    # WRITE .nc FILES (write each year in separate files)
     
     lapply(target.years, function(y) {
       index.x <- subsetGrid(index, years = y)

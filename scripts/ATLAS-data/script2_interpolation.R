@@ -57,14 +57,16 @@ for (m in 1:length(grids)) {
   grid <- grids[m]
   griddir <- gridsdir[m]
   model <- strsplit(grid, "_")[[1]][2]
-  newgrid <- gsub(model, paste0(model, "i"), grid)
   gridmask <- orig.masks[grep(model, orig.masks)]
-  if (!file.exists(paste0(out.dir, "/", newgrid))) {
-    print(paste0(out.dir, "/", newgrid))
+  out.dir <- gsub("/raw/", "/cdo/", gsub(grid, "", griddir))
+  if (!dir.exists(out.dir)) dir.create(out.dir, recursive = TRUE)
+  if (!file.exists(paste0(out.dir, "/", grid))) {
     if (length(gridmask) > 0) {
-      system(paste("bash", script, griddir, paste0(out.dir, "/", newgrid), gridmask, refmask))
+      print(paste0(out.dir, "/", grid))
+      system(paste("bash", script, griddir, paste0(out.dir, "/", grid), gridmask, refmask))
     } else {
-      system(paste0("cdo remapcon,", refmask, " ", griddir, " ", paste0(out.dir, "/", newgrid)))
+      print(paste0(out.dir, "/", grid))
+      system(paste0("cdo remapcon,", refmask, " ", griddir, " ", paste0(out.dir, "/", grid)))
     }
   }
 }
