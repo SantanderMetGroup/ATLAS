@@ -49,8 +49,8 @@ years <- 1950:2005
 
 for (i in 1:length(years)) {
   in.files <- list.files(source.dir, pattern = paste0(scenario, ".*", as.character(years[i])), full.names = TRUE)
-  models <-  list.files(source.dir, pattern = paste0(scenario, ".*", as.character(years[i])))
-  models <- gsub(models, pattern = paste0(project, "_|_", scenario, ".*"), replacement = "")
+  models <-  unlist(lapply(strsplit(in.files, "/"), function(x) x[length(x)]))
+  models <- gsub(models, pattern = paste0(project, "_|", scenario, "_|_", var, ".*"), replacement = "")
   g <- lapply(in.files, function(x) loadGridData(x, var = AtlasIndex))
   ind <- which(unlist(lapply(g, function(x) getShape(x, "time"))) < 12)
   if (length(ind) > 0) { # exception for hadgem
@@ -74,7 +74,7 @@ for (i in 1:length(years)) {
 #   <https://github.com/SantanderMetGroup/loadeR/wiki/Model-Data-(reanalysis-and-climate-projections)>
 #   <https://www.unidata.ucar.edu/software/netcdf-java/current/ncml/Tutorial.html>
 
-out.ncml.dir <- paste0(out.dir, "/ncml")
+out.ncml.dir <-  paste0(getwd(), "/ncml")
 dir.create(out.ncml.dir)
 
 # This function creates the NcML file automatically by parsing the information stored in the nc files previously generated:

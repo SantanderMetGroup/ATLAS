@@ -35,7 +35,7 @@ library(sp)
 library(rgdal)
 
 # Function for latitudinal chunking 
-source_url("https://github.com/SantanderMetGroup/climate4R/blob/master/R/climate4R.chunk.R?raw=TRUE")
+source_url("https://github.com/SantanderMetGroup/climate4R/blob/devel/R/climate4R.chunk.R?raw=TRUE")
 
 
 # USER PARAMETER SETTINGS ------------------------------------------------------
