@@ -1,8 +1,8 @@
-## CMIP6 and CMIP5 spatial averages over the reference regions
+## CMIP5, CMIP6 AND CORDEX spatial averages over the reference regions
 
-Spatially aggregated monthly results over the different reference regions have been calculated for all CMIP6 and CMIP5 models (a single run per model) available in the Altas Hub (see the [inventories](https://github.com/SantanderMetGroup/IPCC-Atlas/tree/devel/AtlasHub-inventory), *CMIP6Amon_Atlas* and *CMIP5_Atlas*, versions 20191211) separately for land, sea, and land-sea gridboxes, and are stored in the *data* folder.
+Spatially aggregated monthly results over the reference regions for CMIP5, CMIP6 and CORDEX ATLAS datasets (a single run per model) separately for land, sea, and land-sea gridboxes.
 
-Additionally, results for all CMIP6 model runs (*CMIP6Amon_Hub* version 20191028 in the [inventory](https://github.com/SantanderMetGroup/IPCC-Atlas/tree/devel/AtlasHub-inventory/Hub/)) are also available in the following links:
+Additionally, results for all CMIP6 model runs (*CMIP6Amon_Hub* version 20191028 in 'ATLAS-inventory/Hub') are also available at the following links:
 
 [CMIP6Amon_pr_land.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_pr_land.zip)\
 [CMIP6Amon_pr_landsea.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_pr_landsea.zip)\
@@ -10,3 +10,6 @@ Additionally, results for all CMIP6 model runs (*CMIP6Amon_Hub* version 20191028
 [CMIP6Amon_tas_land.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_tas_land.zip)\
 [CMIP6Amon_tas_landsea.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_tas_landsea.zip)\
 [CMIP6Amon_tas_sea.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_tas_sea.zip)
+
+***
+NOTE!: Regional averages are weighted by the cosine of latitude.
