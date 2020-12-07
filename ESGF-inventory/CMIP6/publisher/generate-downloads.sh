@@ -9,20 +9,22 @@ database="../CMIP6.json"
 awk -F, '
 NR>1 && NF>2 {
   gsub("\"", "", $1)
-  sub("\.(gn|gr|gr[0-9]+)$", "", $1)
+  sub("\\.(gn|gr|gr[0-9]+)$", "", $1)
   printf("%s\n", $1)
 }' ../CMIP6_day_1run.csv > master_ids
 
 # For daily and tos (monthly) we want to filter as specified in ../CMIP6_day_1run.csv
-jq 'select( (.table_id|first == "day") or (.variable_id|first == "tos") )' $database | \
-jq --rawfile master_ids master_ids '
-    ($master_ids|split("\n")[0:-1]) as $master_ids_list |
-    select( (.master_id|split(".")[:6]|join(".")) == $master_ids_list[] )' | ${esgf_utils}/esgf-aria2c > download.aria
-
+jq 'select(((.variable_id|first == ("pr", "tas" ,"tasmin", "tasmax", "psl")) and (.frequency|first == "day")) or (.variable_id|first == "tos"))' $database | \
+  jq --rawfile master_ids master_ids '
+      ($master_ids|split("\n")[0:-1]) as $master_ids_list |
+      select( (.master_id|split(".")[:6]|join(".")) == $master_ids_list[] )' | ${esgf_utils}/esgf-aria2c > CMIP6_atmos_day.aria
 jq 'select(.table_id|first == "Amon") |
-    select(.variable_id|first != "tos")' $database >> download.aria
-
-jq 'select(.table_id|first == "fx")' $database >> download.aria
+    select(.realm|first == "atmos") |
+    select(.variable|first == ("pr", "tas" ,"tasmin", "tasmax", "psl", "sfcWind"))' ${database} | ${esgf_utils}/esgf-aria2c > CMIP6_atmos_mon.aria
+jq 'select(.table_id|first == "fx")' ${database} | ${esgf_utils}/esgf-aria2c > CMIP6_fx.aria
+jq 'select(.variable|first == ("ph", "o2"))' ${database} | ${esgf_utils}/esgf-aria2c > CMIP6_ocean_mon.aria
+jq 'select(.variable|first == "siconc")' ${database} | ${esgf_utils}/esgf-aria2c > CMIP6_seaIce_mon.aria
+jq 'select(.realm|first == "land")|select(.variable|first == ("snc", "snd", "snw", "snm", "mrso", "mrro"))' ${database} | ${esgf_utils}/esgf-aria2c > CMIP6_land_mon.aria
 
 # This is how to generate selection files from CMIP6_day_1run.csv, here just for reference
 #awk -F, '

@@ -47,12 +47,27 @@ one_run() {
     .[].runs.datasets[]|del(.dataset_id, .dataset_run)'
 }
 
-xargs -a ${esgf_utils}/indexnodes -I{} ${esgf_utils}/esgf-search -i "{}" selection | jq -c '.' > CMIP6.json
+find selections -type f -name '*.selection' -printf "%f\n" | while read f
+do
+    xargs -a ${esgf_utils}/indexnodes -I{} ${esgf_utils}/esgf-search -i "{}" selections/${f} | jq -c '.' > ${f/%selection/json}
+done
 
-jq 'select((.table_id|first == "Amon") and (.variable|first == ("pr", "tas" ,"tasmin", "tasmax", "psl", "sfcWind")))' CMIP6.json | to_inventory > CMIP6_mon.csv
-jq 'select(.table_id|first == "day")' CMIP6.json | to_inventory > CMIP6_day.csv
-jq 'select(.table_id|first == "fx")' CMIP6.json | to_inventory > CMIP6_fx.csv
+databases="CMIP6_fx.json CMIP6_ocean_mon.json CMIP6_atmos_mon.json CMIP6_land_mon.json CMIP6_seaIce_mon.json"
+for f in ${databases}
+do
+    to_inventory < ${f} > ${f/%json/csv}
+    ${esgf_utils}/esgf-aria2c < ${f} > publisher/${f/%json/aria}
+done
 
-# oceanic variables
-jq 'select(.variable|first == ("tos", "ph", "o2"))' CMIP6.json | to_inventory > CMIP6_Omon.csv
-jq 'select(.variable|first == "siconc")' CMIP6.json | to_inventory > CMIP6_SImon.csv
+# This is needed to filter from ../CMIP6_day_1run.csv
+awk -F, '
+NR>1 && NF>2 {
+  gsub("\"", "", $1)
+  sub("\\.(gn|gr|gr[0-9]+)$", "", $1)
+  printf("%s\n", $1)
+}' CMIP6_day_1run.csv > master_ids
+
+# For daily and tos (monthly) we want to filter as specified in ../CMIP6_day_1run.csv
+jq --rawfile master_ids master_ids '
+    ($master_ids|split("\n")[0:-1]) as $master_ids_list |
+    select( (.master_id|split(".")[:6]|join(".")) == $master_ids_list[] )' CMIP6_atmos_day.json | ${esgf_utils}/esgf-aria2c > CMIP6_atmos_day.aria
