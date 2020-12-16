@@ -17,9 +17,30 @@
   <remove name="variable_id" type="attribute" />
   <remove name="version" type="attribute" />
 
-  {% for v, group in df[df[frequency] != 'fx'].groupby((variable)) %}
-  <dimension name="time_{{ v }}" length="{{ group[('_d_time', 'size')].sum()|int }}" />
-  <variable name="time_{{ v }}" type="double" shape="time_{{ v }}">
+  <variable name="{{ lon_coord }}" type="double" shape="{{ df[(lon_coord, '_dimensions')].iloc[0] }}">
+    <values>{{ df[(lon_coord, '_values')].iloc[0].ravel() | join(" ") }}</values>
+  </variable>
+  {% if (lon_coord + '_bnds', 'values') in df.columns %}
+  <variable name="{{ lon_coord }}_bnds" type="double" shape="{{ df[(lon_coord, '_dimensions')].iloc[0] }}, 2">
+    <values>{{ df[(lon_coord + '_bnds', '_values')].iloc[0].ravel() | join(" ") }}</values>
+  </variable>
+  {% endif %}
+
+  {% if df[('GLOBALS', '_time_same_coordinate')].all() %}
+    {% for name,group in df[df[frequency] != 'fx'].groupby((variable)) %}
+  <variable name="{{ name }}" shape="time {{ lat_coord }} {{ lon_coord }}">
+    <attribute name="version" type="string" value="v{{ ','.join(group[('GLOBALS', '_DRS_version')].unique()|list|map('string')) }}" />
+    <attribute name="tracking_ids" type="string" value="{{ ','.join(group[('GLOBALS', 'tracking_id')]) }}" />
+    {% if group[('GLOBALS', '_DRS_model')].iloc[0] == 'CESM2-WACCM' %}
+    <!-- CESM2-WACCM need to redifine coordinates -->
+    <attribute name="coordinates" value="time {{ lat_coord }} {{ lon_coord }}" />
+    {% endif %}
+  </variable>
+    {% endfor %}
+  {% else %}
+    {% for name,group in df[df[frequency] != 'fx'].groupby((variable)) %}
+  <dimension name="time_{{ name }}" length="{{ group[('_d_time', 'size')].sum()|int }}" />
+  <variable name="time_{{ name }}" type="double" shape="time_{{ name }}">
     {% for i in group['time'].columns %}
     {% if i not in ['_values', '_dimensions'] %}
     <attribute name="{{ i }}" value="{{ group.iloc[0][('time', i)] }}" />
@@ -27,14 +48,16 @@
     {% endfor %}
     <values>{{ group.sort_values(by=[('GLOBALS', '_DRS_period1')])[('time', '_values')]|_values|join(' ') }}</values>
   </variable>
-  {% endfor %}
-
-  {% for name,group in df[df[frequency] != 'fx'].groupby((variable)) %}
   <variable name="{{ group[variable].iloc[0] }}" shape="time_{{ name }} {{ lat_coord }} {{ lon_coord }}">
     <attribute name="version" type="string" value="v{{ ','.join(group[('GLOBALS', '_DRS_version')].unique()|list|map('string')) }}" />
     <attribute name="tracking_ids" type="string" value="{{ ','.join(group[('GLOBALS', 'tracking_id')]) }}" />
+    {% if group[('GLOBALS', '_DRS_model')].iloc[0] == 'CESM2-WACCM' %}
+    <!-- CESM2-WACCM need to redifine coordinates -->
+    <attribute name="coordinates" value="time_{{ v }} {{ lat_coord }} {{ lon_coord }}" />
+    {% endif %}
   </variable>
   {% endfor %}
+  {% endif %}
 
   <aggregation type="union">
     {% for name,group in df[df[frequency] != 'fx'].sort_values(by=[variable]).groupby(variable) %}

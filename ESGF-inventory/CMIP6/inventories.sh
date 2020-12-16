@@ -70,4 +70,4 @@ NR>1 && NF>2 {
 # For daily and tos (monthly) we want to filter as specified in ../CMIP6_day_1run.csv
 jq --rawfile master_ids master_ids '
     ($master_ids|split("\n")[0:-1]) as $master_ids_list |
-    select( (.master_id|split(".")[:6]|join(".")) == $master_ids_list[] )' CMIP6_atmos_day.json | ${esgf_utils}/esgf-aria2c > CMIP6_atmos_day.aria
+    select( (.master_id|split(".")[:6]|join(".")) == $master_ids_list[] )' CMIP6_atmos_day.json | ${esgf_utils}/esgf-aria2c > publisher/CMIP6_atmos_day.aria
