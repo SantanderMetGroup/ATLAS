@@ -34,6 +34,8 @@ library(geoprocessoR)
 library(sp)
 library(rgdal)
 
+# Dev utilities used for source_url
+library(devtools)
 # Function for latitudinal chunking 
 source_url("https://github.com/SantanderMetGroup/climate4R/blob/devel/R/climate4R.chunk.R?raw=TRUE")
 
