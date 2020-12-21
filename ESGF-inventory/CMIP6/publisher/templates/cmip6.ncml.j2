@@ -17,6 +17,7 @@
   <remove name="variable_id" type="attribute" />
   <remove name="version" type="attribute" />
 
+<!--
   <variable name="{{ lon_coord }}" type="double" shape="{{ df[(lon_coord, '_dimensions')].iloc[0] }}">
     <values>{{ df[(lon_coord, '_values')].iloc[0].ravel() | join(" ") }}</values>
   </variable>
@@ -25,8 +26,9 @@
     <values>{{ df[(lon_coord + '_bnds', '_values')].iloc[0].ravel() | join(" ") }}</values>
   </variable>
   {% endif %}
+-->
 
-  {% if df[('GLOBALS', '_time_same_coordinate')].all() %}
+  {% if (df[('GLOBALS', '_time_same_coordinate')].all()) and ((df[('time', 'units')].dropna().unique())|length == 1) %}
     {% for name,group in df[df[frequency] != 'fx'].groupby((variable)) %}
   <variable name="{{ name }}" shape="time {{ lat_coord }} {{ lon_coord }}">
     <attribute name="version" type="string" value="v{{ ','.join(group[('GLOBALS', '_DRS_version')].unique()|list|map('string')) }}" />

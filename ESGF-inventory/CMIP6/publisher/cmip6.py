@@ -26,6 +26,34 @@ Options:
     --group-fx FACETS               Comma separated facets that, given a group grouped by --group-time, return it's fxs.
 '''
 
+# files that need to be removed because they are incorrectly duplicated in ESGF
+# or have bad periods in filename or whatever
+TO_DROP = [
+'/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/CMIP/NCAR/CESM2-WACCM/historical/r1i1p1f1/day/psl/gn/v20190227/psl_day_CESM2-WACCM_historical_r1i1p1f1_gn_18500101-20150101.nc',
+'/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/CMIP/NCAR/CESM2/historical/r1i1p1f1/day/psl/gn/v20190308/psl_day_CESM2_historical_r1i1p1f1_gn_18500101-20150101.nc',
+'/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/CCCR-IITM/IITM-ESM/ssp126/r1i1p1f1/day/pr/gn/v20200915/pr_day_IITM-ESM_ssp126_r1i1p1f1_gn_20950101-20981231.nc',
+'/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/CCCR-IITM/IITM-ESM/ssp126/r1i1p1f1/day/psl/gn/v20200915/psl_day_IITM-ESM_ssp126_r1i1p1f1_gn_20950101-20981231.nc',
+'/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/CCCR-IITM/IITM-ESM/ssp126/r1i1p1f1/day/tas/gn/v20200915/tas_day_IITM-ESM_ssp126_r1i1p1f1_gn_20950101-20981231.nc',
+'/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/CCCR-IITM/IITM-ESM/ssp126/r1i1p1f1/day/tasmax/gn/v20200915/tasmax_day_IITM-ESM_ssp126_r1i1p1f1_gn_20950101-20981231.nc',
+'/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/CCCR-IITM/IITM-ESM/ssp126/r1i1p1f1/day/tasmin/gn/v20200915/tasmin_day_IITM-ESM_ssp126_r1i1p1f1_gn_20950101-20981231.nc',
+'/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/KIOST/KIOST-ESM/ssp126/r1i1p1f1/day/tasmax/gr1/v20191202/tasmax_day_KIOST-ESM_ssp126_r1i1p1f1_gr1_20150101-20151231.nc',
+"/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/NCC/NorESM2-LM/ssp126/r1i1p1f1/day/pr/gn/v20191108/pr_day_NorESM2-LM_ssp126_r1i1p1f1_gn_20310101-20401230.nc",
+"/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/NCC/NorESM2-LM/ssp126/r1i1p1f1/day/pr/gn/v20191108/pr_day_NorESM2-LM_ssp126_r1i1p1f1_gn_20610101-20701230.nc",
+"/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/NCC/NorESM2-LM/ssp126/r1i1p1f1/day/pr/gn/v20191108/pr_day_NorESM2-LM_ssp126_r1i1p1f1_gn_20810101-20901230.nc",
+"/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/NCC/NorESM2-LM/ssp126/r1i1p1f1/day/psl/gn/v20191108/psl_day_NorESM2-LM_ssp126_r1i1p1f1_gn_20310101-20401230.nc",
+"/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/NCC/NorESM2-LM/ssp126/r1i1p1f1/day/psl/gn/v20191108/psl_day_NorESM2-LM_ssp126_r1i1p1f1_gn_20610101-20701230.nc",
+"/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/NCC/NorESM2-LM/ssp126/r1i1p1f1/day/psl/gn/v20191108/psl_day_NorESM2-LM_ssp126_r1i1p1f1_gn_20810101-20901230.nc",
+"/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/NCC/NorESM2-LM/ssp126/r1i1p1f1/day/tas/gn/v20191108/tas_day_NorESM2-LM_ssp126_r1i1p1f1_gn_20310101-20401230.nc",
+"/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/NCC/NorESM2-LM/ssp126/r1i1p1f1/day/tas/gn/v20191108/tas_day_NorESM2-LM_ssp126_r1i1p1f1_gn_20610101-20701230.nc",
+"/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/NCC/NorESM2-LM/ssp126/r1i1p1f1/day/tas/gn/v20191108/tas_day_NorESM2-LM_ssp126_r1i1p1f1_gn_20810101-20901230.nc",
+"/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/NCC/NorESM2-LM/ssp126/r1i1p1f1/day/tasmax/gn/v20191108/tasmax_day_NorESM2-LM_ssp126_r1i1p1f1_gn_20310101-20401230.nc",
+"/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/NCC/NorESM2-LM/ssp126/r1i1p1f1/day/tasmax/gn/v20191108/tasmax_day_NorESM2-LM_ssp126_r1i1p1f1_gn_20610101-20701230.nc",
+"/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/NCC/NorESM2-LM/ssp126/r1i1p1f1/day/tasmax/gn/v20191108/tasmax_day_NorESM2-LM_ssp126_r1i1p1f1_gn_20810101-20901230.nc",
+"/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/NCC/NorESM2-LM/ssp126/r1i1p1f1/day/tasmin/gn/v20191108/tasmin_day_NorESM2-LM_ssp126_r1i1p1f1_gn_20310101-20401230.nc",
+"/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/NCC/NorESM2-LM/ssp126/r1i1p1f1/day/tasmin/gn/v20191108/tasmin_day_NorESM2-LM_ssp126_r1i1p1f1_gn_20610101-20701230.nc",
+"/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/NCC/NorESM2-LM/ssp126/r1i1p1f1/day/tasmin/gn/v20191108/tasmin_day_NorESM2-LM_ssp126_r1i1p1f1_gn_20810101-20901230.nc",
+]
+
 def filter_grid_labels(df, grid_label, facets):
     def gridlabel_to_int(label):
         if label == "gn":
@@ -107,9 +135,18 @@ if __name__ == '__main__':
         sys.exit(1)
 
     df = pd.read_hdf(args['dataframe'], 'df')
+    df = df[~df[('GLOBALS', 'localpath')].isin(TO_DROP)]
     df = clean(df)
     # In cordex and cmip5 frequency is part of drs but not in cmip6
     #df[('GLOBALS', '_DRS_Dfrequency')] = df[('GLOBALS', 'frequency')]
+
+    # /oceano/gmeteo/WORK/zequi/ATLAS/ESGF-inventory/tds-content/public/CMIP6/ScenarioMIP/NCAR/CESM2-WACCM/ssp585/day/CMIP6_ScenarioMIP_NCAR_CESM2-WACCM_ssp585_r1i1p1f1_day.ncml
+    # drop files from 2100 onward because they repeat a time step that breaks time step = 1
+    subset = ((df[('GLOBALS', '_DRS_model')] == 'CESM2-WACCM') &
+              (df[('GLOBALS', '_DRS_experiment')] == 'ssp585') &
+              (df[('GLOBALS', '_DRS_table')] == 'day') &
+              (df[('GLOBALS', '_DRS_period1')] > 20950101))
+    df = df[~subset]
 
     if args['filter_grid_labels'] is not None:
         df = filter_grid_labels(df, args['grid_label_col'], args['filter_grid_labels'])
@@ -131,9 +168,25 @@ if __name__ == '__main__':
     # Set same calendar for time values
     df = esgf.fix_time_values(df, args['group_time'], args['variable_col'])
 
+    # some datasets report sub-daily data,
+    # not an error but climate4r uses time in seconds to detect daily data (I think)
+    time_diff = df[('time', '_values')].apply(
+        lambda a: len(np.unique(np.diff(a))) != 1 if not np.isnan(a).all() else False)
+    subset = ((df[('GLOBALS', '_DRS_Dtable')] == 'day') & (time_diff))
+    df.loc[subset, ('time', '_values')] = (
+        df.loc[subset, ('time', '_values')].apply(lambda a: np.arange(a[0], a[0]+len(a))))
+
     how_to_group = [('GLOBALS', facet) for facet in args['group_time'].split(',')]
     time_groups = df[~df[('GLOBALS', args['variable_col'])].isin(esgf.vars_fx)].groupby(how_to_group)
     for name, group in time_groups:
+        # Fix the following issue:
+        ## <netcdf location="/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/NCC/NorESM2-LM/ssp126/r1i1p1f1/day/tasmax/gn/v20191108/tasmax_day_NorESM2-LM_ssp126_r1i1p1f1_gn_20310101-20401231.nc" ncoords="3650" />
+        ## <netcdf location="/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/NCC/NorESM2-LM/ssp126/r1i1p1f1/day/tasmax/gn/v20191108/tasmax_day_NorESM2-LM_ssp126_r1i1p1f1_gn_20310101-20401230.nc" ncoords="3649" />
+        group = group.sort_values(
+            by=[('GLOBALS', args['variable_col']), ('GLOBALS', '_DRS_period1')]).drop_duplicates(
+            subset=[('GLOBALS', args['variable_col']), ('GLOBALS', '_DRS_period1')],
+            keep='last')
+
         # for time group check if time coordinates differ (the ncml will decide if to create multiple time coordinates)
         group[('GLOBALS', '_time_same_coordinate')] = esgf.time_same_coordinate(
             group,
