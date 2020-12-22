@@ -3,7 +3,7 @@ doConRemapCORDEX_v000.sh
 
 grid_bounds_calc.py
 
-ource.grid_EUR44_ALADIN52
+source.grid_EUR44_ALADIN52
 
 source.grid_EUR44_ALADIN53
 
@@ -32,19 +32,17 @@ variable_domain_forcing_GCM_experiment_ensemble_member_RCM_version_frequency_per
 
 ## The script has 3 loops:
 
-* (1) through variables (defined by a user)
-* (2) through RCMs (determined by the script itself from the input folder defined by a user)
-* (3) through each file with the corresponding RCM (determined by the script itself from the input folder defined by a user)
+1. through variables (defined by a user)
+1. through RCMs (determined by the script itself from the input folder defined by a user)
+1. through each file with the corresponding RCM (determined by the script itself from the input folder defined by a user)
 
 ## The script has to main parts:
 
-* (1) CHANGE AND ADAPT TO YOUR REQUIREMENTS:
+1. CHANGE AND ADAPT TO YOUR REQUIREMENTS:
 Here a user gives all the info necessary for the script to run, such as the domain, domain
 boundaries, paths etc.
-
-* (2) NO CANGES NECESSARY:
+1. NO CANGES NECESSARY:
 This part of the script is a core part and no changes should be introduced here. It is devided in 4 subparts:
-
  (a) Preparations for the remapping
  (b) Creating the source.grid file
  (c) Conservation remapping
@@ -86,7 +84,9 @@ Change 2 lines referring to a reference file for a specific RCM --> the path and
 $ python3 grid_bouds_calc.py (→ file_out created in the working directory)
 $ cdo griddes file_out > source.grid_domain_name>_name of the source model>
 (source.grid_domain_name>_name of the source model> files in the folder are source.grid files
-for all recognized 0.44 and 0.22 CORDEX RCMs with non-rotated projections)
+for all recognized 0.44 and 0.22 CORDEX RCMs with non-rotated projections).
+
 After these 2 steps, run the main interpolation script doConRemapCORDEX_v000.sh:
 $ ./ doConRemapCORDEX_v000.sh
+
 Contact person: milovacj@unican.es
