@@ -15,7 +15,7 @@
 #     You should have received a copy of the GNU General Public License
 #     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-varInventoryTable <- function(datasets, output.file = NULL) {
+varInventoryTable <- function(datasets, output.file = NULL, plot = FALSE) {
   require(abind)
   require(lattice)
   di <- lapply(datasets, function(x) {
@@ -36,9 +36,9 @@ varInventoryTable <- function(datasets, output.file = NULL) {
   for (i in 1:length(divarc)) {
     df[,i] <- unlist(
       lapply(1:length(divar), function(x) {
-        logi <- divarc[i] %in% divar[x]
+        logi <- divarc[i] %in% divar[[x]]
         if (isTRUE(logi)) {
-          divers[x]
+          divers[[x]][[divarc[i]]]
         } else {
           logi
         } 
@@ -51,13 +51,17 @@ varInventoryTable <- function(datasets, output.file = NULL) {
     dflevels[,i] <- unlist(lapply(dd, function(x) levels[i] %in% x))
   }
   df <- cbind(df, dflevels)
+  if (!is.null(output.file)) write.csv(df, file = output.file)
+  if (plot) {
   dfpl <- levelplot(t(df), scales=list(x=list(alternating=2, rot=90, cex = 0.5),
                                        y=list(cex = 0.5)),
                     border = "red", bw = 10, ylab = NULL, colorkey = FALSE,
                     col.regions = rev(gray.colors(16, start = 0.5, end = 1)),
                     xlab = list("gray = available      white = not available", cex = 0.8))
-  if (!is.null(output.file)) write.csv(df, file = output.file)
   return(list("data" = df, "plot" = dfpl))
+  } else {
+  return(df)
+  }
 }
 
 # ###########apply function------------
