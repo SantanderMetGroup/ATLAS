@@ -6,6 +6,7 @@ import re
 import numpy as np
 import pandas as pd
 import netCDF4
+import cftime
 
 import esgf
 
@@ -135,10 +136,22 @@ if __name__ == '__main__':
         sys.exit(1)
 
     df = pd.read_hdf(args['dataframe'], 'df')
+    # If only fx, quit
+    if len(df[df[('GLOBALS', '_DRS_table')] != 'fx']) == 0:
+        sys.exit(0)
+
     df = df[~df[('GLOBALS', 'localpath')].isin(TO_DROP)]
     df = clean(df)
-    # In cordex and cmip5 frequency is part of drs but not in cmip6
-    #df[('GLOBALS', '_DRS_Dfrequency')] = df[('GLOBALS', 'frequency')]
+
+    # Use this to check if ncml needs to define custom time coordinate
+    df[('GLOBALS', '_require_custom_time')] = False
+
+    # cesm2-waccm historical ends in january 2015 instead of december 2014
+    subset = ((df[('GLOBALS', '_DRS_model')] == 'CESM2-WACCM') &
+              (df[('GLOBALS', '_DRS_period2')].fillna(0).astype(int).astype(str).str.endswith('0101')))
+    df.loc[subset, ('time', '_values')] = df.loc[subset,  ('time', '_values')].apply(lambda x: x[:-1])
+    df.loc[subset, ('_d_time', 'size')] = df.loc[subset, ('_d_time', 'size')] - 1
+    df.loc[subset, ('GLOBALS', '_require_custom_time')] = True
 
     # /oceano/gmeteo/WORK/zequi/ATLAS/ESGF-inventory/tds-content/public/CMIP6/ScenarioMIP/NCAR/CESM2-WACCM/ssp585/day/CMIP6_ScenarioMIP_NCAR_CESM2-WACCM_ssp585_r1i1p1f1_day.ncml
     # drop files from 2100 onward because they repeat a time step that breaks time step = 1

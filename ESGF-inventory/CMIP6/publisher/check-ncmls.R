@@ -3,9 +3,10 @@ library(loadeR)
 datasets <- UDG.datasets("CMIP6")[["CMIP6"]]
 datasets <- readLines('ncmls')
 
-dataset <- "/oceano/gmeteo/WORK/zequi/ATLAS/ESGF-inventory/tds-content/public/CMIP6/ScenarioMIP/NCAR/CESM2-WACCM/ssp585/day/CMIP6_ScenarioMIP_NCAR_CESM2-WACCM_ssp585_r1i1p1f1_day.ncml"
-loadGridData(dataset, var = "tas", latLim = c(36, 38), years = 2020, season = 2:3, aggr.m = "mean")
-exit(0)
+dataset <- "/oceano/gmeteo/WORK/zequi/ATLAS/ESGF-inventory/tds-content/public/CMIP6/CMIP/NCAR/CESM2-WACCM/historical/day/CMIP6_CMIP_NCAR_CESM2-WACCM_historical_r1i1p1f1_day.ncml"
+vars <- c("tas", "pr", "psl")
+loadGridData(dataset, "tas", aggr.m = "mean")
+
 
 #datasets.h <- datasets[grep("historical", datasets)]
 #datasets.f <- datasets[-grep("historical", datasets)]

@@ -4,7 +4,8 @@ library(visualizeR)
 library(stringr)
 library(gridExtra)
 
-ncmls <- list.files("/oceano/gmeteo/WORK/PROYECTOS/ATLAS/tds/content/thredds/public/CMIP6/", pattern = "day.*.ncml", recursive = TRUE, full.names = TRUE)
+#ncmls <- list.files("/oceano/gmeteo/WORK/PROYECTOS/ATLAS/tds/content/thredds/public/CMIP6/", pattern = "day.*.ncml", recursive = TRUE, full.names = TRUE)
+ncmls <- c("/oceano/gmeteo/WORK/zequi/ATLAS/ESGF-inventory/tds-content/public/CMIP6/CMIP/NCAR/CESM2-WACCM/historical/day/CMIP6_CMIP_NCAR_CESM2-WACCM_historical_r1i1p1f1_day.ncml")
 out.dir <- "test_cmip6"
 lapply(1:length(ncmls), function(i){
   d <- ncmls[i]

@@ -28,7 +28,9 @@
   {% endif %}
 -->
 
-  {% if (df[('GLOBALS', '_time_same_coordinate')].all()) and ((df[('time', 'units')].dropna().unique())|length == 1) %}
+  {% if (df[('GLOBALS', '_time_same_coordinate')].all()) and 
+        ((df[('time', 'units')].dropna().unique())|length == 1) and
+        (not df[('GLOBALS', '_require_custom_time')].any()) %}
     {% for name,group in df[df[frequency] != 'fx'].groupby((variable)) %}
   <variable name="{{ name }}" shape="time {{ lat_coord }} {{ lon_coord }}">
     <attribute name="version" type="string" value="v{{ ','.join(group[('GLOBALS', '_DRS_version')].unique()|list|map('string')) }}" />
@@ -55,7 +57,7 @@
     <attribute name="tracking_ids" type="string" value="{{ ','.join(group[('GLOBALS', 'tracking_id')]) }}" />
     {% if group[('GLOBALS', '_DRS_model')].iloc[0] == 'CESM2-WACCM' %}
     <!-- CESM2-WACCM need to redifine coordinates -->
-    <attribute name="coordinates" value="time_{{ v }} {{ lat_coord }} {{ lon_coord }}" />
+    <attribute name="coordinates" value="time_{{ name }} {{ lat_coord }} {{ lon_coord }}" />
     {% endif %}
   </variable>
   {% endfor %}
