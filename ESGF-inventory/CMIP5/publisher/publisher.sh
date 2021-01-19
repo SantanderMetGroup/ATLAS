@@ -9,8 +9,10 @@ set -u
 
 trap exit SIGINT SIGKILL
 
-WORKDIR=/oceano/gmeteo/WORK/zequi/ATLAS/ESGF-inventory/CMIP5/publisher
-publisher=../../publisher
+PROJECT=/oceano/gmeteo/WORK/zequi/ATLAS/ESGF-inventory/
+WORKDIR=${PROJECT}/CMIP5/publisher
+PYTHONPATH=${PROJECT}/publisher
+publisher=${PROJECT}/publisher
 cd $WORKDIR
 
 echo $HOSTNAME > nodes
@@ -37,15 +39,15 @@ ncmls=${tds_content}/public/ethz-snapshot
 catalogs=${tds_content}/devel/atlas/ethz-snapshot
 root_catalog=${tds_content}/devel/atlas/ethz-snapshot.xml
 
-## todf.py (I've got a copy in $WORK/ethz-snapshot)
-#parallel --gnu -j4 --slf nodes --workdir ${WORKDIR} "
-#    grep /{}/ ethz-snapshot.inventory | \
-#      python ${publisher}/todf.py -v ${variables} --drs \"${drs}\" --facets ${facets} ${hdfs_raw}/{}.hdf" ::: historical rcp26 rcp45 rcp85
+# todf.py (I've got a copy in $WORK/ethz-snapshot)
+parallel --gnu -j4 --slf nodes --workdir ${WORKDIR} "
+    grep /{}/ ethz-snapshot.inventory | \
+      python ${publisher}/todf.py -v ${variables} --drs \"${drs}\" --facets ${facets} ${hdfs_raw}/{}.hdf" ::: historical rcp26 rcp45 rcp85
 
-## contrib/esgf/cmip5.py
-#parallel --gnu -j4 --slf nodes --workdir ${WORKDIR} "
-#  echo '* cmip5.py on {}' >&2
-#  python ${publisher}/contrib/esgf/cmip5.py --lon-180 -d "${drs_hdf}" --group-time ${group_time} {}" ::: ${hdfs_raw}/historical.hdf ${hdfs_raw}/rcp26.hdf ${hdfs_raw}/rcp45.hdf ${hdfs_raw}/rcp85.hdf
+# cmip5.py
+parallel --gnu -j4 --slf nodes --workdir ${WORKDIR} "
+  echo '* cmip5.py on {}' >&2
+  PYTHONPATH=${PYTHONPATH} python cmip5.py --lon-180 -d "${drs_hdf}" --group-time ${group_time} {}" ::: ${hdfs_raw}/historical.hdf ${hdfs_raw}/rcp26.hdf ${hdfs_raw}/rcp45.hdf ${hdfs_raw}/rcp85.hdf
 
 # NcMLs
 # I use a bad drs but I've to use it for backwards compatibility
