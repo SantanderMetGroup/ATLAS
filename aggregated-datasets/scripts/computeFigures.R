@@ -1,4 +1,4 @@
-computeFigure <- function(var, 
+computeFigures <- function(var, 
                           season, 
                           ref.period,  
                           area, 
