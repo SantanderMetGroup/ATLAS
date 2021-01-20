@@ -3,7 +3,7 @@ computeFigure <- function(var,
                           ref.period,  
                           area, 
                           regions,
-                          type = c("boxplot", "scatterplot")) {
+                          type) {
   library(lattice)
   library(latticeExtra)
   # select warming levels and list future periods, e.g. list(c(2021, 2040), c(2041, 2060), c(2081, 2100))

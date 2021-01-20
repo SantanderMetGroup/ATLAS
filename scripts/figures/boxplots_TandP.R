@@ -16,8 +16,8 @@ library(magrittr)
 library(httr)
 
 # Function computeDeltas available at this repo is used:
-source("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/aggregated-datasets/scripts/computeDeltas.R")
-source("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/aggregated-datasets/scripts/computeFigure.R")
+source("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/mai-devel/aggregated-datasets/scripts/computeDeltas.R")
+source("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/mai-devel/aggregated-datasets/scripts/computeFigures.R")
 
 # select variable, i.e. "tas" or "pr"
 var <- "tas"
@@ -33,7 +33,6 @@ type = "boxplot"
 
 
 
-
 a <- computeFigure(var, 
                    season, 
                    ref.period, 
@@ -42,6 +41,7 @@ a <- computeFigure(var,
                    area, 
                    regions,
                    type)
+
 
 library(gridExtra)
 out.dir <- ""
