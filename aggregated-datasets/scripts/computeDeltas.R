@@ -52,12 +52,18 @@ computeDeltas <- function(project,
                           area = "land",
                           region = c("MED")){ 
   
-  ## root Url
+  # root Url
   # https://stackoverflow.com/questions/25485216/how-to-get-list-files-from-a-github-repository-folder-using-r
   myurl <- "https://api.github.com/repos/SantanderMetGroup/ATLAS/git/trees/devel?recursive=1"
   req <- GET(myurl) %>% stop_for_status(req)
   filelist <- unlist(lapply(content(req)$tree, "[", "path"), use.names = FALSE)
   root <- "https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/"
+  
+  ## local option-----------
+  # root <- "/media/maialen/work/WORK/GIT/ATLAS/"
+  # filelist <- list.files(root, recursive = T)
+  #-------------------------
+  
   
   ## data files Urls
   ls <- grep(paste0(project, "_", var,"_",area,"/"), filelist, value = TRUE, fixed = FALSE) %>% grep("\\.csv$", ., value = TRUE)
