@@ -135,7 +135,7 @@ if __name__ == '__main__':
         print(_help)
         sys.exit(1)
 
-    df = pd.read_hdf(args['dataframe'], 'df')
+    df = pd.read_pickle(args['dataframe'])
     # If only fx, quit
     if len(df[df[('GLOBALS', '_DRS_table')] != 'fx']) == 0:
         sys.exit(0)
@@ -148,6 +148,13 @@ if __name__ == '__main__':
 
     # cesm2-waccm historical ends in january 2015 instead of december 2014
     subset = ((df[('GLOBALS', '_DRS_model')] == 'CESM2-WACCM') &
+              (df[('GLOBALS', '_DRS_period2')].fillna(0).astype(int).astype(str).str.endswith('0101')))
+    df.loc[subset, ('time', '_values')] = df.loc[subset,  ('time', '_values')].apply(lambda x: x[:-1])
+    df.loc[subset, ('_d_time', 'size')] = df.loc[subset, ('_d_time', 'size')] - 1
+    df.loc[subset, ('GLOBALS', '_require_custom_time')] = True
+
+    # cesm2 ssp* ends in 2101-01-01 instead of 2100-12-31
+    subset = ((df[('GLOBALS', '_DRS_model')] == 'CESM2') &
               (df[('GLOBALS', '_DRS_period2')].fillna(0).astype(int).astype(str).str.endswith('0101')))
     df.loc[subset, ('time', '_values')] = df.loc[subset,  ('time', '_values')].apply(lambda x: x[:-1])
     df.loc[subset, ('_d_time', 'size')] = df.loc[subset, ('_d_time', 'size')] - 1
@@ -200,11 +207,12 @@ if __name__ == '__main__':
             subset=[('GLOBALS', args['variable_col']), ('GLOBALS', '_DRS_period1')],
             keep='last')
 
-        # for time group check if time coordinates differ (the ncml will decide if to create multiple time coordinates)
-        group[('GLOBALS', '_time_same_coordinate')] = esgf.time_same_coordinate(
-            group,
-            ('GLOBALS', '_DRS_variable'),
-            ('time', '_values'))
+#        # for time group check if time coordinates differ (the ncml will decide if to create multiple time coordinates)
+#        group[('GLOBALS', '_time_same_coordinate')] = esgf.time_same_coordinate(
+#            group,
+#            ('GLOBALS', '_DRS_variable'),
+#            ('time', '_values'))
+        group[('GLOBALS', '_time_same_coordinate')] = False
 
         # include corresponding fx variables
         d = dict(zip(args['group_time'].split(','), name))

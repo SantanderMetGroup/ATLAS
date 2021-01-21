@@ -173,10 +173,10 @@
 "CMIP6.ScenarioMIP.CAMS.CAMS-CSM1-0.ssp585.r2i1p1f1.day.gn",19076974468,true,false,true,true,false
 
 "CMIP6.CMIP.NCAR.CESM2.historical.r1i1p1f1.day.gn",32759743379,true,true,true,false,false
-"CMIP6.ScenarioMIP.NCAR.CESM2.ssp126.r1i1p1f1.day.gn",18420122855,true,true,true,true,true
-"CMIP6.ScenarioMIP.NCAR.CESM2.ssp245.r1i1p1f1.day.gn",18966760680,true,true,true,true,true
-"CMIP6.ScenarioMIP.NCAR.CESM2.ssp370.r1i1p1f1.day.gn",18961404158,true,true,true,true,true
-"CMIP6.ScenarioMIP.NCAR.CESM2.ssp585.r1i1p1f1.day.gn",18948313646,true,true,true,true,true
+"CMIP6.ScenarioMIP.NCAR.CESM2.ssp126.r4i1p1f1.day.gn",18420122855,true,true,true,true,true
+"CMIP6.ScenarioMIP.NCAR.CESM2.ssp245.r4i1p1f1.day.gn",18966760680,true,true,true,true,true
+"CMIP6.ScenarioMIP.NCAR.CESM2.ssp370.r4i1p1f1.day.gn",18961404158,true,true,true,true,true
+"CMIP6.ScenarioMIP.NCAR.CESM2.ssp585.r4i1p1f1.day.gn",18948313646,true,true,true,true,true
 
 "CMIP6.CMIP.CMCC.CMCC-CM2-SR5.historical.r1i1p1f1.day.gn",40710173166,true,true,true,true,true
 "CMIP6.ScenarioMIP.CMCC.CMCC-CM2-SR5.ssp126.r1i1p1f1.day.gn",21170804874,true,true,true,true,true

@@ -35,7 +35,7 @@
   <variable name="{{ name }}" shape="time {{ lat_coord }} {{ lon_coord }}">
     <attribute name="version" type="string" value="v{{ ','.join(group[('GLOBALS', '_DRS_version')].unique()|list|map('string')) }}" />
     <attribute name="tracking_ids" type="string" value="{{ ','.join(group[('GLOBALS', 'tracking_id')]) }}" />
-    {% if group[('GLOBALS', '_DRS_model')].iloc[0] == 'CESM2-WACCM' %}
+    {% if group[('GLOBALS', '_DRS_model')].iloc[0] in ['CESM2-WACCM', 'CESM2'] %}
     <!-- CESM2-WACCM need to redifine coordinates -->
     <attribute name="coordinates" value="time {{ lat_coord }} {{ lon_coord }}" />
     {% endif %}
@@ -55,7 +55,7 @@
   <variable name="{{ group[variable].iloc[0] }}" shape="time_{{ name }} {{ lat_coord }} {{ lon_coord }}">
     <attribute name="version" type="string" value="v{{ ','.join(group[('GLOBALS', '_DRS_version')].unique()|list|map('string')) }}" />
     <attribute name="tracking_ids" type="string" value="{{ ','.join(group[('GLOBALS', 'tracking_id')]) }}" />
-    {% if group[('GLOBALS', '_DRS_model')].iloc[0] == 'CESM2-WACCM' %}
+    {% if group[('GLOBALS', '_DRS_model')].iloc[0] in ['CESM2-WACCM', 'CESM2'] %}
     <!-- CESM2-WACCM need to redifine coordinates -->
     <attribute name="coordinates" value="time_{{ name }} {{ lat_coord }} {{ lon_coord }}" />
     {% endif %}
