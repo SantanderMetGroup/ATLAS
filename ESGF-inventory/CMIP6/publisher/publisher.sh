@@ -146,11 +146,11 @@ do
        if grep -q -F '<dataset name="'$name'"' $catalog ; then
           # Remove dataset if it exists and </catalog> tag
           sed -i -n '/<dataset name="'$name'"/,/<\/dataset>/!{p}' $catalog
-          sed -i '/^<\/catalog>$/d' $catalog
 
           # Remove contiguous blank lines
           sed -i '/^$/N;/^\n$/D' $catalog
         fi
+        sed -i '/^<\/catalog>$/d' $catalog
     fi
 
     dataset >> $catalog

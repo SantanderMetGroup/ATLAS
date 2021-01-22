@@ -53,6 +53,7 @@ TO_DROP = [
 "/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/NCC/NorESM2-LM/ssp126/r1i1p1f1/day/tasmin/gn/v20191108/tasmin_day_NorESM2-LM_ssp126_r1i1p1f1_gn_20310101-20401230.nc",
 "/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/NCC/NorESM2-LM/ssp126/r1i1p1f1/day/tasmin/gn/v20191108/tasmin_day_NorESM2-LM_ssp126_r1i1p1f1_gn_20610101-20701230.nc",
 "/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/ScenarioMIP/NCC/NorESM2-LM/ssp126/r1i1p1f1/day/tasmin/gn/v20191108/tasmin_day_NorESM2-LM_ssp126_r1i1p1f1_gn_20810101-20901230.nc",
+"/oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6/CMIP/NCAR/CESM2/historical/r4i1p1f1/day/psl/gn/v20190308/psl_day_CESM2_historical_r4i1p1f1_gn_18500101-20150103.nc",
 ]
 
 def filter_grid_labels(df, grid_label, facets):
@@ -158,6 +159,13 @@ if __name__ == '__main__':
               (df[('GLOBALS', '_DRS_period2')].fillna(0).astype(int).astype(str).str.endswith('0101')))
     df.loc[subset, ('time', '_values')] = df.loc[subset,  ('time', '_values')].apply(lambda x: x[:-1])
     df.loc[subset, ('_d_time', 'size')] = df.loc[subset, ('_d_time', 'size')] - 1
+    df.loc[subset, ('GLOBALS', '_require_custom_time')] = True
+
+    # cesm2 historical ends in 2015-01-03 instead of 2014-12-31
+    subset = ((df[('GLOBALS', '_DRS_model')] == 'CESM2') &
+              (df[('GLOBALS', '_DRS_period2')].fillna(0).astype(int).astype(str).str.endswith('0103')))
+    df.loc[subset, ('time', '_values')] = df.loc[subset,  ('time', '_values')].apply(lambda x: x[:-3])
+    df.loc[subset, ('_d_time', 'size')] = df.loc[subset, ('_d_time', 'size')] - 3
     df.loc[subset, ('GLOBALS', '_require_custom_time')] = True
 
     # /oceano/gmeteo/WORK/zequi/ATLAS/ESGF-inventory/tds-content/public/CMIP6/ScenarioMIP/NCAR/CESM2-WACCM/ssp585/day/CMIP6_ScenarioMIP_NCAR_CESM2-WACCM_ssp585_r1i1p1f1_day.ncml
