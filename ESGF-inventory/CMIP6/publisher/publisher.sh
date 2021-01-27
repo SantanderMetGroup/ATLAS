@@ -16,7 +16,7 @@ publisher="${PROJECT}/publisher"
 tds_content="${PROJECT}/tds-content"
 template="${WORKDIR}/templates/cmip6.ncml.j2"
 
-nc_inventory=${WORKDIR}/inventory
+nc_inventory=${WORKDIR}/inventory_nc
 raw_inventory=${WORKDIR}/inventory_raw
 hdfs_raw="${WORKDIR}/hdfs/raw/CMIP6_{_DRS_Dactivity}_{_DRS_Dinstitute}_{_DRS_model}_{_DRS_experiment}_{_DRS_ensemble}.hdf"
 facets="root,Dproject,Dactivity,Dinstitute,Dmodel,Dexperiment,Densemble,Dtable,Dvariable,Dgrid_label,version,variable,table,model,experiment,ensemble,grid_label,period,period1,period2"
@@ -47,19 +47,19 @@ fi
 # Not before because of PBS_NODEFILE
 set -u
 
-find /oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6 -mindepth 5 -maxdepth 5 -type d > directories
-
-# todf.py
-parallel --gnu -a directories -j$JOBS_PER_NODE --slf nodes --wd $WORKDIR "
-    if grep -q -F {} ${nc_inventory} ; then
-        echo '* todf.py on directory {}' >&2
-        grep -F {} ${nc_inventory} | python -W ignore ${publisher}/todf.py \
-            --drs \"$drs\" \
-            -v $coordinates \
-            --facets $facets \
-            --facets-numeric $facets_numeric \
-            ${hdfs_raw}
-    fi" | tee ${raw_inventory}
+#find /oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6 -mindepth 5 -maxdepth 5 -type d > directories
+#
+## todf.py
+#parallel --gnu -a directories -j$JOBS_PER_NODE --slf nodes --wd $WORKDIR "
+#    if grep -q -F {} ${nc_inventory} ; then
+#        echo '* todf.py on directory {}' >&2
+#        grep -F {} ${nc_inventory} | python -W ignore ${publisher}/todf.py \
+#            --drs \"$drs\" \
+#            -v $coordinates \
+#            --facets $facets \
+#            --facets-numeric $facets_numeric \
+#            ${hdfs_raw}
+#    fi" | tee ${raw_inventory}
 
 # cmip6.py
 parallel --gnu -a ${raw_inventory} -j$JOBS_PER_NODE --slf nodes --wd $WORKDIR "
@@ -143,8 +143,13 @@ do
         mkdir -p ${catalogs}/${drs}
         init_catalog ${drs//\//_} >${catalogs}/${drs}/catalog.xml
     else
-        # Remove dataset if it exists and </catalog> tag
-        sed -i -n '/<dataset name="'$name'"/,/<\/dataset>/!{p}' $catalog
+       if grep -q -F '<dataset name="'$name'"' $catalog ; then
+          # Remove dataset if it exists and </catalog> tag
+          sed -i -n '/<dataset name="'$name'"/,/<\/dataset>/!{p}' $catalog
+
+          # Remove contiguous blank lines
+          sed -i '/^$/N;/^\n$/D' $catalog
+        fi
         sed -i '/^<\/catalog>$/d' $catalog
     fi
 
@@ -152,14 +157,12 @@ do
 done
 
 # Close catalogs
-find ${catalogs}/CMIP6 -type f | while read catalog
+find $catalogs -type f \( -not -path '*EUR-*' \) | while read catalog
 do
     if ! grep -q -F '</catalog>' $catalog ; then
         echo '</catalog>' >> $catalog
+        echo $catalog
     fi
-    # Remove contiguous blank lines
-    sed -i '/^$/N;/^\n$/D' $catalog
-    echo $catalog
 done
 
 # Generate root catalog
