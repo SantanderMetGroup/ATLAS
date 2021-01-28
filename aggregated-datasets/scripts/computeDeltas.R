@@ -75,7 +75,7 @@ computeDeltas <- function(project,
     allfiles.aux <- split(allfiles, f = indf)
     l.aux <- lapply(allfiles.aux, function(x) length(grep(region, scan(x[1], skip = 7, nlines = 1, what = "raw"))) > 0)
     dom <- which(unlist(l.aux))
-    ls <- ls.aux[[dom]]
+    ls <- ls.aux[[dom[1]]]
     allfiles <- allfiles.aux[[dom]]
   }
   exp <- experiment
