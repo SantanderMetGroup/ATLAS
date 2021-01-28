@@ -73,6 +73,10 @@ computeDeltas <- function(project,
     indf <- gsub(".*CORDEX-", "", lapply(strsplit(ls, split = "_"), "[", 1)) %>% as.factor()
     ls.aux <- split(ls, f = indf)
     allfiles.aux <- split(allfiles, f = indf)
+    if (length(region) > 1) {
+      warning("Multiple region option is not implemented for CORDEX yet. Firs value, i.e. ", region[1], "will be used")
+      region <- region[1]
+    }
     l.aux <- lapply(allfiles.aux, function(x) length(grep(region, scan(x[1], skip = 7, nlines = 1, what = "raw"))) > 0)
     dom <- which(unlist(l.aux))
     ls <- ls.aux[[dom]]
@@ -239,5 +243,9 @@ computeDeltas <- function(project,
     do.call("cbind", eo)
   })
   names(data) <- region
+  if (project == "CORDEX") {
+    return(data[[1]])
+  } else {
   return(data)
+  }
 }
