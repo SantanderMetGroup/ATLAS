@@ -1,8 +1,8 @@
 ## CMIP5, CMIP6 AND CORDEX spatial averages over the reference regions
 
-Spatially aggregated monthly results over the reference regions for CMIP5, CMIP6 and CORDEX ATLAS datasets (a single run per model) separately for land, sea, and land-sea gridboxes.
+Spatially aggregated monthly results over the reference regions for CMIP5, CMIP6 and CORDEX ATLAS datasets (a single run per model) separately for land, sea, and land-sea gridboxes. Regional averages are weighted by the cosine of latitude in all cases.
 
-Note that the aggregated results for the different CORDEX domains are calculated only in those regions with overlap larger than 80% (see file *data/CORDEX/CORDEXDomainsVSreferenceRegions.csv* for details on the overalp areas, as percentages over the total area of the reference region). Regular geographic grids for every CORDEX domain are obtained from Table 2 available in the CORDEX specification archive (https://is-enes-data.github.io/cordex_archive_specifications.pdf); an annotated notebook for reproducibility is available at: ***
+For the different CORDEX domains, aggregated results are calculated only in those regions with overlap larger than 80% (see file *data/CORDEX/CORDEXDomainsVSreferenceRegions.csv* for details on the overalp areas, as percentages over the total area of the reference region; regular geographic grids for every CORDEX domain are obtained from [Table 2](https://is-enes-data.github.io/cordex_archive_specifications.pdf) in the CORDEX specification archive; an annotated notebook for reproducibility is available at: LINK. The regions resulting for each domain are:
 
 reference_regions["NAM"] = ['NWN', 'NEN', 'WNA', 'CNA', 'ENA', 'NCA', 'CAR']<br>
 reference_regions["CAM"] = ['NCA', 'SCA', 'CAR', 'NWS', 'NSA', 'NES', 'SAM']<br>
@@ -28,6 +28,3 @@ Additionally, results for all CMIP6 model runs (*CMIP6Amon_Hub* version 20191028
 [CMIP6Amon_tas_landsea.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_tas_landsea.zip)\
 [CMIP6Amon_tas_sea.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_tas_sea.zip)
 
-
-***
-NOTE!: Regional averages are weighted by the cosine of latitude.
