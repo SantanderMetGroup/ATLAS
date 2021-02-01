@@ -2,7 +2,21 @@
 
 Spatially aggregated monthly results over the reference regions for CMIP5, CMIP6 and CORDEX ATLAS datasets (a single run per model) separately for land, sea, and land-sea gridboxes.
 
-Note that the aggregated results for the different CORDEX domains are calculated only in those regions with overlap larger than 80% (see file *data/CORDEX/CORDEXDomainsVSreferenceRegions.csv* for details on the overalp areas, as percentages over the total area of the reference region). Regular geographic grids for every CORDEX domain are obtained from Table 2 available in the CORDEX specification archive (https://is-enes-data.github.io/cordex_archive_specifications.pdf); an annotated notebook for reproducibility is available at:
+Note that the aggregated results for the different CORDEX domains are calculated only in those regions with overlap larger than 80% (see file *data/CORDEX/CORDEXDomainsVSreferenceRegions.csv* for details on the overalp areas, as percentages over the total area of the reference region). Regular geographic grids for every CORDEX domain are obtained from Table 2 available in the CORDEX specification archive (https://is-enes-data.github.io/cordex_archive_specifications.pdf); an annotated notebook for reproducibility is available at: ***
+reference_regions["NAM"] = ['NWN', 'NEN', 'WNA', 'CNA', 'ENA', 'NCA', 'CAR']
+reference_regions["CAM"] = ['NCA', 'SCA', 'CAR', 'NWS', 'NSA', 'NES', 'SAM']
+reference_regions["SAM"] = ['SCA', 'NWS', 'NSA', 'NES', 'SAM', 'SWS', 'SES', 'SSA']
+reference_regions["ARC"] = ['GIC', 'NWN', 'NEN', 'NEU', 'EEU', 'RAR', 'WSB', 'ESB', 'RFE', 'ARO']
+reference_regions["AFR"] = ['MED', 'SAH', 'WAF', 'CAF', 'NEAF', 'SEAF', 'WSAF', 'ESAF', 'MDG', 'ARP']
+reference_regions["EUR"] = ['NEU', 'WCE', 'EEU', 'MED']
+reference_regions["MED"] = ['WCE', 'MED']
+reference_regions["MNA"] = ['MED', 'SAH', 'WAF', 'CAF', 'NEAF', 'WCA', 'ARP', 'ARS']
+reference_regions["SEA"] = ['SEA']
+reference_regions["EAS"] = ['ECA', 'TIB', 'EAS', 'SAS', 'SEA', 'NAU', 'BOB']
+reference_regions["WAS"] = ['NEAF', 'SEAF', 'WCA', 'ECA', 'TIB', 'ARP', 'SAS', 'ARS', 'BOB', 'EIO']
+reference_regions["CAS"] = ['EEU', 'WSB', 'ESB', 'WCA', 'ECA', 'TIB', 'EAS', 'ARP']
+reference_regions["ANT"] = ['EAN', 'WAN']
+reference_regions["AUS"] = ['SEA', 'NAU', 'CAU', 'EAU', 'SAU', 'NZ']
 
 Additionally, results for all CMIP6 model runs (*CMIP6Amon_Hub* version 20191028 in 'ATLAS-inventory/Hub') are also available at the following links:
 
