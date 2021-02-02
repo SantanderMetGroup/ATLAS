@@ -55,13 +55,15 @@ computeDeltas <- function(project,
   # root Url
   # https://stackoverflow.com/questions/25485216/how-to-get-list-files-from-a-github-repository-folder-using-r
   myurl <- "https://api.github.com/repos/SantanderMetGroup/ATLAS/git/trees/devel?recursive=1"
-  req <- GET(myurl) %>% stop_for_status(req)
-  filelist <- unlist(lapply(content(req)$tree, "[", "path"), use.names = FALSE)
-  root <- "https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/"
+  
+  ## for remote
+  # req <- GET(myurl) %>% stop_for_status(req)
+  # filelist <- unlist(lapply(content(req)$tree, "[", "path"), use.names = FALSE)
+  # root <- "https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/"
   
   ## local option-----------
-  # root <- "/media/maialen/work/WORK/GIT/ATLAS/"
-  # filelist <- list.files(root, recursive = T)
+  root <- "/media/maialen/work/WORK/GIT/ATLAS/"
+  filelist <- list.files(root, recursive = T)
   #-------------------------
   
   
@@ -77,10 +79,10 @@ computeDeltas <- function(project,
       warning("Multiple region option is not implemented for CORDEX yet. Firs value, i.e. ", region[1], "will be used")
       region <- region[1]
     }
-    l.aux <- lapply(allfiles.aux, function(x) length(grep(region, scan(x[1], skip = 7, nlines = 1, what = "raw"))) > 0)
+    l.aux <- lapply(allfiles.aux, function(x) length(grep(region, suppressMessages(scan(x[1], skip = 7, nlines = 1, what = "raw")))) > 0)
     dom <- which(unlist(l.aux))
     ls <- ls.aux[[dom[1]]]
-    allfiles <- allfiles.aux[[dom]]
+    allfiles <- allfiles.aux[[dom[1]]]
   }
   exp <- experiment
   if (is.character(periods)) {
@@ -117,7 +119,6 @@ computeDeltas <- function(project,
   if (var == "pr") aggrfun <- "sum"
   out <- lapply(1:length(modelruns), function(i) {
     modelfiles <- grep(modelruns[i], allfiles, value = TRUE) 
-    print(i)
     if (length(modelfiles) > 0) {
       histf <- grep("historical", modelfiles, value = TRUE)
       l2 <- lapply(1:length(histf), function(h) {
