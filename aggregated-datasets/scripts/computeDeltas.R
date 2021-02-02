@@ -50,7 +50,8 @@ computeDeltas <- function(project,
                           ref.period, 
                           periods = c("1.5", "2", "3", "4"), 
                           area = "land",
-                          region = c("MED")){ 
+                          region = c("MED"),
+                          cordex.domain = NULL){ 
   
   # root Url
   # https://stackoverflow.com/questions/25485216/how-to-get-list-files-from-a-github-repository-folder-using-r
@@ -81,6 +82,11 @@ computeDeltas <- function(project,
     }
     l.aux <- lapply(allfiles.aux, function(x) length(grep(region, suppressMessages(scan(x[1], skip = 7, nlines = 1, what = "raw")))) > 0)
     dom <- which(unlist(l.aux))
+    ai <- if (!is.null(cordex.domain)) dom[cordex.domain]
+    if (is.na(ai) | is.null(cordex.domain)) {
+      ai <- 1
+      warning("argument cordex.domain either is NULL or does not contain the requested region. The '", names(dom)[1], "' domain will be considered.")
+    }
     ls <- ls.aux[[dom[1]]]
     allfiles <- allfiles.aux[[dom[1]]]
   }

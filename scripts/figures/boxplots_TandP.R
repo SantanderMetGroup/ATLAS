@@ -36,17 +36,24 @@ ref.period <- 1995:2014
 area <- "land"
 # Select reference regions
 regions <- c("NWN","NEN","WNA","CNA","ENA", "NCA")
-
+# Select the CORDEX domain to be considered
+cordex.domain <- "NAM"
+# select figure axes ranges (ylim for temperature, xlim for precipitation percentage)
+ylim <- c(0, 12)
+xlim <- c(-50, 50)
 
 
 
 a <- computeFigures(regions,
+                    cordex.domain,
                     area, 
                     ref.period, 
-                    scatter.seasons)
+                    scatter.seasons,
+                    xlim,
+                    ylim)
 
 # select the path and the name of the output pdf
-outfilename <- paste0("NAM_", area, "_ATvsAP.pdf")
+outfilename <- paste0("NAM_", area, "_ATvsAP_fixed.pdf")
 # Play with arguments width and height to create different size pds-s
 pdf(outfilename, width = 30/2, height = 50/2)
 do.call("grid.arrange", a)
