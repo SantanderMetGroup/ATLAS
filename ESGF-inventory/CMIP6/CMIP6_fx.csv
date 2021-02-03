@@ -83,6 +83,7 @@
 "CMIP6.CMIP.CCCma.CanESM5.historical.r9i1p2f1.fx.gn",59765,true
 "CMIP6.CMIP.CMCC.CMCC-CM2-HR4.historical.r1i1p1f1.fx.gn",82865,true
 "CMIP6.CMIP.CMCC.CMCC-CM2-SR5.historical.r1i1p1f1.fx.gn",77031,true
+"CMIP6.CMIP.CMCC.CMCC-ESM2.historical.r1i1p1f1.fx.gn",77031,true
 "CMIP6.CMIP.CNRM-CERFACS.CNRM-CM6-1-HR.historical.r1i1p1f2.fx.gr",121611,true
 "CMIP6.CMIP.CNRM-CERFACS.CNRM-CM6-1.historical.r10i1p1f2.fx.gr",53801,true
 "CMIP6.CMIP.CNRM-CERFACS.CNRM-CM6-1.historical.r11i1p1f2.fx.gr",53797,true
@@ -162,6 +163,7 @@
 "CMIP6.CMIP.EC-Earth-Consortium.EC-Earth3.historical.r1i1p1f1.fx.gr",70325,true
 "CMIP6.CMIP.HAMMOZ-Consortium.MPI-ESM-1-2-HAM.historical.r1i1p1f1.fx.gn",56220,true
 "CMIP6.CMIP.HAMMOZ-Consortium.MPI-ESM-1-2-HAM.historical.r2i1p1f1.fx.gn",56220,true
+"CMIP6.CMIP.HAMMOZ-Consortium.MPI-ESM-1-2-HAM.historical.r3i1p1f1.fx.gn",56216,true
 "CMIP6.CMIP.INM.INM-CM4-8.historical.r1i1p1f1.fx.gr1",53159,true
 "CMIP6.CMIP.INM.INM-CM5-0.historical.r10i1p1f1.fx.gr1",52961,true
 "CMIP6.CMIP.INM.INM-CM5-0.historical.r1i1p1f1.fx.gr1",53159,true
@@ -206,6 +208,7 @@
 "CMIP6.CMIP.IPSL.IPSL-CM6A-LR.historical.r8i1p1f1.fx.gr",41946,true
 "CMIP6.CMIP.IPSL.IPSL-CM6A-LR.historical.r9i1p1f1.fx.gr",41945,true
 "CMIP6.CMIP.MIROC.MIROC-ES2L.historical.r10i1p1f2.fx.gn",53931,true
+"CMIP6.CMIP.MIROC.MIROC-ES2L.historical.r1i1000p1f2.fx.gn",53931,true
 "CMIP6.CMIP.MIROC.MIROC-ES2L.historical.r1i1p1f2.fx.gn",53931,true
 "CMIP6.CMIP.MIROC.MIROC-ES2L.historical.r2i1p1f2.fx.gn",53931,true
 "CMIP6.CMIP.MIROC.MIROC-ES2L.historical.r3i1p1f2.fx.gn",53931,true
