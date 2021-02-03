@@ -47,9 +47,10 @@ one_run() {
     .[].runs.datasets[]|del(.dataset_id, .dataset_run)'
 }
 
+fields="{master_id,variable,size,table_id,id,instance_id,url,checksum,checksum_type,replica}"
 find selections -type f -name '*.selection' -printf "%f\n" | while read f
 do
-    xargs -a ${esgf_utils}/indexnodes -I{} ${esgf_utils}/esgf-search -i "{}" selections/${f} | jq -c '.' > ${f/%selection/json}
+    xargs -a ${esgf_utils}/indexnodes -I{} ${esgf_utils}/esgf-search -i "{}" selections/${f} | jq -c "${fields}" > ${f/%selection/json}
 done
 
 databases="CMIP6_fx.json CMIP6_ocean_mon.json CMIP6_atmos_mon.json CMIP6_land_mon.json CMIP6_seaIce_mon.json"
@@ -58,6 +59,7 @@ do
     to_inventory < ${f} > ${f/%json/csv}
     ${esgf_utils}/esgf-aria2c < ${f} > publisher/${f/%json/aria}
 done
+to_inventory < CMIP6_atmos_day.json > CMIP6_atmos_day.csv
 
 # This is needed to filter from ../CMIP6_day_1run.csv
 awk -F, '
@@ -71,3 +73,13 @@ NR>1 && NF>2 {
 jq --rawfile master_ids master_ids '
     ($master_ids|split("\n")[0:-1]) as $master_ids_list |
     select( (.master_id|split(".")[:6]|join(".")) == $master_ids_list[] )' CMIP6_atmos_day.json | ${esgf_utils}/esgf-aria2c > publisher/CMIP6_atmos_day.aria
+
+for json in *.json
+do
+    zip ${json}.zip ${json}
+done
+
+for aria in publisher/*.aria
+do
+    zip ${aria}.zip ${aria}
+done
