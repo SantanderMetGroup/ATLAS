@@ -31,7 +31,6 @@
 "CMIP6.ScenarioMIP.CCCma.CanESM5.ssp126.r1i1p1f1.gn",14046324410,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.CCCma.CanESM5.ssp245.r1i1p1f1.gn",4221283578,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.CCCma.CanESM5.ssp370.r1i1p1f1.gn",4218364830,true,true,false,true,true,true
-"CMIP6.ScenarioMIP.CCCma.CanESM5.ssp460.r1i1p1f1.gn",4219612653,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.CCCma.CanESM5.ssp585.r1i1p1f1.gn",9226005923,true,true,false,true,true,true
 
 "CMIP6.CMIP.CCCR-IITM.IITM-ESM.historical.r1i1p1f1.day.gn",10117401146,true,true,?,true,false,false
@@ -62,7 +61,6 @@
 "CMIP6.ScenarioMIP.CNRM-CERFACS.CNRM-ESM2-1.ssp126.r1i1p1f2.gr",12525859215,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.CNRM-CERFACS.CNRM-ESM2-1.ssp245.r1i1p1f2.gr",12518595351,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.CNRM-CERFACS.CNRM-ESM2-1.ssp370.r1i1p1f2.gr",12515212727,true,true,false,true,true,true
-"CMIP6.ScenarioMIP.CNRM-CERFACS.CNRM-ESM2-1.ssp460.r1i1p1f2.gr",12517302329,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.CNRM-CERFACS.CNRM-ESM2-1.ssp585.r1i1p1f2.gr",12508779687,true,true,false,true,true,true
 
 "CMIP6.CMIP.CSIRO-ARCCSS.ACCESS-CM2.historical.r1i1p1f1.gn",24253234432,true,true,true,true,true,true
@@ -83,8 +81,6 @@
 "CMIP6.CMIP.EC-Earth-Consortium.EC-Earth3-Veg-LR.historical.r1i1p1f1.day.gr",45000454379,true,true,?,true,true,true
 "CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3-Veg-LR.ssp245.r1i1p1f1.day.gr",23363264809,true,true,?,true,true,true
 "CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3-Veg-LR.ssp370.r1i1p1f1.day.gr",23342591525,true,true,?,true,true,true
-#NEW#"CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3-Veg-LR.ssp126.r1i1p1f1.day.gr",23392244746,true,true,?,true,true,true
-#NEW#"CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3-Veg-LR.ssp585.r1i1p1f1.day.gr",23323945094,true,true,?,true,true,true
 
 "CMIP6.CMIP.EC-Earth-Consortium.EC-Earth3-Veg.historical.r1i1p1f1.gr",115379159147,true,true,true,true,true,true
 "CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3-Veg.ssp126.r1i1p1f1.gr",59982704190,true,true,false,true,true,true
@@ -117,7 +113,6 @@
 "CMIP6.ScenarioMIP.IPSL.IPSL-CM6A-LR.ssp126.r1i1p1f1.gr",26357072622,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.IPSL.IPSL-CM6A-LR.ssp245.r1i1p1f1.gr",7921522561,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.IPSL.IPSL-CM6A-LR.ssp370.r1i1p1f1.gr",7911708114,true,true,false,true,true,true
-"CMIP6.ScenarioMIP.IPSL.IPSL-CM6A-LR.ssp460.r1i1p1f1.gr",8020902324,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.IPSL.IPSL-CM6A-LR.ssp585.r1i1p1f1.gr",25972899784,true,true,false,true,true,true
 
 "CMIP6.CMIP.KIOST.KIOST-ESM.historical.r1i1p1f1.day.gr1",31092069240,true,true,?,true,true,true
@@ -135,7 +130,6 @@
 "CMIP6.ScenarioMIP.MIROC.MIROC6.ssp126.r1i1p1f1.gn",12074803587,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.MIROC.MIROC6.ssp245.r1i1p1f1.gn",12067566280,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.MIROC.MIROC6.ssp370.r1i1p1f1.gn",12061305942,true,true,false,true,true,true
-"CMIP6.ScenarioMIP.MIROC.MIROC6.ssp460.r1i1p1f1.gn",12064867012,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.MIROC.MIROC6.ssp585.r1i1p1f1.gn",12053924946,true,true,false,true,true,true
 
 "CMIP6.CMIP.MOHC.HadGEM3-GC31-LL.historical.r1i1p1f3.gn",18964343237,true,true,false,true,true,true
@@ -155,18 +149,16 @@
 "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp370.r1i1p1f1.gn",5866910870,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r1i1p1f1.gn",5863767972,true,true,false,true,true,true
 
-###### "CMIP6.CMIP.MPI-M.MPI-ESM1-2-HR.historical.r1i1p1f1.day.gn",40484891872,true,true,?,true,true,true
+"CMIP6.CMIP.MPI-M.MPI-ESM1-2-HR.historical.r1i1p1f1.day.gn",40484891872,true,true,?,true,true,true
 "CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp126.r1i1p1f1.day.gn",21037958102,true,true,?,true,true,true
 "CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp245.r1i1p1f1.day.gn",21015349496,true,true,?,true,true,true
 "CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp370.r1i1p1f1.day.gn",20992976371,true,true,?,true,true,true
 "CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp585.r1i1p1f1.day.gn",20979328154,true,true,?,true,true,true
 
-
 "CMIP6.CMIP.MRI.MRI-ESM2-0.historical.r1i1p1f1.gn",38229036952,true,true,true,true,true,true
 "CMIP6.ScenarioMIP.MRI.MRI-ESM2-0.ssp126.r1i1p1f1.gn",66188672243,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.MRI.MRI-ESM2-0.ssp245.r1i1p1f1.gn",19871088146,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.MRI.MRI-ESM2-0.ssp370.r1i1p1f1.gn",19863517313,true,true,false,true,true,true
-"CMIP6.ScenarioMIP.MRI.MRI-ESM2-0.ssp460.r1i1p1f1.gn",19867286502,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.MRI.MRI-ESM2-0.ssp585.r1i1p1f1.gn",65796324809,true,true,false,true,true,true
 
 "CMIP6.CMIP.NCAR.CESM2-WACCM.historical.r1i1p1f1.gn",32788524181,true,true,true,true,false,false
@@ -213,6 +205,13 @@
 "CMIP6.ScenarioMIP.NUIST.NESM3.ssp126.r1i1p1f1.gn",8605981412,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.NUIST.NESM3.ssp245.r1i1p1f1.gn",8601037770,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.NUIST.NESM3.ssp585.r1i1p1f1.gn",8588728555,true,true,false,true,true,true
+
+###############################
+# The following datasets were uploaded between 9/12/2020 and 31/1/2021. 
+# They won't we included in the ATLAS due to time contraints.  
+
+#NEW#"CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3-Veg-LR.ssp126.r1i1p1f1.day.gr",23392244746,true,true,?,true,true,true
+#NEW#"CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3-Veg-LR.ssp585.r1i1p1f1.day.gr",23323945094,true,true,?,true,true,true
 
 #NEW#"CMIP6.CMCC.CMCC-ESM2.historical.r1i1p1f1.day.gn",40839464879,true,true,?,true,true,true
 #NEW#"CMIP6.CMCC.CMCC-ESM2.ssp126.r1i1p1f1.day.gn",21241683303,true,true,?,true,true,true
