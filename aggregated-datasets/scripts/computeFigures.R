@@ -115,9 +115,9 @@ computeFigures <- function(regions,
     #### PLOT 
     
     
-    col = c(rep(c(rgb(0,0,1,0.5), rgb(0,0,1), "blue", 
-                  rgb(0,102/255,51/255,0.5), rgb(0,102/255,51/255), rgb(0,102/255,51/255), 
-                  rgb(153/255,0,0,0.5), rgb(153/255,0,0), rgb(153/255,0,0)),
+    col = c(rep(c(rgb(0,0.204,0.4,0.5), rgb(0,0.204,0.4), rgb(0,0.204,0.4), 
+                  rgb(112/255,160/255,205/255,0.5), rgb(112/255,160/255,205/255), rgb(112/255,160/255,205/255), 
+                  rgb(153/255,0,2/255,0.5), rgb(153/255,0,2/255), rgb(153/255,0,2/255)),
                 2),
             rgb(0.55,0,0.55,0.5), rgb(0.55,0,0.55), rgb(0.55,0,0.55), 
             rgb(1, 0.73, 0.06, 0.5), rgb(1, 0.73, 0.06), rgb(1, 0.73, 0.06), 
@@ -186,7 +186,7 @@ computeFigures <- function(regions,
                 panel = function(...){
                   panel.abline(h = do.call("seq", as.list(c(ylim, step))),
                                col = "gray65", lwd = 0.5, lty = 2)
-                  panel.segments(df$term, dfi$value, df$term, dfj$value, col = col, lwd = c(5, 2, 5)) #alpha = 0.5)
+                  panel.segments(df$term, dfi$value, df$term, dfj$value, col = col, lty = c(1, 3, 1), lwd = c(5, 2, 5)) #alpha = 0.5)
                   panel.segments(df$term, dfi.sub$value, df$term, dfj.sub$value, col = rep(col[seq(1, length(col), 3)], each = 3), lwd = 7) #alpha = 0.5)
                   panel.xyplot(...)
                 })
