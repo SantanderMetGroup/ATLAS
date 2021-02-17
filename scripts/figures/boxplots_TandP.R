@@ -36,11 +36,13 @@ ref.period <- 1995:2014
 area <- "land"
 # Select reference regions.  Select the CORDEX domain to be considered
 regions <- c("NWN","NEN","WNA","CNA","ENA", "NCA"); cordex.domain <- "NAM"
-regions <- c("NCA","SCA","CAR","NWS","NSA", "SAM", "NES", "SWS", "SES", "SSA"); cordex.domain <- "SAM"
-regions <- c("SEA"); cordex.domain <- "SEA"
-# regions <- c("RAR","WSB","ESB","RFE","WCA", "ECA", "TIB", "ARP", "SAS"); cordex.domain <- "WAS"
-regions <- c("EAS"); cordex.domain <- "EAS"
+regions <- c("NWS","NSA", "SAM", "NES", "SWS", "SES", "SSA"); cordex.domain <- "SAM"
+# regions <- c("NCA", "SCA", "CAR"); cordex.domain <- "CAM"
 # regions <- c("MED","SAH","WAF","CAF","NEAF", "SEAF", "WSAF", "ESAF", "MDG"); cordex.domain <- "AFR"
+# regions <- c("EAS"); cordex.domain <- "EAS"
+# regions <- c("SEA"); cordex.domain <- "SEA"
+# regions <- c("RAR","WSB","ESB","RFE","WCA", "ECA", "TIB", "ARP", "SAS"); cordex.domain <- "WAS"
+
 # regions <- c("MED","SAH","WAF","CAF","NEAF", "SEAF", "WSAF", "ESAF", "MDG"); cordex.domain <- "AFR"
 # regions <- c("NAU","CAU","EAU","SAU","NZ"); cordex.domain <- "AUS"
 # regions <- c("NEU","WCE","EEU","MED"); cordex.domain <- "EUR"
