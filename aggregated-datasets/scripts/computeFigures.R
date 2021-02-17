@@ -176,7 +176,7 @@ computeFigures <- function(regions,
     col <- col[ind]
     ylab <- bquote(Delta*"T(ºC)")
     
-    if (is.null(ylim)) ylim <- c(floor(min(dfi$value)) - 1, ceiling(max(dfj$value)) + 1); step <- 1
+    if (is.null(ylim)) ylim <- c(floor(min(dfi$value, na.rm = T)) - 1, ceiling(max(dfj$value, na.rm = T)) + 1); step <- 1
     
     bp <- xyplot(value~term, data = df, ylim = ylim, pch = 19, ylab = ylab,
              # scales=list(x=list(at=c(2,5,8), alternating=2, tck = c(0,1))
@@ -301,8 +301,8 @@ computeFigures <- function(regions,
       
       xlimk <- xlim
       ylimk <- ylim
-      if (is.null(xlim)) xlimk <- c(min(c(WLp10.cmip5.b[[k]],WLp10.cordex.b[[k]],WLp10.cmip6.b[[k]]))-1, max(c(WLp90.cmip5.b[[k]],WLp90.cordex.b[[k]], WLp90.cmip6.b[[k]]))+1)
-      if (is.null(ylim)) ylimk <- c(min(c(WLp10.cmip5[[k]],WLp10.cordex[[k]],WLp10.cmip6[[k]]))-1, max(c(WLp90.cmip5[[k]],WLp90.cordex[[k]], WLp90.cmip6[[k]]))+1)
+      if (is.null(xlim)) xlimk <- c(min(c(WLp10.cmip5.b[[k]],WLp10.cordex.b[[k]],WLp10.cmip6.b[[k]]), na.rm = T)-1, max(c(WLp90.cmip5.b[[k]],WLp90.cordex.b[[k]], WLp90.cmip6.b[[k]]), na.rm = T)+1)
+      if (is.null(ylim)) ylimk <- c(min(c(WLp10.cmip5[[k]],WLp10.cordex[[k]],WLp10.cmip6[[k]]), na.rm = T)-1, max(c(WLp90.cmip5[[k]],WLp90.cordex[[k]], WLp90.cmip6[[k]]), na.rm = T)+1)
       
       xyplot(y~x, data = dfs, xlim = xlimk, ylim = ylimk, pch = 19, aspect = "45", 
              # scales = list(x = list(rot = 90)),
