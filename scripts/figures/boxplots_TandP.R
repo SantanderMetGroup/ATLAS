@@ -24,8 +24,8 @@ library(latticeExtra)
 library(gridExtra)
 
 # Function computeDeltas available at this repo is used:
-# source("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/aggregated-datasets/scripts/computeDeltas.R")
-# source("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/aggregated-datasets/scripts/computeFigures.R")
+source("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/mai-devel/aggregated-datasets/scripts/computeDeltas.R")
+source("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/mai-devel/aggregated-datasets/scripts/computeFigures.R")
 
 
 # select seasons, use c(12,1,2) for winter
@@ -39,9 +39,10 @@ regions <- c("NWN","NEN","WNA","CNA","ENA", "NCA"); cordex.domain <- "NAM"
 regions <- c("NWS","NSA", "SAM", "NES", "SWS", "SES", "SSA"); cordex.domain <- "SAM"
 # regions <- c("NCA", "SCA", "CAR"); cordex.domain <- "CAM"
 # regions <- c("MED","SAH","WAF","CAF","NEAF", "SEAF", "WSAF", "ESAF", "MDG"); cordex.domain <- "AFR"
-# regions <- c("EAS"); cordex.domain <- "EAS"
+regions <- c("ECA", "EAS"); cordex.domain <- "EAS"
 # regions <- c("SEA"); cordex.domain <- "SEA"
-# regions <- c("RAR","WSB","ESB","RFE","WCA", "ECA", "TIB", "ARP", "SAS"); cordex.domain <- "WAS"
+regions <- c("TIB", "ARP", "SAS"); cordex.domain <- "WAS"
+# regions <- c("NEU", "WCE", "MED"); cordex.domain <- "EUR"
 
 # regions <- c("MED","SAH","WAF","CAF","NEAF", "SEAF", "WSAF", "ESAF", "MDG"); cordex.domain <- "AFR"
 # regions <- c("NAU","CAU","EAU","SAU","NZ"); cordex.domain <- "AUS"
