@@ -82,9 +82,9 @@ computeDeltas <- function(project,
     }
     l.aux <- lapply(allfiles.aux, function(x) length(grep(region, suppressMessages(scan(x[1], skip = 7, nlines = 1, what = "raw")))) > 0)
     dom <- which(unlist(l.aux))
-    ai <- if (!is.null(cordex.domain)) dom[cordex.domain]
-    if (is.na(ai) | is.null(cordex.domain)) {
-      ai <- 1
+    dom <- if (!is.null(cordex.domain)) dom[cordex.domain]
+    if (is.na(dom) | is.null(cordex.domain)) {
+      dom <- 1
       warning("argument cordex.domain either is NULL or does not contain the requested region. The '", names(dom)[1], "' domain will be considered.")
     }
     ls <- ls.aux[[dom[1]]]
