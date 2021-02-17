@@ -24,8 +24,8 @@ library(latticeExtra)
 library(gridExtra)
 
 # Function computeDeltas available at this repo is used:
-source("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/aggregated-datasets/scripts/computeDeltas.R")
-source("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/aggregated-datasets/scripts/computeFigures.R")
+# source("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/aggregated-datasets/scripts/computeDeltas.R")
+# source("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/aggregated-datasets/scripts/computeFigures.R")
 
 
 # select seasons, use c(12,1,2) for winter
@@ -34,12 +34,21 @@ scatter.seasons <- list(c(12, 1, 2), 6:8)
 ref.period <- 1995:2014
 # select the area, i.e. "land", "sea" or "landsea"
 area <- "land"
-# Select reference regions
-regions <- c("NWN","NEN","WNA","CNA","ENA", "NCA")
-# regions <- c("NCA","SCA","CAR","NWS","NSA", "SAM", "NES", "SWS", "SES", "SSA")
-# Select the CORDEX domain to be considered
-cordex.domain <- "NAM"
-# cordex.domain <- "SAM"
+# Select reference regions.  Select the CORDEX domain to be considered
+regions <- c("NWN","NEN","WNA","CNA","ENA", "NCA"); cordex.domain <- "NAM"
+regions <- c("NCA","SCA","CAR","NWS","NSA", "SAM", "NES", "SWS", "SES", "SSA"); cordex.domain <- "SAM"
+regions <- c("SEA"); cordex.domain <- "SEA"
+# regions <- c("RAR","WSB","ESB","RFE","WCA", "ECA", "TIB", "ARP", "SAS"); cordex.domain <- "WAS"
+regions <- c("EAS"); cordex.domain <- "EAS"
+# regions <- c("MED","SAH","WAF","CAF","NEAF", "SEAF", "WSAF", "ESAF", "MDG"); cordex.domain <- "AFR"
+# regions <- c("MED","SAH","WAF","CAF","NEAF", "SEAF", "WSAF", "ESAF", "MDG"); cordex.domain <- "AFR"
+# regions <- c("NAU","CAU","EAU","SAU","NZ"); cordex.domain <- "AUS"
+# regions <- c("NEU","WCE","EEU","MED"); cordex.domain <- "EUR"
+# regions <- c("NWN","NEN","GIC","RAR"); cordex.domain <- "ARC"
+# regions <- c("WAN","EAN"); cordex.domain <- "ANT"
+
+
+
 # select figure axes ranges (ylim for temperature, xlim for precipitation percentage)
 ylim <- c(0, 12)
 xlim <- c(-50, 50)
