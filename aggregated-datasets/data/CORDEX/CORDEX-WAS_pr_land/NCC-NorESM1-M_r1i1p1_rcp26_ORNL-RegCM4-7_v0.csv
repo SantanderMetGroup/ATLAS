@@ -3,7 +3,7 @@
 #Area: land
 #Interpolation_method: cdo remap
 #Spatial_resolution: 0.5º
-#Creation_Date: 2021-02-16
+#Creation_Date: 2021-02-17
 #Author: IPCC-WGI Atlas Hub (https://github.com/SantanderMetGroup/IPCC-Atlas). Santander Meteorology Group.
 "date","NEAF","SEAF","WCA","ECA","TIB","ARP","SAS","ARS","BOB","EIO","full_domain"
 "2006-01",0.781,7.76,0.093,0.061,2.063,0.036,0.699,1.052,3.39,7.415,1.335
