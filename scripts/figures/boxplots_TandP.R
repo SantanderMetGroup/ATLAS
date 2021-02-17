@@ -57,7 +57,7 @@ a <- computeFigures(regions,
                     ylim)
 
 # select the path and the name of the output pdf
-outfilename <- paste0("NAM_", area, "_baseperiod_", paste(range(ref.period), collapse = "-"), "_ATvsAP.pdf")
+outfilename <- paste0(cordex.domain, "_", area, "_baseperiod_", paste(range(ref.period), collapse = "-"), "_ATvsAP.pdf")
 # Play with arguments width and height to create different size pds-s
 pdf(outfilename, width = (length(scatter.seasons)+1)*10/2, height = length(regions)*10/2)
 do.call("grid.arrange", a)
