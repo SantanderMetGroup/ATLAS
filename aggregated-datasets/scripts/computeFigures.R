@@ -186,7 +186,7 @@ computeFigures <- function(regions,
                 panel = function(...){
                   panel.abline(h = do.call("seq", as.list(c(ylim, step))),
                                col = "gray65", lwd = 0.5, lty = 2)
-                  panel.segments(df$term, dfi$value, df$term, dfj$value, col = col, lty = c(1, 3, 1), lwd = c(5, 2, 5)) #alpha = 0.5)
+                  panel.segments(df$term, dfi$value, df$term, dfj$value, col = col, lty = c(1, 2, 1), lwd = c(5, 2, 5)) #alpha = 0.5)
                   panel.segments(df$term, dfi.sub$value, df$term, dfj.sub$value, col = rep(col[seq(1, length(col), 3)], each = 3), lwd = 7) #alpha = 0.5)
                   panel.xyplot(...)
                 })
@@ -315,10 +315,10 @@ computeFigures <- function(regions,
                panel.segments(WLmediana.cmip6.b[[k]], WLp10.cmip6[[k]], WLmediana.cmip6.b[[k]], WLp90.cmip6[[k]], col = col[9:12], lwd = 5)
                panel.segments(WLp10.cmip5.b[[k]], WLmediana.cmip5[[k]], WLp90.cmip5.b[[k]], WLmediana.cmip5[[k]], col = col[1:4], lwd = 5)
                panel.segments(WLmediana.cmip5.b[[k]], WLp10.cmip5[[k]], WLmediana.cmip5.b[[k]], WLp90.cmip5[[k]], col = col[1:4], lwd = 5)
-               panel.segments(WLp10.cordex.b[[k]], WLmediana.cordex[[k]], WLp90.cordex.b[[k]], WLmediana.cordex[[k]], col = col[5:8], lwd = 2, lty = 3)
-               panel.segments(WLmediana.cordex.b[[k]], WLp10.cordex[[k]], WLmediana.cordex.b[[k]], WLp90.cordex[[k]], col = col[5:8], lwd = 2, lty = 3)
-               panel.segments(min(xlimk) - 10, 0, max(xlimk) + 10, 0, lty = 2)
-               panel.segments(0, min(ylimk) - 2, 0, max(ylimk) + 2, lty = 2)
+               panel.segments(WLp10.cordex.b[[k]], WLmediana.cordex[[k]], WLp90.cordex.b[[k]], WLmediana.cordex[[k]], col = col[5:8], lwd = 2, lty = 2)
+               panel.segments(WLmediana.cordex.b[[k]], WLp10.cordex[[k]], WLmediana.cordex.b[[k]], WLp90.cordex[[k]], col = col[5:8], lwd = 2, lty = 2)
+               panel.segments(min(xlimk) - 10, 0, max(xlimk) + 10, 0, lty = 3)
+               panel.segments(0, min(ylimk) - 2, 0, max(ylimk) + 2, lty = 3)
                panel.xyplot(...)
              })
     })
