@@ -31,6 +31,7 @@ hdfs="${WORKDIR}/hdfs/CORDEX_{_DRS_Dproduct}_{_DRS_domain}_{_DRS_model}_{_DRS_ex
 
 ncmls_inventory=inventory_ncmls
 ncmls="/gpfs/external/IPCC/OCEANO_BACKUP/oceano/gmeteo/WORK/PROYECTOS/2020_C3S_34d/tds/content/thredds/public/cordex/output/{_DRS_domain}/{_DRS_Dinstitute}/{_DRS_model}/{_DRS_experiment}/{_DRS_rcm}/{_DRS_rcm_version}/{_DRS_Dfrequency}/CORDEX_{_DRS_Dproduct}_{_DRS_domain}_{_DRS_model}_{_DRS_experiment}_{_DRS_ensemble}_{_DRS_rcm}_{_DRS_rcm_version}_{_DRS_Dfrequency}.ncml"
+ncmls="ncmls/cordex/output/{_DRS_domain}/{_DRS_Dinstitute}/{_DRS_model}/{_DRS_experiment}/{_DRS_rcm}/{_DRS_rcm_version}/{_DRS_Dfrequency}/CORDEX_{_DRS_Dproduct}_{_DRS_domain}_{_DRS_model}_{_DRS_experiment}_{_DRS_ensemble}_{_DRS_rcm}_{_DRS_rcm_version}_{_DRS_Dfrequency}.ncml"
 template="${WORKDIR}/cordex.ncml.j2"
 
 # todf.py
