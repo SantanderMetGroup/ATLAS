@@ -35,6 +35,36 @@ if len(df[('time', 'units')].dropna().unique()) > 1:
 
 df = esgf.fix_time_values(df, '_DRS_variable', '_DRS_variable')
 
+# change y x for rlat rlon
+if 'y' in df.columns.get_level_values(0):
+    df[('_d_rlat', 'size')] = df[('_d_y', 'size')]
+    df[('_d_rlat', 'name')] = 'rlat'
+
+    for col in df['y'].columns:
+        df[('rlat', col)] = df[('y', col)]
+
+    for col in df.filter(regex="_dimensions"):
+        df[col] = df[col].str.replace('y', 'rlat')
+
+if 'x' in df.columns.get_level_values(0):
+    df[('_d_rlon', 'size')] = df[('_d_x', 'size')]
+    df[('_d_rlon', 'name')] = 'rlat'
+
+    for col in df['x'].columns:
+        df[('rlon', col)] = df[('x', col)]
+
+    for col in df.filter(regex="_dimensions"):
+        df[col] = df[col].str.replace('x', 'rlon')
+
+# change latitude longitude for lat lon
+if 'latitude' in df.columns.get_level_values(0):
+    for col in df.filter(regex="coordinates"):
+        df[col] = df[col].str.replace('latitude', 'lat')
+
+if 'longitude' in df.columns.get_level_values(0):
+    for col in df.filter(regex="coordinates"):
+        df[col] = df[col].str.replace('longitude', 'lon')
+
 # for time variables check if time coordinates differ (the ncml will decide if to create multiple time coordinates)
 no_fx = df[('GLOBALS', '_DRS_frequency')] != 'fx'
 times = df.loc[no_fx].groupby([('GLOBALS', '_DRS_variable')]).apply(
