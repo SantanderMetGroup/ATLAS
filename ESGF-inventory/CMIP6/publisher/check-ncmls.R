@@ -8,13 +8,15 @@ datasets.f <- datasets[grep("ssp", datasets)]
 test.h <- lapply(datasets.h, function(x){
   tryCatch({
     print(x)
-    loadGridData(x, var = "tas", years = 2000, lonLim=c(0,180), season = 2:3, aggr.m = "mean")
+    di <- dataInventory(x)
+    loadGridData(x, var = names(di)[1], years = 2000, lonLim=c(0,180), season = 2:3, aggr.m = "mean")
   }, error = function(err) {print(err)})
 })
 test.f <- lapply(datasets.f, function(x){
   tryCatch({
     print(x)
-    loadGridData(x, var = "tas", years = 2020, lonLim=c(0,180), season = 2:3, aggr.m = "mean")
+    di <- dataInventory(x)
+    loadGridData(x, var = names(di)[1], years = 2020, lonLim=c(0,180), season = 2:3, aggr.m = "mean")
   }, error = function(err) {print(err)})
 })
 names(test.h) <- datasets.h

@@ -2,7 +2,7 @@ project=CMIP6
 activity_id=CMIP,ScenarioMIP
 experiment_id=historical,ssp126,ssp245,ssp370,ssp585,ssp460
 variable_id=pr,tas,tasmin,tasmax,psl,sfcWind,prsn
-frequency=mon
 table_id=Amon
+frequency=mon
 realm=atmos
 latest=True type=File distrib=False
