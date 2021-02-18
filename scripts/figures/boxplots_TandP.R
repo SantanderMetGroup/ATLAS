@@ -54,7 +54,7 @@ regions <- c("SEA"); cordex.domain <- "SEA"
 # select figure axes ranges (ylim for temperature, xlim for precipitation percentage)
 ylim <- c(0, 6)
 xlim <- c(-50, 50)
-# ylim <- NULL
+ylim <- NULL
 xlim <- NULL
 
 
