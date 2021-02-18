@@ -67,7 +67,7 @@ computeDeltas <- function(project,
   filelist <- list.files(root, recursive = T)
   #-------------------------
   
-  
+  run <- TRUE
   ## data files Urls
   ls <- grep(paste0(project, "_", var,"_",area,"/"), filelist, value = TRUE, fixed = FALSE) %>% grep("\\.csv$", ., value = TRUE)
   if (project == "CORDEX") ls <- grep(paste0(project, ".*_", var,"_",area,"/"), filelist, value = TRUE, fixed = FALSE) %>% grep("\\.csv$", ., value = TRUE)
@@ -83,13 +83,19 @@ computeDeltas <- function(project,
     l.aux <- lapply(allfiles.aux, function(x) length(grep(region, suppressMessages(scan(x[1], skip = 7, nlines = 1, what = "raw")))) > 0)
     dom <- which(unlist(l.aux))
     dom <- if (!is.null(cordex.domain)) dom[cordex.domain]
+    if (!is.null(dom)) {
     if (is.na(dom) | is.null(cordex.domain)) {
       dom <- 1
       warning("argument cordex.domain either is NULL or does not contain the requested region. The '", names(dom)[1], "' domain will be considered.")
     }
     ls <- ls.aux[[dom[1]]]
     allfiles <- allfiles.aux[[dom[1]]]
+    } else {
+      run <- FALSE
+      warning("argument cordex.domain either is NULL or does not contain the requested region.")
+    }
   }
+  if (run) {
   exp <- experiment
   if (is.character(periods)) {
     ## define periods for WL
@@ -254,5 +260,6 @@ computeDeltas <- function(project,
     return(data[[1]])
   } else {
   return(data)
+  }
   }
 }
