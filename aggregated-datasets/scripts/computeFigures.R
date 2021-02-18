@@ -206,7 +206,19 @@ computeFigures <- function(regions,
                    panel.segments(df$term, dfi.sub$value, df$term, dfj.sub$value, col = rep(col[seq(1, length(col), 3)], each = 3), lwd = 7) #alpha = 0.5)
                    panel.xyplot(...)
                  })
-    
+    xyplot(value~term, data = df, ylim = ylim, pch = 19, ylab = ylab#,
+           # scales=list(x=list(at=c(2,5,8), alternating=2, tck = c(0,1))
+           # scales = list(x = list(at = NULL)),
+           # col = col, cex = 1, xlab = "Periods and warming levels", #, 
+           # main = list(region, cex = 1.2),
+           # panel = function(...){
+             # panel.abline(h = do.call("seq", as.list(c(ylim, step))),
+                          # col = "gray65", lwd = 0.5, lty = 2)
+             # panel.segments(df$term, dfi$value, df$term, dfj$value, col = col, lty = c(1, 2, 1), lwd = c(5, 2, 5)) #alpha = 0.5)
+             # panel.segments(df$term, dfi.sub$value, df$term, dfj.sub$value, col = rep(col[seq(1, length(col), 3)], each = 3), lwd = 7) #alpha = 0.5)
+             # panel.xyplot(...)
+           # }
+    )
     
     ##### SCATTERPLOT-----------------------
     message("[", Sys.time(), "] Computing seasonal delta changes for the Scatterplots of region ", region)
