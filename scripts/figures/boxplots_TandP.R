@@ -46,8 +46,8 @@ area <- "land"
 # regions <- c("MED","SAH","WAF","CAF","NEAF", "SEAF", "WSAF", "ESAF", "MDG"); cordex.domain <- "AFR"
 # regions <- c("NWN","NEN","GIC","RAR"); cordex.domain <- "ARC"
 # regions <- c("EEU","WSB","ESB","RFE", "WCA", "ECA"); cordex.domain <- FALSE
-# regions <- c("WAN","EAN"); cordex.domain <- "ANT"
-regions <- c("SEA", "NAU","CAU","EAU","SAU","NZ"); cordex.domain <- "AUS"
+# regions <- c("SEA", "NAU","CAU","EAU","SAU","NZ"); cordex.domain <- "AUS"
+regions <- c("WAN","EAN"); cordex.domain <- "ANT"
 # regions <- c("NEU","WCE","EEU","MED"); cordex.domain <- "EUR"
 
 
