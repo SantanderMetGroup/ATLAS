@@ -6,11 +6,11 @@ For the different CORDEX domains, aggregated results are calculated only in thos
 reference_regions["NAM"] = ['NWN', 'NEN', 'WNA', 'CNA', 'ENA', 'NCA', 'CAR']<br>
 reference_regions["CAM"] = ['NCA', 'SCA', 'CAR', 'NWS', 'NSA', 'NES', 'SAM']<br>
 reference_regions["SAM"] = ['SCA', 'NWS', 'NSA', 'NES', 'SAM', 'SWS', 'SES', 'SSA']<br>
-reference_regions["ARC"] = ['GIC', 'NWN', 'NEN', 'NEU', 'EEU', 'RAR', 'WSB', 'ESB', 'RFE', 'ARO']<br>
+reference_regions["ARC"] = ['GIC', 'NWN', 'NEN', 'NEU', 'RAR', 'RFE', 'ARO']<br>
 reference_regions["AFR"] = ['MED', 'SAH', 'WAF', 'CAF', 'NEAF', 'SEAF', 'WSAF', 'ESAF', 'MDG', 'ARP']<br>
 reference_regions["EUR"] = ['NEU', 'WCE', 'EEU', 'MED']<br>
 reference_regions["MED"] = ['WCE', 'MED']<br>
-reference_regions["MNA"] = ['MED', 'SAH', 'WAF', 'CAF', 'NEAF', 'WCA', 'ARP', 'ARS']<br>
+reference_regions["MNA"] = ['MED', 'SAH', 'WAF', 'CAF', 'NEAF', 'SEAF', 'WCA', 'ARP', 'ARS']<br>
 reference_regions["SEA"] = ['SEA']<br>
 reference_regions["EAS"] = ['ECA', 'TIB', 'EAS', 'SAS', 'SEA', 'NAU', 'BOB']<br>
 reference_regions["WAS"] = ['NEAF', 'SEAF', 'WCA', 'ECA', 'TIB', 'ARP', 'SAS', 'ARS', 'BOB', 'EIO']<br>
