@@ -8,31 +8,24 @@
 trap exit SIGINT SIGKILL
 
 export PROJECT=/oceano/gmeteo/WORK/zequi/ATLAS/ESGF-inventory
+export PYTHONPATH=${PROJECT}/publisher
 export JOBS_PER_NODE=1
 export WORKDIR=${PROJECT}/CMIP6/publisher
-cd $WORKDIR
-
-if [ -n "$PBS_NODEFILE" ]; then
-    sort -u $PBS_NODEFILE > nodes
-fi
-
-# Not before because of PBS_NODEFILE
-set -u
 
 publisher="${PROJECT}/publisher"
 tds_content="${PROJECT}/tds-content"
 template="${WORKDIR}/templates/cmip6.ncml.j2"
 
-nc_inventory=${WORKDIR}/inventory
-nc_inventory=${WORKDIR}/fix
+nc_inventory=${WORKDIR}/inventory_nc
 raw_inventory=${WORKDIR}/inventory_raw
-hdfs_raw="${WORKDIR}/hdfs/raw/CMIP6_{_DRS_Dactivity}_{_DRS_Dinstitute}_{_DRS_model}_{_DRS_experiment}.hdf"
+hdfs_raw="${WORKDIR}/hdfs/raw/CMIP6_{_DRS_Dactivity}_{_DRS_Dinstitute}_{_DRS_model}_{_DRS_experiment}_{_DRS_ensemble}.hdf"
 facets="root,Dproject,Dactivity,Dinstitute,Dmodel,Dexperiment,Densemble,Dtable,Dvariable,Dgrid_label,version,variable,table,model,experiment,ensemble,grid_label,period,period1,period2"
 drs="(.*)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/v([^/]+)/([^_]+)_([^_]+)_([^_]+)_([^_]+)_([^_]+)_([^_]+)_?(([0-9]+)-([0-9]+))?\.nc"
 coordinates="time,x,lon,rlon,lon_bnds,y,i,j,latitude,longitude"
 facets_numeric="version,period1,period2"
 
 processed_inventory=inventory_processed
+group_grid_label="_DRS_Dproject,_DRS_Dactivity,_DRS_Dinstitute,_DRS_model,_DRS_experiment,_DRS_ensemble,_DRS_Dtable"
 group_time="_DRS_Dproject,_DRS_Dactivity,_DRS_Dinstitute,_DRS_model,_DRS_experiment,_DRS_ensemble,_DRS_Dtable,_DRS_grid_label"
 group_fx="_DRS_Dproject,_DRS_Dactivity,_DRS_Dinstitute,_DRS_model,_DRS_experiment,_DRS_ensemble,_DRS_grid_label"
 hdfs_processed="${WORKDIR}/hdfs/processed/CMIP6_{_DRS_Dactivity}_{_DRS_Dinstitute}_{_DRS_model}_{_DRS_experiment}_{_DRS_ensemble}_{_synthetic_DRS_Dtable}.hdf" 
@@ -40,42 +33,49 @@ hdfs_processed="${WORKDIR}/hdfs/processed/CMIP6_{_DRS_Dactivity}_{_DRS_Dinstitut
 ncmls_inventory=inventory_ncmls
 ncmls="${tds_content}/public/CMIP6/{_DRS_Dactivity}/{_DRS_Dinstitute}/{_DRS_model}/{_DRS_experiment}/{_synthetic_DRS_Dtable}/CMIP6_{_DRS_Dactivity}_{_DRS_Dinstitute}_{_DRS_model}_{_DRS_experiment}_{_DRS_ensemble}_{_synthetic_DRS_Dtable}.ncml"
 
-catalogs="${tds_content}/devel/c3s34d"
-namespace="devel/c3s34d"
-root_catalog="${catalogs}/catalog.xml"
+catalogs="${tds_content}/devel/atlas"
+namespace="devel/atlas"
+root_catalog="${catalogs}/cmip6.xml"
 
-find /oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6 -mindepth 5 -maxdepth 5 -type d > directories
+cd $WORKDIR
 
-# todf.py
-parallel --gnu -a directories -j$JOBS_PER_NODE --slf nodes --wd $WORKDIR "
-    if grep -q -F {} ${nc_inventory} ; then
-        echo '* todf.py on directory {}' >&2
-        grep -F {} ${nc_inventory} | python -W ignore ${publisher}/todf.py \
-            --drs \"$drs\" \
-            -v $coordinates \
-            --facets $facets \
-            --facets-numeric $facets_numeric \
-            ${hdfs_raw}
-    fi" | tee ${raw_inventory}
+echo $HOSTNAME > nodes
+if [ -n "$PBS_NODEFILE" ]; then
+    sort -u $PBS_NODEFILE > nodes
+fi
+
+# Not before because of PBS_NODEFILE
+set -u
+
+#find /oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6 -mindepth 5 -maxdepth 5 -type d > directories
+#
+## todf.py
+#parallel --gnu -a directories -j$JOBS_PER_NODE --slf nodes --wd $WORKDIR "
+#    if grep -q -F {} ${nc_inventory} ; then
+#        echo '* todf.py on directory {}' >&2
+#        grep -F {} ${nc_inventory} | python -W ignore ${publisher}/todf.py \
+#            --drs \"$drs\" \
+#            -v $coordinates \
+#            --facets $facets \
+#            --facets-numeric $facets_numeric \
+#            ${hdfs_raw}
+#    fi" | tee ${raw_inventory}
 
 # cmip6.py
 parallel --gnu -a ${raw_inventory} -j$JOBS_PER_NODE --slf nodes --wd $WORKDIR "
     echo '* cmip6.py on {}' >&2
-    python ${publisher}/contrib/esgf/cmip6.py \
-        --lon-180 \
+    PYTHONPATH=${PYTHONPATH} python cmip6.py \
+        --filter-grid-labels ${group_grid_label} \
+        --grid-label-col _DRS_grid_label \
+        --latest _DRS_version \
         --group-time ${group_time} \
         --group-fx ${group_fx} \
-        --dest ${hdfs_processed} {}" | tee ${ncmls_inventory}
+        --dest ${hdfs_processed} {}" | tee ${processed_inventory}
 
 # jdataset.py
-parallel --gnu -a ${ncmls_inventory} -j$JOBS_PER_NODE --slf nodes --wd $WORKDIR "
+parallel --gnu -a ${processed_inventory} -j$JOBS_PER_NODE --slf nodes --wd $WORKDIR "
     echo '* jdataset on {}' >&2
-    python -W ignore ${publisher}/jdataset.py -t templates/cmip6.ncml.j2 --dest ${ncmls} {}"
-
-exit 0
-
-## different template because of time:coordinates
-find $hdfs/processed -type f | grep 'CESM2-WACCM' | parallel --gnu -j$JOBS_PER_NODE --slf nodes --wd $WORKDIR "echo '* NcML for {}'; python ${publisher}/jdataset.py -t templates/CESM2-WACCM.cmip6.ncml.j2 --dest ${ncmls}/{_drs}.ncml {}"
+    python -W ignore ${publisher}/jdataset.py -t templates/cmip6.ncml.j2 --dest ${ncmls} {}" | tee ${ncmls_inventory}
 
 # Catalogs
 ref() {
@@ -125,7 +125,7 @@ EOF
 }
 
 # Insert datasets into catalogs
-find $ncmls/CMIP6 -type f | sort -V | while read ncml
+sort -V ${ncmls_inventory} | while read ncml
 do
     basename=${ncml##*/}
     name=${basename%.ncml}
@@ -135,22 +135,34 @@ do
     drs=$(echo $name | cut -d_ -f1-5,7-)
     drs=${drs//_/\/}
     
-    public=${ncml#${ncmls}/}
+    public=${ncml#${tds_content}/public}
     catalog="${catalogs}/${drs}/catalog.xml"
 
+    # Init catalog if it does not exist
     if [ ! -f "$catalog" ]; then
         mkdir -p ${catalogs}/${drs}
-        init_catalog >${catalogs}/${drs}/catalog.xml
+        init_catalog ${drs//\//_} >${catalogs}/${drs}/catalog.xml
+    else
+       if grep -q -F '<dataset name="'$name'"' $catalog ; then
+          # Remove dataset if it exists and </catalog> tag
+          sed -i -n '/<dataset name="'$name'"/,/<\/dataset>/!{p}' $catalog
+
+          # Remove contiguous blank lines
+          sed -i '/^$/N;/^\n$/D' $catalog
+        fi
+        sed -i '/^<\/catalog>$/d' $catalog
     fi
 
     dataset >> $catalog
 done
 
 # Close catalogs
-find $catalogs/CMIP6 -type f | while read catalog
+find $catalogs -type f \( -not -path '*EUR-*' \) | while read catalog
 do
-    echo '</catalog>' >> $catalog
-    echo $catalog
+    if ! grep -q -F '</catalog>' $catalog ; then
+        echo '</catalog>' >> $catalog
+        echo $catalog
+    fi
 done
 
 # Generate root catalog
@@ -163,7 +175,7 @@ cat > ${root} <<EOF
 
 EOF
 
-find $catalogs -mindepth 3 -type f | sort -V | while read catalog
+find ${catalogs}/CMIP6 -mindepth 3 -type f | sort -V | while read catalog
 do
     title=${catalog%/catalog.xml}
     title=${title#*tds-content/devel/atlas/}
