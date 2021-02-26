@@ -47,9 +47,9 @@ area <- "land"
 # regions <- c("NWN","NEN","GIC","RAR"); cordex.domain <- "ARC"
 # regions <- c("EEU","WSB","ESB","RFE", "WCA", "ECA"); cordex.domain <- FALSE
 # regions <- c("SEA", "NAU","CAU","EAU","SAU","NZ"); cordex.domain <- "AUS"
-regions <- c("WAN","EAN"); cordex.domain <- "ANT"
-# regions <- c("NEU","WCE","EEU","MED"); cordex.domain <- "EUR"
-regions <- c("NEU","WCE","EEU","MED"); cordex.domain <- FALSE
+# regions <- c("WAN","EAN"); cordex.domain <- "ANT"
+# regions <- c("NEU","WCE","EEU","MED"); cordex.domain <- FALSE
+regions <- c("NEU","WCE","EEU","MED"); cordex.domain <- "EUR"
 
 
 # select figure axes ranges (ylim for temperature, xlim for precipitation percentage)
@@ -69,7 +69,7 @@ a <- computeFigures(regions,
                     ylim)
 
 # select the path and the name of the output pdf
-outfilename <- paste0(cordex.domain, "_EUR_", area, "_baseperiod_", paste(range(ref.period), collapse = "-"), "_ATvsAP.pdf")
+outfilename <- paste0(cordex.domain, "_", area, "_baseperiod_", paste(range(ref.period), collapse = "-"), "_ATvsAP.pdf")
 # Play with arguments width and height to create different size pds-s
 pdf(outfilename, width = (length(scatter.seasons)+1)*10/2, height = length(regions)*10/2)
 do.call("grid.arrange", a)
