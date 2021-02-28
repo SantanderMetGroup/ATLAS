@@ -21,3 +21,9 @@ Scripts and (jupyter) notebooks are provided in the different sections to ensure
 
 ### Virtual Workspace: The Atlas Hub
 The Atlas Hub is a cloud facility providing virtual workspace for the Climate Change Atlas code and data (with preinstalled software and accesible data). The Atlas Hub is based on **Jupyter** to create and run notebooks on a remote machine where all the software is pre-installed. The Atlas Hub builds on the R **climate4R** package, allowing for transparent climate data access, collocation, post-processing (including bias adjustment) and visualization. Instructions to start working with the Hub are available at the [climate4R GitHub repository](https://github.com/SantanderMetGroup/climate4R).
+
+## Table of contents
+
+| Directory | Contents |
+| :-------- | :------- |
+| `ATLAS_inventory` | *** |
