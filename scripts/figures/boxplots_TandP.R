@@ -35,21 +35,19 @@ ref.period <- 1995:2014
 # select the area, i.e. "land", "sea" or "landsea"
 area <- "land"
 # Select reference regions.  Select the CORDEX domain to be considered
-# regions <- c("NWN","NEN","WNA","CNA","ENA", "NCA"); cordex.domain <- "NAM"
-# regions <- c("NWS","NSA", "SAM", "NES", "SWS", "SES", "SSA"); cordex.domain <- "SAM"
-# regions <- c("NCA", "SCA", "CAR"); cordex.domain <- "CAM"
-# regions <- c("MED","SAH","WAF","CAF","NEAF", "SEAF", "WSAF", "ESAF", "MDG"); cordex.domain <- "AFR"
-# regions <- c("ECA", "EAS"); cordex.domain <- "EAS"
-# regions <- c("SEA"); cordex.domain <- "SEA"
-# regions <- c("WCA","TIB", "ARP", "SAS"); cordex.domain <- "WAS"
-# regions <- c("NEU", "WCE", "MED"); cordex.domain <- "EUR"
-# regions <- c("MED","SAH","WAF","CAF","NEAF", "SEAF", "WSAF", "ESAF", "MDG"); cordex.domain <- "AFR"
-# regions <- c("NWN","NEN","GIC","RAR"); cordex.domain <- "ARC"
-# regions <- c("EEU","WSB","ESB","RFE", "WCA", "ECA"); cordex.domain <- FALSE
+regions <- c("NWN","NEN","WNA","CNA","ENA", "NCA"); cordex.domain <- "NAM"
+regions <- c("NWS","NSA", "SAM", "NES", "SWS", "SES", "SSA"); cordex.domain <- "SAM"
+regions <- c("NCA", "SCA", "CAR"); cordex.domain <- "CAM"
+regions <- c("MED","SAH","WAF","CAF","NEAF", "SEAF", "WSAF", "ESAF", "MDG"); cordex.domain <- "AFR"
+regions <- c("ECA", "EAS"); cordex.domain <- "EAS"
+regions <- c("SEA"); cordex.domain <- "SEA"
+regions <- c("WCA","TIB", "ARP", "SAS"); cordex.domain <- "WAS"
+regions <- c("NWN","NEN","GIC","RAR"); cordex.domain <- "ARC"
+regions <- c("EEU","WSB","ESB","RFE", "WCA", "ECA"); cordex.domain <- FALSE
 regions <- c("SEA", "NAU","CAU","EAU","SAU","NZ"); cordex.domain <- "AUS"
-# regions <- c("WAN","EAN"); cordex.domain <- "ANT"
+regions <- c("WAN","EAN"); cordex.domain <- "ANT"
 # regions <- c("NEU","WCE","EEU","MED"); cordex.domain <- FALSE
-regions <- c("NEU","WCE","EEU","MED"); cordex.domain <- "EUR"
+# regions <- c("NEU","WCE","EEU","MED"); cordex.domain <- "EUR"
 
 
 # select figure axes ranges (ylim for temperature, xlim for precipitation percentage)
