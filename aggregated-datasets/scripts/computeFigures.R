@@ -24,7 +24,8 @@ computeFigures <- function(regions,
     # select scenario, i.e. "rcp26", "rcp45", "rcp85", "ssp126", "spp245", "ssp585" (select a single scenario for computing WLs)
     experiment <- "rcp85"
     
-    WL.cmip5 <- suppressMessages(computeDeltas(project, var = "tas", experiment, season = 1:12, ref.period, periods = WL, area, region, cordex.domain = cordex.domain)[[1]])
+    WL.cmip5 <- suppressMessages(computeDeltas(project = project, var = "tas", experiment = experiment, season = 1:12, ref.period = ref.period, 
+                                               periods = WL, area = area, region = region, cordex.domain = cordex.domain)[[1]])
     
     WLmediana.cmip5 <- apply(WL.cmip5, 2, median, na.rm = T)
     WLp90.cmip5 <- apply(WL.cmip5, 2, quantile, 0.9, na.rm = T)
@@ -38,7 +39,9 @@ computeFigures <- function(regions,
     project = "CMIP6"
     experiment <- "ssp585"
     
-    WL.cmip6 <- suppressMessages(computeDeltas(project, var = "tas", experiment, season = 1:12, ref.period, periods = WL, area, region, cordex.domain = cordex.domain)[[1]])
+    WL.cmip6 <- suppressMessages(computeDeltas(project = project, var = "tas", experiment = experiment, season = 1:12, ref.period = ref.period, 
+                                               periods = WL, 
+                                               area = area, region = region, cordex.domain = cordex.domain)[[1]])
     
     WLmediana.cmip6 <- apply(WL.cmip6, 2, median, na.rm = T)
     WLp90.cmip6 <- apply(WL.cmip6, 2, quantile, 0.9, na.rm = T)
@@ -54,7 +57,8 @@ computeFigures <- function(regions,
     WL.cordex <- if (isFALSE(cordex.domain)) {
       NULL
     } else {
-      suppressMessages(computeDeltas(project, var = "tas", experiment, season = 1:12, ref.period, periods = WL, area, region, cordex.domain = cordex.domain))
+      suppressMessages(computeDeltas(project = project, var = "tas", experiment = experiment, season = 1:12, ref.period = ref.period, 
+                                     periods = WL, area = area, region = region, cordex.domain = cordex.domain))
     }
     
     if (!is.null(WL.cordex)) {
@@ -82,7 +86,8 @@ computeFigures <- function(regions,
     project = "CMIP5"
     experiment <- c("rcp26", "rcp45", "rcp85")
     
-    cmip5 <- suppressMessages(computeDeltas(project, var = "tas", experiment, season = 1:12, ref.period, periods, area, region, cordex.domain = cordex.domain)[[1]])
+    cmip5 <- suppressMessages(computeDeltas(project = project, var = "tas", experiment = experiment, season = 1:12, ref.period = ref.period, 
+                                            periods = periods, area = area, region = region, cordex.domain = cordex.domain)[[1]])
     
     mediana.cmip5 <- apply(cmip5, 2, median, na.rm = T)
     p90.cmip5 <- apply(cmip5, 2, quantile, 0.9, na.rm = T)
@@ -93,7 +98,8 @@ computeFigures <- function(regions,
     project = "CMIP6"
     experiment <- c("ssp126", "ssp245", "ssp585")
     
-    cmip6 <- suppressMessages(computeDeltas(project, var = "tas", experiment, season = 1:12, ref.period, periods, area, region, cordex.domain = cordex.domain)[[1]])
+    cmip6 <- suppressMessages(computeDeltas(project = project, var = "tas", experiment = experiment, season = 1:12, ref.period = ref.period, 
+                                            periods = periods, area = area, region = region, cordex.domain = cordex.domain)[[1]])
     
     mediana.cmip6 <- apply(cmip6, 2, median, na.rm = T)
     p90.cmip6 <- apply(cmip6, 2, quantile, 0.9, na.rm = T)
@@ -108,7 +114,8 @@ computeFigures <- function(regions,
     cordex <- if (isFALSE(cordex.domain)) {
       NULL
     } else {
-      suppressMessages(computeDeltas(project, var = "tas", experiment, season = 1:12, ref.period, periods, area, region, cordex.domain = cordex.domain))
+      suppressMessages(computeDeltas(project = project, var = "tas", experiment = experiment, season = 1:12, ref.period = ref.period, 
+                                     periods = periods, area = area, region = region, cordex.domain = cordex.domain))
     }
     
     if (!is.null(cordex)) {
@@ -185,8 +192,8 @@ computeFigures <- function(regions,
     a2j <- c(WLp90.cmip5[2],WLp90.cordex[2],WLp90.cmip6[2])
     a3j <- c(WLp90.cmip5[3],WLp90.cordex[3],WLp90.cmip6[3])
     a4j <- c(WLp90.cmip5[4],WLp90.cordex[4],WLp90.cmip6[4])
-    aj <- c(p90.cmip5[1], p90.cordex[1], p90.cmip6[1], p90.cmip5[3], p90.cordex[3], p90.cmip6[3],p90.cmip5[5], p90.cmip5[5], p90.cmip6[5])
-    bj <- c(p90.cmip5[2], p90.cordex[2], p90.cmip6[2], p90.cmip5[4], p90.cordex[4], p90.cmip6[4],p90.cmip5[6], p90.cmip5[6], p90.cmip6[6])
+    aj <- c(p90.cmip5[1], p90.cordex[1], p90.cmip6[1], p90.cmip5[3], p90.cordex[3], p90.cmip6[3],p90.cmip5[5], p90.cordex[5], p90.cmip6[5])
+    bj <- c(p90.cmip5[2], p90.cordex[2], p90.cmip6[2], p90.cmip5[4], p90.cordex[4], p90.cmip6[4],p90.cmip5[6], p90.cordex[6], p90.cmip6[6])
     # dj <- c(p90.cmip5[3], p90.cordex[3], p90.cmip6[3], p90.cmip5[6], p90.cordex[6], p90.cmip6[6],p90.cmip5[9], p90.cordex[9], p90.cmip6[9])
     dfj <- data.frame("term" = x, "value" = unname(do.call("c", list(aj, bj, a1j, a2j, a3j, a4j)))[ind])
     
@@ -228,8 +235,10 @@ computeFigures <- function(regions,
     experiment <- "rcp85"
     
     
-    WL.cmip5 <- lapply(scatter.seasons, function(s) suppressMessages(computeDeltas(project, var = "tas", experiment, season = s, ref.period, periods = WL, area, region, cordex.domain = cordex.domain)[[1]]))
-    WL.cmip5.b <- lapply(scatter.seasons, function(s) suppressMessages(computeDeltas(project, var = "pr", experiment, season = s, ref.period, periods = WL, area, region, cordex.domain = cordex.domain)[[1]]))
+    WL.cmip5 <- lapply(scatter.seasons, function(s) suppressMessages(computeDeltas(project = project, var = "tas", experiment = experiment, season = s, ref.period = ref.period, 
+                                                                                   periods = WL, area = area, region = region, cordex.domain = cordex.domain)[[1]]))
+    WL.cmip5.b <- lapply(scatter.seasons, function(s) suppressMessages(computeDeltas(project = project, var = "pr", experiment = experiment, season = s, ref.period = ref.period, 
+                                                                                     periods = WL, area = area, region = region, cordex.domain = cordex.domain)[[1]]))
     names(WL.cmip5.b) <- names(WL.cmip5) <- seas.names
     
     WLmediana.cmip5 <- lapply(WL.cmip5, function(x) apply(x, MAR = 2, FUN = median, na.rm = T))
@@ -248,8 +257,10 @@ computeFigures <- function(regions,
     
     
     
-    WL.cmip6 <- lapply(scatter.seasons, function(s) suppressMessages(computeDeltas(project, var = "tas", experiment, season = s, ref.period, periods = WL, area, region, cordex.domain = cordex.domain)[[1]]))
-    WL.cmip6.b <- lapply(scatter.seasons, function(s) suppressMessages(computeDeltas(project, var = "pr", experiment, season = s, ref.period, periods = WL, area, region, cordex.domain = cordex.domain)[[1]]))
+    WL.cmip6 <- lapply(scatter.seasons, function(s) suppressMessages(computeDeltas(project = project, var = "tas", experiment = experiment, season = s, ref.period = ref.period, 
+                                                                                   periods = WL, area = area, region = region, cordex.domain = cordex.domain)[[1]]))
+    WL.cmip6.b <- lapply(scatter.seasons, function(s) suppressMessages(computeDeltas(project = project, var = "pr", experiment = experiment, season = s, ref.period = ref.period, 
+                                                                                     periods = WL, area = area, region = region, cordex.domain = cordex.domain)[[1]]))
     names(WL.cmip6.b) <- names(WL.cmip6) <- seas.names
     
     WLmediana.cmip6 <- lapply(WL.cmip6, function(x) apply(x, 2, median, na.rm = T))
@@ -272,11 +283,13 @@ computeFigures <- function(regions,
     WL.cordex <- if (isFALSE(cordex.domain)) {
       NULL
     } else {
-      lapply(scatter.seasons, function(s) suppressMessages(computeDeltas(project, var = "tas", experiment, season = s, ref.period, periods = WL, area, region, cordex.domain = cordex.domain)))
+      lapply(scatter.seasons, function(s) suppressMessages(computeDeltas(project = project, var = "tas", experiment = experiment, season = s, ref.period = ref.period, 
+                                                                         periods = WL, area = area, region = region, cordex.domain = cordex.domain)))
     }
     
     if (!is.null(WL.cordex)) {
-      WL.cordex.b <- lapply(scatter.seasons, function(s) suppressMessages(computeDeltas(project, var = "pr", experiment, season = s, ref.period, periods = WL, area, region, cordex.domain = cordex.domain)))
+      WL.cordex.b <- lapply(scatter.seasons, function(s) suppressMessages(computeDeltas(project = project, var = "pr", experiment = experiment, season = s, ref.period = ref.period, 
+                                                                                        periods = WL, area = area, region = region, cordex.domain = cordex.domain)))
       names(WL.cordex.b) <- names(WL.cordex) <- seas.names
       
       

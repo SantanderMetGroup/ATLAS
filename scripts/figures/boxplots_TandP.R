@@ -46,7 +46,7 @@ area <- "land"
 # regions <- c("MED","SAH","WAF","CAF","NEAF", "SEAF", "WSAF", "ESAF", "MDG"); cordex.domain <- "AFR"
 # regions <- c("NWN","NEN","GIC","RAR"); cordex.domain <- "ARC"
 # regions <- c("EEU","WSB","ESB","RFE", "WCA", "ECA"); cordex.domain <- FALSE
-# regions <- c("SEA", "NAU","CAU","EAU","SAU","NZ"); cordex.domain <- "AUS"
+regions <- c("SEA", "NAU","CAU","EAU","SAU","NZ"); cordex.domain <- "AUS"
 # regions <- c("WAN","EAN"); cordex.domain <- "ANT"
 # regions <- c("NEU","WCE","EEU","MED"); cordex.domain <- FALSE
 regions <- c("NEU","WCE","EEU","MED"); cordex.domain <- "EUR"
@@ -60,13 +60,13 @@ xlim <- NULL
 
 
 
-a <- computeFigures(regions,
-                    cordex.domain,
-                    area, 
-                    ref.period, 
-                    scatter.seasons,
-                    xlim,
-                    ylim)
+a <- computeFigures(regions = regions,
+                    cordex.domain = cordex.domain,
+                    area = area, 
+                    ref.period = ref.period, 
+                    scatter.seasons = scatter.seasons,
+                    xlim = xlim,
+                    ylim = ylim)
 
 # select the path and the name of the output pdf
 outfilename <- paste0(cordex.domain, "_", area, "_baseperiod_", paste(range(ref.period), collapse = "-"), "_ATvsAP.pdf")
