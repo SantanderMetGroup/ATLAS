@@ -3,7 +3,7 @@
 "CMIP6.CMIP.AS-RCEC.TaiESM1.historical.r1i1p1f1.day.gn",80864219671,true,true,?,true,true,true
 "CMIP6.ScenarioMIP.AS-RCEC.TaiESM1.ssp585.r1i1p1f1.day.gn",13183786770,true,true,?,true,false,false
 
-"CMIP6.CMIP.AWI.AWI-CM-1-1-MR.historical.r1i1p1f1.gn",40955032519,false,false,false,true,true,true
+"CMIP6.CMIP.AWI.AWI-CM-1-1-MR.historical.r1i1p1f1.gn", 40955032519,false,false,false,true,true,true
 "CMIP6.ScenarioMIP.AWI.AWI-CM-1-1-MR.ssp126.r1i1p1f1.gn",36762571831,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.AWI.AWI-CM-1-1-MR.ssp245.r1i1p1f1.gn",36749598762,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.AWI.AWI-CM-1-1-MR.ssp370.r1i1p1f1.gn",36738757447,true,true,false,true,true,true
@@ -75,9 +75,6 @@
 "CMIP6.ScenarioMIP.CSIRO.ACCESS-ESM1-5.ssp370.r1i1p1f1.gn",13726397572,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.CSIRO.ACCESS-ESM1-5.ssp585.r1i1p1f1.gn",13719014030,true,true,false,true,true,true
 
-"CMIP6.CMIP.EC-Earth-Consortium.EC-Earth3-AerChem.historical.r1i1p1f1.day.gr",115687261263,true,true,?,true,true,true
-"CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3-AerChem.ssp370.r1i1p1f1.day.gr",60041516278,true,true,?,true,true,true
-
 "CMIP6.CMIP.EC-Earth-Consortium.EC-Earth3-Veg-LR.historical.r1i1p1f1.day.gr",45000454379,true,true,?,true,true,true
 "CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3-Veg-LR.ssp245.r1i1p1f1.day.gr",23363264809,true,true,?,true,true,true
 "CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3-Veg-LR.ssp370.r1i1p1f1.day.gr",23342591525,true,true,?,true,true,true
@@ -93,9 +90,6 @@
 "CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3.ssp245.r1i1p1f1.gr",60113260377,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3.ssp370.r1i1p1f1.gr",60076549752,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3.ssp585.r1i1p1f1.gr",60021153754,true,true,false,true,true,true
-
-"CMIP6.CMIP.HAMMOZ-Consortium.MPI-ESM-1-2-HAM.historical.r1i1p1f1.gn",11195230902,true,true,true,true,true,true
-"CMIP6.ScenarioMIP.HAMMOZ-Consortium.MPI-ESM-1-2-HAM.ssp370.r1i1p1f1.gn",2771299670,true,true,false,true,true,true
 
 "CMIP6.CMIP.INM.INM-CM4-8.historical.r1i1p1f1.gr1",16816434255,true,true,true,true,true,true
 "CMIP6.ScenarioMIP.INM.INM-CM4-8.ssp126.r1i1p1f1.gr1",8750398230,true,true,false,true,true,true
@@ -167,7 +161,7 @@
 "CMIP6.ScenarioMIP.NCAR.CESM2-WACCM.ssp370.r1i1p1f1.gn",13351172466,true,true,false,true,false,false
 "CMIP6.ScenarioMIP.NCAR.CESM2-WACCM.ssp585.r1i1p1f1.gn",13346672660,true,true,false,true,false,false
 
-"CMIP6.CMIP.NCAR.CESM2.historical.r1i1p1f1.day.gn",32759743379,true,true,?,true,false,false
+"CMIP6.CMIP.NCAR.CESM2.historical.r4i1p1f1.day.gn",32759743379,true,true,?,true,false,false
 "CMIP6.ScenarioMIP.NCAR.CESM2.ssp126.r4i1p1f1.day.gn",18420122855,true,true,?,true,true,true
 "CMIP6.ScenarioMIP.NCAR.CESM2.ssp245.r4i1p1f1.day.gn",18966760680,true,true,?,true,true,true
 "CMIP6.ScenarioMIP.NCAR.CESM2.ssp370.r4i1p1f1.day.gn",18961404158,true,true,?,true,true,true
@@ -205,41 +199,3 @@
 "CMIP6.ScenarioMIP.NUIST.NESM3.ssp126.r1i1p1f1.gn",8605981412,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.NUIST.NESM3.ssp245.r1i1p1f1.gn",8601037770,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.NUIST.NESM3.ssp585.r1i1p1f1.gn",8588728555,true,true,false,true,true,true
-
-###############################
-# The following datasets were uploaded between 9/12/2020 and 31/1/2021. 
-# They won't we included in the ATLAS due to time contraints.  
-
-#NEW#"CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3-Veg-LR.ssp126.r1i1p1f1.day.gr",23392244746,true,true,?,true,true,true
-#NEW#"CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3-Veg-LR.ssp585.r1i1p1f1.day.gr",23323945094,true,true,?,true,true,true
-
-#NEW#"CMIP6.CMCC.CMCC-ESM2.historical.r1i1p1f1.day.gn",40839464879,true,true,?,true,true,true
-#NEW#"CMIP6.CMCC.CMCC-ESM2.ssp126.r1i1p1f1.day.gn",21241683303,true,true,?,true,true,true
-#NEW#"CMIP6.CMCC.CMCC-ESM2.ssp245.r1i1p1f1.day.gn",21235419364,true,true,?,true,true,true
-#NEW#"CMIP6.CMCC.CMCC-ESM2.ssp585.r1i1p1f1.day.gn",21223505815,true,true,?,true,true,true
-
-# Discarded: Only two scenarios
-#NEW#"CMIP6.EC-Earth-Consortium.EC-Earth3-CC.historical.r1i1p1f1.day.gr",115663709557,true,true,?,true,true,true
-#NEW#"CMIP6.EC-Earth-Consortium.EC-Earth3-CC.ssp245.r1i1p1f1.day.gr",60100055054,true,true,?,true,true,true
-#NEW#"CMIP6.EC-Earth-Consortium.EC-Earth3-CC.ssp585.r1i1p1f1.day.gr",60003295559,true,true,?,true,true,true
-
-# Discarded: Only two scenarios
-#NEW#"CMIP6.IPSL.IPSL-CM5A2-INCA.historical.r1i1p1f1.day.gr",4361061285,true,true,?,true,false,false
-#NEW#"CMIP6.IPSL.IPSL-CM5A2-INCA.ssp126.r1i1p1f1.day.gr",2260305528,true,true,?,true,false,false
-#NEW#"CMIP6.IPSL.IPSL-CM5A2-INCA.ssp370.r1i1p1f1.day.gr",2260435420,true,true,?,true,false,false
-
-# Discarded: Only two scenarios
-#NEW#"CMIP6.MOHC.HadGEM3-GC31-MM.historical.r1i1p1f3.day.gn",90205585396,true,true,?,true,true,true
-#NEW#"CMIP6.MOHC.HadGEM3-GC31-MM.ssp126.r1i1p1f3.day.gn",46904422202,true,true,?,true,true,true
-#NEW#"CMIP6.MOHC.HadGEM3-GC31-MM.ssp585.r1i1p1f3.day.gn",46837411149,true,true,?,true,true,true
-
-# Discarded: No data for pr, tas
-#NEW#"CMIP6.NASA-GISS.GISS-E2-1-G.historical.r1i1p1f1.day.gn",6247098448,false,false,?,false,true,true
-#NEW#"CMIP6.NASA-GISS.GISS-E2-1-G.ssp126.r1i1p1f2.day.gn",2782802600,false,false,?,true,false,false
-#NEW#"CMIP6.NASA-GISS.GISS-E2-1-G.ssp245.r1i1p1f2.day.gn",2782802600,false,false,?,true,false,false
-#NEW#"CMIP6.NASA-GISS.GISS-E2-1-G.ssp370.r1i1p1f2.day.gn",2782802600,false,false,?,true,false,false
-#NEW#"CMIP6.NASA-GISS.GISS-E2-1-G.ssp585.r1i1p1f2.day.gn",2782802600,false,false,?,true,false,false
-
-# Discarded: A single scenario
-#NEW#"CMIP6.NIMS-KMA.UKESM1-0-LL.historical.r14i1p1f2.day.gn",16890113823,true,true,?,true,true,true
-#NEW#"CMIP6.NIMS-KMA.UKESM1-0-LL.ssp245.r13i1p1f2.day.gn",8448253784,true,true,true,?,true,true
