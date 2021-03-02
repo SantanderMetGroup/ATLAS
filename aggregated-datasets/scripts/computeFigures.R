@@ -58,15 +58,18 @@ computeFigures <- function(regions,
     }
     
     if (!is.null(WL.cordex)) {
-      WLmediana.cordex <- apply(WL.cordex, 2, median, na.rm = T)
-      WLp90.cordex <- apply(WL.cordex, 2, quantile, 0.9, na.rm = T)
-      WLp10.cordex <- apply(WL.cordex, 2, quantile, 0.1, na.rm = T)
       
       
       ###########  CMIP5 CORDEX WL subset 
       aur.cdx.gmc <- lapply(strsplit(rownames(WL.cordex), "_"), function(x) paste(x[1:2], collapse = "_"))
       WL.cmip5.sub <- WL.cmip5[unlist(lapply(aur.cdx.gmc, function(x) grep(x, rownames(WL.cmip5)))),]
+      WL.cordex <- WL.cordex[unlist(lapply(unique(rownames(WL.cmip5.sub)), function(i) grep(i, rownames(WL.cordex)))), ]
       
+      WLmediana.cordex <- apply(WL.cordex, 2, median, na.rm = T)
+      WLp90.cordex <- apply(WL.cordex, 2, quantile, 0.9, na.rm = T)
+      WLp10.cordex <- apply(WL.cordex, 2, quantile, 0.1, na.rm = T)
+      
+      WL.cmip5.sub <- WL.cmip5.sub + (WL.cordex*0)
       WLmediana.cmip5.sub <- apply(WL.cmip5.sub, 2, median, na.rm = T)
       WLp90.cmip5.sub <- apply(WL.cmip5.sub, 2, quantile, 0.9, na.rm = T)
       WLp10.cmip5.sub <- apply(WL.cmip5.sub, 2, quantile, 0.1, na.rm = T)
@@ -109,18 +112,20 @@ computeFigures <- function(regions,
     }
     
     if (!is.null(cordex)) {
-      mediana.cordex <- apply(cordex, 2, median, na.rm = T)
-      p90.cordex <- apply(cordex, 2, quantile, 0.9, na.rm = T)
-      p10.cordex <- apply(cordex, 2, quantile, 0.1, na.rm = T)
       
       # # ##########  CMIP5 CORDEX subset ------------------------------------
       
       
       aux.ind <- lapply(rownames(cmip5), function(x) grep(x, rownames(cordex)))
+      aux.ind.2 <- unlist(lapply(1:length(aux.ind), function(x) rep(x, length(aux.ind[[x]]))))
+      cmip5.sub <- cmip5[aux.ind.2,]
+      cordex <- cordex[unlist(lapply(unique(rownames(cmip5.sub)), function(i) grep(i, rownames(cordex)))), ]
       
-      cmip5.sub <- cmip5[unlist(lapply(1:length(aux.ind), function(x) rep(x, length(aux.ind[[x]])))),]
+      mediana.cordex <- apply(cordex, 2, median, na.rm = T)
+      p90.cordex <- apply(cordex, 2, quantile, 0.9, na.rm = T)
+      p10.cordex <- apply(cordex, 2, quantile, 0.1, na.rm = T)
       
-      
+      cmip5.sub <- cmip5.sub + (cordex*0)
       mediana.cmip5.sub <- apply(cmip5.sub, 2, median, na.rm = T)
       p90.cmip5.sub <- apply(cmip5.sub, 2, quantile, 0.9, na.rm = T)
       p10.cmip5.sub <- apply(cmip5.sub, 2, quantile, 0.1, na.rm = T)
@@ -206,19 +211,7 @@ computeFigures <- function(regions,
                    panel.segments(df$term, dfi.sub$value, df$term, dfj.sub$value, col = rep(col[seq(1, length(col), 3)], each = 3), lwd = 7) #alpha = 0.5)
                    panel.xyplot(...)
                  })
-    xyplot(value~term, data = df, ylim = ylim, pch = 19, ylab = ylab#,
-           # scales=list(x=list(at=c(2,5,8), alternating=2, tck = c(0,1))
-           # scales = list(x = list(at = NULL)),
-           # col = col, cex = 1, xlab = "Periods and warming levels", #, 
-           # main = list(region, cex = 1.2),
-           # panel = function(...){
-             # panel.abline(h = do.call("seq", as.list(c(ylim, step))),
-                          # col = "gray65", lwd = 0.5, lty = 2)
-             # panel.segments(df$term, dfi$value, df$term, dfj$value, col = col, lty = c(1, 2, 1), lwd = c(5, 2, 5)) #alpha = 0.5)
-             # panel.segments(df$term, dfi.sub$value, df$term, dfj.sub$value, col = rep(col[seq(1, length(col), 3)], each = 3), lwd = 7) #alpha = 0.5)
-             # panel.xyplot(...)
-           # }
-    )
+    
     
     ##### SCATTERPLOT-----------------------
     message("[", Sys.time(), "] Computing seasonal delta changes for the Scatterplots of region ", region)
@@ -282,16 +275,10 @@ computeFigures <- function(regions,
       lapply(scatter.seasons, function(s) suppressMessages(computeDeltas(project, var = "tas", experiment, season = s, ref.period, periods = WL, area, region, cordex.domain = cordex.domain)))
     }
     
-    if (!is.null(cordex)) {
+    if (!is.null(WL.cordex)) {
       WL.cordex.b <- lapply(scatter.seasons, function(s) suppressMessages(computeDeltas(project, var = "pr", experiment, season = s, ref.period, periods = WL, area, region, cordex.domain = cordex.domain)))
       names(WL.cordex.b) <- names(WL.cordex) <- seas.names
       
-      WLmediana.cordex <- lapply(WL.cordex, function(x) apply(x, 2, median, na.rm = T))
-      WLp90.cordex <- lapply(WL.cordex, function(x) apply(x, 2, quantile, 0.9, na.rm = T))
-      WLp10.cordex <- lapply(WL.cordex, function(x) apply(x, 2, quantile, 0.1, na.rm = T))
-      WLmediana.cordex.b <- lapply(WL.cordex.b, function(x) apply(x, 2, median, na.rm = T))
-      WLp90.cordex.b <- lapply(WL.cordex.b, function(x) apply(x, 2, quantile, 0.9, na.rm = T))
-      WLp10.cordex.b <- lapply(WL.cordex.b, function(x) apply(x, 2, quantile, 0.1, na.rm = T))
       
       ###########  CMIP5 CORDEX WL subset pr------------------------------------
       
@@ -304,8 +291,18 @@ computeFigures <- function(regions,
         WL.cmip5.b[[s]][unlist(lapply(aur.cdx.gmc, function(x) grep(x, rownames(WL.cmip5.b[[s]])))),]
       })
       names(WL.cmip5.b.sub) <- names(WL.cmip5.sub) <- seas.names
+      WL.cordex <- lapply(1:length(WL.cordex), function(x) WL.cordex[[x]][unlist(lapply(unique(rownames(WL.cmip5.sub[[x]])), function(i) grep(i, rownames(WL.cordex[[x]])))), ])
+      WL.cordex.b <- lapply(1:length(WL.cordex.b), function(x) WL.cordex.b[[x]][unlist(lapply(unique(rownames(WL.cmip5.b.sub[[x]])), function(i) grep(i, rownames(WL.cordex.b[[x]])))), ])
       
+      WLmediana.cordex <- lapply(WL.cordex, function(x) apply(x, 2, median, na.rm = T))
+      WLp90.cordex <- lapply(WL.cordex, function(x) apply(x, 2, quantile, 0.9, na.rm = T))
+      WLp10.cordex <- lapply(WL.cordex, function(x) apply(x, 2, quantile, 0.1, na.rm = T))
+      WLmediana.cordex.b <- lapply(WL.cordex.b, function(x) apply(x, 2, median, na.rm = T))
+      WLp90.cordex.b <- lapply(WL.cordex.b, function(x) apply(x, 2, quantile, 0.9, na.rm = T))
+      WLp10.cordex.b <- lapply(WL.cordex.b, function(x) apply(x, 2, quantile, 0.1, na.rm = T))
       
+      WL.cmip5.sub <- lapply(1:length(WL.cmip5.sub), function(x) WL.cmip5.sub[[x]] + (WL.cordex[[x]]*0))
+      WL.cmip5.b.sub <- lapply(1:length(WL.cmip5.b.sub), function(x) WL.cmip5.b.sub[[x]] + (WL.cordex.b[[x]]*0))
       WLmediana.cmip5.sub <- lapply(WL.cmip5.sub, function(x) apply(x, 2, median, na.rm = T))
       WLp90.cmip5.sub <- lapply(WL.cmip5.sub, function(x) apply(x, 2, quantile, 0.9, na.rm = T))
       WLp10.cmip5.sub <- lapply(WL.cmip5.sub, function(x) apply(x, 2, quantile, 0.1, na.rm = T))
