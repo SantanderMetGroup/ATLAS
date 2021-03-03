@@ -41,11 +41,11 @@ regions <- c("NCA", "SCA", "CAR"); cordex.domain <- "CAM"
 regions <- c("MED","SAH","WAF","CAF","NEAF", "SEAF", "WSAF", "ESAF", "MDG"); cordex.domain <- "AFR"
 regions <- c("ECA", "EAS"); cordex.domain <- "EAS"
 regions <- c("SEA"); cordex.domain <- "SEA"
-regions <- c("WCA","TIB", "ARP", "SAS"); cordex.domain <- "WAS"
-regions <- c("NWN","NEN","GIC","RAR"); cordex.domain <- "ARC"
-regions <- c("EEU","WSB","ESB","RFE", "WCA", "ECA"); cordex.domain <- FALSE
-regions <- c("SEA", "NAU","CAU","EAU","SAU","NZ"); cordex.domain <- "AUS"
-regions <- c("WAN","EAN"); cordex.domain <- "ANT"
+# regions <- c("WCA","TIB", "ARP", "SAS"); cordex.domain <- "WAS"
+# regions <- c("NWN","NEN","GIC","RAR"); cordex.domain <- "ARC"
+# regions <- c("EEU","WSB","ESB","RFE", "WCA", "ECA"); cordex.domain <- FALSE
+# regions <- c("SEA", "NAU","CAU","EAU","SAU","NZ"); cordex.domain <- "AUS"
+# regions <- c("WAN","EAN"); cordex.domain <- "ANT"
 # regions <- c("NEU","WCE","EEU","MED"); cordex.domain <- FALSE
 # regions <- c("NEU","WCE","EEU","MED"); cordex.domain <- "EUR"
 
