@@ -130,6 +130,7 @@ computeDeltas <- function(project,
     aggrfun <- "mean"
     if (var == "pr") aggrfun <- "sum"
     out <- lapply(1:length(modelruns), function(i) {
+      print(i)
       modelfiles <- grep(modelruns[i], allfiles, value = TRUE) 
       if (length(modelfiles) > 0) {
         histf <- grep("historical", modelfiles, value = TRUE)
@@ -156,13 +157,15 @@ computeDeltas <- function(project,
             start <- which(rownames(hist) == range(ref.period)[1])
             end <- which(rownames(hist) == range(ref.period)[2])
             fill <- FALSE
-            if (length(end) == 0) {
+            if (length(end) == 0 & length(start) > 0) {
               fill <- TRUE
               end <- which(rownames(hist) == 2005)
             }
-            if (length(start) == 0) {
+            if (length(start) == 0 & length(end) > 0) {
               start <-  1
             }
+            if (length(start) == 0 & length(end) == 0) run <- FALSE
+            if (run) {
             hist <- hist[start:end,, drop = FALSE]
             l1 <- lapply(1:length(exp), FUN = function(j) {
               rcp <- tryCatch({
@@ -230,6 +233,9 @@ computeDeltas <- function(project,
             })
             names(l1) <- exp
             l1
+            } else {
+              NULL
+            }
           })
           nn <- if (project != "CORDEX") {
             gsub("\\.\\*", "", modelruns[i])
