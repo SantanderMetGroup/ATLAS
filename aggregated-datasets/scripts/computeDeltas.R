@@ -130,7 +130,6 @@ computeDeltas <- function(project,
     aggrfun <- "mean"
     if (var == "pr") aggrfun <- "sum"
     out <- lapply(1:length(modelruns), function(i) {
-      print(i)
       modelfiles <- grep(modelruns[i], allfiles, value = TRUE) 
       if (length(modelfiles) > 0) {
         histf <- grep("historical", modelfiles, value = TRUE)
