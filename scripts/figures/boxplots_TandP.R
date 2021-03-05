@@ -26,6 +26,7 @@ library(gridExtra)
 # Function computeDeltas available at this repo is used:
 source("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/mai-devel/aggregated-datasets/scripts/computeDeltas.R")
 source("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/mai-devel/aggregated-datasets/scripts/computeFigures.R")
+source("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/mai-devel/aggregated-datasets/scripts/computeOffset.R")
 
 
 # select seasons, use c(12,1,2) for winter
@@ -40,15 +41,15 @@ regions <- c("NWN","NEN","WNA","CNA","ENA", "NCA"); cordex.domain <- "NAM"
 regions <- c("NWS","NSA", "SAM", "NES", "SWS", "SES", "SSA"); cordex.domain <- "SAM"
 regions <- c("NCA", "SCA", "CAR"); cordex.domain <- "CAM"
 regions <- c("MED","SAH","WAF","CAF","NEAF", "SEAF", "WSAF", "ESAF", "MDG"); cordex.domain <- "AFR"
-# regions <- c("ECA", "EAS"); cordex.domain <- "EAS"
-# regions <- c("SEA"); cordex.domain <- "SEA"
-# regions <- c("WCA","TIB", "ARP", "SAS"); cordex.domain <- "WAS"
+regions <- c("ECA", "EAS"); cordex.domain <- "EAS"
+regions <- c("SEA"); cordex.domain <- "SEA"
+regions <- c("WCA","TIB", "ARP", "SAS"); cordex.domain <- "WAS"
+regions <- c("EEU","WSB","ESB","RFE", "WCA", "ECA"); cordex.domain <- FALSE
 # regions <- c("NWN","NEN","GIC","RAR"); cordex.domain <- "ARC"
-# regions <- c("EEU","WSB","ESB","RFE", "WCA", "ECA"); cordex.domain <- FALSE
-# regions <- c("SEA", "NAU","CAU","EAU","SAU","NZ"); cordex.domain <- "AUS"
-# regions <- c("WAN","EAN"); cordex.domain <- "ANT"
+regions <- c("SEA", "NAU","CAU","EAU","SAU","NZ"); cordex.domain <- "AUS"
+regions <- c("WAN","EAN"); cordex.domain <- "ANT"
 # regions <- c("NEU","WCE","EEU","MED"); cordex.domain <- FALSE
-# regions <- c("NEU","WCE","EEU","MED"); cordex.domain <- "EUR"
+regions <- c("NEU","WCE","EEU","MED"); cordex.domain <- "EUR"
 regions <- c("world"); cordex.domain <- FALSE
 
 
