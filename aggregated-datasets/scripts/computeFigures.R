@@ -445,8 +445,8 @@ computeFigures <- function(regions,
                
                panel.segments(min(xlimk) - 10, 0, max(xlimk) + 10, 0, lty = 3)
                panel.segments(0, min(ylimk) - 2, 0, max(ylimk) + 2, lty = 3)
-               panel.xyplot(cmip5.off.s[[k]], cmip5.off.s[[k]], col = rgb(126/255, 128/255, 93/255, 0.5), pch = 19)
-               panel.xyplot(cmip6.off.s[[k]], cmip6.off.s[[k]], col = rgb(126/255, 128/255, 93/255), cex = 1.2)
+               panel.xyplot(cmip5.off.s[[k]], cmip5.off.s[[k]], col = rgb(126/255, 128/255, 93/255, 0.5), pch = 19, cex = 1.2)
+               panel.xyplot(cmip6.off.s[[k]], cmip6.off.s[[k]], col = rgb(126/255, 128/255, 93/255), cex = 1.4, lwd = 5)
                panel.xyplot(...)
              })
     })
