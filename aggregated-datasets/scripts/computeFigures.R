@@ -228,7 +228,7 @@ computeFigures <- function(regions,
     
     if (is.null(ylim)) ylim <- c(floor(min(c(dfi$value, cmip5.off, cmip6.off), na.rm = T)) - 1, ceiling(max(dfj$value, na.rm = T)) + 1); step <- 1
     
-    bp <-  xyplot(value~term, data = df, ylim = ylim, pch = 19, ylab = ylab,
+    bp <-  xyplot(value~term, data = df, ylim = ylim, pch = 19, ylab = ylab, aspect = "45",
                  # scales=list(x=list(at=c(2,5,8), alternating=2, tck = c(0,1))
                  scales = list(x = list(at = NULL)),
                  col = col, cex = 1, xlab = "Periods and warming levels", #, 
@@ -333,8 +333,6 @@ computeFigures <- function(regions,
       WL.cordex <- lapply(1:length(WL.cordex), function(x) WL.cordex[[x]][unlist(lapply(unique(rownames(WL.cmip5.sub[[x]])), function(i) grep(i, rownames(WL.cordex[[x]])))), ])
       WL.cordex.b <- lapply(1:length(WL.cordex.b), function(x) WL.cordex.b[[x]][unlist(lapply(unique(rownames(WL.cmip5.b.sub[[x]])), function(i) grep(i, rownames(WL.cordex.b[[x]])))), ])
       
-      WL.cmip5.sub <- lapply(1:length(scatter.seasons), function(s) WL.cmip5.sub + (WL.cordex*0))
-      WL.cmip5.b.sub <- lapply(1:length(scatter.seasons), function(s) WL.cmip5.b.sub + (WL.cordex.b*0))
       
       
       names(WL.cmip5.b.sub) <- names(WL.cmip5.sub) <- seas.names
@@ -399,6 +397,12 @@ computeFigures <- function(regions,
       WLp10.cordex.b <- lapply(WLmediana.cmip5,  "*", NA)
       WLp90.cordex <- lapply(WLmediana.cmip5,  "*", NA)
       WLp90.cordex.b <- lapply(WLmediana.cmip5,  "*", NA)
+      WLmediana.cmip5.sub <- lapply(WLmediana.cmip5,  "*", NA)
+      WLmediana.cmip5.b.sub <- lapply(WLmediana.cmip5,  "*", NA)
+      WLp10.cmip5.sub <- lapply(WLmediana.cmip5,  "*", NA)
+      WLp10.cmip5.b.sub <- lapply(WLmediana.cmip5,  "*", NA)
+      WLp90.cmip5.sub <- lapply(WLmediana.cmip5,  "*", NA)
+      WLp90.cmip5.b.sub <- lapply(WLmediana.cmip5,  "*", NA)
     }
     sp <- lapply(1:length(scatter.seasons), function(k) {
       
