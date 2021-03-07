@@ -470,8 +470,8 @@ computeFigures <- function(regions,
                panel.abline(h = do.call("seq", as.list(c(ylimk, step))),
                             col = "gray65", lwd = 0.5, lty = 2)
                
-               panel.xyplot(cmip5.off.s[[k]], cmip5.off.s[[k]], col = rgb(126/255, 128/255, 93/255, 0.5), pch = 19, cex = 1.2)
-               panel.xyplot(cmip6.off.s[[k]], cmip6.off.s[[k]], col = rgb(126/255, 128/255, 93/255), cex = 1.4, lwd = 5)
+               panel.xyplot(cmip5.off.s[[k]], cmip5.off.s[[k]], col = rgb(126/255, 128/255, 93/255, 0.5), cex = 1.2)
+               panel.xyplot(cmip6.off.s[[k]], cmip6.off.s[[k]], col = rgb(126/255, 128/255, 93/255), cex = 1.2, lwd = 5)
                panel.xyplot(...)
              })
     })
