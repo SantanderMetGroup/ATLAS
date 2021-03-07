@@ -226,9 +226,9 @@ computeFigures <- function(regions,
     col <- col[ind]
     ylab <- bquote(Delta*"T(ºC)")
     
-    if (is.null(ylim)) ylim <- c(floor(min(c(dfi$value, cmip5.off, cmip6.off), na.rm = T)) - 1, ceiling(max(dfj$value, na.rm = T)) + 1); step <- 1
+    if (is.null(ylim)) ylim <- c(floor(min(c(dfi$value, cmip5.off, cmip6.off), na.rm = T)), ceiling(max(dfj$value, na.rm = T))); step <- 1
     
-    bp <-  xyplot(value~term, data = df, ylim = ylim, pch = 19, ylab = ylab, aspect = "45",
+    bp <- xyplot(value~term, data = df, ylim = ylim, pch = 19, ylab = ylab, aspect = "45",
                  # scales=list(x=list(at=c(2,5,8), alternating=2, tck = c(0,1))
                  scales = list(x = list(at = NULL)),
                  col = col, cex = 1, xlab = "Periods and warming levels", #, 
@@ -240,6 +240,7 @@ computeFigures <- function(regions,
                                 col = rgb(126/255, 128/255, 93/255, 0.5), lwd = 3)
                    panel.abline(h = cmip6.off,
                                 col = rgb(126/255, 128/255, 93/255), lwd = 3)
+                   panel.segments(-2, 0, 34, 0, lty = 1, col = "gray65")
                    panel.segments(df$term, dfi$value, df$term, dfj$value, col = col, lty = c(1, 2, 1), lwd = c(5, 2, 5)) #alpha = 0.5)
                    panel.segments(df$term, dfi.sub$value, df$term, dfj.sub$value, col = rep(col[seq(1, length(col), 3)], each = 3), lwd = 7) #alpha = 0.5)
                    panel.xyplot(...)
@@ -406,13 +407,26 @@ computeFigures <- function(regions,
     }
     sp <- lapply(1:length(scatter.seasons), function(k) {
       
-        dfs <- data.frame("y" = c(WLmediana.cmip5.sub[[k]], WLmediana.cmip5[[k]], WLmediana.cordex[[k]], WLmediana.cmip6[[k]]), 
+      #########remove cmip5.sub for WL1.5 and 2
+      WLp10.cmip5.b.sub[[k]] <- WLp10.cmip5.b.sub[[k]] + c(NA, NA, 0, 0)
+      WLp90.cmip5.b.sub[[k]] <- WLp90.cmip5.b.sub[[k]] + c(NA, NA, 0, 0)
+      WLmediana.cmip5.b.sub[[k]] <- WLmediana.cmip5.b.sub[[k]] + c(NA, NA, 0, 0)
+      WLp10.cmip5.sub[[k]] <- WLp10.cmip5.sub[[k]] + c(NA, NA, 0, 0)
+      WLp90.cmip5.sub[[k]] <- WLp90.cmip5.sub[[k]] + c(NA, NA, 0, 0)
+      WLmediana.cmip5.sub[[k]] <- WLmediana.cmip5.sub[[k]] + c(NA, NA, 0, 0)
+      #############
+      
+      dfs <- data.frame("y" = c(WLmediana.cmip5.sub[[k]], WLmediana.cmip5[[k]], WLmediana.cordex[[k]], WLmediana.cmip6[[k]]), 
                           "x" = c(WLmediana.cmip5.b.sub[[k]], WLmediana.cmip5.b[[k]], WLmediana.cordex.b[[k]], WLmediana.cmip6.b[[k]]))
       
 
       
       
       col <- c(rgb(0.55,0,0.55,0.5), 
+               rgb(1, 0.73, 0.06, 0.5), 
+               rgb(0, 0, 0, 0.5), 
+               rgb(0.5, 0.3, 0.16, 0.5), 
+               rgb(0.55,0,0.55,0.5), 
                rgb(1, 0.73, 0.06, 0.5), 
                rgb(0, 0, 0, 0.5), 
                rgb(0.5, 0.3, 0.16, 0.5), 
@@ -427,8 +441,11 @@ computeFigures <- function(regions,
       
       xlimk <- xlim
       ylimk <- ylim
-      if (is.null(xlim)) xlimk <- c(min(c(WLp10.cmip5.b[[k]],WLp10.cordex.b[[k]],WLp10.cmip6.b[[k]]), na.rm = T)-1, max(c(WLp90.cmip5.b[[k]],WLp90.cordex.b[[k]], WLp90.cmip6.b[[k]]), na.rm = T)+1)
-      if (is.null(ylim)) ylimk <- c(min(c(WLp10.cmip5[[k]],WLp10.cordex[[k]],WLp10.cmip6[[k]]), na.rm = T)-1, max(c(WLp90.cmip5[[k]],WLp90.cordex[[k]], WLp90.cmip6[[k]]), na.rm = T)+1)
+      if (is.null(xlim)) xlimk <- c(floor(min(c(WLp10.cmip5.b[[k]],WLp10.cordex.b[[k]],WLp10.cmip6.b[[k]], cmip5.off.s.b[[k]], cmip6.off.s.b[[k]]), na.rm = T)), ceiling(max(c(WLp90.cmip5.b[[k]],WLp90.cordex.b[[k]], WLp90.cmip6.b[[k]], cmip5.off.s.b[[k]], cmip6.off.s.b[[k]]), na.rm = T)))
+      if (is.null(ylim)) ylimk <- c(floor(min(c(WLp10.cmip5[[k]],WLp10.cordex[[k]],WLp10.cmip6[[k]], cmip5.off.s[[k]], cmip6.off.s[[k]]), na.rm = T)), ceiling(max(c(WLp90.cmip5[[k]],WLp90.cordex[[k]], WLp90.cmip6[[k]], cmip5.off.s[[k]], cmip6.off.s[[k]]), na.rm = T)))
+      
+     
+      
       
       xyplot(y~x, data = dfs, xlim = xlimk, ylim = ylimk, pch = 19, aspect = "45", 
              # scales = list(x = list(rot = 90)),
@@ -437,18 +454,22 @@ computeFigures <- function(regions,
              panel = function(...){
                # panel.abline(h = do.call("seq", as.list(c(ylim, step))),
                #              col = "gray65", lwd = 0.5, lty = 2)
-               panel.segments(WLp10.cmip6.b[[k]], WLmediana.cmip6[[k]], WLp90.cmip6.b[[k]], WLmediana.cmip6[[k]], col = col[9:12], lwd = 5)
-               panel.segments(WLmediana.cmip6.b[[k]], WLp10.cmip6[[k]], WLmediana.cmip6.b[[k]], WLp90.cmip6[[k]], col = col[9:12], lwd = 5)
+               panel.segments(WLp10.cmip6.b[[k]], WLmediana.cmip6[[k]], WLp90.cmip6.b[[k]], WLmediana.cmip6[[k]], col = col[13:16], lwd = 5)
+               panel.segments(WLmediana.cmip6.b[[k]], WLp10.cmip6[[k]], WLmediana.cmip6.b[[k]], WLp90.cmip6[[k]], col = col[13:16], lwd = 5)
                panel.segments(WLp10.cmip5.b[[k]], WLmediana.cmip5[[k]], WLp90.cmip5.b[[k]], WLmediana.cmip5[[k]], col = col[1:4], lwd = 5)
                panel.segments(WLmediana.cmip5.b[[k]], WLp10.cmip5[[k]], WLmediana.cmip5.b[[k]], WLp90.cmip5[[k]], col = col[1:4], lwd = 5)
-               panel.segments(WLp10.cordex.b[[k]], WLmediana.cordex[[k]], WLp90.cordex.b[[k]], WLmediana.cordex[[k]], col = col[5:8], lwd = 2, lty = 2)
-               panel.segments(WLmediana.cordex.b[[k]], WLp10.cordex[[k]], WLmediana.cordex.b[[k]], WLp90.cordex[[k]], col = col[5:8], lwd = 2, lty = 2)
+               panel.segments(WLp10.cordex.b[[k]], WLmediana.cordex[[k]], WLp90.cordex.b[[k]], WLmediana.cordex[[k]], col = col[9:12], lwd = 2, lty = 2)
+               panel.segments(WLmediana.cordex.b[[k]], WLp10.cordex[[k]], WLmediana.cordex.b[[k]], WLp90.cordex[[k]], col = col[9:12], lwd = 2, lty = 2)
                
-               panel.segments(WLp10.cmip5.b.sub[[k]], WLmediana.cmip5.sub[[k]], WLp90.cmip5.b.sub[[k]], WLmediana.cmip5.sub[[k]], col = col[1:4], lwd = 2, lty = 2)
-               panel.segments(WLmediana.cmip5.b.sub[[k]], WLp10.cmip5.sub[[k]], WLmediana.cmip5.b.sub[[k]], WLp90.cmip5.sub[[k]], col = col[1:4], lwd = 2, lty = 2)
+               # panel.segments(WLp10.cmip5.b.sub[[k]], WLmediana.cmip5.sub[[k]], WLp90.cmip5.b.sub[[k]], WLmediana.cmip5.sub[[k]], col = col[1:4], lwd = 2, lty = 2)
+               panel.segments(WLmediana.cmip5.b.sub[[k]], WLp10.cmip5.sub[[k]], WLmediana.cmip5.b.sub[[k]], WLp90.cmip5.sub[[k]], col = col[5:8], lwd = 2, lty = 2)
                
-               panel.segments(min(xlimk) - 10, 0, max(xlimk) + 10, 0, lty = 3)
-               panel.segments(0, min(ylimk) - 2, 0, max(ylimk) + 2, lty = 3)
+               panel.segments(min(xlimk) - 10, 0, max(xlimk) + 10, 0, lty = 1, col = "gray65")
+               panel.segments(0, min(ylimk) - 2, 0, max(ylimk) + 2, lty = 1, col = "gray65")
+               
+               panel.abline(h = do.call("seq", as.list(c(ylimk, step))),
+                            col = "gray65", lwd = 0.5, lty = 2)
+               
                panel.xyplot(cmip5.off.s[[k]], cmip5.off.s[[k]], col = rgb(126/255, 128/255, 93/255, 0.5), pch = 19, cex = 1.2)
                panel.xyplot(cmip6.off.s[[k]], cmip6.off.s[[k]], col = rgb(126/255, 128/255, 93/255), cex = 1.4, lwd = 5)
                panel.xyplot(...)
