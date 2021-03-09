@@ -3,8 +3,6 @@
 {% set variable = ('GLOBALS', '_DRS_variable') %}
 {% set size = ('GLOBALS', 'size') %}
 {% set frequency = ('GLOBALS', 'frequency') %}
-{% set lat_coord = df.iloc[0][(df.iloc[0] =='latitude')].index[0][0] %}
-{% set lon_coord = df.iloc[0][(df.iloc[0] =='longitude')].index[0][0] %}
 {% set fxs = (['areacella', 'areacello', 'areacellr', 'basin', 'deptho',
                'gridspec', 'hfgeou', 'lm', 'mrsofc', 'orog', 'orograw',
                'rootd', 'sftgif', 'sftlf', 'sftof', 'thkcello', 'volcello', 'zfull']) %}
@@ -17,27 +15,16 @@
   <remove name="variable_id" type="attribute" />
   <remove name="version" type="attribute" />
 
-<!--
-  <variable name="{{ lon_coord }}" type="double" shape="{{ df[(lon_coord, '_dimensions')].iloc[0] }}">
-    <values>{{ df[(lon_coord, '_values')].iloc[0].ravel() | join(" ") }}</values>
-  </variable>
-  {% if (lon_coord + '_bnds', 'values') in df.columns %}
-  <variable name="{{ lon_coord }}_bnds" type="double" shape="{{ df[(lon_coord, '_dimensions')].iloc[0] }}, 2">
-    <values>{{ df[(lon_coord + '_bnds', '_values')].iloc[0].ravel() | join(" ") }}</values>
-  </variable>
-  {% endif %}
--->
-
   {% if (df[('GLOBALS', '_time_same_coordinate')].all()) and 
         ((df[('time', 'units')].dropna().unique())|length == 1) and
         (not df[('GLOBALS', '_require_custom_time')].any()) %}
     {% for name,group in df[df[frequency] != 'fx'].groupby((variable)) %}
-  <variable name="{{ name }}" shape="time {{ lat_coord }} {{ lon_coord }}">
+  <variable name="{{ name }}" shape="{{ group.iloc[0][(name, '_dimensions')].replace(',', ' ') }}">
     <attribute name="version" type="string" value="v{{ ','.join(group[('GLOBALS', '_DRS_version')].unique()|list|map('string')) }}" />
     <attribute name="tracking_ids" type="string" value="{{ ','.join(group[('GLOBALS', 'tracking_id')]) }}" />
-    {% if group[('GLOBALS', '_DRS_model')].iloc[0] in ['CESM2-WACCM', 'CESM2'] %}
+    {% if (group[('GLOBALS', '_DRS_model')].iloc[0] in ['CESM2-WACCM', 'CESM2']) and (name not in ["ph", "tos", "siconc"]) %}
     <!-- CESM2-WACCM need to redifine coordinates -->
-    <attribute name="coordinates" value="time {{ lat_coord }} {{ lon_coord }}" />
+    <attribute name="coordinates" value="{{ group.iloc[0][(name, '_dimensions')].replace(',', ' ') }}" />
     {% endif %}
   </variable>
     {% endfor %}
@@ -52,12 +39,14 @@
     {% endfor %}
     <values>{{ group.sort_values(by=[('GLOBALS', '_DRS_period1')])[('time', '_values')]|_values|join(' ') }}</values>
   </variable>
-  <variable name="{{ group[variable].iloc[0] }}" shape="time_{{ name }} {{ lat_coord }} {{ lon_coord }}">
+  <variable name="{{ group[variable].iloc[0] }}" shape="time_{{ name }} {{ (group.iloc[0][(name, '_dimensions')].split(',')[1:])|join(' ') }}">
     <attribute name="version" type="string" value="v{{ ','.join(group[('GLOBALS', '_DRS_version')].unique()|list|map('string')) }}" />
     <attribute name="tracking_ids" type="string" value="{{ ','.join(group[('GLOBALS', 'tracking_id')]) }}" />
-    {% if group[('GLOBALS', '_DRS_model')].iloc[0] in ['CESM2-WACCM', 'CESM2'] %}
+    {% if (group[('GLOBALS', '_DRS_model')].iloc[0] in ['CESM2-WACCM', 'CESM2']) and (name not in ["ph", "tos", "siconc"]) %}
     <!-- CESM2-WACCM need to redifine coordinates -->
-    <attribute name="coordinates" value="time_{{ name }} {{ lat_coord }} {{ lon_coord }}" />
+    <attribute name="coordinates" value="{{ group.iloc[0][(name, '_dimensions')].replace(',', ' ') }}" />
+    {% elif ((name, 'coordinates') in df.columns) and not (group[(name, 'coordinates')].isna().all()) %}
+    <attribute name="coordinates" value="{{ (group[(name, 'coordinates')].dropna().iloc[0])|replace(',', ' ')|replace('time', ''.join(['time_', name])) }}" />
     {% endif %}
   </variable>
   {% endfor %}
