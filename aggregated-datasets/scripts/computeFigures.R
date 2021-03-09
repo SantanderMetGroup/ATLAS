@@ -162,6 +162,21 @@ computeFigures <- function(regions,
                                                 ref.period = ref.period, 
                                                 area = area,
                                                 region = region))
+    
+    cmip5.off.s <- lapply(scatter.seasons, function(s) suppressMessages(computeOffset(project = "CMIP5", 
+                                                                                      var = "tas",
+                                                                                      experiment = "rcp85",
+                                                                                      season = s, 
+                                                                                      ref.period = ref.period, 
+                                                                                      area = area,
+                                                                                      region = region)))
+    cmip6.off.s <- lapply(scatter.seasons, function(s) suppressMessages(computeOffset(project = "CMIP6", 
+                                                                                      var = "tas",
+                                                                                      experiment = "ssp585",
+                                                                                      season = s, 
+                                                                                      ref.period = ref.period, 
+                                                                                      area = area,
+                                                                                      region = region)))
     #### PLOT 
     
     
@@ -226,7 +241,7 @@ computeFigures <- function(regions,
     col <- col[ind]
     ylab <- bquote(Delta*"T(ºC)")
     
-    if (is.null(ylim)) ylim <- c(floor(min(c(dfi$value, cmip5.off, cmip6.off), na.rm = T)), ceiling(max(dfj$value, na.rm = T))); step <- 1
+    if (is.null(ylim)) ylim <- c(floor(min(c(dfi$value, cmip5.off, cmip6.off, unlist(cmip5.off.s), unlist(cmip5.off.s)), na.rm = T)), ceiling(max(dfj$value, na.rm = T))); step <- 1
     
     bp <- xyplot(value~term, data = df, ylim = ylim, pch = 19, ylab = ylab, aspect = "45",
                  # scales=list(x=list(at=c(2,5,8), alternating=2, tck = c(0,1))
@@ -361,20 +376,7 @@ computeFigures <- function(regions,
     
     #### OFFSET
     
-    cmip5.off.s <- lapply(scatter.seasons, function(s) suppressMessages(computeOffset(project = "CMIP5", 
-                                                var = "tas",
-                                                experiment = "rcp85",
-                                                season = s, 
-                                                ref.period = ref.period, 
-                                                area = area,
-                                                region = region)))
-    cmip6.off.s <- lapply(scatter.seasons, function(s) suppressMessages(computeOffset(project = "CMIP6", 
-                                                var = "tas",
-                                                experiment = "ssp585",
-                                                season = s, 
-                                                ref.period = ref.period, 
-                                                area = area,
-                                                region = region)))
+
     cmip5.off.s.b <- lapply(scatter.seasons, function(s) suppressMessages(computeOffset(project = "CMIP5", 
                                                                                       var = "pr",
                                                                                       experiment = "rcp85",
