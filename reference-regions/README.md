@@ -2,7 +2,11 @@
 
 Several alternative sets of regions are included to facilitate the regional synthesis of information:
 * IPCC-WGI reference regions
-* Pacific small islands
+* Small islands
+* Oceanic biomes
+* Monsoon regions
+
+Click on the geojson files to see the regions in an integrated viewer. 
 
 ## IPCC-WGI Reference Regions (version 4)
 
