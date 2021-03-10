@@ -9,14 +9,18 @@ test.h <- lapply(datasets.h, function(x){
   tryCatch({
     print(x)
     di <- dataInventory(x)
-    loadGridData(x, var = names(di)[1], years = 2000, lonLim=c(0,180), season = 2:3, aggr.m = "mean")
+    v <- names(di)[1]
+    v <- if(v == "ph") { "ph@10" } else { v }
+    loadGridData(x, var = v, years = 2000, lonLim=c(0,180), season = 2:3, aggr.m = "mean")
   }, error = function(err) {print(err)})
 })
 test.f <- lapply(datasets.f, function(x){
   tryCatch({
     print(x)
     di <- dataInventory(x)
-    loadGridData(x, var = names(di)[1], years = 2020, lonLim=c(0,180), season = 2:3, aggr.m = "mean")
+    v <- names(di)[1]
+    v <- if(v == "ph") { "ph@10" } else { v }
+    loadGridData(x, var = v, years = 2020, lonLim=c(0,180), season = 2:3, aggr.m = "mean")
   }, error = function(err) {print(err)})
 })
 names(test.h) <- datasets.h
