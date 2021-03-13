@@ -31,15 +31,15 @@ source("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/mai-devel/aggr
 
 # select seasons, use c(12,1,2) for winter
 scatter.seasons <- list(c(12, 1, 2), 6:8)
-scatter.seasons <- list(c(12, 1, 2, 3), 6:9)
-scatter.seasons <- list(c(12, 1, 2), 6:9)
+# scatter.seasons <- list(c(12, 1, 2, 3), 6:9)
+# scatter.seasons <- list(c(12, 1, 2), 6:9)
 # scatter.seasons <- list(1:12)
 # select reference period
 ref.period <- 1995:2014
 # ref.period <- 1986:2005
 # ref.period <- 1850:1900
 # select the area, i.e. "land", "sea" or "landsea"
-area <- "land"
+area <- "landsea"
 # Select reference regions.  Select the CORDEX domain to be considered
 regions <- c("NWN","NEN","WNA","CNA","ENA", "NCA"); cordex.domain <- "NAM"
 regions <- c("NWS","NSA", "SAM", "NES", "SWS", "SES", "SSA"); cordex.domain <- "SAM"
@@ -54,8 +54,9 @@ regions <- c("MED","SAH","WAF","CAF","NEAF", "SEAF", "WSAF", "ESAF", "MDG"); cor
 # regions <- c("NEU","WCE","EEU","MED"); cordex.domain <- "EUR"
 # regions <- c("NWN","NEN","GIC","RAR"); cordex.domain <- "ARC"
 # regions <- c("ARO"); cordex.domain <- "ARC"
-# regions <- c("world"); cordex.domain <- FALSE
 # regions <- c("TIB", "SAS"); cordex.domain <- "WAS"
+regions <- c("world"); cordex.domain <- FALSE
+
 
 
 # select figure axes ranges (ylim for temperature, xlim for precipitation percentage)
@@ -63,7 +64,8 @@ ylim <- c(0, 6)
 xlim <- c(-50, 50)
 ylim <- NULL
 xlim <- NULL
-
+ylim <- c(-2, 8)
+xlim <- c(-5, 15)
 
 
 a <- computeFigures(regions = regions,
