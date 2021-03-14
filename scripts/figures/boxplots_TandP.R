@@ -37,17 +37,17 @@ scatter.seasons <- list(c(12, 1, 2), 6:8)
 # select reference period
 ref.period <- 1995:2014
 # ref.period <- 1986:2005
-# ref.period <- 1850:1900
+ref.period <- 1850:1900
 # select the area, i.e. "land", "sea" or "landsea"
-area <- "land"
+area <- "landsea"
 # Select reference regions.  Select the CORDEX domain to be considered
 regions <- c("NWN","NEN","GIC","RAR"); cordex.domain <- "ARC"
 regions <- c("SEA"); cordex.domain <- "SEA"
-# regions <- c("NWN","NEN","WNA","CNA","ENA", "NCA"); cordex.domain <- "NAM"
+regions <- c("ECA", "EAS"); cordex.domain <- "EAS"
+regions <- c("NWN","NEN","WNA","CNA","ENA", "NCA"); cordex.domain <- "NAM"
 # regions <- c("NWS","NSA", "SAM", "NES", "SWS", "SES", "SSA"); cordex.domain <- "SAM"
 # regions <- c("NCA", "SCA", "CAR"); cordex.domain <- "CAM"
 # regions <- c("MED","SAH","WAF","CAF","NEAF", "SEAF", "WSAF", "ESAF", "MDG"); cordex.domain <- "AFR"
-# regions <- c("ECA", "EAS"); cordex.domain <- "EAS"
 # regions <- c("WCA","TIB", "ARP", "SAS"); cordex.domain <- "WAS"
 # regions <- c("EEU","WSB","ESB","RFE", "WCA", "ECA"); cordex.domain <- FALSE
 # regions <- c("SEA", "NAU","CAU","EAU","SAU","NZ"); cordex.domain <- "AUS"
@@ -55,7 +55,7 @@ regions <- c("SEA"); cordex.domain <- "SEA"
 # regions <- c("NEU","WCE","EEU","MED"); cordex.domain <- "EUR"
 # regions <- c("ARO"); cordex.domain <- "ARC"
 # regions <- c("TIB", "SAS"); cordex.domain <- "WAS"
-# regions <- c("world"); cordex.domain <- FALSE
+regions <- c("world"); cordex.domain <- FALSE
 
 
 
@@ -64,8 +64,7 @@ ylim <- c(0, 6)
 xlim <- c(-50, 50)
 ylim <- NULL
 xlim <- NULL
-# ylim <- c(-2, 8)
-# xlim <- c(-5, 15)
+
 
 
 a <- computeFigures(regions = regions,
@@ -78,7 +77,7 @@ a <- computeFigures(regions = regions,
 
 # select the path and the name of the output pdf
 outfilename <- paste0(cordex.domain, "_", area, "_baseperiod_", paste(range(ref.period), collapse = "-"), "_ATvsAP.pdf")
-# outfilename <- paste0("GLOBAL", "_", area, "_baseperiod_", paste(range(ref.period), collapse = "-"), "_ATvsAP.pdf")
+outfilename <- paste0("GLOBAL", "_", area, "_baseperiod_", paste(range(ref.period), collapse = "-"), "_ATvsAP.pdf")
 # Play with arguments width and height to create different size pds-s
 pdf(outfilename, width = (length(scatter.seasons)+1)*10/2, height = length(regions)*10/2)
 do.call("grid.arrange", a)
