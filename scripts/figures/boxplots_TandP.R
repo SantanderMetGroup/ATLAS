@@ -39,7 +39,7 @@ ref.period <- 1995:2014
 # ref.period <- 1986:2005
 # ref.period <- 1850:1900
 # select the area, i.e. "land", "sea" or "landsea"
-area <- "landsea"
+area <- "sea"
 # Select reference regions.  Select the CORDEX domain to be considered
 regions <- c("NWN","NEN","GIC","RAR"); cordex.domain <- "ARC"
 regions <- c("ARO"); cordex.domain <- "ARC"
