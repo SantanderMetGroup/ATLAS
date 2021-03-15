@@ -47,19 +47,19 @@ fi
 # Not before because of PBS_NODEFILE
 set -u
 
-#find /oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6 -mindepth 5 -maxdepth 5 -type d > directories
-#
-## todf.py
-#parallel --gnu -a directories -j$JOBS_PER_NODE --slf nodes --wd $WORKDIR "
-#    if grep -q -F {} ${nc_inventory} ; then
-#        echo '* todf.py on directory {}' >&2
-#        grep -F {} ${nc_inventory} | python -W ignore ${publisher}/todf.py \
-#            --drs \"$drs\" \
-#            -v $coordinates \
-#            --facets $facets \
-#            --facets-numeric $facets_numeric \
-#            ${hdfs_raw}
-#    fi" | tee ${raw_inventory}
+find /oceano/gmeteo/DATA/ESGF/REPLICA/DATA/CMIP6 -mindepth 5 -maxdepth 5 -type d > directories
+
+# todf.py
+parallel --gnu -a directories -j$JOBS_PER_NODE --slf nodes --wd $WORKDIR "
+    if grep -q -F {} ${nc_inventory} ; then
+        echo '* todf.py on directory {}' >&2
+        grep -F {} ${nc_inventory} | python -W ignore ${publisher}/todf.py \
+            --drs \"$drs\" \
+            -v $coordinates \
+            --facets $facets \
+            --facets-numeric $facets_numeric \
+            ${hdfs_raw}
+    fi" | tee ${raw_inventory}
 
 # cmip6.py
 parallel --gnu -a ${raw_inventory} -j$JOBS_PER_NODE --slf nodes --wd $WORKDIR "
