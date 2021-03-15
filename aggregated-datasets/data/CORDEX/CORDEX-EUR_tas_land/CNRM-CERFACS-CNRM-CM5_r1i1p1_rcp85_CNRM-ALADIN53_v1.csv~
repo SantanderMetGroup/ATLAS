@@ -4,7 +4,6 @@
 #Interpolation_method: cdo remap
 #Spatial_resolution: 1º
 #Creation_Date: 2021-02-24
-#Author: IPCC-WGI Atlas Hub (https://github.com/SantanderMetGroup/IPCC-Atlas). Santander Meteorology Group.
 "date","NEU","WCE","EEU","MED","world"
 "2006-01",-7.671,-1.842,-18.15,4.662,-5.857
 "2006-02",-6.989,-2.276,-11.809,4.302,-4.697
