@@ -31,7 +31,7 @@ source("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/mai-devel/aggr
 
 # select seasons, use c(12,1,2) for winter
 scatter.seasons <- list(c(12, 1, 2), 6:8)
-# scatter.seasons <- list(c(12, 1, 2, 3), 6:9)
+scatter.seasons <- list(c(12, 1, 2, 3), 6:9)
 # scatter.seasons <- list(c(12, 1, 2), 6:9)
 # scatter.seasons <- list(1:12)
 # select reference period
@@ -49,8 +49,8 @@ area <- "land"
 # regions <- c("world"); cordex.domain <- FALSE
 # regions <- c("WAN","EAN"); cordex.domain <- "ANT"
 # regions <- c("NWS","NSA", "SAM", "NES", "SWS", "SES", "SSA"); cordex.domain <- "SAM"
-regions <- c("NCA", "SCA", "CAR"); cordex.domain <- "CAM"
-# regions <- c("MED","SAH","WAF","CAF","NEAF", "SEAF", "WSAF", "ESAF", "MDG"); cordex.domain <- "AFR"
+# regions <- c("NCA", "SCA", "CAR"); cordex.domain <- "CAM"
+regions <- c("MED","SAH","WAF","CAF","NEAF", "SEAF", "WSAF", "ESAF", "MDG"); cordex.domain <- "AFR"
 # regions <- c("WCA","TIB", "ARP", "SAS"); cordex.domain <- "WAS"
 # regions <- c("EEU","WSB","ESB","RFE", "WCA", "ECA"); cordex.domain <- FALSE
 # regions <- c("SEA", "NAU","CAU","EAU","SAU","NZ"); cordex.domain <- "AUS"
