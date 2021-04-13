@@ -22,10 +22,9 @@ The csv file contains the corner coordinates defining each region in [EPSG:4326]
 
 Spatially averaged results of CMIP5 and CMIP6 models (see [Atlas Hub inventory](https://github.com/SantanderMetGroup/IPCC-Atlas/tree/devel/AtlasHub-inventory), version 20191211) have been computed for the different reference regions and are available at the [*aggregated-datasets*](https://github.com/SantanderMetGroup/ATLAS/tree/devel/aggregated-datasets) folder. 
 
-
 ***
-**NOTE!**: Region acronyms followed by the `*` suffix in the csv file define the part of the polygon of the same name that extends beyond the 180º meridian (i.e. RAR, NPO, EPO and SPO). This necessary distinction in the csv disappears in the spatial objects (the R data object and the shapefile), as the regions separated by the 180º meridian are merged and considered as a single polygon.
+**NOTE**: Region acronyms followed by the `*` suffix in the csv file define the part of the polygon of the same name that extends beyond the 180º meridian (i.e. RAR, NPO, EPO and SPO). This distinction is not needed in the spatial objects (the R data object and the shapefile), as the regions separated by the 180º meridian are merged and considered as a single polygon.
 
 ## River basins
 
-Comprises 28 major river basins filtered from the world bank data catalogue (total of 254 basins; https://datacatalog.worldbank.org/dataset/major-river-basins-world). This dataset was facilitated by Aristeidis Koutroulis (Technical University of Crete) and Richard Betts (Met Office Hadley Centre), as part of IPCC WGII activities. 
+Comprises 28 major river basins filtered from the world bank data catalogue ([total of 254 basins](https://datacatalog.worldbank.org/dataset/major-river-basins-world)). This dataset was facilitated by Aristeidis Koutroulis (Technical University of Crete) and Richard Betts (Met Office Hadley Centre), as part of IPCC WGII activities. 
