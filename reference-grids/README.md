@@ -14,5 +14,9 @@ A jupyter notebook illustrating a simple example of their use in R is provided i
 TBC
 
 ### Mountain-ranges masks
+
+The mountain ranges masks have been defined using the K1 global mountains raster GIS datalayer (USGS Land Change Science Global Ecosystems; Kapos et al. 2000). The K1 resource defines six classes of mountains using a 1 km DEM which was processed using a combination of elevation, slope and relative relief. The upper three classes are defined by elevation ranges.
+https://rmgsc.cr.usgs.gov/outgoing/ecosystems/Global/ (file: GME_K1binary.zip)
+
 Created from 1kbinary_upscaled05 (upscaled to 0.5 degree using the mean) and using a 0.75 threshold (for mountain area within the gridbox). The 2 deg and 1 deg masks are upscaled versions (using the mean) using a 0.5 threshold (to better match the areas in the different resolution grids).
 
