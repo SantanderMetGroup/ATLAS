@@ -7,7 +7,7 @@ Several reference grids (with 0.5 deg, 1 deg, and 2 deg spatial resolution) are 
 A jupyter notebook illustrating a simple example of their use in R is provided in *notebooks*. 
 
 <p align="center">
-  <img src="/man/reference-grids.png" alt="" width="400" />
+  <img src="/man/reference-grids.png" alt="" width="600" />
 </p>
 
 ### Land-sea masks
