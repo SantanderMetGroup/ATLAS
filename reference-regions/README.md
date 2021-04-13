@@ -2,9 +2,11 @@
 
 Several alternative sets of regions are included to facilitate the regional synthesis of information:
 * IPCC-WGI reference regions
+* IPCC-WGII continental regions
+* Monsoon regions
+* River basins
 * Small islands
 * Oceanic biomes
-* Monsoon regions
 
 Click on the geojson files to see the regions in an integrated viewer. 
 
@@ -23,4 +25,6 @@ Spatially averaged results of CMIP5 and CMIP6 models (see [Atlas Hub inventory](
 ***
 **NOTE!**: Region acronyms followed by the `*` suffix in the csv file define the part of the polygon of the same name that extends beyond the 180º meridian (i.e. RAR, NPO, EPO and SPO). This necessary distinction in the csv disappears in the spatial objects (the R data object and the shapefile), as the regions separated by the 180º meridian are merged and considered as a single polygon.
 
+## River basins
 
+Comprises 28 major river basins filtered from the world bank data catalogue (total of 254 basins; https://datacatalog.worldbank.org/dataset/major-river-basins-world). This dataset was facilitated by Aristeidis Koutroulis (Technical University of Crete) and Richard Betts (Met Office Hadley Centre), as part of IPCC WGII activities. 
