@@ -15,8 +15,6 @@ TBC
 
 ### Mountain-ranges masks
 
-The mountain ranges masks have been defined using the K1 global mountains raster GIS datalayer (USGS Land Change Science Global Ecosystems; Kapos et al. 2000). The K1 resource defines six classes of mountains using a 1 km DEM which was processed using a combination of elevation, slope and relative relief. The upper three classes are defined by elevation ranges.
-https://rmgsc.cr.usgs.gov/outgoing/ecosystems/Global/ (file: GME_K1binary.zip)
+The mountain ranges masks (0.5, 1 and 2 deg) have been defined using the K1 global mountains GIS datalayer ([USGS Land Change Science Global Ecosystems](https://rmgsc.cr.usgs.gov/outgoing/ecosystems/Global); file: GlobalMountainsK1Binary.zip; Kapos et al. 2000). The raster is based on 1 km DEM and has been upscaled to 0.5 degree using a 0.75 threshold for mountain area extent within the gridbox. The 2 deg and 1 deg masks are upscaled versions of the 0.5 deg grid considering a 0.5 threshold for mountain area extent within the gridbox to better match the mountain areas in the different resolution grids.
 
-Created from 1kbinary_upscaled05 (upscaled to 0.5 degree using the mean) and using a 0.75 threshold (for mountain area within the gridbox). The 2 deg and 1 deg masks are upscaled versions (using the mean) using a 0.5 threshold (to better match the areas in the different resolution grids).
-
+Kapos, V., J. Rhind, M. Edwards, M. Prince, and C. Ravilious (2000) Developing a map of the world’s mountain forests. In: M. Price and N. Butt (eds), Forests in Sustainable Mountain Development, IUFRO Research Series 5, CABI Publishing, Wallingford, UK; pp. 4-9.
