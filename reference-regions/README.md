@@ -1,7 +1,7 @@
 # Sets of regions for the ATLAS
 
 Several alternative sets of regions are included to facilitate the regional synthesis of information:
-* IPCC-WGI reference regions
+* IPCC-WGI reference regions (land and mountain-range subregions are also defined using [masks](../reference-grids)) 
 * IPCC-WGII continental regions
 * Monsoon regions
 * River basins
