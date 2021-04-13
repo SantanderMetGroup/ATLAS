@@ -1,4 +1,4 @@
-# Sets of reference grids for the ATLAS
+## Sets of reference grids for the ATLAS
 
 Several reference grids (with 0.5 deg, 1 deg, and 2 deg spatial resolution) are used in the Atlas to interpolate CORDEX, CMIP5 and CMIP6 ensembles to common regular grids (also 0.25 deg for regional observations and CORDEX-EUR). Some datasets produced using these masks are:
 * land sea masks: land_sea_mask_*.nc4 
@@ -10,7 +10,7 @@ A jupyter notebook illustrating a simple example of their use in R is provided i
   <img src="/man/reference_grids.png" alt="" width="400" />
 </p>
 
-## Land-sea masks
+### Land-sea masks
 TBC
 
 ### Mountain-ranges masks
