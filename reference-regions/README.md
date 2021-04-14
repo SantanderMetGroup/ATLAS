@@ -6,7 +6,7 @@ Several alternative sets of regions are included to facilitate the regional synt
 * Monsoon regions
 * River basins
 * Small islands
-* Oceanic biomes
+* Ocean biomes
 
 Click on the geojson files to see the regions in an integrated viewer. 
 
@@ -28,3 +28,19 @@ Spatially averaged results of CMIP5 and CMIP6 models (see [Atlas Hub inventory](
 ### River basins
 
 Comprises 28 major river basins filtered from the world bank data catalogue ([total of 254 basins](https://datacatalog.worldbank.org/dataset/major-river-basins-world)). This dataset was facilitated by Aristeidis Koutroulis (Technical University of Crete) and Richard Betts (Met Office Hadley Centre), as part of IPCC WGII activities. 
+
+### Ocean biomes
+
+Ocean regions or biomes as defined by [Gregor et al. (2019)](https://www.geosci-model-dev.net/12/5113/2019/), clustering and expanding the [Fay and McKinley (2014)](https://essd.copernicus.org/articles/6/273/2014/) regions defined from four observational data sets: sea surface temperature (SST), spring/summer chlorophyll a concentrations (Chl a), ice fraction, and maximum mixed layer depth (maxMLD) on a 1° × 1° grid. The regions include: 
+* Northern Hemisphere High Latitudes (NH-HL),
+* Northern Hemisphere Subtropics (NH-ST),
+* Equatorial (EQU) 
+* Southern Hemisphere High Latitudes (SH-HL) 
+* Southern Hemisphere Subtropics (SH-ST)
+* Eastern Boundaries (EastBound)
+* Amazon River (AmzOut)
+* Gulf of Mexico (GulfMex)
+* Arabian Sea (ArabSea) 
+* Indonesian Flowthrough (IndoFlow)
+
+
