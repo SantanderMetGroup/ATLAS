@@ -31,7 +31,7 @@ Comprises 28 major river basins filtered from the world bank data catalogue ([to
 
 ### Ocean biomes
 
-Ocean regions or biomes as defined by [Gregor et al. (2019)](https://www.geosci-model-dev.net/12/5113/2019/), clustering and expanding the [Fay and McKinley (2014)](https://essd.copernicus.org/articles/6/273/2014/) regions defined from four observational data sets: sea surface temperature (SST), spring/summer chlorophyll a concentrations (Chl a), ice fraction, and maximum mixed layer depth (maxMLD) on a 1° × 1° grid. The regions include: 
+Ocean regions or biomes as defined by [Gregor et al. (2019)](https://www.geosci-model-dev.net/12/5113/2019/), clustering and expanding the open ocean biomes defined by [Fay and McKinley (2014)](https://essd.copernicus.org/articles/6/273/2014/) on a 1° × 1° grid. The regions are: 
 * Northern Hemisphere High Latitudes (NH-HL),
 * Northern Hemisphere Subtropics (NH-ST),
 * Equatorial (EQU) 
