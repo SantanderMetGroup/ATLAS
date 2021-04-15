@@ -63,7 +63,7 @@ computeDeltas <- function(project,
   # root <- "https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/"
   
   ## local option-----------
-  root <- "/media/maialen/work/WORK/GIT/ATLAS/"
+  root <- "/home/maialen/WORK/GIT/ATLAS/"
   filelist <- list.files(root, recursive = T)
   #-------------------------
   
