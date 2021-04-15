@@ -1,9 +1,9 @@
 #Dataset: CMIP5_EC-EARTH_r12i1p1_historical
 #Variable: meanpr
 #Area: landsea
-#Interpolation_method: cdo remap
+#Interpolation_method: cdo remapcon
 #Spatial_resolution: 1º
-#Creation_Date: 2021-03-13
+#Creation_Date: 2021-04-14
 #Author: IPCC-WGI Atlas Hub (https://github.com/SantanderMetGroup/IPCC-Atlas). Santander Meteorology Group.
 "date","GIC","NWN","NEN","WNA","CNA","ENA","NCA","SCA","CAR","NWS","NSA","NES","SAM","SWS","SES","SSA","NEU","WCE","EEU","MED","SAH","WAF","CAF","NEAF","SEAF","WSAF","ESAF","MDG","RAR","WSB","ESB","RFE","WCA","ECA","TIB","EAS","ARP","SAS","SEA","NAU","CAU","EAU","SAU","NZ","EAN","WAN","ARO","NPO","EPO","SPO","NAO","EAO","SAO","ARS","BOB","EIO","SIO","SOO","world"
 "1850-01",1.912,1.671,0.572,1.632,1.002,3.4,1.476,1.231,1.764,3.107,3.768,5.943,8.176,1.404,3.599,3.104,2.649,1.722,0.966,2.026,0.063,0.259,1.819,0.13,2.286,3.208,6.831,6.349,0.504,0.274,0.208,1.235,0.882,0.098,0.171,2.605,0.388,0.548,8.356,8.375,1.328,4.675,1.66,4.117,0.683,0.909,0.632,3.559,5.167,3.123,2.81,3.198,2.125,0.827,3.904,5.506,2.774,2.345,2.845
