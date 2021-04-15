@@ -64,12 +64,9 @@ regions <- c("world"); cordex.domain <- FALSE
 
 
 # select figure axes ranges (ylim for temperature, xlim for precipitation percentage)
-ylim <- c(0, 6)
-xlim <- c(-50, 50)
 ylim <- NULL
 xlim <- NULL
-ylim <- c(-2, 7)
-xlim <- c(-2, 13)
+
 
 
 a <- computeFigures(regions = regions,
