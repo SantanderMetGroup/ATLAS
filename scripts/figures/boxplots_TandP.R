@@ -41,11 +41,11 @@ ref.period <- 1995:2014
 # ref.period <- 1986:2005
 # ref.period <- 1850:1900
 # select the area, i.e. "land", "sea" or "landsea"
-area <- "landsea"
+area <- "land"
 
 # Select reference regions.  Select the CORDEX domain to be considered
 regions <- c("world"); cordex.domain <- FALSE
-# regions <- c("NWN","NEN","GIC","RAR"); cordex.domain <- "ARC"
+regions <- c("NWN","NEN","GIC","RAR"); cordex.domain <- "ARC"
 # regions <- c("ARO"); cordex.domain <- "ARC"
 # regions <- c("SEA"); cordex.domain <- "SEA"
 # regions <- c("ECA", "EAS"); cordex.domain <- "EAS"
@@ -79,7 +79,7 @@ a <- computeFigures(regions = regions,
 
 # select the path and the name of the output pdf
 outfilename <- paste0(cordex.domain, "_", area, "_baseperiod_", paste(range(ref.period), collapse = "-"), "_ATvsAP.pdf")
-outfilename <- paste0("GLOBAL", "_", area, "_baseperiod_", paste(range(ref.period), collapse = "-"), "_ATvsAP.pdf")
+# outfilename <- paste0("GLOBAL", "_", area, "_baseperiod_", paste(range(ref.period), collapse = "-"), "_ATvsAP.pdf")
 # Play with arguments width and height to create different size pds-s
 CairoPDF(outfilename, width = (length(scatter.seasons)+1)*10/2, height = length(regions)*10/2)
 do.call("grid.arrange", a)
