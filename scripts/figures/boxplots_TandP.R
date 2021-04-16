@@ -44,10 +44,14 @@ ref.period <- 1995:2014
 area <- "land"
 
 # Select reference regions.  Select the CORDEX domain to be considered
+regions <- c("ARO"); cordex.domain <- "ARC"
+regions <- c("TIB", "SAS"); cordex.domain <- "WAS"
+regions <- c("MED","SAH","WAF","CAF","NEAF", "SEAF", "WSAF", "ESAF", "MDG"); cordex.domain <- "AFR"
 regions <- c("world"); cordex.domain <- FALSE
+
+
 regions <- c("NWN","NEN","GIC","RAR"); cordex.domain <- "ARC"
-# regions <- c("ARO"); cordex.domain <- "ARC"
-# regions <- c("SEA"); cordex.domain <- "SEA"
+regions <- c("SEA"); cordex.domain <- "SEA"
 # regions <- c("ECA", "EAS"); cordex.domain <- "EAS"
 # regions <- c("NWN","NEN","WNA","CNA","ENA", "NCA"); cordex.domain <- "NAM"
 # regions <- c("WAN","EAN"); cordex.domain <- "ANT"
@@ -57,8 +61,6 @@ regions <- c("NWN","NEN","GIC","RAR"); cordex.domain <- "ARC"
 # regions <- c("NEU","WCE","EEU","MED"); cordex.domain <- "EUR"
 # regions <- c("NWS","NSA", "SAM", "NES", "SWS", "SES", "SSA"); cordex.domain <- "SAM"
 # regions <- c("SEA", "NAU","CAU","EAU","SAU","NZ"); cordex.domain <- "AUS"
-# regions <- c("MED","SAH","WAF","CAF","NEAF", "SEAF", "WSAF", "ESAF", "MDG"); cordex.domain <- "AFR"
-# regions <- c("TIB", "SAS"); cordex.domain <- "WAS"
 
 
 
@@ -81,6 +83,6 @@ a <- computeFigures(regions = regions,
 outfilename <- paste0(cordex.domain, "_", area, "_baseperiod_", paste(range(ref.period), collapse = "-"), "_ATvsAP.pdf")
 # outfilename <- paste0("GLOBAL", "_", area, "_baseperiod_", paste(range(ref.period), collapse = "-"), "_ATvsAP.pdf")
 # Play with arguments width and height to create different size pds-s
-CairoPDF(outfilename, width = (length(scatter.seasons)+1)*10/2, height = length(regions)*10/2)
+CairoPDF(outfilename, width = (length(scatter.seasons)+1)*10/2*0.85, height = length(regions)*10/2*0.85)
 do.call("grid.arrange", a)
 dev.off()
