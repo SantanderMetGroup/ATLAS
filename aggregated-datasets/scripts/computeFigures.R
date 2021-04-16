@@ -243,10 +243,10 @@ computeFigures <- function(regions,
     
     if (is.null(ylim)) ylim <- c(floor(min(c(dfi$value, cmip5.off, cmip6.off, unlist(cmip5.off.s), unlist(cmip5.off.s)), na.rm = T)), ceiling(max(dfj$value, na.rm = T))); step <- 1
     
-    bp <- xyplot(value~term, data = df, ylim = ylim, pch = 19, ylab = ylab, aspect = "45",
+    bp <- xyplot(value~term, data = df, ylim = ylim, pch = 19, ylab = list(ylab, cex = 1.5), aspect = "45",
                  # scales=list(x=list(at=c(2,5,8), alternating=2, tck = c(0,1))
                  scales = list(x = list(at = NULL)),
-                 col = col, cex = 1, xlab = "Periods and warming levels", #, 
+                 col = col, cex = 1, xlab = list("Periods and warming levels", cex = 1.5), #, 
                  main = list(region, cex = 1.2),
                  panel = function(...){
                    panel.abline(h = do.call("seq", as.list(c(ylim, step))),
@@ -451,7 +451,7 @@ computeFigures <- function(regions,
       
       xyplot(y~x, data = dfs, xlim = xlimk, ylim = ylimk, pch = 19, aspect = "45", 
              # scales = list(x = list(rot = 90)),
-             col = col, cex = 1, ylab = bquote(Delta*"T(ºC)"), xlab = bquote(Delta*"P(%)"),
+             col = col, cex = 1, ylab = list(bquote(Delta*"T(ºC)"), cex = 1.5), xlab = lsit(bquote(Delta*"P(%)"), cex = 1.5),
              main = list(seas.names[[k]], cex = 1.2),
              panel = function(...){
                # panel.abline(h = do.call("seq", as.list(c(ylim, step))),
