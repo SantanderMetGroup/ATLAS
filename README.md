@@ -1,6 +1,6 @@
 [![DOI](https://zenodo.org/badge/179907799.svg)](https://zenodo.org/badge/latestdoi/179907799)
 
-## The Climate Change ATLAS
+## The Multi-MIP Climate Change ATLAS
 
 The Climate Change ATLAS is an initiative to develop **tools and ready-to-use datasets** for reproducible regional analysis of observed and model projected (CMIP5, CMIP6 and CORDEX) climate change information using both time-slices (e.g. 2081-2100) and warming levels (e.g. +1.5º). A **new set of sub-continental reference regions** is provided as the basis for regional synthesis (building on IPCC AR5 reference regions) and monthly spatially aggregated datasets are produced to facilitate the development of regional climate change information. 
 
