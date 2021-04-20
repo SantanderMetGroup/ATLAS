@@ -1,7 +1,0 @@
-project=CMIP6
-activity_id=CMIP,ScenarioMIP
-frequency=mon
-realm=ocean,ocnBgchem
-variable_id=tos,o2,ph
-experiment_id=historical,ssp126,ssp245,ssp370,ssp585,ssp460
-latest=True type=File distrib=False

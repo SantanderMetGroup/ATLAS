@@ -1,8 +1,0 @@
-project=CMIP6
-activity_id=CMIP,ScenarioMIP
-experiment_id=historical
-variable_id=sftlf
-frequency=fx
-table_id=fx
-realm=atmos
-latest=True type=File distrib=False

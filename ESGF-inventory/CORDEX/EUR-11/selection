@@ -1,7 +1,0 @@
-project=CORDEX
-product=output
-experiment=historical,evaluation,rcp26,rcp45,rcp85
-time_frequency=day,fx
-variable=tas,tasmin,tasmax,pr,sftlf,orog,sfcWind
-domain=EUR-11
-type=File latest=True
