@@ -35,7 +35,7 @@ source("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/mai-devel/aggr
 scatter.seasons <- list(c(12, 1, 2), 6:8)
 # scatter.seasons <- list(c(12, 1, 2, 3), 6:9)
 # scatter.seasons <- list(c(12, 1, 2), 6:9)
-# scatter.seasons <- list(1:12)
+scatter.seasons <- list(1:12)
 # select reference period
 ref.period <- 1995:2014
 # ref.period <- 1986:2005
@@ -45,13 +45,13 @@ area <- "land"
 
 # Select reference regions.  Select the CORDEX domain to be considered
 regions <- c("ARO"); cordex.domain <- "ARC"
-regions <- c("TIB", "SAS"); cordex.domain <- "WAS"
+# regions <- c("TIB", "SAS"); cordex.domain <- "WAS"
 regions <- c("MED","SAH","WAF","CAF","NEAF", "SEAF", "WSAF", "ESAF", "MDG"); cordex.domain <- "AFR"
-regions <- c("world"); cordex.domain <- FALSE
+# regions <- c("world"); cordex.domain <- FALSE
 
 
-regions <- c("NWN","NEN","GIC","RAR"); cordex.domain <- "ARC"
-regions <- c("SEA"); cordex.domain <- "SEA"
+# regions <- c("NWN","NEN","GIC","RAR"); cordex.domain <- "ARC"
+# regions <- c("SEA"); cordex.domain <- "SEA"
 # regions <- c("ECA", "EAS"); cordex.domain <- "EAS"
 # regions <- c("NWN","NEN","WNA","CNA","ENA", "NCA"); cordex.domain <- "NAM"
 # regions <- c("WAN","EAN"); cordex.domain <- "ANT"
