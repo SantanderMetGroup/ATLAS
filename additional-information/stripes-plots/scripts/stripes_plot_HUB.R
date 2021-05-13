@@ -4,14 +4,15 @@ library(lattice)
 library(RColorBrewer)
 
 # PARAMETER SETTING ----------------
-project <- "CMIP6"; scenario <- "ssp585"
+project <- "CMIP6"; #scenario <- "ssp126"
 lonLim <- c(-10, 5)
 latLim <- c(35, 44)
 var <- "meanpr"
+aggr.fun <- "mean"
 output.dir <- paste0("/oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/", project, "/stripes/")
 
 # FUNCTION -----------------
-stripes.hub <- function(project, scenario, latLim, lonLim, var, output.dir) {
+stripes.hub <- function(project, scenario, latLim, lonLim, var, output.dir, aggr.fun) {
   # SELECT COMMON MODELS IN HIST AND SSP
   all <- list.files(paste0("/oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/data/", project, "/", var, "/ensemble/"), full.names = T)
   hist <- grep("historical", all, value = T)
@@ -24,7 +25,7 @@ stripes.hub <- function(project, scenario, latLim, lonLim, var, output.dir) {
   data <- lapply(c(hist, fut), function(x) {
     message("[", Sys.time(), "] Processing ", x)
     g <- suppressMessages(loadGridData(x, var = var, lonLim = lonLim, latLim = latLim))
-    g <-  suppressMessages(climatology(g))
+    g <-  suppressMessages(climatology(g, clim.fun = list(FUN = aggr.fun, na.rm = TRUE)))
     ind <- lapply(members, function(i) {
       print(i)
       ind <- grep(i, x = g$Members)
@@ -67,8 +68,11 @@ stripes.hub <- function(project, scenario, latLim, lonLim, var, output.dir) {
 
 #### APLLY
 
-p <- stripes.hub(project, scenario, latLim, lonLim, var, output.dir)
-output.file <- paste0(output.dir, "/", project, "_", scenario, "_", var, "_stripes.pdf")
+scenarios <- c("ssp126", "ssp245", "ssp370", "ssp585")
+
+
+p <- lapply(scenarios, function(scenario) stripes.hub(project, scenario, latLim, lonLim, var, output.dir, aggr.fun))
+output.file <- paste0(output.dir, "/", project, "_", var, "_stripes.pdf")
 pdf(output.file, width = 15, height = 7)
 p
 dev.off()

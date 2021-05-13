@@ -1,7 +1,0 @@
-project=CMIP6
-activity_id=ScenarioMIP,CMIP
-realm=land
-frequency=mon
-experiment_id=historical,ssp119,ssp126,ssp245,ssp370,ssp585,ssp460
-variable_id=snc,snd,snw,snm,mrso,mrro
-latest=True type=File distrib=False
