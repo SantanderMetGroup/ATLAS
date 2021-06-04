@@ -4,7 +4,7 @@
 
 It is flexible and easy to use. There is no special requirements for executing the script (only an R environment with a few packages), as it uses R functions and data stored in this repository. 
 
-The R function used is computeFigures (available at [aggregated-datsets/scripts](https://github.com/SantanderMetGroup/ATLAS/tree/mai-devel/aggregated-datasets/scripts)) and the data used are the regional means available at [aggregated-datsets/data](https://github.com/SantanderMetGroup/ATLAS/tree/mai-devel/aggregated-datasets/data).
+The R function used is computeFigures (available at [aggregated-datsets/scripts](https://github.com/SantanderMetGroup/ATLAS/tree/devel/aggregated-datasets/scripts)) and the data used are the regional means available at [aggregated-datsets/data](https://github.com/SantanderMetGroup/ATLAS/tree/devel/aggregated-datasets/data).
 
 It allows for the selection of:
 
