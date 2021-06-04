@@ -15,7 +15,7 @@ It allows for the selection of:
 
 For example, the following parameter configuration,
 
-
+```r
 # select seasons, use c(12,1,2) for winter
 scatter.seasons <- list(c(12, 1, 2), 6:8)
 # select reference period
@@ -24,6 +24,7 @@ ref.period <- 1995:2014
 area <- "land"
 # Select reference regions.  Select the CORDEX domain to be considered
 regions <- c("ECA", "EAS"); cordex.domain <- "EAS"
+```
 
 Will result in the following boxplots and scatterplots:
 
