@@ -2,4 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
-IPCC-Atlas.Rproj
+ATLAS.Rproj
+.ipynb_checkpoints
+ignore
+Atlas.Rproj
