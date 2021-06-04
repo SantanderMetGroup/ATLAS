@@ -29,6 +29,5 @@ regions <- c("ECA", "EAS"); cordex.domain <- "EAS"
 Will result in the following boxplots and scatterplots:
 
 
-<img src="../man/SEA_land_baseperiod_1995-2014_ATvsAP.png" align="left" alt="" width="500" />
-
+<img src="../../../man/SEA_land_baseperiod_1995-2014_ATvsAP.png" align="left" alt="" width="300" />
 
