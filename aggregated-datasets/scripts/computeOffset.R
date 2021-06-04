@@ -1,4 +1,4 @@
-#     computeDeltas.R Compute temperature and precipitation changes from data files 
+#     computeOffset.R Compute the offset of temperature and precipitation changes from data files 
 #      of this repository (aggregated-datasets).
 #
 #     Copyright (C) 2017 Santander Meteorology Group (http://www.meteo.unican.es)
@@ -16,32 +16,9 @@
 #     You should have received a copy of the GNU General Public License
 #     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-#' @title Compute temperature and precipitation changes from data files of this repository (aggregated-datasets).
-#' @description Function to Compute CMIP5, CMIP6 and CORDEX regional temperature and 
-#' precipitation changes. This function can be used to produce summary climate change information 
-#' (see scatterplots_TvsP.R and boxplots_TandP.R).
-#' 
-#' @param n.chunks number of latitude chunks over which iterate
-#' @param C4R.FUN.args list of arguments being the name of the C4R function (character)
-#' the first. The rest of the arguments are those passed to the selected C4R function. 
-#' This list is passed to function \link{\code{do.call}} internally. For the parameters 
-#' (of a particular C4R function) where data (grids) need to be provided, here, a list of 2 
-#' arguments are passed (instead of a grid): \code{list(dataset = "", var = "")}.
-#' @param loadGridData.args list of collocation arguments passed to function loadGridData.
-#' @param output.path Optional. Path where the results of each iteration will be saved (*.rda). 
-#' Useful when the amount of data after the C4R function application is large, i.e. similar
-#' to the pre-processed data (e.g. when the \link{\code{biasCorrection}} function is applied.)
-#' @details Note that the appropriate libraries need to be loaded before applying this function. Packages
-#' \code{loadeR} and \code{transformeR} are always needed. Depending on the C4R function that 
-#' is applied the will also be needed to load the corresponding package/s.
-#' etc.)
-#' @return If \code{output.path} is NULL a grid containing all latitudes is returned. If \code{output.path}
-#' is provided *.rda objects for each latitude chunk are saved in the specified path.
-#' @family climate4R
-#' 
-#'
+#' @description Compute temperature and precipitation offset from data 
+#' files of this repository (aggregated-datasets).
 #' @author M. Iturbide
-#' @export
 
 computeOffset <- function(project, 
                           var,
