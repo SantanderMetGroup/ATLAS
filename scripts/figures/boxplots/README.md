@@ -11,7 +11,7 @@ It allows for the selection of:
 * Seasons
 * Reference period
 * Surface (Land, sea or both)
-* Region/s from the Updated IPCC-WGI reference regions ([reference-regions](https://github.com/SantanderMetGroup/ATLAS/tree/devel/reference-regions), [Iturbide et al, 2020](https://essd.copernicus.org/articles/12/2959/2020/))
+* Region/s from the [Updated IPCC-WGI reference regions](https://github.com/SantanderMetGroup/ATLAS/tree/devel/reference-regions) ([Iturbide et al, 2020](https://essd.copernicus.org/articles/12/2959/2020/))
 
 For example, the following parameter configuration,
 
