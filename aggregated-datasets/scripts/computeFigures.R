@@ -18,6 +18,8 @@
 
 #' @description Compute scatterplots and boxplots of temperature and precipitation changes from data 
 #' files of this repository (aggregated-datasets).
+#' @details Functions computeDeltas (computeDeltas.R) and computeOffset (computeOffset.R) 
+#' are internally used.
 #' @author M. Iturbide
 
 computeFigures <- function(regions,
