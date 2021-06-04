@@ -1,6 +1,9 @@
 "dataset_id","size","pr","psl","sftlf","tas","tasmax","tasmin"
 
-"CMIP6.CMIP.AWI.AWI-CM-1-1-MR.historical.r1i1p1f1.gn",40955032519,false,false,false,true,true,true
+"CMIP6.CMIP.AS-RCEC.TaiESM1.historical.r1i1p1f1.day.gn",80864219671,true,true,?,true,true,true
+"CMIP6.ScenarioMIP.AS-RCEC.TaiESM1.ssp585.r1i1p1f1.day.gn",13183786770,true,true,?,true,false,false
+
+"CMIP6.CMIP.AWI.AWI-CM-1-1-MR.historical.r1i1p1f1.gn", 40955032519,false,false,false,true,true,true
 "CMIP6.ScenarioMIP.AWI.AWI-CM-1-1-MR.ssp126.r1i1p1f1.gn",36762571831,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.AWI.AWI-CM-1-1-MR.ssp245.r1i1p1f1.gn",36749598762,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.AWI.AWI-CM-1-1-MR.ssp370.r1i1p1f1.gn",36738757447,true,true,false,true,true,true
@@ -12,6 +15,12 @@
 "CMIP6.ScenarioMIP.BCC.BCC-CSM2-MR.ssp370.r1i1p1f1.gn",32147641744,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.BCC.BCC-CSM2-MR.ssp585.r1i1p1f1.gn",32147641744,true,true,false,true,true,true
 
+"CMIP6.CMIP.CAMS.CAMS-CSM1-0.historical.r2i1p1f1.day.gn",49374977032,true,false,?,true,true,false
+"CMIP6.ScenarioMIP.CAMS.CAMS-CSM1-0.ssp126.r2i1p1f1.day.gn",19076974468,true,false,?,true,true,false
+"CMIP6.ScenarioMIP.CAMS.CAMS-CSM1-0.ssp245.r2i1p1f1.day.gn",19076974468,true,false,?,true,true,false
+"CMIP6.ScenarioMIP.CAMS.CAMS-CSM1-0.ssp370.r2i1p1f1.day.gn",19076974468,true,false,?,true,true,false
+"CMIP6.ScenarioMIP.CAMS.CAMS-CSM1-0.ssp585.r2i1p1f1.day.gn",19076974468,true,false,?,true,true,false
+
 "CMIP6.CMIP.CAS.FGOALS-g3.historical.r1i1p1f1.gn",17579313868,true,true,true,true,true,true
 "CMIP6.ScenarioMIP.CAS.FGOALS-g3.ssp126.r1i1p1f1.gn",9052773352,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.CAS.FGOALS-g3.ssp245.r1i1p1f1.gn",9052773352,true,true,false,true,true,true
@@ -22,8 +31,19 @@
 "CMIP6.ScenarioMIP.CCCma.CanESM5.ssp126.r1i1p1f1.gn",14046324410,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.CCCma.CanESM5.ssp245.r1i1p1f1.gn",4221283578,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.CCCma.CanESM5.ssp370.r1i1p1f1.gn",4218364830,true,true,false,true,true,true
-"CMIP6.ScenarioMIP.CCCma.CanESM5.ssp460.r1i1p1f1.gn",4219612653,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.CCCma.CanESM5.ssp585.r1i1p1f1.gn",9226005923,true,true,false,true,true,true
+
+"CMIP6.CMIP.CCCR-IITM.IITM-ESM.historical.r1i1p1f1.day.gn",10117401146,true,true,?,true,false,false
+"CMIP6.ScenarioMIP.CCCR-IITM.IITM-ESM.ssp126.r1i1p1f1.day.gn",17309512253,true,true,?,true,true,true
+"CMIP6.ScenarioMIP.CCCR-IITM.IITM-ESM.ssp245.r1i1p1f1.day.gn",5192783750,true,true,?,true,false,false
+"CMIP6.ScenarioMIP.CCCR-IITM.IITM-ESM.ssp370.r1i1p1f1.day.gn",5127116882,true,true,?,true,false,false
+"CMIP6.ScenarioMIP.CCCR-IITM.IITM-ESM.ssp585.r1i1p1f1.day.gn",5186069879,true,true,?,true,false,false
+
+"CMIP6.CMIP.CMCC.CMCC-CM2-SR5.historical.r1i1p1f1.day.gn",40710173166,true,true,?,true,true,true
+"CMIP6.ScenarioMIP.CMCC.CMCC-CM2-SR5.ssp126.r1i1p1f1.day.gn",21170804874,true,true,?,true,true,true
+"CMIP6.ScenarioMIP.CMCC.CMCC-CM2-SR5.ssp245.r1i1p1f1.day.gn",21169523641,true,true,?,true,true,true
+"CMIP6.ScenarioMIP.CMCC.CMCC-CM2-SR5.ssp370.r1i1p1f1.day.gn",21166671297,true,true,?,true,true,true
+"CMIP6.ScenarioMIP.CMCC.CMCC-CM2-SR5.ssp585.r1i1p1f1.day.gn",21153236048,true,true,?,true,true,true
 
 "CMIP6.CMIP.CNRM-CERFACS.CNRM-CM6-1-HR.historical.r1i1p1f2.gr",172948435115,true,true,true,true,true,true
 "CMIP6.ScenarioMIP.CNRM-CERFACS.CNRM-CM6-1-HR.ssp126.r1i1p1f2.gr",89958058181,true,true,false,true,true,true
@@ -41,7 +61,6 @@
 "CMIP6.ScenarioMIP.CNRM-CERFACS.CNRM-ESM2-1.ssp126.r1i1p1f2.gr",12525859215,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.CNRM-CERFACS.CNRM-ESM2-1.ssp245.r1i1p1f2.gr",12518595351,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.CNRM-CERFACS.CNRM-ESM2-1.ssp370.r1i1p1f2.gr",12515212727,true,true,false,true,true,true
-"CMIP6.ScenarioMIP.CNRM-CERFACS.CNRM-ESM2-1.ssp460.r1i1p1f2.gr",12517302329,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.CNRM-CERFACS.CNRM-ESM2-1.ssp585.r1i1p1f2.gr",12508779687,true,true,false,true,true,true
 
 "CMIP6.CMIP.CSIRO-ARCCSS.ACCESS-CM2.historical.r1i1p1f1.gn",24253234432,true,true,true,true,true,true
@@ -56,6 +75,10 @@
 "CMIP6.ScenarioMIP.CSIRO.ACCESS-ESM1-5.ssp370.r1i1p1f1.gn",13726397572,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.CSIRO.ACCESS-ESM1-5.ssp585.r1i1p1f1.gn",13719014030,true,true,false,true,true,true
 
+"CMIP6.CMIP.EC-Earth-Consortium.EC-Earth3-Veg-LR.historical.r1i1p1f1.day.gr",45000454379,true,true,?,true,true,true
+"CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3-Veg-LR.ssp245.r1i1p1f1.day.gr",23363264809,true,true,?,true,true,true
+"CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3-Veg-LR.ssp370.r1i1p1f1.day.gr",23342591525,true,true,?,true,true,true
+
 "CMIP6.CMIP.EC-Earth-Consortium.EC-Earth3-Veg.historical.r1i1p1f1.gr",115379159147,true,true,true,true,true,true
 "CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3-Veg.ssp126.r1i1p1f1.gr",59982704190,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3-Veg.ssp245.r1i1p1f1.gr",59926313790,true,true,false,true,true,true
@@ -67,9 +90,6 @@
 "CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3.ssp245.r1i1p1f1.gr",60113260377,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3.ssp370.r1i1p1f1.gr",60076549752,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.EC-Earth-Consortium.EC-Earth3.ssp585.r1i1p1f1.gr",60021153754,true,true,false,true,true,true
-
-"CMIP6.CMIP.HAMMOZ-Consortium.MPI-ESM-1-2-HAM.historical.r1i1p1f1.gn",11195230902,true,true,true,true,true,true
-"CMIP6.ScenarioMIP.HAMMOZ-Consortium.MPI-ESM-1-2-HAM.ssp370.r1i1p1f1.gn",2771299670,true,true,false,true,true,true
 
 "CMIP6.CMIP.INM.INM-CM4-8.historical.r1i1p1f1.gr1",16816434255,true,true,true,true,true,true
 "CMIP6.ScenarioMIP.INM.INM-CM4-8.ssp126.r1i1p1f1.gr1",8750398230,true,true,false,true,true,true
@@ -87,8 +107,12 @@
 "CMIP6.ScenarioMIP.IPSL.IPSL-CM6A-LR.ssp126.r1i1p1f1.gr",26357072622,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.IPSL.IPSL-CM6A-LR.ssp245.r1i1p1f1.gr",7921522561,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.IPSL.IPSL-CM6A-LR.ssp370.r1i1p1f1.gr",7911708114,true,true,false,true,true,true
-"CMIP6.ScenarioMIP.IPSL.IPSL-CM6A-LR.ssp460.r1i1p1f1.gr",8020902324,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.IPSL.IPSL-CM6A-LR.ssp585.r1i1p1f1.gr",25972899784,true,true,false,true,true,true
+
+"CMIP6.CMIP.KIOST.KIOST-ESM.historical.r1i1p1f1.day.gr1",31092069240,true,true,?,true,true,true
+"CMIP6.ScenarioMIP.KIOST.KIOST-ESM.ssp126.r1i1p1f1.day.gr1",11602365912,true,true,?,true,true,true
+"CMIP6.ScenarioMIP.KIOST.KIOST-ESM.ssp245.r1i1p1f1.day.gr1",15155737548,true,true,?,true,true,true
+"CMIP6.ScenarioMIP.KIOST.KIOST-ESM.ssp585.r1i1p1f1.day.gr1",11575434848,true,true,?,true,true,true
 
 "CMIP6.CMIP.MIROC.MIROC-ES2L.historical.r1i1p1f2.gn",6199643037,true,true,true,true,true,true
 "CMIP6.ScenarioMIP.MIROC.MIROC-ES2L.ssp126.r1i1p1f2.gn",3225098084,true,true,false,true,true,true
@@ -100,7 +124,6 @@
 "CMIP6.ScenarioMIP.MIROC.MIROC6.ssp126.r1i1p1f1.gn",12074803587,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.MIROC.MIROC6.ssp245.r1i1p1f1.gn",12067566280,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.MIROC.MIROC6.ssp370.r1i1p1f1.gn",12061305942,true,true,false,true,true,true
-"CMIP6.ScenarioMIP.MIROC.MIROC6.ssp460.r1i1p1f1.gn",12064867012,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.MIROC.MIROC6.ssp585.r1i1p1f1.gn",12053924946,true,true,false,true,true,true
 
 "CMIP6.CMIP.MOHC.HadGEM3-GC31-LL.historical.r1i1p1f3.gn",18964343237,true,true,false,true,true,true
@@ -120,11 +143,16 @@
 "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp370.r1i1p1f1.gn",5866910870,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r1i1p1f1.gn",5863767972,true,true,false,true,true,true
 
+"CMIP6.CMIP.MPI-M.MPI-ESM1-2-HR.historical.r1i1p1f1.day.gn",40484891872,true,true,?,true,true,true
+"CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp126.r1i1p1f1.day.gn",21037958102,true,true,?,true,true,true
+"CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp245.r1i1p1f1.day.gn",21015349496,true,true,?,true,true,true
+"CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp370.r1i1p1f1.day.gn",20992976371,true,true,?,true,true,true
+"CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp585.r1i1p1f1.day.gn",20979328154,true,true,?,true,true,true
+
 "CMIP6.CMIP.MRI.MRI-ESM2-0.historical.r1i1p1f1.gn",38229036952,true,true,true,true,true,true
 "CMIP6.ScenarioMIP.MRI.MRI-ESM2-0.ssp126.r1i1p1f1.gn",66188672243,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.MRI.MRI-ESM2-0.ssp245.r1i1p1f1.gn",19871088146,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.MRI.MRI-ESM2-0.ssp370.r1i1p1f1.gn",19863517313,true,true,false,true,true,true
-"CMIP6.ScenarioMIP.MRI.MRI-ESM2-0.ssp460.r1i1p1f1.gn",19867286502,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.MRI.MRI-ESM2-0.ssp585.r1i1p1f1.gn",65796324809,true,true,false,true,true,true
 
 "CMIP6.CMIP.NCAR.CESM2-WACCM.historical.r1i1p1f1.gn",32788524181,true,true,true,true,false,false
@@ -132,6 +160,12 @@
 "CMIP6.ScenarioMIP.NCAR.CESM2-WACCM.ssp245.r1i1p1f1.gn",13352739938,true,true,false,true,false,false
 "CMIP6.ScenarioMIP.NCAR.CESM2-WACCM.ssp370.r1i1p1f1.gn",13351172466,true,true,false,true,false,false
 "CMIP6.ScenarioMIP.NCAR.CESM2-WACCM.ssp585.r1i1p1f1.gn",13346672660,true,true,false,true,false,false
+
+"CMIP6.CMIP.NCAR.CESM2.historical.r4i1p1f1.day.gn",32759743379,true,true,?,true,false,false
+"CMIP6.ScenarioMIP.NCAR.CESM2.ssp126.r4i1p1f1.day.gn",18420122855,true,true,?,true,true,true
+"CMIP6.ScenarioMIP.NCAR.CESM2.ssp245.r4i1p1f1.day.gn",18966760680,true,true,?,true,true,true
+"CMIP6.ScenarioMIP.NCAR.CESM2.ssp370.r4i1p1f1.day.gn",18961404158,true,true,?,true,true,true
+"CMIP6.ScenarioMIP.NCAR.CESM2.ssp585.r4i1p1f1.day.gn",18948313646,true,true,?,true,true,true
 
 "CMIP6.CMIP.NCC.NorESM2-LM.historical.r1i1p1f1.gn",8201393208,true,true,true,true,true,true
 "CMIP6.ScenarioMIP.NCC.NorESM2-LM.ssp126.r1i1p1f1.gn",7458648190,true,true,false,true,true,true
@@ -165,4 +199,3 @@
 "CMIP6.ScenarioMIP.NUIST.NESM3.ssp126.r1i1p1f1.gn",8605981412,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.NUIST.NESM3.ssp245.r1i1p1f1.gn",8601037770,true,true,false,true,true,true
 "CMIP6.ScenarioMIP.NUIST.NESM3.ssp585.r1i1p1f1.gn",8588728555,true,true,false,true,true,true
-

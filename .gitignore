@@ -1,3 +1,4 @@
+.DS_Store
 .Rproj.user
 .Rhistory
 .RData
@@ -5,3 +6,4 @@
 ATLAS.Rproj
 .ipynb_checkpoints
 ignore
+Atlas.Rproj
