@@ -53,12 +53,12 @@ computeOffset <- function(project,
   
   # root Url
   # https://stackoverflow.com/questions/25485216/how-to-get-list-files-from-a-github-repository-folder-using-r
-  myurl <- "https://api.github.com/repos/SantanderMetGroup/ATLAS/git/trees/mai-devel?recursive=1"
+  myurl <- "https://api.github.com/repos/SantanderMetGroup/ATLAS/git/trees/devel?recursive=1"
   
   ## for remote
   req <- GET(myurl) %>% stop_for_status(req)
   filelist <- unlist(lapply(content(req)$tree, "[", "path"), use.names = FALSE)
-  root <- "https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/mai-devel/"
+  root <- "https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/"
   
   ## local option-----------
   # root <- "/home/maialen/WORK/GIT/ATLAS/"
