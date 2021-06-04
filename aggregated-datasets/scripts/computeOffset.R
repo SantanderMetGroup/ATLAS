@@ -56,13 +56,13 @@ computeOffset <- function(project,
   myurl <- "https://api.github.com/repos/SantanderMetGroup/ATLAS/git/trees/devel?recursive=1"
   
   ## for remote
-  # req <- GET(myurl) %>% stop_for_status(req)
-  # filelist <- unlist(lapply(content(req)$tree, "[", "path"), use.names = FALSE)
-  # root <- "https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/"
+  req <- GET(myurl) %>% stop_for_status(req)
+  filelist <- unlist(lapply(content(req)$tree, "[", "path"), use.names = FALSE)
+  root <- "https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/"
   
   ## local option-----------
-  root <- "/home/maialen/WORK/GIT/ATLAS/"
-  filelist <- list.files(root, recursive = T)
+  # root <- "/home/maialen/WORK/GIT/ATLAS/"
+  # filelist <- list.files(root, recursive = T)
   #-------------------------
   
   run <- TRUE
