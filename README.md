@@ -1,6 +1,6 @@
 [![DOI](https://zenodo.org/badge/190203356.svg)](https://zenodo.org/badge/latestdoi/190203356)
 
-## The Climate Change ATLAS
+## The Multi-MIP Climate Change ATLAS
 
 The Climate Change ATLAS is an initiative to develop **tools and ready-to-use datasets** for reproducible regional analysis of observed and model projected (CMIP5, CMIP6 and CORDEX) climate change information using both time-slices (e.g. 2081-2100) and warming levels (e.g. +1.5º). A **new set of sub-continental reference regions** is provided as the basis for regional synthesis (building on IPCC AR5 reference regions) and monthly spatially aggregated datasets are produced to facilitate the development of regional climate change information. 
 
@@ -22,6 +22,13 @@ Scripts and (jupyter) notebooks are provided in the different sections to ensure
 ### Virtual Workspace: The Atlas Hub
 The Atlas Hub is a cloud facility providing virtual workspace for the Climate Change Atlas code and data (with preinstalled software and accesible data). The Atlas Hub is based on **Jupyter** to create and run notebooks on a remote machine where all the software is pre-installed. The Atlas Hub builds on the R **climate4R** package, allowing for transparent climate data access, collocation, post-processing (including bias adjustment) and visualization. Instructions to start working with the Hub are available at the [climate4R GitHub repository](https://github.com/SantanderMetGroup/climate4R).
 
+## Table of contents
+
+| Directory | Contents |
+| :-------- | :------- |
+| `ATLAS_inventory` | *** |
+
 ### Disclaimer
 
 This work is carried out for the purpose of contributing the Sixth Assessment Report of the IPCC. It is in draft status and subject to change. This repository is part of the Second Order Draft of the Working Group I report and is provided for information only
+
