@@ -1,4 +1,4 @@
-## Sets of regions for the ATLAS
+## Sets of regions
 
 Several alternative sets of regions are included to facilitate the regional synthesis of information:
 * IPCC-WGI reference regions (land and mountain-range subregions are also defined using [masks](../reference-grids)) 
