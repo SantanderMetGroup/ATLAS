@@ -6,7 +6,7 @@ The Climate Change Atlas is an initiative to develop **tools and ready-to-use da
 
 The **accessibility and reproducibility** of results has been a major concern during the development of the Climate Change Atlas, in order to ensure the transparency of the products (which are all publicly available). The Atlas products are generated using **free software community tools**, in particular [R](https://www.r-project.org) building on the [**climate4R** framework](https://github.com/SantanderMetGroup/climate4R) for data post-processing (data access, regridding, aggregation, bias adjustment, etc.) and evaluation and quality control (when applicable). **Provenance/ metadata** is generated using the [**METACLIP**](http://www.metaclip.org) RDF-based framework (building on the [metaclipR](https://github.com/metaclip/metaclipR) package for the climate4R framework).
 
-<img src="/man/reference_regions.png" align="left" alt="" width="500" />
+<img src="reference-regions/reference_regions.png" align="left" alt="" width="500" />
 
 ### New Reference Regions 
 A new set of reference regions is produced building on the popular [AR5 IPCC reference regions](http://www.ipcc-data.org/guidelines/pages/ar5_regions.html) developed for reporting sub-continental CMIP5 (with typical resolution of 2º) projections over a reduced number of regions. The increased reasolution (typically 1º in CMIP6) allows to increase the number of regions for a better climatic representatio (this results in **46 land and 14 ocean reference regions**). The coordinates (csv and shapefile) of the regions and related datasets are available at the **'reference-regions'** repo.
