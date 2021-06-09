@@ -24,6 +24,8 @@ The Atlas Hub is a cloud facility providing virtual workspace for the Climate Ch
 
 ## Contents
 
+![Atlas repository scheme](Atlas-repo-scheme.svg)
+
 | Directory | Contents |
 | :-------- | :------- |
 | [reference-regions](reference-regions) | New set of reference analysis regions
