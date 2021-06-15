@@ -8,7 +8,7 @@ A jupyter notebook illustrating a simple example of their use in R is provided i
 The figure below represents these masks for the 0.5&deg;, 1&deg;, and 2&deg; resolutions.
 
 <p align="center">
-  <img src="/man/reference-grids.png" alt="" width="" />
+  <img src="reference-grids.png" alt="" width="" />
 </p>
 
 ## Land-sea masks
