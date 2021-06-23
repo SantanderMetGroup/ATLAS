@@ -1,22 +1,25 @@
-## CMIP5, CMIP6 AND CORDEX spatial averages over the reference regions
+## CMIP5, CMIP6 and CORDEX spatial averages over the reference regions
 
-Spatially aggregated monthly results over the reference regions for CMIP5, CMIP6 and CORDEX datasets (a single run per model) separately for land, sea, and land-sea gridboxes. Regional averages are weighted by the cosine of latitude in all cases.
+These files contain monthly precipitation and near surface temperature spatially averaged over the reference regions for CMIP5, CMIP6 and CORDEX datasets (a single run per model) separately for land, sea, and land-sea gridboxes. Regional averages are weighted by the cosine of latitude in all cases.
 
-For the different CORDEX domains, aggregated results are calculated only in those regions with overlap larger than 80% (see file *data/CORDEX/Overlaps-CORDEX-ReferenceRegions.csv* for details on the overalp areas, as percentages over the total area of the reference region; regular geographic grids for every CORDEX domain are obtained from [Table 2](https://is-enes-data.github.io/cordex_archive_specifications.pdf) in the CORDEX specification archive; an annotated notebook for reproducibility is available at: reference-regions/notebooks/Overlaps-CORDEX-ReferenceRegions.ipynb. The regions resulting for each domain are:<br>
-reference_regions["NAM"] = ['NWN', 'NEN', 'WNA', 'CNA', 'ENA', 'NCA', 'CAR']<br>
-reference_regions["CAM"] = ['NCA', 'SCA', 'CAR', 'NWS', 'NSA', 'NES', 'SAM']<br>
-reference_regions["SAM"] = ['SCA', 'NWS', 'NSA', 'NES', 'SAM', 'SWS', 'SES', 'SSA']<br>
-reference_regions["ARC"] = ['GIC', 'NWN', 'NEN', 'NEU', 'RAR', 'RFE', 'ARO']<br>
-reference_regions["AFR"] = ['MED', 'SAH', 'WAF', 'CAF', 'NEAF', 'SEAF', 'WSAF', 'ESAF', 'MDG', 'ARP']<br>
-reference_regions["EUR"] = ['NEU', 'WCE', 'EEU', 'MED']<br>
-reference_regions["MED"] = ['WCE', 'MED']<br>
-reference_regions["MNA"] = ['MED', 'SAH', 'WAF', 'CAF', 'NEAF', 'SEAF', 'WCA', 'ARP', 'ARS']<br>
-reference_regions["SEA"] = ['SEA']<br>
-reference_regions["EAS"] = ['ECA', 'TIB', 'EAS', 'SAS', 'SEA', 'NAU', 'BOB']<br>
-reference_regions["WAS"] = ['NEAF', 'SEAF', 'WCA', 'ECA', 'TIB', 'ARP', 'SAS', 'ARS', 'BOB', 'EIO']<br>
-reference_regions["CAS"] = ['EEU', 'WSB', 'ESB', 'WCA', 'ECA', 'TIB', 'EAS', 'ARP']<br>
-reference_regions["ANT"] = ['EAN', 'WAN']<br>
-reference_regions["AUS"] = ['SEA', 'NAU', 'CAU', 'EAU', 'SAU', 'NZ']
+For the different CORDEX domains, aggregated results are calculated only in those regions with overlap larger than 80% (see [Overlaps-CORDEX-ReferenceRegions.csv](./data/CORDEX/Overlaps-CORDEX-ReferenceRegions.csv) for details on the overlap areas, as percentages over the total area of the reference region; regular geographic grids for every CORDEX domain are obtained from [Table 2](https://is-enes-data.github.io/cordex_archive_specifications.pdf) in the CORDEX specification archive; an annotated notebook for reproducibility is available at: [reference-regions/notebooks/Overlaps-CORDEX-ReferenceRegions.ipynb](../reference-regions/notebooks/Overlaps-CORDEX-ReferenceRegions.ipynb). The regions resulting for each domain are:
+
+Domain | Reference regions above 80% overlap
+-------|------------------------------------
+NAM    | NWN, NEN, WNA, CNA, ENA, NCA, CAR
+CAM    | NCA, SCA, CAR, NWS, NSA, NES, SAM
+SAM    | SCA, NWS, NSA, NES, SAM, SWS, SES, SSA
+ARC    | GIC, NWN, NEN, NEU, RAR, RFE, ARO
+AFR    | MED, SAH, WAF, CAF, NEAF, SEAF, WSAF, ESAF, MDG, ARP
+EUR    | NEU, WCE, EEU, MED
+MED    | WCE, MED
+MNA    | MED, SAH, WAF, CAF, NEAF, SEAF, WCA, ARP, ARS
+SEA    | SEA
+EAS    | ECA, TIB, EAS, SAS, SEA, NAU, BOB
+WAS    | NEAF, SEAF, WCA, ECA, TIB, ARP, SAS, ARS, BOB, EIO
+CAS    | EEU, WSB, ESB, WCA, ECA, TIB, EAS, ARP
+ANT    | EAN, WAN
+AUS    | SEA, NAU, CAU, EAU, SAU, NZ
 
 Additionally, results for all CMIP6 model runs (*CMIP6Amon_Hub* version 20191028 in 'Atlas-inventory/Hub') are also available at the following links:
 
