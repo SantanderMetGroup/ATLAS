@@ -27,9 +27,6 @@ root.dir <- "/oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/data"
 # Output directory
 out.dir <- paste0(root.dir, "/", project,"/", var, "/regional_means/") 
 
-# !!!!!!!!!!!!!!!!!!!!!!!!1
-out.dir <- "/media/maialen/work/borrar/"
-# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 maskname <- switch(project,
                    "CMIP5" = "land_sea_mask_2degree.nc4",
