@@ -1,13 +1,11 @@
 import os
 import xarray as xa
 import numpy as np
+import sys
 
-# python script to be run by "python3 grid_bouds_calc.py" 
+# python script to be run by "python3 fix_grid.py fname" 
 # script to create an intermediate grid necessary when you want to interpolate with cdo remapcon netcdf 
-# files on a Lambert projection starting grid 
-
-# To be changed: fpath and fname = input a netcdf file on the Lambert grid of the files you want to interpolate
-# Output: grid_nlonxnlat_latlon_bounds 
+# output of the sript is a "source.grid" file 
 
 def calc_vertices(lons, lats, write_to_file=False, filename=None):
     """
@@ -71,7 +69,6 @@ def calc_vertices(lons, lats, write_to_file=False, filename=None):
     lats_crnr[:, -1] = lats_crnr[:, -2] + (lats_crnr[:, -2] - lats_crnr[:, -3])
 
     # ------------ DONE ------------- #
-
     # Fill in counterclockwise and rearrange
     count = 0
     for lat in range(lons.shape[0]):
@@ -110,7 +107,7 @@ def _write_grid_info(lons_row, lons_cor, lats_row, lats_cor, nlon, nlat,
     if filename is None:
         from datetime import datetime
         dtime = datetime.now().strftime('%Y-%m-%dT%H%M%S')
-        fname = './grid_{}x{}_latlon_bounds_{}'.format(nlon, nlat, dtime)
+        fname = './source.grid' #'./grid_{}x{}_latlon_bounds_{}'.format(nlon, nlat, dtime)
 
     lt_row = np.array_split(lats_row, np.ceil(lats_row.size/6).astype(np.int))
     lt_row_str = "\n".join([" ".join(str(item) for item in arr)
@@ -145,11 +142,19 @@ def _write_grid_info(lons_row, lons_cor, lats_row, lats_cor, nlon, nlat,
 write_griddes_file = True
 griddes_file_name = None
 
-fpath = '/oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/INTERPOLATION/prueba_yo/EUROPE/data/'
-fname = 'tas_EUR-44_CNRM-CERFACS-CNRM-CM5_historical_r1i1p1_HMS-ALADIN52_v1_day_19501201-19501231.nc'
+fpath = './'
 
+if len(sys.argv) != 2:
+    print("Please inform the filename")
+    exit(1)
+fname = sys.argv[1]
 
-file_in = os.path.join(fpath, fname)
+try:
+    file_in = os.path.join(fpath, fname)
+except IOError:
+    print("File '%s' doesn't exist", fname)
+    exit(1)
+
 nc = xa.open_dataset(file_in)
 
 # Input latitudes and longitudes
@@ -168,8 +173,8 @@ ds = xa.Dataset({'lat_bnds': (['y', 'x', 'nv'], lat_bnds),
 nc_add = nc.merge(ds)
 
 # Add 'bounds' attributes to lat/lon
-nc_add.lon.attrs['bounds'] = 'lon_bnds'
-nc_add.lat.attrs['bounds'] = 'lat_bnds'
+# nc_add.lon.attrs['bounds'] = 'lon_bnds'
+# nc_add.lat.attrs['bounds'] = 'lat_bnds'
 
 # Write to disk
-nc_add.to_netcdf('./file_out')
+# :nc_add.to_netcdf('./file_out')
