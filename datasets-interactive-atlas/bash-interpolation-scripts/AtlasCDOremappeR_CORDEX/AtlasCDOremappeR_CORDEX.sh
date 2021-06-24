@@ -1,4 +1,8 @@
-# This script interpolates all model outputs from the CORDEX experiment used in ATLAS
+# This script interpolates all model outputs from the CORDEX experiment
+# The script foolow file naming: CORDEX-<CORDEX_domain>_<GCM>_<experiment>_<realisation>_<RCM>_<version>_<variable>_<frequency>_<year>.nc4 
+# (e.g. CORDEX-AFR-22_MOHC-HadGEM2-ES_historical_r1i1p1_ICTP-RegCM4-7_v0_tas_monthly_2005.nc4 
+# If file naming is differently organised, revision of the lines 148,149,150 need to be done. 
+# The script looks for names of RCM and GCM, therefore it has to be provided in the file name. 
 
 #!/bin/bash
 
@@ -40,13 +44,20 @@ export not_interpolated=$WRKDIR/not_interpolated_${var}_${dname}.txt
 export modelist=$WRKDIR/models_${var}_${dname}.txt
 export logfile=$WRKDIR/logfile_${var}_${dname}.txt
 
+#========================================================================================================================
+# ---------------------------------------- BELLOW NO CANGES NECESSARY!!! ------------------------------------------------
+# ---------------------------------------- Prepartions for the remapping ------------------------------------------------
+# -----------------------------------------------------------------------------------------------------------------------
+#  NOTE1: name of the output file will be the same as and input. If this is not desired, change the name in the line 372
+#========================================================================================================================
+
 #Enter working directory
 cd $WRKDIR
 
 #Removing file containing not_interpolated files if exists
 [ -e $not_interpolated ] && rm $not_interpolated
 
-#Create complete list of all files available to interpolate
+#Creates a complete list of all files available to interpolate
 echo "Creating initial filelist"
 [ -e $flist_tmp ]  && rm $flist_tmp
 find $INDIR -type f -name '*.nc4'>> $flist_tmp
@@ -118,18 +129,11 @@ while read -r fdir; do
 		SEA) domain_boundaries="89.125,147.125,-15.375,27.3750";;
 	esac
 
-	#Additinola info for the smilations on the finer grid
+	#Additinal info for the simulations on the finer grid
 	case $domain_name in
 		EUR-11) domain_boundaries="-44.8125,65.1875,21.8125,72.6875";;
 		MNA-22) domain_boundaries="-26.625,75.625,-6.875,45.125";;
 	esac			
-
-#========================================================================================================================
-# ---------------------------------------- BELLOW NO CANGES NECESSARY!!! ------------------------------------------------
-# ---------------------------------------- Prepartions for the remapping ------------------------------------------------
-# -----------------------------------------------------------------------------------------------------------------------
-#  NOTE1: name of the output file will be the same as and input. If this is not desired, change the name in the line 144
-#========================================================================================================================
 
 	# DESTINATION GRID INFO
   	if [ -n "$domain_boundaries" ]; then
@@ -142,9 +146,9 @@ while read -r fdir; do
 
 	# LOOP over files
 	for file in $fdir/*.nc* ; do 
-		filename="$(basename -- ${file})" 		# name of the output file - here it is the same as the original file
-                GCMmodel=`echo $filename | awk -F"_" '{print $2}'` # name of GCM model
-   		RCMmodel=`echo $filename | awk -F"_" '{print $5}'` # name of RCM model
+		filename="$(basename -- ${file})" 			# name of the output file - here it is the same as the original file
+                GCMmodel=`echo $filename | awk -F"_" '{print $2}'` 	# name of GCM model
+   		RCMmodel=`echo $filename | awk -F"_" '{print $5}'` 	# name of RCM model
 
 		# VARIABLE CHECK IN THE FILE 
 		vars_in_files=`cdo -showname $file`
