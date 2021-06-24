@@ -4,7 +4,7 @@ The script **AtlasCDOremappeR_CORDEX.sh** was used to perform the interpolation 
 
 To run the script:
  	
-     source CORDEX.remap <CODEX domain name> <variable name>
+     source AtlasCDOremappeR_CORDEX.sh <CODEX domain name> <variable name>
 
 **Data necessary** to run the interpolation of the CODEX data:
 1. CORDEX files
