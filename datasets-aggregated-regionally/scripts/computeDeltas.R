@@ -40,8 +40,8 @@ computeDeltas <- function(project,
   root <- "https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/"
   
   ## local option-----------
-  root <- getwd()
-  filelist <- list.files(root, recursive = T)
+  # root <- getwd()
+  # filelist <- list.files(root, recursive = T)
   #-------------------------
   
   run <- TRUE
