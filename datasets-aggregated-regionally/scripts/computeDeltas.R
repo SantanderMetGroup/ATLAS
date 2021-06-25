@@ -168,11 +168,11 @@ computeDeltas <- function(project,
                 rcp <- do.call("rbind", rcp)
                 rownames(rcp) <- yearsrcp[1:nrow(rcp)]
                 if (fill) {
-                  message("i =", i, ".......", exp[j], "------filling reference period with rcp data")
+                  message(modelruns[i], ".......", exp[j], "------filling reference period with rcp data")
                   rcphist <- rcp[which(rownames(rcp) == 2006) : which(rownames(rcp) == range(ref.period)[2]),,  drop = FALSE]
                   histexp <- apply(rbind(hist, rcphist), MARGIN = 2, FUN = mean, na.rm = TRUE)
                 } else {
-                  message("i =", i, ".......", exp[j], "------")
+                  message(modelruns[i], ".......", exp[j], "------")
                   histexp <- apply(hist, MARGIN = 2, FUN = mean, na.rm = TRUE)
                 }
                 delta <- lapply(periods, function(k){
@@ -194,14 +194,14 @@ computeDeltas <- function(project,
                       (apply(rcpk, MARGIN = 2, FUN = mean, na.rm = TRUE) - histexp) / histexp * 100
                     }  
                   } else {
-                    message("i =", i, ".......", exp[j], "------NO period")
+                    message(modelruns[i], ".......", exp[j], "------NO period")
                     a <- rep(NA, ncol(rcp))
                     names(a) <- colnames(rcp)
                     a
                   }
                 })
               } else {
-                message("i =", i, ".......", exp[j], "------NO DATA")
+                message(modelruns[i], i, ".......", exp[j], "------NO DATA")
                 delta <- rep(list(NULL), length(periods))
               }
               names(delta) <- names(periods)
