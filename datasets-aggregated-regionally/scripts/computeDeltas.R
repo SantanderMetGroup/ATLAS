@@ -16,9 +16,11 @@
 #     You should have received a copy of the GNU General Public License
 #     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+
 #' @description Compute temperature and precipitation changes from data 
 #' files of this repository (aggregated-datasets).
 #' @author M. Iturbide
+
 
 computeDeltas <- function(project, 
                           var,
