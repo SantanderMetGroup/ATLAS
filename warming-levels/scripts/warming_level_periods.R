@@ -68,4 +68,4 @@ aux <- expand.grid(gwls, exp[[cmip]])
 cnames <- paste(aux[ , 1], aux[ , 2], sep = "_")
 colnames(dat) <- cnames
 
-write.table(dat, file = sprintf("%s_GWLs.csv", cmip), quote = FALSE, sep = ",")
+write.table(dat, file = sprintf("%s_Atlas_WarmingLevels.csv", cmip), quote = FALSE, sep = ",")
