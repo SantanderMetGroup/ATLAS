@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/190203356.svg)](https://zenodo.org/badge/latestdoi/190203356)
+[![DOI](https://zenodo.org/badge/190203356.svg)](https://zenodo.org/badge/latestdoi/190203356) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IPCC-WG1/Atlas/devel)
 
 # The Climate Change Atlas
 
