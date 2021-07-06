@@ -1,24 +1,59 @@
+# warming_level_periods.R
+#
+# Copyright (C) 2019 Santander Meteorology Group (http://www.meteo.unican.es)
+#
+#     This program is free software: you can redistribute it and/or modify
+#     it under the terms of the GNU General Public License as published by
+#     the Free Software Foundation, either version 3 of the License, or
+#     (at your option) any later version.
+# 
+#     This program is distributed in the hope that it will be useful,
+#     but WITHOUT ANY WARRANTY; without even the implied warranty of
+#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#     GNU General Public License for more details.
+# 
+#     You should have received a copy of the GNU General Public License
+#     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+#' @title Global Warming Level timing to CSV
+#' @description Computation of central year for different GWLs using getGWL.R
+#'   for CMIP5 or 6 and storage as CSV files. Missing scenarios for a given GCM
+#'   are marked as 9999. Failure to reach the desired GWL up to 2100 is indicated
+#'   as NA.
+#' @author J. Bedia
+
 library(magrittr)
 library(httr)
 source("getGWL.R")
 
+#
+# Parameter settings
+#
 gwls <- c(1.5, 2 ,3, 4)
 cmip <- "CMIP5"
 return.interval <- FALSE # Logical flag, indicating if the table should display
                          # central year and interval, or central year only
+#
+# CMIP-dependent variables
+#
 exp <- list(
   CMIP5 = c("rcp26", "rcp45", "rcp85"),
   CMIP6 = c("ssp126", "ssp245", "ssp370", "ssp585")
 )
 last.hist.year <- list(CMIP5 = 2005, CMIP6 = 2014)
 
+#
+# Load filenames to process
+#
 datadir <- sprintf("../../datasets-aggregated-regionally/data/%s/%s_tas_landsea", cmip, cmip)
 filelist <- list.files(datadir)
 allfiles <- sprintf("%s/%s", datadir, filelist)
-
 aux <- grep("historical", filelist, value = TRUE)
 modelruns <- gsub(sprintf("%s_|_historical|\\.csv", cmip), "", aux)
 
+#
+# Compute annual averages
+#
 world.annual.mean <- function(csvfile){
     csvdata <- read.table(csvfile, header = TRUE, sep = ",")
     rval <- subset(csvdata, select = "world", drop = TRUE)
@@ -29,6 +64,9 @@ world.annual.mean <- function(csvfile){
     return(rval)
 }
 
+#
+# Main loop
+#
 l <- lapply(1:length(modelruns), function(i) {
     message("[", Sys.time(), "] Processing ", modelruns[i])
     modelfiles <- gsub("_", "_.*", modelruns[i], fixed = TRUE) %>%
@@ -68,4 +106,7 @@ aux <- expand.grid(gwls, exp[[cmip]])
 cnames <- paste(aux[ , 1], aux[ , 2], sep = "_")
 colnames(dat) <- cnames
 
+#
+# Dump CSV file
+#
 write.table(dat, file = sprintf("%s_Atlas_WarmingLevels.csv", cmip), quote = FALSE, sep = ",")
