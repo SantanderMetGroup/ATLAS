@@ -33,10 +33,15 @@ The IPCC reference regions have been used as the basis to generate popular spati
 Besides the analysis of time-slices (e.g. near-, mid- and long-term, 2021-2040, 2041-2060, 2081-2100, respectively), we also provide information to work with Global Warming Levels (+1.5&deg;, +2&deg;, +3&deg;, +4&deg;) under [warming-levels](./warming-levels).
 
 ## Scripts and notebooks
-Scripts and (jupyter) notebooks are provided in the different sections to ensure reproducibility and reusability of the results.
 
-## Virtual Workspace: The Atlas Hub
-The Atlas Hub is a cloud facility providing virtual workspace for the Climate Change Atlas code and data (with preinstalled software and accesible data). The Atlas Hub is based on **Jupyter** to create and run notebooks on a remote machine where all the software is pre-installed. The Atlas Hub builds on the R **climate4R** package, allowing for transparent climate data access, collocation, post-processing (including bias adjustment) and visualization. Instructions to start working with the Hub are available at the [climate4R GitHub repository](https://github.com/SantanderMetGroup/climate4R).
+Scripts and (jupyter) notebooks are provided in the different sections to ensure reproducibility and reusability of the results.
+Most of this code builds on the climate4R R package, allowing for transparent climate data access, collocation, post-processing (including bias adjustment) and visualization. The code runs on climate4R release v1.6.0. Check https://github.com/SantanderMetGroup/climate4R/blob/v1.6.0/conda-full/install.R for specific library versions in this release.
+
+### Virtual workspace through binder
+
+A much straigtforward way to explore and interact with this repository is through [binder](https://mybinder.org/). Binder provides an executable environment, making the code immediately reproducible. The required software is pre-installed in a cloud environment where the user can create and execute notebooks (directly) and scripts (via the available Terminal).
+
+To start exploring the binder interface just click [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SantanderMetGroup/binder-atlas/master?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FIPCC-WG1%252FAtlas%26urlpath%3Dtree%252FAtlas%252F%26branch%3Ddevel)
 
 ## Disclaimer
 
