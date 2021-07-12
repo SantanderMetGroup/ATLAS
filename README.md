@@ -1,6 +1,6 @@
 [![DOI](https://zenodo.org/badge/190203356.svg)](https://zenodo.org/badge/latestdoi/190203356) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SantanderMetGroup/binder-atlas/master?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FIPCC-WG1%252FATLAS%26urlpath%3Dtree%252FAtlas%252F%26branch%3Ddevel)
 
-# The Climate Change Atlas
+# Repository supporting the implementation of FAIR principles in the IPCC-WG1 Atlas
 
 The Climate Change Atlas is an initiative to develop **tools and ready-to-use datasets** for reproducible regional analysis of observed and model projected (CMIP5, CMIP6 and CORDEX) climate change information using both time-slices (e.g. 2081-2100) and warming levels (e.g. +1.5º). A **new set of sub-continental reference regions** is provided as the basis for regional synthesis (building on IPCC AR5 reference regions) and monthly spatially aggregated datasets are produced to facilitate the development of regional climate change information. 
 
