@@ -32,10 +32,13 @@ The IPCC reference regions have been used as the basis to generate popular spati
 
 Besides the analysis of time-slices (e.g. near-, mid- and long-term, 2021-2040, 2041-2060, 2081-2100, respectively), we also provide information to work with Global Warming Levels (+1.5&deg;, +2&deg;, +3&deg;, +4&deg;) under [warming-levels](./warming-levels).
 
-## Scripts and notebooks
+## Requirements
 
 Scripts and (jupyter) notebooks are provided in the different sections to ensure reproducibility and reusability of the results.
-Most of this code builds on the climate4R R package, allowing for transparent climate data access, collocation, post-processing (including bias adjustment) and visualization. The code runs on climate4R release v1.6.0. Check https://github.com/SantanderMetGroup/climate4R/blob/v1.6.0/conda-full/install.R for specific library versions in this release.
+Most of this code builds on the climate4R R package, allowing for transparent climate data access, collocation, post-processing (including bias adjustment) and visualization. The code runs on climate4R release v1.6.0. Check https://github.com/SantanderMetGroup/climate4R/blob/v1.6.0/conda-full/install.R for specific library versions in this release. These depend on a wealth of [other R packages](https://github.com/SantanderMetGroup/climate4R/blob/devel/conda-full/meta.yaml). Additionally, [Jupyter](https://jupyter.org) should also be available with the [R kernel](https://irkernel.github.io/installation) enabled. The simplest way to match all these requirements is by using a dedicated [conda](https://docs.conda.io) environment, which can be easily installed by issuing:
+```sh
+conda install -n climate4r -c conda-forge r-climate4r=1.6.0
+```
 
 ### Virtual workspace through binder
 
