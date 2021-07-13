@@ -100,6 +100,13 @@ mask.data <- function(grid, region, area){
 
 grid.yearmon <- function(grid) substr(grid$Dates$start, start = 1, stop = 7)
 
+varlong <- list(
+  tas = "mean near-surface air temperature",
+  pr = "mean daily precipitation"
+)
+
+units <- list(tas = "degC", pr="mm/day")
+
 #
 # 6. Main loop
 #
@@ -122,14 +129,23 @@ for (model in models){
     dir.create(out.path, recursive = TRUE)
     out.file <- paste0(out.path, "/", model,".csv")
     file.create(out.file)
-    meta <- sprintf("#Dataset: %s
+    meta <- sprintf("#Dataset: Monthly information aggregated on IPCC reference regions for CMIP6/6 and CORDEX
+#Reference: https://doi.org/10.5194/essd-12-2959-2019
+#Project: %s
+#Experiment: %s
+#Model: %s
 #Variable: %s
+#Variable_longname: %s
+#Units: %s
+#Time_frequency: month
+#Feature_type: regional mean time series
+#Regions: IPCC-WGI-reference-regions-v4
 #Area: %s
+#Spatial_resolution: %s degrees
 #Interpolation_method: cdo remapcon
-#Spatial_resolution: %dº
-#Creation_Date: %s
-#Author: IPCC-WGI Atlas Hub (https://github.com/SantanderMetGroup/IPCC-Atlas). Santander Meteorology Group.", 
-      model, var, area, resolution.degrees, as.character(Sys.Date())
+#Creation_Date: %s",
+      project, scenario, model, var, varlong[[var]], units[[var]],
+      area, resolution.degrees, as.character(Sys.Date())
     ) 
     writeLines(meta, out.file)
     write.table(out.df, out.file, row.names = FALSE, sep = ",", append = TRUE)
