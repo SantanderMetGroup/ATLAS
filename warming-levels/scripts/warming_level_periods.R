@@ -109,4 +109,8 @@ colnames(dat) <- cnames
 #
 # Dump CSV file
 #
-write.table(dat, file = sprintf("%s_Atlas_WarmingLevels.csv", cmip), quote = FALSE, sep = ",")
+write.table(
+    data.frame("model_run"=rownames(dat),dat, check.names = FALSE),
+    file = sprintf("%s_Atlas_WarmingLevels.csv", cmip),
+    quote = FALSE, sep = ",", row.names = FALSE
+)
