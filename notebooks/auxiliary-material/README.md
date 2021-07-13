@@ -14,9 +14,9 @@ The files you can find here are:
    in the notebook. Instrucions to create this objects are neverteless provided in
    the corresponding notebooks.
    
-        CMIP5_EC-EARTH_r12i1p1_historical_MED_tas-tasmin-tasmax_1986-2005_JJA.Rdata
-        CMIP5_EC-EARTH_r12i1p1_rcp85_MED_tas-tasmin-tasmax_2041-2060_JJA.Rdata
-        W5E5_MED_tas-tasmin-tasmax_1986-2005_JJA.Rdata
+        CMIP5_EC-EARTH_r12i1p1_historical_IP_tas-tasmin-tasmax_1986-2005_JJA.Rdata
+        CMIP5_EC-EARTH_r12i1p1_rcp85_IP_tas-tasmin-tasmax_2041-2060_JJA.Rdata
+        W5E5_IP_tas-tasmin-tasmax_1986-2005_JJA.Rdata
         W5E5_NorthAmerica_pr_1980-2014_yearly.Rdata
 
  * Images used in the notebooks
