@@ -8,37 +8,20 @@ library(downscaleR)
 library(loadeR)
 library(loadeR.2nc)
 library(climate4R.UDG)
-library(optparse) # para pasar argumentos en el .sh que se lean en el .R
 
-#source("/oceano/gmeteo/WORK/maialen/WORKm/GIT/climate4R/R/climate4R.chunk.R") # script vacío. hablar con Mai, el suyo guarda en netcdf
-source("/oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/R/FGD/climate4R.chunk.R") #arreglado aquí, permite también chunking de longitudes (chunk.horizontally = TRUE)
+# Source chunking function
+source("https://raw.githubusercontent.com/SantanderMetGroup/climate4R/devel/R/climate4R.chunk.R") 
 
-
-# ***************************************
-parseOpt <- TRUE # Models to be calculated are indicated in the .sh when submitted with qsub. Set to FALSE for local tests.
-if(parseOpt){
-	option_list = list(
-	  make_option(c("-m", "--model"), type="character", default=NULL, help="select model to be calculated", metavar="character", action = "store")
-	); 
-	opt_parser = OptionParser(option_list=option_list);
-	opt = parse_args(opt_parser);
-	if(is.null(opt$model)){
-	  stop("Model selection is mandatory. See script usage (--help)") 
-	}
-	ind.model = eval(parse(text=opt$model))
-} else{ind.model <- NULL}
-# ***************************************
 
 # ***************************************
 ## Argument setting for the C4R function:
 years.hist <- 1980:2005
 #years.ssp <- 2015:2100
-years.ssp <- 2015:2057
+years.ssp <- 2015:2057 # 2058-2100
 max.size <- 700 #Mb
 memory.offset <- 360
-#n.chunks <- 45 # PROBAR
-#chunk.horiz <- FALSE
 
+# Select SSP
 # ssp <- "ssp126"
 # ssp <- "ssp245"
 ssp <- "ssp585"
@@ -48,7 +31,6 @@ ssp <- "ssp585"
 message("Starting bias adjustment of CMIP6 for ", ssp, " with isimip3 at ", Sys.time())
 
 out.dir <- paste0("/oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/data/BA_DATA/CMIP6/temperatures/")
-#out.dir <- "/oceano/gmeteo/WORK/casanueva/PROYECTOS/IPCC/" # cambiado solo para tests
 # ***************************************
 
 # ***************************************
@@ -162,12 +144,11 @@ aux.fun.isimip3 <- function(y.tas, y.tasmin, y.tasmax,
 
 # ***************************************
 # apply bias correction -----------------
-if(!is.null(ind.model)) models <- ind.model else models <- 1:length(datasets.hist)
+models <- 1:length(datasets.hist)
 message("Ready to start models:\n ",paste(datasets.ssp[models], collapse="\n "))
 
 lapply(models, function(x) {
 
-#if(datasets.ssp[x]=="CMIP6_AWI-CM-1-1-MR_ssp585_r1i1p1f1" | datasets.ssp[x]=="CMIP6_EC-Earth3-Veg_ssp585_r1i1p1f1" |  datasets.ssp[x]=="CMIP6_EC-Earth3_ssp585_r1i1p1f1"){
 if(datasets.ssp[x]=="CMIP6_AWI-CM-1-1-MR_ssp585_r1i1p1f1"){
 	n.chunks <- 60; chunk.horiz <- FALSE
 } else if(datasets.ssp[x]=="CMIP6_CNRM-CM6-1-HR_ssp585_r1i1p1f2"){
@@ -175,25 +156,19 @@ if(datasets.ssp[x]=="CMIP6_AWI-CM-1-1-MR_ssp585_r1i1p1f1"){
 }  else{ n.chunks <- 45; chunk.horiz <- FALSE}
 
 
-if(!file.exists(paste0(out.dir,"/",datasets.ssp[x],"_chunk0",n.chunks,".nc"))){ # repite si no existe el último chunk, si no, ignora
+if(!file.exists(paste0(out.dir,"/",datasets.ssp[x],"_chunk0",n.chunks,".nc"))){ 
 
 	message("Starting GCM ",datasets.ssp[x], " at ", Sys.time())
 	di <- dataInventory(datasets.hist[x])
 	di2 <- dataInventory(datasets.ssp[x])
 	if (any(names(di) %in% "tas") & any(names(di) %in% "tasmax") & any(names(di) %in% "tasmin")) {
 	  if (any(names(di2) %in% "tas") & any(names(di2) %in% "tasmax") & any(names(di2) %in% "tasmin")) {
-	    ###lineas para ajustar automáticamente el número de chunks dependiendo de la memoria disponible:
-	    #s <- sum(di.obs[["tas"]]$DataSizeMb, di[["tas"]]$DataSizeMb, di2[["tas"]]$DataSizeMb) * 3 + memory.offset
-	    #n.chunks <- ceiling(s / max.size)
 	    ###COMPUTE BC:
 	    index <- climate4R.chunk(n.chunks = n.chunks, 
 		                     chunk.horizontally = chunk.horiz,
 		                     C4R.FUN.args = list(FUN = "aux.fun.isimip3",  
-		                                         #y.tas = list(dataset = dataset.obs, var = "tas", years = years.hist, time = "DD", aggr.d = "mean"),
-		                                         y.tas = list(dataset = dataset.obs, var = "tas", years = years.hist),#w5e5 is daily
-		                                         #y.tasmin = list(dataset = dataset.obs, var = "tasmin", years = years.hist, time = "DD", aggr.d = "min"), 
+		                                         y.tas = list(dataset = dataset.obs, var = "tas", years = years.hist),
 		                                         y.tasmin = list(dataset = dataset.obs, var = "tasmin", years = years.hist), 
-		                                         #y.tasmax = list(dataset = dataset.obs, var = "tasmax", years = years.hist, time = "DD", aggr.d = "max"), 
 		                                         y.tasmax = list(dataset = dataset.obs, var = "tasmax", years = years.hist), 
 		                                         x.tas = list(dataset = datasets.hist[x], var = "tas", years = years.hist), 
 		                                         x.tasmin = list(dataset = datasets.hist[x], var = "tasmin", years = years.hist), 
@@ -201,9 +176,7 @@ if(!file.exists(paste0(out.dir,"/",datasets.ssp[x],"_chunk0",n.chunks,".nc"))){ 
 		                                         newdata.tas = list(dataset = datasets.ssp[x], var = "tas", years = years.ssp), 
 		                                         newdata.tasmin = list(dataset = datasets.ssp[x], var = "tasmin", years = years.ssp), 
 		                                         newdata.tasmax = list(dataset = datasets.ssp[x], var = "tasmax", years = years.ssp)),
-				     #loadGridData.args = list(latLim=c(-90,-80)), # only for a test of chunk1
-		                     output.path = out.dir,
-				     #filename = datasets.ssp[x] )
+				     output.path = out.dir,
 				     filename = paste0(datasets.ssp[x],'_', years.ssp[1], '-',years.ssp[length(years.ssp)]) )
 	    index <- NULL
 	    message("Finished GCM ",datasets.ssp[x], " at ", Sys.time())
