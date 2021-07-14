@@ -25,7 +25,7 @@ Spatially averaged output from CMIP5 and CMIP6 global climate models (see [inven
 
 ## IPCC-WGII continental regions
 
-Comprises eight continental regions used in the WGII report (Africa, Antarctica, Asia, Australasia, Central and South America, Europe, and North America, and Small Islands).
+Comprises eight continental regions used in the WGII report (Africa, Antarctica, Asia, Australasia, Central and South America, Europe, North America, and Small Islands).
 
 ## Monsoon regions
 
