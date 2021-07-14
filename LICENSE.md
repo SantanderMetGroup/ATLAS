@@ -50,6 +50,6 @@ The use of the **CMIP5 aggregated datasets** is unrestricted with the [CMIP5 ter
     climate modeling groups (listed in the Atlas inventory folders in this 
     repository) for producing and making available their model output. 
     
-Please read the following document if you are planning to use CMIP data for commercial applications: [CMIP Licensing and Access Control, by B.N. Lawrence](https://www.earthsystemcog.org/site_media/projects/wip/CMIP6_Licensing_and_Access_Control.pdf).
+Please read the following document if you are planning to use CMIP data for commercial applications: [CMIP Licensing and Access Control, by B.N. Lawrence](https://database.sirma-project.eu/csv_models/D.SIRMA-WP4-4.2-C5.L.pdf).
 
 
