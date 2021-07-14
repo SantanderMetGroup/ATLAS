@@ -107,7 +107,6 @@ computeDeltas <- function(project,
     if (!is.list(periods)) stop("please provide the correct object in periods.")
     # region <- colnames(read.table(allfiles[1], header = TRUE, sep = ",", skip = 7))[-1]
     aggrfun <- "mean"
-    if (var == "pr") aggrfun <- "sum"
     out <- lapply(1:length(modelruns), function(i) {
       modelfiles <- grep(modelruns[i], allfiles, value = TRUE) 
       if (length(modelfiles) > 0) {
