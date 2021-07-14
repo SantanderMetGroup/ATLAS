@@ -2,8 +2,8 @@
 
 Several alternative sets of regions are included to facilitate the regional synthesis of information:
 
- * IPCC-WGI reference regions (land and mountain-range subregions are also defined using masks under [reference-grids](../reference-grids)) 
- * IPCC-WGII continental regions
+ * IPCC AR6 WGI reference regions (land and mountain-range subregions are also defined using masks under [reference-grids](../reference-grids)) 
+ * IPCC AR6 WGII continental regions
  * Monsoon regions
  * River basins
  * Small islands
