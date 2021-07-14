@@ -37,7 +37,7 @@ Comprises 28 major river basins filtered from the world bank data catalogue ([to
 
 ## Small islands
 
-Comprises nine small island regions used in the Atlas Chapter (Section Atlas.10; Figure Atlas.4):  North Indian Ocean (ARB and BOB), West Indian Ocean, Midway-Hawaian Islands, Northwest tropics, Equatorial Pacific, Northwest SPCZ, Southwest SPCZ, Southen subtropics and the Caribbean.
+Comprises nine small island regions used in the Atlas Chapter (Section Atlas.10; Figure Atlas.4):  North Indian Ocean (ARB and BOB), West Indian Ocean, Midway-Hawaian Islands, Northwest tropics, Equatorial Pacific, Northwest SPCZ, Southwest SPCZ, Southern subtropics and the Caribbean.
 
 ## Ocean biomes
 
