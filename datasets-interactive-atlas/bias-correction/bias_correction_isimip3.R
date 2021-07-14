@@ -1,3 +1,15 @@
+# bias_correction_isimip3.R
+#
+# Copyright (C) 2021 Santander Meteorology Group (http://meteo.unican.es)
+#
+# This work is licensed under a Creative Commons Attribution 4.0 International
+# License (CC BY 4.0 - http://creativecommons.org/licenses/by/4.0)
+
+#' @title Script to bias-correct CMIP6 with isimip3 
+#' @description Script to bias-correct CMIP6 with isimip3 method
+#' @author M. Iturbide
+#' @author A. Casanueva
+
 # GMS 2020. Script to bias-correct CMIP6 with isimip3
 # M. Iturbide, 27-07-2020. First version.
 # M. Iturbide, 28-08-2020. Allow lat-lon chunking and set number of chunks based on memory resources.

@@ -1,3 +1,14 @@
+# referenceGridsCreation.R
+#
+# Copyright (C) 2021 Santander Meteorology Group (http://meteo.unican.es)
+#
+# This work is licensed under a Creative Commons Attribution 4.0 International
+# License (CC BY 4.0 - http://creativecommons.org/licenses/by/4.0)
+
+#' @title 
+#' @description 
+#' @author M. Iturbide
+
 # This script builds on the climate4R framework 
 # https://github.com/SantanderMetGroup/climate4R
 

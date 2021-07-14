@@ -1,8 +1,18 @@
-# This script interpolates CMPI5 monthly data and CMIP6 monthly output from the atmopsheric models.
-# To run the script: 
-# source AtlasCDOremappeR_CMIP.sh <file_to_interpolate> <name_of_the_output> <destination_mask> <source_mask>
+#!/bin/bash
+#
+# AtlasCDOremappeR_CMIP.sh
+#
+# Copyright (C) 2021 Santander Meteorology Group (http://meteo.unican.es)
+#
+# This work is licensed under a Creative Commons Attribution 4.0 International
+# License (CC BY 4.0 - http://creativecommons.org/licenses/by/4.0)
 
-#! /bin/bash
+# Title: Interpolate montly CMIP data
+# Description:
+#   This script interpolates CMIP5 monthly data and CMIP6 monthly output
+#   from the atmopsheric models. To run the script: 
+#   source AtlasCDOremappeR_CMIP.sh <file_to_interpolate> <name_of_the_output> <destination_mask> <source_mask>
+# Author: J. Milovac
 
 datanc=$1
 outfile=$2

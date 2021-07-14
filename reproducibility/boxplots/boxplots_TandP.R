@@ -1,14 +1,20 @@
-# THIS SCRIPT COMPUTES TEMPERATURE AND PRECIPITATION CHANGES FROM DATA FILES THAT ARE
-# AVAILABLE IN THIS REPOSITORY (CSV FILES IN aggregated-datasets) AND 
-# PRODUCES BOXPLOTS AND SCATTERPLOTS CONSIDERING THE MEDIAN, P10 AND P90.
-# REQUIREMENTS TO RUN THE SCRIPT:
-# - R 
-# - R packages magrittr, httr, lattice, latticeExtra, gridExtra
+# boxplots_TandP.R
+#
+# Copyright (C) 2021 Santander Meteorology Group (http://meteo.unican.es)
+#
+# This work is licensed under a Creative Commons Attribution 4.0 International
+# License (CC BY 4.0 - http://creativecommons.org/licenses/by/4.0)
 
-#----------------------------------------------------------------------------------------------
+#' @title Boxplots and scatterplots of temperature and precipitation changes
+#' @description This script computes temperature and precipitation changes from
+#'   data files that are available in this repository (CSV files in
+#'   datasets-aggregated-regionally) and produces boxplots and scatterplots
+#'   considering the median, p10 and p90. Requirements to run the script:
+#'    - R 
+#'    - R packages magrittr, httr, lattice, latticeExtra, gridExtra
+#' @author M. Iturbide
 
-
-## The package magrittr is used to pipe (%>%) sequences of data operations improving readability
+## Package magrittr is used to pipe (%>%) sequences of data operations improving readability
 #install.packages("magrittr")
 library(magrittr)
 ## The package httr is used towork with URLs and HTTP

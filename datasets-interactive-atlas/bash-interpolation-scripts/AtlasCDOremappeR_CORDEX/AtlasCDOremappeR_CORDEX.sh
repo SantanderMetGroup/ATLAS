@@ -1,10 +1,20 @@
-# This script interpolates all model outputs from the CORDEX experiment
-# The script foolow file naming: CORDEX-<CORDEX_domain>_<GCM>_<experiment>_<realisation>_<RCM>_<version>_<variable>_<frequency>_<year>.nc4 
-# (e.g. CORDEX-AFR-22_MOHC-HadGEM2-ES_historical_r1i1p1_ICTP-RegCM4-7_v0_tas_monthly_2005.nc4 
-# If file naming is differently organised, revision of the lines 148,149,150 need to be done. 
-# The script looks for names of RCM and GCM, therefore it has to be provided in the file name. 
-
 #!/bin/bash
+#
+# AtlasCDOremappeR_CORDEX.sh
+#
+# Copyright (C) 2021 Santander Meteorology Group (http://meteo.unican.es)
+#
+# This work is licensed under a Creative Commons Attribution 4.0 International
+# License (CC BY 4.0 - http://creativecommons.org/licenses/by/4.0)
+
+# Title: Interpolate CORDEX output
+# Description:
+#   This script interpolates all model outputs from the CORDEX experiment
+#   The script follows file naming: CORDEX-<CORDEX_domain>_<GCM>_<experiment>_<realisation>_<RCM>_<version>_<variable>_<frequency>_<year>.nc4 
+#   (e.g. CORDEX-AFR-22_MOHC-HadGEM2-ES_historical_r1i1p1_ICTP-RegCM4-7_v0_tas_monthly_2005.nc4 
+#   If file naming is differently organised, revision of the lines 148,149,150 need to be done. 
+#   The script looks for names of RCM and GCM, therefore it has to be provided in the file name. 
+# Author: J. Milovac
 
 # Activate all the necesary libraries to run the script (new version of cdo, nco, netcdf)
 # Set the conda enviroment with netcdf, cdo, nco
@@ -45,10 +55,10 @@ export modelist=$WRKDIR/models_${var}_${dname}.txt
 export logfile=$WRKDIR/logfile_${var}_${dname}.txt
 
 #========================================================================================================================
-# ---------------------------------------- BELLOW NO CANGES NECESSARY!!! ------------------------------------------------
-# ---------------------------------------- Prepartions for the remapping ------------------------------------------------
+# ---------------------------------------- BELOW NO CHANGES NECESSARY!!! ------------------------------------------------
+# ---------------------------------------- Preparations for the remapping -----------------------------------------------
 # -----------------------------------------------------------------------------------------------------------------------
-#  NOTE1: name of the output file will be the same as and input. If this is not desired, change the name in the line 372
+#  NOTE1: name of the output file will be the same as the input. If this is not desired, change the name below
 #========================================================================================================================
 
 #Enter working directory

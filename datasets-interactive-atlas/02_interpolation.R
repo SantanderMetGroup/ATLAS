@@ -1,31 +1,21 @@
-#     script2_interpolation.R Interpolate outputs from script1_index_calculation.R
-#     for Atlas Product Reproducibility.
+# 02_interpolation.R
 #
-#     Copyright (C) 2020 Santander Meteorology Group (http://www.meteo.unican.es)
+# Copyright (C) 2021 Santander Meteorology Group (http://meteo.unican.es)
 #
-#     This program is free software: you can redistribute it and/or modify
-#     it under the terms of the GNU General Public License as published by
-#     the Free Software Foundation, either version 3 of the License, or
-#     (at your option) any later version.
-# 
-#     This program is distributed in the hope that it will be useful,
-#     but WITHOUT ANY WARRANTY; without even the implied warranty of
-#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#     GNU General Public License for more details.
-# 
-#     You should have received a copy of the GNU General Public License
-#     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+# This work is licensed under a Creative Commons Attribution 4.0 International
+# License (CC BY 4.0 - http://creativecommons.org/licenses/by/4.0)
 
-
-# This script uses bash interpolation scripts:
-# https://github.com/SantanderMetGroup/ATLAS/tree/mai-devel/SOD-scripts
-
-# The interpolation followed is the one used in EURO-CORDEX
-# It is a Conservative Remapping procedure in which parameters sensitive to land-sea transitions
-# are dually interpolated, i.e. land-sea separated, and then re-combined in one file.
-# Residual missing values (NAs) in the interior domain are filled with values from a straighforward remap.
-# Land fraction thresholds used were > 0.999 and < 0.001 for land and sea respectively.
-# The interpolation bash scripts are available at https://github.com/SantanderMetGroup/ATLAS/tree/mai-devel/SOD-scripts/bash-interpolation-scripts
+#' @title Interpolate outputs from 01_index_calculation.R
+#' @description
+#'   The interpolation followed is the one used in EURO-CORDEX. It is a
+#'   Conservative Remapping procedure in which parameters sensitive to land-sea
+#'   transitions are dually interpolated, i.e. land-sea separated, and then
+#'   re-combined in one file.  Residual missing values (NAs) in the interior
+#'   domain are filled with values from a straighforward remap.  Land fraction
+#'   thresholds used were > 0.999 and < 0.001 for land and sea respectively.
+#'   This script uses bash interpolation scripts available under
+#'   bash-interpolation-scripts/
+#' @author M. Iturbide
 
 # Misc utilities for remote repo interaction:
 library(devtools)
