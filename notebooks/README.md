@@ -13,7 +13,7 @@ climate-stripes         | [X](./climate-stripes_R.ipynb) |
 GeoTIFF-post-processing | [X](./GeoTIFF-post-processing_R.ipynb) |
 global-warming-levels   | [X](./global-warming-levels_R.ipynb) |
 linear-trends           | [X](./linear-trends_R.ipynb) |
-reference-regions-CORDEX-overlap |  | [X](./reference-regions-CORDEX-overlap_Python.ipynb)
+CORDEX-overlaps |  | [X](./CORDEX-overlaps.ipynb)
 reference-regions       | [X](./reference-regions_R.ipynb) | [X](./reference-regions_Python.ipynb) 
-regional-delta-changes  | [X](./regional-delta-changes_R.ipynb) |
+regional-scatter-plots  | [X](./regional-scatter-plots_R.ipynb) |
 
