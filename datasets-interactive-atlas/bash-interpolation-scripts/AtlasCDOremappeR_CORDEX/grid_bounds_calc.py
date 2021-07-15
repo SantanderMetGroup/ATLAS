@@ -3,9 +3,15 @@ import xarray as xa
 import numpy as np
 import sys
 
-# python script to be run by "python3 fix_grid.py fname" 
-# script to create an intermediate grid necessary when you want to interpolate with cdo remapcon netcdf 
-# output of the sript is a "source.grid" file 
+# Title: Grid boundaries calculation
+# Description:
+#   Conservative interpoaltion with CDO cannot handle some coordinate systems, such as e.g. Lambert conformal, therefore an intermediate step is necessary to be done.
+#   The script creates an intermediate grid and calculates boundaries for each grid point, which is necessary to perform "cdo remapcon <file.nc>" for the problematic grids. 
+#   Output of the script is the "source.grid" file 
+# Author: Caillaud Cécile (Meteo France)
+
+# To run the python scrip:
+# "python3 fix_grid.py fname" 
 
 def calc_vertices(lons, lats, write_to_file=False, filename=None):
     """

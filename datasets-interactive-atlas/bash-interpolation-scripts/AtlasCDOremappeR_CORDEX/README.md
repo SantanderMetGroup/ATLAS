@@ -1,6 +1,6 @@
 # AtlasCDOremappeR for CORDEX RCM simulations
 
-The script **AtlasCDOremappeR_CORDEX.sh** was used to perform the interpolation of all CORDEX data to the common 0.5 degree grid. 
+The script **AtlasCDOremappeR_CORDEX.sh** interpolates of the CORDEX data to the common 0.5 degree [grid](../../reference-grids/land_sea_mask_05degree.nc4) . 
 
 To run the script:
  	

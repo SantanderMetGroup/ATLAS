@@ -7,13 +7,14 @@
 # This work is licensed under a Creative Commons Attribution 4.0 International
 # License (CC BY 4.0 - http://creativecommons.org/licenses/by/4.0)
 
-# Title: Interpolate CORDEX output
+# Title: Interpolation of CORDEX data
 # Description:
 #   This script interpolates all model outputs from the CORDEX experiment
-#   The script follows file naming: CORDEX-<CORDEX_domain>_<GCM>_<experiment>_<realisation>_<RCM>_<version>_<variable>_<frequency>_<year>.nc4 
-#   (e.g. CORDEX-AFR-22_MOHC-HadGEM2-ES_historical_r1i1p1_ICTP-RegCM4-7_v0_tas_monthly_2005.nc4 
-#   If file naming is differently organised, revision of the lines 148,149,150 need to be done. 
-#   The script looks for names of RCM and GCM, therefore it has to be provided in the file name. 
+#   The file to be interpolated should follow the file naming structure:
+#   CORDEX-<CORDEX_domain>_<GCM>_<experiment>_<realisation>_<RCM>_<version>_<variable>_<frequency>_<year>.nc4 
+#   (e.g. CORDEX-AFR-22_MOHC-HadGEM2-ES_historical_r1i1p1_ICTP-RegCM4-7_v0_tas_monthly_2005.nc4)
+#   If the file has a different naming structure, the lines corresponding to the file naming has to be revised (lines 161-163). 
+#   The script is based on the "doremap.sc" version 1.0 (allocated version number: 20150503), developed and tested by Mark Savenije (KNMI), Erik van Meijgaard (KNMI) and Andreas Prein (NCAR)
 # Author: J. Milovac
 
 # Activate all the necesary libraries to run the script (new version of cdo, nco, netcdf)

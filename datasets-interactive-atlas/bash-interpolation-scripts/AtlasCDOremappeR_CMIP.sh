@@ -12,6 +12,7 @@
 #   This script interpolates CMIP5 and CMIP6 monthly output
 #   from the atmopsheric models. To run the script: 
 #   source AtlasCDOremappeR_CMIP.sh <file_to_interpolate> <name_of_the_output> <destination_mask> <source_mask>
+#   The script is based on the "doremap.sc" version 1.0 (allocated version number: 20150503), developed and tested by Mark Savenije (KNMI), Erik van Meijgaard (KNMI) and Andreas Prein (NCAR)
 # Author: J. Milovac
 
 datanc=$1
