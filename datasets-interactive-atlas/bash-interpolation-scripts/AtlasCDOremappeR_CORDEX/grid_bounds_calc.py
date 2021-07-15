@@ -1,17 +1,20 @@
+# grid_bounds_calc.py
+#
+# Title: Grid boundaries calculation
+# Description:
+#   Conservative interpoaltion with CDO cannot handle some coordinate systems,
+#   such as e.g. Lambert conformal, therefore an intermediate step is necessary
+#   to be done.  The script creates an intermediate grid and calculates
+#   boundaries for each grid point, which is necessary to perform "cdo remapcon
+#   <file.nc>" for the problematic grids.  Output of the script is the
+#   "source.grid" file 
+# Author: Cécile Caillaud (Meteo France)
+
 import os
 import xarray as xa
 import numpy as np
 import sys
 
-# Title: Grid boundaries calculation
-# Description:
-#   Conservative interpoaltion with CDO cannot handle some coordinate systems, such as e.g. Lambert conformal, therefore an intermediate step is necessary to be done.
-#   The script creates an intermediate grid and calculates boundaries for each grid point, which is necessary to perform "cdo remapcon <file.nc>" for the problematic grids. 
-#   Output of the script is the "source.grid" file 
-# Author: Caillaud Cécile (Meteo France)
-
-# To run the python scrip:
-# "python3 fix_grid.py fname" 
 
 def calc_vertices(lons, lats, write_to_file=False, filename=None):
     """
