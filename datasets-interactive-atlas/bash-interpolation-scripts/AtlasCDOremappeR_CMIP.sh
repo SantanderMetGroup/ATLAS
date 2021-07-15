@@ -7,9 +7,9 @@
 # This work is licensed under a Creative Commons Attribution 4.0 International
 # License (CC BY 4.0 - http://creativecommons.org/licenses/by/4.0)
 
-# Title: Interpolate montly CMIP data
+# Title: Interpolates monthly CMIP data
 # Description:
-#   This script interpolates CMIP5 monthly data and CMIP6 monthly output
+#   This script interpolates CMIP5 and CMIP6 monthly output
 #   from the atmopsheric models. To run the script: 
 #   source AtlasCDOremappeR_CMIP.sh <file_to_interpolate> <name_of_the_output> <destination_mask> <source_mask>
 # Author: J. Milovac
