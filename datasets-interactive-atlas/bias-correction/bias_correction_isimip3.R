@@ -1,4 +1,22 @@
+# bias_correction_isimip3.R
+#
+# Copyright (C) 2021 Santander Meteorology Group (http://meteo.unican.es)
+#
+# This work is licensed under a Creative Commons Attribution 4.0 International
+# License (CC BY 4.0 - http://creativecommons.org/licenses/by/4.0)
+
+#' @title Script to bias-correct CMIP6 with ISIMIP3ISIMIP3 
+#' @description Script to bias-correct CMIP6 with the ISIMIP3 method. ISIMIP3 (Lange 2019, https://doi.org/10.5194/gmd-12-3055-2019) 
+#' is a parametric quantile mapping which has been designed to robustly adjust biases in all percentiles of a distribution whilst 
+#' preserving their trends. The observational reference used for calibration is W5E5 (Cucchi et al. 2020, https://doi.org/10.5194/essd-12-2097-2020),
+#' which was previously conservatively remapped onto a 1ºx1º regular grid. Note that spatial chunking is required to alleviate computationally costly calculations.
+
+#' @author S. Herrera
+#' @author M. Iturbide
+#' @author A. Casanueva
+
 # GMS 2020. Script to bias-correct CMIP6 with isimip3
+# S. Herrera, 25-07-2020. Prepare auxiliary function.
 # M. Iturbide, 27-07-2020. First version.
 # M. Iturbide, 28-08-2020. Allow lat-lon chunking and set number of chunks based on memory resources.
 # A. Casanueva, 25-09-2020. Allow parse options in .sh

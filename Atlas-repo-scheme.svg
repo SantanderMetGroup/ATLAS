@@ -25,16 +25,16 @@
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1.6732759"
-     inkscape:cx="408.18133"
+     inkscape:cx="313.75578"
      inkscape:cy="214.28901"
      inkscape:document-units="mm"
      inkscape:current-layer="g1169"
      showgrid="false"
-     inkscape:window-width="1853"
-     inkscape:window-height="1145"
+     inkscape:window-width="1293"
+     inkscape:window-height="713"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -44,7 +44,8 @@
      fit-margin-bottom="3"
      inkscape:measure-start="0,0"
      inkscape:measure-end="0,0"
-     inkscape:snap-global="true" />
+     inkscape:snap-global="true"
+     inkscape:pagecheckerboard="false" />
   <defs
      id="defs2">
     <clipPath
@@ -192,7 +193,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1071,8 +1072,7 @@
      inkscape:groupmode="layer"
      style="display:inline">
     <g
-       aria-label="reference
-grids"
+       aria-label="reference grids"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        id="text1127">
       <path
@@ -1230,9 +1230,7 @@ grids"
          id="path1433" />
     </g>
     <g
-       aria-label="IA Dataset
-aggregated
-regionally"
+       aria-label="IA Dataset aggregated regionally"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        id="text1139">
       <path
@@ -1353,9 +1351,7 @@ regionally"
          id="path1386" />
     </g>
     <g
-       aria-label="Global
-Warming
-Levels"
+       aria-label="Global Warming Levels"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        id="text1147">
       <path
@@ -1436,8 +1432,7 @@ Levels"
          id="path1326" />
     </g>
     <g
-       aria-label="reference
-regions"
+       aria-label="reference regions"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        id="text1153">
       <path
@@ -1588,8 +1583,7 @@ regions"
          id="path1232" />
     </g>
     <g
-       aria-label="reproducibility
-scripts"
+       aria-label="reproducibility scripts"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        id="text1167">
       <path

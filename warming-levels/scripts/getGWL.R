@@ -1,19 +1,9 @@
 # getGWL.R
 #
-# Copyright (C) 2019 Santander Meteorology Group (http://www.meteo.unican.es)
+# Copyright (C) 2021 Santander Meteorology Group (http://meteo.unican.es)
 #
-#     This program is free software: you can redistribute it and/or modify
-#     it under the terms of the GNU General Public License as published by
-#     the Free Software Foundation, either version 3 of the License, or
-#     (at your option) any later version.
-# 
-#     This program is distributed in the hope that it will be useful,
-#     but WITHOUT ANY WARRANTY; without even the implied warranty of
-#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#     GNU General Public License for more details.
-# 
-#     You should have received a copy of the GNU General Public License
-#     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+# This work is licensed under a Creative Commons Attribution 4.0 International
+# License (CC BY 4.0 - http://creativecommons.org/licenses/by/4.0)
 
 #' @title Global Warming Level timing calculation
 #' @description Atomic function to compute the timing of a user-defined Global Warming Level.
@@ -33,7 +23,6 @@
 #' @importFrom stats filter
 #' @references Nikulin, G. et al., 2018. The effects of 1.5 and 2 degrees of global warming on Africa in the CORDEX ensemble. Environ. Res. Lett. 13, 065003. https://doi.org/10.1088/1748-9326/aab1b1
 #' @author J. Bedia
-
 
 getGWL <- function(data, base.period = c(1850, 1900), proj.period = c(1971, 2100), window = 20, GWL = 2) {
     if (length(base.period) != 2) stop("\'base.period\' argument must be of length two")

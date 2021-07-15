@@ -1,8 +1,8 @@
-## CMIP5, CMIP6 and CORDEX spatial averages over the reference regions
+## CMIP5, CMIP6, CORDEX and observational spatial averages over the reference regions
 
-These files contain monthly precipitation and near surface temperature spatially averaged over the reference regions for CMIP5, CMIP6 and CORDEX datasets (a single run per model) separately for land, sea, and land-sea gridboxes. Regional averages are weighted by the cosine of latitude in all cases.
+These files contain monthly precipitation and near surface temperature spatially averaged over the reference regions for CMIP5, CMIP6 and CORDEX model output datasets (a single run per model) separately for land, sea, and land-sea gridboxes. Regional averages are weighted by the cosine of latitude in all cases. Also, an observation-based product is provided in the same format for reference: W5E5 ([Lange, 2019](https://doi.org/10.5880/PIK.2019.023))
 
-For the different CORDEX domains, aggregated results are calculated only in those regions with overlap larger than 80% (see [Overlaps-CORDEX-ReferenceRegions.csv](./data/CORDEX/Overlaps-CORDEX-ReferenceRegions.csv) for details on the overlap areas, as percentages over the total area of the reference region; regular geographic grids for every CORDEX domain are obtained from [Table 2](https://is-enes-data.github.io/cordex_archive_specifications.pdf) in the CORDEX specification archive; an annotated notebook for reproducibility is available at: [reference-regions/notebooks/reference-regions-CORDEX-overlap_Python.ipynb](../reference-regions/notebooks/reference-regions-CORDEX-overlap_Python.ipynb). The regions resulting for each domain are:
+For the different CORDEX domains, aggregated results are calculated only in those regions with overlap larger than 80% (see [Overlaps-CORDEX-ReferenceRegions.csv](./data/CORDEX/Overlaps-CORDEX-ReferenceRegions.csv) for details on the overlap areas, as percentages over the total area of the reference region; regular geographic grids for every CORDEX domain are obtained from [Table 2](https://is-enes-data.github.io/cordex_archive_specifications.pdf) in the CORDEX specification archive; an annotated notebook for reproducibility is available at: [notebooks/CORDEX-overlaps_Python.ipynb](../notebooks/CORDEX-overlaps_Python.ipynb). The regions resulting for each domain are:
 
 Domain | Reference regions above 80% overlap
 -------|------------------------------------
@@ -20,13 +20,3 @@ WAS    | NEAF, SEAF, WCA, ECA, TIB, ARP, SAS, ARS, BOB, EIO
 CAS    | EEU, WSB, ESB, WCA, ECA, TIB, EAS, ARP
 ANT    | EAN, WAN
 AUS    | SEA, NAU, CAU, EAU, SAU, NZ
-
-Additionally, results for all CMIP6 model runs (*CMIP6Amon_Hub* version 20191028 in 'Atlas-inventory/Hub') are also available at the following links:
-
-[CMIP6Amon_pr_land.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_pr_land.zip)\
-[CMIP6Amon_pr_landsea.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_pr_landsea.zip)\
-[CMIP6Amon_pr_sea.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_pr_sea.zip)\
-[CMIP6Amon_tas_land.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_tas_land.zip)\
-[CMIP6Amon_tas_landsea.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_tas_landsea.zip)\
-[CMIP6Amon_tas_sea.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_tas_sea.zip)
-

@@ -1,5 +1,16 @@
 #!/bin/bash
-# Requires GDAL installed
+#
+# shapefile2geojson.sh
+#
+# Copyright (C) 2021 Santander Meteorology Group (http://meteo.unican.es)
+#
+# This work is licensed under a Creative Commons Attribution 4.0 International
+# License (CC BY 4.0 - http://creativecommons.org/licenses/by/4.0)
+
+# Title: Convert shapefiles into geojson
+# Description: Convert shapefiles into geojson. Requires GDAL
+# Author: M. Garcia-Diez 
+
 #
 # Monsoons
 #

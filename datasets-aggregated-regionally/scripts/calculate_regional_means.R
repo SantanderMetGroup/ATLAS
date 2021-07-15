@@ -2,21 +2,8 @@
 #
 # Copyright (C) 2021 Santander Meteorology Group (http://meteo.unican.es)
 #
-# This program is part of the IPCC AR6-WGI Interactive Atlas codebase,
-# made available at https://github.com/IPCC-WG1/Atlas
-#
-#     This program is free software: you can redistribute it and/or modify
-#     it under the terms of the GNU General Public License as published by
-#     the Free Software Foundation, either version 3 of the License, or
-#     (at your option) any later version.
-# 
-#     This program is distributed in the hope that it will be useful,
-#     but WITHOUT ANY WARRANTY; without even the implied warranty of
-#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-#     GNU General Public License for more details.
-# 
-#     You should have received a copy of the GNU General Public License
-#     along with this program. If not, see <http://www.gnu.org/licenses/>
+# This work is licensed under a Creative Commons Attribution 4.0 International
+# License (CC BY 4.0 - http://creativecommons.org/licenses/by/4.0)
 
 #' @title Monthly regional area-weighted means for the reference regions
 #' @description 
@@ -100,6 +87,13 @@ mask.data <- function(grid, region, area){
 
 grid.yearmon <- function(grid) substr(grid$Dates$start, start = 1, stop = 7)
 
+varlong <- list(
+  tas = "mean near-surface air temperature",
+  pr = "mean daily precipitation"
+)
+
+units <- list(tas = "degC", pr="mm/day")
+
 #
 # 6. Main loop
 #
@@ -122,14 +116,23 @@ for (model in models){
     dir.create(out.path, recursive = TRUE)
     out.file <- paste0(out.path, "/", model,".csv")
     file.create(out.file)
-    meta <- sprintf("#Dataset: %s
+    meta <- sprintf("#Dataset: Monthly information aggregated on IPCC reference regions for CMIP6/6 and CORDEX
+#Reference: https://doi.org/10.5194/essd-12-2959-2019
+#Project: %s
+#Experiment: %s
+#Model: %s
 #Variable: %s
+#Variable_longname: %s
+#Units: %s
+#Time_frequency: month
+#Feature_type: regional mean time series
+#Regions: IPCC-WGI-reference-regions-v4
 #Area: %s
+#Spatial_resolution: %s degrees
 #Interpolation_method: cdo remapcon
-#Spatial_resolution: %dº
-#Creation_Date: %s
-#Author: IPCC-WGI Atlas Hub (https://github.com/SantanderMetGroup/IPCC-Atlas). Santander Meteorology Group.", 
-      model, var, area, resolution.degrees, as.character(Sys.Date())
+#Creation_Date: %s",
+      project, scenario, model, var, varlong[[var]], units[[var]],
+      area, resolution.degrees, as.character(Sys.Date())
     ) 
     writeLines(meta, out.file)
     write.table(out.df, out.file, row.names = FALSE, sep = ",", append = TRUE)

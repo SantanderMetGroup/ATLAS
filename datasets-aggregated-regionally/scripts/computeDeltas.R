@@ -1,24 +1,13 @@
-#     computeDeltas.R Compute temperature and precipitation changes from data files 
-#      of this repository (aggregated-datasets).
+# computeDeltas.R
 #
-#     Copyright (C) 2017 Santander Meteorology Group (http://www.meteo.unican.es)
+# Copyright (C) 2021 Santander Meteorology Group (http://meteo.unican.es)
 #
-#     This program is free software: you can redistribute it and/or modify
-#     it under the terms of the GNU General Public License as published by
-#     the Free Software Foundation, either version 3 of the License, or
-#     (at your option) any later version.
-# 
-#     This program is distributed in the hope that it will be useful,
-#     but WITHOUT ANY WARRANTY; without even the implied warranty of
-#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#     GNU General Public License for more details.
-# 
-#     You should have received a copy of the GNU General Public License
-#     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+# This work is licensed under a Creative Commons Attribution 4.0 International
+# License (CC BY 4.0 - http://creativecommons.org/licenses/by/4.0)
 
-
+#' @title Compute temperature and precipitation changes
 #' @description Compute temperature and precipitation changes from data 
-#' files of this repository (aggregated-datasets).
+#'   files of this repository (datasets-aggregated-regionally).
 #' @author M. Iturbide
 
 
@@ -59,7 +48,7 @@ computeDeltas <- function(project,
       warning("Multiple region option is not implemented for CORDEX yet. Firs value, i.e. ", region[1], "will be used")
       region <- region[1]
     }
-    l.aux <- lapply(allfiles.aux, function(x) length(grep(region, suppressMessages(scan(x[1], skip = 7, nlines = 1, what = "raw")))) > 0)
+    l.aux <- lapply(allfiles.aux, function(x) length(grep(region, suppressMessages(scan(x[1], skip = 15, nlines = 1, what = "raw")))) > 0)
     dom <- which(unlist(l.aux))
     dom <- if (!is.null(cordex.domain)) dom[cordex.domain]
     if (!is.null(dom)) {
@@ -83,9 +72,12 @@ computeDeltas <- function(project,
       wlfiles <- paste0(root, wlls)
       aux <- lapply(periods, function(p) read.table(wlfiles, header = TRUE, sep = ",")[[paste0("X", p, "_", exp)]])
       modelruns <- as.character(read.table(wlfiles, header = TRUE, sep = ",")[,1])
-      ind <- which(aux[[1]] != 9999 & modelruns != "EC-EARTH_r3i1p1")
-      if (var == "pr" & project == "CMIP5") ind <- which(aux[[1]] != 9999 & modelruns != "EC-EARTH_r3i1p1" & modelruns != "GFDL-CM3_r1i1p1" & modelruns != "GFDL-ESM2M_r1i1p1" & modelruns != "HadGEM2-CC_r1i1p1" & modelruns != "BNU-ESM_r1i1p1")
-      if (var == "pr" & project == "CMIP6") ind <- which(aux[[1]] != 9999 & modelruns != "EC-EARTH_r3i1p1" & modelruns != "AWI-CM-1-1-MR_r1i1p1f1"  & modelruns != "FGOALS-g3_r1i1p1f1")
+      ind <- which(aux[[1]] != 9999)
+      # "EC-EARTH_r3i1p1" is excluded because only run "EC-EARTH_r12i1p1" is considered for CMIP.
+      if (project != "CORDEX") ind <- which(aux[[1]] != 9999 & modelruns != "EC-EARTH_r3i1p1")
+      # "EC-EARTH_r3i1p1" is excluded because run "EC-EARTH_r12i1p1" is considered for CMIP.
+      # "AWI-CM-1-1-MR_r1i1p1f1" is excluded for precipitation because there is no historical data.
+      if (var == "pr" & project == "CMIP6") ind <- which(aux[[1]] != 9999 & modelruns != "EC-EARTH_r3i1p1" & modelruns != "AWI-CM-1-1-MR_r1i1p1f1")
       modelruns <- modelruns[ind]
       p <- paste0("+", periods, "º")
       periods <- lapply(aux, function(p) cbind(p - 9, p + 10)[ind,])
@@ -105,16 +97,15 @@ computeDeltas <- function(project,
     if (project == "CMIP6") modelruns <- gsub("_", "_.*", modelruns)
     
     if (!is.list(periods)) stop("please provide the correct object in periods.")
-    # region <- colnames(read.table(allfiles[1], header = TRUE, sep = ",", skip = 7))[-1]
+    # region <- colnames(read.table(allfiles[1], header = TRUE, sep = ",", comment.char = "#"))[-1]
     aggrfun <- "mean"
-    if (var == "pr") aggrfun <- "sum"
     out <- lapply(1:length(modelruns), function(i) {
       modelfiles <- grep(modelruns[i], allfiles, value = TRUE) 
       if (length(modelfiles) > 0) {
         histf <- grep("historical", modelfiles, value = TRUE)
         if (length(histf) > 0) {
           l2 <- lapply(1:length(histf), function(h) {
-            hist <-  read.table(histf[h], header = TRUE, sep = ",", skip = 7)
+            hist <-  read.table(histf[h], header = TRUE, sep = ",", comment.char = "#")
             hist <- hist[, c("date", region), drop = FALSE]
             seas <- hist %>% subset(select = "date", drop = TRUE) %>% gsub(".*-", "", .) %>% as.integer()
             z <- sort(unlist(lapply(season, function(s) which(seas == s))))
@@ -147,7 +138,7 @@ computeDeltas <- function(project,
             hist <- hist[start:end,, drop = FALSE]
             l1 <- lapply(1:length(exp), FUN = function(j) {
               rcp <- tryCatch({
-                rcp0 <- grep(gsub("historical", exp[j], histf[h]), modelfiles, value = TRUE) %>% read.table(header = TRUE, sep = ",", skip = 7)
+                rcp0 <- grep(gsub("historical", exp[j], histf[h]), modelfiles, value = TRUE) %>% read.table(header = TRUE, sep = ",", comment.char = "#")
                 rcp0[, c("date", region), drop = FALSE]
               }, error = function(err) return(NULL))
               

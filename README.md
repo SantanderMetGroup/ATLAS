@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/190203356.svg)](https://zenodo.org/badge/latestdoi/190203356) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SantanderMetGroup/binder-atlas/master?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FIPCC-WG1%252FAtlas%26urlpath%3Dtree%252FAtlas%252F%26branch%3Ddevel)
+[![DOI](https://zenodo.org/badge/190203356.svg)](https://zenodo.org/badge/latestdoi/190203356) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SantanderMetGroup/binder-atlas/master?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FIPCC-WG1%252FAtlas%26urlpath%3Dlab%252Ftree%252FAtlas%252F%26branch%3Ddevel)
 
 # Repository supporting the implementation of FAIR principles in the IPCC-WGI Atlas
 
@@ -44,9 +44,9 @@ conda install -n climate4r -c conda-forge r-climate4r=1.6.0
 
 ### Virtual workspace through binder
 
-A much straigtforward way to explore and interact with this repository is through [binder](https://mybinder.org/). Binder provides an executable environment, making the code immediately reproducible. The required software is pre-installed in a cloud environment where the user can create and execute notebooks (directly) and scripts (via the available Terminal).
+A much straigtforward way to explore and interact with this repository is through [binder](https://mybinder.org/). Binder provides an executable environment, making the code immediately reproducible. The required software is pre-installed in a cloud environment where the user can create and execute notebooks (directly) and scripts (via the available Terminal). Moreover, the environment is accesible without any further authentication by the user.
 
-To start exploring the binder interface just click [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SantanderMetGroup/binder-atlas/master?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FIPCC-WG1%252FAtlas%26urlpath%3Dtree%252FAtlas%252F%26branch%3Ddevel)
+To start exploring the binder interface, just click [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SantanderMetGroup/binder-atlas/master?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FIPCC-WG1%252FAtlas%26urlpath%3Dlab%252Ftree%252FAtlas%252F%26branch%3Ddevel). You will arrive at a [JupyterLab interface](https://jupyterlab.readthedocs.io/en/stable/user/interface.html) with access to the contents of this repository.
 
 ## Disclaimer
 

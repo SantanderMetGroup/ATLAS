@@ -1,20 +1,14 @@
-#     script1_index_calculation.R Generate Climate Index NetCDF4 files from CMIP5 and CMIP6 Model Outputs for Atlas Product Reproducibility
+# 01_index_calculation.R
 #
-#     Copyright (C) 2020 Santander Meteorology Group (http://www.meteo.unican.es)
+# Copyright (C) 2021 Santander Meteorology Group (http://meteo.unican.es)
 #
-#     This program is free software: you can redistribute it and/or modify
-#     it under the terms of the GNU General Public License as published by
-#     the Free Software Foundation, either version 3 of the License, or
-#     (at your option) any later version.
-# 
-#     This program is distributed in the hope that it will be useful,
-#     but WITHOUT ANY WARRANTY; without even the implied warranty of
-#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#     GNU General Public License for more details.
-# 
-#     You should have received a copy of the GNU General Public License
-#     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+# This work is licensed under a Creative Commons Attribution 4.0 International
+# License (CC BY 4.0 - http://creativecommons.org/licenses/by/4.0)
 
+#' @title Generate Climate Index NetCDF4 files
+#' @description Generate Climate Index NetCDF4 files from CMIP5 and
+#'   CMIP6 Model Outputs for Atlas Product Reproducibility
+#' @author M. Iturbide
 
 # This script builds on the climate4R framework 
 # https://github.com/SantanderMetGroup/climate4R
@@ -80,15 +74,6 @@ AtlasIndex <- "FD"
 datasets <- UDG.datasets()[["CMIP5_AR5_1run"]]
 # or, e.g., for CMIP6:
 # datasets <- UDG.datasets()[["CMIP6_1run"]]
-
-# # TO USE THE SAME SET OF MODELS USED IN THE ATLAS uncomment this paragraph. 
-# # Use the *.csv files of the inventories 
-# # (https://github.com/SantanderMetGroup/ATLAS/tree/devel/AtlasHub-inventory).
-# # This is the root of the ATLAS repo content:
-# root <- "https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/devel/"
-# # read the first column of the desired *.csv file (e.g. CMIP5_Atlas_20191211.csv) as follows:
-# file <- "AtlasHub-inventory/CMIP5_Atlas_20191211.csv"
-# datasets <- read.csv(paste0(root, file))[,1]
 
 # Select number of chunks
 # Note: chunking sequentially splits the task into manageable data chunks to avoid memory problems
