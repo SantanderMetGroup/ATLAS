@@ -1,0 +1,48 @@
+{
+    "creators": [
+        {   
+            "orcid": "0000-0002-5048-0941",
+            "affiliation": "Santander Meteorology Group, Instituto de Física de Cantabria (CSIC-UC), Santander, Spain",
+            "name": "Iturbide, Maialen"
+        },
+        {   
+            "orcid": "0000-0001-6219-4312",
+            "affiliation": "Santander Meteorology Group, Dept. Applied Mathematics and Computer Science, Universidad de Cantabria, Santander, Spain",
+            "name": "Bedia, Joaquín"
+        },
+        {   
+            "orcid": "0000-0003-0311-5498",
+            "affiliation": "Ouranos, Montréal, Québec, Canada",
+            "name": "Huard, David"
+        },
+        {
+            "orcid": "0000-0002-0057-4878",
+            "affiliation": "Institute for Atmospheric and Climate Science, ETH Zurich, Zurich, Switzerland",
+            "name": "Hauser, Mathias"
+        },  
+        {   
+            "orcid": "0000-0002-3821-7833",
+            "affiliation": "Paris, France",
+            "name": "Yelekci, Ozge"
+        },
+         {   
+            "orcid": "0000-0002-2766-6297",
+            "affiliation": "Santander Meteorology Group. Instituto de Física de Cantabria (CSIC-UC), Santander, Spain",
+            "name": "Gutiérrez, José Manuel"
+        },
+        {   
+            "orcid": "0000-0002-3483-0008",
+            "affiliation": "Santander Meteorology Group. Instituto de Física de Cantabria (CSIC-UC), Santander, Spain",
+            "name": "Fernández, Jesús"
+        }
+   ],    
+
+    "license": "Creative-Commons-Attribution-4.0",
+
+    "title": "Repository supporting the implementation of FAIR principles in the IPCC-WG1 Atlas",
+
+    "keywords": ["IPCC-WG1", "AR6", "Atlas"],
+
+    "grants": [{"id":""}]
+}
+

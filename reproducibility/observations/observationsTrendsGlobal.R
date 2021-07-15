@@ -1,3 +1,14 @@
+# observationsTrendsGlobal.R
+#
+# Copyright (C) 2021 Santander Meteorology Group (http://meteo.unican.es)
+#
+# This work is licensed under a Creative Commons Attribution 4.0 International
+# License (CC BY 4.0 - http://creativecommons.org/licenses/by/4.0)
+
+#' @title 
+#' @description 
+#' @author M. Iturbide
+
 ### Loading Libraries ------------------------------------------------------------------------------
 options(java.parameters = "-Xmx8g")
 library(loadeR) # C4R

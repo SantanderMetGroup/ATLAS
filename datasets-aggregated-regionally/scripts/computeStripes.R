@@ -1,22 +1,11 @@
-#     computeStripes.R Compute temperature and precipitation changes from data files 
-#      of this repository (aggregated-datasets).
+# computeStripes.R
 #
-#     Copyright (C) 2017 Santander Meteorology Group (http://www.meteo.unican.es)
+# Copyright (C) 2021 Santander Meteorology Group (http://meteo.unican.es)
 #
-#     This program is free software: you can redistribute it and/or modify
-#     it under the terms of the GNU General Public License as published by
-#     the Free Software Foundation, either version 3 of the License, or
-#     (at your option) any later version.
-# 
-#     This program is distributed in the hope that it will be useful,
-#     but WITHOUT ANY WARRANTY; without even the implied warranty of
-#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#     GNU General Public License for more details.
-# 
-#     You should have received a copy of the GNU General Public License
-#     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+# This work is licensed under a Creative Commons Attribution 4.0 International
+# License (CC BY 4.0 - http://creativecommons.org/licenses/by/4.0)
 
-
+#' @title Compute temperature and precipitation stripes plots
 #' @description Compute temperature and precipitation stripes plots from 
 #' files of this repository (datasets-aggregated-regionally). Use argument
 #' ... for additional graphical arguments of the levelplot function 
