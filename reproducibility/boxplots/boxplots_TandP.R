@@ -26,9 +26,9 @@ library(Cairo)
 
 
 # Function computeDeltas available at this repo is used:
-source("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/mai-devel/aggregated-datasets/scripts/computeDeltas.R")
-source("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/mai-devel/aggregated-datasets/scripts/computeFigures.R")
-source("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/mai-devel/aggregated-datasets/scripts/computeOffset.R")
+source("../datasets-aggregated-regionally/scripts/computeDeltas.R")
+source("../datasets-aggregated-regionally/scripts/computeFigures.R")
+source("../datasets-aggregated-regionally/scripts/computeOffset.R")
 
 
 # select seasons, use c(12,1,2) for winter
