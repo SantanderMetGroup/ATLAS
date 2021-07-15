@@ -83,9 +83,12 @@ computeDeltas <- function(project,
       wlfiles <- paste0(root, wlls)
       aux <- lapply(periods, function(p) read.table(wlfiles, header = TRUE, sep = ",")[[paste0("X", p, "_", exp)]])
       modelruns <- as.character(read.table(wlfiles, header = TRUE, sep = ",")[,1])
-      ind <- which(aux[[1]] != 9999 & modelruns != "EC-EARTH_r3i1p1")
-      if (var == "pr" & project == "CMIP5") ind <- which(aux[[1]] != 9999 & modelruns != "EC-EARTH_r3i1p1" & modelruns != "GFDL-CM3_r1i1p1" & modelruns != "GFDL-ESM2M_r1i1p1" & modelruns != "HadGEM2-CC_r1i1p1" & modelruns != "BNU-ESM_r1i1p1")
-      if (var == "pr" & project == "CMIP6") ind <- which(aux[[1]] != 9999 & modelruns != "EC-EARTH_r3i1p1" & modelruns != "AWI-CM-1-1-MR_r1i1p1f1"  & modelruns != "FGOALS-g3_r1i1p1f1")
+      ind <- which(aux[[1]] != 9999)
+      # "EC-EARTH_r3i1p1" is excluded because only run "EC-EARTH_r12i1p1" is considered for CMIP.
+      if (project != "CORDEX") ind <- which(aux[[1]] != 9999 & modelruns != "EC-EARTH_r3i1p1")
+      # "EC-EARTH_r3i1p1" is excluded because run "EC-EARTH_r12i1p1" is considered for CMIP.
+      # "AWI-CM-1-1-MR_r1i1p1f1" is excluded for precipitation because there is no historical data.
+      if (var == "pr" & project == "CMIP6") ind <- which(aux[[1]] != 9999 & modelruns != "EC-EARTH_r3i1p1" & modelruns != "AWI-CM-1-1-MR_r1i1p1f1")
       modelruns <- modelruns[ind]
       p <- paste0("+", periods, "º")
       periods <- lapply(aux, function(p) cbind(p - 9, p + 10)[ind,])
