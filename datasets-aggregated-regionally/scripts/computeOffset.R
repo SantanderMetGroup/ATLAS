@@ -53,7 +53,7 @@ computeOffset <- function(project,
         histf <- grep("historical", modelfiles, value = TRUE)
         if (length(histf) > 0) {
           l2 <- lapply(1:length(histf), function(h) {
-            hist <-  read.table(histf[h], header = TRUE, sep = ",", skip = 15)
+            hist <-  read.table(histf[h], header = TRUE, sep = ",", comment.char = "#")
             hist <- hist[, c("date", region), drop = FALSE]
             seas <- hist %>% subset(select = "date", drop = TRUE) %>% gsub(".*-", "", .) %>% as.integer()
             z <- sort(unlist(lapply(season, function(s) which(seas == s))))
@@ -91,7 +91,7 @@ computeOffset <- function(project,
                 hist <- hist[start:end,, drop = FALSE]
                 l1 <- lapply(1:length(exp), FUN = function(j) {
                   rcp <- tryCatch({
-                    rcp0 <- grep(gsub("historical", exp[j], histf[h]), modelfiles, value = TRUE) %>% read.table(header = TRUE, sep = ",", skip = 15)
+                    rcp0 <- grep(gsub("historical", exp[j], histf[h]), modelfiles, value = TRUE) %>% read.table(header = TRUE, sep = ",", comment.char = "#")
                     rcp0[, c("date", region), drop = FALSE]
                   }, error = function(err) return(NULL))
                   
