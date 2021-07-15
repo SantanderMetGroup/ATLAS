@@ -11,6 +11,30 @@
   </thead>
   <tbody>
     <tr>
+      <td>CMIP6_AS-RCEC_TaiESM1_historical_r1i1p1f1_Amon_gn_20200623</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/2ffa014e-8b19-3494-88b0-5e10b340aeee" target="_blank">https://hdl.handle.net/21.14100/2ffa014e-8b19-3494-88b0-5e10b340aeee</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AS-RCEC&source_id=TaiESM1&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200623&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AS-RCEC&amp;source_id=TaiESM1&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200623&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_AS-RCEC_TaiESM1_historical_r1i1p1f1_Amon_gn_20200623</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/58fd2e7b-7b5d-375c-a3ad-c06d14e639d9" target="_blank">https://hdl.handle.net/21.14100/58fd2e7b-7b5d-375c-a3ad-c06d14e639d9</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AS-RCEC&source_id=TaiESM1&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200623&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AS-RCEC&amp;source_id=TaiESM1&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200623&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_AS-RCEC_TaiESM1_historical_r1i1p1f1_Omon_gn_20200630</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/f5208aa6-14e5-3814-a243-32de7333d961" target="_blank">https://hdl.handle.net/21.14100/f5208aa6-14e5-3814-a243-32de7333d961</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AS-RCEC&source_id=TaiESM1&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20200630&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AS-RCEC&amp;source_id=TaiESM1&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200630&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_AS-RCEC_TaiESM1_historical_r1i1p1f1_SImon_gn_20200630</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/5f22bd2a-2ef3-38fb-89a5-2121fae7c09b" target="_blank">https://hdl.handle.net/21.14100/5f22bd2a-2ef3-38fb-89a5-2121fae7c09b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AS-RCEC&source_id=TaiESM1&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200630&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AS-RCEC&amp;source_id=TaiESM1&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200630&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_AS-RCEC_TaiESM1_historical_r1i1p1f1_day_gn_20200626</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/dc2d46d8-d98e-3150-8f33-7bfce81b244f" target="_blank">https://hdl.handle.net/21.14100/dc2d46d8-d98e-3150-8f33-7bfce81b244f</a></td>
@@ -27,6 +51,18 @@
       <td>tas</td>
       <td><a href="https://hdl.handle.net/21.14100/07065a43-7a4f-38e9-9027-73a10ca97d7e" target="_blank">https://hdl.handle.net/21.14100/07065a43-7a4f-38e9-9027-73a10ca97d7e</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AS-RCEC&source_id=TaiESM1&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20200626&variable_id=tas&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AS-RCEC&amp;source_id=TaiESM1&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20200626&amp;variable_id=tas&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_AS-RCEC_TaiESM1_ssp585_r1i1p1f1_Amon_gn_20200901</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/2510e4d1-07c9-3a78-ab4a-ffda650a74df" target="_blank">https://hdl.handle.net/21.14100/2510e4d1-07c9-3a78-ab4a-ffda650a74df</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AS-RCEC&source_id=TaiESM1&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200901&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AS-RCEC&amp;source_id=TaiESM1&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200901&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_AS-RCEC_TaiESM1_ssp585_r1i1p1f1_Amon_gn_20200901</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/a27d4d69-c0ff-3fb1-b917-13b96a06637b" target="_blank">https://hdl.handle.net/21.14100/a27d4d69-c0ff-3fb1-b917-13b96a06637b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AS-RCEC&source_id=TaiESM1&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200901&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AS-RCEC&amp;source_id=TaiESM1&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200901&amp;variable_id=sfcWind&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_AS-RCEC_TaiESM1_ssp585_r1i1p1f1_day_gn_20200902</td>
@@ -47,6 +83,24 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AS-RCEC&source_id=TaiESM1&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20200902&variable_id=tas&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AS-RCEC&amp;source_id=TaiESM1&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20200902&amp;variable_id=tas&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_AWI_AWI-CM-1-1-MR_historical_r1i1p1f1_Amon_gn_20200511</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/a2a819bc-addd-3d4f-9de7-74c66535fc0e" target="_blank">https://hdl.handle.net/21.14100/a2a819bc-addd-3d4f-9de7-74c66535fc0e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AWI&source_id=AWI-CM-1-1-MR&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200511&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AWI&amp;source_id=AWI-CM-1-1-MR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200511&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_AWI_AWI-CM-1-1-MR_historical_r1i1p1f1_Amon_gn_20200511</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/b18b294a-911d-3a8a-9466-c006549c8f96" target="_blank">https://hdl.handle.net/21.14100/b18b294a-911d-3a8a-9466-c006549c8f96</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AWI&source_id=AWI-CM-1-1-MR&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200511&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AWI&amp;source_id=AWI-CM-1-1-MR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200511&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_AWI_AWI-CM-1-1-MR_historical_r1i1p1f1_Omon_gn_20181218</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/2fcf49d3-0608-3373-a47f-0e721b7eaa87" target="_blank">https://hdl.handle.net/21.14100/2fcf49d3-0608-3373-a47f-0e721b7eaa87</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AWI&source_id=AWI-CM-1-1-MR&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20181218&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AWI&amp;source_id=AWI-CM-1-1-MR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20181218&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_AWI_AWI-CM-1-1-MR_historical_r1i1p1f1_day_gn_20181218</td>
       <td>tas</td>
       <td><a href="https://hdl.handle.net/21.14100/7c050b12-6318-3348-ac9c-48ce8d2ab664" target="_blank">https://hdl.handle.net/21.14100/7c050b12-6318-3348-ac9c-48ce8d2ab664</a></td>
@@ -63,6 +117,18 @@
       <td>tasmin</td>
       <td><a href="https://hdl.handle.net/21.14100/fe333a74-bc18-3ec1-9a8c-b9508de7a88e" target="_blank">https://hdl.handle.net/21.14100/fe333a74-bc18-3ec1-9a8c-b9508de7a88e</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AWI&source_id=AWI-CM-1-1-MR&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20181218&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AWI&amp;source_id=AWI-CM-1-1-MR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20181218&amp;variable_id=tasmin&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_AWI_AWI-CM-1-1-MR_ssp126_r1i1p1f1_Amon_gn_20190529</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/b3946d75-428e-3da5-9e44-42988c4c52ef" target="_blank">https://hdl.handle.net/21.14100/b3946d75-428e-3da5-9e44-42988c4c52ef</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AWI&source_id=AWI-CM-1-1-MR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190529&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AWI&amp;source_id=AWI-CM-1-1-MR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190529&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_AWI_AWI-CM-1-1-MR_ssp126_r1i1p1f1_Amon_gn_20190529</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/b3eded91-2ebd-34e0-8fd5-33db18b16796" target="_blank">https://hdl.handle.net/21.14100/b3eded91-2ebd-34e0-8fd5-33db18b16796</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AWI&source_id=AWI-CM-1-1-MR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190529&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AWI&amp;source_id=AWI-CM-1-1-MR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190529&amp;variable_id=sfcWind&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_AWI_AWI-CM-1-1-MR_ssp126_r1i1p1f1_Omon_gn_20181218</td>
@@ -101,6 +167,18 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AWI&source_id=AWI-CM-1-1-MR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190529&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AWI&amp;source_id=AWI-CM-1-1-MR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190529&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_AWI_AWI-CM-1-1-MR_ssp245_r1i1p1f1_Amon_gn_20190529</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/75002241-ed3e-3b88-a922-0580bd8de9d1" target="_blank">https://hdl.handle.net/21.14100/75002241-ed3e-3b88-a922-0580bd8de9d1</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AWI&source_id=AWI-CM-1-1-MR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190529&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AWI&amp;source_id=AWI-CM-1-1-MR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190529&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_AWI_AWI-CM-1-1-MR_ssp245_r1i1p1f1_Amon_gn_20190529</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/1326675d-b0cc-33b1-bf11-d80a668fba78" target="_blank">https://hdl.handle.net/21.14100/1326675d-b0cc-33b1-bf11-d80a668fba78</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AWI&source_id=AWI-CM-1-1-MR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190529&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AWI&amp;source_id=AWI-CM-1-1-MR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190529&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_AWI_AWI-CM-1-1-MR_ssp245_r1i1p1f1_Omon_gn_20181218</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/5ce564d7-0308-3898-bf61-51cc91c7e8c4" target="_blank">https://hdl.handle.net/21.14100/5ce564d7-0308-3898-bf61-51cc91c7e8c4</a></td>
@@ -135,6 +213,18 @@
       <td>tasmin</td>
       <td><a href="https://hdl.handle.net/21.14100/d459fbe9-466a-38f8-aeb8-0688d57121b2" target="_blank">https://hdl.handle.net/21.14100/d459fbe9-466a-38f8-aeb8-0688d57121b2</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AWI&source_id=AWI-CM-1-1-MR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190529&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AWI&amp;source_id=AWI-CM-1-1-MR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190529&amp;variable_id=tasmin&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_AWI_AWI-CM-1-1-MR_ssp370_r1i1p1f1_Amon_gn_20190529</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/30716483-71fa-32b3-942a-98f43c48950f" target="_blank">https://hdl.handle.net/21.14100/30716483-71fa-32b3-942a-98f43c48950f</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AWI&source_id=AWI-CM-1-1-MR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190529&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AWI&amp;source_id=AWI-CM-1-1-MR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190529&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_AWI_AWI-CM-1-1-MR_ssp370_r1i1p1f1_Amon_gn_20190529</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/034e8133-9897-3641-857d-8746cc101737" target="_blank">https://hdl.handle.net/21.14100/034e8133-9897-3641-857d-8746cc101737</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AWI&source_id=AWI-CM-1-1-MR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190529&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AWI&amp;source_id=AWI-CM-1-1-MR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190529&amp;variable_id=sfcWind&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_AWI_AWI-CM-1-1-MR_ssp370_r1i1p1f1_Omon_gn_20181218</td>
@@ -173,6 +263,18 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AWI&source_id=AWI-CM-1-1-MR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190529&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AWI&amp;source_id=AWI-CM-1-1-MR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190529&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_AWI_AWI-CM-1-1-MR_ssp585_r1i1p1f1_Amon_gn_20190529</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/eb6d1619-9f6b-3372-84f8-fb830c9d31f0" target="_blank">https://hdl.handle.net/21.14100/eb6d1619-9f6b-3372-84f8-fb830c9d31f0</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AWI&source_id=AWI-CM-1-1-MR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190529&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AWI&amp;source_id=AWI-CM-1-1-MR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190529&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_AWI_AWI-CM-1-1-MR_ssp585_r1i1p1f1_Amon_gn_20190529</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/6231a0ca-d5f7-3da5-8715-457e71c11590" target="_blank">https://hdl.handle.net/21.14100/6231a0ca-d5f7-3da5-8715-457e71c11590</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AWI&source_id=AWI-CM-1-1-MR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190529&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AWI&amp;source_id=AWI-CM-1-1-MR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190529&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_AWI_AWI-CM-1-1-MR_ssp585_r1i1p1f1_Omon_gn_20181218</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/56877ee4-5b5c-3f99-8e70-c8f3ded8d1f5" target="_blank">https://hdl.handle.net/21.14100/56877ee4-5b5c-3f99-8e70-c8f3ded8d1f5</a></td>
@@ -209,10 +311,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=AWI&source_id=AWI-CM-1-1-MR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190529&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=AWI&amp;source_id=AWI-CM-1-1-MR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190529&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_BCC_BCC-CSM2-MR_historical_r1i1p1f1_Amon_gn_20181126</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/ad26602e-3b6e-32fa-8a38-644774cfeb6b" target="_blank">https://hdl.handle.net/21.14100/ad26602e-3b6e-32fa-8a38-644774cfeb6b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20181126&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20181126&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_BCC_BCC-CSM2-MR_historical_r1i1p1f1_Amon_gn_20181126</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/dbc8c121-3273-3d6e-a67b-3e691bc6a1ed" target="_blank">https://hdl.handle.net/21.14100/dbc8c121-3273-3d6e-a67b-3e691bc6a1ed</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20181126&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20181126&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_BCC_BCC-CSM2-MR_historical_r1i1p1f1_Omon_gn_20181126</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/a38d366d-1afe-3b3c-a525-c731eab99970" target="_blank">https://hdl.handle.net/21.14100/a38d366d-1afe-3b3c-a525-c731eab99970</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20181126&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20181126&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_BCC_BCC-CSM2-MR_historical_r1i1p1f1_SImon_gn_20200218</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/ae81a0ff-0f99-30c3-bc19-39877967e2c2" target="_blank">https://hdl.handle.net/21.14100/ae81a0ff-0f99-30c3-bc19-39877967e2c2</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200218&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200218&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_BCC_BCC-CSM2-MR_historical_r1i1p1f1_day_gn_20181126</td>
@@ -245,10 +365,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20181126&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20181126&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_BCC_BCC-CSM2-MR_ssp126_r1i1p1f1_Amon_gn_20190314</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/762556a1-2da2-3a57-b021-5a60b5eb2f2f" target="_blank">https://hdl.handle.net/21.14100/762556a1-2da2-3a57-b021-5a60b5eb2f2f</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190314&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190314&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_BCC_BCC-CSM2-MR_ssp126_r1i1p1f1_Amon_gn_20190314</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/704e0842-d4f7-39a7-8d9e-8c28d4a1101b" target="_blank">https://hdl.handle.net/21.14100/704e0842-d4f7-39a7-8d9e-8c28d4a1101b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190314&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190314&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_BCC_BCC-CSM2-MR_ssp126_r1i1p1f1_Omon_gn_20190319</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/bbe65985-ef23-389e-89a1-4e4309fb495f" target="_blank">https://hdl.handle.net/21.14100/bbe65985-ef23-389e-89a1-4e4309fb495f</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190319&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190319&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_BCC_BCC-CSM2-MR_ssp126_r1i1p1f1_SImon_gn_20200219</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/e391cdf6-4c2d-32ae-b258-85d18d21e401" target="_blank">https://hdl.handle.net/21.14100/e391cdf6-4c2d-32ae-b258-85d18d21e401</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200219&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200219&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_BCC_BCC-CSM2-MR_ssp126_r1i1p1f1_day_gn_20190315</td>
@@ -281,10 +419,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190315&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190315&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_BCC_BCC-CSM2-MR_ssp245_r1i1p1f1_Amon_gn_20190314</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/52552dea-d5ee-363e-b17e-bf1fa8b17ce2" target="_blank">https://hdl.handle.net/21.14100/52552dea-d5ee-363e-b17e-bf1fa8b17ce2</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190314&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190314&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_BCC_BCC-CSM2-MR_ssp245_r1i1p1f1_Amon_gn_20190314</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/026b2d0f-4be7-3339-ae30-28a2a0f6b078" target="_blank">https://hdl.handle.net/21.14100/026b2d0f-4be7-3339-ae30-28a2a0f6b078</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190314&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190314&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_BCC_BCC-CSM2-MR_ssp245_r1i1p1f1_Omon_gn_20190319</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/93c54574-1757-3dca-90f2-542fa441e92b" target="_blank">https://hdl.handle.net/21.14100/93c54574-1757-3dca-90f2-542fa441e92b</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190319&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190319&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_BCC_BCC-CSM2-MR_ssp245_r1i1p1f1_SImon_gn_20200219</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/3a08206a-ad72-367c-96dd-2596ff07a694" target="_blank">https://hdl.handle.net/21.14100/3a08206a-ad72-367c-96dd-2596ff07a694</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200219&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200219&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_BCC_BCC-CSM2-MR_ssp245_r1i1p1f1_day_gn_20190318</td>
@@ -317,10 +473,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190318&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190318&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_BCC_BCC-CSM2-MR_ssp370_r1i1p1f1_Amon_gn_20190314</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/3847beb7-7b26-395e-a290-45260b8ab810" target="_blank">https://hdl.handle.net/21.14100/3847beb7-7b26-395e-a290-45260b8ab810</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190314&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190314&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_BCC_BCC-CSM2-MR_ssp370_r1i1p1f1_Amon_gn_20190314</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/2f836d18-0d51-3877-bbdc-38c17025efaa" target="_blank">https://hdl.handle.net/21.14100/2f836d18-0d51-3877-bbdc-38c17025efaa</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190314&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190314&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_BCC_BCC-CSM2-MR_ssp370_r1i1p1f1_Omon_gn_20190319</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/224b53c0-2623-3b3c-92e5-a1ab54ebad21" target="_blank">https://hdl.handle.net/21.14100/224b53c0-2623-3b3c-92e5-a1ab54ebad21</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190319&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190319&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_BCC_BCC-CSM2-MR_ssp370_r1i1p1f1_SImon_gn_20200219</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/12c1a206-2217-3066-b03b-e10dbd695a2e" target="_blank">https://hdl.handle.net/21.14100/12c1a206-2217-3066-b03b-e10dbd695a2e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200219&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200219&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_BCC_BCC-CSM2-MR_ssp370_r1i1p1f1_day_gn_20190318</td>
@@ -353,10 +527,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190318&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190318&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_BCC_BCC-CSM2-MR_ssp585_r1i1p1f1_Amon_gn_20190314</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/3ae74781-020d-32ce-be15-6568bc8dc5b9" target="_blank">https://hdl.handle.net/21.14100/3ae74781-020d-32ce-be15-6568bc8dc5b9</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190314&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190314&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_BCC_BCC-CSM2-MR_ssp585_r1i1p1f1_Amon_gn_20190314</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/bce399d0-14e2-3ddb-be23-b20597614a15" target="_blank">https://hdl.handle.net/21.14100/bce399d0-14e2-3ddb-be23-b20597614a15</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190314&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190314&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_BCC_BCC-CSM2-MR_ssp585_r1i1p1f1_Omon_gn_20190319</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/a85fc4c5-f672-3ca2-bd10-c383d3c761ff" target="_blank">https://hdl.handle.net/21.14100/a85fc4c5-f672-3ca2-bd10-c383d3c761ff</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190319&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190319&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_BCC_BCC-CSM2-MR_ssp585_r1i1p1f1_SImon_gn_20200219</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/42c290b4-37e2-3c2d-8cd1-c3201909dd32" target="_blank">https://hdl.handle.net/21.14100/42c290b4-37e2-3c2d-8cd1-c3201909dd32</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200219&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200219&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_BCC_BCC-CSM2-MR_ssp585_r1i1p1f1_day_gn_20190318</td>
@@ -389,6 +581,30 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=BCC&source_id=BCC-CSM2-MR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190318&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=BCC&amp;source_id=BCC-CSM2-MR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190318&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CAMS_CAMS-CSM1-0_historical_r2i1p1f1_Amon_gn_20190829</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/8b279432-cd1a-3a4c-94d9-d22152baa7b8" target="_blank">https://hdl.handle.net/21.14100/8b279432-cd1a-3a4c-94d9-d22152baa7b8</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAMS&source_id=CAMS-CSM1-0&experiment_id=historical&variant_label=r2i1p1f1&table_id=Amon&grid_label=gn&version=20190829&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAMS&amp;source_id=CAMS-CSM1-0&amp;experiment_id=historical&amp;variant_label=r2i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190829&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAMS_CAMS-CSM1-0_historical_r2i1p1f1_Amon_gn_20201125</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/dc7f154e-46c5-3cfd-be5a-4af0b6a7cced" target="_blank">https://hdl.handle.net/21.14100/dc7f154e-46c5-3cfd-be5a-4af0b6a7cced</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAMS&source_id=CAMS-CSM1-0&experiment_id=historical&variant_label=r2i1p1f1&table_id=Amon&grid_label=gn&version=20201125&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAMS&amp;source_id=CAMS-CSM1-0&amp;experiment_id=historical&amp;variant_label=r2i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20201125&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAMS_CAMS-CSM1-0_historical_r2i1p1f1_Omon_gn_20190829</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/93992462-4db9-30a9-891e-0dc7c5c7e435" target="_blank">https://hdl.handle.net/21.14100/93992462-4db9-30a9-891e-0dc7c5c7e435</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAMS&source_id=CAMS-CSM1-0&experiment_id=historical&variant_label=r2i1p1f1&table_id=Omon&grid_label=gn&version=20190829&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAMS&amp;source_id=CAMS-CSM1-0&amp;experiment_id=historical&amp;variant_label=r2i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190829&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAMS_CAMS-CSM1-0_historical_r2i1p1f1_SImon_gn_20190829</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/805720aa-750e-3c04-b77b-7ac9511659ef" target="_blank">https://hdl.handle.net/21.14100/805720aa-750e-3c04-b77b-7ac9511659ef</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAMS&source_id=CAMS-CSM1-0&experiment_id=historical&variant_label=r2i1p1f1&table_id=SImon&grid_label=gn&version=20190829&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAMS&amp;source_id=CAMS-CSM1-0&amp;experiment_id=historical&amp;variant_label=r2i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190829&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CAMS_CAMS-CSM1-0_historical_r2i1p1f1_day_gn_20200716</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/476d9c53-328a-35d8-ab01-ecbf40538902" target="_blank">https://hdl.handle.net/21.14100/476d9c53-328a-35d8-ab01-ecbf40538902</a></td>
@@ -399,6 +615,24 @@
       <td>tas</td>
       <td><a href="https://hdl.handle.net/21.14100/5f604e32-569d-385a-becb-e7443382a71d" target="_blank">https://hdl.handle.net/21.14100/5f604e32-569d-385a-becb-e7443382a71d</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAMS&source_id=CAMS-CSM1-0&experiment_id=historical&variant_label=r2i1p1f1&table_id=day&grid_label=gn&version=20200716&variable_id=tas&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAMS&amp;source_id=CAMS-CSM1-0&amp;experiment_id=historical&amp;variant_label=r2i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20200716&amp;variable_id=tas&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAMS_CAMS-CSM1-0_ssp126_r2i1p1f1_Amon_gn_20190924</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/cf274701-90d9-35aa-9146-440cc8183494" target="_blank">https://hdl.handle.net/21.14100/cf274701-90d9-35aa-9146-440cc8183494</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAMS&source_id=CAMS-CSM1-0&experiment_id=ssp126&variant_label=r2i1p1f1&table_id=Amon&grid_label=gn&version=20190924&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAMS&amp;source_id=CAMS-CSM1-0&amp;experiment_id=ssp126&amp;variant_label=r2i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190924&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAMS_CAMS-CSM1-0_ssp126_r2i1p1f1_Omon_gn_20190924</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/5e5b0b2b-9402-3e0f-8043-8bbbfdaa1c0b" target="_blank">https://hdl.handle.net/21.14100/5e5b0b2b-9402-3e0f-8043-8bbbfdaa1c0b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAMS&source_id=CAMS-CSM1-0&experiment_id=ssp126&variant_label=r2i1p1f1&table_id=Omon&grid_label=gn&version=20190924&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAMS&amp;source_id=CAMS-CSM1-0&amp;experiment_id=ssp126&amp;variant_label=r2i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190924&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAMS_CAMS-CSM1-0_ssp126_r2i1p1f1_SImon_gn_20190924</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/9b4fd4cf-fcb2-3ce7-8043-7b0fbeade8dc" target="_blank">https://hdl.handle.net/21.14100/9b4fd4cf-fcb2-3ce7-8043-7b0fbeade8dc</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAMS&source_id=CAMS-CSM1-0&experiment_id=ssp126&variant_label=r2i1p1f1&table_id=SImon&grid_label=gn&version=20190924&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAMS&amp;source_id=CAMS-CSM1-0&amp;experiment_id=ssp126&amp;variant_label=r2i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190924&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CAMS_CAMS-CSM1-0_ssp126_r2i1p1f1_day_gn_20191106</td>
@@ -413,6 +647,24 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAMS&source_id=CAMS-CSM1-0&experiment_id=ssp126&variant_label=r2i1p1f1&table_id=day&grid_label=gn&version=20191106&variable_id=tas&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAMS&amp;source_id=CAMS-CSM1-0&amp;experiment_id=ssp126&amp;variant_label=r2i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191106&amp;variable_id=tas&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CAMS_CAMS-CSM1-0_ssp245_r2i1p1f1_Amon_gn_20190924</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/3b15616e-4a29-3dd1-a1cc-43dd57852409" target="_blank">https://hdl.handle.net/21.14100/3b15616e-4a29-3dd1-a1cc-43dd57852409</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAMS&source_id=CAMS-CSM1-0&experiment_id=ssp245&variant_label=r2i1p1f1&table_id=Amon&grid_label=gn&version=20190924&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAMS&amp;source_id=CAMS-CSM1-0&amp;experiment_id=ssp245&amp;variant_label=r2i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190924&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAMS_CAMS-CSM1-0_ssp245_r2i1p1f1_Omon_gn_20190924</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/eb387b9a-efcc-3791-af27-a28845fec03b" target="_blank">https://hdl.handle.net/21.14100/eb387b9a-efcc-3791-af27-a28845fec03b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAMS&source_id=CAMS-CSM1-0&experiment_id=ssp245&variant_label=r2i1p1f1&table_id=Omon&grid_label=gn&version=20190924&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAMS&amp;source_id=CAMS-CSM1-0&amp;experiment_id=ssp245&amp;variant_label=r2i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190924&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAMS_CAMS-CSM1-0_ssp245_r2i1p1f1_SImon_gn_20190924</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/fcdeb946-4dd5-325c-a954-4b730903c769" target="_blank">https://hdl.handle.net/21.14100/fcdeb946-4dd5-325c-a954-4b730903c769</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAMS&source_id=CAMS-CSM1-0&experiment_id=ssp245&variant_label=r2i1p1f1&table_id=SImon&grid_label=gn&version=20190924&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAMS&amp;source_id=CAMS-CSM1-0&amp;experiment_id=ssp245&amp;variant_label=r2i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190924&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CAMS_CAMS-CSM1-0_ssp245_r2i1p1f1_day_gn_20200720</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/cb8d11e9-d880-38c0-905d-3fcd5af7fc12" target="_blank">https://hdl.handle.net/21.14100/cb8d11e9-d880-38c0-905d-3fcd5af7fc12</a></td>
@@ -423,6 +675,24 @@
       <td>tas</td>
       <td><a href="https://hdl.handle.net/21.14100/a5a53693-f822-3e19-a144-c1794164709a" target="_blank">https://hdl.handle.net/21.14100/a5a53693-f822-3e19-a144-c1794164709a</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAMS&source_id=CAMS-CSM1-0&experiment_id=ssp245&variant_label=r2i1p1f1&table_id=day&grid_label=gn&version=20200720&variable_id=tas&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAMS&amp;source_id=CAMS-CSM1-0&amp;experiment_id=ssp245&amp;variant_label=r2i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20200720&amp;variable_id=tas&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAMS_CAMS-CSM1-0_ssp370_r2i1p1f1_Amon_gn_20190924</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/86301eb4-a639-3060-8e2a-58d35989c00d" target="_blank">https://hdl.handle.net/21.14100/86301eb4-a639-3060-8e2a-58d35989c00d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAMS&source_id=CAMS-CSM1-0&experiment_id=ssp370&variant_label=r2i1p1f1&table_id=Amon&grid_label=gn&version=20190924&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAMS&amp;source_id=CAMS-CSM1-0&amp;experiment_id=ssp370&amp;variant_label=r2i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190924&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAMS_CAMS-CSM1-0_ssp370_r2i1p1f1_Omon_gn_20190924</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/899c0459-0b31-3ecc-afdb-0d3d3abdd440" target="_blank">https://hdl.handle.net/21.14100/899c0459-0b31-3ecc-afdb-0d3d3abdd440</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAMS&source_id=CAMS-CSM1-0&experiment_id=ssp370&variant_label=r2i1p1f1&table_id=Omon&grid_label=gn&version=20190924&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAMS&amp;source_id=CAMS-CSM1-0&amp;experiment_id=ssp370&amp;variant_label=r2i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190924&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAMS_CAMS-CSM1-0_ssp370_r2i1p1f1_SImon_gn_20190924</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/29325806-34f9-35b8-a2b7-04542da7f606" target="_blank">https://hdl.handle.net/21.14100/29325806-34f9-35b8-a2b7-04542da7f606</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAMS&source_id=CAMS-CSM1-0&experiment_id=ssp370&variant_label=r2i1p1f1&table_id=SImon&grid_label=gn&version=20190924&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAMS&amp;source_id=CAMS-CSM1-0&amp;experiment_id=ssp370&amp;variant_label=r2i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190924&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CAMS_CAMS-CSM1-0_ssp370_r2i1p1f1_day_gn_20200720</td>
@@ -437,6 +707,24 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAMS&source_id=CAMS-CSM1-0&experiment_id=ssp370&variant_label=r2i1p1f1&table_id=day&grid_label=gn&version=20200720&variable_id=tas&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAMS&amp;source_id=CAMS-CSM1-0&amp;experiment_id=ssp370&amp;variant_label=r2i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20200720&amp;variable_id=tas&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CAMS_CAMS-CSM1-0_ssp585_r2i1p1f1_Amon_gn_20190924</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/dfe6b9b1-358f-3c7f-8300-9f049241213c" target="_blank">https://hdl.handle.net/21.14100/dfe6b9b1-358f-3c7f-8300-9f049241213c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAMS&source_id=CAMS-CSM1-0&experiment_id=ssp585&variant_label=r2i1p1f1&table_id=Amon&grid_label=gn&version=20190924&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAMS&amp;source_id=CAMS-CSM1-0&amp;experiment_id=ssp585&amp;variant_label=r2i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190924&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAMS_CAMS-CSM1-0_ssp585_r2i1p1f1_Omon_gn_20190924</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/4e6e3f87-55a7-3356-87ee-dbefe4ad144c" target="_blank">https://hdl.handle.net/21.14100/4e6e3f87-55a7-3356-87ee-dbefe4ad144c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAMS&source_id=CAMS-CSM1-0&experiment_id=ssp585&variant_label=r2i1p1f1&table_id=Omon&grid_label=gn&version=20190924&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAMS&amp;source_id=CAMS-CSM1-0&amp;experiment_id=ssp585&amp;variant_label=r2i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190924&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAMS_CAMS-CSM1-0_ssp585_r2i1p1f1_SImon_gn_20190924</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/071110d5-2256-3a4d-93e1-ffed87029805" target="_blank">https://hdl.handle.net/21.14100/071110d5-2256-3a4d-93e1-ffed87029805</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAMS&source_id=CAMS-CSM1-0&experiment_id=ssp585&variant_label=r2i1p1f1&table_id=SImon&grid_label=gn&version=20190924&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAMS&amp;source_id=CAMS-CSM1-0&amp;experiment_id=ssp585&amp;variant_label=r2i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190924&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CAMS_CAMS-CSM1-0_ssp585_r2i1p1f1_day_gn_20191106</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/1b84e642-e7af-3d58-a1b6-130a772f0f08" target="_blank">https://hdl.handle.net/21.14100/1b84e642-e7af-3d58-a1b6-130a772f0f08</a></td>
@@ -447,6 +735,18 @@
       <td>tas</td>
       <td><a href="https://hdl.handle.net/21.14100/f132a6b8-2fb7-30a0-ad06-db2838e25cf3" target="_blank">https://hdl.handle.net/21.14100/f132a6b8-2fb7-30a0-ad06-db2838e25cf3</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAMS&source_id=CAMS-CSM1-0&experiment_id=ssp585&variant_label=r2i1p1f1&table_id=day&grid_label=gn&version=20191106&variable_id=tas&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAMS&amp;source_id=CAMS-CSM1-0&amp;experiment_id=ssp585&amp;variant_label=r2i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191106&amp;variable_id=tas&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAS_FGOALS-g3_historical_r1i1p1f1_Amon_gn_20190818</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/9b5ce47b-d3ab-3803-83fe-2b088ef515fc" target="_blank">https://hdl.handle.net/21.14100/9b5ce47b-d3ab-3803-83fe-2b088ef515fc</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190818&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190818&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAS_FGOALS-g3_historical_r1i1p1f1_Amon_gn_20190818</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/a5fda674-e1d7-38aa-b407-1a242ee6b2b3" target="_blank">https://hdl.handle.net/21.14100/a5fda674-e1d7-38aa-b407-1a242ee6b2b3</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190818&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190818&amp;variable_id=sfcWind&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CAS_FGOALS-g3_historical_r1i1p1f1_Omon_gn_20191107</td>
@@ -485,10 +785,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190826&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190826&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CAS_FGOALS-g3_ssp126_r1i1p1f1_Amon_gn_20200927</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/3377b7b3-6b0a-3715-89b6-a9e8e6f3edd1" target="_blank">https://hdl.handle.net/21.14100/3377b7b3-6b0a-3715-89b6-a9e8e6f3edd1</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200927&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200927&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAS_FGOALS-g3_ssp126_r1i1p1f1_Amon_gn_20200927</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/dde9ccbe-7d0f-3a2a-8750-00cd3607e39d" target="_blank">https://hdl.handle.net/21.14100/dde9ccbe-7d0f-3a2a-8750-00cd3607e39d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200927&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200927&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CAS_FGOALS-g3_ssp126_r1i1p1f1_Omon_gn_20191229</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/4ed80a40-b45b-3677-a6c8-2ddd89f60ef7" target="_blank">https://hdl.handle.net/21.14100/4ed80a40-b45b-3677-a6c8-2ddd89f60ef7</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191229&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191229&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAS_FGOALS-g3_ssp126_r1i1p1f1_SImon_gn_20191029</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/6d17ea24-edc9-397e-8e7d-73a02ee1cd5a" target="_blank">https://hdl.handle.net/21.14100/6d17ea24-edc9-397e-8e7d-73a02ee1cd5a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20191029&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20191029&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CAS_FGOALS-g3_ssp126_r1i1p1f1_day_gn_20190818</td>
@@ -521,10 +839,34 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190818&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190818&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CAS_FGOALS-g3_ssp245_r1i1p1f1_Amon_gn_20190818</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/26710f48-d415-3c58-95ad-ac3503b9985d" target="_blank">https://hdl.handle.net/21.14100/26710f48-d415-3c58-95ad-ac3503b9985d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190818&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190818&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAS_FGOALS-g3_ssp245_r1i1p1f1_Amon_gn_20190818</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/665f1f5c-4e3c-3b67-b923-42ad16277e96" target="_blank">https://hdl.handle.net/21.14100/665f1f5c-4e3c-3b67-b923-42ad16277e96</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190818&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190818&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAS_FGOALS-g3_ssp245_r1i1p1f1_Amon_gn_20190818</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/7d8913ac-d5ea-30d6-b3e6-50db880bbbbe" target="_blank">https://hdl.handle.net/21.14100/7d8913ac-d5ea-30d6-b3e6-50db880bbbbe</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190818&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190818&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CAS_FGOALS-g3_ssp245_r1i1p1f1_Omon_gn_20191231</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/9208c8c6-5012-361f-916c-eb3131c792e4" target="_blank">https://hdl.handle.net/21.14100/9208c8c6-5012-361f-916c-eb3131c792e4</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191231&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191231&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAS_FGOALS-g3_ssp245_r1i1p1f1_SImon_gn_20191029</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/b232d10b-fee0-3cd5-99b8-2ac0e2aae052" target="_blank">https://hdl.handle.net/21.14100/b232d10b-fee0-3cd5-99b8-2ac0e2aae052</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20191029&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20191029&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CAS_FGOALS-g3_ssp245_r1i1p1f1_day_gn_20190818</td>
@@ -557,10 +899,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190818&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190818&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CAS_FGOALS-g3_ssp370_r1i1p1f1_Amon_gn_20190820</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/a1ffe4f2-23e6-3cd6-a6e2-576fb208997a" target="_blank">https://hdl.handle.net/21.14100/a1ffe4f2-23e6-3cd6-a6e2-576fb208997a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190820&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190820&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAS_FGOALS-g3_ssp370_r1i1p1f1_Amon_gn_20190820</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/937092d5-7086-3313-a3d5-aa9dc81f43b8" target="_blank">https://hdl.handle.net/21.14100/937092d5-7086-3313-a3d5-aa9dc81f43b8</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190820&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190820&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CAS_FGOALS-g3_ssp370_r1i1p1f1_Omon_gn_20191231</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/d5b0716c-7374-372f-993f-2f77c3d17a1f" target="_blank">https://hdl.handle.net/21.14100/d5b0716c-7374-372f-993f-2f77c3d17a1f</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191231&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191231&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAS_FGOALS-g3_ssp370_r1i1p1f1_SImon_gn_20191029</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/5d72768c-3699-3880-aace-d9a36b859205" target="_blank">https://hdl.handle.net/21.14100/5d72768c-3699-3880-aace-d9a36b859205</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20191029&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20191029&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CAS_FGOALS-g3_ssp370_r1i1p1f1_day_gn_20190820</td>
@@ -593,10 +953,34 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190820&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190820&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CAS_FGOALS-g3_ssp585_r1i1p1f1_Amon_gn_20190818</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/a14bff72-4566-3104-8fcb-80bc3fca9699" target="_blank">https://hdl.handle.net/21.14100/a14bff72-4566-3104-8fcb-80bc3fca9699</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190818&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190818&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAS_FGOALS-g3_ssp585_r1i1p1f1_Amon_gn_20190818</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/cff94334-ca94-3b9c-ba35-c7d1881e3525" target="_blank">https://hdl.handle.net/21.14100/cff94334-ca94-3b9c-ba35-c7d1881e3525</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190818&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190818&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAS_FGOALS-g3_ssp585_r1i1p1f1_Amon_gn_20190818</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/4373eefc-a471-3d84-8935-dc99b55e381b" target="_blank">https://hdl.handle.net/21.14100/4373eefc-a471-3d84-8935-dc99b55e381b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190818&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190818&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CAS_FGOALS-g3_ssp585_r1i1p1f1_Omon_gn_20191229</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/37335938-4592-3804-a583-92c203ec74cc" target="_blank">https://hdl.handle.net/21.14100/37335938-4592-3804-a583-92c203ec74cc</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191229&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191229&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CAS_FGOALS-g3_ssp585_r1i1p1f1_SImon_gn_20191029</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/89bf4146-f202-3c52-a176-6b6cf7345e7b" target="_blank">https://hdl.handle.net/21.14100/89bf4146-f202-3c52-a176-6b6cf7345e7b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20191029&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20191029&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CAS_FGOALS-g3_ssp585_r1i1p1f1_day_gn_20190818</td>
@@ -629,6 +1013,24 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CAS&source_id=FGOALS-g3&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190819&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CAS&amp;source_id=FGOALS-g3&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190819&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CCCR-IITM_IITM-ESM_historical_r1i1p1f1_Amon_gn_20191226</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/ae363bba-d035-3341-9b4d-4b9a47549128" target="_blank">https://hdl.handle.net/21.14100/ae363bba-d035-3341-9b4d-4b9a47549128</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCR-IITM&source_id=IITM-ESM&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191226&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCR-IITM&amp;source_id=IITM-ESM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191226&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCR-IITM_IITM-ESM_historical_r1i1p1f1_Amon_gn_20191226</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/9638e289-f1ee-3f88-a946-752459972367" target="_blank">https://hdl.handle.net/21.14100/9638e289-f1ee-3f88-a946-752459972367</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCR-IITM&source_id=IITM-ESM&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191226&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCR-IITM&amp;source_id=IITM-ESM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191226&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCR-IITM_IITM-ESM_historical_r1i1p1f1_Omon_gn_20200915</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/4c36dcbb-08da-3134-93a9-48e19b6e4cf8" target="_blank">https://hdl.handle.net/21.14100/4c36dcbb-08da-3134-93a9-48e19b6e4cf8</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCR-IITM&source_id=IITM-ESM&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20200915&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCR-IITM&amp;source_id=IITM-ESM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200915&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CCCR-IITM_IITM-ESM_historical_r1i1p1f1_day_gn_20191226</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/f610ab88-3e99-3d5d-a736-5e7c12769216" target="_blank">https://hdl.handle.net/21.14100/f610ab88-3e99-3d5d-a736-5e7c12769216</a></td>
@@ -645,6 +1047,36 @@
       <td>psl</td>
       <td><a href="https://hdl.handle.net/21.14100/e05590b4-0e27-35a3-85e2-827f4b02b034" target="_blank">https://hdl.handle.net/21.14100/e05590b4-0e27-35a3-85e2-827f4b02b034</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCR-IITM&source_id=IITM-ESM&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20210203&variable_id=psl&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCR-IITM&amp;source_id=IITM-ESM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20210203&amp;variable_id=psl&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCR-IITM_IITM-ESM_ssp126_r1i1p1f1_Amon_gn_20200915</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/2d074022-5224-3584-b39f-1b727d7129d4" target="_blank">https://hdl.handle.net/21.14100/2d074022-5224-3584-b39f-1b727d7129d4</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCR-IITM&source_id=IITM-ESM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200915&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCR-IITM&amp;source_id=IITM-ESM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200915&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCR-IITM_IITM-ESM_ssp126_r1i1p1f1_Amon_gn_20200915</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/d7750247-2cb6-3b44-9c13-ea9358eea1cd" target="_blank">https://hdl.handle.net/21.14100/d7750247-2cb6-3b44-9c13-ea9358eea1cd</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCR-IITM&source_id=IITM-ESM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200915&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCR-IITM&amp;source_id=IITM-ESM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200915&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCR-IITM_IITM-ESM_ssp126_r1i1p1f1_Amon_gn_20201112</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/4a80439c-983c-375f-bac6-05b5868009f0" target="_blank">https://hdl.handle.net/21.14100/4a80439c-983c-375f-bac6-05b5868009f0</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCR-IITM&source_id=IITM-ESM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20201112&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCR-IITM&amp;source_id=IITM-ESM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20201112&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCR-IITM_IITM-ESM_ssp126_r1i1p1f1_Amon_gn_20201112</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/1113fff2-f4ff-34c5-9f20-d699e101d7b1" target="_blank">https://hdl.handle.net/21.14100/1113fff2-f4ff-34c5-9f20-d699e101d7b1</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCR-IITM&source_id=IITM-ESM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20201112&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCR-IITM&amp;source_id=IITM-ESM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20201112&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCR-IITM_IITM-ESM_ssp126_r1i1p1f1_Omon_gn_20201112</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/01b0a1d0-b398-3134-b38b-07266f7ad91e" target="_blank">https://hdl.handle.net/21.14100/01b0a1d0-b398-3134-b38b-07266f7ad91e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCR-IITM&source_id=IITM-ESM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20201112&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCR-IITM&amp;source_id=IITM-ESM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20201112&amp;variable_id=tos&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CCCR-IITM_IITM-ESM_ssp126_r1i1p1f1_day_gn_20201112</td>
@@ -677,6 +1109,24 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCR-IITM&source_id=IITM-ESM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20201112&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCR-IITM&amp;source_id=IITM-ESM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20201112&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CCCR-IITM_IITM-ESM_ssp245_r1i1p1f1_Amon_gn_20200915</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/588d3098-be3d-3a0e-b267-527571a06e35" target="_blank">https://hdl.handle.net/21.14100/588d3098-be3d-3a0e-b267-527571a06e35</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCR-IITM&source_id=IITM-ESM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200915&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCR-IITM&amp;source_id=IITM-ESM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200915&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCR-IITM_IITM-ESM_ssp245_r1i1p1f1_Amon_gn_20200915</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/7eb51f98-49aa-3c54-8b41-da8fb3c57c88" target="_blank">https://hdl.handle.net/21.14100/7eb51f98-49aa-3c54-8b41-da8fb3c57c88</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCR-IITM&source_id=IITM-ESM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200915&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCR-IITM&amp;source_id=IITM-ESM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200915&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCR-IITM_IITM-ESM_ssp245_r1i1p1f1_Omon_gn_20200915</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/a1f91d4e-8abf-3f47-990a-e4848b023488" target="_blank">https://hdl.handle.net/21.14100/a1f91d4e-8abf-3f47-990a-e4848b023488</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCR-IITM&source_id=IITM-ESM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20200915&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCR-IITM&amp;source_id=IITM-ESM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200915&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CCCR-IITM_IITM-ESM_ssp245_r1i1p1f1_day_gn_20200915</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/462c081b-edd7-3f37-a3c4-660b64d21b2c" target="_blank">https://hdl.handle.net/21.14100/462c081b-edd7-3f37-a3c4-660b64d21b2c</a></td>
@@ -693,6 +1143,24 @@
       <td>tas</td>
       <td><a href="https://hdl.handle.net/21.14100/a54ca382-7d07-305e-9440-41c84625b3f3" target="_blank">https://hdl.handle.net/21.14100/a54ca382-7d07-305e-9440-41c84625b3f3</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCR-IITM&source_id=IITM-ESM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20200915&variable_id=tas&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCR-IITM&amp;source_id=IITM-ESM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20200915&amp;variable_id=tas&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCR-IITM_IITM-ESM_ssp370_r1i1p1f1_Amon_gn_20200915</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/7ca78f08-2ad3-37cb-9590-801890c58a2b" target="_blank">https://hdl.handle.net/21.14100/7ca78f08-2ad3-37cb-9590-801890c58a2b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCR-IITM&source_id=IITM-ESM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200915&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCR-IITM&amp;source_id=IITM-ESM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200915&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCR-IITM_IITM-ESM_ssp370_r1i1p1f1_Amon_gn_20200915</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/0ffb1e21-01b5-3b76-acea-9f2cfda61d54" target="_blank">https://hdl.handle.net/21.14100/0ffb1e21-01b5-3b76-acea-9f2cfda61d54</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCR-IITM&source_id=IITM-ESM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200915&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCR-IITM&amp;source_id=IITM-ESM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200915&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCR-IITM_IITM-ESM_ssp370_r1i1p1f1_Omon_gn_20200915</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/bb3a163d-f48e-3fdc-9059-25d2074a120b" target="_blank">https://hdl.handle.net/21.14100/bb3a163d-f48e-3fdc-9059-25d2074a120b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCR-IITM&source_id=IITM-ESM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20200915&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCR-IITM&amp;source_id=IITM-ESM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200915&amp;variable_id=tos&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CCCR-IITM_IITM-ESM_ssp370_r1i1p1f1_day_gn_20200915</td>
@@ -713,6 +1181,24 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCR-IITM&source_id=IITM-ESM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20200915&variable_id=tas&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCR-IITM&amp;source_id=IITM-ESM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20200915&amp;variable_id=tas&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CCCR-IITM_IITM-ESM_ssp585_r1i1p1f1_Amon_gn_20200915</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/94450f6d-877b-3c0b-9423-d6ee6ace7709" target="_blank">https://hdl.handle.net/21.14100/94450f6d-877b-3c0b-9423-d6ee6ace7709</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCR-IITM&source_id=IITM-ESM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200915&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCR-IITM&amp;source_id=IITM-ESM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200915&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCR-IITM_IITM-ESM_ssp585_r1i1p1f1_Amon_gn_20200915</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/5c6c5202-14e5-3fa7-b864-211a294a3b63" target="_blank">https://hdl.handle.net/21.14100/5c6c5202-14e5-3fa7-b864-211a294a3b63</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCR-IITM&source_id=IITM-ESM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200915&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCR-IITM&amp;source_id=IITM-ESM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200915&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCR-IITM_IITM-ESM_ssp585_r1i1p1f1_Omon_gn_20200915</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/dc89c06c-c848-354a-90fc-bb8dae169706" target="_blank">https://hdl.handle.net/21.14100/dc89c06c-c848-354a-90fc-bb8dae169706</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCR-IITM&source_id=IITM-ESM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20200915&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCR-IITM&amp;source_id=IITM-ESM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200915&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CCCR-IITM_IITM-ESM_ssp585_r1i1p1f1_day_gn_20200915</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/d372d4f9-bde7-3fee-bc99-fcb340cc55d3" target="_blank">https://hdl.handle.net/21.14100/d372d4f9-bde7-3fee-bc99-fcb340cc55d3</a></td>
@@ -731,16 +1217,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCR-IITM&source_id=IITM-ESM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20200915&variable_id=tas&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCR-IITM&amp;source_id=IITM-ESM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20200915&amp;variable_id=tas&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_CCCma_CanESM5_historical_r1i1p1f1_Omon_gn_20190306</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/7289c6c5-05c7-32cb-a0ac-3a60ca5df0f6" target="_blank">https://hdl.handle.net/21.14100/7289c6c5-05c7-32cb-a0ac-3a60ca5df0f6</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190306&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190306&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_CCCma_CanESM5_historical_r1i1p1f1_Amon_gn_20190429</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/9a69fdc3-8ab9-3498-8fdc-b69031ab1c82" target="_blank">https://hdl.handle.net/21.14100/9a69fdc3-8ab9-3498-8fdc-b69031ab1c82</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190429&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190429&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCma_CanESM5_historical_r1i1p1f1_Amon_gn_20190429</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/4a1aa1d6-31f0-37b5-8528-b64aa7816d96" target="_blank">https://hdl.handle.net/21.14100/4a1aa1d6-31f0-37b5-8528-b64aa7816d96</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190429&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190429&amp;variable_id=sfcWind&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CCCma_CanESM5_historical_r1i1p1f1_Omon_gn_20190429</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/df133a69-0a07-3dbc-9a13-47a0428bc38e" target="_blank">https://hdl.handle.net/21.14100/df133a69-0a07-3dbc-9a13-47a0428bc38e</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190429&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190429&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCma_CanESM5_historical_r1i1p1f1_SImon_gn_20190429</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/7fdd862c-5488-3582-bffc-aa25951fe997" target="_blank">https://hdl.handle.net/21.14100/7fdd862c-5488-3582-bffc-aa25951fe997</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190429&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190429&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CCCma_CanESM5_historical_r1i1p1f1_day_gn_20190429</td>
@@ -773,16 +1271,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190429&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190429&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_CCCma_CanESM5_ssp126_r1i1p1f1_Omon_gn_20190306</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/93570b9f-e49c-39c7-8786-fd535b427815" target="_blank">https://hdl.handle.net/21.14100/93570b9f-e49c-39c7-8786-fd535b427815</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190306&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190306&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_CCCma_CanESM5_ssp126_r1i1p1f1_Amon_gn_20190429</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/cdcc6d72-bd00-33bb-ac92-d8dd3cdbf869" target="_blank">https://hdl.handle.net/21.14100/cdcc6d72-bd00-33bb-ac92-d8dd3cdbf869</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190429&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190429&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCma_CanESM5_ssp126_r1i1p1f1_Amon_gn_20190429</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/f8994f5b-a6c0-3be1-a23d-56e901a305e7" target="_blank">https://hdl.handle.net/21.14100/f8994f5b-a6c0-3be1-a23d-56e901a305e7</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190429&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190429&amp;variable_id=sfcWind&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CCCma_CanESM5_ssp126_r1i1p1f1_Omon_gn_20190429</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/12b5d512-c15b-349e-8651-35863728509c" target="_blank">https://hdl.handle.net/21.14100/12b5d512-c15b-349e-8651-35863728509c</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190429&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190429&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCma_CanESM5_ssp126_r1i1p1f1_SImon_gn_20190429</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/535c5d7a-986b-382c-acff-3fa4165ee125" target="_blank">https://hdl.handle.net/21.14100/535c5d7a-986b-382c-acff-3fa4165ee125</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190429&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190429&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CCCma_CanESM5_ssp126_r1i1p1f1_day_gn_20190429</td>
@@ -815,16 +1325,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190429&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190429&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_CCCma_CanESM5_ssp245_r1i1p1f1_Omon_gn_20190306</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/cf1eff7c-0812-3043-9ca0-8a98d3f99771" target="_blank">https://hdl.handle.net/21.14100/cf1eff7c-0812-3043-9ca0-8a98d3f99771</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190306&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190306&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_CCCma_CanESM5_ssp245_r1i1p1f1_Amon_gn_20190429</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/75bb333f-db48-3b9a-9ca3-d1779ebd911e" target="_blank">https://hdl.handle.net/21.14100/75bb333f-db48-3b9a-9ca3-d1779ebd911e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190429&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190429&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCma_CanESM5_ssp245_r1i1p1f1_Amon_gn_20190429</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/f0fe058c-72a1-35b6-9f07-57bc970ad03a" target="_blank">https://hdl.handle.net/21.14100/f0fe058c-72a1-35b6-9f07-57bc970ad03a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190429&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190429&amp;variable_id=sfcWind&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CCCma_CanESM5_ssp245_r1i1p1f1_Omon_gn_20190429</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/aaf6ba6c-4d56-31ae-9041-0d6f7decb31e" target="_blank">https://hdl.handle.net/21.14100/aaf6ba6c-4d56-31ae-9041-0d6f7decb31e</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190429&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190429&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCma_CanESM5_ssp245_r1i1p1f1_SImon_gn_20190429</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/83224c7b-8a88-395a-9c2b-0eac698f4c38" target="_blank">https://hdl.handle.net/21.14100/83224c7b-8a88-395a-9c2b-0eac698f4c38</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190429&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190429&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CCCma_CanESM5_ssp245_r1i1p1f1_day_gn_20190429</td>
@@ -857,10 +1379,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190429&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190429&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CCCma_CanESM5_ssp370_r1i1p1f1_Amon_gn_20190429</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/c61b7a1d-b2bb-33ce-831c-959a1884ef32" target="_blank">https://hdl.handle.net/21.14100/c61b7a1d-b2bb-33ce-831c-959a1884ef32</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190429&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190429&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCma_CanESM5_ssp370_r1i1p1f1_Amon_gn_20190429</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/f72e4b22-e784-3846-8777-087aeec65917" target="_blank">https://hdl.handle.net/21.14100/f72e4b22-e784-3846-8777-087aeec65917</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190429&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190429&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CCCma_CanESM5_ssp370_r1i1p1f1_Omon_gn_20190429</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/54234c5e-3e41-35fa-a328-3b73035f315d" target="_blank">https://hdl.handle.net/21.14100/54234c5e-3e41-35fa-a328-3b73035f315d</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190429&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190429&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCma_CanESM5_ssp370_r1i1p1f1_SImon_gn_20190429</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/9dc226ae-19f4-3aff-bec6-c6c2b5223398" target="_blank">https://hdl.handle.net/21.14100/9dc226ae-19f4-3aff-bec6-c6c2b5223398</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190429&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190429&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CCCma_CanESM5_ssp370_r1i1p1f1_day_gn_20190429</td>
@@ -893,10 +1433,16 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190429&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190429&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_CCCma_CanESM5_ssp460_r1i1p1f1_Omon_gn_20190429</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/4ea4a179-e5db-341b-bcef-82026fb2460d" target="_blank">https://hdl.handle.net/21.14100/4ea4a179-e5db-341b-bcef-82026fb2460d</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp460&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190429&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp460&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190429&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_CCCma_CanESM5_ssp460_r1i1p1f1_Amon_gn_20190429</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/52a2d52e-87ca-3e3c-9021-c4076dc55ad7" target="_blank">https://hdl.handle.net/21.14100/52a2d52e-87ca-3e3c-9021-c4076dc55ad7</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp460&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190429&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp460&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190429&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCma_CanESM5_ssp460_r1i1p1f1_Amon_gn_20190429</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/3319c8d7-8f80-37b2-a4d4-73b93728de75" target="_blank">https://hdl.handle.net/21.14100/3319c8d7-8f80-37b2-a4d4-73b93728de75</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp460&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190429&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp460&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190429&amp;variable_id=sfcWind&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CCCma_CanESM5_ssp460_r1i1p1f1_day_gn_20190429</td>
@@ -929,16 +1475,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp460&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190429&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp460&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190429&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_CCCma_CanESM5_ssp585_r1i1p1f1_Omon_gn_20190306</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/8a9bf0b5-ca21-339f-9197-97eb34f3c258" target="_blank">https://hdl.handle.net/21.14100/8a9bf0b5-ca21-339f-9197-97eb34f3c258</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190306&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190306&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_CCCma_CanESM5_ssp585_r1i1p1f1_Amon_gn_20190429</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/9e286e0e-17c6-35dc-8d2b-562a9df41e9d" target="_blank">https://hdl.handle.net/21.14100/9e286e0e-17c6-35dc-8d2b-562a9df41e9d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190429&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190429&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCma_CanESM5_ssp585_r1i1p1f1_Amon_gn_20190429</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/72b027e4-afe4-3c1e-8776-02c46b328ef2" target="_blank">https://hdl.handle.net/21.14100/72b027e4-afe4-3c1e-8776-02c46b328ef2</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190429&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190429&amp;variable_id=sfcWind&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CCCma_CanESM5_ssp585_r1i1p1f1_Omon_gn_20190429</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/649c8f80-6826-3fa5-8825-7c83d8986b35" target="_blank">https://hdl.handle.net/21.14100/649c8f80-6826-3fa5-8825-7c83d8986b35</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190429&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190429&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CCCma_CanESM5_ssp585_r1i1p1f1_SImon_gn_20190429</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/07021a5f-1246-3608-9c83-0bfb60ba8886" target="_blank">https://hdl.handle.net/21.14100/07021a5f-1246-3608-9c83-0bfb60ba8886</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190429&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190429&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CCCma_CanESM5_ssp585_r1i1p1f1_day_gn_20190429</td>
@@ -971,6 +1529,30 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CCCma&source_id=CanESM5&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190429&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CCCma&amp;source_id=CanESM5&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190429&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CMCC_CMCC-CM2-SR5_historical_r1i1p1f1_Amon_gn_20200616</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/be295e5f-f56d-378e-bac2-a80abf840bb4" target="_blank">https://hdl.handle.net/21.14100/be295e5f-f56d-378e-bac2-a80abf840bb4</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200616&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200616&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CMCC_CMCC-CM2-SR5_historical_r1i1p1f1_Amon_gn_20200616</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/64495981-b63b-3c7a-a8f1-10c2cd925a25" target="_blank">https://hdl.handle.net/21.14100/64495981-b63b-3c7a-a8f1-10c2cd925a25</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200616&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200616&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CMCC_CMCC-CM2-SR5_historical_r1i1p1f1_Omon_gn_20200616</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/fe4c7a4d-4485-3728-88cb-f97af8e25782" target="_blank">https://hdl.handle.net/21.14100/fe4c7a4d-4485-3728-88cb-f97af8e25782</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20200616&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200616&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CMCC_CMCC-CM2-SR5_historical_r1i1p1f1_SImon_gn_20200616</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/603ad767-e6c3-3339-9e9a-1b282d88d96b" target="_blank">https://hdl.handle.net/21.14100/603ad767-e6c3-3339-9e9a-1b282d88d96b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200616&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200616&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CMCC_CMCC-CM2-SR5_historical_r1i1p1f1_day_gn_20200616</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/c3c820d3-32ae-3636-b27f-e203741f7c36" target="_blank">https://hdl.handle.net/21.14100/c3c820d3-32ae-3636-b27f-e203741f7c36</a></td>
@@ -987,6 +1569,30 @@
       <td>tas</td>
       <td><a href="https://hdl.handle.net/21.14100/5f2c5899-3ad8-316b-b356-a33379eb326e" target="_blank">https://hdl.handle.net/21.14100/5f2c5899-3ad8-316b-b356-a33379eb326e</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20200616&variable_id=tas&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20200616&amp;variable_id=tas&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CMCC_CMCC-CM2-SR5_ssp126_r1i1p1f1_Amon_gn_20200717</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/e730111d-9078-3668-9481-25c3a3ca7e22" target="_blank">https://hdl.handle.net/21.14100/e730111d-9078-3668-9481-25c3a3ca7e22</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200717&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200717&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CMCC_CMCC-CM2-SR5_ssp126_r1i1p1f1_Amon_gn_20200717</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/9af99b37-9ecd-3527-807a-44296e830438" target="_blank">https://hdl.handle.net/21.14100/9af99b37-9ecd-3527-807a-44296e830438</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200717&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200717&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CMCC_CMCC-CM2-SR5_ssp126_r1i1p1f1_Omon_gn_20200717</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/d75e7bee-11d2-3d96-a5d4-93c7a783b9a7" target="_blank">https://hdl.handle.net/21.14100/d75e7bee-11d2-3d96-a5d4-93c7a783b9a7</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20200717&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200717&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CMCC_CMCC-CM2-SR5_ssp126_r1i1p1f1_SImon_gn_20200717</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/5f78460e-dca0-3930-803c-adbab7e76b93" target="_blank">https://hdl.handle.net/21.14100/5f78460e-dca0-3930-803c-adbab7e76b93</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200717&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200717&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CMCC_CMCC-CM2-SR5_ssp126_r1i1p1f1_day_gn_20200717</td>
@@ -1007,6 +1613,30 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20200717&variable_id=tas&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20200717&amp;variable_id=tas&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CMCC_CMCC-CM2-SR5_ssp245_r1i1p1f1_Amon_gn_20200617</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/dbc867a1-3915-3ea5-88e7-144d6d510bb7" target="_blank">https://hdl.handle.net/21.14100/dbc867a1-3915-3ea5-88e7-144d6d510bb7</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200617&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200617&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CMCC_CMCC-CM2-SR5_ssp245_r1i1p1f1_Amon_gn_20200617</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/c10f716b-985c-34c2-8630-70309b43fc72" target="_blank">https://hdl.handle.net/21.14100/c10f716b-985c-34c2-8630-70309b43fc72</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200617&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200617&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CMCC_CMCC-CM2-SR5_ssp245_r1i1p1f1_Omon_gn_20200617</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/14732db1-5053-3035-a6e8-2353da4148a7" target="_blank">https://hdl.handle.net/21.14100/14732db1-5053-3035-a6e8-2353da4148a7</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20200617&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200617&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CMCC_CMCC-CM2-SR5_ssp245_r1i1p1f1_SImon_gn_20200617</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/36d2a3ca-8d05-34cc-bc4a-ddd5278f5759" target="_blank">https://hdl.handle.net/21.14100/36d2a3ca-8d05-34cc-bc4a-ddd5278f5759</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200617&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200617&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CMCC_CMCC-CM2-SR5_ssp245_r1i1p1f1_day_gn_20200617</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/13c31552-a68f-32c4-8516-12722e645309" target="_blank">https://hdl.handle.net/21.14100/13c31552-a68f-32c4-8516-12722e645309</a></td>
@@ -1023,6 +1653,30 @@
       <td>tas</td>
       <td><a href="https://hdl.handle.net/21.14100/253c67a3-66c4-370d-8fe7-677cfd57b6ff" target="_blank">https://hdl.handle.net/21.14100/253c67a3-66c4-370d-8fe7-677cfd57b6ff</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20200617&variable_id=tas&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20200617&amp;variable_id=tas&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CMCC_CMCC-CM2-SR5_ssp370_r1i1p1f1_Amon_gn_20200622</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/543381a4-6b23-3f24-857a-ccd858207f8e" target="_blank">https://hdl.handle.net/21.14100/543381a4-6b23-3f24-857a-ccd858207f8e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200622&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200622&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CMCC_CMCC-CM2-SR5_ssp370_r1i1p1f1_Amon_gn_20200622</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/3a9cd98e-7885-3feb-877d-4c0e71f10c85" target="_blank">https://hdl.handle.net/21.14100/3a9cd98e-7885-3feb-877d-4c0e71f10c85</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200622&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200622&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CMCC_CMCC-CM2-SR5_ssp370_r1i1p1f1_Omon_gn_20200622</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/708a8575-b120-3f85-a37d-113fab48448b" target="_blank">https://hdl.handle.net/21.14100/708a8575-b120-3f85-a37d-113fab48448b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20200622&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200622&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CMCC_CMCC-CM2-SR5_ssp370_r1i1p1f1_SImon_gn_20200622</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/aa009f4e-3e57-323f-9daf-bace2029f32c" target="_blank">https://hdl.handle.net/21.14100/aa009f4e-3e57-323f-9daf-bace2029f32c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200622&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200622&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CMCC_CMCC-CM2-SR5_ssp370_r1i1p1f1_day_gn_20200622</td>
@@ -1043,6 +1697,30 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20200622&variable_id=tas&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20200622&amp;variable_id=tas&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CMCC_CMCC-CM2-SR5_ssp585_r1i1p1f1_Amon_gn_20200622</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/e4358130-ae88-3914-87fe-db67c0b3b61d" target="_blank">https://hdl.handle.net/21.14100/e4358130-ae88-3914-87fe-db67c0b3b61d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200622&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200622&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CMCC_CMCC-CM2-SR5_ssp585_r1i1p1f1_Amon_gn_20200622</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/c54e6f38-295c-341e-a71e-0b4f717f324e" target="_blank">https://hdl.handle.net/21.14100/c54e6f38-295c-341e-a71e-0b4f717f324e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200622&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200622&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CMCC_CMCC-CM2-SR5_ssp585_r1i1p1f1_Omon_gn_20200622</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/65281f3e-13c9-3b82-94bc-4a3a12b691b5" target="_blank">https://hdl.handle.net/21.14100/65281f3e-13c9-3b82-94bc-4a3a12b691b5</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20200622&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200622&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CMCC_CMCC-CM2-SR5_ssp585_r1i1p1f1_SImon_gn_20200622</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/1519a4e4-5af0-3f1a-87df-284eb1f0520b" target="_blank">https://hdl.handle.net/21.14100/1519a4e4-5af0-3f1a-87df-284eb1f0520b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200622&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200622&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CMCC_CMCC-CM2-SR5_ssp585_r1i1p1f1_day_gn_20200622</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/d6d40481-9396-38a2-8363-d0429c1589db" target="_blank">https://hdl.handle.net/21.14100/d6d40481-9396-38a2-8363-d0429c1589db</a></td>
@@ -1059,6 +1737,30 @@
       <td>tas</td>
       <td><a href="https://hdl.handle.net/21.14100/da39a2c2-8307-348e-a700-4732034761b6" target="_blank">https://hdl.handle.net/21.14100/da39a2c2-8307-348e-a700-4732034761b6</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CMCC&source_id=CMCC-CM2-SR5&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20200622&variable_id=tas&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CMCC&amp;source_id=CMCC-CM2-SR5&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20200622&amp;variable_id=tas&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_historical_r1i1p1f2_Amon_gr_20191021</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/391af0d2-f5d8-3345-a649-8f940defff33" target="_blank">https://hdl.handle.net/21.14100/391af0d2-f5d8-3345-a649-8f940defff33</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=historical&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20191021&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20191021&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_historical_r1i1p1f2_Amon_gr_20191021</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/e28aef0f-6deb-3298-9e20-fe88959c5f2a" target="_blank">https://hdl.handle.net/21.14100/e28aef0f-6deb-3298-9e20-fe88959c5f2a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=historical&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20191021&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20191021&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_historical_r1i1p1f2_Omon_gn_20191021</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/c3440f7c-ddcc-3c69-8bcb-6dd38c8d5280" target="_blank">https://hdl.handle.net/21.14100/c3440f7c-ddcc-3c69-8bcb-6dd38c8d5280</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=historical&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20191021&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191021&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_historical_r1i1p1f2_SImon_gn_20191021</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/d41a32bd-80ff-33fd-b653-d0a46bfed964" target="_blank">https://hdl.handle.net/21.14100/d41a32bd-80ff-33fd-b653-d0a46bfed964</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=historical&variant_label=r1i1p1f2&table_id=SImon&grid_label=gn&version=20191021&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=SImon&amp;grid_label=gn&amp;version=20191021&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_historical_r1i1p1f2_day_gr_20191021</td>
@@ -1091,6 +1793,30 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=historical&variant_label=r1i1p1f2&table_id=day&grid_label=gr&version=20191021&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gr&amp;version=20191021&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_ssp126_r1i1p1f2_Amon_gr_20200127</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/54934975-0e52-3b16-8118-ff471b88e4ea" target="_blank">https://hdl.handle.net/21.14100/54934975-0e52-3b16-8118-ff471b88e4ea</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20200127&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200127&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_ssp126_r1i1p1f2_Amon_gr_20200127</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/f3b13238-e937-389a-9859-d36d08e102ee" target="_blank">https://hdl.handle.net/21.14100/f3b13238-e937-389a-9859-d36d08e102ee</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20200127&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200127&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_ssp126_r1i1p1f2_Omon_gn_20200127</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/307111b0-913d-349e-8892-2d482947e1d1" target="_blank">https://hdl.handle.net/21.14100/307111b0-913d-349e-8892-2d482947e1d1</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20200127&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200127&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_ssp126_r1i1p1f2_SImon_gn_20200127</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/9a1ded3c-27b6-33d7-8c00-94cc102866bd" target="_blank">https://hdl.handle.net/21.14100/9a1ded3c-27b6-33d7-8c00-94cc102866bd</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=SImon&grid_label=gn&version=20200127&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200127&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_ssp126_r1i1p1f2_day_gr_20200127</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/0390f58b-0cb1-3dc5-a3ef-e176f635e3cf" target="_blank">https://hdl.handle.net/21.14100/0390f58b-0cb1-3dc5-a3ef-e176f635e3cf</a></td>
@@ -1121,6 +1847,30 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=day&grid_label=gr&version=20200127&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gr&amp;version=20200127&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_ssp245_r1i1p1f2_Amon_gr_20191202</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/495d8ff5-bb1e-3518-9b72-9d9a76e8c1de" target="_blank">https://hdl.handle.net/21.14100/495d8ff5-bb1e-3518-9b72-9d9a76e8c1de</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20191202&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20191202&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_ssp245_r1i1p1f2_Amon_gr_20191202</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/d737c659-0734-3b4a-bd92-1da4f4661b79" target="_blank">https://hdl.handle.net/21.14100/d737c659-0734-3b4a-bd92-1da4f4661b79</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20191202&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20191202&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_ssp245_r1i1p1f2_Omon_gn_20191202</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/8a757ad7-1b26-3475-9076-2a669635dae5" target="_blank">https://hdl.handle.net/21.14100/8a757ad7-1b26-3475-9076-2a669635dae5</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20191202&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191202&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_ssp245_r1i1p1f2_SImon_gn_20191202</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/bd413d06-c438-3f9d-bc9d-f99d71f40270" target="_blank">https://hdl.handle.net/21.14100/bd413d06-c438-3f9d-bc9d-f99d71f40270</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=SImon&grid_label=gn&version=20191202&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=SImon&amp;grid_label=gn&amp;version=20191202&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_ssp245_r1i1p1f2_day_gr_20191202</td>
       <td>psl</td>
       <td><a href="https://hdl.handle.net/21.14100/1ba5214a-88d0-3637-8423-0090ccd3d397" target="_blank">https://hdl.handle.net/21.14100/1ba5214a-88d0-3637-8423-0090ccd3d397</a></td>
@@ -1133,6 +1883,30 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=day&grid_label=gr&version=20191202&variable_id=tas&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gr&amp;version=20191202&amp;variable_id=tas&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_ssp370_r1i1p1f2_Amon_gr_20200127</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/33abd6ec-0b7d-39f4-802e-2becae749a64" target="_blank">https://hdl.handle.net/21.14100/33abd6ec-0b7d-39f4-802e-2becae749a64</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20200127&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200127&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_ssp370_r1i1p1f2_Amon_gr_20200127</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/72204aa3-9e58-3758-9518-5c3466df01bd" target="_blank">https://hdl.handle.net/21.14100/72204aa3-9e58-3758-9518-5c3466df01bd</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20200127&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200127&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_ssp370_r1i1p1f2_Omon_gn_20200127</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/cca74037-ddf1-3f76-973a-f90ba4df8dc4" target="_blank">https://hdl.handle.net/21.14100/cca74037-ddf1-3f76-973a-f90ba4df8dc4</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20200127&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200127&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_ssp370_r1i1p1f2_SImon_gn_20200127</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/9acebdd3-45cf-3350-997d-cb7bf7a63765" target="_blank">https://hdl.handle.net/21.14100/9acebdd3-45cf-3350-997d-cb7bf7a63765</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=SImon&grid_label=gn&version=20200127&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200127&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_ssp370_r1i1p1f2_day_gr_20200127</td>
       <td>psl</td>
       <td><a href="https://hdl.handle.net/21.14100/46a6a72a-7569-3853-aa16-3fccfc47c3e3" target="_blank">https://hdl.handle.net/21.14100/46a6a72a-7569-3853-aa16-3fccfc47c3e3</a></td>
@@ -1143,6 +1917,30 @@
       <td>tas</td>
       <td><a href="https://hdl.handle.net/21.14100/2c2a6134-d9b5-3bf5-9378-e78d19448ca5" target="_blank">https://hdl.handle.net/21.14100/2c2a6134-d9b5-3bf5-9378-e78d19448ca5</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=day&grid_label=gr&version=20200127&variable_id=tas&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gr&amp;version=20200127&amp;variable_id=tas&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_ssp585_r1i1p1f2_Amon_gr_20191202</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/8ad0ea60-6605-36af-8c68-4aeef1604205" target="_blank">https://hdl.handle.net/21.14100/8ad0ea60-6605-36af-8c68-4aeef1604205</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20191202&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20191202&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_ssp585_r1i1p1f2_Amon_gr_20191202</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/22714d38-5d5b-3643-acc8-abe44f6b341c" target="_blank">https://hdl.handle.net/21.14100/22714d38-5d5b-3643-acc8-abe44f6b341c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20191202&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20191202&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_ssp585_r1i1p1f2_Omon_gn_20191202</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/39824c77-d5f4-3d80-8016-84bf139f0890" target="_blank">https://hdl.handle.net/21.14100/39824c77-d5f4-3d80-8016-84bf139f0890</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20191202&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191202&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_ssp585_r1i1p1f2_SImon_gn_20191202</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/a38f4e0c-3bf5-3829-befe-f48306c80143" target="_blank">https://hdl.handle.net/21.14100/a38f4e0c-3bf5-3829-befe-f48306c80143</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=SImon&grid_label=gn&version=20191202&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=SImon&amp;grid_label=gn&amp;version=20191202&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1-HR_ssp585_r1i1p1f2_day_gr_20191202</td>
@@ -1175,6 +1973,18 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1-HR&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=day&grid_label=gr&version=20191202&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1-HR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gr&amp;version=20191202&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_historical_r1i1p1f2_Amon_gr_20180917</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/778b6e1d-ae40-3019-bb26-3cdcf328ae4b" target="_blank">https://hdl.handle.net/21.14100/778b6e1d-ae40-3019-bb26-3cdcf328ae4b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=historical&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20180917&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20180917&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_historical_r1i1p1f2_Amon_gr_20180917</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/2e282814-d035-3310-b981-501bafe3c222" target="_blank">https://hdl.handle.net/21.14100/2e282814-d035-3310-b981-501bafe3c222</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=historical&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20180917&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20180917&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_historical_r1i1p1f2_Omon_gn_20180917</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/360fab56-6d82-3aeb-a09e-38b0293b7e2a" target="_blank">https://hdl.handle.net/21.14100/360fab56-6d82-3aeb-a09e-38b0293b7e2a</a></td>
@@ -1185,6 +1995,12 @@
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/349ee72c-55da-353f-8fba-cef7921b99b4" target="_blank">https://hdl.handle.net/21.14100/349ee72c-55da-353f-8fba-cef7921b99b4</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=historical&variant_label=r1i1p1f2&table_id=Omon&grid_label=gr1&version=20180917&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20180917&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_historical_r1i1p1f2_SImon_gn_20180917</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/cba2a0a8-f909-3dac-aa9a-e78241296314" target="_blank">https://hdl.handle.net/21.14100/cba2a0a8-f909-3dac-aa9a-e78241296314</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=historical&variant_label=r1i1p1f2&table_id=SImon&grid_label=gn&version=20180917&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=SImon&amp;grid_label=gn&amp;version=20180917&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_historical_r1i1p1f2_day_gr_20180917</td>
@@ -1217,6 +2033,18 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=historical&variant_label=r1i1p1f2&table_id=day&grid_label=gr&version=20180917&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gr&amp;version=20180917&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_ssp126_r1i1p1f2_Amon_gr_20190219</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/9d77837b-e076-32fb-a647-6d386f3d6eaf" target="_blank">https://hdl.handle.net/21.14100/9d77837b-e076-32fb-a647-6d386f3d6eaf</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20190219&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190219&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_ssp126_r1i1p1f2_Amon_gr_20190219</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/ad9e5576-3859-3abb-86fc-18f62fea2e31" target="_blank">https://hdl.handle.net/21.14100/ad9e5576-3859-3abb-86fc-18f62fea2e31</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20190219&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190219&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_ssp126_r1i1p1f2_Omon_gn_20190219</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/13643321-c90b-3662-9e0e-98539e2d8226" target="_blank">https://hdl.handle.net/21.14100/13643321-c90b-3662-9e0e-98539e2d8226</a></td>
@@ -1227,6 +2055,12 @@
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/6aec9d00-a1c8-3c67-a8d1-1c32ee218c96" target="_blank">https://hdl.handle.net/21.14100/6aec9d00-a1c8-3c67-a8d1-1c32ee218c96</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=Omon&grid_label=gr1&version=20190219&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20190219&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_ssp126_r1i1p1f2_SImon_gn_20190219</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/db63a9e3-1b90-308c-a4d3-2ccd4baa29f1" target="_blank">https://hdl.handle.net/21.14100/db63a9e3-1b90-308c-a4d3-2ccd4baa29f1</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=SImon&grid_label=gn&version=20190219&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190219&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_ssp126_r1i1p1f2_day_gr_20190219</td>
@@ -1251,6 +2085,30 @@
       <td>tasmin</td>
       <td><a href="https://hdl.handle.net/21.14100/c52425a9-3cdc-398d-9385-1934e0b49379" target="_blank">https://hdl.handle.net/21.14100/c52425a9-3cdc-398d-9385-1934e0b49379</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=day&grid_label=gr&version=20190219&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gr&amp;version=20190219&amp;variable_id=tasmin&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_ssp245_r1i1p1f2_Amon_gr_20190219</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/315aaa62-3a78-3541-8b5f-95d2bd35e052" target="_blank">https://hdl.handle.net/21.14100/315aaa62-3a78-3541-8b5f-95d2bd35e052</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20190219&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190219&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_ssp245_r1i1p1f2_Amon_gr_20190219</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/2edcaefc-ce62-334e-81ea-abe46979f5a5" target="_blank">https://hdl.handle.net/21.14100/2edcaefc-ce62-334e-81ea-abe46979f5a5</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20190219&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190219&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_ssp245_r1i1p1f2_Omon_gn_20190219</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/87ceb4be-27c5-3e49-a883-3a59d169892e" target="_blank">https://hdl.handle.net/21.14100/87ceb4be-27c5-3e49-a883-3a59d169892e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20190219&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190219&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_ssp245_r1i1p1f2_SImon_gn_20190219</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/cdce6c18-54ad-33d2-b1b6-51f01cff7607" target="_blank">https://hdl.handle.net/21.14100/cdce6c18-54ad-33d2-b1b6-51f01cff7607</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=SImon&grid_label=gn&version=20190219&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190219&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_ssp245_r1i1p1f2_day_gr_20190219</td>
@@ -1283,6 +2141,18 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=day&grid_label=gr&version=20190219&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gr&amp;version=20190219&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_ssp370_r1i1p1f2_Amon_gr_20190219</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/96b9e591-0861-3bf4-aea2-4e0c686a88fa" target="_blank">https://hdl.handle.net/21.14100/96b9e591-0861-3bf4-aea2-4e0c686a88fa</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20190219&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190219&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_ssp370_r1i1p1f2_Amon_gr_20190219</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/a2edc88e-c3ff-3140-b9f4-21a6f534acf4" target="_blank">https://hdl.handle.net/21.14100/a2edc88e-c3ff-3140-b9f4-21a6f534acf4</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20190219&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190219&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_ssp370_r1i1p1f2_Omon_gn_20190219</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/e0995095-cedf-321c-b234-59c5b66d7544" target="_blank">https://hdl.handle.net/21.14100/e0995095-cedf-321c-b234-59c5b66d7544</a></td>
@@ -1293,6 +2163,12 @@
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/40a5994e-44dd-3b16-a847-dec0888fa876" target="_blank">https://hdl.handle.net/21.14100/40a5994e-44dd-3b16-a847-dec0888fa876</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=Omon&grid_label=gr1&version=20190219&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20190219&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_ssp370_r1i1p1f2_SImon_gn_20190219</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/201d99b9-9349-3b6d-a324-1b24b88bb1e7" target="_blank">https://hdl.handle.net/21.14100/201d99b9-9349-3b6d-a324-1b24b88bb1e7</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=SImon&grid_label=gn&version=20190219&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190219&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_ssp370_r1i1p1f2_day_gr_20190219</td>
@@ -1325,6 +2201,18 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=day&grid_label=gr&version=20190219&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gr&amp;version=20190219&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_ssp585_r1i1p1f2_Amon_gr_20190219</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/21ad0d2e-f1d7-38a6-acae-0287d0556a0d" target="_blank">https://hdl.handle.net/21.14100/21ad0d2e-f1d7-38a6-acae-0287d0556a0d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20190219&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190219&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_ssp585_r1i1p1f2_Amon_gr_20190219</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/e4d1f874-a40d-3d43-abe2-7c7d90c2f1e3" target="_blank">https://hdl.handle.net/21.14100/e4d1f874-a40d-3d43-abe2-7c7d90c2f1e3</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20190219&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190219&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_ssp585_r1i1p1f2_Omon_gn_20190219</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/4aefaa90-bca7-39f2-a06c-16378952f681" target="_blank">https://hdl.handle.net/21.14100/4aefaa90-bca7-39f2-a06c-16378952f681</a></td>
@@ -1335,6 +2223,12 @@
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/02de7741-737e-39c4-8c0d-61fe329056f6" target="_blank">https://hdl.handle.net/21.14100/02de7741-737e-39c4-8c0d-61fe329056f6</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=Omon&grid_label=gr1&version=20190219&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20190219&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_ssp585_r1i1p1f2_SImon_gn_20190219</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/9c91667d-8d8c-3331-9085-f4e07e1869b1" target="_blank">https://hdl.handle.net/21.14100/9c91667d-8d8c-3331-9085-f4e07e1869b1</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=SImon&grid_label=gn&version=20190219&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190219&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CNRM-CERFACS_CNRM-CM6-1_ssp585_r1i1p1f2_day_gr_20190219</td>
@@ -1367,6 +2261,18 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-CM6-1&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=day&grid_label=gr&version=20190219&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-CM6-1&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gr&amp;version=20190219&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_historical_r1i1p1f2_Amon_gr_20181206</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/3151bc1d-32d0-350d-a7fa-b280d05b0df0" target="_blank">https://hdl.handle.net/21.14100/3151bc1d-32d0-350d-a7fa-b280d05b0df0</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=historical&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20181206&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20181206&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_historical_r1i1p1f2_Amon_gr_20181206</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/1be03f0e-7c1e-3497-930a-1507a3343bdc" target="_blank">https://hdl.handle.net/21.14100/1be03f0e-7c1e-3497-930a-1507a3343bdc</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=historical&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20181206&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20181206&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_historical_r1i1p1f2_Omon_gn_20181206</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/58f56c04-e6fb-305f-8b52-891b2e0d16be" target="_blank">https://hdl.handle.net/21.14100/58f56c04-e6fb-305f-8b52-891b2e0d16be</a></td>
@@ -1377,6 +2283,12 @@
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/f0fb8103-d6f6-3f68-905d-422ea077169c" target="_blank">https://hdl.handle.net/21.14100/f0fb8103-d6f6-3f68-905d-422ea077169c</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=historical&variant_label=r1i1p1f2&table_id=Omon&grid_label=gr1&version=20181206&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20181206&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_historical_r1i1p1f2_SImon_gn_20181206</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/f1bba640-ba92-3aac-9c4e-aa063d60a163" target="_blank">https://hdl.handle.net/21.14100/f1bba640-ba92-3aac-9c4e-aa063d60a163</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=historical&variant_label=r1i1p1f2&table_id=SImon&grid_label=gn&version=20181206&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=SImon&amp;grid_label=gn&amp;version=20181206&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_historical_r1i1p1f2_day_gr_20181206</td>
@@ -1409,6 +2321,30 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=historical&variant_label=r1i1p1f2&table_id=day&grid_label=gr&version=20181206&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gr&amp;version=20181206&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp126_r1i1p1f2_Amon_gr_20190328</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/148f30ca-a4ce-3a98-bfd1-9a5e6a7120eb" target="_blank">https://hdl.handle.net/21.14100/148f30ca-a4ce-3a98-bfd1-9a5e6a7120eb</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20190328&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190328&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp126_r1i1p1f2_Amon_gr_20190328</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/b13812af-e98c-3df1-b561-4aadd4366ec7" target="_blank">https://hdl.handle.net/21.14100/b13812af-e98c-3df1-b561-4aadd4366ec7</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20190328&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190328&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp126_r1i1p1f2_Omon_gn_20190328</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/83ffdbb2-498b-3758-bae8-6384cbe0c621" target="_blank">https://hdl.handle.net/21.14100/83ffdbb2-498b-3758-bae8-6384cbe0c621</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20190328&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190328&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp126_r1i1p1f2_Omon_gn_20190328</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/0e450ddd-3139-3bdb-b314-3faaedd56c06" target="_blank">https://hdl.handle.net/21.14100/0e450ddd-3139-3bdb-b314-3faaedd56c06</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20190328&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190328&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp126_r1i1p1f2_day_gr_20190328</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/502947d0-ed3d-3cd5-9962-bba437d8a4da" target="_blank">https://hdl.handle.net/21.14100/502947d0-ed3d-3cd5-9962-bba437d8a4da</a></td>
@@ -1437,6 +2373,36 @@
       <td>tasmin</td>
       <td><a href="https://hdl.handle.net/21.14100/95a15473-ca51-3886-98d6-12f09f58bb90" target="_blank">https://hdl.handle.net/21.14100/95a15473-ca51-3886-98d6-12f09f58bb90</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=day&grid_label=gr&version=20190328&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gr&amp;version=20190328&amp;variable_id=tasmin&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp245_r1i1p1f2_Amon_gr_20190328</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/0d07c95b-26f1-3d4b-98d9-e905939ec5e7" target="_blank">https://hdl.handle.net/21.14100/0d07c95b-26f1-3d4b-98d9-e905939ec5e7</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20190328&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190328&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp245_r1i1p1f2_Amon_gr_20190328</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/0209b861-989b-34cc-ac6c-ca86be0e113a" target="_blank">https://hdl.handle.net/21.14100/0209b861-989b-34cc-ac6c-ca86be0e113a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20190328&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190328&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp245_r1i1p1f2_Omon_gn_20190328</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/312614bf-d31a-3e83-afe9-f175bf1cc474" target="_blank">https://hdl.handle.net/21.14100/312614bf-d31a-3e83-afe9-f175bf1cc474</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20190328&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190328&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp245_r1i1p1f2_Omon_gn_20190328</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/e728de90-eab1-3f60-9a76-3eded34ca946" target="_blank">https://hdl.handle.net/21.14100/e728de90-eab1-3f60-9a76-3eded34ca946</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20190328&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190328&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp245_r1i1p1f2_SImon_gn_20190328</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/602af76b-6d63-3705-a871-88931c7b144e" target="_blank">https://hdl.handle.net/21.14100/602af76b-6d63-3705-a871-88931c7b144e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=SImon&grid_label=gn&version=20190328&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190328&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp245_r1i1p1f2_day_gr_20190328</td>
@@ -1469,6 +2435,30 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=day&grid_label=gr&version=20190328&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gr&amp;version=20190328&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp370_r1i1p1f2_Amon_gr_20191021</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/c9db5e14-79ee-3e49-b428-f0e0d8fd4c8d" target="_blank">https://hdl.handle.net/21.14100/c9db5e14-79ee-3e49-b428-f0e0d8fd4c8d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20191021&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20191021&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp370_r1i1p1f2_Amon_gr_20191021</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/0fc34cba-93ce-3548-9b1b-4a2d0c2f7962" target="_blank">https://hdl.handle.net/21.14100/0fc34cba-93ce-3548-9b1b-4a2d0c2f7962</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20191021&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20191021&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp370_r1i1p1f2_Omon_gn_20191021</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/ab3b7fe9-faca-30a0-b7bf-1cd6bdcf67a1" target="_blank">https://hdl.handle.net/21.14100/ab3b7fe9-faca-30a0-b7bf-1cd6bdcf67a1</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20191021&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191021&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp370_r1i1p1f2_Omon_gn_20191021</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/794a3682-c40d-3a1d-9807-6790d1366e4d" target="_blank">https://hdl.handle.net/21.14100/794a3682-c40d-3a1d-9807-6790d1366e4d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20191021&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191021&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp370_r1i1p1f2_day_gr_20191021</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/1ce5d2b4-14c4-3e79-b0b1-daa918224f12" target="_blank">https://hdl.handle.net/21.14100/1ce5d2b4-14c4-3e79-b0b1-daa918224f12</a></td>
@@ -1497,6 +2487,18 @@
       <td>tasmin</td>
       <td><a href="https://hdl.handle.net/21.14100/d7ff01ed-71ff-3f14-949c-a4916eb526d9" target="_blank">https://hdl.handle.net/21.14100/d7ff01ed-71ff-3f14-949c-a4916eb526d9</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=day&grid_label=gr&version=20191021&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gr&amp;version=20191021&amp;variable_id=tasmin&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp460_r1i1p1f2_Amon_gr_20190328</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/ac9f1c4e-b08e-3d5d-a8bb-db253a887678" target="_blank">https://hdl.handle.net/21.14100/ac9f1c4e-b08e-3d5d-a8bb-db253a887678</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp460&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20190328&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp460&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190328&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp460_r1i1p1f2_Amon_gr_20190328</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/80ec4ae5-0c0a-3c27-960f-2a0a3120e879" target="_blank">https://hdl.handle.net/21.14100/80ec4ae5-0c0a-3c27-960f-2a0a3120e879</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp460&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20190328&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp460&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190328&amp;variable_id=sfcWind&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp460_r1i1p1f2_day_gr_20190328</td>
@@ -1529,6 +2531,30 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp460&variant_label=r1i1p1f2&table_id=day&grid_label=gr&version=20190328&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp460&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gr&amp;version=20190328&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp585_r1i1p1f2_Amon_gr_20191021</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/4a94026e-24c9-3df2-9891-fa602ec3500f" target="_blank">https://hdl.handle.net/21.14100/4a94026e-24c9-3df2-9891-fa602ec3500f</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20191021&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20191021&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp585_r1i1p1f2_Amon_gr_20191021</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/a3246d22-9a1a-3955-b38a-755f33c6e880" target="_blank">https://hdl.handle.net/21.14100/a3246d22-9a1a-3955-b38a-755f33c6e880</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=Amon&grid_label=gr&version=20191021&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gr&amp;version=20191021&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp585_r1i1p1f2_Omon_gn_20191021</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/ceafdeb8-0219-3d11-97da-4763e5e10a71" target="_blank">https://hdl.handle.net/21.14100/ceafdeb8-0219-3d11-97da-4763e5e10a71</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20191021&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191021&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp585_r1i1p1f2_Omon_gn_20191021</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/b4cc1eb9-99cc-31d4-9a91-33ee8daf7efd" target="_blank">https://hdl.handle.net/21.14100/b4cc1eb9-99cc-31d4-9a91-33ee8daf7efd</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20191021&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191021&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CNRM-CERFACS_CNRM-ESM2-1_ssp585_r1i1p1f2_day_gr_20191021</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/c0b3724d-5ca4-32bc-b738-978965e0d277" target="_blank">https://hdl.handle.net/21.14100/c0b3724d-5ca4-32bc-b738-978965e0d277</a></td>
@@ -1559,16 +2585,52 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CNRM-CERFACS&source_id=CNRM-ESM2-1&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=day&grid_label=gr&version=20191021&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CNRM-CERFACS&amp;source_id=CNRM-ESM2-1&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gr&amp;version=20191021&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_historical_r1i1p1f1_Amon_gn_20191108</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/9eb9149d-501a-3473-862d-72df469f2b08" target="_blank">https://hdl.handle.net/21.14100/9eb9149d-501a-3473-862d-72df469f2b08</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_historical_r1i1p1f1_Amon_gn_20191108</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/4d3a00ef-8355-35ed-bd57-f2d3eb78d25d" target="_blank">https://hdl.handle.net/21.14100/4d3a00ef-8355-35ed-bd57-f2d3eb78d25d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_historical_r1i1p1f1_Omon_gn_20191108</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/bcf7111a-f2e9-320c-aa60-308c74c34f13" target="_blank">https://hdl.handle.net/21.14100/bcf7111a-f2e9-320c-aa60-308c74c34f13</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191108&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tos&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_historical_r1i1p1f1_SImon_gn_20200817</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/43ec540a-7502-3776-928a-057902784f2a" target="_blank">https://hdl.handle.net/21.14100/43ec540a-7502-3776-928a-057902784f2a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200817&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200817&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_ssp126_r1i1p1f1_Amon_gn_20191108</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/265be4bf-708d-3f37-abc9-8ee131cae464" target="_blank">https://hdl.handle.net/21.14100/265be4bf-708d-3f37-abc9-8ee131cae464</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_ssp126_r1i1p1f1_Amon_gn_20191108</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/59879c7c-d2a8-3735-b538-4670c78e39df" target="_blank">https://hdl.handle.net/21.14100/59879c7c-d2a8-3735-b538-4670c78e39df</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_ssp126_r1i1p1f1_Omon_gn_20191108</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/c57bfa41-5bc0-3c39-9ffb-6a835c00af98" target="_blank">https://hdl.handle.net/21.14100/c57bfa41-5bc0-3c39-9ffb-6a835c00af98</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191108&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_ssp126_r1i1p1f1_SImon_gn_20200817</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/de312173-298a-3fad-b398-d08585212633" target="_blank">https://hdl.handle.net/21.14100/de312173-298a-3fad-b398-d08585212633</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200817&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200817&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_ssp126_r1i1p1f1_day_gn_20191108</td>
@@ -1601,10 +2663,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191108&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_ssp245_r1i1p1f1_Amon_gn_20191108</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/1a550106-9dcb-3730-a5ad-1138d045b2c6" target="_blank">https://hdl.handle.net/21.14100/1a550106-9dcb-3730-a5ad-1138d045b2c6</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_ssp245_r1i1p1f1_Amon_gn_20191108</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/4b329637-cd2e-38b7-a190-f0d9741596e8" target="_blank">https://hdl.handle.net/21.14100/4b329637-cd2e-38b7-a190-f0d9741596e8</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_ssp245_r1i1p1f1_Omon_gn_20191108</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/be4ba637-ca6b-3c30-a516-d64ede22d323" target="_blank">https://hdl.handle.net/21.14100/be4ba637-ca6b-3c30-a516-d64ede22d323</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191108&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_ssp245_r1i1p1f1_SImon_gn_20200817</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/8c6494e6-548d-37fd-9aa4-7d6d4e74705b" target="_blank">https://hdl.handle.net/21.14100/8c6494e6-548d-37fd-9aa4-7d6d4e74705b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200817&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200817&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_ssp245_r1i1p1f1_day_gn_20191108</td>
@@ -1637,10 +2717,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191108&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_ssp370_r1i1p1f1_Amon_gn_20191108</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/c408c7a1-f26a-3ea7-ae01-db2905a939ed" target="_blank">https://hdl.handle.net/21.14100/c408c7a1-f26a-3ea7-ae01-db2905a939ed</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_ssp370_r1i1p1f1_Amon_gn_20191108</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/98471869-500b-3e2e-8b0d-a767dc1e38e5" target="_blank">https://hdl.handle.net/21.14100/98471869-500b-3e2e-8b0d-a767dc1e38e5</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_ssp370_r1i1p1f1_Omon_gn_20191108</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/b68a6a70-5063-30cd-ae6f-94804db53d55" target="_blank">https://hdl.handle.net/21.14100/b68a6a70-5063-30cd-ae6f-94804db53d55</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191108&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_ssp370_r1i1p1f1_SImon_gn_20200817</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/8f44312b-5498-3848-9e1b-852a63f5a02c" target="_blank">https://hdl.handle.net/21.14100/8f44312b-5498-3848-9e1b-852a63f5a02c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200817&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200817&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_ssp370_r1i1p1f1_day_gn_20191108</td>
@@ -1673,10 +2771,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191108&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_ssp585_r1i1p1f1_Amon_gn_20191108</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/86ef91bd-071c-355d-ae70-7e83222f1e7d" target="_blank">https://hdl.handle.net/21.14100/86ef91bd-071c-355d-ae70-7e83222f1e7d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_ssp585_r1i1p1f1_Amon_gn_20191108</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/67866812-bf16-36d3-84f1-30880e03bdf5" target="_blank">https://hdl.handle.net/21.14100/67866812-bf16-36d3-84f1-30880e03bdf5</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_ssp585_r1i1p1f1_Omon_gn_20191108</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/a0726b64-220d-3db2-afee-4167bc6285bb" target="_blank">https://hdl.handle.net/21.14100/a0726b64-220d-3db2-afee-4167bc6285bb</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191108&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_ssp585_r1i1p1f1_SImon_gn_20200817</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/3326298c-d900-33ce-98d0-322fbf5fc226" target="_blank">https://hdl.handle.net/21.14100/3326298c-d900-33ce-98d0-322fbf5fc226</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200817&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200817&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CSIRO-ARCCSS_ACCESS-CM2_ssp585_r1i1p1f1_day_gn_20191108</td>
@@ -1709,10 +2825,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO-ARCCSS&source_id=ACCESS-CM2&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191108&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO-ARCCSS&amp;source_id=ACCESS-CM2&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CSIRO_ACCESS-ESM1-5_historical_r1i1p1f1_Amon_gn_20191115</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/b66ca519-41f8-3bed-bdb2-1322be165ffe" target="_blank">https://hdl.handle.net/21.14100/b66ca519-41f8-3bed-bdb2-1322be165ffe</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191115&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191115&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CSIRO_ACCESS-ESM1-5_historical_r1i1p1f1_Amon_gn_20191115</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/1db8bbf6-e4ff-3187-8a8f-ae40c7d9606a" target="_blank">https://hdl.handle.net/21.14100/1db8bbf6-e4ff-3187-8a8f-ae40c7d9606a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191115&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191115&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CSIRO_ACCESS-ESM1-5_historical_r1i1p1f1_Omon_gn_20191115</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/f485bfb8-0aa6-3ba1-a413-9ffa4a2e9ef2" target="_blank">https://hdl.handle.net/21.14100/f485bfb8-0aa6-3ba1-a413-9ffa4a2e9ef2</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191115&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191115&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CSIRO_ACCESS-ESM1-5_historical_r1i1p1f1_SImon_gn_20200817</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/9a49b498-6997-3ad0-8f8c-8ca9c33c1a18" target="_blank">https://hdl.handle.net/21.14100/9a49b498-6997-3ad0-8f8c-8ca9c33c1a18</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200817&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200817&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CSIRO_ACCESS-ESM1-5_historical_r1i1p1f1_day_gn_20191115</td>
@@ -1745,10 +2879,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191115&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191115&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CSIRO_ACCESS-ESM1-5_ssp126_r1i1p1f1_Amon_gn_20191115</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/bcabb947-ca34-36b5-96d2-fdd14d2d2c0e" target="_blank">https://hdl.handle.net/21.14100/bcabb947-ca34-36b5-96d2-fdd14d2d2c0e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191115&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191115&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CSIRO_ACCESS-ESM1-5_ssp126_r1i1p1f1_Amon_gn_20191115</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/68ea60df-6983-3a39-86ff-9bf567c4284d" target="_blank">https://hdl.handle.net/21.14100/68ea60df-6983-3a39-86ff-9bf567c4284d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191115&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191115&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CSIRO_ACCESS-ESM1-5_ssp126_r1i1p1f1_Omon_gn_20191115</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/fe6948ca-8a20-3948-aa5d-66db1d8a1f7d" target="_blank">https://hdl.handle.net/21.14100/fe6948ca-8a20-3948-aa5d-66db1d8a1f7d</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191115&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191115&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CSIRO_ACCESS-ESM1-5_ssp126_r1i1p1f1_SImon_gn_20200817</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/df773805-9c11-316b-8916-82ccd95a61e5" target="_blank">https://hdl.handle.net/21.14100/df773805-9c11-316b-8916-82ccd95a61e5</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200817&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200817&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CSIRO_ACCESS-ESM1-5_ssp126_r1i1p1f1_day_gn_20191115</td>
@@ -1781,10 +2933,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191115&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191115&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CSIRO_ACCESS-ESM1-5_ssp245_r1i1p1f1_Amon_gn_20191115</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/541094be-32ca-3996-a8bb-088cb0f518fa" target="_blank">https://hdl.handle.net/21.14100/541094be-32ca-3996-a8bb-088cb0f518fa</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191115&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191115&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CSIRO_ACCESS-ESM1-5_ssp245_r1i1p1f1_Amon_gn_20191115</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/f7fe5139-2b71-355e-b028-f4dcb1fd1dc3" target="_blank">https://hdl.handle.net/21.14100/f7fe5139-2b71-355e-b028-f4dcb1fd1dc3</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191115&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191115&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CSIRO_ACCESS-ESM1-5_ssp245_r1i1p1f1_Omon_gn_20191115</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/feb45e04-2915-3fdd-b2dd-abffa42c5d9b" target="_blank">https://hdl.handle.net/21.14100/feb45e04-2915-3fdd-b2dd-abffa42c5d9b</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191115&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191115&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CSIRO_ACCESS-ESM1-5_ssp245_r1i1p1f1_SImon_gn_20200817</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/21ecb154-2707-3afc-875f-8c1517d3fc85" target="_blank">https://hdl.handle.net/21.14100/21ecb154-2707-3afc-875f-8c1517d3fc85</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200817&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200817&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CSIRO_ACCESS-ESM1-5_ssp245_r1i1p1f1_day_gn_20191115</td>
@@ -1817,10 +2987,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191115&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191115&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CSIRO_ACCESS-ESM1-5_ssp370_r1i1p1f1_Amon_gn_20191115</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/d8ab4a2d-c586-3d9f-820b-9f74a18fdf0b" target="_blank">https://hdl.handle.net/21.14100/d8ab4a2d-c586-3d9f-820b-9f74a18fdf0b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191115&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191115&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CSIRO_ACCESS-ESM1-5_ssp370_r1i1p1f1_Amon_gn_20191115</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/5eab9c09-c4ef-3475-8966-587a980c4c6d" target="_blank">https://hdl.handle.net/21.14100/5eab9c09-c4ef-3475-8966-587a980c4c6d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191115&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191115&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CSIRO_ACCESS-ESM1-5_ssp370_r1i1p1f1_Omon_gn_20191115</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/4fb1bc6b-bd95-3173-bcfd-5e22b215ec06" target="_blank">https://hdl.handle.net/21.14100/4fb1bc6b-bd95-3173-bcfd-5e22b215ec06</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191115&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191115&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CSIRO_ACCESS-ESM1-5_ssp370_r1i1p1f1_SImon_gn_20200817</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/1767811b-66f6-3cda-a334-f629c2c8480e" target="_blank">https://hdl.handle.net/21.14100/1767811b-66f6-3cda-a334-f629c2c8480e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200817&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200817&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CSIRO_ACCESS-ESM1-5_ssp370_r1i1p1f1_day_gn_20191115</td>
@@ -1853,10 +3041,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191115&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191115&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_CSIRO_ACCESS-ESM1-5_ssp585_r1i1p1f1_Amon_gn_20191115</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/e2895680-a046-35e1-84be-1f08f238e013" target="_blank">https://hdl.handle.net/21.14100/e2895680-a046-35e1-84be-1f08f238e013</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191115&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191115&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CSIRO_ACCESS-ESM1-5_ssp585_r1i1p1f1_Amon_gn_20191115</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/2c2cd8b1-5f13-3f9e-ba27-be1eec22c3b1" target="_blank">https://hdl.handle.net/21.14100/2c2cd8b1-5f13-3f9e-ba27-be1eec22c3b1</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191115&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191115&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_CSIRO_ACCESS-ESM1-5_ssp585_r1i1p1f1_Omon_gn_20191115</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/126c3fbc-5108-35a4-8d5d-a5992513986d" target="_blank">https://hdl.handle.net/21.14100/126c3fbc-5108-35a4-8d5d-a5992513986d</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191115&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191115&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_CSIRO_ACCESS-ESM1-5_ssp585_r1i1p1f1_SImon_gn_20200817</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/ce3e613a-2843-3c70-a70f-9be70262ac91" target="_blank">https://hdl.handle.net/21.14100/ce3e613a-2843-3c70-a70f-9be70262ac91</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200817&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200817&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_CSIRO_ACCESS-ESM1-5_ssp585_r1i1p1f1_day_gn_20191115</td>
@@ -1889,6 +3095,36 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=CSIRO&source_id=ACCESS-ESM1-5&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191115&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=CSIRO&amp;source_id=ACCESS-ESM1-5&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191115&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp126_r1i1p1f1_Amon_gn_20190710</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/402d49cf-a227-3a7d-b76e-3d33504c8a47" target="_blank">https://hdl.handle.net/21.14100/402d49cf-a227-3a7d-b76e-3d33504c8a47</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190710&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp126_r1i1p1f1_Amon_gn_20190710</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/497fef63-7834-3b3b-ac83-d40594ca1778" target="_blank">https://hdl.handle.net/21.14100/497fef63-7834-3b3b-ac83-d40594ca1778</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190710&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp126_r1i1p1f1_Omon_gn_20190710</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/35ac1146-4e7f-31e3-8887-c35a1fb8a292" target="_blank">https://hdl.handle.net/21.14100/35ac1146-4e7f-31e3-8887-c35a1fb8a292</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190710&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp126_r1i1p1f1_Omon_gn_20190710</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/51d32807-8eb7-3be2-ad00-669847eaeacb" target="_blank">https://hdl.handle.net/21.14100/51d32807-8eb7-3be2-ad00-669847eaeacb</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190710&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp126_r1i1p1f1_SImon_gn_20190710</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/24da910f-1833-331e-8430-6149f3a192e3" target="_blank">https://hdl.handle.net/21.14100/24da910f-1833-331e-8430-6149f3a192e3</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190710&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp126_r1i1p1f1_day_gn_20190710</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/f0a07452-37e0-3299-917c-769da9edfbb6" target="_blank">https://hdl.handle.net/21.14100/f0a07452-37e0-3299-917c-769da9edfbb6</a></td>
@@ -1917,6 +3153,36 @@
       <td>tasmin</td>
       <td><a href="https://hdl.handle.net/21.14100/8ebc55a6-b90f-3902-87ef-c994b023c03f" target="_blank">https://hdl.handle.net/21.14100/8ebc55a6-b90f-3902-87ef-c994b023c03f</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190710&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190710&amp;variable_id=tasmin&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp245_r1i1p1f1_Amon_gn_20190710</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/b4bee98c-99b3-3979-8b2c-6d175deeedeb" target="_blank">https://hdl.handle.net/21.14100/b4bee98c-99b3-3979-8b2c-6d175deeedeb</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190710&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp245_r1i1p1f1_Amon_gn_20190710</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/d9a90508-27e4-3209-b489-4a021f6eaa9f" target="_blank">https://hdl.handle.net/21.14100/d9a90508-27e4-3209-b489-4a021f6eaa9f</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190710&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp245_r1i1p1f1_Omon_gn_20190710</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/f2cfc8c8-9f9f-34f5-a942-7a27dce51114" target="_blank">https://hdl.handle.net/21.14100/f2cfc8c8-9f9f-34f5-a942-7a27dce51114</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190710&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp245_r1i1p1f1_Omon_gn_20190710</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/7d634b53-b61e-3e69-875b-7472bc53111e" target="_blank">https://hdl.handle.net/21.14100/7d634b53-b61e-3e69-875b-7472bc53111e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190710&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp245_r1i1p1f1_SImon_gn_20190710</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/267c334f-170d-3979-b467-9baa231f4c9c" target="_blank">https://hdl.handle.net/21.14100/267c334f-170d-3979-b467-9baa231f4c9c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190710&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp245_r1i1p1f1_day_gn_20190710</td>
@@ -1949,6 +3215,36 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190710&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190710&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp370_r1i1p1f1_Amon_gn_20190710</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/6de2d069-323f-3b5c-b142-5f3745dfb31d" target="_blank">https://hdl.handle.net/21.14100/6de2d069-323f-3b5c-b142-5f3745dfb31d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190710&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp370_r1i1p1f1_Amon_gn_20190710</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/d4f1b7dc-3edf-39f0-b20c-4ed2a31bf436" target="_blank">https://hdl.handle.net/21.14100/d4f1b7dc-3edf-39f0-b20c-4ed2a31bf436</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190710&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp370_r1i1p1f1_Omon_gn_20190710</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/e5687e4b-1322-3efb-b8dc-283805ca096c" target="_blank">https://hdl.handle.net/21.14100/e5687e4b-1322-3efb-b8dc-283805ca096c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190710&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp370_r1i1p1f1_Omon_gn_20190710</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/a4b13af1-f066-3fdc-adb8-ca15292d4098" target="_blank">https://hdl.handle.net/21.14100/a4b13af1-f066-3fdc-adb8-ca15292d4098</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190710&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp370_r1i1p1f1_SImon_gn_20190710</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/4658093a-7143-360f-9b79-7a8f173f9657" target="_blank">https://hdl.handle.net/21.14100/4658093a-7143-360f-9b79-7a8f173f9657</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190710&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp370_r1i1p1f1_day_gn_20190710</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/0ddeeca4-b5ed-3723-849d-f3619448bbf2" target="_blank">https://hdl.handle.net/21.14100/0ddeeca4-b5ed-3723-849d-f3619448bbf2</a></td>
@@ -1977,6 +3273,36 @@
       <td>tasmin</td>
       <td><a href="https://hdl.handle.net/21.14100/e3114b55-6605-3aa4-bb17-5f425ebfd3a8" target="_blank">https://hdl.handle.net/21.14100/e3114b55-6605-3aa4-bb17-5f425ebfd3a8</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190710&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190710&amp;variable_id=tasmin&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp585_r1i1p1f1_Amon_gn_20190710</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/c8c9d4b2-e1a0-3259-b797-d9856833aa45" target="_blank">https://hdl.handle.net/21.14100/c8c9d4b2-e1a0-3259-b797-d9856833aa45</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190710&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp585_r1i1p1f1_Amon_gn_20190710</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/3336fe5d-2ab9-3e69-8ec8-2e9f55cad915" target="_blank">https://hdl.handle.net/21.14100/3336fe5d-2ab9-3e69-8ec8-2e9f55cad915</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190710&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp585_r1i1p1f1_Omon_gn_20190710</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/1e5bf748-fa94-300b-9dc7-f1aeef1a53f3" target="_blank">https://hdl.handle.net/21.14100/1e5bf748-fa94-300b-9dc7-f1aeef1a53f3</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190710&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp585_r1i1p1f1_Omon_gn_20190710</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/e591b19f-0ccf-3bdf-b65f-15335eab21fb" target="_blank">https://hdl.handle.net/21.14100/e591b19f-0ccf-3bdf-b65f-15335eab21fb</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190710&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp585_r1i1p1f1_SImon_gn_20190710</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/5eea16bd-4881-36ef-9e6a-c9ffa8a1f8c5" target="_blank">https://hdl.handle.net/21.14100/5eea16bd-4881-36ef-9e6a-c9ffa8a1f8c5</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190710&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_DKRZ_MPI-ESM1-2-HR_ssp585_r1i1p1f1_day_gn_20190710</td>
@@ -2009,22 +3335,124 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=DKRZ&source_id=MPI-ESM1-2-HR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190710&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=DKRZ&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190710&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_E3SM-Project_E3SM-1-0_historical_r1i1p1f1_Omon_gr_20190826</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/61373f49-a61b-343e-9d28-adbe826d83c1" target="_blank">https://hdl.handle.net/21.14100/61373f49-a61b-343e-9d28-adbe826d83c1</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=E3SM-Project&source_id=E3SM-1-0&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20190826&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=E3SM-Project&amp;source_id=E3SM-1-0&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190826&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-AerChem_historical_r1i1p1f1_Amon_gr_20200624</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/caafdaf6-a55c-30ff-8be6-196a54270686" target="_blank">https://hdl.handle.net/21.14100/caafdaf6-a55c-30ff-8be6-196a54270686</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-AerChem&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200624&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-AerChem&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200624&amp;variable_id=prsn&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_E3SM-Project_E3SM-1-1-ECA_historical_r1i1p1f1_Omon_gr_20200127</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/14c231df-126c-38ca-84c0-1de8d08136ff" target="_blank">https://hdl.handle.net/21.14100/14c231df-126c-38ca-84c0-1de8d08136ff</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=E3SM-Project&source_id=E3SM-1-1-ECA&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20200127&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=E3SM-Project&amp;source_id=E3SM-1-1-ECA&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20200127&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-AerChem_historical_r1i1p1f1_Amon_gr_20200624</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/7e0407f0-ab25-3bc9-b61f-2a67a389b939" target="_blank">https://hdl.handle.net/21.14100/7e0407f0-ab25-3bc9-b61f-2a67a389b939</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-AerChem&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200624&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-AerChem&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200624&amp;variable_id=sfcWind&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_E3SM-Project_E3SM-1-1_historical_r1i1p1f1_Omon_gr_20191204</td>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-AerChem_ssp370_r1i1p1f1_Amon_gr_20200827</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/a51a5b4e-33b4-3b7c-9e4f-56aa9ab66175" target="_blank">https://hdl.handle.net/21.14100/a51a5b4e-33b4-3b7c-9e4f-56aa9ab66175</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-AerChem&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200827&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-AerChem&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200827&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-AerChem_ssp370_r1i1p1f1_Amon_gr_20200827</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/cb862352-ebb5-36c7-b6f7-45065322ce0a" target="_blank">https://hdl.handle.net/21.14100/cb862352-ebb5-36c7-b6f7-45065322ce0a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-AerChem&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200827&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-AerChem&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200827&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg-LR_historical_r1i1p1f1_Amon_gr_20200217</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/e8b299cd-f8e5-34ba-b263-6e3148b70664" target="_blank">https://hdl.handle.net/21.14100/e8b299cd-f8e5-34ba-b263-6e3148b70664</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg-LR&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200217&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg-LR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200217&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg-LR_historical_r1i1p1f1_Amon_gr_20200217</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/23ee9383-9f35-3b9c-b6d7-e45369de9da2" target="_blank">https://hdl.handle.net/21.14100/23ee9383-9f35-3b9c-b6d7-e45369de9da2</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg-LR&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200217&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg-LR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200217&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg-LR_historical_r1i1p1f1_Omon_gn_20200919</td>
       <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/59befe28-d50a-3f48-a444-7199ad3893d5" target="_blank">https://hdl.handle.net/21.14100/59befe28-d50a-3f48-a444-7199ad3893d5</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=E3SM-Project&source_id=E3SM-1-1&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20191204&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=E3SM-Project&amp;source_id=E3SM-1-1&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20191204&amp;variable_id=tos&amp;replica=on</a></td>
+      <td><a href="https://hdl.handle.net/21.14100/212bd478-e4b4-3740-811e-632d54cda2ed" target="_blank">https://hdl.handle.net/21.14100/212bd478-e4b4-3740-811e-632d54cda2ed</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg-LR&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20200919&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg-LR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200919&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg-LR_historical_r1i1p1f1_SImon_gn_20200919</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/0fe0bc8f-220c-3b28-b746-ec6a29048bf9" target="_blank">https://hdl.handle.net/21.14100/0fe0bc8f-220c-3b28-b746-ec6a29048bf9</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg-LR&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200919&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg-LR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200919&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg-LR_ssp245_r1i1p1f1_Amon_gr_20201123</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/e73c495a-50e1-3f79-a0ad-152e9bb66b23" target="_blank">https://hdl.handle.net/21.14100/e73c495a-50e1-3f79-a0ad-152e9bb66b23</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg-LR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20201123&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg-LR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20201123&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg-LR_ssp245_r1i1p1f1_Amon_gr_20201123</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/d2ce275a-b324-327f-a0c9-c476c9af2767" target="_blank">https://hdl.handle.net/21.14100/d2ce275a-b324-327f-a0c9-c476c9af2767</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg-LR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20201123&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg-LR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20201123&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg-LR_ssp245_r1i1p1f1_Omon_gn_20201123</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/a4ff93e2-b818-3cbd-9015-62ec143035e0" target="_blank">https://hdl.handle.net/21.14100/a4ff93e2-b818-3cbd-9015-62ec143035e0</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg-LR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20201123&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg-LR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20201123&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg-LR_ssp245_r1i1p1f1_SImon_gn_20201123</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/a7fec8bc-41a9-34cf-b495-287b9b5340c9" target="_blank">https://hdl.handle.net/21.14100/a7fec8bc-41a9-34cf-b495-287b9b5340c9</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg-LR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20201123&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg-LR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20201123&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg-LR_ssp370_r1i1p1f1_Amon_gr_20201123</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/974702df-1990-332e-b719-43d8b75d8477" target="_blank">https://hdl.handle.net/21.14100/974702df-1990-332e-b719-43d8b75d8477</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg-LR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20201123&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg-LR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20201123&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg-LR_ssp370_r1i1p1f1_Amon_gr_20201123</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/cda6d040-02c6-3450-96e0-90f057a77249" target="_blank">https://hdl.handle.net/21.14100/cda6d040-02c6-3450-96e0-90f057a77249</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg-LR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20201123&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg-LR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20201123&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg-LR_ssp370_r1i1p1f1_Omon_gn_20201123</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/d545e5b1-7852-3165-9539-0e46e18bf436" target="_blank">https://hdl.handle.net/21.14100/d545e5b1-7852-3165-9539-0e46e18bf436</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg-LR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20201123&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg-LR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20201123&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg-LR_ssp370_r1i1p1f1_SImon_gn_20201123</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/fbf19062-1ffa-3eab-a83b-442f847a1f94" target="_blank">https://hdl.handle.net/21.14100/fbf19062-1ffa-3eab-a83b-442f847a1f94</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg-LR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20201123&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg-LR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20201123&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_historical_r1i1p1f1_Amon_gr_20200225</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/a8cc4870-fd46-32ad-aff6-b7aaff4c2986" target="_blank">https://hdl.handle.net/21.14100/a8cc4870-fd46-32ad-aff6-b7aaff4c2986</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200225&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200225&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_historical_r1i1p1f1_Amon_gr_20200225</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/60f9a254-215d-331f-81c6-1f78ba1fe849" target="_blank">https://hdl.handle.net/21.14100/60f9a254-215d-331f-81c6-1f78ba1fe849</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200225&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200225&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_historical_r1i1p1f1_Omon_gn_20200919</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/f45567ba-059b-3db5-b324-a907b003a0e9" target="_blank">https://hdl.handle.net/21.14100/f45567ba-059b-3db5-b324-a907b003a0e9</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20200919&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200919&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_historical_r1i1p1f1_SImon_gn_20200919</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/38a30a6b-1d8e-3b2b-bf53-a3973828f10a" target="_blank">https://hdl.handle.net/21.14100/38a30a6b-1d8e-3b2b-bf53-a3973828f10a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200919&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200919&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_historical_r1i1p1f1_day_gr_20200225</td>
@@ -2057,6 +3485,30 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gr&version=20200225&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr&amp;version=20200225&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_ssp126_r1i1p1f1_Amon_gr_20200225</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/a0dbbe1b-976b-3d9d-8294-23a71a8e2a62" target="_blank">https://hdl.handle.net/21.14100/a0dbbe1b-976b-3d9d-8294-23a71a8e2a62</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200225&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200225&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_ssp126_r1i1p1f1_Amon_gr_20200225</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/de8e4985-1050-3f0a-89fd-0f87cc355e54" target="_blank">https://hdl.handle.net/21.14100/de8e4985-1050-3f0a-89fd-0f87cc355e54</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200225&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200225&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_ssp126_r1i1p1f1_Omon_gn_20200919</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/e313e6bc-916b-35aa-875c-771c94d4bf9e" target="_blank">https://hdl.handle.net/21.14100/e313e6bc-916b-35aa-875c-771c94d4bf9e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20200919&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200919&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_ssp126_r1i1p1f1_SImon_gn_20200919</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/6536124f-0a51-334f-b464-baaa5eecf161" target="_blank">https://hdl.handle.net/21.14100/6536124f-0a51-334f-b464-baaa5eecf161</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200919&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200919&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_ssp126_r1i1p1f1_day_gr_20200225</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/ae0e2541-4072-3592-8a09-5e255a9155cd" target="_blank">https://hdl.handle.net/21.14100/ae0e2541-4072-3592-8a09-5e255a9155cd</a></td>
@@ -2085,6 +3537,30 @@
       <td>tasmin</td>
       <td><a href="https://hdl.handle.net/21.14100/2ac25335-b4d2-35de-bea6-916ac8618898" target="_blank">https://hdl.handle.net/21.14100/2ac25335-b4d2-35de-bea6-916ac8618898</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=day&grid_label=gr&version=20200225&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr&amp;version=20200225&amp;variable_id=tasmin&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_ssp245_r1i1p1f1_Amon_gr_20200225</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/a5b36bb1-797d-3c54-ab86-1a8b0a9c9e9f" target="_blank">https://hdl.handle.net/21.14100/a5b36bb1-797d-3c54-ab86-1a8b0a9c9e9f</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200225&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200225&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_ssp245_r1i1p1f1_Amon_gr_20200225</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/2bbff361-7c44-3727-bb37-748dca56e19c" target="_blank">https://hdl.handle.net/21.14100/2bbff361-7c44-3727-bb37-748dca56e19c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200225&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200225&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_ssp245_r1i1p1f1_Omon_gn_20200919</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/ccbc192d-1fe0-3b90-bd7b-c0d6b6484a70" target="_blank">https://hdl.handle.net/21.14100/ccbc192d-1fe0-3b90-bd7b-c0d6b6484a70</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20200919&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200919&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_ssp245_r1i1p1f1_SImon_gn_20200919</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/3c1496dd-3f33-3e8c-b9e3-f8ea6f5cc63d" target="_blank">https://hdl.handle.net/21.14100/3c1496dd-3f33-3e8c-b9e3-f8ea6f5cc63d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200919&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200919&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_ssp245_r1i1p1f1_day_gr_20200225</td>
@@ -2117,6 +3593,30 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=day&grid_label=gr&version=20200225&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr&amp;version=20200225&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_ssp370_r1i1p1f1_Amon_gr_20200225</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/c3c3aa02-c5aa-398d-a80e-87e50b7ab30f" target="_blank">https://hdl.handle.net/21.14100/c3c3aa02-c5aa-398d-a80e-87e50b7ab30f</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200225&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200225&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_ssp370_r1i1p1f1_Amon_gr_20200225</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/9c4fcb0b-3ef7-3ba7-9a33-091cd65c82e6" target="_blank">https://hdl.handle.net/21.14100/9c4fcb0b-3ef7-3ba7-9a33-091cd65c82e6</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200225&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200225&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_ssp370_r1i1p1f1_Omon_gn_20200919</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/477c2bb3-61d4-3913-b91c-d285fb9023e6" target="_blank">https://hdl.handle.net/21.14100/477c2bb3-61d4-3913-b91c-d285fb9023e6</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20200919&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200919&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_ssp370_r1i1p1f1_SImon_gn_20200919</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/94c84dbc-59fe-3e8a-90da-a17cc2a1b9f7" target="_blank">https://hdl.handle.net/21.14100/94c84dbc-59fe-3e8a-90da-a17cc2a1b9f7</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200919&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200919&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_ssp370_r1i1p1f1_day_gr_20200225</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/e736a208-a417-3c2e-9edd-0a065232a9d7" target="_blank">https://hdl.handle.net/21.14100/e736a208-a417-3c2e-9edd-0a065232a9d7</a></td>
@@ -2145,6 +3645,30 @@
       <td>tasmin</td>
       <td><a href="https://hdl.handle.net/21.14100/5c17d6d9-4d93-3a12-b8ac-8f1b30533cda" target="_blank">https://hdl.handle.net/21.14100/5c17d6d9-4d93-3a12-b8ac-8f1b30533cda</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=day&grid_label=gr&version=20200225&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr&amp;version=20200225&amp;variable_id=tasmin&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_ssp585_r1i1p1f1_Amon_gr_20200225</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/4390bc66-e3ee-37ce-bd92-68f19a29d613" target="_blank">https://hdl.handle.net/21.14100/4390bc66-e3ee-37ce-bd92-68f19a29d613</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200225&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200225&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_ssp585_r1i1p1f1_Amon_gr_20200225</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/489c1644-c1a4-3e1d-b7b3-6bf806a0ba88" target="_blank">https://hdl.handle.net/21.14100/489c1644-c1a4-3e1d-b7b3-6bf806a0ba88</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200225&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200225&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_ssp585_r1i1p1f1_Omon_gn_20200919</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/2b64af99-d52f-3f1d-80bd-07d7aec96bb9" target="_blank">https://hdl.handle.net/21.14100/2b64af99-d52f-3f1d-80bd-07d7aec96bb9</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20200919&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200919&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_ssp585_r1i1p1f1_SImon_gn_20200919</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/0610daf5-e04c-3816-934f-559a4b29dcb0" target="_blank">https://hdl.handle.net/21.14100/0610daf5-e04c-3816-934f-559a4b29dcb0</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200919&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200919&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_EC-Earth-Consortium_EC-Earth3-Veg_ssp585_r1i1p1f1_day_gr_20200225</td>
@@ -2177,6 +3701,30 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3-Veg&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=day&grid_label=gr&version=20200225&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3-Veg&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr&amp;version=20200225&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_historical_r1i1p1f1_Amon_gr_20200310</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/c0a1e479-f90a-39c6-b733-811ca28f3ddc" target="_blank">https://hdl.handle.net/21.14100/c0a1e479-f90a-39c6-b733-811ca28f3ddc</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200310&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200310&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_historical_r1i1p1f1_Amon_gr_20200310</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/485ab918-21de-3e85-bf5d-108c2fcb1335" target="_blank">https://hdl.handle.net/21.14100/485ab918-21de-3e85-bf5d-108c2fcb1335</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200310&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200310&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_historical_r1i1p1f1_Omon_gn_20200918</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/93f9c787-c53a-33f4-b3f5-98e30d32451b" target="_blank">https://hdl.handle.net/21.14100/93f9c787-c53a-33f4-b3f5-98e30d32451b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20200918&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200918&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_historical_r1i1p1f1_SImon_gn_20200918</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/be189c6d-6f5a-34f3-b71d-c6ab2a3a521f" target="_blank">https://hdl.handle.net/21.14100/be189c6d-6f5a-34f3-b71d-c6ab2a3a521f</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200918&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200918&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_EC-Earth-Consortium_EC-Earth3_historical_r1i1p1f1_day_gr_20200310</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/19a770a8-43e6-3c0a-bbde-b0e457ee9515" target="_blank">https://hdl.handle.net/21.14100/19a770a8-43e6-3c0a-bbde-b0e457ee9515</a></td>
@@ -2207,16 +3755,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gr&version=20200310&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr&amp;version=20200310&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_historical_r2i1p1f1_Omon_gn_20200310</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/7026c610-653b-3373-8f03-b46194e3a238" target="_blank">https://hdl.handle.net/21.14100/7026c610-653b-3373-8f03-b46194e3a238</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=historical&variant_label=r2i1p1f1&table_id=Omon&grid_label=gn&version=20200310&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=historical&amp;variant_label=r2i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200310&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_ssp126_r1i1p1f1_Amon_gr_20200310</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/9ca34f2e-e7f5-3dc4-90a0-f959f5f4e7fe" target="_blank">https://hdl.handle.net/21.14100/9ca34f2e-e7f5-3dc4-90a0-f959f5f4e7fe</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200310&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200310&amp;variable_id=prsn&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_historical_r2i1p1f1_Omon_gr_20200310</td>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_ssp126_r1i1p1f1_Amon_gr_20200310</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/92ed7987-2635-3312-9151-234996928a99" target="_blank">https://hdl.handle.net/21.14100/92ed7987-2635-3312-9151-234996928a99</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200310&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200310&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_ssp126_r1i1p1f1_Omon_gn_20200918</td>
       <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/d47f8774-f074-323f-9974-a45b27018faa" target="_blank">https://hdl.handle.net/21.14100/d47f8774-f074-323f-9974-a45b27018faa</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=historical&variant_label=r2i1p1f1&table_id=Omon&grid_label=gr&version=20200310&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=historical&amp;variant_label=r2i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20200310&amp;variable_id=tos&amp;replica=on</a></td>
+      <td><a href="https://hdl.handle.net/21.14100/a5ba8785-c3e2-365b-b19f-1b99c95ec381" target="_blank">https://hdl.handle.net/21.14100/a5ba8785-c3e2-365b-b19f-1b99c95ec381</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20200918&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200918&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_ssp126_r1i1p1f1_SImon_gn_20200918</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/fb80e6dd-c818-3e8d-a0b2-f0082fb78f66" target="_blank">https://hdl.handle.net/21.14100/fb80e6dd-c818-3e8d-a0b2-f0082fb78f66</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200918&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200918&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_EC-Earth-Consortium_EC-Earth3_ssp126_r1i1p1f1_day_gr_20200310</td>
@@ -2249,6 +3809,30 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=day&grid_label=gr&version=20200310&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr&amp;version=20200310&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_ssp245_r1i1p1f1_Amon_gr_20200310</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/f67680ec-095a-3e09-b780-7608fff4e043" target="_blank">https://hdl.handle.net/21.14100/f67680ec-095a-3e09-b780-7608fff4e043</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200310&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200310&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_ssp245_r1i1p1f1_Amon_gr_20200310</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/242ee2b0-a0d1-31af-81e9-5d0a036e7f37" target="_blank">https://hdl.handle.net/21.14100/242ee2b0-a0d1-31af-81e9-5d0a036e7f37</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200310&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200310&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_ssp245_r1i1p1f1_Omon_gn_20200918</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/c78d885f-72f9-3b2f-b5b4-8e6a373a354b" target="_blank">https://hdl.handle.net/21.14100/c78d885f-72f9-3b2f-b5b4-8e6a373a354b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20200918&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200918&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_ssp245_r1i1p1f1_SImon_gn_20200918</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/448fc5e3-bb23-39dc-b21a-16f8c9c2f9e0" target="_blank">https://hdl.handle.net/21.14100/448fc5e3-bb23-39dc-b21a-16f8c9c2f9e0</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200918&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200918&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_EC-Earth-Consortium_EC-Earth3_ssp245_r1i1p1f1_day_gr_20200310</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/a29fe4f2-3e4f-3abf-804d-21fb69ade153" target="_blank">https://hdl.handle.net/21.14100/a29fe4f2-3e4f-3abf-804d-21fb69ade153</a></td>
@@ -2279,16 +3863,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=day&grid_label=gr&version=20200310&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr&amp;version=20200310&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_ssp245_r2i1p1f1_Omon_gn_20200311</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/5e8e69b8-a620-39cc-a824-a90c93abfc4d" target="_blank">https://hdl.handle.net/21.14100/5e8e69b8-a620-39cc-a824-a90c93abfc4d</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=ssp245&variant_label=r2i1p1f1&table_id=Omon&grid_label=gn&version=20200311&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=ssp245&amp;variant_label=r2i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200311&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_ssp370_r1i1p1f1_Amon_gr_20200310</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/96ff7249-7f47-36ac-92d2-0508be81c46b" target="_blank">https://hdl.handle.net/21.14100/96ff7249-7f47-36ac-92d2-0508be81c46b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200310&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200310&amp;variable_id=prsn&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_ssp245_r2i1p1f1_Omon_gr_20200311</td>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_ssp370_r1i1p1f1_Amon_gr_20200310</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/a9a31ce5-6f5a-39e6-a8ae-c216648d55fe" target="_blank">https://hdl.handle.net/21.14100/a9a31ce5-6f5a-39e6-a8ae-c216648d55fe</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200310&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200310&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_ssp370_r1i1p1f1_Omon_gn_20200918</td>
       <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/fbea5903-c4a2-3e4e-b160-46790def6e00" target="_blank">https://hdl.handle.net/21.14100/fbea5903-c4a2-3e4e-b160-46790def6e00</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=ssp245&variant_label=r2i1p1f1&table_id=Omon&grid_label=gr&version=20200311&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=ssp245&amp;variant_label=r2i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20200311&amp;variable_id=tos&amp;replica=on</a></td>
+      <td><a href="https://hdl.handle.net/21.14100/675a3541-85d0-386b-8d15-46f1d08c8c53" target="_blank">https://hdl.handle.net/21.14100/675a3541-85d0-386b-8d15-46f1d08c8c53</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20200918&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200918&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_ssp370_r1i1p1f1_SImon_gn_20200918</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/500e7898-e6a7-3896-9f3f-23c51ebccaf6" target="_blank">https://hdl.handle.net/21.14100/500e7898-e6a7-3896-9f3f-23c51ebccaf6</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200918&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200918&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_EC-Earth-Consortium_EC-Earth3_ssp370_r1i1p1f1_day_gr_20200310</td>
@@ -2321,6 +3917,30 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=day&grid_label=gr&version=20200310&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr&amp;version=20200310&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_ssp585_r1i1p1f1_Amon_gr_20200310</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/23861df6-08c3-33c6-891e-b1fc2871deb9" target="_blank">https://hdl.handle.net/21.14100/23861df6-08c3-33c6-891e-b1fc2871deb9</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200310&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200310&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_ssp585_r1i1p1f1_Amon_gr_20200310</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/0b69fa7d-6cec-3c89-bf93-6821f2e9ea56" target="_blank">https://hdl.handle.net/21.14100/0b69fa7d-6cec-3c89-bf93-6821f2e9ea56</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20200310&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200310&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_ssp585_r1i1p1f1_Omon_gn_20200918</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/00b6e233-1923-3dee-8d5c-8115e23cdbec" target="_blank">https://hdl.handle.net/21.14100/00b6e233-1923-3dee-8d5c-8115e23cdbec</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20200918&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200918&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_EC-Earth-Consortium_EC-Earth3_ssp585_r1i1p1f1_SImon_gn_20200918</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/a9f44373-b967-3d24-a7ce-7e1cb64f5e12" target="_blank">https://hdl.handle.net/21.14100/a9f44373-b967-3d24-a7ce-7e1cb64f5e12</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200918&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200918&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_EC-Earth-Consortium_EC-Earth3_ssp585_r1i1p1f1_day_gr_20200310</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/99f1cfb0-3084-32e5-8540-da7dad9bc4b8" target="_blank">https://hdl.handle.net/21.14100/99f1cfb0-3084-32e5-8540-da7dad9bc4b8</a></td>
@@ -2351,10 +3971,16 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=EC-Earth-Consortium&source_id=EC-Earth3&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=day&grid_label=gr&version=20200310&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=EC-Earth-Consortium&amp;source_id=EC-Earth3&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr&amp;version=20200310&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_HAMMOZ-Consortium_MPI-ESM-1-2-HAM_historical_r1i1p1f1_Omon_gn_20190627</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/a0b24472-964a-3f4c-8812-a0b185c6b053" target="_blank">https://hdl.handle.net/21.14100/a0b24472-964a-3f4c-8812-a0b185c6b053</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=HAMMOZ-Consortium&source_id=MPI-ESM-1-2-HAM&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190627&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=HAMMOZ-Consortium&amp;source_id=MPI-ESM-1-2-HAM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190627&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_HAMMOZ-Consortium_MPI-ESM-1-2-HAM_historical_r1i1p1f1_Amon_gn_20190627</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/82fe05dc-2830-32b3-89b1-8f883e90a38e" target="_blank">https://hdl.handle.net/21.14100/82fe05dc-2830-32b3-89b1-8f883e90a38e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=HAMMOZ-Consortium&source_id=MPI-ESM-1-2-HAM&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190627&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=HAMMOZ-Consortium&amp;source_id=MPI-ESM-1-2-HAM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190627&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_HAMMOZ-Consortium_MPI-ESM-1-2-HAM_historical_r1i1p1f1_Amon_gn_20190627</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/0b545526-a3a2-3535-b2e4-82b5f490cf0f" target="_blank">https://hdl.handle.net/21.14100/0b545526-a3a2-3535-b2e4-82b5f490cf0f</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=HAMMOZ-Consortium&source_id=MPI-ESM-1-2-HAM&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190627&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=HAMMOZ-Consortium&amp;source_id=MPI-ESM-1-2-HAM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190627&amp;variable_id=sfcWind&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_HAMMOZ-Consortium_MPI-ESM-1-2-HAM_historical_r1i1p1f1_day_gn_20190627</td>
@@ -2387,10 +4013,16 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=HAMMOZ-Consortium&source_id=MPI-ESM-1-2-HAM&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190627&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=HAMMOZ-Consortium&amp;source_id=MPI-ESM-1-2-HAM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190627&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_HAMMOZ-Consortium_MPI-ESM-1-2-HAM_ssp370_r1i1p1f1_Omon_gn_20190628</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/682364be-0f32-3009-92a7-8c52d4a79cd9" target="_blank">https://hdl.handle.net/21.14100/682364be-0f32-3009-92a7-8c52d4a79cd9</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=HAMMOZ-Consortium&source_id=MPI-ESM-1-2-HAM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190628&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=HAMMOZ-Consortium&amp;source_id=MPI-ESM-1-2-HAM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190628&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_HAMMOZ-Consortium_MPI-ESM-1-2-HAM_ssp370_r1i1p1f1_Amon_gn_20190628</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/f416eef4-67e2-3948-8a39-694b3b80dc35" target="_blank">https://hdl.handle.net/21.14100/f416eef4-67e2-3948-8a39-694b3b80dc35</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=HAMMOZ-Consortium&source_id=MPI-ESM-1-2-HAM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190628&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=HAMMOZ-Consortium&amp;source_id=MPI-ESM-1-2-HAM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190628&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_HAMMOZ-Consortium_MPI-ESM-1-2-HAM_ssp370_r1i1p1f1_Amon_gn_20190628</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/566f71b9-48e7-3b62-a0f0-0ba5d8f5b052" target="_blank">https://hdl.handle.net/21.14100/566f71b9-48e7-3b62-a0f0-0ba5d8f5b052</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=HAMMOZ-Consortium&source_id=MPI-ESM-1-2-HAM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190628&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=HAMMOZ-Consortium&amp;source_id=MPI-ESM-1-2-HAM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190628&amp;variable_id=sfcWind&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_HAMMOZ-Consortium_MPI-ESM-1-2-HAM_ssp370_r1i1p1f1_day_gn_20190628</td>
@@ -2423,10 +4055,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=HAMMOZ-Consortium&source_id=MPI-ESM-1-2-HAM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190628&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=HAMMOZ-Consortium&amp;source_id=MPI-ESM-1-2-HAM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190628&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_INM_INM-CM4-8_historical_r1i1p1f1_Amon_gr1_20190530</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/255575ba-0acd-3295-b5a5-b46b42777a57" target="_blank">https://hdl.handle.net/21.14100/255575ba-0acd-3295-b5a5-b46b42777a57</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20190530&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20190530&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_INM_INM-CM4-8_historical_r1i1p1f1_Amon_gr1_20190530</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/f02c84d4-1bc5-32c7-bc5f-2627ec597efd" target="_blank">https://hdl.handle.net/21.14100/f02c84d4-1bc5-32c7-bc5f-2627ec597efd</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20190530&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20190530&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_INM_INM-CM4-8_historical_r1i1p1f1_Omon_gr1_20190530</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/cab822d8-b790-37a6-849d-8f3f2838f756" target="_blank">https://hdl.handle.net/21.14100/cab822d8-b790-37a6-849d-8f3f2838f756</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr1&version=20190530&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20190530&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_INM_INM-CM4-8_historical_r1i1p1f1_SImon_gr1_20190530</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/d05db368-20a4-3bf5-a200-6279f19bc79e" target="_blank">https://hdl.handle.net/21.14100/d05db368-20a4-3bf5-a200-6279f19bc79e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gr1&version=20190530&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gr1&amp;version=20190530&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_INM_INM-CM4-8_historical_r1i1p1f1_day_gr1_20190530</td>
@@ -2459,10 +4109,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gr1&version=20190530&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr1&amp;version=20190530&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_INM_INM-CM4-8_ssp126_r1i1p1f1_Amon_gr1_20190603</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/304b307d-d1cc-3e5c-a2c0-e6121dcedaae" target="_blank">https://hdl.handle.net/21.14100/304b307d-d1cc-3e5c-a2c0-e6121dcedaae</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20190603&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20190603&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_INM_INM-CM4-8_ssp126_r1i1p1f1_Amon_gr1_20190603</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/6d62b235-1f37-3713-b3c8-2555aa8712e6" target="_blank">https://hdl.handle.net/21.14100/6d62b235-1f37-3713-b3c8-2555aa8712e6</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20190603&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20190603&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_INM_INM-CM4-8_ssp126_r1i1p1f1_Omon_gr1_20190603</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/0d3071fe-6a0a-3ccd-9036-f59d9b61cf11" target="_blank">https://hdl.handle.net/21.14100/0d3071fe-6a0a-3ccd-9036-f59d9b61cf11</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr1&version=20190603&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20190603&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_INM_INM-CM4-8_ssp126_r1i1p1f1_SImon_gr1_20190603</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/e311f4ef-a31a-30a0-8a9b-f9b012e1a519" target="_blank">https://hdl.handle.net/21.14100/e311f4ef-a31a-30a0-8a9b-f9b012e1a519</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=SImon&grid_label=gr1&version=20190603&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gr1&amp;version=20190603&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_INM_INM-CM4-8_ssp126_r1i1p1f1_day_gr1_20190603</td>
@@ -2495,10 +4163,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=day&grid_label=gr1&version=20190603&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr1&amp;version=20190603&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_INM_INM-CM4-8_ssp245_r1i1p1f1_Amon_gr1_20190603</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/e3e8c26e-e1f2-30c6-840f-acaa3549fa2b" target="_blank">https://hdl.handle.net/21.14100/e3e8c26e-e1f2-30c6-840f-acaa3549fa2b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20190603&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20190603&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_INM_INM-CM4-8_ssp245_r1i1p1f1_Amon_gr1_20190603</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/5c3cdeab-f69a-3b99-8c8c-bf3b10809642" target="_blank">https://hdl.handle.net/21.14100/5c3cdeab-f69a-3b99-8c8c-bf3b10809642</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20190603&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20190603&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_INM_INM-CM4-8_ssp245_r1i1p1f1_Omon_gr1_20190603</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/430907bd-af8a-3dd7-9c0e-63771bb7205d" target="_blank">https://hdl.handle.net/21.14100/430907bd-af8a-3dd7-9c0e-63771bb7205d</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr1&version=20190603&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20190603&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_INM_INM-CM4-8_ssp245_r1i1p1f1_SImon_gr1_20190603</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/dbc83b02-20c1-336a-9458-42696effe43c" target="_blank">https://hdl.handle.net/21.14100/dbc83b02-20c1-336a-9458-42696effe43c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gr1&version=20190603&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gr1&amp;version=20190603&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_INM_INM-CM4-8_ssp245_r1i1p1f1_day_gr1_20190603</td>
@@ -2531,10 +4217,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=day&grid_label=gr1&version=20190603&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr1&amp;version=20190603&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_INM_INM-CM4-8_ssp370_r1i1p1f1_Amon_gr1_20190603</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/1e02f4c5-096c-363e-80cb-44aba57f8ee1" target="_blank">https://hdl.handle.net/21.14100/1e02f4c5-096c-363e-80cb-44aba57f8ee1</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20190603&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20190603&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_INM_INM-CM4-8_ssp370_r1i1p1f1_Amon_gr1_20190603</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/6e4105c1-9be8-3f13-b3c1-8042a11d6481" target="_blank">https://hdl.handle.net/21.14100/6e4105c1-9be8-3f13-b3c1-8042a11d6481</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20190603&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20190603&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_INM_INM-CM4-8_ssp370_r1i1p1f1_Omon_gr1_20190603</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/583fecf0-68b9-3253-9548-32ed9003c98e" target="_blank">https://hdl.handle.net/21.14100/583fecf0-68b9-3253-9548-32ed9003c98e</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr1&version=20190603&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20190603&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_INM_INM-CM4-8_ssp370_r1i1p1f1_SImon_gr1_20190603</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/39a01f65-0211-3fde-940d-3eb920812d4c" target="_blank">https://hdl.handle.net/21.14100/39a01f65-0211-3fde-940d-3eb920812d4c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=SImon&grid_label=gr1&version=20190603&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gr1&amp;version=20190603&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_INM_INM-CM4-8_ssp370_r1i1p1f1_day_gr1_20190603</td>
@@ -2567,10 +4271,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=day&grid_label=gr1&version=20190603&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr1&amp;version=20190603&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_INM_INM-CM4-8_ssp585_r1i1p1f1_Amon_gr1_20190603</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/445f6dcc-d3cf-35a1-8c92-fbcd7361f2b5" target="_blank">https://hdl.handle.net/21.14100/445f6dcc-d3cf-35a1-8c92-fbcd7361f2b5</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20190603&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20190603&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_INM_INM-CM4-8_ssp585_r1i1p1f1_Amon_gr1_20190603</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/8ec6e623-fd71-3d4e-853f-bebec1694198" target="_blank">https://hdl.handle.net/21.14100/8ec6e623-fd71-3d4e-853f-bebec1694198</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20190603&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20190603&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_INM_INM-CM4-8_ssp585_r1i1p1f1_Omon_gr1_20190603</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/adee17b1-b7b0-3619-9e41-09b87907c16f" target="_blank">https://hdl.handle.net/21.14100/adee17b1-b7b0-3619-9e41-09b87907c16f</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr1&version=20190603&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20190603&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_INM_INM-CM4-8_ssp585_r1i1p1f1_SImon_gr1_20190603</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/425602d9-453b-3a37-b060-1fb15e71e740" target="_blank">https://hdl.handle.net/21.14100/425602d9-453b-3a37-b060-1fb15e71e740</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gr1&version=20190603&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gr1&amp;version=20190603&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_INM_INM-CM4-8_ssp585_r1i1p1f1_day_gr1_20190603</td>
@@ -2603,10 +4325,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM4-8&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=day&grid_label=gr1&version=20190603&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM4-8&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr1&amp;version=20190603&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_INM_INM-CM5-0_historical_r1i1p1f1_Amon_gr1_20190610</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/97cd7d0f-86be-3645-849f-012bab72c0ad" target="_blank">https://hdl.handle.net/21.14100/97cd7d0f-86be-3645-849f-012bab72c0ad</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20190610&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20190610&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_INM_INM-CM5-0_historical_r1i1p1f1_Amon_gr1_20190610</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/a886a19a-6f44-381e-8b8c-32e92ff07fdc" target="_blank">https://hdl.handle.net/21.14100/a886a19a-6f44-381e-8b8c-32e92ff07fdc</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20190610&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20190610&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_INM_INM-CM5-0_historical_r1i1p1f1_Omon_gr1_20190610</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/e058a15d-4297-364b-8a19-add0f1aa3530" target="_blank">https://hdl.handle.net/21.14100/e058a15d-4297-364b-8a19-add0f1aa3530</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr1&version=20190610&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20190610&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_INM_INM-CM5-0_historical_r1i1p1f1_SImon_gr1_20190610</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/852fa680-2975-3616-9a16-0989c1b89094" target="_blank">https://hdl.handle.net/21.14100/852fa680-2975-3616-9a16-0989c1b89094</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gr1&version=20190610&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gr1&amp;version=20190610&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_INM_INM-CM5-0_historical_r1i1p1f1_day_gr1_20190610</td>
@@ -2639,10 +4379,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gr1&version=20190610&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr1&amp;version=20190610&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_INM_INM-CM5-0_ssp126_r1i1p1f1_Amon_gr1_20190619</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/39f9fbbf-b7d1-3258-9861-93b0fb2d8ab7" target="_blank">https://hdl.handle.net/21.14100/39f9fbbf-b7d1-3258-9861-93b0fb2d8ab7</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20190619&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20190619&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_INM_INM-CM5-0_ssp126_r1i1p1f1_Amon_gr1_20190619</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/de9c5020-778d-3cbf-8c1e-69f24ceb8034" target="_blank">https://hdl.handle.net/21.14100/de9c5020-778d-3cbf-8c1e-69f24ceb8034</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20190619&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20190619&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_INM_INM-CM5-0_ssp126_r1i1p1f1_Omon_gr1_20190619</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/77eb418a-2deb-327a-a862-d30a17470254" target="_blank">https://hdl.handle.net/21.14100/77eb418a-2deb-327a-a862-d30a17470254</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr1&version=20190619&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20190619&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_INM_INM-CM5-0_ssp126_r1i1p1f1_SImon_gr1_20190619</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/0f701b15-013c-3098-8259-776af3bb0974" target="_blank">https://hdl.handle.net/21.14100/0f701b15-013c-3098-8259-776af3bb0974</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=SImon&grid_label=gr1&version=20190619&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gr1&amp;version=20190619&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_INM_INM-CM5-0_ssp126_r1i1p1f1_day_gr1_20190619</td>
@@ -2675,10 +4433,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=day&grid_label=gr1&version=20190619&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr1&amp;version=20190619&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_INM_INM-CM5-0_ssp245_r1i1p1f1_Amon_gr1_20190619</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/d0a3d5b8-f697-351c-8a62-c5227ed84b9c" target="_blank">https://hdl.handle.net/21.14100/d0a3d5b8-f697-351c-8a62-c5227ed84b9c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20190619&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20190619&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_INM_INM-CM5-0_ssp245_r1i1p1f1_Amon_gr1_20190619</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/1f4a79a1-0bde-3e71-8776-595a14e3bb70" target="_blank">https://hdl.handle.net/21.14100/1f4a79a1-0bde-3e71-8776-595a14e3bb70</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20190619&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20190619&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_INM_INM-CM5-0_ssp245_r1i1p1f1_Omon_gr1_20190619</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/e9b8f782-9ddd-35e0-ab40-97eccd37d140" target="_blank">https://hdl.handle.net/21.14100/e9b8f782-9ddd-35e0-ab40-97eccd37d140</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr1&version=20190619&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20190619&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_INM_INM-CM5-0_ssp245_r1i1p1f1_SImon_gr1_20190619</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/76b01f1e-7648-3814-bfe5-f6a53c0e56e3" target="_blank">https://hdl.handle.net/21.14100/76b01f1e-7648-3814-bfe5-f6a53c0e56e3</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gr1&version=20190619&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gr1&amp;version=20190619&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_INM_INM-CM5-0_ssp245_r1i1p1f1_day_gr1_20190619</td>
@@ -2711,10 +4487,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=day&grid_label=gr1&version=20190619&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr1&amp;version=20190619&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_INM_INM-CM5-0_ssp370_r1i1p1f1_Amon_gr1_20190618</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/62f1fcf0-f5fe-3692-b5b5-0cd18fdee76e" target="_blank">https://hdl.handle.net/21.14100/62f1fcf0-f5fe-3692-b5b5-0cd18fdee76e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20190618&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20190618&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_INM_INM-CM5-0_ssp370_r1i1p1f1_Amon_gr1_20190618</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/17d9232a-58d3-3c92-8d72-c79405d442bf" target="_blank">https://hdl.handle.net/21.14100/17d9232a-58d3-3c92-8d72-c79405d442bf</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20190618&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20190618&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_INM_INM-CM5-0_ssp370_r1i1p1f1_Omon_gr1_20190618</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/9552f1f1-1576-3671-a21a-8ad30f90e679" target="_blank">https://hdl.handle.net/21.14100/9552f1f1-1576-3671-a21a-8ad30f90e679</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr1&version=20190618&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20190618&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_INM_INM-CM5-0_ssp370_r1i1p1f1_SImon_gr1_20190618</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/dd6c5b67-7eb1-32fc-b65e-80e3f11ab6a5" target="_blank">https://hdl.handle.net/21.14100/dd6c5b67-7eb1-32fc-b65e-80e3f11ab6a5</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=SImon&grid_label=gr1&version=20190618&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gr1&amp;version=20190618&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_INM_INM-CM5-0_ssp370_r1i1p1f1_day_gr1_20190618</td>
@@ -2747,10 +4541,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=day&grid_label=gr1&version=20190618&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr1&amp;version=20190618&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_INM_INM-CM5-0_ssp585_r1i1p1f1_Amon_gr1_20190724</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/796bbf45-fbe2-31d1-a23f-164191f09d00" target="_blank">https://hdl.handle.net/21.14100/796bbf45-fbe2-31d1-a23f-164191f09d00</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20190724&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20190724&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_INM_INM-CM5-0_ssp585_r1i1p1f1_Amon_gr1_20190724</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/ddc12c15-a957-3b02-b16a-dfcfaee8dc9a" target="_blank">https://hdl.handle.net/21.14100/ddc12c15-a957-3b02-b16a-dfcfaee8dc9a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20190724&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20190724&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_INM_INM-CM5-0_ssp585_r1i1p1f1_Omon_gr1_20190724</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/ec373e5d-7e0a-3669-97a9-1a90af1fefab" target="_blank">https://hdl.handle.net/21.14100/ec373e5d-7e0a-3669-97a9-1a90af1fefab</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr1&version=20190724&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20190724&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_INM_INM-CM5-0_ssp585_r1i1p1f1_SImon_gr1_20190724</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/e9de7d93-05c0-3228-be0a-ab8e6a4718d1" target="_blank">https://hdl.handle.net/21.14100/e9de7d93-05c0-3228-be0a-ab8e6a4718d1</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gr1&version=20190724&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gr1&amp;version=20190724&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_INM_INM-CM5-0_ssp585_r1i1p1f1_day_gr1_20190724</td>
@@ -2783,10 +4595,34 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=INM&source_id=INM-CM5-0&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=day&grid_label=gr1&version=20190724&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=INM&amp;source_id=INM-CM5-0&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr1&amp;version=20190724&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_historical_r1i1p1f1_Amon_gr_20180803</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/dce2452f-d68a-3ee5-8106-85db20aa686a" target="_blank">https://hdl.handle.net/21.14100/dce2452f-d68a-3ee5-8106-85db20aa686a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20180803&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20180803&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_historical_r1i1p1f1_Amon_gr_20180803</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/b4100ad5-091e-39af-9216-f36c473c74ed" target="_blank">https://hdl.handle.net/21.14100/b4100ad5-091e-39af-9216-f36c473c74ed</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20180803&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20180803&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_historical_r1i1p1f1_Omon_gn_20180803</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/70fbc359-fe8a-33c5-aebe-efb71d2afd55" target="_blank">https://hdl.handle.net/21.14100/70fbc359-fe8a-33c5-aebe-efb71d2afd55</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20180803&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20180803&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_IPSL_IPSL-CM6A-LR_historical_r1i1p1f1_Omon_gn_20180803</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/1d13a96e-d2a7-3e7e-95b8-7820af34d756" target="_blank">https://hdl.handle.net/21.14100/1d13a96e-d2a7-3e7e-95b8-7820af34d756</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20180803&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20180803&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_historical_r1i1p1f1_SImon_gn_20180803</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/8a04f1b3-f26d-3a46-be87-446594ee2fb4" target="_blank">https://hdl.handle.net/21.14100/8a04f1b3-f26d-3a46-be87-446594ee2fb4</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20180803&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20180803&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_IPSL_IPSL-CM6A-LR_historical_r1i1p1f1_day_gr_20180803</td>
@@ -2819,6 +4655,36 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gr&version=20190614&variable_id=tasmax&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr&amp;version=20190614&amp;variable_id=tasmax&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp126_r1i1p1f1_Amon_gr_20190903</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/1b688757-e278-3c40-a211-13333af3501a" target="_blank">https://hdl.handle.net/21.14100/1b688757-e278-3c40-a211-13333af3501a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20190903&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190903&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp126_r1i1p1f1_Amon_gr_20190903</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/9f3a868b-864e-35fb-828d-f7ad8a7356a9" target="_blank">https://hdl.handle.net/21.14100/9f3a868b-864e-35fb-828d-f7ad8a7356a9</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20190903&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190903&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp126_r1i1p1f1_Omon_gn_20190903</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/894b0219-3051-37f6-a05e-46ae6da6b750" target="_blank">https://hdl.handle.net/21.14100/894b0219-3051-37f6-a05e-46ae6da6b750</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190903&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190903&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp126_r1i1p1f1_Omon_gn_20190903</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/8f87e279-5cab-33d7-808e-28231b2cfca1" target="_blank">https://hdl.handle.net/21.14100/8f87e279-5cab-33d7-808e-28231b2cfca1</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190903&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190903&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp126_r1i1p1f1_SImon_gn_20190903</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/d83a98e7-3bba-3efd-b2e9-64cc9feea0e9" target="_blank">https://hdl.handle.net/21.14100/d83a98e7-3bba-3efd-b2e9-64cc9feea0e9</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190903&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190903&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp126_r1i1p1f1_day_gr_20190903</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/3f8d7b66-3874-370e-a1f5-64aa70e967e6" target="_blank">https://hdl.handle.net/21.14100/3f8d7b66-3874-370e-a1f5-64aa70e967e6</a></td>
@@ -2847,6 +4713,36 @@
       <td>tasmin</td>
       <td><a href="https://hdl.handle.net/21.14100/8f99905a-f08c-3572-8b63-9c0806e562a0" target="_blank">https://hdl.handle.net/21.14100/8f99905a-f08c-3572-8b63-9c0806e562a0</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=day&grid_label=gr&version=20190903&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr&amp;version=20190903&amp;variable_id=tasmin&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp245_r1i1p1f1_Amon_gr_20190119</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/e28cd0f7-00ce-3b56-9b38-c0d0843edbb7" target="_blank">https://hdl.handle.net/21.14100/e28cd0f7-00ce-3b56-9b38-c0d0843edbb7</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20190119&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190119&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp245_r1i1p1f1_Amon_gr_20190119</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/cddf6796-7c85-3dc8-aade-55a50e6d74ba" target="_blank">https://hdl.handle.net/21.14100/cddf6796-7c85-3dc8-aade-55a50e6d74ba</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20190119&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190119&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp245_r1i1p1f1_Omon_gn_20190119</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/e72ca57a-dd54-354a-a855-148b1d3ef877" target="_blank">https://hdl.handle.net/21.14100/e72ca57a-dd54-354a-a855-148b1d3ef877</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190119&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190119&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp245_r1i1p1f1_Omon_gn_20190119</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/b79ba588-742d-3eaf-bd2b-9327fbe38172" target="_blank">https://hdl.handle.net/21.14100/b79ba588-742d-3eaf-bd2b-9327fbe38172</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190119&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190119&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp245_r1i1p1f1_SImon_gn_20190119</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/1b44adaa-bf29-39b9-8a6a-07b7c2449a96" target="_blank">https://hdl.handle.net/21.14100/1b44adaa-bf29-39b9-8a6a-07b7c2449a96</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190119&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190119&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp245_r1i1p1f1_day_gr_20190119</td>
@@ -2879,6 +4775,36 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=day&grid_label=gr&version=20190614&variable_id=tasmax&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr&amp;version=20190614&amp;variable_id=tasmax&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp370_r1i1p1f1_Amon_gr_20190119</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/4f559d37-0e6a-3d61-8fea-eb8e9d3ca208" target="_blank">https://hdl.handle.net/21.14100/4f559d37-0e6a-3d61-8fea-eb8e9d3ca208</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20190119&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190119&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp370_r1i1p1f1_Amon_gr_20190119</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/6683add6-43ce-3a93-8928-30d848d49386" target="_blank">https://hdl.handle.net/21.14100/6683add6-43ce-3a93-8928-30d848d49386</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20190119&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190119&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp370_r1i1p1f1_Omon_gn_20190119</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/e8d28afa-b556-3e73-8634-264f3cb6e050" target="_blank">https://hdl.handle.net/21.14100/e8d28afa-b556-3e73-8634-264f3cb6e050</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190119&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190119&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp370_r1i1p1f1_Omon_gn_20190119</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/ca8179f6-8bb0-312c-816e-c92b3fabb394" target="_blank">https://hdl.handle.net/21.14100/ca8179f6-8bb0-312c-816e-c92b3fabb394</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190119&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190119&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp370_r1i1p1f1_SImon_gn_20190119</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/248f8462-19e9-3a28-be52-5d0159a25a6e" target="_blank">https://hdl.handle.net/21.14100/248f8462-19e9-3a28-be52-5d0159a25a6e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190119&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190119&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp370_r1i1p1f1_day_gr_20190119</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/7cb89a2c-39d1-3a74-8344-74aeac3b4426" target="_blank">https://hdl.handle.net/21.14100/7cb89a2c-39d1-3a74-8344-74aeac3b4426</a></td>
@@ -2907,6 +4833,18 @@
       <td>tasmax</td>
       <td><a href="https://hdl.handle.net/21.14100/4644af0f-2f56-3acc-b2cd-8ab83b132598" target="_blank">https://hdl.handle.net/21.14100/4644af0f-2f56-3acc-b2cd-8ab83b132598</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=day&grid_label=gr&version=20190614&variable_id=tasmax&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr&amp;version=20190614&amp;variable_id=tasmax&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp460_r1i1p1f1_Amon_gr_20190506</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/b94ad49a-b09e-3486-9280-bf9089b2b222" target="_blank">https://hdl.handle.net/21.14100/b94ad49a-b09e-3486-9280-bf9089b2b222</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp460&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20190506&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp460&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190506&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp460_r1i1p1f1_Amon_gr_20190506</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/ce648830-d545-365e-bf3b-9b0fba08b832" target="_blank">https://hdl.handle.net/21.14100/ce648830-d545-365e-bf3b-9b0fba08b832</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp460&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20190506&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp460&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190506&amp;variable_id=sfcWind&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp460_r1i1p1f1_day_gr_20190506</td>
@@ -2939,6 +4877,36 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp460&variant_label=r1i1p1f1&table_id=day&grid_label=gr&version=20190614&variable_id=tasmax&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp460&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr&amp;version=20190614&amp;variable_id=tasmax&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp585_r1i1p1f1_Amon_gr_20190903</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/c6780125-2f79-3d18-b155-d5eb4bc78e0c" target="_blank">https://hdl.handle.net/21.14100/c6780125-2f79-3d18-b155-d5eb4bc78e0c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20190903&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190903&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp585_r1i1p1f1_Amon_gr_20190903</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/e364ec46-263d-3366-92d1-8338dc086ea6" target="_blank">https://hdl.handle.net/21.14100/e364ec46-263d-3366-92d1-8338dc086ea6</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr&version=20190903&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190903&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp585_r1i1p1f1_Omon_gn_20190903</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/bfcd9b59-f80f-32ad-aca4-fa147bfece2f" target="_blank">https://hdl.handle.net/21.14100/bfcd9b59-f80f-32ad-aca4-fa147bfece2f</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190903&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190903&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp585_r1i1p1f1_Omon_gn_20190903</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/8a45d33e-bd0f-387c-919c-05a54e2c4672" target="_blank">https://hdl.handle.net/21.14100/8a45d33e-bd0f-387c-919c-05a54e2c4672</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190903&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190903&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp585_r1i1p1f1_SImon_gn_20190903</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/489e8ba7-5b8d-3e7f-8f0a-5f08eb25dfb1" target="_blank">https://hdl.handle.net/21.14100/489e8ba7-5b8d-3e7f-8f0a-5f08eb25dfb1</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190903&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190903&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_IPSL_IPSL-CM6A-LR_ssp585_r1i1p1f1_day_gr_20190903</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/3da0a556-47ea-335b-817c-d7836789c1ae" target="_blank">https://hdl.handle.net/21.14100/3da0a556-47ea-335b-817c-d7836789c1ae</a></td>
@@ -2967,6 +4935,24 @@
       <td>tasmin</td>
       <td><a href="https://hdl.handle.net/21.14100/5056a7ee-f70f-3e7b-9c37-e443477f40b0" target="_blank">https://hdl.handle.net/21.14100/5056a7ee-f70f-3e7b-9c37-e443477f40b0</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=IPSL&source_id=IPSL-CM6A-LR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=day&grid_label=gr&version=20190903&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=IPSL&amp;source_id=IPSL-CM6A-LR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr&amp;version=20190903&amp;variable_id=tasmin&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_KIOST_KIOST-ESM_historical_r1i1p1f1_Amon_gr1_20191106</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/b8216358-b80e-3632-9813-adcef9ffc8b2" target="_blank">https://hdl.handle.net/21.14100/b8216358-b80e-3632-9813-adcef9ffc8b2</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=KIOST&source_id=KIOST-ESM&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20191106&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=KIOST&amp;source_id=KIOST-ESM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20191106&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_KIOST_KIOST-ESM_historical_r1i1p1f1_Omon_gr1_20200924</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/370aef09-81a7-3356-a3c0-821d3b698b01" target="_blank">https://hdl.handle.net/21.14100/370aef09-81a7-3356-a3c0-821d3b698b01</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=KIOST&source_id=KIOST-ESM&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr1&version=20200924&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=KIOST&amp;source_id=KIOST-ESM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20200924&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_KIOST_KIOST-ESM_historical_r1i1p1f1_SImon_gr1_20201211</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/6d820ae2-c411-3264-94c8-241ffa14ffed" target="_blank">https://hdl.handle.net/21.14100/6d820ae2-c411-3264-94c8-241ffa14ffed</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=KIOST&source_id=KIOST-ESM&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gr1&version=20201211&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=KIOST&amp;source_id=KIOST-ESM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gr1&amp;version=20201211&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_KIOST_KIOST-ESM_historical_r1i1p1f1_day_gr1_20191202</td>
@@ -2999,10 +4985,88 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=KIOST&source_id=KIOST-ESM&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gr1&version=20201012&variable_id=psl&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=KIOST&amp;source_id=KIOST-ESM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr1&amp;version=20201012&amp;variable_id=psl&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_MIROC_MIROC-ES2L_historical_r1i1p1f2_Omon_gn_20190823</td>
+      <td>CMIP6_KIOST_KIOST-ESM_ssp126_r1i1p1f1_Amon_gr1_20191106</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/e9588578-74c5-31fa-adc1-f57e4fd620ca" target="_blank">https://hdl.handle.net/21.14100/e9588578-74c5-31fa-adc1-f57e4fd620ca</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=KIOST&source_id=KIOST-ESM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20191106&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=KIOST&amp;source_id=KIOST-ESM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20191106&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_KIOST_KIOST-ESM_ssp126_r1i1p1f1_Omon_gr1_20200924</td>
       <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/d3c26c03-21e8-391a-a760-ecb737f869c0" target="_blank">https://hdl.handle.net/21.14100/d3c26c03-21e8-391a-a760-ecb737f869c0</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=historical&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20190823&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190823&amp;variable_id=tos&amp;replica=on</a></td>
+      <td><a href="https://hdl.handle.net/21.14100/736084c9-2145-3055-8944-92e8c8c5ed80" target="_blank">https://hdl.handle.net/21.14100/736084c9-2145-3055-8944-92e8c8c5ed80</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=KIOST&source_id=KIOST-ESM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr1&version=20200924&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=KIOST&amp;source_id=KIOST-ESM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20200924&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_KIOST_KIOST-ESM_ssp126_r1i1p1f1_SImon_gr1_20201211</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/04caeb03-aac6-36cd-aa7c-757dd325ed80" target="_blank">https://hdl.handle.net/21.14100/04caeb03-aac6-36cd-aa7c-757dd325ed80</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=KIOST&source_id=KIOST-ESM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=SImon&grid_label=gr1&version=20201211&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=KIOST&amp;source_id=KIOST-ESM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gr1&amp;version=20201211&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_KIOST_KIOST-ESM_ssp245_r1i1p1f1_Amon_gr1_20191106</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/506e4af5-3fdf-3b89-857a-e4452813d12b" target="_blank">https://hdl.handle.net/21.14100/506e4af5-3fdf-3b89-857a-e4452813d12b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=KIOST&source_id=KIOST-ESM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20191106&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=KIOST&amp;source_id=KIOST-ESM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20191106&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_KIOST_KIOST-ESM_ssp245_r1i1p1f1_Omon_gr1_20200924</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/62b140db-48e8-39d2-bf89-70a0186b3a7e" target="_blank">https://hdl.handle.net/21.14100/62b140db-48e8-39d2-bf89-70a0186b3a7e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=KIOST&source_id=KIOST-ESM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr1&version=20200924&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=KIOST&amp;source_id=KIOST-ESM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20200924&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_KIOST_KIOST-ESM_ssp245_r1i1p1f1_SImon_gr1_20201211</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/683f7345-4fb6-3e22-a527-9bd113376472" target="_blank">https://hdl.handle.net/21.14100/683f7345-4fb6-3e22-a527-9bd113376472</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=KIOST&source_id=KIOST-ESM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gr1&version=20201211&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=KIOST&amp;source_id=KIOST-ESM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gr1&amp;version=20201211&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_KIOST_KIOST-ESM_ssp585_r1i1p1f1_Amon_gr1_20191106</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/3a682dcd-b293-309f-9d42-2f95ae2bb7d3" target="_blank">https://hdl.handle.net/21.14100/3a682dcd-b293-309f-9d42-2f95ae2bb7d3</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=KIOST&source_id=KIOST-ESM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20191106&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=KIOST&amp;source_id=KIOST-ESM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20191106&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_KIOST_KIOST-ESM_ssp585_r1i1p1f1_Omon_gr1_20200924</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/61d84045-36cd-3a88-8c68-ddf192440850" target="_blank">https://hdl.handle.net/21.14100/61d84045-36cd-3a88-8c68-ddf192440850</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=KIOST&source_id=KIOST-ESM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr1&version=20200924&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=KIOST&amp;source_id=KIOST-ESM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20200924&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_KIOST_KIOST-ESM_ssp585_r1i1p1f1_SImon_gr1_20201211</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/d94647d7-a129-3743-a9fb-fbd6c81aff72" target="_blank">https://hdl.handle.net/21.14100/d94647d7-a129-3743-a9fb-fbd6c81aff72</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=KIOST&source_id=KIOST-ESM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gr1&version=20201211&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=KIOST&amp;source_id=KIOST-ESM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gr1&amp;version=20201211&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC-ES2L_historical_r1i1p1f2_Amon_gn_20190823</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/523863ce-ca2b-3d01-a181-8572e7a41600" target="_blank">https://hdl.handle.net/21.14100/523863ce-ca2b-3d01-a181-8572e7a41600</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=historical&variant_label=r1i1p1f2&table_id=Amon&grid_label=gn&version=20190823&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190823&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC-ES2L_historical_r1i1p1f2_Amon_gn_20190823</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/a910e477-074b-3282-8def-1966f8b657e0" target="_blank">https://hdl.handle.net/21.14100/a910e477-074b-3282-8def-1966f8b657e0</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=historical&variant_label=r1i1p1f2&table_id=Amon&grid_label=gn&version=20190823&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190823&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC-ES2L_historical_r1i1p1f2_Omon_gr1_20200731</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/b354d54a-196a-3732-9853-d92b374205fe" target="_blank">https://hdl.handle.net/21.14100/b354d54a-196a-3732-9853-d92b374205fe</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=historical&variant_label=r1i1p1f2&table_id=Omon&grid_label=gr1&version=20200731&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20200731&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC-ES2L_historical_r1i1p1f2_Omon_gr1_20200731</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/91570563-c079-3bb9-9e14-b4b07c513c8b" target="_blank">https://hdl.handle.net/21.14100/91570563-c079-3bb9-9e14-b4b07c513c8b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=historical&variant_label=r1i1p1f2&table_id=Omon&grid_label=gr1&version=20200731&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20200731&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC-ES2L_historical_r1i1p1f2_SImon_gr1_20200731</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/48763a65-9f31-37e6-81c2-66f244023798" target="_blank">https://hdl.handle.net/21.14100/48763a65-9f31-37e6-81c2-66f244023798</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=historical&variant_label=r1i1p1f2&table_id=SImon&grid_label=gr1&version=20200731&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=SImon&amp;grid_label=gr1&amp;version=20200731&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MIROC_MIROC-ES2L_historical_r1i1p1f2_day_gn_20191129</td>
@@ -3035,10 +5099,34 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=historical&variant_label=r1i1p1f2&table_id=day&grid_label=gn&version=20191129&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gn&amp;version=20191129&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_MIROC_MIROC-ES2L_ssp126_r1i1p1f2_Omon_gn_20190823</td>
+      <td>CMIP6_MIROC_MIROC-ES2L_ssp126_r1i1p1f2_Amon_gn_20190823</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/55191f69-4fe3-3166-9f1c-454d4eb6f6d3" target="_blank">https://hdl.handle.net/21.14100/55191f69-4fe3-3166-9f1c-454d4eb6f6d3</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=Amon&grid_label=gn&version=20190823&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190823&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC-ES2L_ssp126_r1i1p1f2_Amon_gn_20190823</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/28ccc6d9-ba8c-3ae4-89f9-65b4a61631dc" target="_blank">https://hdl.handle.net/21.14100/28ccc6d9-ba8c-3ae4-89f9-65b4a61631dc</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=Amon&grid_label=gn&version=20190823&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190823&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC-ES2L_ssp126_r1i1p1f2_Omon_gr1_20200731</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/ca0a8da4-6ada-330a-aeac-702c568d30cc" target="_blank">https://hdl.handle.net/21.14100/ca0a8da4-6ada-330a-aeac-702c568d30cc</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=Omon&grid_label=gr1&version=20200731&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20200731&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC-ES2L_ssp126_r1i1p1f2_Omon_gr1_20200731</td>
       <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/0406bba1-6a95-3659-9494-21619de4d820" target="_blank">https://hdl.handle.net/21.14100/0406bba1-6a95-3659-9494-21619de4d820</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20190823&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190823&amp;variable_id=tos&amp;replica=on</a></td>
+      <td><a href="https://hdl.handle.net/21.14100/e59ce2b6-67f8-3986-9ac9-fc028a88a0a9" target="_blank">https://hdl.handle.net/21.14100/e59ce2b6-67f8-3986-9ac9-fc028a88a0a9</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=Omon&grid_label=gr1&version=20200731&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20200731&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC-ES2L_ssp126_r1i1p1f2_SImon_gr1_20200731</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/d8afb350-05b4-3aee-a3a7-26793ccb2d34" target="_blank">https://hdl.handle.net/21.14100/d8afb350-05b4-3aee-a3a7-26793ccb2d34</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=SImon&grid_label=gr1&version=20200731&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=SImon&amp;grid_label=gr1&amp;version=20200731&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MIROC_MIROC-ES2L_ssp126_r1i1p1f2_day_gn_20200318</td>
@@ -3071,10 +5159,34 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=day&grid_label=gn&version=20200318&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gn&amp;version=20200318&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_MIROC_MIROC-ES2L_ssp245_r1i1p1f2_Omon_gn_20190823</td>
+      <td>CMIP6_MIROC_MIROC-ES2L_ssp245_r1i1p1f2_Amon_gn_20190823</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/a8a0f7f1-d455-36ed-9b4d-d6decf726dcd" target="_blank">https://hdl.handle.net/21.14100/a8a0f7f1-d455-36ed-9b4d-d6decf726dcd</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=Amon&grid_label=gn&version=20190823&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190823&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC-ES2L_ssp245_r1i1p1f2_Amon_gn_20190823</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/364c60b0-f5bc-3afa-b10a-e081b2e1c951" target="_blank">https://hdl.handle.net/21.14100/364c60b0-f5bc-3afa-b10a-e081b2e1c951</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=Amon&grid_label=gn&version=20190823&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190823&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC-ES2L_ssp245_r1i1p1f2_Omon_gr1_20200731</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/0495c45e-bc37-3059-8cf5-53b71c43c441" target="_blank">https://hdl.handle.net/21.14100/0495c45e-bc37-3059-8cf5-53b71c43c441</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=Omon&grid_label=gr1&version=20200731&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20200731&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC-ES2L_ssp245_r1i1p1f2_Omon_gr1_20200731</td>
       <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/555e2039-da86-360f-a5f8-31dfff68e178" target="_blank">https://hdl.handle.net/21.14100/555e2039-da86-360f-a5f8-31dfff68e178</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20190823&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190823&amp;variable_id=tos&amp;replica=on</a></td>
+      <td><a href="https://hdl.handle.net/21.14100/86b30b35-c54f-3fbb-acd4-c4eacec0abb9" target="_blank">https://hdl.handle.net/21.14100/86b30b35-c54f-3fbb-acd4-c4eacec0abb9</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=Omon&grid_label=gr1&version=20200731&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20200731&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC-ES2L_ssp245_r1i1p1f2_SImon_gr1_20200731</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/678c2a86-1157-3784-bf31-adce939f3b6a" target="_blank">https://hdl.handle.net/21.14100/678c2a86-1157-3784-bf31-adce939f3b6a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=SImon&grid_label=gr1&version=20200731&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=SImon&amp;grid_label=gr1&amp;version=20200731&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MIROC_MIROC-ES2L_ssp245_r1i1p1f2_day_gn_20200318</td>
@@ -3107,10 +5219,34 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=day&grid_label=gn&version=20200318&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gn&amp;version=20200318&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_MIROC_MIROC-ES2L_ssp370_r1i1p1f2_Omon_gn_20190823</td>
+      <td>CMIP6_MIROC_MIROC-ES2L_ssp370_r1i1p1f2_Amon_gn_20190823</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/1444f453-9b62-3975-a1e7-01b8ee92d077" target="_blank">https://hdl.handle.net/21.14100/1444f453-9b62-3975-a1e7-01b8ee92d077</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=Amon&grid_label=gn&version=20190823&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190823&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC-ES2L_ssp370_r1i1p1f2_Amon_gn_20190823</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/513f3d3b-491d-3315-82b5-de617fa3bef6" target="_blank">https://hdl.handle.net/21.14100/513f3d3b-491d-3315-82b5-de617fa3bef6</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=Amon&grid_label=gn&version=20190823&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190823&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC-ES2L_ssp370_r1i1p1f2_Omon_gr1_20200731</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/79b1e517-2fb0-349e-a8ae-00e6c587a5a9" target="_blank">https://hdl.handle.net/21.14100/79b1e517-2fb0-349e-a8ae-00e6c587a5a9</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=Omon&grid_label=gr1&version=20200731&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20200731&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC-ES2L_ssp370_r1i1p1f2_Omon_gr1_20200731</td>
       <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/aa9325a1-8427-3c39-ad41-cc53870a6e86" target="_blank">https://hdl.handle.net/21.14100/aa9325a1-8427-3c39-ad41-cc53870a6e86</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20190823&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190823&amp;variable_id=tos&amp;replica=on</a></td>
+      <td><a href="https://hdl.handle.net/21.14100/2ef9c201-21ab-39a5-88f6-b0ed12e27ca8" target="_blank">https://hdl.handle.net/21.14100/2ef9c201-21ab-39a5-88f6-b0ed12e27ca8</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=Omon&grid_label=gr1&version=20200731&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20200731&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC-ES2L_ssp370_r1i1p1f2_SImon_gr1_20200731</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/ad92ed2f-73a2-3e96-af8e-7d43d93e05e0" target="_blank">https://hdl.handle.net/21.14100/ad92ed2f-73a2-3e96-af8e-7d43d93e05e0</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=SImon&grid_label=gr1&version=20200731&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=SImon&amp;grid_label=gr1&amp;version=20200731&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MIROC_MIROC-ES2L_ssp370_r1i1p1f2_day_gn_20200318</td>
@@ -3143,10 +5279,34 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=day&grid_label=gn&version=20200318&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gn&amp;version=20200318&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_MIROC_MIROC-ES2L_ssp585_r1i1p1f2_Omon_gn_20190823</td>
+      <td>CMIP6_MIROC_MIROC-ES2L_ssp585_r1i1p1f2_Amon_gn_20190823</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/d349601d-2cdc-3c1c-b415-519807ac145c" target="_blank">https://hdl.handle.net/21.14100/d349601d-2cdc-3c1c-b415-519807ac145c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=Amon&grid_label=gn&version=20190823&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190823&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC-ES2L_ssp585_r1i1p1f2_Amon_gn_20190823</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/b35f9d03-840d-3b06-ba25-425b3f21c718" target="_blank">https://hdl.handle.net/21.14100/b35f9d03-840d-3b06-ba25-425b3f21c718</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=Amon&grid_label=gn&version=20190823&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190823&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC-ES2L_ssp585_r1i1p1f2_Omon_gr1_20200731</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/0a5fecbc-1dcb-3e8c-9e6b-43b3c959b074" target="_blank">https://hdl.handle.net/21.14100/0a5fecbc-1dcb-3e8c-9e6b-43b3c959b074</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=Omon&grid_label=gr1&version=20200731&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20200731&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC-ES2L_ssp585_r1i1p1f2_Omon_gr1_20200731</td>
       <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/a3b2d9fa-a736-35d6-8692-ff58d5d7e353" target="_blank">https://hdl.handle.net/21.14100/a3b2d9fa-a736-35d6-8692-ff58d5d7e353</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20190823&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190823&amp;variable_id=tos&amp;replica=on</a></td>
+      <td><a href="https://hdl.handle.net/21.14100/eb8d7a1b-c218-326d-8e79-5ae500a833d7" target="_blank">https://hdl.handle.net/21.14100/eb8d7a1b-c218-326d-8e79-5ae500a833d7</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=Omon&grid_label=gr1&version=20200731&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gr1&amp;version=20200731&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC-ES2L_ssp585_r1i1p1f2_SImon_gr1_20200731</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/026b189a-25b7-3dbb-8352-8196704065ec" target="_blank">https://hdl.handle.net/21.14100/026b189a-25b7-3dbb-8352-8196704065ec</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=SImon&grid_label=gr1&version=20200731&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=SImon&amp;grid_label=gr1&amp;version=20200731&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MIROC_MIROC-ES2L_ssp585_r1i1p1f2_day_gn_20200318</td>
@@ -3179,10 +5339,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC-ES2L&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=day&grid_label=gn&version=20200318&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC-ES2L&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gn&amp;version=20200318&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MIROC_MIROC6_historical_r1i1p1f1_Amon_gn_20181212</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/d3c94b18-0a5d-38b3-98c3-2e89587147e6" target="_blank">https://hdl.handle.net/21.14100/d3c94b18-0a5d-38b3-98c3-2e89587147e6</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20181212&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20181212&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC6_historical_r1i1p1f1_Amon_gn_20190311</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/44f96faa-168e-3595-b8bc-a3de8f5ca18a" target="_blank">https://hdl.handle.net/21.14100/44f96faa-168e-3595-b8bc-a3de8f5ca18a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190311&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190311&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MIROC_MIROC6_historical_r1i1p1f1_Omon_gn_20181212</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/d24db66b-3995-37c8-b8be-aa414832d832" target="_blank">https://hdl.handle.net/21.14100/d24db66b-3995-37c8-b8be-aa414832d832</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20181212&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20181212&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC6_historical_r1i1p1f1_SImon_gn_20181212</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/a45ac5f7-316e-3e43-ba5f-c9c8c4ff00c7" target="_blank">https://hdl.handle.net/21.14100/a45ac5f7-316e-3e43-ba5f-c9c8c4ff00c7</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20181212&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20181212&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MIROC_MIROC6_historical_r1i1p1f1_day_gn_20191016</td>
@@ -3215,10 +5393,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191016&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191016&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MIROC_MIROC6_ssp126_r1i1p1f1_Amon_gn_20190627</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/bd427e12-248f-36a4-9226-133cdb0cf5b7" target="_blank">https://hdl.handle.net/21.14100/bd427e12-248f-36a4-9226-133cdb0cf5b7</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190627&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190627&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC6_ssp126_r1i1p1f1_Amon_gn_20190627</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/a2437255-d97d-3a35-b821-39d40bdab188" target="_blank">https://hdl.handle.net/21.14100/a2437255-d97d-3a35-b821-39d40bdab188</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190627&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190627&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MIROC_MIROC6_ssp126_r1i1p1f1_Omon_gn_20190627</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/a206abed-0d02-39de-8c49-74c28b69043b" target="_blank">https://hdl.handle.net/21.14100/a206abed-0d02-39de-8c49-74c28b69043b</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190627&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190627&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC6_ssp126_r1i1p1f1_SImon_gn_20190627</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/5e930075-081a-3795-83fe-fcaec147a13e" target="_blank">https://hdl.handle.net/21.14100/5e930075-081a-3795-83fe-fcaec147a13e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190627&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190627&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MIROC_MIROC6_ssp126_r1i1p1f1_day_gn_20191016</td>
@@ -3251,10 +5447,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191016&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191016&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MIROC_MIROC6_ssp245_r1i1p1f1_Amon_gn_20190627</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/82598209-bcfe-37c0-b9bc-aeaa6d8475a2" target="_blank">https://hdl.handle.net/21.14100/82598209-bcfe-37c0-b9bc-aeaa6d8475a2</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190627&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190627&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC6_ssp245_r1i1p1f1_Amon_gn_20190627</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/f3dfa569-d9f9-369c-8836-7184534ab88f" target="_blank">https://hdl.handle.net/21.14100/f3dfa569-d9f9-369c-8836-7184534ab88f</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190627&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190627&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MIROC_MIROC6_ssp245_r1i1p1f1_Omon_gn_20190627</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/d7cca760-d96e-3ad5-b9d9-442b65d4edcb" target="_blank">https://hdl.handle.net/21.14100/d7cca760-d96e-3ad5-b9d9-442b65d4edcb</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190627&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190627&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC6_ssp245_r1i1p1f1_SImon_gn_20190627</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/98519004-29f1-3902-9307-b5db242231e2" target="_blank">https://hdl.handle.net/21.14100/98519004-29f1-3902-9307-b5db242231e2</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190627&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190627&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MIROC_MIROC6_ssp245_r1i1p1f1_day_gn_20191016</td>
@@ -3287,10 +5501,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191016&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191016&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MIROC_MIROC6_ssp370_r1i1p1f1_Amon_gn_20190627</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/d49314a7-6c74-3857-9824-32ad2bdedd34" target="_blank">https://hdl.handle.net/21.14100/d49314a7-6c74-3857-9824-32ad2bdedd34</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190627&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190627&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC6_ssp370_r1i1p1f1_Amon_gn_20190627</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/502f2db2-5315-3dac-9007-44c990b44a79" target="_blank">https://hdl.handle.net/21.14100/502f2db2-5315-3dac-9007-44c990b44a79</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190627&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190627&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MIROC_MIROC6_ssp370_r1i1p1f1_Omon_gn_20190627</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/81150a87-077a-3fa9-aef3-c84b81124968" target="_blank">https://hdl.handle.net/21.14100/81150a87-077a-3fa9-aef3-c84b81124968</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190627&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190627&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC6_ssp370_r1i1p1f1_SImon_gn_20190627</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/4ea74867-fe92-3be6-a65e-a45c6cb6ea79" target="_blank">https://hdl.handle.net/21.14100/4ea74867-fe92-3be6-a65e-a45c6cb6ea79</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190627&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190627&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MIROC_MIROC6_ssp370_r1i1p1f1_day_gn_20191016</td>
@@ -3323,10 +5555,16 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191016&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191016&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_MIROC_MIROC6_ssp460_r1i1p1f1_Omon_gn_20190807</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/249650db-2108-322d-b193-0f883348c9c9" target="_blank">https://hdl.handle.net/21.14100/249650db-2108-322d-b193-0f883348c9c9</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp460&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190807&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp460&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190807&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_MIROC_MIROC6_ssp460_r1i1p1f1_Amon_gn_20190807</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/8ec1c1b3-1af2-37fa-aaa2-6f25bd2554ff" target="_blank">https://hdl.handle.net/21.14100/8ec1c1b3-1af2-37fa-aaa2-6f25bd2554ff</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp460&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190807&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp460&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190807&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC6_ssp460_r1i1p1f1_Amon_gn_20190807</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/5696641c-f8ce-396d-8afc-655239abd1d9" target="_blank">https://hdl.handle.net/21.14100/5696641c-f8ce-396d-8afc-655239abd1d9</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp460&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190807&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp460&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190807&amp;variable_id=sfcWind&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MIROC_MIROC6_ssp460_r1i1p1f1_day_gn_20191016</td>
@@ -3359,10 +5597,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp460&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191016&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp460&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191016&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MIROC_MIROC6_ssp585_r1i1p1f1_Amon_gn_20190627</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/7c688134-baea-3db2-ba99-2de72727bdff" target="_blank">https://hdl.handle.net/21.14100/7c688134-baea-3db2-ba99-2de72727bdff</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190627&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190627&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC6_ssp585_r1i1p1f1_Amon_gn_20190627</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/9417e497-050a-3046-b82c-20256b45ad93" target="_blank">https://hdl.handle.net/21.14100/9417e497-050a-3046-b82c-20256b45ad93</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190627&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190627&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MIROC_MIROC6_ssp585_r1i1p1f1_Omon_gn_20190627</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/ca3f3830-2a78-36f4-88e8-601d9c6115ee" target="_blank">https://hdl.handle.net/21.14100/ca3f3830-2a78-36f4-88e8-601d9c6115ee</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190627&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190627&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MIROC_MIROC6_ssp585_r1i1p1f1_SImon_gn_20190627</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/749008bf-4356-3212-b652-23e148c47c3a" target="_blank">https://hdl.handle.net/21.14100/749008bf-4356-3212-b652-23e148c47c3a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190627&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190627&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MIROC_MIROC6_ssp585_r1i1p1f1_day_gn_20191016</td>
@@ -3395,10 +5651,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MIROC&source_id=MIROC6&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191016&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MIROC&amp;source_id=MIROC6&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191016&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MOHC_HadGEM3-GC31-LL_historical_r1i1p1f3_Amon_gn_20190624</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/82d6c455-44a0-38f1-8281-9059ce602285" target="_blank">https://hdl.handle.net/21.14100/82d6c455-44a0-38f1-8281-9059ce602285</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=HadGEM3-GC31-LL&experiment_id=historical&variant_label=r1i1p1f3&table_id=Amon&grid_label=gn&version=20190624&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=HadGEM3-GC31-LL&amp;experiment_id=historical&amp;variant_label=r1i1p1f3&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190624&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MOHC_HadGEM3-GC31-LL_historical_r1i1p1f3_Amon_gn_20190624</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/99805fc8-66ee-3862-9be1-a0694bc1d49b" target="_blank">https://hdl.handle.net/21.14100/99805fc8-66ee-3862-9be1-a0694bc1d49b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=HadGEM3-GC31-LL&experiment_id=historical&variant_label=r1i1p1f3&table_id=Amon&grid_label=gn&version=20190624&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=HadGEM3-GC31-LL&amp;experiment_id=historical&amp;variant_label=r1i1p1f3&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190624&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MOHC_HadGEM3-GC31-LL_historical_r1i1p1f3_Omon_gn_20190624</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/30c1c3f3-cf59-35b6-a572-93bf5587ac4f" target="_blank">https://hdl.handle.net/21.14100/30c1c3f3-cf59-35b6-a572-93bf5587ac4f</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=HadGEM3-GC31-LL&experiment_id=historical&variant_label=r1i1p1f3&table_id=Omon&grid_label=gn&version=20190624&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=HadGEM3-GC31-LL&amp;experiment_id=historical&amp;variant_label=r1i1p1f3&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190624&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MOHC_HadGEM3-GC31-LL_historical_r1i1p1f3_SImon_gn_20200330</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/08535e2f-0506-34ed-8f34-5edf26e535e8" target="_blank">https://hdl.handle.net/21.14100/08535e2f-0506-34ed-8f34-5edf26e535e8</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=HadGEM3-GC31-LL&experiment_id=historical&variant_label=r1i1p1f3&table_id=SImon&grid_label=gn&version=20200330&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=HadGEM3-GC31-LL&amp;experiment_id=historical&amp;variant_label=r1i1p1f3&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200330&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MOHC_HadGEM3-GC31-LL_historical_r1i1p1f3_day_gn_20190624</td>
@@ -3431,10 +5705,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=HadGEM3-GC31-LL&experiment_id=historical&variant_label=r1i1p1f3&table_id=day&grid_label=gn&version=20190624&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=HadGEM3-GC31-LL&amp;experiment_id=historical&amp;variant_label=r1i1p1f3&amp;table_id=day&amp;grid_label=gn&amp;version=20190624&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MOHC_HadGEM3-GC31-LL_ssp126_r1i1p1f3_Amon_gn_20200114</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/3d1673fb-e9f8-3ff6-82f6-a7db90c08fb3" target="_blank">https://hdl.handle.net/21.14100/3d1673fb-e9f8-3ff6-82f6-a7db90c08fb3</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=HadGEM3-GC31-LL&experiment_id=ssp126&variant_label=r1i1p1f3&table_id=Amon&grid_label=gn&version=20200114&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=HadGEM3-GC31-LL&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f3&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200114&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MOHC_HadGEM3-GC31-LL_ssp126_r1i1p1f3_Amon_gn_20200114</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/069e2130-5673-36b8-8db9-14ffd666e264" target="_blank">https://hdl.handle.net/21.14100/069e2130-5673-36b8-8db9-14ffd666e264</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=HadGEM3-GC31-LL&experiment_id=ssp126&variant_label=r1i1p1f3&table_id=Amon&grid_label=gn&version=20200114&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=HadGEM3-GC31-LL&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f3&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200114&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MOHC_HadGEM3-GC31-LL_ssp126_r1i1p1f3_Omon_gn_20200114</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/801a332a-1719-3e71-bed3-5383c3529af6" target="_blank">https://hdl.handle.net/21.14100/801a332a-1719-3e71-bed3-5383c3529af6</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=HadGEM3-GC31-LL&experiment_id=ssp126&variant_label=r1i1p1f3&table_id=Omon&grid_label=gn&version=20200114&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=HadGEM3-GC31-LL&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f3&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200114&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MOHC_HadGEM3-GC31-LL_ssp126_r1i1p1f3_SImon_gn_20200310</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/3c556894-2d7e-3cde-b1dd-ca1f5c41f1b1" target="_blank">https://hdl.handle.net/21.14100/3c556894-2d7e-3cde-b1dd-ca1f5c41f1b1</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=HadGEM3-GC31-LL&experiment_id=ssp126&variant_label=r1i1p1f3&table_id=SImon&grid_label=gn&version=20200310&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=HadGEM3-GC31-LL&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f3&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200310&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MOHC_HadGEM3-GC31-LL_ssp126_r1i1p1f3_day_gn_20200114</td>
@@ -3467,10 +5759,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=HadGEM3-GC31-LL&experiment_id=ssp126&variant_label=r1i1p1f3&table_id=day&grid_label=gn&version=20200114&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=HadGEM3-GC31-LL&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f3&amp;table_id=day&amp;grid_label=gn&amp;version=20200114&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MOHC_HadGEM3-GC31-LL_ssp245_r1i1p1f3_Amon_gn_20190908</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/087ef1f4-09c5-380a-8920-36d8bd834d0e" target="_blank">https://hdl.handle.net/21.14100/087ef1f4-09c5-380a-8920-36d8bd834d0e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=HadGEM3-GC31-LL&experiment_id=ssp245&variant_label=r1i1p1f3&table_id=Amon&grid_label=gn&version=20190908&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=HadGEM3-GC31-LL&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f3&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190908&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MOHC_HadGEM3-GC31-LL_ssp245_r1i1p1f3_Amon_gn_20190908</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/f247a97b-06cb-3daf-aa2e-441449c2af85" target="_blank">https://hdl.handle.net/21.14100/f247a97b-06cb-3daf-aa2e-441449c2af85</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=HadGEM3-GC31-LL&experiment_id=ssp245&variant_label=r1i1p1f3&table_id=Amon&grid_label=gn&version=20190908&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=HadGEM3-GC31-LL&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f3&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190908&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MOHC_HadGEM3-GC31-LL_ssp245_r1i1p1f3_Omon_gn_20190908</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/44f76455-6928-33ba-8bb5-2819f43808b7" target="_blank">https://hdl.handle.net/21.14100/44f76455-6928-33ba-8bb5-2819f43808b7</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=HadGEM3-GC31-LL&experiment_id=ssp245&variant_label=r1i1p1f3&table_id=Omon&grid_label=gn&version=20190908&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=HadGEM3-GC31-LL&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f3&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190908&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MOHC_HadGEM3-GC31-LL_ssp245_r1i1p1f3_SImon_gn_20200330</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/0ad8bc7f-b761-3e29-aea5-0b47fc331d59" target="_blank">https://hdl.handle.net/21.14100/0ad8bc7f-b761-3e29-aea5-0b47fc331d59</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=HadGEM3-GC31-LL&experiment_id=ssp245&variant_label=r1i1p1f3&table_id=SImon&grid_label=gn&version=20200330&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=HadGEM3-GC31-LL&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f3&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200330&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MOHC_HadGEM3-GC31-LL_ssp245_r1i1p1f3_day_gn_20190908</td>
@@ -3503,10 +5813,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=HadGEM3-GC31-LL&experiment_id=ssp245&variant_label=r1i1p1f3&table_id=day&grid_label=gn&version=20190908&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=HadGEM3-GC31-LL&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f3&amp;table_id=day&amp;grid_label=gn&amp;version=20190908&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MOHC_HadGEM3-GC31-LL_ssp585_r1i1p1f3_Amon_gn_20200114</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/4a02d57d-7e5a-391c-ad5f-cadef55a1c82" target="_blank">https://hdl.handle.net/21.14100/4a02d57d-7e5a-391c-ad5f-cadef55a1c82</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=HadGEM3-GC31-LL&experiment_id=ssp585&variant_label=r1i1p1f3&table_id=Amon&grid_label=gn&version=20200114&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=HadGEM3-GC31-LL&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f3&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200114&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MOHC_HadGEM3-GC31-LL_ssp585_r1i1p1f3_Amon_gn_20200114</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/c4212a74-b07c-3722-a322-ddf763fe13d3" target="_blank">https://hdl.handle.net/21.14100/c4212a74-b07c-3722-a322-ddf763fe13d3</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=HadGEM3-GC31-LL&experiment_id=ssp585&variant_label=r1i1p1f3&table_id=Amon&grid_label=gn&version=20200114&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=HadGEM3-GC31-LL&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f3&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200114&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MOHC_HadGEM3-GC31-LL_ssp585_r1i1p1f3_Omon_gn_20200114</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/b40afebd-2128-3b44-8fd8-31cbf3550d6c" target="_blank">https://hdl.handle.net/21.14100/b40afebd-2128-3b44-8fd8-31cbf3550d6c</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=HadGEM3-GC31-LL&experiment_id=ssp585&variant_label=r1i1p1f3&table_id=Omon&grid_label=gn&version=20200114&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=HadGEM3-GC31-LL&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f3&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200114&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MOHC_HadGEM3-GC31-LL_ssp585_r1i1p1f3_SImon_gn_20200310</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/e59886f1-753b-3be7-8e8f-3bf4f9a0f76f" target="_blank">https://hdl.handle.net/21.14100/e59886f1-753b-3be7-8e8f-3bf4f9a0f76f</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=HadGEM3-GC31-LL&experiment_id=ssp585&variant_label=r1i1p1f3&table_id=SImon&grid_label=gn&version=20200310&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=HadGEM3-GC31-LL&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f3&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200310&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MOHC_HadGEM3-GC31-LL_ssp585_r1i1p1f3_day_gn_20200114</td>
@@ -3539,16 +5867,34 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=HadGEM3-GC31-LL&experiment_id=ssp585&variant_label=r1i1p1f3&table_id=day&grid_label=gn&version=20200114&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=HadGEM3-GC31-LL&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f3&amp;table_id=day&amp;grid_label=gn&amp;version=20200114&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_MOHC_UKESM1-0-LL_historical_r1i1p1f2_Omon_gn_20190406</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/1dec29a2-a5ca-328c-95e3-fd99db997108" target="_blank">https://hdl.handle.net/21.14100/1dec29a2-a5ca-328c-95e3-fd99db997108</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=historical&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20190406&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190406&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_MOHC_UKESM1-0-LL_historical_r1i1p1f2_Amon_gn_20190406</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/e2e824ef-4b03-3928-bd7d-e239d9e32ef8" target="_blank">https://hdl.handle.net/21.14100/e2e824ef-4b03-3928-bd7d-e239d9e32ef8</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=historical&variant_label=r1i1p1f2&table_id=Amon&grid_label=gn&version=20190406&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190406&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MOHC_UKESM1-0-LL_historical_r1i1p1f2_Amon_gn_20190406</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/244ecb26-bfbc-38b9-aa1c-5f0981fcb80c" target="_blank">https://hdl.handle.net/21.14100/244ecb26-bfbc-38b9-aa1c-5f0981fcb80c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=historical&variant_label=r1i1p1f2&table_id=Amon&grid_label=gn&version=20190406&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190406&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MOHC_UKESM1-0-LL_historical_r1i1p1f2_Omon_gn_20190627</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/7f1da6c8-b134-3dd5-a4b0-4eb5655c6f98" target="_blank">https://hdl.handle.net/21.14100/7f1da6c8-b134-3dd5-a4b0-4eb5655c6f98</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=historical&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20190627&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190627&amp;variable_id=ph&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MOHC_UKESM1-0-LL_historical_r1i1p1f2_Omon_gn_20190627</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/228af991-612e-3cea-9ecb-e2c5f00a9816" target="_blank">https://hdl.handle.net/21.14100/228af991-612e-3cea-9ecb-e2c5f00a9816</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=historical&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20190627&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190627&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MOHC_UKESM1-0-LL_historical_r1i1p1f2_SImon_gn_20200309</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/a80c7c27-b1a9-36f5-9e0a-276055c70805" target="_blank">https://hdl.handle.net/21.14100/a80c7c27-b1a9-36f5-9e0a-276055c70805</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=historical&variant_label=r1i1p1f2&table_id=SImon&grid_label=gn&version=20200309&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200309&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MOHC_UKESM1-0-LL_historical_r1i1p1f2_day_gn_20190627</td>
@@ -3581,10 +5927,34 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=historical&variant_label=r1i1p1f2&table_id=day&grid_label=gn&version=20190627&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=historical&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gn&amp;version=20190627&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MOHC_UKESM1-0-LL_ssp126_r1i1p1f2_Amon_gn_20190503</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/66a0c57e-7647-3af0-a29f-aeaadc16a0fc" target="_blank">https://hdl.handle.net/21.14100/66a0c57e-7647-3af0-a29f-aeaadc16a0fc</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=Amon&grid_label=gn&version=20190503&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190503&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MOHC_UKESM1-0-LL_ssp126_r1i1p1f2_Amon_gn_20190503</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/f1902fed-51df-3a12-a73f-f123e4917432" target="_blank">https://hdl.handle.net/21.14100/f1902fed-51df-3a12-a73f-f123e4917432</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=Amon&grid_label=gn&version=20190503&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190503&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MOHC_UKESM1-0-LL_ssp126_r1i1p1f2_Omon_gn_20190708</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/1413f993-fe22-3b9a-ad7b-f5a7422ca8e5" target="_blank">https://hdl.handle.net/21.14100/1413f993-fe22-3b9a-ad7b-f5a7422ca8e5</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20190708&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190708&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MOHC_UKESM1-0-LL_ssp126_r1i1p1f2_Omon_gn_20190708</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/4f12137f-db12-3ac3-884d-dd973bc50a7e" target="_blank">https://hdl.handle.net/21.14100/4f12137f-db12-3ac3-884d-dd973bc50a7e</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20190708&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190708&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MOHC_UKESM1-0-LL_ssp126_r1i1p1f2_SImon_gn_20200729</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/6741ed8c-7e0c-39f6-87fc-278b8fe05b4d" target="_blank">https://hdl.handle.net/21.14100/6741ed8c-7e0c-39f6-87fc-278b8fe05b4d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=SImon&grid_label=gn&version=20200729&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200729&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MOHC_UKESM1-0-LL_ssp126_r1i1p1f2_day_gn_20190708</td>
@@ -3617,10 +5987,34 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp126&variant_label=r1i1p1f2&table_id=day&grid_label=gn&version=20190708&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gn&amp;version=20190708&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MOHC_UKESM1-0-LL_ssp245_r1i1p1f2_Amon_gn_20190507</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/586f04db-05d6-366b-9086-778f71d00598" target="_blank">https://hdl.handle.net/21.14100/586f04db-05d6-366b-9086-778f71d00598</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=Amon&grid_label=gn&version=20190507&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190507&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MOHC_UKESM1-0-LL_ssp245_r1i1p1f2_Amon_gn_20190507</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/67eb1a10-4122-30d6-9e7b-07fe00515ed7" target="_blank">https://hdl.handle.net/21.14100/67eb1a10-4122-30d6-9e7b-07fe00515ed7</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=Amon&grid_label=gn&version=20190507&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190507&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MOHC_UKESM1-0-LL_ssp245_r1i1p1f2_Omon_gn_20190507</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/84b9b71c-e231-317f-8c34-e75a6f4bf47d" target="_blank">https://hdl.handle.net/21.14100/84b9b71c-e231-317f-8c34-e75a6f4bf47d</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20190507&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190507&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MOHC_UKESM1-0-LL_ssp245_r1i1p1f2_Omon_gn_20190715</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/8be08337-b32a-3939-9203-2afa1caebc05" target="_blank">https://hdl.handle.net/21.14100/8be08337-b32a-3939-9203-2afa1caebc05</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20190715&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190715&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MOHC_UKESM1-0-LL_ssp245_r1i1p1f2_SImon_gn_20200415</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/ca91336c-08d3-3c5d-bac7-6520e57401b5" target="_blank">https://hdl.handle.net/21.14100/ca91336c-08d3-3c5d-bac7-6520e57401b5</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=SImon&grid_label=gn&version=20200415&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200415&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MOHC_UKESM1-0-LL_ssp245_r1i1p1f2_day_gn_20190715</td>
@@ -3653,10 +6047,34 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp245&variant_label=r1i1p1f2&table_id=day&grid_label=gn&version=20190715&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gn&amp;version=20190715&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MOHC_UKESM1-0-LL_ssp370_r1i1p1f2_Amon_gn_20190510</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/5b376b2c-ac55-3f72-aa5a-f3704396810e" target="_blank">https://hdl.handle.net/21.14100/5b376b2c-ac55-3f72-aa5a-f3704396810e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=Amon&grid_label=gn&version=20190510&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190510&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MOHC_UKESM1-0-LL_ssp370_r1i1p1f2_Amon_gn_20190510</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/1665bf87-511e-3e15-a0c6-50adec6e66d0" target="_blank">https://hdl.handle.net/21.14100/1665bf87-511e-3e15-a0c6-50adec6e66d0</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=Amon&grid_label=gn&version=20190510&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190510&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MOHC_UKESM1-0-LL_ssp370_r1i1p1f2_Omon_gn_20190510</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/1ec3735e-f74a-31eb-9177-aaea968ecb1a" target="_blank">https://hdl.handle.net/21.14100/1ec3735e-f74a-31eb-9177-aaea968ecb1a</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20190510&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190510&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MOHC_UKESM1-0-LL_ssp370_r1i1p1f2_Omon_gn_20190726</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/6bda16cb-3985-3394-83a0-93c5badd9f5d" target="_blank">https://hdl.handle.net/21.14100/6bda16cb-3985-3394-83a0-93c5badd9f5d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20190726&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190726&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MOHC_UKESM1-0-LL_ssp370_r1i1p1f2_SImon_gn_20200319</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/494c0580-9275-3bda-9746-532cac59d422" target="_blank">https://hdl.handle.net/21.14100/494c0580-9275-3bda-9746-532cac59d422</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=SImon&grid_label=gn&version=20200319&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200319&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MOHC_UKESM1-0-LL_ssp370_r1i1p1f2_day_gn_20190726</td>
@@ -3689,10 +6107,34 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp370&variant_label=r1i1p1f2&table_id=day&grid_label=gn&version=20190726&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gn&amp;version=20190726&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MOHC_UKESM1-0-LL_ssp585_r1i1p1f2_Amon_gn_20190507</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/da74987b-170c-378f-87ea-a854d86bbb03" target="_blank">https://hdl.handle.net/21.14100/da74987b-170c-378f-87ea-a854d86bbb03</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=Amon&grid_label=gn&version=20190507&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190507&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MOHC_UKESM1-0-LL_ssp585_r1i1p1f2_Amon_gn_20190507</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/03fccc0e-80f7-38c9-b6aa-e0ed9fcf0e17" target="_blank">https://hdl.handle.net/21.14100/03fccc0e-80f7-38c9-b6aa-e0ed9fcf0e17</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=Amon&grid_label=gn&version=20190507&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190507&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MOHC_UKESM1-0-LL_ssp585_r1i1p1f2_Omon_gn_20190726</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/a1e5475a-63d4-37ea-b71a-a59744c126e2" target="_blank">https://hdl.handle.net/21.14100/a1e5475a-63d4-37ea-b71a-a59744c126e2</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20190726&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190726&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MOHC_UKESM1-0-LL_ssp585_r1i1p1f2_Omon_gn_20190726</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/e307769c-0f80-38db-9cd8-228b6a71bf71" target="_blank">https://hdl.handle.net/21.14100/e307769c-0f80-38db-9cd8-228b6a71bf71</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=Omon&grid_label=gn&version=20190726&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190726&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MOHC_UKESM1-0-LL_ssp585_r1i1p1f2_SImon_gn_20200415</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/c91a520d-281c-3ea4-8a92-af74620e5195" target="_blank">https://hdl.handle.net/21.14100/c91a520d-281c-3ea4-8a92-af74620e5195</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=SImon&grid_label=gn&version=20200415&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200415&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MOHC_UKESM1-0-LL_ssp585_r1i1p1f2_day_gn_20190726</td>
@@ -3725,6 +6167,36 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MOHC&source_id=UKESM1-0-LL&experiment_id=ssp585&variant_label=r1i1p1f2&table_id=day&grid_label=gn&version=20190726&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MOHC&amp;source_id=UKESM1-0-LL&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f2&amp;table_id=day&amp;grid_label=gn&amp;version=20190726&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-HR_historical_r1i1p1f1_Amon_gn_20190710</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/2d4bb7be-dad1-3901-b3b8-6ee82e0c15dc" target="_blank">https://hdl.handle.net/21.14100/2d4bb7be-dad1-3901-b3b8-6ee82e0c15dc</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-HR&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190710&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-HR_historical_r1i1p1f1_Amon_gn_20190710</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/039265dd-44a7-3adf-b7ff-b8eba637dcb9" target="_blank">https://hdl.handle.net/21.14100/039265dd-44a7-3adf-b7ff-b8eba637dcb9</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-HR&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190710&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-HR_historical_r1i1p1f1_Omon_gn_20190710</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/29430515-d0d0-39b3-b022-65cddcd28984" target="_blank">https://hdl.handle.net/21.14100/29430515-d0d0-39b3-b022-65cddcd28984</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-HR&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190710&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-HR_historical_r1i1p1f1_Omon_gn_20190710</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/28798ef0-8b9c-37c4-b8d6-9ae6313a979d" target="_blank">https://hdl.handle.net/21.14100/28798ef0-8b9c-37c4-b8d6-9ae6313a979d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-HR&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190710&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-HR_historical_r1i1p1f1_SImon_gn_20190710</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/d358b79e-fca0-301e-ba68-eedd39aba7e7" target="_blank">https://hdl.handle.net/21.14100/d358b79e-fca0-301e-ba68-eedd39aba7e7</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-HR&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190710&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MPI-M_MPI-ESM1-2-HR_historical_r1i1p1f1_day_gn_20190710</td>
       <td>pr</td>
       <td><a href="https://hdl.handle.net/21.14100/68a493d7-7f40-3783-b9d3-17e0fa4cf0c2" target="_blank">https://hdl.handle.net/21.14100/68a493d7-7f40-3783-b9d3-17e0fa4cf0c2</a></td>
@@ -3755,10 +6227,34 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-HR&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190710&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-HR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190710&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-LR_historical_r1i1p1f1_Amon_gn_20190710</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/2a48a80b-1b7d-3ec8-b8d9-a6b9afbf3715" target="_blank">https://hdl.handle.net/21.14100/2a48a80b-1b7d-3ec8-b8d9-a6b9afbf3715</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190710&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-LR_historical_r1i1p1f1_Amon_gn_20190710</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/a9a42ea3-fe70-3fe8-bd08-65cc32b1836d" target="_blank">https://hdl.handle.net/21.14100/a9a42ea3-fe70-3fe8-bd08-65cc32b1836d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190710&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-LR_historical_r1i1p1f1_Omon_gn_20190710</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/8437cafc-e5cd-35d8-a079-97978f8e8a8d" target="_blank">https://hdl.handle.net/21.14100/8437cafc-e5cd-35d8-a079-97978f8e8a8d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190710&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MPI-M_MPI-ESM1-2-LR_historical_r1i1p1f1_Omon_gn_20190710</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/b8869b63-dc61-3254-89cd-58c51b46a60d" target="_blank">https://hdl.handle.net/21.14100/b8869b63-dc61-3254-89cd-58c51b46a60d</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190710&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-LR_historical_r1i1p1f1_SImon_gn_20190710</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/e37a3606-13d3-3ff3-b704-6e0cba15cc30" target="_blank">https://hdl.handle.net/21.14100/e37a3606-13d3-3ff3-b704-6e0cba15cc30</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190710&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MPI-M_MPI-ESM1-2-LR_historical_r1i1p1f1_day_gn_20190710</td>
@@ -3791,10 +6287,34 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190710&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190710&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp126_r1i1p1f1_Amon_gn_20190710</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/325392b8-b912-3c4c-95b6-1908c9a33a5e" target="_blank">https://hdl.handle.net/21.14100/325392b8-b912-3c4c-95b6-1908c9a33a5e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190710&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp126_r1i1p1f1_Amon_gn_20190710</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/fd41f04e-89aa-3ab9-bfa3-0494d9281391" target="_blank">https://hdl.handle.net/21.14100/fd41f04e-89aa-3ab9-bfa3-0494d9281391</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190710&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp126_r1i1p1f1_Omon_gn_20190710</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/6b79eedc-1051-3020-82a2-327af1ba57f4" target="_blank">https://hdl.handle.net/21.14100/6b79eedc-1051-3020-82a2-327af1ba57f4</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190710&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp126_r1i1p1f1_Omon_gn_20190710</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/76113837-3f23-3e1c-9912-2a37f607d6c9" target="_blank">https://hdl.handle.net/21.14100/76113837-3f23-3e1c-9912-2a37f607d6c9</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190710&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp126_r1i1p1f1_SImon_gn_20190710</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/bc667d66-6485-3b8e-ae43-f5e4f27361a8" target="_blank">https://hdl.handle.net/21.14100/bc667d66-6485-3b8e-ae43-f5e4f27361a8</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190710&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp126_r1i1p1f1_day_gn_20190710</td>
@@ -3827,10 +6347,34 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190710&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190710&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp245_r1i1p1f1_Amon_gn_20190710</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/c297dc18-63a0-3f7b-a11c-8f262eed76f9" target="_blank">https://hdl.handle.net/21.14100/c297dc18-63a0-3f7b-a11c-8f262eed76f9</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190710&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp245_r1i1p1f1_Amon_gn_20190710</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/25fd07cd-5699-3f59-b095-7cf9bbaed047" target="_blank">https://hdl.handle.net/21.14100/25fd07cd-5699-3f59-b095-7cf9bbaed047</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190710&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp245_r1i1p1f1_Omon_gn_20190710</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/e5cf35a9-380b-3b96-8a2d-9ed641462cf7" target="_blank">https://hdl.handle.net/21.14100/e5cf35a9-380b-3b96-8a2d-9ed641462cf7</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190710&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp245_r1i1p1f1_Omon_gn_20190710</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/82cd9a5e-b0e9-3f32-b2ac-8a9d6ae0c289" target="_blank">https://hdl.handle.net/21.14100/82cd9a5e-b0e9-3f32-b2ac-8a9d6ae0c289</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190710&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp245_r1i1p1f1_SImon_gn_20190710</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/88272246-4f6d-3ffa-9419-7e8666d41fa5" target="_blank">https://hdl.handle.net/21.14100/88272246-4f6d-3ffa-9419-7e8666d41fa5</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190710&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp245_r1i1p1f1_day_gn_20190710</td>
@@ -3863,10 +6407,34 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190710&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190710&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp370_r1i1p1f1_Amon_gn_20190710</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/b349ae29-7165-3467-ac2a-5a5780728da4" target="_blank">https://hdl.handle.net/21.14100/b349ae29-7165-3467-ac2a-5a5780728da4</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190710&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp370_r1i1p1f1_Amon_gn_20190710</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/17225747-31af-38e4-9ea9-1f0f8ac4a0b1" target="_blank">https://hdl.handle.net/21.14100/17225747-31af-38e4-9ea9-1f0f8ac4a0b1</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190710&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp370_r1i1p1f1_Omon_gn_20190710</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/0853901f-ce17-382b-8264-fb66cc8db1ae" target="_blank">https://hdl.handle.net/21.14100/0853901f-ce17-382b-8264-fb66cc8db1ae</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190710&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp370_r1i1p1f1_Omon_gn_20190710</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/2fbbc1f2-3e46-3884-a9f8-6c294be7d7a7" target="_blank">https://hdl.handle.net/21.14100/2fbbc1f2-3e46-3884-a9f8-6c294be7d7a7</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190710&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp370_r1i1p1f1_SImon_gn_20190710</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/5a15d06c-61a1-3b17-97b6-52133b8fdda8" target="_blank">https://hdl.handle.net/21.14100/5a15d06c-61a1-3b17-97b6-52133b8fdda8</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190710&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp370_r1i1p1f1_day_gn_20190710</td>
@@ -3899,10 +6467,34 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190710&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190710&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp585_r1i1p1f1_Amon_gn_20190710</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/14e1c354-2e02-3527-acf3-25c1e9c6405a" target="_blank">https://hdl.handle.net/21.14100/14e1c354-2e02-3527-acf3-25c1e9c6405a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190710&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp585_r1i1p1f1_Amon_gn_20190710</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/883cb1d7-74e4-34f6-9ee2-c381531c6597" target="_blank">https://hdl.handle.net/21.14100/883cb1d7-74e4-34f6-9ee2-c381531c6597</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190710&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp585_r1i1p1f1_Omon_gn_20190710</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/793d73a3-b81d-39cd-8a2a-72837d317fea" target="_blank">https://hdl.handle.net/21.14100/793d73a3-b81d-39cd-8a2a-72837d317fea</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190710&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp585_r1i1p1f1_Omon_gn_20190710</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/6e9aeb4f-bdd5-3127-9ac8-9357ac0891b1" target="_blank">https://hdl.handle.net/21.14100/6e9aeb4f-bdd5-3127-9ac8-9357ac0891b1</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190710&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp585_r1i1p1f1_SImon_gn_20190710</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/4d3e7419-9e47-399c-9a9a-c9e1e5526a95" target="_blank">https://hdl.handle.net/21.14100/4d3e7419-9e47-399c-9a9a-c9e1e5526a95</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190710&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190710&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MPI-M_MPI-ESM1-2-LR_ssp585_r1i1p1f1_day_gn_20190710</td>
@@ -3935,6 +6527,18 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MPI-M&source_id=MPI-ESM1-2-LR&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190710&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MPI-M&amp;source_id=MPI-ESM1-2-LR&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190710&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MRI_MRI-ESM2-0_historical_r1i1p1f1_Amon_gn_20190222</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/86ec532c-fc20-38d1-9128-db036315f1f7" target="_blank">https://hdl.handle.net/21.14100/86ec532c-fc20-38d1-9128-db036315f1f7</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190222&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190222&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MRI_MRI-ESM2-0_historical_r1i1p1f1_Amon_gn_20190222</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/5dfe8a06-1c45-3e9f-a9b3-fc79f87daec3" target="_blank">https://hdl.handle.net/21.14100/5dfe8a06-1c45-3e9f-a9b3-fc79f87daec3</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190222&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190222&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MRI_MRI-ESM2-0_historical_r1i1p1f1_Omon_gn_20190904</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/4e4d732e-1b2a-30d4-8392-b55789d92251" target="_blank">https://hdl.handle.net/21.14100/4e4d732e-1b2a-30d4-8392-b55789d92251</a></td>
@@ -3945,6 +6549,12 @@
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/bd788724-7785-3815-92bb-51e2b1887db4" target="_blank">https://hdl.handle.net/21.14100/bd788724-7785-3815-92bb-51e2b1887db4</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20190904&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190904&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MRI_MRI-ESM2-0_historical_r1i1p1f1_SImon_gn_20190904</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/4b6124ce-85eb-35a2-9844-a8ab7523451b" target="_blank">https://hdl.handle.net/21.14100/4b6124ce-85eb-35a2-9844-a8ab7523451b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190904&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190904&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MRI_MRI-ESM2-0_historical_r1i1p1f1_day_gn_20190603</td>
@@ -3977,6 +6587,18 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190603&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190603&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MRI_MRI-ESM2-0_ssp126_r1i1p1f1_Amon_gn_20191108</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/98fc09fe-62bc-3972-8741-8e1a6f5beadb" target="_blank">https://hdl.handle.net/21.14100/98fc09fe-62bc-3972-8741-8e1a6f5beadb</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MRI_MRI-ESM2-0_ssp126_r1i1p1f1_Amon_gn_20191108</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/d5238629-9e92-343e-a589-c361712fc12a" target="_blank">https://hdl.handle.net/21.14100/d5238629-9e92-343e-a589-c361712fc12a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MRI_MRI-ESM2-0_ssp126_r1i1p1f1_Omon_gn_20191108</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/0fd7b1cb-8a20-3066-a66b-30ebefc4fb0c" target="_blank">https://hdl.handle.net/21.14100/0fd7b1cb-8a20-3066-a66b-30ebefc4fb0c</a></td>
@@ -3987,6 +6609,12 @@
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/c8e99cd9-96c1-32c0-9f59-f33e3887ecd8" target="_blank">https://hdl.handle.net/21.14100/c8e99cd9-96c1-32c0-9f59-f33e3887ecd8</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20191108&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20191108&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MRI_MRI-ESM2-0_ssp126_r1i1p1f1_SImon_gn_20191108</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/b2da4b98-88bf-3948-a8a3-47b2822715cd" target="_blank">https://hdl.handle.net/21.14100/b2da4b98-88bf-3948-a8a3-47b2822715cd</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20191108&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MRI_MRI-ESM2-0_ssp126_r1i1p1f1_day_gn_20191108</td>
@@ -4019,6 +6647,18 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191108&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MRI_MRI-ESM2-0_ssp245_r1i1p1f1_Amon_gn_20190222</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/8c8bff26-a8c1-34ed-b594-8cf27929ee2f" target="_blank">https://hdl.handle.net/21.14100/8c8bff26-a8c1-34ed-b594-8cf27929ee2f</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190222&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190222&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MRI_MRI-ESM2-0_ssp245_r1i1p1f1_Amon_gn_20190222</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/04c0b64d-8353-3b36-8a00-b66c59073585" target="_blank">https://hdl.handle.net/21.14100/04c0b64d-8353-3b36-8a00-b66c59073585</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190222&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190222&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MRI_MRI-ESM2-0_ssp245_r1i1p1f1_Omon_gn_20190904</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/0bb16f79-440f-35f9-96ab-563dd0137db4" target="_blank">https://hdl.handle.net/21.14100/0bb16f79-440f-35f9-96ab-563dd0137db4</a></td>
@@ -4029,6 +6669,12 @@
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/8443bf43-4fb5-367f-8035-88b7a339d481" target="_blank">https://hdl.handle.net/21.14100/8443bf43-4fb5-367f-8035-88b7a339d481</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20190904&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190904&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MRI_MRI-ESM2-0_ssp245_r1i1p1f1_SImon_gn_20190904</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/9a59d5f7-8aae-3ca5-bc47-0feece3876ba" target="_blank">https://hdl.handle.net/21.14100/9a59d5f7-8aae-3ca5-bc47-0feece3876ba</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190904&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190904&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MRI_MRI-ESM2-0_ssp245_r1i1p1f1_day_gn_20190603</td>
@@ -4061,6 +6707,18 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190603&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190603&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MRI_MRI-ESM2-0_ssp370_r1i1p1f1_Amon_gn_20190222</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/03c2235c-01ae-3e5d-9186-0c987da01465" target="_blank">https://hdl.handle.net/21.14100/03c2235c-01ae-3e5d-9186-0c987da01465</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190222&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190222&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MRI_MRI-ESM2-0_ssp370_r1i1p1f1_Amon_gn_20190222</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/f469a93b-5f34-313a-bcb1-18918babdcac" target="_blank">https://hdl.handle.net/21.14100/f469a93b-5f34-313a-bcb1-18918babdcac</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190222&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190222&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MRI_MRI-ESM2-0_ssp370_r1i1p1f1_Omon_gn_20190904</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/2806bdab-b65f-39c4-8d78-1ec63277928f" target="_blank">https://hdl.handle.net/21.14100/2806bdab-b65f-39c4-8d78-1ec63277928f</a></td>
@@ -4071,6 +6729,12 @@
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/75cee4cd-416c-39f5-827e-a3b3896d3391" target="_blank">https://hdl.handle.net/21.14100/75cee4cd-416c-39f5-827e-a3b3896d3391</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20190904&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190904&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MRI_MRI-ESM2-0_ssp370_r1i1p1f1_SImon_gn_20190904</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/764f1156-24b2-31e3-9889-05f036f095ab" target="_blank">https://hdl.handle.net/21.14100/764f1156-24b2-31e3-9889-05f036f095ab</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190904&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190904&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MRI_MRI-ESM2-0_ssp370_r1i1p1f1_day_gn_20190603</td>
@@ -4103,16 +6767,16 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190603&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190603&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_MRI_MRI-ESM2-0_ssp460_r1i1p1f1_Omon_gn_20190904</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/e0296c54-2175-3bb0-a4ff-afde3efeed82" target="_blank">https://hdl.handle.net/21.14100/e0296c54-2175-3bb0-a4ff-afde3efeed82</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp460&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190904&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp460&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190904&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_MRI_MRI-ESM2-0_ssp460_r1i1p1f1_Amon_gn_20190222</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/d90a66d7-403f-3e5e-97f4-33c2be335180" target="_blank">https://hdl.handle.net/21.14100/d90a66d7-403f-3e5e-97f4-33c2be335180</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp460&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190222&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp460&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190222&amp;variable_id=prsn&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_MRI_MRI-ESM2-0_ssp460_r1i1p1f1_Omon_gr_20190904</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/6ecfe885-c971-37da-9e47-d356f21a5eb8" target="_blank">https://hdl.handle.net/21.14100/6ecfe885-c971-37da-9e47-d356f21a5eb8</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp460&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20190904&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp460&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190904&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_MRI_MRI-ESM2-0_ssp460_r1i1p1f1_Amon_gn_20190222</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/8ac14dd3-5ddc-35de-9e76-641e96fba97c" target="_blank">https://hdl.handle.net/21.14100/8ac14dd3-5ddc-35de-9e76-641e96fba97c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp460&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190222&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp460&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190222&amp;variable_id=sfcWind&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MRI_MRI-ESM2-0_ssp460_r1i1p1f1_day_gn_20190603</td>
@@ -4145,6 +6809,18 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp460&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190603&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp460&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190603&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_MRI_MRI-ESM2-0_ssp585_r1i1p1f1_Amon_gn_20191108</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/46959871-ec2b-3acc-a1e7-750ecb02057d" target="_blank">https://hdl.handle.net/21.14100/46959871-ec2b-3acc-a1e7-750ecb02057d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MRI_MRI-ESM2-0_ssp585_r1i1p1f1_Amon_gn_20191108</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/66ff2ada-c8e9-30bd-8d46-ad8471292d29" target="_blank">https://hdl.handle.net/21.14100/66ff2ada-c8e9-30bd-8d46-ad8471292d29</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_MRI_MRI-ESM2-0_ssp585_r1i1p1f1_Omon_gn_20191108</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/098f3ffe-8bce-3444-9fa6-f6f2d71457cd" target="_blank">https://hdl.handle.net/21.14100/098f3ffe-8bce-3444-9fa6-f6f2d71457cd</a></td>
@@ -4155,6 +6831,12 @@
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/ea2ff18e-4309-336d-8467-82d28a5ba899" target="_blank">https://hdl.handle.net/21.14100/ea2ff18e-4309-336d-8467-82d28a5ba899</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20191108&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20191108&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_MRI_MRI-ESM2-0_ssp585_r1i1p1f1_SImon_gn_20191108</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/79597997-36aa-34b2-9219-97d7c192e468" target="_blank">https://hdl.handle.net/21.14100/79597997-36aa-34b2-9219-97d7c192e468</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20191108&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_MRI_MRI-ESM2-0_ssp585_r1i1p1f1_day_gn_20191108</td>
@@ -4187,34 +6869,16 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=MRI&source_id=MRI-ESM2-0&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191108&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=MRI&amp;source_id=MRI-ESM2-0&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NCAR_CESM2-FV2_historical_r1i1p1f1_Omon_gn_20191120</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/59a64a57-097c-3c6c-bc25-6e5ac4dabefa" target="_blank">https://hdl.handle.net/21.14100/59a64a57-097c-3c6c-bc25-6e5ac4dabefa</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-FV2&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191120&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-FV2&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191120&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_NCAR_CESM2-WACCM_historical_r1i1p1f1_Amon_gn_20190227</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/bf065596-653e-37b8-9300-70c76634fab6" target="_blank">https://hdl.handle.net/21.14100/bf065596-653e-37b8-9300-70c76634fab6</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190227&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190227&amp;variable_id=sfcWind&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NCAR_CESM2-FV2_historical_r1i1p1f1_Omon_gr_20191120</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/14912ab9-b81f-3eea-a757-62155d412ad2" target="_blank">https://hdl.handle.net/21.14100/14912ab9-b81f-3eea-a757-62155d412ad2</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-FV2&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20191120&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-FV2&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20191120&amp;variable_id=tos&amp;replica=on</a></td>
-    </tr>
-    <tr>
-      <td>CMIP6_NCAR_CESM2-WACCM-FV2_historical_r1i1p1f1_Omon_gn_20191120</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/8206cfcf-3eac-370d-97c4-2a095461bb39" target="_blank">https://hdl.handle.net/21.14100/8206cfcf-3eac-370d-97c4-2a095461bb39</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM-FV2&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191120&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM-FV2&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191120&amp;variable_id=tos&amp;replica=on</a></td>
-    </tr>
-    <tr>
-      <td>CMIP6_NCAR_CESM2-WACCM-FV2_historical_r1i1p1f1_Omon_gr_20191120</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/d4cc4fba-2d7b-3f12-82f3-ae7704e93cdb" target="_blank">https://hdl.handle.net/21.14100/d4cc4fba-2d7b-3f12-82f3-ae7704e93cdb</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM-FV2&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20191120&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM-FV2&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20191120&amp;variable_id=tos&amp;replica=on</a></td>
-    </tr>
-    <tr>
-      <td>CMIP6_NCAR_CESM2-WACCM_historical_r1i1p1f1_Omon_gn_20190227</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/da150b38-740a-3284-9afa-0c67128d8d01" target="_blank">https://hdl.handle.net/21.14100/da150b38-740a-3284-9afa-0c67128d8d01</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190227&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190227&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_NCAR_CESM2-WACCM_historical_r1i1p1f1_Omon_gn_20190808</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/1fb59607-dbb0-3fb5-9ae0-686de676242e" target="_blank">https://hdl.handle.net/21.14100/1fb59607-dbb0-3fb5-9ae0-686de676242e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190808&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190808&amp;variable_id=ph&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NCAR_CESM2-WACCM_historical_r1i1p1f1_Omon_gn_20190808</td>
@@ -4224,9 +6888,21 @@
     </tr>
     <tr>
       <td>CMIP6_NCAR_CESM2-WACCM_historical_r1i1p1f1_Omon_gr_20190808</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/57fe778b-65f2-3405-b22d-93d3cffdcde5" target="_blank">https://hdl.handle.net/21.14100/57fe778b-65f2-3405-b22d-93d3cffdcde5</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20190808&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190808&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2-WACCM_historical_r1i1p1f1_Omon_gr_20190808</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/afde03c7-680b-3d57-89a1-cb9567a2eebb" target="_blank">https://hdl.handle.net/21.14100/afde03c7-680b-3d57-89a1-cb9567a2eebb</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20190808&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190808&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2-WACCM_historical_r1i1p1f1_SImon_gn_20190227</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/796774f6-6cd5-3480-a6a6-8fa240400fa6" target="_blank">https://hdl.handle.net/21.14100/796774f6-6cd5-3480-a6a6-8fa240400fa6</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190227&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190227&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NCAR_CESM2-WACCM_historical_r1i1p1f1_day_gn_20190227</td>
@@ -4247,6 +6923,18 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190415&variable_id=pr&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190415&amp;variable_id=pr&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_NCAR_CESM2-WACCM_ssp126_r1i1p1f1_Amon_gn_20190815</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/5a380f5c-a563-343a-b306-8c8f6463f7c6" target="_blank">https://hdl.handle.net/21.14100/5a380f5c-a563-343a-b306-8c8f6463f7c6</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190815&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190815&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2-WACCM_ssp126_r1i1p1f1_Omon_gn_20190815</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/2e6e0744-a5ab-3111-a131-78d2d2ae7df9" target="_blank">https://hdl.handle.net/21.14100/2e6e0744-a5ab-3111-a131-78d2d2ae7df9</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190815&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190815&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_NCAR_CESM2-WACCM_ssp126_r1i1p1f1_Omon_gn_20190815</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/bf7a6a26-ef20-3a2d-83e8-fe0ca16e92b1" target="_blank">https://hdl.handle.net/21.14100/bf7a6a26-ef20-3a2d-83e8-fe0ca16e92b1</a></td>
@@ -4254,9 +6942,21 @@
     </tr>
     <tr>
       <td>CMIP6_NCAR_CESM2-WACCM_ssp126_r1i1p1f1_Omon_gr_20190815</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/5f1a61dd-3e39-3053-8e64-a383bfbab3a9" target="_blank">https://hdl.handle.net/21.14100/5f1a61dd-3e39-3053-8e64-a383bfbab3a9</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20190815&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190815&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2-WACCM_ssp126_r1i1p1f1_Omon_gr_20190815</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/d5ae5ba3-e8f0-3afb-a25e-d323e7d7ef72" target="_blank">https://hdl.handle.net/21.14100/d5ae5ba3-e8f0-3afb-a25e-d323e7d7ef72</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20190815&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190815&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2-WACCM_ssp126_r1i1p1f1_SImon_gn_20190815</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/8b4a1aac-3093-3e35-9498-2ba991c25b8a" target="_blank">https://hdl.handle.net/21.14100/8b4a1aac-3093-3e35-9498-2ba991c25b8a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190815&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190815&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NCAR_CESM2-WACCM_ssp126_r1i1p1f1_day_gn_20190815</td>
@@ -4277,6 +6977,18 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190815&variable_id=tas&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190815&amp;variable_id=tas&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_NCAR_CESM2-WACCM_ssp245_r1i1p1f1_Amon_gn_20190815</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/451df841-e2f3-320d-9590-15cf72b32393" target="_blank">https://hdl.handle.net/21.14100/451df841-e2f3-320d-9590-15cf72b32393</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190815&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190815&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2-WACCM_ssp245_r1i1p1f1_Omon_gn_20190815</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/e32beddc-4c2f-34d9-8c9a-77bb08a84b9e" target="_blank">https://hdl.handle.net/21.14100/e32beddc-4c2f-34d9-8c9a-77bb08a84b9e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190815&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190815&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_NCAR_CESM2-WACCM_ssp245_r1i1p1f1_Omon_gn_20190815</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/1aed50fd-6db7-3a78-b722-9ea6d4f0fb22" target="_blank">https://hdl.handle.net/21.14100/1aed50fd-6db7-3a78-b722-9ea6d4f0fb22</a></td>
@@ -4284,9 +6996,21 @@
     </tr>
     <tr>
       <td>CMIP6_NCAR_CESM2-WACCM_ssp245_r1i1p1f1_Omon_gr_20190815</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/fa762e78-6036-3444-9440-bbdf56ba7227" target="_blank">https://hdl.handle.net/21.14100/fa762e78-6036-3444-9440-bbdf56ba7227</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20190815&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190815&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2-WACCM_ssp245_r1i1p1f1_Omon_gr_20190815</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/9cf62e79-457a-3024-b49d-cb0c02634dbb" target="_blank">https://hdl.handle.net/21.14100/9cf62e79-457a-3024-b49d-cb0c02634dbb</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20190815&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190815&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2-WACCM_ssp245_r1i1p1f1_SImon_gn_20190815</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/6c255ed3-9c5a-387e-8fa1-3fa03d86bb98" target="_blank">https://hdl.handle.net/21.14100/6c255ed3-9c5a-387e-8fa1-3fa03d86bb98</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190815&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190815&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NCAR_CESM2-WACCM_ssp245_r1i1p1f1_day_gn_20190815</td>
@@ -4307,6 +7031,18 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190815&variable_id=tas&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190815&amp;variable_id=tas&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_NCAR_CESM2-WACCM_ssp370_r1i1p1f1_Amon_gn_20190815</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/0a20c290-9e32-36a0-9e4c-66564c9afb88" target="_blank">https://hdl.handle.net/21.14100/0a20c290-9e32-36a0-9e4c-66564c9afb88</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190815&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190815&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2-WACCM_ssp370_r1i1p1f1_Omon_gn_20190815</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/159dc2d3-2000-3590-9fbb-2aba982cf35e" target="_blank">https://hdl.handle.net/21.14100/159dc2d3-2000-3590-9fbb-2aba982cf35e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190815&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190815&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_NCAR_CESM2-WACCM_ssp370_r1i1p1f1_Omon_gn_20190815</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/b435e159-441f-3239-bdbd-30e1b69692ab" target="_blank">https://hdl.handle.net/21.14100/b435e159-441f-3239-bdbd-30e1b69692ab</a></td>
@@ -4314,9 +7050,21 @@
     </tr>
     <tr>
       <td>CMIP6_NCAR_CESM2-WACCM_ssp370_r1i1p1f1_Omon_gr_20190815</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/48cea3c6-2014-3a34-8fa7-dca539d447d3" target="_blank">https://hdl.handle.net/21.14100/48cea3c6-2014-3a34-8fa7-dca539d447d3</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20190815&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190815&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2-WACCM_ssp370_r1i1p1f1_Omon_gr_20190815</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/4e246326-cbd4-3e98-8f76-bec4ec52523d" target="_blank">https://hdl.handle.net/21.14100/4e246326-cbd4-3e98-8f76-bec4ec52523d</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20190815&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190815&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2-WACCM_ssp370_r1i1p1f1_SImon_gn_20190815</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/334f2698-b055-349e-a2d6-36adf85bb31d" target="_blank">https://hdl.handle.net/21.14100/334f2698-b055-349e-a2d6-36adf85bb31d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190815&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190815&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NCAR_CESM2-WACCM_ssp370_r1i1p1f1_day_gn_20190815</td>
@@ -4337,10 +7085,46 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190815&variable_id=tas&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190815&amp;variable_id=tas&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NCAR_CESM2-WACCM_ssp585_r1i1p1f1_Omon_gn_20200702</td>
+      <td>CMIP6_NCAR_CESM2-WACCM_ssp585_r1i1p1f1_Amon_gn_20200702</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/dfcb005d-ddbb-3956-8778-c6fab3ba3700" target="_blank">https://hdl.handle.net/21.14100/dfcb005d-ddbb-3956-8778-c6fab3ba3700</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200702&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200702&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2-WACCM_ssp585_r1i1p1f1_Amon_gn_20200702</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/722be6c5-acc0-3858-839b-32e850929ae2" target="_blank">https://hdl.handle.net/21.14100/722be6c5-acc0-3858-839b-32e850929ae2</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200702&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200702&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2-WACCM_ssp585_r1i1p1f1_Omon_gn_20190815</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/23b71340-85b7-3006-b5a0-a3ce9f447c4a" target="_blank">https://hdl.handle.net/21.14100/23b71340-85b7-3006-b5a0-a3ce9f447c4a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190815&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190815&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2-WACCM_ssp585_r1i1p1f1_Omon_gn_20190815</td>
       <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/1bca0dab-8822-3202-b020-6d777c9024c5" target="_blank">https://hdl.handle.net/21.14100/1bca0dab-8822-3202-b020-6d777c9024c5</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20200702&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200702&amp;variable_id=tos&amp;replica=on</a></td>
+      <td><a href="https://hdl.handle.net/21.14100/6e316909-7e5d-3ca1-9554-99f4a54b5a46" target="_blank">https://hdl.handle.net/21.14100/6e316909-7e5d-3ca1-9554-99f4a54b5a46</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190815&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190815&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2-WACCM_ssp585_r1i1p1f1_Omon_gr_20190815</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/dac0edd0-afcd-3bf9-ab8c-64c8207a3461" target="_blank">https://hdl.handle.net/21.14100/dac0edd0-afcd-3bf9-ab8c-64c8207a3461</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20190815&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190815&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2-WACCM_ssp585_r1i1p1f1_Omon_gr_20190815</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/a56e2135-db7b-3afd-83f1-6aca403a242b" target="_blank">https://hdl.handle.net/21.14100/a56e2135-db7b-3afd-83f1-6aca403a242b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20190815&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190815&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2-WACCM_ssp585_r1i1p1f1_SImon_gn_20200702</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/e3664349-ee2a-3110-a8d6-7037dfcbc196" target="_blank">https://hdl.handle.net/21.14100/e3664349-ee2a-3110-a8d6-7037dfcbc196</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20200702&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200702&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NCAR_CESM2-WACCM_ssp585_r1i1p1f1_day_gn_20200702</td>
@@ -4361,16 +7145,46 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2-WACCM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20200702&variable_id=tas&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2-WACCM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20200702&amp;variable_id=tas&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NCAR_CESM2_historical_r1i1p1f1_Omon_gn_20190308</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/eb317332-dc54-3dd9-aa9a-4f5207bc03dc" target="_blank">https://hdl.handle.net/21.14100/eb317332-dc54-3dd9-aa9a-4f5207bc03dc</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190308&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190308&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_NCAR_CESM2_historical_r1i1p1f1_Amon_gn_20190308</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/e5bcdb51-1677-37cc-b683-c260df263984" target="_blank">https://hdl.handle.net/21.14100/e5bcdb51-1677-37cc-b683-c260df263984</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190308&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190308&amp;variable_id=sfcWind&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NCAR_CESM2_historical_r1i1p1f1_Omon_gr_20190308</td>
+      <td>CMIP6_NCAR_CESM2_historical_r1i1p1f1_Amon_gn_20200124</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/9eb3a913-3e9b-331b-b28c-90116dd10427" target="_blank">https://hdl.handle.net/21.14100/9eb3a913-3e9b-331b-b28c-90116dd10427</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20200124&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200124&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2_historical_r4i1p1f1_Omon_gn_20190308</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/4f20355c-40ac-30ab-936d-2d7a8456a8ac" target="_blank">https://hdl.handle.net/21.14100/4f20355c-40ac-30ab-936d-2d7a8456a8ac</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=historical&variant_label=r4i1p1f1&table_id=Omon&grid_label=gn&version=20190308&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=historical&amp;variant_label=r4i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190308&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2_historical_r4i1p1f1_Omon_gn_20190308</td>
       <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/c8814ae8-b17b-3aaf-9472-535125cd108e" target="_blank">https://hdl.handle.net/21.14100/c8814ae8-b17b-3aaf-9472-535125cd108e</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20190308&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190308&amp;variable_id=tos&amp;replica=on</a></td>
+      <td><a href="https://hdl.handle.net/21.14100/fd0906f3-f101-36e4-9958-ad59fb238ebd" target="_blank">https://hdl.handle.net/21.14100/fd0906f3-f101-36e4-9958-ad59fb238ebd</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=historical&variant_label=r4i1p1f1&table_id=Omon&grid_label=gn&version=20190308&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=historical&amp;variant_label=r4i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190308&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2_historical_r4i1p1f1_Omon_gr_20190308</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/4333b030-ea56-3763-9972-9f47a2d38bad" target="_blank">https://hdl.handle.net/21.14100/4333b030-ea56-3763-9972-9f47a2d38bad</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=historical&variant_label=r4i1p1f1&table_id=Omon&grid_label=gr&version=20190308&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=historical&amp;variant_label=r4i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190308&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2_historical_r4i1p1f1_Omon_gr_20190308</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/80c90395-c4b8-3256-b6bd-7998880dd701" target="_blank">https://hdl.handle.net/21.14100/80c90395-c4b8-3256-b6bd-7998880dd701</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=historical&variant_label=r4i1p1f1&table_id=Omon&grid_label=gr&version=20190308&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=historical&amp;variant_label=r4i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190308&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2_historical_r4i1p1f1_SImon_gn_20190308</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/07b9c47a-606a-3070-946f-e31b9c0e66b7" target="_blank">https://hdl.handle.net/21.14100/07b9c47a-606a-3070-946f-e31b9c0e66b7</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=historical&variant_label=r4i1p1f1&table_id=SImon&grid_label=gn&version=20190308&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=historical&amp;variant_label=r4i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190308&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NCAR_CESM2_historical_r4i1p1f1_day_gn_20190308</td>
@@ -4385,16 +7199,34 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=historical&variant_label=r4i1p1f1&table_id=day&grid_label=gn&version=20190308&variable_id=psl&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=historical&amp;variant_label=r4i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190308&amp;variable_id=psl&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NCAR_CESM2_ssp126_r1i1p1f1_Omon_gn_20190730</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/f60fc623-69d6-32f4-a38c-e61e1e361120" target="_blank">https://hdl.handle.net/21.14100/f60fc623-69d6-32f4-a38c-e61e1e361120</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190730&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190730&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_NCAR_CESM2_ssp126_r4i1p1f1_Amon_gn_20200528</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/2100a868-ba72-3887-98b5-6aac81a23d6f" target="_blank">https://hdl.handle.net/21.14100/2100a868-ba72-3887-98b5-6aac81a23d6f</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp126&variant_label=r4i1p1f1&table_id=Amon&grid_label=gn&version=20200528&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp126&amp;variant_label=r4i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200528&amp;variable_id=prsn&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NCAR_CESM2_ssp126_r1i1p1f1_Omon_gr_20190730</td>
+      <td>CMIP6_NCAR_CESM2_ssp126_r4i1p1f1_Amon_gn_20200528</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/c696d040-5ea2-3acb-b778-8df37e8b7f95" target="_blank">https://hdl.handle.net/21.14100/c696d040-5ea2-3acb-b778-8df37e8b7f95</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp126&variant_label=r4i1p1f1&table_id=Amon&grid_label=gn&version=20200528&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp126&amp;variant_label=r4i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200528&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2_ssp126_r4i1p1f1_Omon_gn_20200528</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/d6dab389-96d7-30bd-aaac-d706524d570c" target="_blank">https://hdl.handle.net/21.14100/d6dab389-96d7-30bd-aaac-d706524d570c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp126&variant_label=r4i1p1f1&table_id=Omon&grid_label=gn&version=20200528&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp126&amp;variant_label=r4i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200528&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2_ssp126_r4i1p1f1_Omon_gn_20200528</td>
       <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/3941cf7f-cd91-3e2d-be81-9f5eff2ca849" target="_blank">https://hdl.handle.net/21.14100/3941cf7f-cd91-3e2d-be81-9f5eff2ca849</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20190730&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190730&amp;variable_id=tos&amp;replica=on</a></td>
+      <td><a href="https://hdl.handle.net/21.14100/56b960d6-3cef-302e-81d6-63e1a61394f3" target="_blank">https://hdl.handle.net/21.14100/56b960d6-3cef-302e-81d6-63e1a61394f3</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp126&variant_label=r4i1p1f1&table_id=Omon&grid_label=gn&version=20200528&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp126&amp;variant_label=r4i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200528&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2_ssp126_r4i1p1f1_SImon_gn_20200528</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/9cc4bd7e-bf31-3bf0-897c-77a407eab40f" target="_blank">https://hdl.handle.net/21.14100/9cc4bd7e-bf31-3bf0-897c-77a407eab40f</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp126&variant_label=r4i1p1f1&table_id=SImon&grid_label=gn&version=20200528&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp126&amp;variant_label=r4i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200528&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NCAR_CESM2_ssp126_r4i1p1f1_day_gn_20200528</td>
@@ -4427,16 +7259,34 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp126&variant_label=r4i1p1f1&table_id=day&grid_label=gn&version=20200528&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp126&amp;variant_label=r4i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20200528&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NCAR_CESM2_ssp245_r1i1p1f1_Omon_gn_20190730</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/c1ed380b-8aaf-30d4-a801-cbc09de54313" target="_blank">https://hdl.handle.net/21.14100/c1ed380b-8aaf-30d4-a801-cbc09de54313</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190730&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190730&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_NCAR_CESM2_ssp245_r4i1p1f1_Amon_gn_20200528</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/53b74016-5b6c-3964-b11e-a78b4035e228" target="_blank">https://hdl.handle.net/21.14100/53b74016-5b6c-3964-b11e-a78b4035e228</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp245&variant_label=r4i1p1f1&table_id=Amon&grid_label=gn&version=20200528&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp245&amp;variant_label=r4i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200528&amp;variable_id=prsn&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NCAR_CESM2_ssp245_r1i1p1f1_Omon_gr_20190730</td>
+      <td>CMIP6_NCAR_CESM2_ssp245_r4i1p1f1_Amon_gn_20200528</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/e1497143-7474-383a-9327-cf4874855e79" target="_blank">https://hdl.handle.net/21.14100/e1497143-7474-383a-9327-cf4874855e79</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp245&variant_label=r4i1p1f1&table_id=Amon&grid_label=gn&version=20200528&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp245&amp;variant_label=r4i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200528&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2_ssp245_r4i1p1f1_Omon_gn_20200528</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/3a0e4441-f110-39b2-a59c-d58d03965dd1" target="_blank">https://hdl.handle.net/21.14100/3a0e4441-f110-39b2-a59c-d58d03965dd1</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp245&variant_label=r4i1p1f1&table_id=Omon&grid_label=gn&version=20200528&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp245&amp;variant_label=r4i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200528&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2_ssp245_r4i1p1f1_Omon_gn_20200528</td>
       <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/aa0299c6-a818-3d9b-b312-d7e489ad72b7" target="_blank">https://hdl.handle.net/21.14100/aa0299c6-a818-3d9b-b312-d7e489ad72b7</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20190730&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190730&amp;variable_id=tos&amp;replica=on</a></td>
+      <td><a href="https://hdl.handle.net/21.14100/43c220a7-973e-3cf2-b580-67f57de43086" target="_blank">https://hdl.handle.net/21.14100/43c220a7-973e-3cf2-b580-67f57de43086</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp245&variant_label=r4i1p1f1&table_id=Omon&grid_label=gn&version=20200528&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp245&amp;variant_label=r4i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200528&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2_ssp245_r4i1p1f1_SImon_gn_20200528</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/51040794-76ff-363f-8181-cb0b566d5701" target="_blank">https://hdl.handle.net/21.14100/51040794-76ff-363f-8181-cb0b566d5701</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp245&variant_label=r4i1p1f1&table_id=SImon&grid_label=gn&version=20200528&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp245&amp;variant_label=r4i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200528&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NCAR_CESM2_ssp245_r4i1p1f1_day_gn_20200528</td>
@@ -4469,16 +7319,34 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp245&variant_label=r4i1p1f1&table_id=day&grid_label=gn&version=20200528&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp245&amp;variant_label=r4i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20200528&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NCAR_CESM2_ssp370_r1i1p1f1_Omon_gn_20190730</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/724b59c4-a933-3e32-86cb-4301bf2c06c1" target="_blank">https://hdl.handle.net/21.14100/724b59c4-a933-3e32-86cb-4301bf2c06c1</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190730&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190730&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_NCAR_CESM2_ssp370_r4i1p1f1_Amon_gn_20200528</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/964d081f-2007-39ed-a887-61866f5e927a" target="_blank">https://hdl.handle.net/21.14100/964d081f-2007-39ed-a887-61866f5e927a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp370&variant_label=r4i1p1f1&table_id=Amon&grid_label=gn&version=20200528&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp370&amp;variant_label=r4i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200528&amp;variable_id=prsn&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NCAR_CESM2_ssp370_r1i1p1f1_Omon_gr_20190730</td>
+      <td>CMIP6_NCAR_CESM2_ssp370_r4i1p1f1_Amon_gn_20200528</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/9f669b80-4a79-3358-8270-e24e537ed246" target="_blank">https://hdl.handle.net/21.14100/9f669b80-4a79-3358-8270-e24e537ed246</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp370&variant_label=r4i1p1f1&table_id=Amon&grid_label=gn&version=20200528&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp370&amp;variant_label=r4i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200528&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2_ssp370_r4i1p1f1_Omon_gn_20200528</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/03e9ee19-025c-3e57-b0d1-b190b33e795a" target="_blank">https://hdl.handle.net/21.14100/03e9ee19-025c-3e57-b0d1-b190b33e795a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp370&variant_label=r4i1p1f1&table_id=Omon&grid_label=gn&version=20200528&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp370&amp;variant_label=r4i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200528&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2_ssp370_r4i1p1f1_Omon_gn_20200528</td>
       <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/6ae3509f-9481-3dfe-ad89-e656b7b1e694" target="_blank">https://hdl.handle.net/21.14100/6ae3509f-9481-3dfe-ad89-e656b7b1e694</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20190730&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190730&amp;variable_id=tos&amp;replica=on</a></td>
+      <td><a href="https://hdl.handle.net/21.14100/c7d86e8d-06ba-3b23-88ff-084439652c92" target="_blank">https://hdl.handle.net/21.14100/c7d86e8d-06ba-3b23-88ff-084439652c92</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp370&variant_label=r4i1p1f1&table_id=Omon&grid_label=gn&version=20200528&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp370&amp;variant_label=r4i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200528&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2_ssp370_r4i1p1f1_SImon_gn_20200528</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/afbff46d-56e5-3e8d-82f9-0a3e903b7469" target="_blank">https://hdl.handle.net/21.14100/afbff46d-56e5-3e8d-82f9-0a3e903b7469</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp370&variant_label=r4i1p1f1&table_id=SImon&grid_label=gn&version=20200528&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp370&amp;variant_label=r4i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200528&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NCAR_CESM2_ssp370_r4i1p1f1_day_gn_20200528</td>
@@ -4511,16 +7379,34 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp370&variant_label=r4i1p1f1&table_id=day&grid_label=gn&version=20200528&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp370&amp;variant_label=r4i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20200528&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NCAR_CESM2_ssp585_r1i1p1f1_Omon_gn_20190730</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/1e7f95b3-ad4c-3aeb-b8f6-284c0a7badeb" target="_blank">https://hdl.handle.net/21.14100/1e7f95b3-ad4c-3aeb-b8f6-284c0a7badeb</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190730&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190730&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_NCAR_CESM2_ssp585_r4i1p1f1_Amon_gn_20200528</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/3696e951-bf2c-301a-aa50-954613cbbf02" target="_blank">https://hdl.handle.net/21.14100/3696e951-bf2c-301a-aa50-954613cbbf02</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp585&variant_label=r4i1p1f1&table_id=Amon&grid_label=gn&version=20200528&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp585&amp;variant_label=r4i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200528&amp;variable_id=prsn&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NCAR_CESM2_ssp585_r1i1p1f1_Omon_gr_20190730</td>
+      <td>CMIP6_NCAR_CESM2_ssp585_r4i1p1f1_Amon_gn_20200528</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/d2edcc2b-73ac-36b5-94ad-a2a1fcf5111c" target="_blank">https://hdl.handle.net/21.14100/d2edcc2b-73ac-36b5-94ad-a2a1fcf5111c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp585&variant_label=r4i1p1f1&table_id=Amon&grid_label=gn&version=20200528&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp585&amp;variant_label=r4i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20200528&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2_ssp585_r4i1p1f1_Omon_gn_20200528</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/ef33e7fe-d67e-3504-ace0-dca0c36860da" target="_blank">https://hdl.handle.net/21.14100/ef33e7fe-d67e-3504-ace0-dca0c36860da</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp585&variant_label=r4i1p1f1&table_id=Omon&grid_label=gn&version=20200528&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp585&amp;variant_label=r4i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200528&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2_ssp585_r4i1p1f1_Omon_gn_20200528</td>
       <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/5f520e29-2cb1-3fb2-9a58-d4647360d5d5" target="_blank">https://hdl.handle.net/21.14100/5f520e29-2cb1-3fb2-9a58-d4647360d5d5</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20190730&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190730&amp;variable_id=tos&amp;replica=on</a></td>
+      <td><a href="https://hdl.handle.net/21.14100/d544a330-4888-31f2-a32b-80898c425730" target="_blank">https://hdl.handle.net/21.14100/d544a330-4888-31f2-a32b-80898c425730</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp585&variant_label=r4i1p1f1&table_id=Omon&grid_label=gn&version=20200528&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp585&amp;variant_label=r4i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20200528&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCAR_CESM2_ssp585_r4i1p1f1_SImon_gn_20200528</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/1b7f3c75-4032-3c99-bf3c-1d01bdd43598" target="_blank">https://hdl.handle.net/21.14100/1b7f3c75-4032-3c99-bf3c-1d01bdd43598</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp585&variant_label=r4i1p1f1&table_id=SImon&grid_label=gn&version=20200528&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp585&amp;variant_label=r4i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20200528&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NCAR_CESM2_ssp585_r4i1p1f1_day_gn_20200528</td>
@@ -4553,10 +7439,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCAR&source_id=CESM2&experiment_id=ssp585&variant_label=r4i1p1f1&table_id=day&grid_label=gn&version=20200528&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCAR&amp;source_id=CESM2&amp;experiment_id=ssp585&amp;variant_label=r4i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20200528&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NCC_NorESM2-LM_historical_r1i1p1f1_Omon_gn_20190815</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/cf2d9297-919d-3408-8a0c-0ba801fc73de" target="_blank">https://hdl.handle.net/21.14100/cf2d9297-919d-3408-8a0c-0ba801fc73de</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190815&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190815&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_NCC_NorESM2-LM_historical_r1i1p1f1_Amon_gn_20190815</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/91583fbe-0ef2-30e0-aeb2-704978d99b49" target="_blank">https://hdl.handle.net/21.14100/91583fbe-0ef2-30e0-aeb2-704978d99b49</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190815&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190815&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-LM_historical_r1i1p1f1_Amon_gn_20191108</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/84fd5f3d-a0f2-3de6-b56b-3b6617778e3a" target="_blank">https://hdl.handle.net/21.14100/84fd5f3d-a0f2-3de6-b56b-3b6617778e3a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-LM_historical_r1i1p1f1_Omon_gr_20190815</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/278a5cac-8311-3f47-9d41-a289800371fd" target="_blank">https://hdl.handle.net/21.14100/278a5cac-8311-3f47-9d41-a289800371fd</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20190815&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190815&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-LM_historical_r1i1p1f1_SImon_gn_20190815</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/a9d8a105-8a1d-3c80-bda7-eb56b0c0cae0" target="_blank">https://hdl.handle.net/21.14100/a9d8a105-8a1d-3c80-bda7-eb56b0c0cae0</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190815&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190815&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NCC_NorESM2-LM_historical_r1i1p1f1_day_gn_20190815</td>
@@ -4589,10 +7493,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190815&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190815&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NCC_NorESM2-LM_ssp126_r1i1p1f1_Omon_gn_20191108</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/7115209b-a74e-3d1d-90f5-55cba6f88234" target="_blank">https://hdl.handle.net/21.14100/7115209b-a74e-3d1d-90f5-55cba6f88234</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191108&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_NCC_NorESM2-LM_ssp126_r1i1p1f1_Amon_gn_20191108</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/13d08703-5f3f-3881-8103-b456efa260ca" target="_blank">https://hdl.handle.net/21.14100/13d08703-5f3f-3881-8103-b456efa260ca</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-LM_ssp126_r1i1p1f1_Amon_gn_20191108</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/4f701553-7c06-3bae-9a42-0e7b500de2a2" target="_blank">https://hdl.handle.net/21.14100/4f701553-7c06-3bae-9a42-0e7b500de2a2</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-LM_ssp126_r1i1p1f1_Omon_gr_20191108</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/f7a9e0f1-655e-3f3a-a0a7-0389d0bc1cd2" target="_blank">https://hdl.handle.net/21.14100/f7a9e0f1-655e-3f3a-a0a7-0389d0bc1cd2</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20191108&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20191108&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-LM_ssp126_r1i1p1f1_SImon_gn_20191108</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/dfcd19f9-4643-3cf0-9cd3-4da37723e0a3" target="_blank">https://hdl.handle.net/21.14100/dfcd19f9-4643-3cf0-9cd3-4da37723e0a3</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20191108&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NCC_NorESM2-LM_ssp126_r1i1p1f1_day_gn_20191108</td>
@@ -4625,10 +7547,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191108&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NCC_NorESM2-LM_ssp245_r1i1p1f1_Omon_gn_20191108</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/75762006-1b6d-36da-96fc-12f85f2c02ad" target="_blank">https://hdl.handle.net/21.14100/75762006-1b6d-36da-96fc-12f85f2c02ad</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191108&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_NCC_NorESM2-LM_ssp245_r1i1p1f1_Amon_gn_20191108</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/e3320d8c-0e58-38f1-9be8-5c7fa7a6a77f" target="_blank">https://hdl.handle.net/21.14100/e3320d8c-0e58-38f1-9be8-5c7fa7a6a77f</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-LM_ssp245_r1i1p1f1_Amon_gn_20191108</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/fa240114-0f57-3bff-8400-5d92be8eb67e" target="_blank">https://hdl.handle.net/21.14100/fa240114-0f57-3bff-8400-5d92be8eb67e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-LM_ssp245_r1i1p1f1_Omon_gr_20191108</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/963c7d62-043f-3685-b50f-c7c70a5f7203" target="_blank">https://hdl.handle.net/21.14100/963c7d62-043f-3685-b50f-c7c70a5f7203</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20191108&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20191108&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-LM_ssp245_r1i1p1f1_SImon_gn_20191108</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/481b7797-0ffd-36dd-a55b-0fd16d82709c" target="_blank">https://hdl.handle.net/21.14100/481b7797-0ffd-36dd-a55b-0fd16d82709c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20191108&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NCC_NorESM2-LM_ssp245_r1i1p1f1_day_gn_20191108</td>
@@ -4661,10 +7601,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191108&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NCC_NorESM2-LM_ssp370_r1i1p1f1_Omon_gn_20191108</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/78f2e75c-f96f-3e56-a01c-9c48dce4b9c3" target="_blank">https://hdl.handle.net/21.14100/78f2e75c-f96f-3e56-a01c-9c48dce4b9c3</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191108&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_NCC_NorESM2-LM_ssp370_r1i1p1f1_Amon_gn_20191108</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/e4fb4a01-94f0-3617-be29-b5b16f8c10aa" target="_blank">https://hdl.handle.net/21.14100/e4fb4a01-94f0-3617-be29-b5b16f8c10aa</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-LM_ssp370_r1i1p1f1_Amon_gn_20191108</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/dbb254c7-1ce4-316a-ab17-ca90816363c4" target="_blank">https://hdl.handle.net/21.14100/dbb254c7-1ce4-316a-ab17-ca90816363c4</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-LM_ssp370_r1i1p1f1_Omon_gr_20191108</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/b4761b98-b007-3b7f-8e78-58cb953d4a9f" target="_blank">https://hdl.handle.net/21.14100/b4761b98-b007-3b7f-8e78-58cb953d4a9f</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20191108&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20191108&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-LM_ssp370_r1i1p1f1_SImon_gn_20191108</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/4ab2012c-95b5-3c9e-bf3c-7b0e68df9c3d" target="_blank">https://hdl.handle.net/21.14100/4ab2012c-95b5-3c9e-bf3c-7b0e68df9c3d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20191108&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NCC_NorESM2-LM_ssp370_r1i1p1f1_day_gn_20191108</td>
@@ -4697,10 +7655,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191108&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NCC_NorESM2-LM_ssp585_r1i1p1f1_Omon_gn_20191108</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/3f17ea62-0ec3-3518-9b5b-d6c8f423a270" target="_blank">https://hdl.handle.net/21.14100/3f17ea62-0ec3-3518-9b5b-d6c8f423a270</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191108&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_NCC_NorESM2-LM_ssp585_r1i1p1f1_Amon_gn_20191108</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/16100fed-d0bc-3f90-b84a-96fe7e17b08d" target="_blank">https://hdl.handle.net/21.14100/16100fed-d0bc-3f90-b84a-96fe7e17b08d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-LM_ssp585_r1i1p1f1_Amon_gn_20191108</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/937585ed-a7a8-3629-aee3-e717f9a20acf" target="_blank">https://hdl.handle.net/21.14100/937585ed-a7a8-3629-aee3-e717f9a20acf</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-LM_ssp585_r1i1p1f1_Omon_gr_20191108</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/75a3323b-6b39-3496-a546-ec9c905eb86a" target="_blank">https://hdl.handle.net/21.14100/75a3323b-6b39-3496-a546-ec9c905eb86a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20191108&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20191108&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-LM_ssp585_r1i1p1f1_SImon_gn_20191108</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/6dbf0ca0-4d6c-3a55-ad20-48c1c8f5becc" target="_blank">https://hdl.handle.net/21.14100/6dbf0ca0-4d6c-3a55-ad20-48c1c8f5becc</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20191108&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NCC_NorESM2-LM_ssp585_r1i1p1f1_day_gn_20191108</td>
@@ -4733,10 +7709,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-LM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191108&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-LM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NCC_NorESM2-MM_historical_r1i1p1f1_Omon_gn_20191108</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/3cc4ae3b-31a5-3c10-bb67-88d550a2b09c" target="_blank">https://hdl.handle.net/21.14100/3cc4ae3b-31a5-3c10-bb67-88d550a2b09c</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191108&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_NCC_NorESM2-MM_historical_r1i1p1f1_Amon_gn_20191108</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/caff7670-9c60-3795-bfd8-39322bf13833" target="_blank">https://hdl.handle.net/21.14100/caff7670-9c60-3795-bfd8-39322bf13833</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-MM_historical_r1i1p1f1_Amon_gn_20191108</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/e639eb4f-63f6-3474-9c3f-9511f6cb9226" target="_blank">https://hdl.handle.net/21.14100/e639eb4f-63f6-3474-9c3f-9511f6cb9226</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-MM_historical_r1i1p1f1_Omon_gr_20191108</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/ccc9568f-3426-3afb-a9f1-41d41f16f58d" target="_blank">https://hdl.handle.net/21.14100/ccc9568f-3426-3afb-a9f1-41d41f16f58d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20191108&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20191108&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-MM_historical_r1i1p1f1_SImon_gn_20191108</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/1cb392b2-e793-3391-a681-16bfddcea808" target="_blank">https://hdl.handle.net/21.14100/1cb392b2-e793-3391-a681-16bfddcea808</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20191108&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NCC_NorESM2-MM_historical_r1i1p1f1_day_gn_20191108</td>
@@ -4769,10 +7763,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191108&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NCC_NorESM2-MM_ssp126_r1i1p1f1_Omon_gn_20191108</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/4c17e9b1-4d25-31b2-8f09-0081bc6edf5e" target="_blank">https://hdl.handle.net/21.14100/4c17e9b1-4d25-31b2-8f09-0081bc6edf5e</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191108&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_NCC_NorESM2-MM_ssp126_r1i1p1f1_Amon_gn_20191108</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/696210c7-cf1d-30b1-84ba-c95fe06585ed" target="_blank">https://hdl.handle.net/21.14100/696210c7-cf1d-30b1-84ba-c95fe06585ed</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-MM_ssp126_r1i1p1f1_Amon_gn_20191108</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/b6ccd786-0fd7-3363-97dd-e18f7102a541" target="_blank">https://hdl.handle.net/21.14100/b6ccd786-0fd7-3363-97dd-e18f7102a541</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-MM_ssp126_r1i1p1f1_Omon_gr_20191108</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/fce7147c-697c-371a-ba72-642da9a0b7cd" target="_blank">https://hdl.handle.net/21.14100/fce7147c-697c-371a-ba72-642da9a0b7cd</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20191108&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20191108&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-MM_ssp126_r1i1p1f1_SImon_gn_20191108</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/0cf50b9b-3f84-3d02-a3b1-c1f64baff55c" target="_blank">https://hdl.handle.net/21.14100/0cf50b9b-3f84-3d02-a3b1-c1f64baff55c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20191108&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NCC_NorESM2-MM_ssp126_r1i1p1f1_day_gn_20191108</td>
@@ -4805,10 +7817,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191108&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NCC_NorESM2-MM_ssp245_r1i1p1f1_Omon_gn_20191108</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/be87e84e-fd45-32de-a066-ce8dae87f4b0" target="_blank">https://hdl.handle.net/21.14100/be87e84e-fd45-32de-a066-ce8dae87f4b0</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191108&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_NCC_NorESM2-MM_ssp245_r1i1p1f1_Amon_gn_20191108</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/27a4a072-609a-3361-af60-b2cbb5525715" target="_blank">https://hdl.handle.net/21.14100/27a4a072-609a-3361-af60-b2cbb5525715</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-MM_ssp245_r1i1p1f1_Amon_gn_20191108</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/0380b906-9c9e-3956-b0a0-7c9f218a74e3" target="_blank">https://hdl.handle.net/21.14100/0380b906-9c9e-3956-b0a0-7c9f218a74e3</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-MM_ssp245_r1i1p1f1_Omon_gr_20191108</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/7e7e54be-7820-3211-98c9-9df8c251a35f" target="_blank">https://hdl.handle.net/21.14100/7e7e54be-7820-3211-98c9-9df8c251a35f</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20191108&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20191108&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-MM_ssp245_r1i1p1f1_SImon_gn_20191108</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/d931eebb-974c-3c1e-b34d-ed7172b034a0" target="_blank">https://hdl.handle.net/21.14100/d931eebb-974c-3c1e-b34d-ed7172b034a0</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20191108&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NCC_NorESM2-MM_ssp245_r1i1p1f1_day_gn_20191108</td>
@@ -4841,10 +7871,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191108&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NCC_NorESM2-MM_ssp370_r1i1p1f1_Omon_gn_20191108</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/3211f6d7-5228-3dd7-a44d-551bb7c133d2" target="_blank">https://hdl.handle.net/21.14100/3211f6d7-5228-3dd7-a44d-551bb7c133d2</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191108&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_NCC_NorESM2-MM_ssp370_r1i1p1f1_Amon_gn_20191108</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/ef9f3c22-fdc7-3f23-916e-a22efbff563c" target="_blank">https://hdl.handle.net/21.14100/ef9f3c22-fdc7-3f23-916e-a22efbff563c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-MM_ssp370_r1i1p1f1_Amon_gn_20191108</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/6de95bd5-28f9-3897-a4da-27bba13aa926" target="_blank">https://hdl.handle.net/21.14100/6de95bd5-28f9-3897-a4da-27bba13aa926</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-MM_ssp370_r1i1p1f1_Omon_gr_20191108</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/8aee0f80-f435-3481-8afd-f858ef2d6834" target="_blank">https://hdl.handle.net/21.14100/8aee0f80-f435-3481-8afd-f858ef2d6834</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20191108&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20191108&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-MM_ssp370_r1i1p1f1_SImon_gn_20191108</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/01b992cd-f1bf-322a-8854-eb34479924d0" target="_blank">https://hdl.handle.net/21.14100/01b992cd-f1bf-322a-8854-eb34479924d0</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20191108&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NCC_NorESM2-MM_ssp370_r1i1p1f1_day_gn_20191108</td>
@@ -4877,10 +7925,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191108&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NCC_NorESM2-MM_ssp585_r1i1p1f1_Omon_gn_20191108</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/0f9fe504-552a-3c96-94ad-18edd6c86c55" target="_blank">https://hdl.handle.net/21.14100/0f9fe504-552a-3c96-94ad-18edd6c86c55</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20191108&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_NCC_NorESM2-MM_ssp585_r1i1p1f1_Amon_gn_20191108</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/055ed9c6-8894-3991-97b5-107477816d8d" target="_blank">https://hdl.handle.net/21.14100/055ed9c6-8894-3991-97b5-107477816d8d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-MM_ssp585_r1i1p1f1_Amon_gn_20191108</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/947eaf61-e5c1-3f76-8096-4ad4983bd592" target="_blank">https://hdl.handle.net/21.14100/947eaf61-e5c1-3f76-8096-4ad4983bd592</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20191108&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-MM_ssp585_r1i1p1f1_Omon_gr_20191108</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/eee80158-2282-375b-bb72-963dc3dcf439" target="_blank">https://hdl.handle.net/21.14100/eee80158-2282-375b-bb72-963dc3dcf439</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20191108&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20191108&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NCC_NorESM2-MM_ssp585_r1i1p1f1_SImon_gn_20191108</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/3c5b324f-e838-36f1-89de-6ca53e59ff68" target="_blank">https://hdl.handle.net/21.14100/3c5b324f-e838-36f1-89de-6ca53e59ff68</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20191108&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20191108&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NCC_NorESM2-MM_ssp585_r1i1p1f1_day_gn_20191108</td>
@@ -4913,10 +7979,16 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NCC&source_id=NorESM2-MM&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20191108&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NCC&amp;source_id=NorESM2-MM&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20191108&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NIMS-KMA_KACE-1-0-G_historical_r1i1p1f1_Omon_gr_20200130</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/be5897d3-62ff-367f-a202-a117c72b1377" target="_blank">https://hdl.handle.net/21.14100/be5897d3-62ff-367f-a202-a117c72b1377</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20200130&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20200130&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_NIMS-KMA_KACE-1-0-G_historical_r2i1p1f1_Amon_gr_20190920</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/ea423ded-b4f6-3296-9334-8d659f262f7c" target="_blank">https://hdl.handle.net/21.14100/ea423ded-b4f6-3296-9334-8d659f262f7c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=historical&variant_label=r2i1p1f1&table_id=Amon&grid_label=gr&version=20190920&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=historical&amp;variant_label=r2i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190920&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NIMS-KMA_KACE-1-0-G_historical_r2i1p1f1_Amon_gr_20190920</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/0fb08136-6f38-3b87-846a-853032c2c8a2" target="_blank">https://hdl.handle.net/21.14100/0fb08136-6f38-3b87-846a-853032c2c8a2</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=historical&variant_label=r2i1p1f1&table_id=Amon&grid_label=gr&version=20190920&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=historical&amp;variant_label=r2i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20190920&amp;variable_id=sfcWind&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NIMS-KMA_KACE-1-0-G_historical_r2i1p1f1_Amon_gr_20200317</td>
@@ -4929,6 +8001,12 @@
       <td>tasmin</td>
       <td><a href="https://hdl.handle.net/21.14100/6021542f-1e07-3ee1-8933-af462cfe3028" target="_blank">https://hdl.handle.net/21.14100/6021542f-1e07-3ee1-8933-af462cfe3028</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=historical&variant_label=r2i1p1f1&table_id=Amon&grid_label=gr&version=20200317&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=historical&amp;variant_label=r2i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200317&amp;variable_id=tasmin&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NIMS-KMA_KACE-1-0-G_historical_r2i1p1f1_Omon_gr_20200130</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/6e352450-7da9-323c-a52b-9fc8ca0dbf10" target="_blank">https://hdl.handle.net/21.14100/6e352450-7da9-323c-a52b-9fc8ca0dbf10</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=historical&variant_label=r2i1p1f1&table_id=Omon&grid_label=gr&version=20200130&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=historical&amp;variant_label=r2i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20200130&amp;variable_id=tos&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NIMS-KMA_KACE-1-0-G_historical_r2i1p1f1_day_gr_20190920</td>
@@ -4961,10 +8039,16 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=historical&variant_label=r2i1p1f1&table_id=day&grid_label=gr&version=20200317&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=historical&amp;variant_label=r2i1p1f1&amp;table_id=day&amp;grid_label=gr&amp;version=20200317&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NIMS-KMA_KACE-1-0-G_ssp126_r1i1p1f1_Omon_gr_20200130</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/8c34f955-fa26-3f43-8de4-35045a1f3b12" target="_blank">https://hdl.handle.net/21.14100/8c34f955-fa26-3f43-8de4-35045a1f3b12</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20200130&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20200130&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_NIMS-KMA_KACE-1-0-G_ssp126_r2i1p1f1_Amon_gr_20191007</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/f5463a3c-deee-3f03-ae1b-10dcda05c08f" target="_blank">https://hdl.handle.net/21.14100/f5463a3c-deee-3f03-ae1b-10dcda05c08f</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=ssp126&variant_label=r2i1p1f1&table_id=Amon&grid_label=gr&version=20191007&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=ssp126&amp;variant_label=r2i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20191007&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NIMS-KMA_KACE-1-0-G_ssp126_r2i1p1f1_Amon_gr_20191007</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/eaad5851-aa36-3329-a6c2-0a12208ab8c6" target="_blank">https://hdl.handle.net/21.14100/eaad5851-aa36-3329-a6c2-0a12208ab8c6</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=ssp126&variant_label=r2i1p1f1&table_id=Amon&grid_label=gr&version=20191007&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=ssp126&amp;variant_label=r2i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20191007&amp;variable_id=sfcWind&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NIMS-KMA_KACE-1-0-G_ssp126_r2i1p1f1_Amon_gr_20200316</td>
@@ -4977,6 +8061,12 @@
       <td>tasmin</td>
       <td><a href="https://hdl.handle.net/21.14100/39628471-b5fb-3635-89e2-81810c05e64a" target="_blank">https://hdl.handle.net/21.14100/39628471-b5fb-3635-89e2-81810c05e64a</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=ssp126&variant_label=r2i1p1f1&table_id=Amon&grid_label=gr&version=20200316&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=ssp126&amp;variant_label=r2i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200316&amp;variable_id=tasmin&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NIMS-KMA_KACE-1-0-G_ssp126_r2i1p1f1_Omon_gr_20200130</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/8f526553-7f2d-395b-9eb5-3fef4065f195" target="_blank">https://hdl.handle.net/21.14100/8f526553-7f2d-395b-9eb5-3fef4065f195</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=ssp126&variant_label=r2i1p1f1&table_id=Omon&grid_label=gr&version=20200130&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=ssp126&amp;variant_label=r2i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20200130&amp;variable_id=tos&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NIMS-KMA_KACE-1-0-G_ssp126_r2i1p1f1_day_gr_20191011</td>
@@ -5009,10 +8099,22 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=ssp126&variant_label=r2i1p1f1&table_id=day&grid_label=gr&version=20200316&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=ssp126&amp;variant_label=r2i1p1f1&amp;table_id=day&amp;grid_label=gr&amp;version=20200316&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NIMS-KMA_KACE-1-0-G_ssp245_r1i1p1f1_Omon_gr_20200130</td>
+      <td>CMIP6_NIMS-KMA_KACE-1-0-G_ssp245_r2i1p1f1_Amon_gr_20191125</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/4984d34d-0601-3f42-bf43-10cef48cd005" target="_blank">https://hdl.handle.net/21.14100/4984d34d-0601-3f42-bf43-10cef48cd005</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=ssp245&variant_label=r2i1p1f1&table_id=Amon&grid_label=gr&version=20191125&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=ssp245&amp;variant_label=r2i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20191125&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NIMS-KMA_KACE-1-0-G_ssp245_r2i1p1f1_Amon_gr_20191125</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/84f1f614-f60e-3219-9ae1-b4e8143983a7" target="_blank">https://hdl.handle.net/21.14100/84f1f614-f60e-3219-9ae1-b4e8143983a7</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=ssp245&variant_label=r2i1p1f1&table_id=Amon&grid_label=gr&version=20191125&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=ssp245&amp;variant_label=r2i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20191125&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NIMS-KMA_KACE-1-0-G_ssp245_r2i1p1f1_Omon_gr_20200130</td>
       <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/6dbc79fd-258e-3f2a-85da-5450b8d5c9fc" target="_blank">https://hdl.handle.net/21.14100/6dbc79fd-258e-3f2a-85da-5450b8d5c9fc</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20200130&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20200130&amp;variable_id=tos&amp;replica=on</a></td>
+      <td><a href="https://hdl.handle.net/21.14100/f4b06cb1-a5c7-3613-9011-c8fec51d3c72" target="_blank">https://hdl.handle.net/21.14100/f4b06cb1-a5c7-3613-9011-c8fec51d3c72</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=ssp245&variant_label=r2i1p1f1&table_id=Omon&grid_label=gr&version=20200130&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=ssp245&amp;variant_label=r2i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20200130&amp;variable_id=tos&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NIMS-KMA_KACE-1-0-G_ssp245_r2i1p1f1_day_gr_20191125</td>
@@ -5027,10 +8129,22 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=ssp245&variant_label=r2i1p1f1&table_id=day&grid_label=gr&version=20191125&variable_id=psl&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=ssp245&amp;variant_label=r2i1p1f1&amp;table_id=day&amp;grid_label=gr&amp;version=20191125&amp;variable_id=psl&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NIMS-KMA_KACE-1-0-G_ssp370_r1i1p1f1_Omon_gr_20200130</td>
+      <td>CMIP6_NIMS-KMA_KACE-1-0-G_ssp370_r2i1p1f1_Amon_gr_20191128</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/648c2e8b-fdab-30a4-9303-a405854b7072" target="_blank">https://hdl.handle.net/21.14100/648c2e8b-fdab-30a4-9303-a405854b7072</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=ssp370&variant_label=r2i1p1f1&table_id=Amon&grid_label=gr&version=20191128&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=ssp370&amp;variant_label=r2i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20191128&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NIMS-KMA_KACE-1-0-G_ssp370_r2i1p1f1_Amon_gr_20191128</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/18aef0b6-ed1d-3c0b-9876-0db76c909be2" target="_blank">https://hdl.handle.net/21.14100/18aef0b6-ed1d-3c0b-9876-0db76c909be2</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=ssp370&variant_label=r2i1p1f1&table_id=Amon&grid_label=gr&version=20191128&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=ssp370&amp;variant_label=r2i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20191128&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NIMS-KMA_KACE-1-0-G_ssp370_r2i1p1f1_Omon_gr_20200130</td>
       <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/9ab8278e-b632-36db-903d-440f797ae916" target="_blank">https://hdl.handle.net/21.14100/9ab8278e-b632-36db-903d-440f797ae916</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20200130&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20200130&amp;variable_id=tos&amp;replica=on</a></td>
+      <td><a href="https://hdl.handle.net/21.14100/1614bc28-d500-35fb-b0a6-7b3d4feebf6c" target="_blank">https://hdl.handle.net/21.14100/1614bc28-d500-35fb-b0a6-7b3d4feebf6c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=ssp370&variant_label=r2i1p1f1&table_id=Omon&grid_label=gr&version=20200130&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=ssp370&amp;variant_label=r2i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20200130&amp;variable_id=tos&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NIMS-KMA_KACE-1-0-G_ssp370_r2i1p1f1_day_gr_20191128</td>
@@ -5045,10 +8159,16 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=ssp370&variant_label=r2i1p1f1&table_id=day&grid_label=gr&version=20191128&variable_id=psl&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=ssp370&amp;variant_label=r2i1p1f1&amp;table_id=day&amp;grid_label=gr&amp;version=20191128&amp;variable_id=psl&amp;replica=on</a></td>
     </tr>
     <tr>
-      <td>CMIP6_NIMS-KMA_KACE-1-0-G_ssp585_r1i1p1f1_Omon_gr_20200130</td>
-      <td>tos</td>
-      <td><a href="https://hdl.handle.net/21.14100/358451ca-891e-3424-a054-cb3a0c1cc816" target="_blank">https://hdl.handle.net/21.14100/358451ca-891e-3424-a054-cb3a0c1cc816</a></td>
-      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20200130&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20200130&amp;variable_id=tos&amp;replica=on</a></td>
+      <td>CMIP6_NIMS-KMA_KACE-1-0-G_ssp585_r2i1p1f1_Amon_gr_20191007</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/43f740df-76ef-34f0-affe-ed0074ecfeb5" target="_blank">https://hdl.handle.net/21.14100/43f740df-76ef-34f0-affe-ed0074ecfeb5</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=ssp585&variant_label=r2i1p1f1&table_id=Amon&grid_label=gr&version=20191007&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=ssp585&amp;variant_label=r2i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20191007&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NIMS-KMA_KACE-1-0-G_ssp585_r2i1p1f1_Amon_gr_20191007</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/215df6f1-d7fe-3d3c-8177-33f96460e8df" target="_blank">https://hdl.handle.net/21.14100/215df6f1-d7fe-3d3c-8177-33f96460e8df</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=ssp585&variant_label=r2i1p1f1&table_id=Amon&grid_label=gr&version=20191007&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=ssp585&amp;variant_label=r2i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20191007&amp;variable_id=sfcWind&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NIMS-KMA_KACE-1-0-G_ssp585_r2i1p1f1_Amon_gr_20200317</td>
@@ -5061,6 +8181,12 @@
       <td>tasmin</td>
       <td><a href="https://hdl.handle.net/21.14100/ea780407-807a-33a9-b5fa-35f08d75090f" target="_blank">https://hdl.handle.net/21.14100/ea780407-807a-33a9-b5fa-35f08d75090f</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=ssp585&variant_label=r2i1p1f1&table_id=Amon&grid_label=gr&version=20200317&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=ssp585&amp;variant_label=r2i1p1f1&amp;table_id=Amon&amp;grid_label=gr&amp;version=20200317&amp;variable_id=tasmin&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NIMS-KMA_KACE-1-0-G_ssp585_r2i1p1f1_Omon_gr_20200130</td>
+      <td>tos</td>
+      <td><a href="https://hdl.handle.net/21.14100/74b1dda6-4652-3bdd-9f88-9a854304f094" target="_blank">https://hdl.handle.net/21.14100/74b1dda6-4652-3bdd-9f88-9a854304f094</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=ssp585&variant_label=r2i1p1f1&table_id=Omon&grid_label=gr&version=20200130&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=ssp585&amp;variant_label=r2i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20200130&amp;variable_id=tos&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NIMS-KMA_KACE-1-0-G_ssp585_r2i1p1f1_day_gr_20191011</td>
@@ -5093,6 +8219,18 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NIMS-KMA&source_id=KACE-1-0-G&experiment_id=ssp585&variant_label=r2i1p1f1&table_id=day&grid_label=gr&version=20200317&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NIMS-KMA&amp;source_id=KACE-1-0-G&amp;experiment_id=ssp585&amp;variant_label=r2i1p1f1&amp;table_id=day&amp;grid_label=gr&amp;version=20200317&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-CM4_historical_r1i1p1f1_Amon_gr1_20180701</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/61930a97-ac38-34e8-a1b7-86325c1ce4ce" target="_blank">https://hdl.handle.net/21.14100/61930a97-ac38-34e8-a1b7-86325c1ce4ce</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-CM4&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20180701&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-CM4&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20180701&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-CM4_historical_r1i1p1f1_Amon_gr1_20180701</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/c59d6b20-242e-3ced-849f-3da26c99978e" target="_blank">https://hdl.handle.net/21.14100/c59d6b20-242e-3ced-849f-3da26c99978e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-CM4&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20180701&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-CM4&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20180701&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-CM4_historical_r1i1p1f1_Omon_gn_20180701</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/4ab1598c-2ca6-395d-af2f-1838ed332689" target="_blank">https://hdl.handle.net/21.14100/4ab1598c-2ca6-395d-af2f-1838ed332689</a></td>
@@ -5100,9 +8238,27 @@
     </tr>
     <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-CM4_historical_r1i1p1f1_Omon_gr_20180701</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/b0aebf32-d7b2-3014-8152-a9a6f4e81bd5" target="_blank">https://hdl.handle.net/21.14100/b0aebf32-d7b2-3014-8152-a9a6f4e81bd5</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-CM4&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20180701&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-CM4&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20180701&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-CM4_historical_r1i1p1f1_Omon_gr_20180701</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/9d106c13-eb6b-3807-bc1b-6f7db90bf717" target="_blank">https://hdl.handle.net/21.14100/9d106c13-eb6b-3807-bc1b-6f7db90bf717</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-CM4&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20180701&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-CM4&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20180701&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-CM4_historical_r1i1p1f1_SImon_gn_20180701</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/da89665d-5862-3034-a5d2-b80a22c0573e" target="_blank">https://hdl.handle.net/21.14100/da89665d-5862-3034-a5d2-b80a22c0573e</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-CM4&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20180701&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-CM4&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20180701&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-CM4_historical_r1i1p1f1_SImon_gr_20180701</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/2bc416bc-c3ea-3fc9-ba19-dc61a4d17bb2" target="_blank">https://hdl.handle.net/21.14100/2bc416bc-c3ea-3fc9-ba19-dc61a4d17bb2</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-CM4&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gr&version=20180701&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-CM4&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gr&amp;version=20180701&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-CM4_historical_r1i1p1f1_day_gr1_20180701</td>
@@ -5165,6 +8321,18 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-CM4&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gr2&version=20180701&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-CM4&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr2&amp;version=20180701&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-CM4_ssp245_r1i1p1f1_Amon_gr1_20180701</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/9d0ce5e6-f213-3f9d-80b6-d4f0a1381d07" target="_blank">https://hdl.handle.net/21.14100/9d0ce5e6-f213-3f9d-80b6-d4f0a1381d07</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-CM4&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20180701&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-CM4&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20180701&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-CM4_ssp245_r1i1p1f1_Amon_gr1_20180701</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/8f9478df-ab69-3644-8b9d-64d614d0e9e0" target="_blank">https://hdl.handle.net/21.14100/8f9478df-ab69-3644-8b9d-64d614d0e9e0</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-CM4&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20180701&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-CM4&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20180701&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-CM4_ssp245_r1i1p1f1_Omon_gn_20180701</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/a4b7c6e9-337d-34ed-9fb9-ca01494fa6da" target="_blank">https://hdl.handle.net/21.14100/a4b7c6e9-337d-34ed-9fb9-ca01494fa6da</a></td>
@@ -5172,9 +8340,27 @@
     </tr>
     <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-CM4_ssp245_r1i1p1f1_Omon_gr_20180701</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/4ffcb9da-16ea-3a51-86fb-98455e831bfc" target="_blank">https://hdl.handle.net/21.14100/4ffcb9da-16ea-3a51-86fb-98455e831bfc</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-CM4&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20180701&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-CM4&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20180701&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-CM4_ssp245_r1i1p1f1_Omon_gr_20180701</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/bf345009-c2d1-3347-9bc0-212a17342a70" target="_blank">https://hdl.handle.net/21.14100/bf345009-c2d1-3347-9bc0-212a17342a70</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-CM4&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20180701&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-CM4&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20180701&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-CM4_ssp245_r1i1p1f1_SImon_gn_20180701</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/820dcf5f-e291-34d3-9ad3-cedcc77a9562" target="_blank">https://hdl.handle.net/21.14100/820dcf5f-e291-34d3-9ad3-cedcc77a9562</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-CM4&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20180701&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-CM4&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20180701&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-CM4_ssp245_r1i1p1f1_SImon_gr_20180701</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/90f78a5c-3f03-3f77-8cfb-7e02f4132297" target="_blank">https://hdl.handle.net/21.14100/90f78a5c-3f03-3f77-8cfb-7e02f4132297</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-CM4&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gr&version=20180701&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-CM4&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gr&amp;version=20180701&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-CM4_ssp245_r1i1p1f1_day_gr1_20180701</td>
@@ -5237,6 +8423,18 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-CM4&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=day&grid_label=gr2&version=20180701&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-CM4&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr2&amp;version=20180701&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-CM4_ssp585_r1i1p1f1_Amon_gr1_20180701</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/04287060-648c-31af-a640-4bb5b19869fb" target="_blank">https://hdl.handle.net/21.14100/04287060-648c-31af-a640-4bb5b19869fb</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-CM4&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20180701&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-CM4&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20180701&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-CM4_ssp585_r1i1p1f1_Amon_gr1_20180701</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/2c4a2644-75d1-393b-ad3b-369136dac50a" target="_blank">https://hdl.handle.net/21.14100/2c4a2644-75d1-393b-ad3b-369136dac50a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-CM4&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20180701&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-CM4&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20180701&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-CM4_ssp585_r1i1p1f1_Omon_gn_20180701</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/85745a8f-63d0-3fd6-b9dc-806468e33822" target="_blank">https://hdl.handle.net/21.14100/85745a8f-63d0-3fd6-b9dc-806468e33822</a></td>
@@ -5244,9 +8442,27 @@
     </tr>
     <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-CM4_ssp585_r1i1p1f1_Omon_gr_20180701</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/f141d6b3-2383-3b24-8c01-94fb4d12bf7b" target="_blank">https://hdl.handle.net/21.14100/f141d6b3-2383-3b24-8c01-94fb4d12bf7b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-CM4&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20180701&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-CM4&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20180701&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-CM4_ssp585_r1i1p1f1_Omon_gr_20180701</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/2a39c731-7c26-3c1b-b34f-10777e061d1e" target="_blank">https://hdl.handle.net/21.14100/2a39c731-7c26-3c1b-b34f-10777e061d1e</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-CM4&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20180701&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-CM4&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20180701&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-CM4_ssp585_r1i1p1f1_SImon_gn_20180701</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/75fc1b90-0060-33bb-95fc-7a5c912ae5bc" target="_blank">https://hdl.handle.net/21.14100/75fc1b90-0060-33bb-95fc-7a5c912ae5bc</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-CM4&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20180701&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-CM4&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20180701&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-CM4_ssp585_r1i1p1f1_SImon_gr_20180701</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/7addcb06-f576-3008-b256-0ca733c0027c" target="_blank">https://hdl.handle.net/21.14100/7addcb06-f576-3008-b256-0ca733c0027c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-CM4&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gr&version=20180701&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-CM4&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gr&amp;version=20180701&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-CM4_ssp585_r1i1p1f1_day_gr1_20180701</td>
@@ -5309,6 +8525,18 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-CM4&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=day&grid_label=gr2&version=20180701&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-CM4&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr2&amp;version=20180701&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_historical_r1i1p1f1_Amon_gr1_20190726</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/119e855b-a5a0-3ced-ae19-26a84113c0dd" target="_blank">https://hdl.handle.net/21.14100/119e855b-a5a0-3ced-ae19-26a84113c0dd</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20190726&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20190726&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_historical_r1i1p1f1_Amon_gr1_20190726</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/fad1e6d6-6061-360c-b953-ed8b03410b2d" target="_blank">https://hdl.handle.net/21.14100/fad1e6d6-6061-360c-b953-ed8b03410b2d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20190726&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20190726&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-ESM4_historical_r1i1p1f1_Omon_gn_20190726</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/af7d7cd1-ade2-3943-a01f-c698a8b712c5" target="_blank">https://hdl.handle.net/21.14100/af7d7cd1-ade2-3943-a01f-c698a8b712c5</a></td>
@@ -5316,9 +8544,27 @@
     </tr>
     <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-ESM4_historical_r1i1p1f1_Omon_gr_20190726</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/4e054a39-5287-34ea-9344-03d5020fa0d3" target="_blank">https://hdl.handle.net/21.14100/4e054a39-5287-34ea-9344-03d5020fa0d3</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20190726&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190726&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_historical_r1i1p1f1_Omon_gr_20190726</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/42571758-fb4b-3f6b-adcb-dc190674f97a" target="_blank">https://hdl.handle.net/21.14100/42571758-fb4b-3f6b-adcb-dc190674f97a</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20190726&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20190726&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_historical_r1i1p1f1_SImon_gn_20190726</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/9a8b9a51-1b77-3194-9a29-0ff839ab9e96" target="_blank">https://hdl.handle.net/21.14100/9a8b9a51-1b77-3194-9a29-0ff839ab9e96</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190726&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190726&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_historical_r1i1p1f1_SImon_gr_20190726</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/bf213c7d-6ddd-3f98-87cc-c0b0f291bc1f" target="_blank">https://hdl.handle.net/21.14100/bf213c7d-6ddd-3f98-87cc-c0b0f291bc1f</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gr&version=20190726&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gr&amp;version=20190726&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-ESM4_historical_r1i1p1f1_day_gr1_20190726</td>
@@ -5351,6 +8597,18 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gr1&version=20190726&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr1&amp;version=20190726&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp126_r1i1p1f1_Amon_gr1_20180701</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/1a485518-32b9-3e7f-ad79-2e81b8de312f" target="_blank">https://hdl.handle.net/21.14100/1a485518-32b9-3e7f-ad79-2e81b8de312f</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20180701&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20180701&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp126_r1i1p1f1_Amon_gr1_20180701</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/f17bcc3c-06b2-36c4-bf28-76d1f35fbbf4" target="_blank">https://hdl.handle.net/21.14100/f17bcc3c-06b2-36c4-bf28-76d1f35fbbf4</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20180701&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20180701&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp126_r1i1p1f1_Omon_gn_20180701</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/75b06210-00ef-38cc-89d6-2bf27dd639f8" target="_blank">https://hdl.handle.net/21.14100/75b06210-00ef-38cc-89d6-2bf27dd639f8</a></td>
@@ -5358,9 +8616,27 @@
     </tr>
     <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp126_r1i1p1f1_Omon_gr_20180701</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/76af3964-2b93-3f36-bb05-18655b42d943" target="_blank">https://hdl.handle.net/21.14100/76af3964-2b93-3f36-bb05-18655b42d943</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20180701&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20180701&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp126_r1i1p1f1_Omon_gr_20180701</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/ae403065-b4a0-3878-bd21-073e64777955" target="_blank">https://hdl.handle.net/21.14100/ae403065-b4a0-3878-bd21-073e64777955</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20180701&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20180701&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp126_r1i1p1f1_SImon_gn_20180701</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/272f4456-df78-36e9-ae72-4e02923545f6" target="_blank">https://hdl.handle.net/21.14100/272f4456-df78-36e9-ae72-4e02923545f6</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20180701&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20180701&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp126_r1i1p1f1_SImon_gr_20180701</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/d04a0624-6ecc-36cc-bb7f-a749cbb6bea2" target="_blank">https://hdl.handle.net/21.14100/d04a0624-6ecc-36cc-bb7f-a749cbb6bea2</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=SImon&grid_label=gr&version=20180701&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gr&amp;version=20180701&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp126_r1i1p1f1_day_gr1_20180701</td>
@@ -5393,6 +8669,18 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=day&grid_label=gr1&version=20180701&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr1&amp;version=20180701&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp245_r1i1p1f1_Amon_gr1_20180701</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/065e80be-9d47-3941-b5a1-c02c397e87b0" target="_blank">https://hdl.handle.net/21.14100/065e80be-9d47-3941-b5a1-c02c397e87b0</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20180701&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20180701&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp245_r1i1p1f1_Amon_gr1_20180701</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/4fdb9429-d2ad-3e8f-b7f3-7381e585c648" target="_blank">https://hdl.handle.net/21.14100/4fdb9429-d2ad-3e8f-b7f3-7381e585c648</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20180701&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20180701&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp245_r1i1p1f1_Omon_gn_20180701</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/0d48567f-0cdf-3006-8b96-fa594dcde0de" target="_blank">https://hdl.handle.net/21.14100/0d48567f-0cdf-3006-8b96-fa594dcde0de</a></td>
@@ -5400,9 +8688,27 @@
     </tr>
     <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp245_r1i1p1f1_Omon_gr_20180701</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/39776b96-b7c8-33dc-99ff-59ddef79833b" target="_blank">https://hdl.handle.net/21.14100/39776b96-b7c8-33dc-99ff-59ddef79833b</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20180701&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20180701&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp245_r1i1p1f1_Omon_gr_20180701</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/47808fb6-80f9-3e05-bef4-194a6ce1fa11" target="_blank">https://hdl.handle.net/21.14100/47808fb6-80f9-3e05-bef4-194a6ce1fa11</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20180701&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20180701&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp245_r1i1p1f1_SImon_gn_20180701</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/8b956183-3865-361e-918c-3c01cd3db2da" target="_blank">https://hdl.handle.net/21.14100/8b956183-3865-361e-918c-3c01cd3db2da</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20180701&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20180701&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp245_r1i1p1f1_SImon_gr_20180701</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/f64fee81-45a7-3cea-beab-f6a7597b5a69" target="_blank">https://hdl.handle.net/21.14100/f64fee81-45a7-3cea-beab-f6a7597b5a69</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gr&version=20180701&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gr&amp;version=20180701&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp245_r1i1p1f1_day_gr1_20180701</td>
@@ -5435,6 +8741,18 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=day&grid_label=gr1&version=20180701&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr1&amp;version=20180701&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp370_r1i1p1f1_Amon_gr1_20180701</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/6f5eb5a4-6265-3ce2-883c-a20862a5a98d" target="_blank">https://hdl.handle.net/21.14100/6f5eb5a4-6265-3ce2-883c-a20862a5a98d</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20180701&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20180701&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp370_r1i1p1f1_Amon_gr1_20180701</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/b3471466-683a-3b3d-b760-c98d703e1ae1" target="_blank">https://hdl.handle.net/21.14100/b3471466-683a-3b3d-b760-c98d703e1ae1</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20180701&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20180701&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp370_r1i1p1f1_Omon_gn_20180701</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/5d9e347f-8b13-3d1f-a7bc-45f399c97343" target="_blank">https://hdl.handle.net/21.14100/5d9e347f-8b13-3d1f-a7bc-45f399c97343</a></td>
@@ -5442,9 +8760,27 @@
     </tr>
     <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp370_r1i1p1f1_Omon_gr_20180701</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/fe73f41a-ddae-3d79-b862-78fe5250df97" target="_blank">https://hdl.handle.net/21.14100/fe73f41a-ddae-3d79-b862-78fe5250df97</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20180701&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20180701&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp370_r1i1p1f1_Omon_gr_20180701</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/3847f61b-f013-3bea-a46c-3161844cd500" target="_blank">https://hdl.handle.net/21.14100/3847f61b-f013-3bea-a46c-3161844cd500</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20180701&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20180701&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp370_r1i1p1f1_SImon_gn_20180701</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/8c06a3ae-f542-3422-93d0-24586f090012" target="_blank">https://hdl.handle.net/21.14100/8c06a3ae-f542-3422-93d0-24586f090012</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20180701&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20180701&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp370_r1i1p1f1_SImon_gr_20180701</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/572c3606-ac26-3b06-871e-d82ab51fcdc6" target="_blank">https://hdl.handle.net/21.14100/572c3606-ac26-3b06-871e-d82ab51fcdc6</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=SImon&grid_label=gr&version=20180701&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gr&amp;version=20180701&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp370_r1i1p1f1_day_gr1_20180701</td>
@@ -5477,6 +8813,18 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp370&variant_label=r1i1p1f1&table_id=day&grid_label=gr1&version=20180701&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp370&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr1&amp;version=20180701&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp585_r1i1p1f1_Amon_gr1_20180701</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/28cdb42d-5229-382a-a0d5-873f17851d58" target="_blank">https://hdl.handle.net/21.14100/28cdb42d-5229-382a-a0d5-873f17851d58</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20180701&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20180701&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp585_r1i1p1f1_Amon_gr1_20180701</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/7ae3d026-08e2-3db5-b116-4b9a888775c8" target="_blank">https://hdl.handle.net/21.14100/7ae3d026-08e2-3db5-b116-4b9a888775c8</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gr1&version=20180701&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gr1&amp;version=20180701&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp585_r1i1p1f1_Omon_gn_20180701</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/6bf24648-389a-354a-a1c1-51c10310d57f" target="_blank">https://hdl.handle.net/21.14100/6bf24648-389a-354a-a1c1-51c10310d57f</a></td>
@@ -5484,9 +8832,27 @@
     </tr>
     <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp585_r1i1p1f1_Omon_gr_20180701</td>
+      <td>ph</td>
+      <td><a href="https://hdl.handle.net/21.14100/3eb10c0f-6d4b-3adf-860e-eade8a8e529a" target="_blank">https://hdl.handle.net/21.14100/3eb10c0f-6d4b-3adf-860e-eade8a8e529a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20180701&variable_id=ph&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20180701&amp;variable_id=ph&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp585_r1i1p1f1_Omon_gr_20180701</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/6fb0d388-e9a9-3eb7-8b67-2bae1829e5d5" target="_blank">https://hdl.handle.net/21.14100/6fb0d388-e9a9-3eb7-8b67-2bae1829e5d5</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gr&version=20180701&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gr&amp;version=20180701&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp585_r1i1p1f1_SImon_gn_20180701</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/e30acef2-7750-34ba-9592-fbc8baad9b1a" target="_blank">https://hdl.handle.net/21.14100/e30acef2-7750-34ba-9592-fbc8baad9b1a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20180701&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20180701&amp;variable_id=siconc&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp585_r1i1p1f1_SImon_gr_20180701</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/fed80cdc-07a2-3bff-921a-861fa4bab0dd" target="_blank">https://hdl.handle.net/21.14100/fed80cdc-07a2-3bff-921a-861fa4bab0dd</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gr&version=20180701&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gr&amp;version=20180701&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NOAA-GFDL_GFDL-ESM4_ssp585_r1i1p1f1_day_gr1_20180701</td>
@@ -5519,10 +8885,22 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NOAA-GFDL&source_id=GFDL-ESM4&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=day&grid_label=gr1&version=20180701&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NOAA-GFDL&amp;source_id=GFDL-ESM4&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gr1&amp;version=20180701&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_NUIST_NESM3_historical_r1i1p1f1_Amon_gn_20190630</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/1ae3df26-f207-3538-8d1a-ebd822cf0cbd" target="_blank">https://hdl.handle.net/21.14100/1ae3df26-f207-3538-8d1a-ebd822cf0cbd</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NUIST&source_id=NESM3&experiment_id=historical&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190630&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NUIST&amp;source_id=NESM3&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190630&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_NUIST_NESM3_historical_r1i1p1f1_Omon_gn_20190703</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/0fef0230-f93a-31ab-8e1e-acb4f55f6c3b" target="_blank">https://hdl.handle.net/21.14100/0fef0230-f93a-31ab-8e1e-acb4f55f6c3b</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NUIST&source_id=NESM3&experiment_id=historical&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190703&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NUIST&amp;source_id=NESM3&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190703&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NUIST_NESM3_historical_r1i1p1f1_SImon_gn_20190704</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/0e990a98-abd4-3fee-8f71-fc0f110e2f0f" target="_blank">https://hdl.handle.net/21.14100/0e990a98-abd4-3fee-8f71-fc0f110e2f0f</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NUIST&source_id=NESM3&experiment_id=historical&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190704&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NUIST&amp;source_id=NESM3&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190704&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NUIST_NESM3_historical_r1i1p1f1_day_gn_20190812</td>
@@ -5555,10 +8933,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NUIST&source_id=NESM3&experiment_id=historical&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190812&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NUIST&amp;source_id=NESM3&amp;experiment_id=historical&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190812&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_NUIST_NESM3_ssp126_r1i1p1f1_Amon_gn_20190731</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/3c7a4f5e-38c7-3c76-9882-628fbe777dcd" target="_blank">https://hdl.handle.net/21.14100/3c7a4f5e-38c7-3c76-9882-628fbe777dcd</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NUIST&source_id=NESM3&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190731&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NUIST&amp;source_id=NESM3&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190731&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NUIST_NESM3_ssp126_r1i1p1f1_Amon_gn_20190731</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/a3512f6b-44fc-3be6-9d84-08d59d44b526" target="_blank">https://hdl.handle.net/21.14100/a3512f6b-44fc-3be6-9d84-08d59d44b526</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NUIST&source_id=NESM3&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190731&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NUIST&amp;source_id=NESM3&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190731&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_NUIST_NESM3_ssp126_r1i1p1f1_Omon_gn_20190731</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/2066b95e-4485-32ca-b350-c4a5c8645081" target="_blank">https://hdl.handle.net/21.14100/2066b95e-4485-32ca-b350-c4a5c8645081</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NUIST&source_id=NESM3&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190731&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NUIST&amp;source_id=NESM3&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190731&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NUIST_NESM3_ssp126_r1i1p1f1_SImon_gn_20190730</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/624a32c3-a93f-3211-a0f3-80f39113c39a" target="_blank">https://hdl.handle.net/21.14100/624a32c3-a93f-3211-a0f3-80f39113c39a</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NUIST&source_id=NESM3&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190730&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NUIST&amp;source_id=NESM3&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190730&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NUIST_NESM3_ssp126_r1i1p1f1_day_gn_20190806</td>
@@ -5591,10 +8987,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NUIST&source_id=NESM3&experiment_id=ssp126&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190806&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NUIST&amp;source_id=NESM3&amp;experiment_id=ssp126&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190806&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_NUIST_NESM3_ssp245_r1i1p1f1_Amon_gn_20190731</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/914738cd-ebe0-300c-9264-a3db5d8ee427" target="_blank">https://hdl.handle.net/21.14100/914738cd-ebe0-300c-9264-a3db5d8ee427</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NUIST&source_id=NESM3&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190731&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NUIST&amp;source_id=NESM3&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190731&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NUIST_NESM3_ssp245_r1i1p1f1_Amon_gn_20190731</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/788cd9eb-d00c-33d6-8810-171a90d8a1b1" target="_blank">https://hdl.handle.net/21.14100/788cd9eb-d00c-33d6-8810-171a90d8a1b1</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NUIST&source_id=NESM3&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190731&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NUIST&amp;source_id=NESM3&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190731&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_NUIST_NESM3_ssp245_r1i1p1f1_Omon_gn_20190731</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/b131806d-c7ed-3bca-a4e1-36bf1b341e1d" target="_blank">https://hdl.handle.net/21.14100/b131806d-c7ed-3bca-a4e1-36bf1b341e1d</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NUIST&source_id=NESM3&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190731&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NUIST&amp;source_id=NESM3&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190731&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NUIST_NESM3_ssp245_r1i1p1f1_SImon_gn_20190804</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/193dc7ed-b29f-3578-9881-ea2eb3709ac6" target="_blank">https://hdl.handle.net/21.14100/193dc7ed-b29f-3578-9881-ea2eb3709ac6</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NUIST&source_id=NESM3&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190804&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NUIST&amp;source_id=NESM3&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190804&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NUIST_NESM3_ssp245_r1i1p1f1_day_gn_20190805</td>
@@ -5627,10 +9041,28 @@
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NUIST&source_id=NESM3&experiment_id=ssp245&variant_label=r1i1p1f1&table_id=day&grid_label=gn&version=20190805&variable_id=tasmin&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NUIST&amp;source_id=NESM3&amp;experiment_id=ssp245&amp;variant_label=r1i1p1f1&amp;table_id=day&amp;grid_label=gn&amp;version=20190805&amp;variable_id=tasmin&amp;replica=on</a></td>
     </tr>
     <tr>
+      <td>CMIP6_NUIST_NESM3_ssp585_r1i1p1f1_Amon_gn_20190728</td>
+      <td>prsn</td>
+      <td><a href="https://hdl.handle.net/21.14100/99e5e6a7-b6ff-3bba-a285-2f9302bb4397" target="_blank">https://hdl.handle.net/21.14100/99e5e6a7-b6ff-3bba-a285-2f9302bb4397</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NUIST&source_id=NESM3&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190728&variable_id=prsn&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NUIST&amp;source_id=NESM3&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190728&amp;variable_id=prsn&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NUIST_NESM3_ssp585_r1i1p1f1_Amon_gn_20190728</td>
+      <td>sfcWind</td>
+      <td><a href="https://hdl.handle.net/21.14100/0eb0fee3-fb0f-3e01-bc4f-d6494ffae54c" target="_blank">https://hdl.handle.net/21.14100/0eb0fee3-fb0f-3e01-bc4f-d6494ffae54c</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NUIST&source_id=NESM3&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Amon&grid_label=gn&version=20190728&variable_id=sfcWind&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NUIST&amp;source_id=NESM3&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Amon&amp;grid_label=gn&amp;version=20190728&amp;variable_id=sfcWind&amp;replica=on</a></td>
+    </tr>
+    <tr>
       <td>CMIP6_NUIST_NESM3_ssp585_r1i1p1f1_Omon_gn_20190731</td>
       <td>tos</td>
       <td><a href="https://hdl.handle.net/21.14100/4e7b5370-bf62-36aa-8195-09e4d367618b" target="_blank">https://hdl.handle.net/21.14100/4e7b5370-bf62-36aa-8195-09e4d367618b</a></td>
       <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NUIST&source_id=NESM3&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=Omon&grid_label=gn&version=20190731&variable_id=tos&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NUIST&amp;source_id=NESM3&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=Omon&amp;grid_label=gn&amp;version=20190731&amp;variable_id=tos&amp;replica=on</a></td>
+    </tr>
+    <tr>
+      <td>CMIP6_NUIST_NESM3_ssp585_r1i1p1f1_SImon_gn_20190803</td>
+      <td>siconc</td>
+      <td><a href="https://hdl.handle.net/21.14100/c59570fc-ee28-3f87-817f-dee007b85d98" target="_blank">https://hdl.handle.net/21.14100/c59570fc-ee28-3f87-817f-dee007b85d98</a></td>
+      <td><a href="https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&mip_era=CMIP6&institution_id=NUIST&source_id=NESM3&experiment_id=ssp585&variant_label=r1i1p1f1&table_id=SImon&grid_label=gn&version=20190803&variable_id=siconc&replica=on" target="_blank">https://esgf-data.dkrz.de/search/cmip6-dkrz?format=application%2Fsolr%2Bjson&amp;mip_era=CMIP6&amp;institution_id=NUIST&amp;source_id=NESM3&amp;experiment_id=ssp585&amp;variant_label=r1i1p1f1&amp;table_id=SImon&amp;grid_label=gn&amp;version=20190803&amp;variable_id=siconc&amp;replica=on</a></td>
     </tr>
     <tr>
       <td>CMIP6_NUIST_NESM3_ssp585_r1i1p1f1_day_gn_20190811</td>
