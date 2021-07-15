@@ -59,7 +59,7 @@ computeDeltas <- function(project,
       warning("Multiple region option is not implemented for CORDEX yet. Firs value, i.e. ", region[1], "will be used")
       region <- region[1]
     }
-    l.aux <- lapply(allfiles.aux, function(x) length(grep(region, suppressMessages(scan(x[1], skip = 7, nlines = 1, what = "raw")))) > 0)
+    l.aux <- lapply(allfiles.aux, function(x) length(grep(region, suppressMessages(scan(x[1], skip = 15, nlines = 1, what = "raw")))) > 0)
     dom <- which(unlist(l.aux))
     dom <- if (!is.null(cordex.domain)) dom[cordex.domain]
     if (!is.null(dom)) {
@@ -105,7 +105,7 @@ computeDeltas <- function(project,
     if (project == "CMIP6") modelruns <- gsub("_", "_.*", modelruns)
     
     if (!is.list(periods)) stop("please provide the correct object in periods.")
-    # region <- colnames(read.table(allfiles[1], header = TRUE, sep = ",", skip = 7))[-1]
+    # region <- colnames(read.table(allfiles[1], header = TRUE, sep = ",", skip = 15))[-1]
     aggrfun <- "mean"
     out <- lapply(1:length(modelruns), function(i) {
       modelfiles <- grep(modelruns[i], allfiles, value = TRUE) 
@@ -113,7 +113,7 @@ computeDeltas <- function(project,
         histf <- grep("historical", modelfiles, value = TRUE)
         if (length(histf) > 0) {
           l2 <- lapply(1:length(histf), function(h) {
-            hist <-  read.table(histf[h], header = TRUE, sep = ",", skip = 7)
+            hist <-  read.table(histf[h], header = TRUE, sep = ",", skip = 15)
             hist <- hist[, c("date", region), drop = FALSE]
             seas <- hist %>% subset(select = "date", drop = TRUE) %>% gsub(".*-", "", .) %>% as.integer()
             z <- sort(unlist(lapply(season, function(s) which(seas == s))))
@@ -146,7 +146,7 @@ computeDeltas <- function(project,
             hist <- hist[start:end,, drop = FALSE]
             l1 <- lapply(1:length(exp), FUN = function(j) {
               rcp <- tryCatch({
-                rcp0 <- grep(gsub("historical", exp[j], histf[h]), modelfiles, value = TRUE) %>% read.table(header = TRUE, sep = ",", skip = 7)
+                rcp0 <- grep(gsub("historical", exp[j], histf[h]), modelfiles, value = TRUE) %>% read.table(header = TRUE, sep = ",", skip = 15)
                 rcp0[, c("date", region), drop = FALSE]
               }, error = function(err) return(NULL))
               
