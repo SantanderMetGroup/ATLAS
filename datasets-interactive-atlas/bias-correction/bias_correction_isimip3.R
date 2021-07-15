@@ -6,7 +6,10 @@
 # License (CC BY 4.0 - http://creativecommons.org/licenses/by/4.0)
 
 #' @title Script to bias-correct CMIP6 with ISIMIP3ISIMIP3 
-#' @description Script to bias-correct CMIP6 with the ISIMIP3 method. ISIMIP3 (Lange 2019, https://doi.org/10.5194/gmd-12-3055-2019) is a parametric quantile mapping which has been designed to robustly adjust biases in all percentiles of a distribution whilst preserving their trends. The observational reference used for calibration is W5E5 (Cucchi et al. 2020, https://doi.org/10.5194/essd-12-2097-2020), which was previously conservatively remapped onto a 1ºx1º regular grid. Note that spatial chunking is required to alleviate computationally costly calculations.
+#' @description Script to bias-correct CMIP6 with the ISIMIP3 method. ISIMIP3 (Lange 2019, https://doi.org/10.5194/gmd-12-3055-2019) 
+#' is a parametric quantile mapping which has been designed to robustly adjust biases in all percentiles of a distribution whilst 
+#' preserving their trends. The observational reference used for calibration is W5E5 (Cucchi et al. 2020, https://doi.org/10.5194/essd-12-2097-2020),
+#' which was previously conservatively remapped onto a 1ºx1º regular grid. Note that spatial chunking is required to alleviate computationally costly calculations.
 
 #' @author S. Herrera
 #' @author M. Iturbide
