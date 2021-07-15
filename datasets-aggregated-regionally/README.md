@@ -20,13 +20,3 @@ WAS    | NEAF, SEAF, WCA, ECA, TIB, ARP, SAS, ARS, BOB, EIO
 CAS    | EEU, WSB, ESB, WCA, ECA, TIB, EAS, ARP
 ANT    | EAN, WAN
 AUS    | SEA, NAU, CAU, EAU, SAU, NZ
-
-Additionally, results for all CMIP6 model runs (*CMIP6Amon_Hub* version 20191028 in 'Atlas-inventory/Hub') are also available at the following links:
-
-[CMIP6Amon_pr_land.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_pr_land.zip)\
-[CMIP6Amon_pr_landsea.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_pr_landsea.zip)\
-[CMIP6Amon_pr_sea.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_pr_sea.zip)\
-[CMIP6Amon_tas_land.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_tas_land.zip)\
-[CMIP6Amon_tas_landsea.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_tas_landsea.zip)\
-[CMIP6Amon_tas_sea.zip](http://meteo.unican.es/work/IPCC_Atlas/regional_means/CMIP6Amon_tas_sea.zip)
-
