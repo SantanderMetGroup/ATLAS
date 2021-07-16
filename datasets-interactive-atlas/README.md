@@ -8,3 +8,18 @@ This repository contains all the code needed to generate the intermediate datase
 * `04_map_figures.R` generates the final figures (maps) from the NcMLs returned by `03_ensemble_building.R`.
 
 Please be aware that these four scripts must be run in the above order. All of them build upon the [climate4R framework](https://github.com/SantanderMetGroup/climate4R).
+
+## Script list
+
+ * [01_index_calculation_bias_corrected.R](./01_index_calculation_bias_corrected.R)
+ * [01_index_calculation.R](./01_index_calculation.R)
+ * [01_index_calculation_SPI.R](./01_index_calculation_SPI.R)
+ * [02_interpolation.R](./02_interpolation.R)
+ * [03_ensemble_building.R](./03_ensemble_building.R)
+ * [04_map_figures.R](./04_map_figures.R)
+ * [bias-correction](bias-correction) / [bias_correction_isimip3.R](./bias-correction/bias_correction_isimip3.R)
+ * [hatching-functions](hatching-functions) / [hatching-functions.R](./hatching-functions/hatching-functions.R)
+ * [bash-interpolation-scripts](bash-interpolation-scripts) / [AtlasCDOremappeR_CMIP6_Omon.sh](./bash-interpolation-scripts/AtlasCDOremappeR_CMIP6_Omon.sh)
+ * [bash-interpolation-scripts](bash-interpolation-scripts) / [AtlasCDOremappeR_CMIP.sh](./bash-interpolation-scripts/AtlasCDOremappeR_CMIP.sh)
+ * [bash-interpolation-scripts](bash-interpolation-scripts) / [AtlasCDOremappeR_CORDEX](./bash-interpolation-scripts/AtlasCDOremappeR_CORDEX) / [AtlasCDOremappeR_CORDEX.sh](./bash-interpolation-scripts/AtlasCDOremappeR_CORDEX/AtlasCDOremappeR_CORDEX.sh)
+ * [bash-interpolation-scripts](bash-interpolation-scripts) / [AtlasCDOremappeR_CORDEX](./bash-interpolation-scripts/AtlasCDOremappeR_CORDEX) / [grid_bounds_calc.py](./bash-interpolation-scripts/AtlasCDOremappeR_CORDEX/grid_bounds_calc.py)
