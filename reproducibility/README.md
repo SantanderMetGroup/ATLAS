@@ -1,8 +1,8 @@
-# Reproducibitily scripts
+# Reproducibility scripts
 
 to be completed
 
-## Scripts
+## Script list
 
  * [boxplots](boxplots) / [boxplots_TandP.R](./boxplots/boxplots_TandP.R)
  * [maps](maps) / [04_map_figures.R](../datasets-interactive-atlas/04_map_figures.R)
