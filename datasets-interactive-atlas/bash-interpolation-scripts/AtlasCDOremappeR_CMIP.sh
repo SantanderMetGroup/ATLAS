@@ -12,8 +12,10 @@
 #   This script interpolates CMIP5 and CMIP6 monthly output
 #   from the atmopsheric models. To run the script: 
 #   source AtlasCDOremappeR_CMIP.sh <file_to_interpolate> <name_of_the_output> <destination_mask> <source_mask>
-#   The script is based on the "doremap.sc" version 1.0 (allocated version number: 20150503), developed and tested by Mark Savenije (KNMI), Erik van Meijgaard (KNMI) and Andreas Prein (NCAR)
-# Author: J. Milovac
+#   The script is based on the "doremap.sc" version 1.0 (allocated version number: 20150503), developed and tested by Mark Savenije (KNMI), 
+#   Erik van Meijgaard (KNMI) and Andreas Prein (NCAR)
+# Authors: J. Fernández,
+#	   J. Milovac
 
 datanc=$1
 outfile=$2
@@ -38,14 +40,14 @@ if [ -z "$4" ]; then
 	LSMASK=0
 else
 	LSMASK=1
+	# When LSMASK=1, then GAP_FILL has to be defined.
+	# If GAP_FILL=1 - nearest neigbours interpolation for gap filling will be applied
+	# If GAP_FILL=0 - default unconstrained remapping for gap filling will be applied
+	GAP_FILL=0 
 fi
 
 # If SHARP_CHANGE=1, the treshold land fraction is 0.5 for changing between land and sea, otherwise is 0.999
 SHARP_CHANGE=0
-
-# If LSMASK=1, then GAP_FILL needs to be defined. If =1, then nearest neigbours interpolation for gap filling will be applied, 
-# othewise by default unconstrained remapping will be applied.
-# GAP_FILL=0 
 
 # Global destination grid map - creating weights
 cdo -P 4 gencon,${maskdestnc} -seltimestep,1 ${datanc} weights.nc
@@ -72,16 +74,16 @@ if test "${LSMASK}" -eq 1; then
   	cdo remap,${maskdestnc},weight_sea.nc sea.nc sear.nc
   	cdo ifthenelse -setmisstoc,0 ${maskdestnc} landr.nc sear.nc merged.nc
 	if test "${GAP_FILL}" -eq 1; then
-  	# Fill the gaps between land and sea by nearest neigbours
+  		# Fill the gaps between land and sea by nearest neigbours
 		cdo setmisstonn landr.nc landrfilled.nc
 		cdo setmisstonn sear.nc searfilled.nc
 		cdo ifthenelse -setmisstoc,0 ${maskdestnc} landrfilled.nc searfilled.nc ${outfile}
 	else
-  	# Fill the gaps between land and sea with unconstrained remapping (doremap preferred option)
-  	cdo setmisstoc,1 -setrtoc,-9999999,9999999,0 merged.nc gaps.nc
-  	cdo remap,${maskdestnc},weights.nc ${datanc} unconstrained.nc
-  	cdo ifthenelse gaps.nc unconstrained.nc merged.nc ${outfile}
+  		# Fill the gaps between land and sea with unconstrained remapping (doremap preferred option)
+  		cdo setmisstoc,1 -setrtoc,-9999999,9999999,0 merged.nc gaps.nc
+  		cdo remap,${maskdestnc},weights.nc ${datanc} unconstrained.nc
+  		cdo ifthenelse gaps.nc unconstrained.nc merged.nc ${outfile}
 	fi
 else
-  cdo remap,${maskdestnc},weights.nc ${datanc} ${outfile}
+  	cdo remap,${maskdestnc},weights.nc ${datanc} ${outfile}
 fi
