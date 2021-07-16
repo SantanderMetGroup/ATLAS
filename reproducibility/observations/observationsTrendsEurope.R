@@ -7,7 +7,7 @@
 
 #' @title 
 #' @description 
-#' @author M. Iturbide
+#' @author J. Baño-Medina
 
 ### Loading Libraries ------------------------------------------------------------------------------
 options(java.parameters = "-Xmx8g")
