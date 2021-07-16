@@ -47,9 +47,7 @@ The use of the **CMIP5 aggregated datasets** is unrestricted with the [CMIP5 ter
 
     We acknowledge the World Climate Research Program's Working Group on 
     Coupled Modelling, which is responsible for CMIP, and we thank the 
-    climate modeling groups (listed in the Atlas inventory folders in this 
+    climate modeling groups (listed in the Atlas data sources folders in this 
     repository) for producing and making available their model output. 
     
 Please read the following document if you are planning to use CMIP data for commercial applications: [CMIP Licensing and Access Control, by B.N. Lawrence](https://database.sirma-project.eu/csv_models/D.SIRMA-WP4-4.2-C5.L.pdf).
-
-

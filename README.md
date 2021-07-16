@@ -14,7 +14,7 @@ This repository provides the scripts and notebooks, as well as the required auxi
 
 | Directory | Contents |
 | :-------- | :------- |
-| [inventory](inventory) | Full list of model simulations used for the different experiments and scenarios, indicating the availability of the different variables
+| [data-sources](data-sources) | Full list of model simulations used for the different experiments and scenarios, indicating the availability of the different variables
 | [reference-grids](reference-grids) | Reference commensurable grids at regular 0.5&deg;, 1&deg; and 2&deg; resolutions. These are used to interpolate all variables and indices as a final processing step before analysis.
 | [reference-regions](reference-regions) | New set of reference analysis regions
 | [datasets-interactive-atlas](datasets-interactive-atlas) |  End-to-end scripts used for the preparation of the intermediate data (Interactive Atlas Dataset) underpinning the Interactive Atlas. The Interactive Atlas Dataset is formed by monthly values of CMIP5/6 and CORDEX data for different variables and indices interpolated to common reference grids. The scripts document the whole process, from data access to index calculation (and postprocessing –e.g. bias adjustment– if needed).
