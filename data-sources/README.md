@@ -10,3 +10,7 @@ Full metadata is organized as machine-readable tables in the different CMIP5, CM
 README files in the different folders provide handle and/or ESGF search links pointing to the specific datasets used.
 
 [Dataset_DOIs.html](https://raw.githack.com/IPCC-WG1/Atlas/devel/data-sources/Dataset_DOIs.html) contains a searchable table with the DOIs for all datasets that provide them. Dataset DOIs provide provenance information at the dataset level. This table feeds from the [dataset_table.csv](https://github.com/metaclip/metaclipcc/blob/master/inst/dataset_table.csv) in [metaclipcc](https://github.com/metaclip/metaclipcc).
+
+> Note:
+> 
+> This folder traces the exact version of the datasets used in the Atlas. Newer versions of these data may exist in the future for different reasons. Users should visit the ES-DOC Dataset Errata website (https://errata.es-doc.org) to check the availability of newer versions or data retractions in the datasets stored in this repository.
