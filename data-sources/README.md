@@ -2,6 +2,7 @@
 
 An inventory of the data sources of the model simulations used for the different experiments and scenarios is included here, indicating the availability of the different variables as well as auxiliary fixed fields, such as the land/sea mask (sftlf). The following documents provide a full overview of the simulations available: 
 
+ * [DOIs](https://raw.githack.com/IPCC-WG1/Atlas/devel/data-sources/dois.html)
  * [CMIP5_simulations_ATLAS.xlxs](CMIP5_simulations_ATLAS.xlxs)
  * [CMIP6_simulations_ATLAS.xlxs](CMIP6_simulations_ATLAS.xlxs)
  * [CORDEX_simulations_ATLAS.xlxs](CORDEX_simulations_ATLAS.xlxs)
