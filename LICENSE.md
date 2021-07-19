@@ -8,6 +8,8 @@ license, CC BY 4.0](https://creativecommons.org/licenses/by/4.0)**. The followin
 (and not a substitute for) the [full legal text of the CC BY 4.0
 license](https://creativecommons.org/licenses/by/4.0/legalcode).
 
+Iturbide, M., Fernández, J., Gutiérrez, J.M., Bedia, J., Cimadevilla, E., Díez-Sierra, J., Manzanas, R., Casanueva, A., Baño-Medina, J., Milovac, J., Herrera, S., Cofiño, A.S., San Martín, D., García-Díez, M., Hauser, M., Huard, D., Yelekci, Ö. (2021) Repository supporting the implementation of FAIR principles in the IPCC-WG1 Atlas. Zenodo, DOI: 10.5281/zenodo.3691645. Available from: https://github.com/IPCC-WG1/Atlas 
+
 ## Datasets aggregated regionally
 
 The **CMIP5 aggregated dataset** in this repository is distributed under under the **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0)** under the unrestricted version of the [CMIP5 terms of use](https://pcmdi.llnl.gov/mips/cmip5/terms-of-use.html). 
