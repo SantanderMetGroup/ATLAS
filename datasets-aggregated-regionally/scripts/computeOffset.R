@@ -43,10 +43,9 @@ computeOffset <- function(project,
     modelruns <- lapply(strsplit(aux, "/"), function(x) x[length(x)])
     modelruns <- gsub(paste0(project, "_|_historical|.csv"), "", modelruns)
     
-  if (project == "CMIP6") modelruns <- gsub("_", "_.*", modelruns) 
+    if (project == "CMIP6") modelruns <- gsub("_", "_.*", modelruns) 
     
     aggrfun <- "mean"
-    if (var == "pr") aggrfun <- "sum"
     out <- lapply(1:length(modelruns), function(i) {
       modelfiles <- grep(modelruns[i], allfiles, value = TRUE) 
       if (length(modelfiles) > 0) {
@@ -122,10 +121,12 @@ computeOffset <- function(project,
                       histexp <- apply(hist, MARGIN = 2, FUN = mean, na.rm = TRUE)
                     }
                     delta <- hist.pre - histexp
+                    if (var == "pr") delta <- delta / histexp * 100
                   } else {
                     message("i =", i, ".......", exp[j], "------NO DATA")
                     delta <- NA
                   }
+                  delta
                 })
                 names(l1) <- exp
                 l1
