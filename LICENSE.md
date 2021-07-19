@@ -2,48 +2,19 @@
 
 ## General terms
 
-All data, code and notebooks in this repository are
+All code and notebooks in this repository are
 made available under the [Creative Commons Attribution
 license](https://creativecommons.org/licenses/by/4.0). The following is a human-readable summary of
 (and not a substitute for) the [full legal text of the CC BY 4.0
 license](https://creativecommons.org/licenses/by/4.0/legalcode).
 
-You are free:
-
-* to **Share**---copy and redistribute the material in any medium or format
-* to **Adapt**---remix, transform, and build upon the material
-
-for any purpose, even commercially.
-
-The licensor cannot revoke these freedoms as long as you follow the
-license terms.
-
-Under the following terms:
-
-* **Attribution**---You must give appropriate credit, provide a [link to the
-  license](https://creativecommons.org/licenses/by/4.0), and indicate if changes were made. You may do
-  so in any reasonable manner, but not in any way that suggests the
-  licensor endorses you or your use.
-
-**No additional restrictions**---You may not apply legal terms or
-technological measures that legally restrict others from doing
-anything the license permits.  With the understanding that:
-
-Notices:
-
-* You do not have to comply with the license for elements of the
-  material in the public domain or where your use is permitted by an
-  applicable exception or limitation.
-* No warranties are given. The license may not give you all of the
-  permissions necessary for your intended use. For example, other
-  rights such as publicity, privacy, or moral rights may limit how you
-  use the material.
-
 ## Datasets aggregated regionally
 
-The use of the **CMIP5 aggregated datasets** is unrestricted with the [CMIP5 terms of use](https://pcmdi.llnl.gov/mips/cmip5/terms-of-use.html). 
+The **CMIP5 aggregated dataset** in this repository is distributed under under the **[Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0)** under the unrestricted version of the [CMIP5 terms of use](https://pcmdi.llnl.gov/mips/cmip5/terms-of-use.html). 
 
-**CMIP6 aggregated datasets** build on CMIP6 data and are licensed under Creative Commons [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), following the [CMIP6 Terms of Use](https://pcmdi.llnl.gov/CMIP6/TermsOfUse). Note that some models publish the data under a non-commercial license ([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)), although this is discouraged by CMIP. The license for each particular model dataset can be obtained at the [ESGF CoG portal](https://esgf-node.llnl.gov/search/cmip6) as part of the data citation information.
+The **CORDEX aggregated dataset** in this repository is distributed under under the **[Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0)** under the unrestricted version of the [CORDEX terms of use](http://is-enes-data.github.io/cordex_terms_of_use.pdf), with the exception of the simulations from the following RCMs: BOUN-RecCM4-3 model (for Central Asia and Middle East and North Africa) and RU-CORE-RegCM4-3 (for the South-East Asia domain), which are restricted to non-commertial use, acording to the [CORDEX terms of use](http://is-enes-data.github.io/cordex_terms_of_use.pdf) and, therefore, are publised under the under the **[Creative Commons Attribution NonCommercial license](https://creativecommons.org/licenses/by-nc/4.0)**. See more details at the  [COPERNICUS C3S CDS](https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cordex-domains-single-levels?tab=overview).
+
+The **CMIP6 aggregated dataset** in this repository  is distributed under the **[Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0)**. Although CMIP6 data are licensed under either Creative Commons [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) or the non-commercial version ([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)) following the [CMIP6 Terms of Use](https://pcmdi.llnl.gov/CMIP6/TermsOfUse), CMIP6 aggregated data published by IPCC-DDC (including this repository) has been waived by the CMIP6 modeling centers to use the CC-BY license. 
 
     We acknowledge the World Climate Research Program's Working Group on 
     Coupled Modelling, which is responsible for CMIP, and we thank the 
