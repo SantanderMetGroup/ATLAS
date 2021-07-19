@@ -1,7 +1,7 @@
 # Bash interpolation scripts
 Scripts used for the conservative interpolation of the CORDEX files
 
-All the raw model outputs from the CMIP5, CMIP6 and CODEX experiments have been interpolated to a common grid using the fist order conservative remapping with [cdo](https://code.mpimet.mpg.de/projects/cdo/)
+All the raw model outputs from the CMIP5, CMIP6 and CODEX experiments have been interpolated to a common grid using the fist order conservative remapping with [cdo version 1.9.8](https://code.mpimet.mpg.de/projects/cdo/)
 
 **CMIP5** data have been interpolated to the 2 degree common grid: [land_sea_mask_2degree_binary.nc4](../../reference-grids/land_sea_mask_2degree_binary.nc4)
 with [AtlasCDOremappeR_CMIP.sh](./AtlasCDOremappeR_CMIP.sh)
