@@ -282,9 +282,9 @@ while read -r fdir; do
 
 
 				if [ -f tmp.nc ] ; then
-					# if python script fix_grid.py exists in $WRKDIR 
-					if [ -f $WRKDIR/fix_grid.py ] ; then 
-						python3 $WRKDIR/fix_grid.py tmp.nc
+					# if python script grid_bounds_calc.py exists in $WRKDIR 
+					if [ -f $WRKDIR/grid_bounds_calc.py ] ; then 
+						python3 $WRKDIR/grid_bounds_calc.py tmp.nc
 						rm tmp.nc
 					else
 						# prepare the file and use "cdo griddes" function
