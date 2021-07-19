@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-[ ] Write an X between the brackets once you have checked [here](https://github.com/IPCC-WG1/Atlas/issues?q=label%3Aproblem-report) that the problem has not been reported yet. 
+ - [ ] Write an X between the brackets once you have checked [here](https://github.com/IPCC-WG1/Atlas/issues?q=label%3Aproblem-report) that the problem has not been reported yet. 
 
 **Description of the problem**
 A clear and concise description of what the problem is.
