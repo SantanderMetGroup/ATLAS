@@ -16,10 +16,10 @@ The **CORDEX aggregated dataset** in this repository is distributed under under 
 
 The **CMIP6 aggregated dataset** in this repository  is distributed under the **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0)**. Although CMIP6 data are licensed under either Creative Commons [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) or the non-commercial version ([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)) following the [CMIP6 Terms of Use](https://pcmdi.llnl.gov/CMIP6/TermsOfUse), CMIP6 aggregated data published by IPCC-DDC (including this repository) has been waived by the CMIP6 modeling centers to use the CC-BY license. 
 
->    We acknowledge the World Climate Research Program's Working Group on 
+>   We acknowledge the World Climate Research Program's Working Group on 
     Coupled Modelling, which is responsible for CMIP, and we thank the 
-    climate modeling groups (listed in the Atlas data sources folders in this 
-    repository) for producing and making available their model output. 
+    climate modeling groups (listed in Supplementary Material of the 
+    AR6 WGI Atlas chapter) for producing and making available their model output. 
 >    
 >    We acknowledge the World Climate Research Programme's Working Group on 
     Regional Climate, and the Working Group on Coupled Modelling, former coordinating 
