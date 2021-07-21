@@ -10,7 +10,7 @@ license, CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode)**. Pl
 
 ### Datasets aggregated regionally
 
-The **[W5E5](https://doi.org/10.5880/pik.2019.023)** (WFDE5 over land merged with ERA5 over the ocean) dataset is distributed under under the **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0)**
+The **[W5E5](https://doi.org/10.5880/pik.2019.023)** (WFDE5 over land merged with ERA5 over the ocean) dataset is distributed under under the **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0)** license.
 
 The **CMIP5 aggregated dataset** in this repository is distributed under the **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0)** under the unrestricted version of the [CMIP5 terms of use](https://pcmdi.llnl.gov/mips/cmip5/terms-of-use.html). 
 
