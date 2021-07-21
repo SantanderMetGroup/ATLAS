@@ -12,7 +12,7 @@ license, CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode)**. Pl
 
 The **[W5E5](https://doi.org/10.5880/pik.2019.023)** (WFDE5 over land merged with ERA5 over the ocean) dataset is distributed under under the **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0)**
 
-The **CMIP5 aggregated dataset** in this repository is distributed under under the **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0)** under the unrestricted version of the [CMIP5 terms of use](https://pcmdi.llnl.gov/mips/cmip5/terms-of-use.html). 
+The **CMIP5 aggregated dataset** in this repository is distributed under the **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0)** under the unrestricted version of the [CMIP5 terms of use](https://pcmdi.llnl.gov/mips/cmip5/terms-of-use.html). 
 
 The **CORDEX aggregated dataset** in this repository is distributed under under the **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0)** under the unrestricted version of the [CORDEX terms of use](http://is-enes-data.github.io/cordex_terms_of_use.pdf), with the exception of the simulations from the following RCMs: BOUN-RecCM4-3 model (for Central Asia and Middle East and North Africa) and RU-CORE-RegCM4-3 (for the South-East Asia domain), which are restricted to non-commertial use, according to the [CORDEX terms of use](http://is-enes-data.github.io/cordex_terms_of_use.pdf) and, therefore, are published under the under the **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0)**. See more details at the [COPERNICUS C3S CDS](https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cordex-domains-single-levels?tab=overview).
 
