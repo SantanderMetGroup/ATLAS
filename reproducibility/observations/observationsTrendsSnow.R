@@ -5,8 +5,17 @@
 # This work is licensed under a Creative Commons Attribution 4.0 International
 # License (CC BY 4.0 - http://creativecommons.org/licenses/by/4.0)
 
-#' @title 
+#' @title Observational linear trends for snow indices
 #' @description 
+#' This script aims to compute the linear trends (rate of change per decade) for 1) the maximum yearly snow height, and 2) the
+#' snow duration, over a large area of the European and Asian continent (former USSR territories)
+#' for the period 1980-2015. The latter metric is computed separately for the two halfs of the year 
+#' (Jan-Jun, Jul-Dec). We use the observational dataset Roshydromet, which consists of a set 
+#' of temporal records at station-scale, most of them appearing in the Global Climate Observation Network. 
+#' 
+#' The final results of this script are spatial representations of the mentioned trends, which are
+#' saved as .pdf files.
+#'  
 #' @author J. Baño-Medina
 
 ### Loading Libraries ------------------------------------------------------------------------------
@@ -20,21 +29,18 @@ library(gridExtra) # plotting functionalities
 library(sp) # plotting functionalities
 library(RColorBrewer)  # plotting functionalities e.g., color palettes
 library(rgdal)
-setwd("/Users/jorgebanomedina//Desktop/IPCC/")
+setwd("local_path/")
 
 
 ### Loading the IPCC regions ------------------------------------------------------------------------------
-regs <- get(load(url("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/master/reference-regions/IPCC-WGI-reference-regions-v4_R.rda")))
+regs <- get(load("../../reference-regions/IPCC-WGI-reference-regions-v4_R.rda"))
 regs <- as(regs, "SpatialPolygons")
 regs.area <- c("RAR","EEU","WSB","ESB","RFE","WCA","NEU","WCE","ECA","EAS")
 
 ### Loading data ------------------------------------------------------------------------------
-snowH <- loadStationData(dataset = "NorthAsia/datasets/", var = "snowheight", years = 1980:2015) 
+snowH <- loadStationData(dataset = "dataset_path", var = "snowheight", years = 1980:2015) 
 mask <-  binaryGrid(snowH, condition = "GE", threshold = 9999, values = c(1,NA))
 snowH %<>% gridArithmetics(mask) %>% gridArithmetics(10)
-snowC <- loadStationData(dataset = "NorthAsia/datasets/", var = "snowcover", years = 1980:2015) 
-mask <- binaryGrid(snowC, condition = "GE", threshold = 990, values = c(1,NA))
-snowC %<>% gridArithmetics(mask) %>% binaryGrid(condition = "GT", threshold = 0)
 
 ### Compute Maximum yearly snow height (and trends) ------------------------------------------------------------------------------
 # Maximum snow height ------------------------------------------------------------------------------
@@ -68,7 +74,7 @@ spatialPlot(lt, backdrop.theme = "coastline", main = "Linear trend of the maximu
 dev.off()
 
 ### Snow duration (Jan-Jun) ------------------------------------------------------------------------------
-snowH <- loadStationData(dataset = "NorthAsia/datasets/", var = "snowheight", years = 1980:2015) %>% subsetGrid(season = 1:6)
+snowH <- loadStationData(dataset = "dataset_path", var = "snowheight", years = 1980:2015) %>% subsetGrid(season = 1:6)
 mask <-  binaryGrid(snowH, condition = "GE", threshold = 9999, values = c(1,NA))
 snowH %<>% gridArithmetics(mask) %>% binaryGrid(condition = "GT", threshold = 0) %>% aggregateGrid(aggr.y = list(FUN = "sum", na.rm = TRUE))
 
@@ -97,7 +103,7 @@ spatialPlot(lt, backdrop.theme = "coastline", main = "Linear trend of Jan-Jun sn
 dev.off()
 
 ### Snow duration (Jul-Dec) ------------------------------------------------------------------------------
-snowH <- loadStationData(dataset = "NorthAsia/datasets/", var = "snowheight", years = 1980:2015) %>% subsetGrid(season = 7:12)
+snowH <- loadStationData(dataset = "dataset_path", var = "snowheight", years = 1980:2015) %>% subsetGrid(season = 7:12)
 mask <-  binaryGrid(snowH, condition = "GE", threshold = 9999, values = c(1,NA))
 snowH %<>% gridArithmetics(mask) %>% binaryGrid(condition = "GT", threshold = 0) %>% aggregateGrid(aggr.y = list(FUN = "sum", na.rm = TRUE))
 

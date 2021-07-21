@@ -5,8 +5,13 @@
 # This work is licensed under a Creative Commons Attribution 4.0 International
 # License (CC BY 4.0 - http://creativecommons.org/licenses/by/4.0)
 
-#' @title 
+#' @title Yearly anomalies temporal series for observational datasets over the European IPCC regions
 #' @description 
+#' This script aims to compute the temporal series of the yearly anomalies of precipitation and air surface temperature. We build on three
+#' observational datasets for each of the two variables of interest, and show the series obtained for the four European IPCC regions.
+#' Moreover, we include in these temporal plots the linear trends of these series each of the variables, datasets and regions. 
+#' We included a parameter setting in the first part of the script that permits to change certain aspects of the series 
+#' (variable, temporal period), and of the graphical components (scale, text).
 #' @author J. Baño-Medina
 
 ### Loading Libraries ------------------------------------------------------------------------------
@@ -21,34 +26,34 @@ library(gridExtra) # plotting functionalities
 library(sp) # plotting functionalities
 library(RColorBrewer)  # plotting functionalities e.g., color palettes
 library(rgdal)
+setwd("local_path/")
 
 ### Loading the IPCC regions and the mask ------------------------------------------------------------------------------
-regs <- get(load(url("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/master/reference-regions/IPCC-WGI-reference-regions-v4_R.rda")))
+regs <- get(load("../../reference-regions/IPCC-WGI-reference-regions-v4_R.rda"))
 regs <- as(regs, "SpatialPolygons")
 
-### Parameter Setting ------------------------------------------------------------------------------
+### Parameter Setting (start) ------------------------------------------------------------------------------
 regs.area <- c("MED", "WCE", "NEU", "EEU") # Europe regions
-mask.file <- "Desktop/IPCC/Europe/land_sea_mask_025degree_EOBS.nc4" # mask Europe
 latLim <- c(28,74) ; lonLim <- c(-12,60) # Europe
 cols <- c("black","blue","green","red")
 ### PRCPTOT -------------
 var <-  "prcptot"
 datasets <- c("CRU_TS_v4.04","GPCC_v2020","GPCP_v2.3","EOBS_v21.0e")
 years <- list(1901:2019,1901:2019,1979:2020,1950:2019)
-pdfName <- "./Desktop/IPCC/temporalSerie_Europe_pr.pdf"
 title <- "Annual mean precipitation (mm/day)"
 ylim <- c(-1.5,1.5)
 ### TAS -------------
 var <-  "tas"
 datasets <- c("BerkeleyEarth","CRU_TS_v4.04","ERA5","EOBS_v21.0e") # Europe TAS
 years <- list(1901:2020,1901:2019,1979:2020,1950:2019) # Europe  TAS
-pdfName <- "./Desktop/IPCC/temporalSerie_Europe_tas.pdf"
 title <- "Annual mean temperature (deg/day)"
 ylim = c(-3,3)
+### Parameter Setting (end) ------------------------------------------------------------------------------
 
 ### Loading the data and computing the trends ------------------------------------------------------------------------------
-mask <- loadGridData(dataset = mask.file, var = "lsm", latLim = latLim, lonLim = lonLim) %>% binaryGrid(threshold = 0, condition = "GT", values = c(NaN,1))
-labels <- paste0("oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/data/OBSERVATIONS/",var,"/ncml/",datasets,"_",var,".ncml")
+mask <- loadGridData(dataset = "../../reference-grids/special-masks/land_sea_mask_025degree_EOBS_EuropeOnly.nc4", var = "lsm", latLim = latLim, lonLim = lonLim) %>% 
+  binaryGrid(threshold = 0, condition = "GT", values = c(NaN,1))
+labels <- c("dataset1_path","dataset2_path","dataset3_path")
 
 grid <- lapply(1:length(labels), FUN = function(z) {
 
@@ -72,6 +77,6 @@ figs <- lapply(1:length(grid[[1]]), FUN = function(x) {
   names(gridplots) <- datasets
   temporalPlot(gridplots, cols = cols, xyplot.custom = list(main = paste(title, regs.area[x]), ylim = ylim, key = key.trans))
 })
-pdf(pdfName, width = 15, height = 10)
+pdf(paste0("temporalSerie_Europe_",var,".pdf"), width = 15, height = 10)
 grid.arrange(grobs = figs, ncol = 2)
 dev.off() 

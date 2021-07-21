@@ -5,8 +5,15 @@
 # This work is licensed under a Creative Commons Attribution 4.0 International
 # License (CC BY 4.0 - http://creativecommons.org/licenses/by/4.0)
 
-#' @title 
+#' @title E-OBS linear trends over Europe for precipitation and air surface temperature
 #' @description 
+#' This script aims to compute the linear trends (rate of change per decade) for the mean annual precipitation and air surface
+#' temperature for the E-OBS dataset over Europe. We also calculate the p-values associated to
+#' these trends, ---in order to measure their statistical significance based on a significane level
+#' of 0.1,--- and use hatching to incorporate this information in the spatial plots (i.e., hatching whenever p-value >= 0.1). 
+#' In addition, we included a parameter setting in the first part of the script that permits to change certain aspects of the trends 
+#' (variable, temporal period), the graphical components (color scale, colorbar, text), 
+#' and the resolution of the hatching.
 #' @author J. Baño-Medina
 
 ### Loading Libraries ------------------------------------------------------------------------------
@@ -21,16 +28,17 @@ library(gridExtra) # plotting functionalities
 library(sp) # plotting functionalities
 library(RColorBrewer)  # plotting functionalities e.g., color palettes
 library(rgdal)
+setwd("local_path/")
 
 ### Loading the IPCC regions ------------------------------------------------------------------------------
-coast <- readOGR("Desktop/IPCC/WORLD_coastline.shp") 
-regs <- get(load(url("https://raw.githubusercontent.com/SantanderMetGroup/ATLAS/master/reference-regions/IPCC-WGI-reference-regions-v4_R.rda")))
+coast <- readOGR("../../notebooks/auxiliary-material/WORLD_coastline.shp") 
+regs <- get(load("../../reference-regions/IPCC-WGI-reference-regions-v4_R.rda"))
 regs <- as(regs, "SpatialPolygons")
 
-### Parameter Setting ------------------------------------------------------------------------------
+### Parameter Setting (start) ------------------------------------------------------------------------------
 regs.area <- c("MED", "WCE", "NEU", "EEU") # Europe regions
-mask.file <- "Desktop/IPCC/Europe/land_sea_mask_025degree_EOBS.nc4" # mask Europe
 dataset <- "EOBS_v21.0e" 
+years <- list(1980:2015,"1980-2015")
 latLim <- c(28,74) ; lonLim <- c(-12,60) # Europe
 ### PRCPTOT -------------
 var <-  "prcptot"
@@ -42,17 +50,14 @@ var <-  "tas"
 colorScale_trends <- seq(-0.7, 0.7, 0.025) # TAS
 colorPalette <- rev(brewer.pal(n = 9, "RdBu")) %>% colorRampPalette() # TAS
 title <- "Lin. trends of the annual mean tempearture (deg/day per decade)" # TAS
-
+### Parameter Setting (end) ------------------------------------------------------------------------------
 
 ### We load the data and compute the trends ------------------------------------------------------------------------------
-mask <- loadGridData(dataset = mask.file, var = "lsm", latLim = latLim, lonLim = lonLim) %>% binaryGrid(threshold = 0, condition = "GT", values = c(NaN,1))
-label <- paste0("oceano/gmeteo/WORK/PROYECTOS/2018_IPCC/data/OBSERVATIONS/",var,"/ncml/",dataset,"_",var,".ncml")
-years <- list(1980:2015,"1980-2015")
-# years <- list(1980:2019,"1980-2019")
-
+mask <- loadGridData(dataset = "../../reference-grids/special-masks/land_sea_mask_025degree_EOBS_EuropeOnly.nc4", var = "lsm", latLim = latLim, lonLim = lonLim) %>% 
+  binaryGrid(threshold = 0, condition = "GT", values = c(NaN,1))
 
 ### We load the data ------------------------------------------------------------------------------
-grid <- loadGridData(dataset = label, var = var, years = years[[1]], latLim = latLim, lonLim = lonLim) %>% 
+grid <- loadGridData(dataset = "dataset_path", var = var, years = years[[1]], latLim = latLim, lonLim = lonLim) %>% 
   aggregateGrid(aggr.y = list(FUN = "mean", na.rm = TRUE)) 
 grid <- lapply(unique(getYearsAsINDEX(grid)), FUN = function(zz) subsetGrid(grid, years = zz) %>% gridArithmetics(mask)) %>% bindGrid(dimension = "time")
 attr(grid$xyCoords, "projection") <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"  
@@ -75,7 +80,7 @@ l <- lapply(c("45","-45"), FUN = function(z) {
 })
 
 ### We depict the spatial maps ------------------------------------------------------------------------------
-pdf(paste0("Desktop/IPCC/spatialMap_EOBS_",var,"_",years[[2]],"_hatching1º.pdf"))
+pdf(paste0("spatialMap_EOBS_",var,"_",years[[2]],".pdf"))
 spatialPlot(trendGrid, 
             col.regions = colorPalette,
             at = colorScale_trends, 
