@@ -75,7 +75,7 @@ ylim <- c(-1.5,1.5)
 
 Resulting in the following series:
 
-<img src="serie_pr_europeMED.png" align="left" alt="" width="600" />
+[](serie_pr_europeMED.png" align="left" alt="" width="600")
 
 
 
