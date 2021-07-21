@@ -12,6 +12,6 @@ This repository is frozen, and does not accept any further contribution. However
 
 Problem reports are welcome in this repository, though. They will serve as errata page. To report a problem, please:
 
- 1. Make sure that the problem has not been reported yet. Check [here](https://github.com/IPCC-WG1/Atlas/issues?q=label%3Aproblem-report).
- 2. Follow [this GitHub issue template](https://github.com/IPCC-WG1/Atlas/issues/new?labels=problem-report&template=problem-report.md).
+ 1. Make sure that the problem has not been reported yet. Check [here](https://github.com/IPCC-WG1/Atlas/issues?q=label%3Aerrata).
+ 2. Follow [this GitHub issue template](https://github.com/IPCC-WG1/Atlas/issues/new?labels=errata&template=problem-report.md).
 
