@@ -32,7 +32,9 @@ d <- 4
 ```
 
 Will result in the following spatial plot:
-![.]("trend_pr_global_GPCC.png")
+
+<img src="trend_pr_global_GPCC.png"  alt="" width="600" />
+
 
 
 
