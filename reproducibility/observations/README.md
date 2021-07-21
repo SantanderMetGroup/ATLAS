@@ -33,7 +33,7 @@ d <- 4
 
 Will result in the following spatial plot:
 
-<img src="trend_pr_global_GPCC.png" align="left" alt="" width="600" />
+[]("trend_pr_global_GPCC.png")
 
 
 Following this idea, for a particular parameter configuration in `observationsTrendsEurope.R`
@@ -75,7 +75,9 @@ ylim <- c(-1.5,1.5)
 
 Resulting in the following series:
 
-[](serie_pr_europeMED.png" align="left" alt="" width="600")
+<img src="trend_pr_europe_E-OBS.png" align="left" alt="" width="600" />
+
+[.]("serie_pr_europeMED.png" align="left" alt="" width="600")
 
 
 
