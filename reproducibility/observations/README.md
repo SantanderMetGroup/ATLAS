@@ -56,7 +56,7 @@ title <- "Lin. trends of the annual mean precipitation (mm/day per decade)"
 
 We will obtain the following spatial plot, which shows linear trends for annual mean precipitation over Europe:
 
-<img src="trend_pr_europe_E-OBS.png" align="left" alt="" width="600" />
+<img src="trend_pr_europe_E-OBS.png" alt="" width="600" />
 
 
 The latter spatial plot is accompanied by temporal series of four observational datasets, which can be obtained in `observationsSeriesEurope.R`. We show the case for the MED European IPCC region, by setting the following parameter configuration:
@@ -77,13 +77,13 @@ ylim <- c(-1.5,1.5)
 
 Resulting in the following series:
 
-<img src="serie_pr_europeMED.png" align="left" alt="" width="600" />
+<img src="serie_pr_europeMED.png"  alt="" width="600" />
 
 
 The script `observationsTrendsSnow.R` provide, for instance, the following figure:
 
 
-<img src="trend_snow_northAsia.png" align="left" alt="" width="600" />
+<img src="trend_snow_northAsia.png"  alt="" width="600" />
 
 
 
