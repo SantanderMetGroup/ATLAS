@@ -2,7 +2,7 @@
 name: Problem report
 about: Report problems found
 title: ''
-labels: problem-report
+labels: errata
 assignees: ''
 
 ---
