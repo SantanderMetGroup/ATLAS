@@ -32,3 +32,6 @@ The **CMIP6 aggregated dataset** in this repository  is distributed under the **
     Program for Climate Model Diagnosis and Intercomparison, the European Network for Earth 
     System Modelling and other partners in the Global Organisation for 
     Earth System Science Portals (GO-ESSP).
+>
+>   We acknowledge the Copernicus Climate Change Service (C3S) and the Potsdam Institute for 
+>   Climate Impact Research for producing and making available the W5E5 dataset.
