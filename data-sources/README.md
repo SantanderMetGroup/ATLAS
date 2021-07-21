@@ -17,3 +17,4 @@ README files in the different folders provide handle and/or ESGF search links po
 
 
 Broadly speaking, throughout this repository the term CMIP6 has been used mostly in reference to  the Scenario Model Intercomparison (ScenarioMIP). However, please note that other CMIP6-Endorsed MIPs are also included here, namely CORDEX (Coordinated Regional Climate Downscaling Experiment) and PMIP (Palaeoclimate Modelling Intercomparison Project).
+https://doi.org/10.5194/gmd-11-3659-2018
