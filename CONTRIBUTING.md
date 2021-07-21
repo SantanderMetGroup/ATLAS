@@ -2,7 +2,7 @@
 
 # Errata and contributing to this activity 
 
-This repository supporting AR6 WGI is frozen, and does not accept any further contribution. Problem reports are welcome and will serve as errata page. To report a problem, please:
+This repository supporting AR6 WGI is frozen, and does not accept any further contribution. Error reports are welcome and will inform the errata page. To report a problem, please:
  1. Make sure that the problem has not been reported yet. Check [here](https://github.com/IPCC-WG1/Atlas/issues?q=label%3Aerrata).
  2. Follow [this GitHub issue template](https://github.com/IPCC-WG1/Atlas/issues/new?labels=errata&template=problem-report.md).
 
