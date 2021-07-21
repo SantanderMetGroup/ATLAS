@@ -7,9 +7,9 @@
 
 #' @title Yearly anomalies temporal series for observational datasets over the European IPCC regions
 #' @description 
-#' This script aims to compute the temporal series of the yearly anomalies of precipitation and air surface temperature. We build on three
+#' This script aims to compute the temporal series of the yearly anomalies of precipitation and air surface temperature. We build on four
 #' observational datasets for each of the two variables of interest, and show the series obtained for the four European IPCC regions.
-#' Moreover, we include in these temporal plots the linear trends of these series each of the variables, datasets and regions. 
+#' Moreover, we include in these temporal plots the linear trends of these series for each of the variables, datasets and regions. 
 #' We included a parameter setting in the first part of the script that permits to change certain aspects of the series 
 #' (variable, temporal period), and of the graphical components (scale, text).
 #' @author J. Baño-Medina

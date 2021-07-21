@@ -49,7 +49,7 @@ regs.rob <- spTransform(regs, CRS("+proj=robin +lon_0=0 +x_0=0 +y_0=0 +datum=WGS
 ### Parameter Setting (start) ------------------------------------------------------------------------------
 ### PRCPTOT ---------
 var <-  "prcptot"
-datasets <- c("CRU_TS_v4.04","GPCC_v2020") # NorthAmerica PRCPTOT
+datasets <- c("CRU_TS_v4.04","GPCC_v2020") # PRCPTOT
 colorScale_trends <- seq(-0.25, 0.25, length.out = 11) # PRCPTOT
 colorPalette <- brewer.pal(n = 10, "BrBG") %>% colorRampPalette() # PRCPTOT
 title <- "Lin. trends of the annual mean precipitation (mm/day per decade)" # PRCPTOT
@@ -64,10 +64,11 @@ d <- c(8,4,1)
 ### Select the temporal period ----------------
 years <- list(1961:2015,"1961-2015")
 ### Parameter Setting (end) ------------------------------------------------------------------------------
+label <- c("dataset1_path","dataset2_path")
 figs <- lapply(1:length(label), FUN = function(z) {
   
   ### We load the data ------------------------------------------------------------------------------
-  grid <- loadGridData(dataset = "dataset_path", var = var, years = years[[1]]) %>% 
+  grid <- loadGridData(dataset = label[z], var = var, years = years[[1]]) %>% 
     aggregateGrid(aggr.y = list(FUN = "mean", na.rm = TRUE))
   attr(grid$xyCoords, "projection") <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"  
   ### We compute the trends and the p-values for each IPCC region ------------------------------------------------------------------------------
