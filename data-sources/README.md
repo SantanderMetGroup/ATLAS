@@ -14,3 +14,6 @@ README files in the different folders provide handle and/or ESGF search links po
 > Note:
 > 
 > This folder traces the exact version of the datasets used in the Atlas. Newer versions of these data may exist in the future for different reasons. Users should visit the ES-DOC Dataset Errata website (https://errata.es-doc.org) to check the availability of newer versions or data retractions in the datasets stored in this repository.
+
+
+Broadly speaking, throughout this repository the term CMIP6 has been used mostly in reference to  the Scenario Model Intercomparison (ScenarioMIP). However, please note that other CMIP6-Endorsed MIPs are also included here, namely CORDEX (Coordinated Regional Climate Downscaling Experiment) and PMIP (Palaeoclimate Modelling Intercomparison Project).
