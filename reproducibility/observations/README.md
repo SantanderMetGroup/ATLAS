@@ -32,9 +32,8 @@ d <- 4
 ```
 
 Will result in the following spatial plot:
-```r
-knitr::include_graphics("trend_pr_global_GPCC.png")
-```
+![]("trend_pr_global_GPCC.png")
+
 
 
 Following this idea, for a particular parameter configuration in `observationsTrendsEurope.R`
