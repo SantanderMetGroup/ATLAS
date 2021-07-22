@@ -22,7 +22,7 @@ source("getGWL.R")
 # Parameter settings
 #
 gwls <- c(1.5, 2 ,3, 4)
-cmip <- "CMIP5"
+cmip <- "CMIP6"
 return.interval <- FALSE # Logical flag, indicating if the table should display
                          # central year and interval, or central year only
 #
