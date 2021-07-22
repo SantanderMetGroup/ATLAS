@@ -14,6 +14,8 @@
 
 library(magrittr)
 library(httr)
+
+# Assume current directory: ./warming-levels/scripts
 source("getGWL.R")
 
 #
@@ -57,7 +59,7 @@ l <- lapply(1:length(modelruns), function(i) {
         rcp <- tryCatch({
             grep(exp[[cmip]][j], modelfiles, value = TRUE) %>% world.annual.mean() 
         }, error = function(err) return(NaN))
-        if (is.nan(rcp)) {
+        if (any(is.nan(rcp))) {
             return(rep("9999", length(gwls)))
         } else {
             tas <- append(hist, rcp)
@@ -88,7 +90,7 @@ colnames(dat) <- cnames
 # Dump CSV file
 #
 write.table(
-    data.frame("model_run"=rownames(dat),dat, check.names = FALSE),
+    data.frame("model_run" = rownames(dat), dat, check.names = FALSE),
     file = sprintf("%s_Atlas_WarmingLevels.csv", cmip),
     quote = FALSE, sep = ",", row.names = FALSE
 )
