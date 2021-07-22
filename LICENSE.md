@@ -2,54 +2,36 @@
 
 ## General terms
 
-All data, code and notebooks in this repository are
-made available under the [Creative Commons Attribution
-license](https://creativecommons.org/licenses/by/4.0). The following is a human-readable summary of
-(and not a substitute for) the [full legal text of the CC BY 4.0
-license](https://creativecommons.org/licenses/by/4.0/legalcode).
+All code, notebooks and datasets (with the CORDEX exceptions below) in this repository are
+made available under the **[Creative Commons Attribution
+license, CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode)**. Please use the following reference when using these resources:
 
-You are free:
+> Iturbide, M., Fernández, J., Gutiérrez, J.M., Bedia, J., Cimadevilla, E., Díez-Sierra, J., Manzanas, R., Casanueva, A., Baño-Medina, J., Milovac, J., Herrera, S., Cofiño, A.S., San Martín, D., García-Díez, M., Hauser, M., Huard, D., Yelekci, Ö. (2021) Repository supporting the implementation of FAIR principles in the IPCC-WG1 Atlas. Zenodo, DOI: 10.5281/zenodo.3691645. Available from: https://github.com/IPCC-WG1/Atlas 
 
-* to **Share**---copy and redistribute the material in any medium or format
-* to **Adapt**---remix, transform, and build upon the material
+### Datasets aggregated regionally
 
-for any purpose, even commercially.
+The **[W5E5](https://doi.org/10.5880/pik.2019.023)** (WFDE5 over land merged with ERA5 over the ocean) dataset is distributed under under the **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0)** license.
 
-The licensor cannot revoke these freedoms as long as you follow the
-license terms.
+The **CMIP5 aggregated dataset** in this repository is distributed under the **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0)** under the unrestricted version of the [CMIP5 terms of use](https://pcmdi.llnl.gov/mips/cmip5/terms-of-use.html). 
 
-Under the following terms:
+The **CORDEX aggregated dataset** in this repository is distributed under under the **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0)** under the unrestricted version of the [CORDEX terms of use](http://is-enes-data.github.io/cordex_terms_of_use.pdf), with the exception of the simulations from the following RCMs: BOUN-RecCM4-3 model (for Central Asia and Middle East and North Africa) and RU-CORE-RegCM4-3 (for the South-East Asia domain), which are restricted to non-commertial use, according to the [CORDEX terms of use](http://is-enes-data.github.io/cordex_terms_of_use.pdf) and, therefore, are published under the under the **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0)**. See more details at the [COPERNICUS C3S CDS](https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cordex-domains-single-levels?tab=overview).
 
-* **Attribution**---You must give appropriate credit, provide a [link to the
-  license](https://creativecommons.org/licenses/by/4.0), and indicate if changes were made. You may do
-  so in any reasonable manner, but not in any way that suggests the
-  licensor endorses you or your use.
+The **CMIP6 aggregated dataset** in this repository  is distributed under the **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0)**. Although CMIP6 data are licensed under either Creative Commons [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) or the non-commercial version ([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)) following the [CMIP6 Terms of Use](https://pcmdi.llnl.gov/CMIP6/TermsOfUse), CMIP6 aggregated data published by IPCC-DDC (including this repository) has been waived by the CMIP6 modeling centers to use the CC-BY license. 
 
-**No additional restrictions**---You may not apply legal terms or
-technological measures that legally restrict others from doing
-anything the license permits.  With the understanding that:
-
-Notices:
-
-* You do not have to comply with the license for elements of the
-  material in the public domain or where your use is permitted by an
-  applicable exception or limitation.
-* No warranties are given. The license may not give you all of the
-  permissions necessary for your intended use. For example, other
-  rights such as publicity, privacy, or moral rights may limit how you
-  use the material.
-
-## Datasets aggregated regionally
-
-The use of the **CMIP5 aggregated datasets** is unrestricted with the [CMIP5 terms of use](https://pcmdi.llnl.gov/mips/cmip5/terms-of-use.html). 
-
-**CMIP6 aggregated datasets** build on CMIP6 data and are licensed under Creative Commons [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), following the [CMIP6 Terms of Use](https://pcmdi.llnl.gov/CMIP6/TermsOfUse). Note that some models publish the data under a non-commercial license ([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)), although this is discouraged by CMIP. The license for each particular model dataset can be obtained at the [ESGF CoG portal](https://esgf-node.llnl.gov/search/cmip6) as part of the data citation information.
-
-    We acknowledge the World Climate Research Program's Working Group on 
+>   We acknowledge the World Climate Research Program's Working Group on 
     Coupled Modelling, which is responsible for CMIP, and we thank the 
-    climate modeling groups (listed in the Atlas inventory folders in this 
-    repository) for producing and making available their model output. 
-    
-Please read the following document if you are planning to use CMIP data for commercial applications: [CMIP Licensing and Access Control, by B.N. Lawrence](https://database.sirma-project.eu/csv_models/D.SIRMA-WP4-4.2-C5.L.pdf).
-
-
+    climate modeling groups (listed in Supplementary Material of the 
+    AR6 WGI Atlas chapter) for producing and making available their model output. 
+>    
+>   We acknowledge the World Climate Research Programme's Working Group on 
+    Regional Climate, and the Working Group on Coupled Modelling, former coordinating 
+    body of CORDEX and responsible panel for CMIP5. We also thank the climate modelling 
+    groups (listed in Supplementary Material of the AR6 WGI Atlas chapter) for producing 
+    and making available their model output. We also acknowledge the Earth System Grid 
+    Federation infrastructure an international effort led by the U.S. Department of Energy's 
+    Program for Climate Model Diagnosis and Intercomparison, the European Network for Earth 
+    System Modelling and other partners in the Global Organisation for 
+    Earth System Science Portals (GO-ESSP).
+>
+>   We acknowledge the Copernicus Climate Change Service (C3S) and the Potsdam Institute for 
+>   Climate Impact Research for producing and making available the W5E5 dataset.
