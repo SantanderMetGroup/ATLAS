@@ -39,6 +39,8 @@ Besides the analysis of time-slices (e.g. near-, mid- and long-term, 2021-2040, 
 Scripts and (jupyter) notebooks are provided in the different sections to ensure reproducibility and reusability of the results.
 Most of this code builds on the climate4R R package, allowing for transparent climate data access, collocation, post-processing (including bias adjustment) and visualization. The code runs on climate4R release v1.5.1. Check https://github.com/SantanderMetGroup/climate4R/releases/tag/v1.5.1 for specific library versions in this release. These depend on a wealth of [other R packages](https://github.com/SantanderMetGroup/climate4R/blob/devel/conda-full/meta.yaml). Additionally, [Jupyter](https://jupyter.org) should also be available with the [R kernel](https://irkernel.github.io/installation) enabled. The simplest way to match all these requirements is by using a dedicated [conda](https://docs.conda.io) environment, which can be easily installed by issuing:
 ```sh
+conda create -n climate4R
+conda activate climate4R
 conda install -n climate4R -c conda-forge -c r -c defaults -c santandermetgroup climate4r=1.5.1
 ```
 
