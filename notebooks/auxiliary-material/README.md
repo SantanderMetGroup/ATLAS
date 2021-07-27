@@ -11,7 +11,7 @@ The files you can find here are:
         CMIP6Amon_tas_CanESM5_r1i1p1f1_historical_gn_185001-201412.nc
 
  * NetCDF files storing data which can be accessed from the [Santander Meteorology Group UDG-TAP](http://meteo.unican.es/udg-tap/home), 
- but are included here for the sake of time. Instructions to create this objects are nevertheless provided in the corresponding notebooks.
+ but are included here for the sake of time. Instructions to create these objects are nevertheless provided in the corresponding notebooks.
    
         CMIP5_EC-EARTH_r12i1p1_historical_IP_tas-tasmin-tasmax_1986-2005_JJA.nc
         CMIP5_EC-EARTH_r12i1p1_rcp85_IP_tas-tasmin-tasmax_2041-2060_JJA.nc
