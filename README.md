@@ -52,4 +52,4 @@ To start exploring the binder interface, just click [![Binder](https://mybinder.
 
 ## Errata and problem reporting
 
-The [errata](ERRATA.MD) of the  Atlas covers both the content (products, such as plots and data) and the application/platform, as well as this GitHub repository supporting reproducibility and reusability. The existing products are frozen and the issues reported are documented in the errata list. Technical problems are listed separately in the technical issues and those not affecting the products could be fixed and documented.
+The [errata](./ERRATA.md) of the  Atlas covers both the content (products, such as plots and data) and the application/platform, as well as this GitHub repository supporting reproducibility and reusability. The existing products are frozen and the issues reported are documented in the errata list. Technical problems are listed separately in the technical issues and those not affecting the products could be fixed and documented.
