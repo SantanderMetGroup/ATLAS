@@ -2,7 +2,7 @@
 
 # Errata and problem reporting
 
-The “errata” of the [Interactive Atlas](http://interactive-atlas.ipcc.ch) covers both the content (products, such as plots and data) and the application/platform, as well as this GitHub repository supporting reproducibility and reusability. The existing products are frozen and the issues reported are documented in the [errata list](https://github.com/IPCC-WG1/Atlas/issues?q=label%3Aerrata). Technical problems are listed separately in the [technical issues](https://github.com/IPCC-WG1/Atlas/issues?q=label%3Aproblem) and those not affecting the products could be fixed and documented. 
+The *errata* of the Atlas covers both the content (products, such as plots and data) and the application/platform of the [Interactive Atlas](http://interactive-atlas.ipcc.ch), as well as this GitHub repository supporting reproducibility and reusability. The existing products are frozen and the issues reported are documented in the [errata list](https://github.com/IPCC-WG1/Atlas/issues?q=label%3Aerrata). Technical problems are listed separately in the [technical issues](https://github.com/IPCC-WG1/Atlas/issues?q=label%3Aproblem) and those not affecting the products could be fixed and documented. 
 
 To report an issue with the products (plots and data), please:
  1. Make sure that the problem has not been reported yet. Check [here](https://github.com/IPCC-WG1/Atlas/issues?q=label%3Aerrata).
