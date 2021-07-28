@@ -50,6 +50,6 @@ A much straigtforward way to explore and interact with this repository is throug
 
 To start exploring the binder interface, just click [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SantanderMetGroup/binder-atlas/master?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FIPCC-WG1%252FAtlas%26urlpath%3Dlab%252Ftree%252FAtlas%252F%26branch%3Ddevel). You will arrive at a [JupyterLab interface](https://jupyterlab.readthedocs.io/en/stable/user/interface.html) with access to the contents of this repository.
 
-## Disclaimer
+## Errata and problem reporting
 
-This work is carried out for the purpose of contributing the Sixth Assessment Report of the IPCC. It is in draft status and subject to change. 
+The [errata](ERRATA.MD) of the  Atlas covers both the content (products, such as plots and data) and the application/platform, as well as this GitHub repository supporting reproducibility and reusability. The existing products are frozen and the issues reported are documented in the errata list. Technical problems are listed separately in the technical issues and those not affecting the products could be fixed and documented.
