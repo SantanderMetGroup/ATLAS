@@ -113,17 +113,18 @@ cd ${WRKDIR}
 
 # Create list folder containg files to be interpolated 
 if [ ! -e $folders ] ; then
+	[ -e $filelist ] && rm $filelist
 	find $INDIR -type f -name "$varname*.nc" >> $filelist
 
 	# Create list of folders
 	echo "Creating a foldelist"
-	[ -e $folders ] && rm $folders
 	while read -r filepath; do
    		fname=`echo $filepath | awk -F"/" '{print $NF}'`
    		folder=`echo $filepath | awk -F"$fname" '{print $1}'`
   		echo $folder >> $folders
 	done < $filelist
-	cat $folders | sort | uniq > tmp.txt ; mv tmp.txt $folders
+	cat $folders | sort | uniq > tmp.txt ; 
+	mv tmp.txt $folders ; rm $filelist
 fi
 
 
@@ -149,75 +150,90 @@ while read -r folder; do
    	
 	echo "Working on the file: $filename"
 
-	When changing to a new GCM, deleting created weights and source.grid
+	# When changing to a new GCM, deleting created weights and source.grid
 	if [[  $GCM_old != $GCM ]]; then
 		[ -e weights.nc ] && rm weights.nc
 		[ -e source.grid ] && mv source.grid $SOURCEGRIDS/source_${varname}_${GCM}_${grid}.grid
 	fi
-
-	# Fix for GFDL-ESM GCM var siconc: deleting unreadable vars (not necessary) causing int. to crash
+	
+	# Making quick fixes for the files to be interpolated 
+	# (e.g. for GFDL-ESM siconc deletes unnecessary grid info - GEOLAT,GEOLON,
+	# and for ph variabels extracts only the first level data)
 	if [ ${GCM} == "GFDL-ESM4" ] && [ ${varname} == "siconc" ]; then
 		[ -e tmp_file.nc ] && rm tmp_file.nc
 		ncks -x -v GEOLAT,GEOLON $filepath tmp_file.nc
 		MODELDATA=tmp_file.nc
-	elif [ ${GCM} == "BCC-CSM2-MR" ] && [ ${experiment} == "CMIP6" ]; then
-		[ -e tmp_file.nc ] && rm tmp_file.nc
-		cp $filepath tmp.nc
-		ncatted -h -a coordinates,${varname},d,, tmp.nc
-		ncks -x -v longitude,latitude tmp.nc tmp_file.nc ; rm tmp.nc
-		MODELDATA=tmp_file.nc
+	elif [ $varname == "ph" ] ; then
+		level="lev"			
+		if [ ${GCM} == "IPSL-CM6A-LR" ] ; then
+			level="olevel"
+		fi 
+		[ -e level_file.nc ] && rm level_file.nc
+		ncks -d $level,0 $filepath level_file.nc 
+		MODELDATA=level_file.nc
 	else
-		if [ $varname == "ph" ] ; then
-			[ -e tmp_file.nc ] && rm tmp_file.nc
-			if [ ${GCM} == "IPSL-CM6A-LR" ] ; then
-				level="olevel"
-			else 
-				level="lev"
-			fi 
-			ncks -d $level,0 $filepath tmp_file.nc
-			MODELDATA=tmp_file.nc
-		else
-			[ -e tmp_file.nc ] && rm tmp_file.nc
-			MODELDATA=$filepath
-		fi
+		MODELDATA=$filepath
 	fi
 
-	# Creating source.grid file
-	[ -e source.grid ] && rm source.grid
-	cdo griddes ${MODELDATA} > source.grid 
+	# Setting grid information where necessary 
+	# For GCMs=CanESM5,MRI-ESM2-0,CAMS-CSM1,BCC-CSM2-MR,IPSL-CM6A-LR,NorESM2-MM setgriding grid it not working,
+	# since nvertex not defined, and for the succesful interpolation not necessary
+	if [[ ! ${GCM} =~ ^(CanESM5|MRI-ESM2-0|CAMS-CSM1|BCC-CSM2-MR|IPSL-CM6A-LR|NorESM2-MM)$ ]] ; then
 
-	# Setting the grid info on the file; IPSL had problems with the grid for the future runs - creates a generic grid
-	[ -e source.grid ] && rm source.grid
-	if [  ${GCM} == "IPSL-CM6A-LR" ] && [  ${experiment} == "CMIP6" ]; then
-		echo "copying source.grid"
-		cp $SOURCEGRIDS/source_${varname}_${GCM}_${grid}.grid ${WRKDIR}/source.grid
- 		ncks -C -O -x -v area ${MODELDATA} temporary.nc
-   		cdo setgrid,source.grid temporary.nc modelData_setgrid.nc ; rm temporary.nc
-	else
+		# Creating source.grid file
+		[ -e source.grid ] && rm source.grid
 		cdo griddes ${MODELDATA} > source.grid 
-		cdo setgrid,source.grid -selname,${varname} ${MODELDATA} modelData_setgrid.nc 
-	fi  	
+
+		# Setting the grid info upon the file
+		[ -e modelData_setgrid.nc ] && rm modelData_setgrid.nc
+		cdo setgrid,source.grid -selname,${varname} ${MODELDATA} modelData_setgrid.nc
+
+		# modelData_setgrid.nc will be interpolated if created successfully 
+		if [ -f modelData_setgrid.nc ]; then
+			working_file=modelData_setgrid.nc
+		else
+			working_file=$MODELDATA
+		fi
+	
+	elif [  ${GCM} == "IPSL-CM6A-LR" ] && [  ${experiment} == "CMIP6" ]; then
+		[ -e tmp.nc ] && rm tmp.nc
+		# Removing extra variable "area" from the files for IPSL-CM6A-LR GCM
+ 		ncks -C -O -x -v area ${MODELDATA} tmp.nc
+		working_file=tmp.nc
+
+	else
+		working_file=$MODELDATA
+
+	fi 	
 
 	# Generating weights
 	[ -e weights.nc ] && rm weights.nc
 	cdo gen${METHOD},${dgrid} modelData_setgrid.nc weights.nc 
 
 	# If wights are succefully genereted, direct conservative remapping will be done, othervise an alternative method will be applied
-	# For GCMs="CanESM5","CanESM5","BCC-CSM2-MR" alternative remaping will be done, as missing values at the north pole appears
-	if [ -f weights.nc ] && [ ${GCM} != "CanESM5" ] && [ ${GCM} != "CanESM5" ] && [ ${GCM} != "BCC-CSM2-MR" ] ; then
+	# Exeptions: CanESM5, MRI-ESM2-0, CAMS-CSM1, BCC-CSM2-MR, NorESM2-MM - for these GCMS the alternative remaping will be done, 
+	# because of the missing values at the north pole that appear when direct conservative remaping is done
+	# IPSL-CM6A-LR has irregular grid and the direct conservative remapping crashes
+	if [ -f weights.nc ] && [[ ! ${GCM} =~ ^(CanESM5|MRI-ESM2-0|CAMS-CSM1|BCC-CSM2-MR|IPSL-CM6A-LR|NorESM2-MM)$ ]] ; then 
 		echo "Direct conservative interpolation"
-   		cdo remap,${dgrid},weights.nc -selname,${varname} modelData_setgrid.nc final.nc 
+
+   		cdo remap,${dgrid},weights.nc -selname,${varname} $working_file final.nc 
+
 		mv final.nc $OUTPUT/${filename}_i
 		[ -e $OUTPUT/${filename}_i ] && echo "Conservative method: ${GCM}_${grid}_${esemble}" >> $logfile
 	else
 		# If wights are not genereted, an alternative method with with distant weighting int method as an intermediate step will be applied
 		echo "Alternative intepolation"
-		cdo remapdis,${dgrid_int} modelData_setgrid.nc intermediate_file.nc 					# Distant weighting int method to a finer 0.5 degree grid
- 	    	cdo gen${METHOD},${dgrid} intermediate_file.nc weights.nc						# Generating weights with con remapping of the intermediate file to 1 degree regular grid
-		cdo remap,${dgrid},weights.nc -selname,${varname} intermediate_file.nc final.nc 			# Conservative remapping
-   		mv final.nc $OUTPUT/${filename}_i									# Filenaming and placing the file to the final location
+
 		[ -e intermediate_file.nc ] && rm intermediate_file.nc
-		[ -e $OUTPUT/${filename}_i ] && echo "Alternative method: ${GCM}_${grid}_${esemble}" >> $logfile	# Write the info on the remapping method applied into a log file
+		cdo remapdis,${dgrid_int} $working_file intermediate_file.nc 						# Distant weighting int method to a finer 0.5 degree grid
+
+		[ -e weights.nc ] && rm weights.nc
+ 	    	cdo gen${METHOD},${dgrid} intermediate_file.nc weights.nc						# Generating weights with remapcon of the intermediate file to 1 degree regular grid
+		cdo remap,${dgrid},weights.nc -selname,${varname} intermediate_file.nc final.nc 			# Conservative remapping
+
+   		mv final.nc $OUTPUT/${filename}_i									# Filenaming and placing the file to the final location	
+		[ -e $OUTPUT/${filename}_i ] && echo "Alternative method: ${GCM}_${grid}_${esemble}" >> $logfile	# Write the info on the remapping method into a log file
 
 	fi
 
