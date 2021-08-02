@@ -39,7 +39,7 @@ signal <- function(h, d) {
 # (x is the vector of the presence/absence of signal of each model). 
 
 signal.ens <- function(x, th = 66) {
-  as.numeric((sum(x)/length(x)*100) > th)
+  as.numeric((sum(x)/length(x)*100) < th)
 }
 
 # (2) Agreement -----
