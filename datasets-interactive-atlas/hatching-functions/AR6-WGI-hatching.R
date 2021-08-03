@@ -11,24 +11,23 @@
 #' @author M. Iturbide
 
 
-AR6.WGI.hatching <- function(delta, historical.ref, method, relative.delta = NULL, map.hatching.args = list(NULL), ...){
+AR6.WGI.hatching <- function(delta, historical.ref = NULL, method, relative.delta = NULL, map.hatching.args = list(), ...){
   plot.args <- list(...)
-  if (is.null(map.hatching.args[["th"]])) map.hatching.args[["th"]] <- 80
+  if (method == "advanced" & is.null(historical.ref)) stop("Provide historical.ref to use the advanced method")
   if (is.null(map.hatching.args[["threshold"]])) map.hatching.args[["threshold"]] <- 0.5
   if (is.null(map.hatching.args[["angle"]])) map.hatching.args[["angle"]] <- "-45"
   if (is.null(map.hatching.args[["lwd"]])) map.hatching.args[["lwd"]] <- 0.6
   if (is.null(map.hatching.args[["density"]])) map.hatching.args[["density"]] <- 4
   if (is.null(map.hatching.args[["upscaling.aggr.fun"]])) map.hatching.args[["upscaling.aggr.fun"]] <- list(FUN = mean)
   if (is.null(map.hatching.args[["condition"]])) map.hatching.args[["condition"]] <- "LT"
-  if (is.null(plot.args[["main"]])) plot.args[["main"]] <- list("Mean delta change", cex = 0.8)
   if (is.null(plot.args[["backdrop.theme"]])) plot.args[["backdrop.theme"]] <- "coastline"
   
   simple <- aggregateGrid(delta, aggr.mem = list(FUN = agreement, th = 80))  
   
   if (method == "simple") {
     
-    map.hatching.args[["clim"]] <- simple
-    plot.args[["sp.layout"]] <- do.call("map.hatching", map.hatching.args)
+    map.hatching.args[["clim"]] <- climatology(simple)
+    plot.args[["sp.layout"]] <- list(do.call("map.hatching", map.hatching.args))
     
   } else if (method == "advanced") {
     
@@ -57,7 +56,6 @@ AR6.WGI.hatching <- function(delta, historical.ref, method, relative.delta = NUL
   } else {
     plot.args[["grid"]] <- aggregateGrid(delta, aggr.mem = list(FUN = mean, na.rm = TRUE))
   }
-  do.call("spatialPlot", plot.args)
+  suppressWarnings(do.call("spatialPlot", plot.args))
 }
   
- 
