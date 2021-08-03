@@ -38,7 +38,11 @@ signal <- function(h, d) {
 # threshold percentage (th) of presence of signal in the multi-model ensemble 
 # (x is the vector of the presence/absence of signal of each model). 
 
-signal.ens <- function(x, th = 66) {
+signal.ens1 <- function(x, th = 66) {
+  as.numeric((sum(x)/length(x)*100) > th)
+}
+
+signal.ens2 <- function(x, th = 66) {
   as.numeric((sum(x)/length(x)*100) < th)
 }
 
