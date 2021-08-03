@@ -22,26 +22,26 @@ AR6.WGI.hatching <- function(delta, historical.ref = NULL, method, relative.delt
   if (is.null(map.hatching.args[["condition"]])) map.hatching.args[["condition"]] <- "LT"
   if (is.null(plot.args[["backdrop.theme"]])) plot.args[["backdrop.theme"]] <- "coastline"
   
-  simple <- aggregateGrid(delta, aggr.mem = list(FUN = agreement, th = 80))  
+  simple <- suppressMessages(aggregateGrid(delta, aggr.mem = list(FUN = agreement, th = 80)))  
   
   if (method == "simple") {
     
-    map.hatching.args[["clim"]] <- climatology(simple)
+    map.hatching.args[["clim"]] <- suppressMessages(climatology(simple))
     plot.args[["sp.layout"]] <- list(do.call("map.hatching", map.hatching.args))
     
   } else if (method == "advanced") {
     
-    sign <- signal(h = historical.ref, d = delta)
+    sign <- suppressMessages(signal(h = historical.ref, d = delta))
     
-    advanced1 <- aggregateGrid(sign, aggr.mem = list(FUN = signal.ens1, th = 66))
+    advanced1 <- suppressMessages(aggregateGrid(sign, aggr.mem = list(FUN = signal.ens1, th = 66)))
     
-    advanced2.aux <- aggregateGrid(sign, aggr.mem = list(FUN = signal.ens2, th = 66))
+    advanced2.aux <- suppressMessages(aggregateGrid(sign, aggr.mem = list(FUN = signal.ens2, th = 66)))
     advanced2.aux <- gridArithmetics(advanced2.aux, simple, operator = "+") 
     advanced2 <- binaryGrid(advanced2.aux, condition = "GT", threshold = 0)
     
-    map.hatching.args[["clim"]] <-  climatology(advanced1)
+    map.hatching.args[["clim"]] <-  suppressMessages(climatology(advanced1))
     advanced1.hatch <- do.call("map.hatching", map.hatching.args)
-    map.hatching.args[["clim"]] <-  climatology(advanced2)
+    map.hatching.args[["clim"]] <-  suppressMessages(climatology(advanced2))
     advanced2.hatch <- do.call("map.hatching", map.hatching.args)
     map.hatching.args[["angle"]] <-  as.character(as.numeric(map.hatching.args[["angle"]]) * -1)
     advanced2.hatch.bis <- do.call("map.hatching", map.hatching.args)
@@ -54,7 +54,7 @@ AR6.WGI.hatching <- function(delta, historical.ref = NULL, method, relative.delt
   if (!is.null(relative.delta)) {
     plot.args[["grid"]] <- relative.delta
   } else {
-    plot.args[["grid"]] <- aggregateGrid(delta, aggr.mem = list(FUN = mean, na.rm = TRUE))
+    plot.args[["grid"]] <- suppressMessages(aggregateGrid(delta, aggr.mem = list(FUN = mean, na.rm = TRUE)))
   }
   suppressWarnings(do.call("spatialPlot", plot.args))
 }
