@@ -89,9 +89,9 @@
 
     "license": "CC-BY-4.0",
 
-    "title": "Repository supporting the implementation of FAIR principles in the IPCC-WG1 Atlas",
+    "title": "Repository supporting the implementation of FAIR principles in the IPCC-WGI Atlas",
     
-    "description": "<p>This is a frozen, final release of the GitHub repository supporting the implementation of FAIR principles in the IPCC-WG1 AR6 Atlas chapter and Interactive Atlas.</p>",
+    "description": "<p>This work is carried out for the purpose of contributing the Sixth Assessment Report of the IPCC. It contains technical information provided for transparency and reproducibility.</p>",
 
-    "keywords": ["IPCC-WG1", "AR6", "Atlas"]
+    "keywords": ["IPCC-WGI", "AR6", "Atlas"]
 }
