@@ -1,4 +1,7 @@
-[![DOI](https://zenodo.org/badge/190203356.svg)](https://zenodo.org/badge/latestdoi/190203356) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SantanderMetGroup/binder-atlas/master?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FIPCC-WG1%252FAtlas%26urlpath%3Dlab%252Ftree%252FAtlas%252F%26branch%3Ddevel)
+
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3691645.svg)](https://doi.org/10.5281/zenodo.3691645)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SantanderMetGroup/binder-atlas/master?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FIPCC-WG1%252FAtlas%26urlpath%3Dlab%252Ftree%252FAtlas%252F%26branch%3Ddevel)
 
 # Repository supporting the implementation of FAIR principles in the IPCC-WGI Atlas
 
@@ -39,12 +42,12 @@ Besides the analysis of time-slices (e.g. near-, mid- and long-term, 2021-2040, 
 ## Requirements
 
 Scripts and (jupyter) notebooks are provided in the different sections to ensure reproducibility and reusability of the results.
-Most of this code builds on the climate4R R package, allowing for transparent climate data access, collocation, post-processing (including bias adjustment) and visualization. The code runs on climate4R release v1.5.1. Check https://github.com/SantanderMetGroup/climate4R/releases/tag/v1.5.1 for specific library versions in this release. These depend on a wealth of [other R packages](https://github.com/SantanderMetGroup/climate4R/blob/devel/conda-full/meta.yaml). Additionally, [Jupyter](https://jupyter.org) should also be available with the [R kernel](https://irkernel.github.io/installation) enabled. The simplest way to match all these requirements is by using a dedicated [conda](https://docs.conda.io) environment, which can be easily installed by issuing:
+Most of this code builds on the climate4R R package, allowing for transparent climate data access, collocation, post-processing (including bias adjustment) and visualization. The code runs on climate4R release v2.5.3. Check https://github.com/SantanderMetGroup/climate4R/releases/tag/v2.5.3 for specific library versions in this release. These depend on a wealth of other R packages. Additionally, [Jupyter](https://jupyter.org) should also be available with the [R kernel](https://irkernel.github.io/installation) enabled. The simplest way to match all these requirements is by using a dedicated [conda](https://docs.conda.io) environment, which can be easily installed by issuing:
 ```sh
-conda create -n climate4R
-conda activate climate4R
-conda install -n climate4R -c conda-forge -c r -c defaults -c santandermetgroup climate4r=1.5.1
+conda env create -n ipcc-wgi-ar6-atlas --file binder/conda/environment.yml
+conda activate ipcc-wgi-ar6-atlas
 ```
+See [binder/README.md](binder/README.md) for other options to deploy locally a reproducible execution environment.
 
 ### Virtual workspace through binder
 
