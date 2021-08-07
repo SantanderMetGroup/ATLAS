@@ -192,9 +192,9 @@ computeStripes <- function(project,
     if (is.null(lp[["scales"]])) lp[["scales"]] <- list(x = list(at = seq(1, nrow(out2), 5), rot = 45, cex = 0.7), y = list(cex = 0.7))
     #if (is.null(lp[["scale"]])) lp[["scale"]] <- list(alternating = 1)
     if (is.null(lp[["main"]])) lp[["main"]] <- if(project == "CORDEX") {
-      list(paste0("proj:", project, " var:", var, " exp:", experiment, " seasson:", seasonname, " area:", area, " region:", region, " cdx.domain:", names(dom)), cex = 0.9)
+      list(paste0("proj:", project, " var:", var, " exp:", experiment, " season:", seasonname, " area:", area, " region:", region, " cdx.domain:", names(dom)), cex = 0.9)
     } else {
-      list(paste0("proj:", project, " var:", var, " exp:", experiment, " seasson:", seasonname, " area:", area, " region:", region), cex = 0.9)
+      list(paste0("proj:", project, " var:", var, " exp:", experiment, " season:", seasonname, " area:", area, " region:", region), cex = 0.9)
     }
     if (is.null(lp[["colorkey"]])) lp[["colorkey"]] <- list(width = 0.9, labels = list(cex = 0.7))
     if (is.null(lp[["aspect"]])) lp[["aspect"]] <-  "fill"
