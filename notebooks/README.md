@@ -14,7 +14,6 @@ GeoTIFF-post-processing | [X](./GeoTIFF-post-processing_R.ipynb)   |
 global-warming-levels   | [X](./global-warming-levels_R.ipynb)     |
 hatching-uncertainty    | [X](./hatching-uncertainty_R.ipynb)      |
 linear-trends           | [X](./linear-trends_R.ipynb)             |
-load-remote-data        | [X](./load-remote-data_R.ipynb)          |
 reference-grids         | [X](./reference-grids_R.ipynb)           | 
 reference-regions       | [X](./reference-regions_R.ipynb)         | [X](./reference-regions_Python.ipynb) 
 regional-scatter-plots  | [X](./regional-scatter-plots_R.ipynb)    |
