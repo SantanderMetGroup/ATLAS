@@ -1,4 +1,4 @@
-# Data sources for CMIP5, CMIP6 and CORDEX datasets used
+# Data sources used in the Atlas
 
 An inventory of the data sources of the model simulations used for the different experiments and scenarios is included here, indicating the availability of the different variables as well as auxiliary fixed fields, such as the land/sea mask (sftlf). The following documents provide a full overview of the simulations available: 
 
