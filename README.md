@@ -14,7 +14,7 @@ This repository provides the scripts and notebooks, as well as the required auxi
 
 ## Contents
 
-The data-driven regional information component of the Interactive Atlas builds on global and regional observations (e.g. CRU-TS and E-OBS) and projections (CMIP5/6 and CORDEX) to produce over 30 relevant indices for regional analysis of climate change information using both time-slices and global warming levels across scenarios. This repository allows to reproduced all the steps followed in the calculation of the Atlas products (including data provenance, postprocessing scripts and notebooks documenting the reproduction of results).
+The data-driven regional information component of the Interactive Atlas builds on global and regional observations (e.g. CRU-TS and E-OBS) and future climate projections (CMIP5/6 and CORDEX) to produce over 30 relevant indices for regional analysis of climate change information using both time-slices and global warming levels across scenarios. This repository allows to reproduce all the steps followed in the calculation of the Atlas products (including data provenance, postprocessing scripts and notebooks documenting the reproduction of results).
 
 ![Atlas repository scheme](Atlas-repo-scheme.svg)
 
@@ -22,11 +22,11 @@ The data-driven regional information component of the Interactive Atlas builds o
 | :-------- | :------- |
 | [data-sources](data-sources) | Full list of model simulations used for the different experiments and scenarios, indicating the availability of the different variables
 | [reference-grids](reference-grids) | Reference commensurable grids at regular 0.5&deg;, 1&deg; and 2&deg; resolutions. These are used to interpolate all variables and indices as a final processing step before analysis.
-| [reference-regions](reference-regions) | New set of reference analysis regions
 | [datasets-interactive-atlas](datasets-interactive-atlas) |  End-to-end scripts used for the preparation of the intermediate data (Interactive Atlas Dataset) underpinning the Interactive Atlas. The Interactive Atlas Dataset is formed by monthly values of CMIP5/6 and CORDEX data for different variables and indices interpolated to common reference grids. The scripts document the whole process, from data access to index calculation (and postprocessing –e.g. bias adjustment– if needed).
+| [reference-regions](reference-regions) | New set of reference analysis regions in AR6
 | [datasets-aggregated-regionally](datasets-aggregated-regionally) | The Interactive Atlas Dataset is averaged over the reference regions to produce many of the figures. These key aggregated data are provided directly for further analysis within this Github repository folder.
 | [warming-levels](warming-levels) | Global Warming Levels (+1.5&deg;, +2&deg;, +3&deg;, +4&deg;) are computed and provided in this folder.
-| [notebooks](notebooks) | Cross-cutting Jupyter notebooks, combining the information from several of the previous directories to perform specific analyses. Some of the previous top-level directories also contain their own notebooks directory with specific examples to work with the particular data in those directories.
+| [notebooks](notebooks) | Cross-cutting Jupyter notebooks, combining the information from several of the previous directories to perform specific analyses.
 | [reproducibility](reproducibility) | End-to-end scripts used for the preparation of the key figures of the IPCC AR6 WGI Atlas chapter.
 | [binder](binder) | Files providing reproducible execution environment specifications
 
