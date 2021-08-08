@@ -28,6 +28,7 @@ The data-driven regional information component of the Interactive Atlas builds o
 | [warming-levels](warming-levels) | Global Warming Levels (+1.5&deg;, +2&deg;, +3&deg;, +4&deg;) are computed and provided in this folder.
 | [notebooks](notebooks) | Cross-cutting Jupyter notebooks, combining the information from several of the previous directories to perform specific analyses. Some of the previous top-level directories also contain their own notebooks directory with specific examples to work with the particular data in those directories.
 | [reproducibility](reproducibility) | End-to-end scripts used for the preparation of the key figures of the IPCC AR6 WGI Atlas chapter.
+| [binder](binder) | Files providing reproducible execution environment specifications
 
 ## New Reference Regions
 
@@ -48,7 +49,7 @@ Most of this code builds on the climate4R R package, allowing for transparent cl
 conda env create -n ipcc-wgi-ar6-atlas --file binder/conda/environment.yml
 conda activate ipcc-wgi-ar6-atlas
 ```
-See [binder/README.md](binder/README.md) for other options to deploy locally a reproducible execution environment.
+See [binder/README.md](./binder) for other options to deploy locally a reproducible execution environment.
 
 ### Virtual workspace through binder
 
