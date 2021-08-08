@@ -1,6 +1,6 @@
 # Reproducibility scripts
 
-to be completed
+End-to-end scripts used for the preparation of key figures of the IPCC WGI AR6 Atlas chapter.
 
 ## Script list
 
