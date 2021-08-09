@@ -14,6 +14,6 @@ the outputs from the ocean models [AtlasCDOremappeR_CMIP6_Omon.sh](./AtlasCDOrem
 **CORDEX** data have been interpolated to the 0.5 degree common grid: [land_sea_mask_05degree.nc](../../reference-grids/land_sea_mask_05degree.nc4) 
 with [AtlasCDOremapperR_CORDEX](./AtlasCDOremappeR_CORDEX/AtlasCDOremappeR_CORDEX.sh).
 
-All the scripts used for the interpolation follow guidelines for the interpolation coordinated within the CORDEX community.
+CMIP atmospheric variables are interpolated not using land-sea correction (LSMAS=0). CORDEX interpolation follow guidelines for the interpolation coordinated within the CORDEX community.
 
 Certain model grids from the models in CORDEX experiment were missing information on the coordinates of the grid corners for each grid cell - necessary for the conservative interpolation (e.g. ALADIN, ALARO, NCAR-WRF and RegCM4). In such cases a python script [grid_bounds_calc.py](./AtlasCDOremappeR_CORDEX/grid_bounds_calc.py) provided by Cécile Caillaud and Samuel Somot from Meteo France was used to fill the info gap.
