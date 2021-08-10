@@ -1,0 +1,96 @@
+{
+    "creators": [
+        {   
+            "orcid": "0000-0002-5048-0941",
+            "affiliation": "Santander Meteorology Group, Instituto de Física de Cantabria (CSIC-UC), Santander, Spain",
+            "name": "Iturbide, Maialen"
+        },
+        {   
+            "orcid": "0000-0002-3483-0008",
+            "affiliation": "Santander Meteorology Group. Instituto de Física de Cantabria (CSIC-UC), Santander, Spain",
+            "name": "Fernández, Jesús"
+        },
+        {   
+            "orcid": "0000-0002-2766-6297",
+            "affiliation": "Santander Meteorology Group. Instituto de Física de Cantabria (CSIC-UC), Santander, Spain",
+            "name": "Gutiérrez, José Manuel"
+        },
+        {   
+            "orcid": "0000-0001-6219-4312",
+            "affiliation": "Santander Meteorology Group, Dept. Applied Mathematics and Computer Science, Universidad de Cantabria, Santander, Spain",
+            "name": "Bedia, Joaquín"
+        },
+        {   
+            "orcid": "0000-0002-8437-2068",
+            "affiliation": "Santander Meteorology Group, Dept. Applied Mathematics and Computer Science, Universidad de Cantabria, Santander, Spain",
+            "name": "Cimadevilla, Ezequiel"
+        },
+        {   
+            "orcid": "0000-0001-9053-2542",
+            "affiliation": "Santander Meteorology Group, Dept. Applied Mathematics and Computer Science, Universidad de Cantabria, Santander, Spain",
+            "name": "Díez-Sierra, Javier"
+        },
+        {   
+            "orcid": "0000-0002-0001-3448",
+            "affiliation": "Santander Meteorology Group, Dept. Applied Mathematics and Computer Science, Universidad de Cantabria, Santander, Spain",
+            "name": "Manzanas, Rodrigo"
+        },
+        {   
+            "orcid": "0000-0002-7568-0229",
+            "affiliation": "Santander Meteorology Group, Dept. Applied Mathematics and Computer Science, Universidad de Cantabria, Santander, Spain",
+            "name": "Casanueva, Ana"
+        },
+        {   
+            "orcid": "0000-0003-3380-1579",
+            "affiliation": "Santander Meteorology Group. Instituto de Física de Cantabria (CSIC-UC), Santander, Spain",
+            "name": "Baño-Medina, Jorge"
+        },
+        {   
+            "orcid": "0000-0001-5648-5279",
+            "affiliation": "Santander Meteorology Group. Instituto de Física de Cantabria (CSIC-UC), Santander, Spain",
+            "name": "Milovac, Josipa"
+        },
+        {   
+            "orcid": "0000-0002-5384-179X",
+            "affiliation": "Santander Meteorology Group, Dept. Applied Mathematics and Computer Science, Universidad de Cantabria, Santander, Spain",
+            "name": "Herrera, Sixto"
+        },
+        {   
+            "orcid": "0000-0001-7719-979X",
+            "affiliation": "Santander Meteorology Group, Dept. Applied Mathematics and Computer Science, Universidad de Cantabria, Santander, Spain",
+            "name": "Cofiño, Antonio S."
+        },
+        {   
+            "affiliation": "Predictia Intelligent Data Solutions, Santander, Spain",
+            "name": "San Martín, Daniel"
+        },
+        {   
+            "orcid": "0000-0002-4760-0527",
+            "affiliation": "Predictia Intelligent Data Solutions S.L., Santander, Spain",
+            "name": "García-Díez, Markel"
+        },
+        {
+            "orcid": "0000-0002-0057-4878",
+            "affiliation": "Institute for Atmospheric and Climate Science, ETH Zurich, Zurich, Switzerland",
+            "name": "Hauser, Mathias"
+        },  
+        {   
+            "orcid": "0000-0003-0311-5498",
+            "affiliation": "Ouranos, Montréal, Québec, Canada",
+            "name": "Huard, David"
+        },
+        {   
+            "orcid": "0000-0002-3821-7833",
+            "affiliation": "IPCC WG1 Technical Support Unit. Université Paris-Saclay, Paris, France",
+            "name": "Yelekci, Özge"
+        }
+   ],    
+
+    "license": "CC-BY-4.0",
+
+    "title": "Repository supporting the implementation of FAIR principles in the IPCC-WGI Atlas",
+    
+    "description": "<p>This work is carried out for the purpose of contributing the Sixth Assessment Report of the IPCC. It contains technical information provided for transparency and reproducibility.</p>",
+
+    "keywords": ["IPCC-WGI", "AR6", "Atlas"]
+}

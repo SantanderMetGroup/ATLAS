@@ -1,34 +1,28 @@
-#     warmig_periods.R Functions to compute Global Warming Level Periods
+# getGWL.R
 #
-#     Copyright (C) 2019 Santander Meteorology Group (http://www.meteo.unican.es)
+# Copyright (C) 2021 Santander Meteorology Group (http://meteo.unican.es)
 #
-#     This program is free software: you can redistribute it and/or modify
-#     it under the terms of the GNU General Public License as published by
-#     the Free Software Foundation, either version 3 of the License, or
-#     (at your option) any later version.
-# 
-#     This program is distributed in the hope that it will be useful,
-#     but WITHOUT ANY WARRANTY; without even the implied warranty of
-#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#     GNU General Public License for more details.
-# 
-#     You should have received a copy of the GNU General Public License
-#     along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
+# This work is licensed under a Creative Commons Attribution 4.0 International
+# License (CC BY 4.0 - http://creativecommons.org/licenses/by/4.0)
 
 #' @title Global Warming Level timing calculation
 #' @description Atomic function to compute the timing of a user-defined Global Warming Level.
-#' @param data A named numeric vector of mean global annual temperature projections. Names are years.
-#' @param base.period Integer vector of length two, indicating the star/end year of the pre-industrial baseline period. Default to \code{c(1850, 1900)}
+#' @param data
+#'   A named numeric vector of mean global annual temperature projections.
+#'   Names are years.
+#' @param base.period
+#'   Integer vector of length two, indicating the star/end year of the
+#'   pre-industrial baseline period. Default to \code{c(1850, 1900)}
 #' @param proj.period Same as \code{base.period}, but for the projected period.
 #' @param window Integer. Moving window width (in years). Default to 20.
 #' @param GWL Floating point number indicating the global warming level (degrees)
-#' @return The central year of the interval for which the specified GWL is reached. NA if the GWL is not reached within the projected period.
-#' In addition, an attribute (\code{"interval"}) provides the closed interval boundaries.
+#' @return The central year of the interval for which the specified GWL is
+#'   reached. NA if the GWL is not reached within the projected period.  In
+#'   addition, an attribute (\code{"interval"}) provides the closed interval
+#'   boundaries.
 #' @importFrom stats filter
 #' @references Nikulin, G. et al., 2018. The effects of 1.5 and 2 degrees of global warming on Africa in the CORDEX ensemble. Environ. Res. Lett. 13, 065003. https://doi.org/10.1088/1748-9326/aab1b1
 #' @author J. Bedia
-
 
 getGWL <- function(data, base.period = c(1850, 1900), proj.period = c(1971, 2100), window = 20, GWL = 2) {
     if (length(base.period) != 2) stop("\'base.period\' argument must be of length two")
@@ -49,4 +43,33 @@ getGWL <- function(data, base.period = c(1850, 1900), proj.period = c(1971, 2100
     }
     attr(ret, "interval") <- interval
     return(ret)
+}
+
+
+
+# world.annual.mean.R
+#
+# Copyright (C) 2021 Santander Meteorology Group (http://meteo.unican.es)
+#
+# This work is licensed under a Creative Commons Attribution 4.0 International
+# License (CC BY 4.0 - http://creativecommons.org/licenses/by/4.0)
+
+#' @title Compute global annual average from regionally aggregated Atlas data
+#' @description Utility function to simplify the code of the 'warming-levels/scripts'
+#'  directory of the IPCC-WG1 Atlas GitHub repository
+#' @param csvfile Full path to the standard csv files containing the regionally 
+#' aggregated data
+#' @return Named numeric vector of Global annual mean data (names are years)
+#' @importFrom magrittr %>% 
+#' @importFrom utils read.table
+#' @author J. Fernández
+ 
+world.annual.mean <- function(csvfile) {
+    csvdata <- read.table(csvfile, header = TRUE, sep = ",")
+    rval <- subset(csvdata, select = "world", drop = TRUE)
+    yrs <- subset(csvdata, select = "date", drop = TRUE) %>%
+        gsub("-.*", "", .) %>% as.integer()
+    rval <- tapply(rval, INDEX = yrs, FUN = "mean", na.rm = TRUE)
+    names(rval) <- unique(yrs)
+    return(rval)
 }
