@@ -15,6 +15,7 @@ dependencies:
   - jupyterlab ==3.1.4
   - jupyter_nbextensions_configurator ==0.4.1
   - nbgitpuller ==0.10.1 # required for decouple binder and repo
+  - jupyter-book
   # Dependencies for notebooks
   - r-devtools ==2.4.1
   - r-gridextra ==2.3
