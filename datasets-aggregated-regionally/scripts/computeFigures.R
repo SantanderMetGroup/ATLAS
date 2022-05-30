@@ -466,7 +466,7 @@ computeFigures <- function(regions,
      
       
       
-      xyplot(y~x, data = dfs, xlim = xlimk, ylim = ylimk, pch = 19, aspect = "45", 
+      xyplot(y~x, data = dfs, xlim = xlimk, ylim = ylimk, pch = 19, aspect = "90", 
              # scales = list(x = list(rot = 90)),
              col = col, cex = 0.7, ylab = NULL, #ylab = list(bquote(Delta*"T(ºC)"), cex = 1.2), 
              xlab = NULL,#xlab = list(bquote(Delta*"P(%)"), cex = 1.2),
