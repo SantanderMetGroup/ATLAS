@@ -6,4 +6,13 @@ root: intro
 chapters:
 - file: notebooks/regional-scatter-plots_R.ipynb
 - file: ERRATA
-- file: data-sources/README
+- file: data-sources/data-sources
+- file: reference-grids/reference-grids
+- file: reference-regions/reference-regions
+- file: datasets-aggregated-regionally/datasets-aggregated-regionally
+- file: warming-levels/warming-levels
+- file: notebooks/notebooks
+- file: reproducibility/reproducibility
+- file: datasets-interactive-atlas/datasets-interactive-atlas
+- file: binder/binder
+
