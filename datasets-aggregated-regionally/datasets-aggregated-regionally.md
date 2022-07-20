@@ -1,4 +1,5 @@
-# CMIP5, CMIP6, CORDEX and observational spatial averages over the reference regions
+(aggregated-datasets)=
+# Aggregated datasets
 
 These files contain monthly precipitation and near surface temperature spatially averaged over the reference regions for CMIP5, CMIP6 and CORDEX model output datasets (a single run per model) separately for land, sea, and land-sea gridboxes. Regional averages are weighted by the cosine of latitude in all cases. Also, an observation-based product is provided in the same format for reference: W5E5 ([Lange, 2019](https://doi.org/10.5880/PIK.2019.023))
 
