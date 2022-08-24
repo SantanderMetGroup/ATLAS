@@ -21,6 +21,11 @@ latex:
 bibtex_bibfiles:
   - references.bib
 
+# bib style
+sphinx:
+  config:
+    bibtex_reference_style: author_year
+
 # Information about where the book exists on the web
 repository:
   url: https://github.com/PhantomAurelia/Atlas  # Online location of your book
