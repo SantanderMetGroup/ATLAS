@@ -1,3 +1,4 @@
+(datasets-interactive-atlas)=
 # Code for reproducibility of the Interactive Atlas Dataset
 
 This repository contains all the code needed to generate the intermediate dataset (Interactive Atlas Dataset) used in the Interactive Atlas. For simplicity, the full workflow is split up in four main scripts which undertake independent tasks. In a nutshell:

@@ -1,4 +1,5 @@
-## Auxiliary Materials for Notebooks
+(auxiliary-material)=
+# Auxiliary Materials for Notebooks
 
 These are auxiliary materials to ease notebook reproducibility, preventing the
 dependence on remote data servers for executing some notebook examples

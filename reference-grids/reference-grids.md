@@ -1,10 +1,11 @@
+(reference-grids)=
 # Sets of reference grids
 
 Several reference grids (with 0.5&deg; 1&deg;, and 2&deg; spatial resolution) are used in the Atlas to interpolate CORDEX, CMIP5 and CMIP6 ensembles to common regular grids (also 0.25&deg; for regional observations and EURO-CORDEX). Some datasets produced using these masks are:
 * land sea masks: `land_sea_mask_*.nc4`
 * mountain ranges masks: `mountain_ranges_mask_*.nc4`
 
-A Jupyter notebook illustrating a simple example of their use in R is provided in [notebooks](./notebooks).
+A Jupyter notebook illustrating a simple example of their use in R is provided in [notebooks](notebooks).
 The figure below represents these masks for the 0.5&deg;, 1&deg;, and 2&deg; resolutions.
 
 <p align="center">

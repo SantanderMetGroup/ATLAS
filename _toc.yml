@@ -4,15 +4,35 @@
 format: jb-book
 root: intro
 parts:
+  - caption: Readmes
+    chapters:
+      - file: warming-levels/warming-levels
+      - file: data-sources/data-sources
+      - file: reference-grids/reference-grids
+      - file: datasets-interactive-atlas/datasets-interactive-atlas
+      - file: reference-regions/reference-regions
+      - file: datasets-aggregated-regionally/datasets-aggregated-regionally
   - caption: Notebooks
     chapters:
       - file: notebooks/notebooks
       - file: notebooks/regional-scatter-plots_R.ipynb
+      - file: notebooks/global-warming-levels_R.ipynb
+      - file: notebooks/bias-adjustment_R.ipynb
+      - file: notebooks/CORDEX-overlaps_Python.ipynb
+      - file: notebooks/GeoTIFF-postt-processing_R.ipynb
+      - file: notebooks/hatching-uncertainty_R.ipynb
+      - file: notebooks/linear-trends_R.ipynb
+      - file: notebooks/reference-grids_R.ipynb
+      - file: notebooks/reference-regions_Python.ipynb
+      - file: notebooks/reference-regions_R.ipynb
+      - file: notebooks/stripes-plots_R.ipynb
   - caption: Anexos
     chapters:
       - file: ERRATA
       - file: reproducibility/reproducibility
-      - file: datasets-aggregated-regionally/datasets-aggregated-regionally
+      - file: notebooks/auxiliary-material/auxiliary-material
+      - file: binder/binder
+      
 
 
 

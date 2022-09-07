@@ -1,3 +1,4 @@
+(data-sources)=
 # Data sources used in the Atlas
 
 The Atlas builds on several key observational and model simulated datasets made publicly available by different institutions and modeling centers, in some cases resulting from international collaborations such as [CMIP](https://www.wcrp-climate.org/wgcm-cmip) and [CORDEX](https://cordex.org). It also includes some datasets used in different chapters of AR6 WGI report. We acknowledge all institutions and modeling centers for making the data publicly available. 
