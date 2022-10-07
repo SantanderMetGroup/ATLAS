@@ -7,7 +7,7 @@
 
 The *WGI Atlas* is part of the AR6 report and provides a region-by-region assessment of climate change including also an innovative online tool (the *Interactive Atlas*, {cite}`atlas-ipcc-web` that complements the report {cite}`atlas-ipcc` by providing flexible spatial and temporal analyses of regional climate change by means of two components (see AR6 Atlas chapter, Sections 1 and 2). The **regional information** component allows for flexible analysis of past and projected changes for over 25 variables and derived indices calculated from key climate datasets supporting the assessment done in the Chapters. The **regional synthesis** component provides flexible anlysis of synthesis assessments over a new set of sub-continental reference regions supporting the Technical Summary and Summary for Policymakers. A description of the datasets
 
-The IPCC AR6 WGI report promotes best practices in traceability and reproducibility, including through adoption of the Findable, Accessible, Interoperable, and Reusable (FAIR) principles for scientific data. In particular, reproducibility and reusability are central in order to ensure the transparency of the products, which are all publicly available. The Atlas products are generated using **free software community tools**, in particular *R* {cite}`R` building on the *climate4R* {cite}`climate4r`framework for data post-processing (data access, regridding, aggregation, bias adjustment, etc.) and evaluation and quality control (when applicable). **Provenance metadata** is generated for the Interactive Atlas using the *METACLIP* {cite:authorpar}`metaclip` RDF-based framework, extended to cover the products delivered by the IPCC-AR6 Interactive Atlas {cite}`metaclip-atlas`.
+The IPCC AR6 WGI report promotes best practices in traceability and reproducibility, including through adoption of the Findable, Accessible, Interoperable, and Reusable (FAIR) principles for scientific data. In particular, reproducibility and reusability are central in order to ensure the transparency of the products, which are all publicly available. The Atlas products are generated using **free software community tools**, in particular *R* {cite:authorpar}`R` building on the *climate4R* {cite}`climate4r`framework for data post-processing (data access, regridding, aggregation, bias adjustment, etc.) and evaluation and quality control (when applicable). **Provenance metadata** is generated for the Interactive Atlas using the *METACLIP* {cite:authorpar}`metaclip` RDF-based framework, extended to cover the products delivered by the IPCC-AR6 Interactive Atlas {cite:authorpar}`metaclip-atlas`.
 
 
 ## Contents
@@ -32,7 +32,7 @@ This repository provides the scripts and notebooks, as well as the required auxi
 
 <img src="reference-regions/reference_regions.png" align="left" alt="" width="500" />
 
-A new set of reference regions was produced building on the popular *IPCC AR5 reference regions* {cite}`ar5` developed for reporting sub-continental *CMIP5* {cite}`cmip5` projections cite(with typical resolution of 2&deg;) over a reduced number of regions. The increased resolution of *CMIP6* {cite}`cmip6` and *CORDEX* {cite}`cordex` projections(typically 1&deg; and 0.5&deg;) allowed to increase the number of regions for a better representation of different climates, resulting in new set of *46 land and 14 ocean reference regions* {cite}`iturbide_update_2020`. The coordinates delimiting the regions (CSV and shapefiles) and other related datasets are available at the [reference-regions](reference-regions/reference-regions) repository folder.
+A new set of reference regions was produced building on the popular *IPCC AR5 reference regions* {cite:authorpar}`ar5` developed for reporting sub-continental *CMIP5* {cite:authorpar}`cmip5` projections (with typical resolution of 2&deg;) over a reduced number of regions. The increased resolution of *CMIP6* {cite:authorpar}`cmip6` and *CORDEX* {cite:authorpar}`cordex` projections(typically 1&deg; and 0.5&deg;) allowed to increase the number of regions for a better representation of different climates, resulting in new set of *46 land and 14 ocean reference regions* {cite}`iturbide_update_2020`. The coordinates delimiting the regions (CSV and shapefiles) and other related datasets are available at the [reference-regions](reference-regions/reference-regions) repository folder.
 
 ## Regionally-aggregated datasets (CMIP and CORDEX)
 The IPCC reference regions have been used as the basis to generate popular spatially-aggregated datasets, such as the *IPCC AR5 seasonal mean temperature and precipitation in IPCC regions for CMIP5* {cite}`van_vuuren_representative_2011`. Here, we provide a new aggregated dataset using CMIP5, CMIP6 and CORDEX projections (interpolated to common 2&deg;, 1&deg;, and 0.5&deg; resolution, respectively, see [reference-grids](reference-grids/reference-grids)) for the new regions. Monthly mean values are stored for CMIP5/6 and CORDEX for the historical (1850-2005/1850-2014, only 1970-2014 for CORDEX) and future RCP2.6/SSP1-2.6, RCP4.5/SSP2-4.5, SSP3-7.0 and RCP8.5/SSP5-8.5 scenarios. An inventory of the currently available models and runs is available at the [data-sources](data-sources) folder.
@@ -42,7 +42,7 @@ Besides the analysis of time-slices (e.g. near-, mid- and long-term, 2021-2040, 
 ## Requirements
 
 Scripts and (jupyter) notebooks are provided in the different sections to ensure reproducibility and reusability of the results.
-Most of this code builds on the climate4R R package, allowing for transparent climate data access, collocation, post-processing (including bias adjustment) and visualization. The code runs on climate4R release v2.5.3. Check the Clime4R repository mentioned above for specific library versions in this release. These depend on a wealth of other R packages. Additionally, *Jupyter* {cite}`jupyter` should also be available with the *R kernel* {cite}`irkernel` enabled. The simplest way to match all these requirements is by using a dedicated *conda environment* {cite}`conda`, which can be easily installed by issuing:
+Most of this code builds on the climate4R R package, allowing for transparent climate data access, collocation, post-processing (including bias adjustment) and visualization. The code runs on climate4R release v2.5.3. Check the Clime4R repository mentioned above for specific library versions in this release. These depend on a wealth of other R packages. Additionally, *Jupyter* {cite:authorpar}`jupyter` should also be available with the *R kernel* {cite:authorpar}`irkernel` enabled. The simplest way to match all these requirements is by using a dedicated *conda environment* {cite:authorpar}`conda`, which can be easily installed by issuing:
 ```sh
 conda env create -n ipcc-wgi-ar6-atlas --file binder/conda/environment.yml
 conda activate ipcc-wgi-ar6-atlas
@@ -51,9 +51,9 @@ See [binder](binder) for other options to deploy locally a reproducible executio
 
 ### Virtual workspace through binder
 
-A much straigtforward way to explore and interact with this repository is through *Binder* {cite}`binder-web`. Binder provides an executable environment, making the code immediately reproducible. The required software is pre-installed in a cloud environment where the user can create and execute notebooks (directly) and scripts (via the available Terminal). Moreover, the environment is accesible without any further authentication by the user.
+A much straigtforward way to explore and interact with this repository is through *Binder* {cite:authorpar}`binder-web`. Binder provides an executable environment, making the code immediately reproducible. The required software is pre-installed in a cloud environment where the user can create and execute notebooks (directly) and scripts (via the available Terminal). Moreover, the environment is accesible without any further authentication by the user.
 
-To start exploring the binder interface, just click the *Launch in MyBinder* badge above. You will arrive at a *JupyterLab interface* {cite}`jupyter-lab` with access to the contents of this repository.
+To start exploring the binder interface, just click the *Launch in MyBinder* badge above. You will arrive at a *JupyterLab interface* {cite:authorpar}`jupyter-lab` with access to the contents of this repository.
 
 ## Errata and problem reporting
 
@@ -64,3 +64,5 @@ The [errata](ERRATA) of the Atlas covers both the content (products, such as plo
 ### Bibliography
 ```{bibliography}
 ```
+
+Esto es una prueba para ver si el rol de descarga funciona: You can {download}`download the content here<./references.bib>`
