@@ -22,7 +22,7 @@ jobs:
 
     - uses: conda-incubator/setup-miniconda@v2
       with:
-        environment-file: jupyter-book-env.yml
+        environment-file: binder/conda/environment.yml
         miniforge-version: latest
         miniforge-variant: Mambaforge
     # Build the book

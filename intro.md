@@ -65,4 +65,10 @@ The [errata](ERRATA) of the Atlas covers both the content (products, such as plo
 ```{bibliography}
 ```
 
-Esto es una prueba para ver si el rol de descarga funciona: You can {download}`download the content here<./references.bib>`
+<script src="https://utteranc.es/client.js"
+        repo="PhantomAurelia/Atlas"
+        issue-term="pathname"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>

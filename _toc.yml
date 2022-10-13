@@ -19,7 +19,7 @@ parts:
       - file: notebooks/global-warming-levels_R.ipynb
       - file: notebooks/bias-adjustment_R.ipynb
       - file: notebooks/CORDEX-overlaps_Python.ipynb
-      - file: notebooks/GeoTIFF-postt-processing_R.ipynb
+      - file: notebooks/GeoTIFF-post-processing_R.ipynb
       - file: notebooks/hatching-uncertainty_R.ipynb
       - file: notebooks/linear-trends_R.ipynb
       - file: notebooks/reference-grids_R.ipynb
