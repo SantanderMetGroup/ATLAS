@@ -1,3 +1,4 @@
+(observations)=
 # Code for reproducibility of the ATLAS spatial maps of the observed linear trends  
 
 The ATLAS chapter of the IPCC report contains maps which show the observed linear trends for certain variables of interest, at both continental and global scales. We provide a set of scripts used to generate these trends for  mean annual precipitation, air surface temperature, snow duration and maximum snow height. 

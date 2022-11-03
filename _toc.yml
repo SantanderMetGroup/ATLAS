@@ -32,7 +32,11 @@ parts:
       - file: reproducibility/reproducibility
       - file: notebooks/auxiliary-material/auxiliary-material
       - file: binder/binder
-      
+      - file: reproducibility/maps/maps
+      - file: reproducibility/observations/observations
+      - file: reproducibility/projections/projections
+      - file: datasets-interactive-atlas/bash-interpolation-scripts/bash-interpolation-scripts
+      - file: datasets-interactive-atlas/bash-interpolation-scripts/AtlasCDOremappeR_CORDEX/atlasCDOremappeR
 
 
 

@@ -1,17 +1,18 @@
+(projections)=
 # Code for reproducibility of the ATLAS boxplots and scatterplots of model projections
 
-`boxplots_TandP.R` is the star script of the ATLAS!!
+´´´sh reproducibility/projections/boxplots_TandP.R ''' is the star script of the ATLAS!!
 
 It is flexible and easy to use. There is no special requirements for executing the script (only an R environment with a few packages), as it uses R functions and data stored in this repository. 
 
-The R function used is computeFigures (available at [aggregated-datsets/scripts](https://github.com/SantanderMetGroup/ATLAS/tree/devel/aggregated-datasets/scripts)) and the data used are the regional means available at [aggregated-datsets/data](https://github.com/SantanderMetGroup/ATLAS/tree/devel/aggregated-datasets/data).
+The R function used is computeFigures (available at '''sh ./datasets/aggregated-regionally/scripts/computeFigures.R''') and the data used are the regional means available at '''sh ./datasets-aggregated-regionally/data/ '''.
 
 It allows for the selection of:
 
 * Seasons
 * Reference period
 * Surface (Land, sea or both)
-* Region/s from the [Updated IPCC-WGI reference regions](https://github.com/SantanderMetGroup/ATLAS/tree/devel/reference-regions) ([Iturbide et al, 2020](https://essd.copernicus.org/articles/12/2959/2020/))
+* Region/s from the '''sh ./reference-regions/''' ([Iturbide et al, 2020](https://essd.copernicus.org/articles/12/2959/2020/))
 
 For example, the following parameter configuration,
 

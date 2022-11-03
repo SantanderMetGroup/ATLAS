@@ -23,4 +23,3 @@ Please be aware that these four scripts must be run in the above order. All of t
  * {download}`AtlasCDOremappeR_CMIP6_Omon.sh<bash-interpolation-scripts/AtlasCDOremappeR_CMIP6_Omon.sh>`
  * {download}`AtlasCDOremappeR_CMIP.sh<bash-interpolation-scripts/AtlasCDOremappeR_CMIP.sh>`
  * {download}`AtlasCDOremappeR_CORDEX.sh<bash-interpolation-scripts/AtlasCDOremappeR_CORDEX/AtlasCDOremappeR_CORDEX.sh>`
- * {download}`grid_bounds_calc.py<bash-interpolation-scripts/AtlasCDOremappeR_CORDEX/grid_bounds_calc.py>`

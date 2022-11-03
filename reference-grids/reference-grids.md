@@ -1,4 +1,4 @@
-(reference-grids)=
+(reference-grids-md)=
 # Sets of reference grids
 
 Several reference grids (with 0.5&deg; 1&deg;, and 2&deg; spatial resolution) are used in the Atlas to interpolate CORDEX, CMIP5 and CMIP6 ensembles to common regular grids (also 0.25&deg; for regional observations and EURO-CORDEX). Some datasets produced using these masks are:
