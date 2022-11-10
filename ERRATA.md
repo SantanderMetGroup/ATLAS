@@ -19,3 +19,11 @@ This repository supporting AR6 WGI is frozen, and does not accept any further co
  - Submitting a fix
  - Providing notebooks/scripts in alternative programming languages
  - Proposing new notebooks/scripts exploiting the data
+
+<script src="https://utteranc.es/client.js"
+        repo="PhantomAurelia/Atlas"
+        issue-term="pathname"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>

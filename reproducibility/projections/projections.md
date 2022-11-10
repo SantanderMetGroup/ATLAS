@@ -12,7 +12,7 @@ It allows for the selection of:
 * Seasons
 * Reference period
 * Surface (Land, sea or both)
-* Region/s from the '''sh ./reference-regions/''' ([Iturbide et al, 2020](https://essd.copernicus.org/articles/12/2959/2020/))
+* Region/s from the '''sh ./reference-regions/''' {cite}`iturbide_update_2020`.
 
 For example, the following parameter configuration,
 
@@ -32,3 +32,16 @@ Will result in the following boxplots and scatterplots:
 
 <img src="SEA_land_baseperiod_1995-2014_ATvsAP.png" align="left" alt="" width="300" />
 
+## References
+
+```{bibliography}
+:filter: docname in docnames
+```
+
+<script src="https://utteranc.es/client.js"
+        repo="PhantomAurelia/Atlas"
+        issue-term="pathname"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>

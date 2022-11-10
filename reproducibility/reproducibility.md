@@ -11,3 +11,12 @@ End-to-end scripts used for the preparation of key figures of the IPCC WGI AR6 A
  * [observations](observations) / observationsTrendsGlobal.R
  * [observations](observations) / observationsTrendsEurope.R
  * [observations](observations) / observationsSeriesEurope.R
+
+
+<script src="https://utteranc.es/client.js"
+        repo="PhantomAurelia/Atlas"
+        issue-term="pathname"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>

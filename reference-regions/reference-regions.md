@@ -55,3 +55,16 @@ Ocean regions or biomes as defined by {cite}`gregorComparativeAssessmentUncertai
 * Indonesian Flowthrough (IndoFlow)
 
 
+### References
+
+```{bibliography}
+:filter: docname in docnames
+```
+
+<script src="https://utteranc.es/client.js"
+        repo="PhantomAurelia/Atlas"
+        issue-term="pathname"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>

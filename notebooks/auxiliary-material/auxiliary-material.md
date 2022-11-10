@@ -33,3 +33,11 @@ The files you can find here are:
         WORLD_coastline.sbx
         WORLD_coastline.shp
         WORLD_coastline.shx
+
+<script src="https://utteranc.es/client.js"
+        repo="PhantomAurelia/Atlas"
+        issue-term="pathname"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>

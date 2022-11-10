@@ -21,3 +21,17 @@ WAS    | NEAF, SEAF, WCA, ECA, TIB, ARP, SAS, ARS, BOB, EIO
 CAS    | EEU, WSB, ESB, WCA, ECA, TIB, EAS, ARP
 ANT    | EAN, WAN
 AUS    | SEA, NAU, CAU, EAU, SAU, NZ
+
+
+## References
+```{bibliography}
+:filter: docname in docnames
+```
+
+<script src="https://utteranc.es/client.js"
+        repo="PhantomAurelia/Atlas"
+        issue-term="pathname"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>

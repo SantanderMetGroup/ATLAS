@@ -22,4 +22,18 @@ The mountain ranges masks (0.5&deg;, 1&deg;, and 2&deg;) have been defined using
 Includes auxiliary masks used to filter out gridboxes with no observational data (infilled with distintant station values) for different observational datasets used in the Interactive Atlas {cite:authorpar}`IPCCWGIInteractive`.
 
 ### References
+
+```{bibliography}
+:filter: docname in docnames
+```
+
 {cite}`DevelopingMapWorld`
+
+
+<script src="https://utteranc.es/client.js"
+        repo="PhantomAurelia/Atlas"
+        issue-term="pathname"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>

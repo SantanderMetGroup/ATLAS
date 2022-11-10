@@ -23,3 +23,17 @@ Please be aware that these four scripts must be run in the above order. All of t
  * {download}`AtlasCDOremappeR_CMIP6_Omon.sh<bash-interpolation-scripts/AtlasCDOremappeR_CMIP6_Omon.sh>`
  * {download}`AtlasCDOremappeR_CMIP.sh<bash-interpolation-scripts/AtlasCDOremappeR_CMIP.sh>`
  * {download}`AtlasCDOremappeR_CORDEX.sh<bash-interpolation-scripts/AtlasCDOremappeR_CORDEX/AtlasCDOremappeR_CORDEX.sh>`
+
+### References
+
+```{bibliography}
+:filter: docname in docnames
+```
+
+<script src="https://utteranc.es/client.js"
+        repo="PhantomAurelia/Atlas"
+        issue-term="pathname"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>

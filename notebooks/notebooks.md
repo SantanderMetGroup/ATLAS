@@ -22,3 +22,10 @@ reference-regions       | [X](./reference-regions_R.ipynb)         | [X](./refer
 regional-scatter-plots  | [X](./regional-scatter-plots_R.ipynb)    |
 stripes-plots           | [X](./stripes-plots_R.ipynb)             |
 
+<script src="https://utteranc.es/client.js"
+        repo="PhantomAurelia/Atlas"
+        issue-term="pathname"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>

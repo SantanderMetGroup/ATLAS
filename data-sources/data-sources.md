@@ -47,5 +47,14 @@ Historical annual gridded population data for the period 1861-2005 is based on t
 
 ### Anthropogenic CO2 emissions
 
-
-
+#### References
+```{bibliography}
+:filter: docname in docnames
+```
+<script src="https://utteranc.es/client.js"
+        repo="PhantomAurelia/Atlas"
+        issue-term="pathname"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>

@@ -62,7 +62,9 @@ The [errata](ERRATA) of the Atlas covers both the content (products, such as plo
 ```{tableofcontents}
 ```
 ### Bibliography
+
 ```{bibliography}
+:filter: docname in docnames
 ```
 
 <script src="https://utteranc.es/client.js"
