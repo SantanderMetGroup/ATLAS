@@ -3,7 +3,7 @@
 
 These are shell (bash) scripts used for the conservative interpolation of the Interactive Atlas Dataset.
 
-All the raw model outputs from the CMIP5, CMIP6 and CORDEX experiments have been interpolated to a common grid using the first order conservative remapping implemented in *Climate Data Operators (CDO) version 1.9.8* {cite}`VistazoCDOProject`. See the *CDO User Guide* {cite}`schulzweidaCDOUserGuide2022` for the details of the algorithm (*remapcon* operator).
+All the raw model outputs from the CMIP5, CMIP6 and CORDEX experiments have been interpolated to a common grid using the first order conservative remapping implemented in *Climate Data Operators (CDO) version 1.9.8* {cite}`VistazoCDOProject`. See the *CDO User Guide* {cite}`CDOguide` for the details of the algorithm (*remapcon* operator).
 
 **CMIP5** data have been interpolated to the 2 degree common grid (reference-grids/land_sea_mask_2degree_binary.nc4)
 with *AtlasCDOremappeR_CMIP.sh*(datasets-interactive-atlas/bash-interpolation-scripts/AtlasCDOremappeR_CMIP.sh)
