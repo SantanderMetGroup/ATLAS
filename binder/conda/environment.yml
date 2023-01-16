@@ -34,6 +34,11 @@ dependencies:
   - r-httr ==1.4.2
   - r-lattice ==0.20_44
   - r-latticeextra ==0.6_29
+  - r-downscaler ==3.3.3
+  - r-downscaler.keras ==1.0.0
+  - r-geoprocessor ==0.2.0
+  - r-rgdal ==1.5_16
+  - r-visualizer ==1.6.1
   # Python dependencies from some notebooks and/or scripts
   - python ==3.7.10
   - xarray ==0.19.0
