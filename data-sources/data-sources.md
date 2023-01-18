@@ -43,7 +43,7 @@ Information on surface Ozone, Particulate Matter (PM2.5), and Effective Radiativ
 The Interactive Atlas also includes relevant socioeconomic data to provide context information on the SSPs used in the CMIP6 climate projections. This includes population data and CMIP6 forcing used by the modeling communit (anthropogenic CO2 emissions). This data is not included in this repository.
 
 ### Population gridded data (0.5°)
-Historical annual gridded population data for the period 1861-2005 is based on the HYDE3.2 database {cite}`ESSDAnthropogenicLand`. Source: *ISIMIP2b*{cite:authorpar}`InputDataSet`. Annual gridded population data for the period 2006-2100 and for the different SSPs (1-5) is based on the population projections described in {cite}`jonesSpatiallyExplicitGlobal2016`. Source: *ISIMIP2b* annual values linearly interpolated from the original decadal population data.
+Historical annual gridded population data for the period 1861-2005 is based on the HYDE3.2 database {cite:authorpar}`ESSDAnthropogenicLand`. Source: *ISIMIP2b*{cite:authorpar}`InputDataSet`. Annual gridded population data for the period 2006-2100 and for the different SSPs (1-5) is based on the population projections described in {cite}`jonesSpatiallyExplicitGlobal2016`. Source: *ISIMIP2b* annual values linearly interpolated from the original decadal population data.
 
 ### Anthropogenic CO2 emissions
 

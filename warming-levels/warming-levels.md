@@ -24,7 +24,7 @@ See also the [global warming levels](global-warming-levels_R) notebook in the no
 
 ## Similar repositories
 
-A similar repository for GWL calculation is maintained by {cite}`MathauseCmipWarming` and provides similar information which allows double-checking the results. Small differences (1-year shifts) are attributable to different postprocessing methods and/or different members/versions.
+A similar repository for GWL calculation is maintained by {cite:authorpar}`MathauseCmipWarming` and provides similar information which allows double-checking the results. Small differences (1-year shifts) are attributable to different postprocessing methods and/or different members/versions.
 
 ### References 
 
