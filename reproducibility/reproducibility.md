@@ -5,12 +5,12 @@ End-to-end scripts used for the preparation of key figures of the IPCC WGI AR6 A
 
 ## Script list
 
- * [projections](projections) / boxplots_TandP.R
- * [maps](maps) / 04_map_figures.R
- * [observations](observations) / observationsTrendsSnow.R
- * [observations](observations) / observationsTrendsGlobal.R
- * [observations](observations) / observationsTrendsEurope.R
- * [observations](observations) / observationsSeriesEurope.R
+ * [projections](projections) / {download}`boxplots_TandP.R<../reproducibility/projections/boxplots_TandP.R>`
+ * [maps](maps) / {download}`04_map_figures.R<../datasets-interactive-atlas/04_map_figures.R>`
+ * [observations](observations) / {download}`observationsTrendsSnow.R<../reproducibility/observations/observationsTrendsSnow.R>`
+ * [observations](observations) / {download}`observationsTrendsGlobal.R<../reproducibility/observations/observationsTrendsGlobal.R>`
+ * [observations](observations) / {download}`observationsTrendsEurope.R<../reproducibility/observations/observationsTrendsEurope.R>`
+ * [observations](observations) / {download}`observationsSeriesEurope.R<../reproducibility/observations/observationsSeriesEurope.R>`
 
 
 <script src="https://utteranc.es/client.js"
