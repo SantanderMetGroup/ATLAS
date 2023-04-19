@@ -12,9 +12,9 @@ parts:
       - file: datasets-interactive-atlas/datasets-interactive-atlas
       - file: reference-regions/reference-regions
       - file: datasets-aggregated-regionally/datasets-aggregated-regionally
+      - file: notebooks/notebooks
   - caption: Notebooks
     chapters:
-      - file: notebooks/notebooks
       - file: notebooks/regional-scatter-plots_R.ipynb
       - file: notebooks/global-warming-levels_R.ipynb
       - file: notebooks/bias-adjustment_R.ipynb
