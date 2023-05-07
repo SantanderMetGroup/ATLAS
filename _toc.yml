@@ -26,7 +26,7 @@ parts:
       - file: notebooks/reference-regions_Python.ipynb
       - file: notebooks/reference-regions_R.ipynb
       - file: notebooks/stripes-plots_R.ipynb
-  - caption: Anexos
+  - caption: Appendix
     chapters:
       - file: ERRATA
       - file: reproducibility/reproducibility

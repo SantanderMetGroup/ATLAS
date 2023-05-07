@@ -35,6 +35,8 @@ repository:
 # Adding the launch buttons
 launch_buttons:
   notebook_interface: "jupyterlab"
+  binderhub_url: "https://mybinder.org"
+  thebe                  : true
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
