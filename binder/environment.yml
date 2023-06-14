@@ -1,0 +1,61 @@
+name: ipcc-wgi-ar6-env
+channels:
+  - conda-forge
+  - nodefaults
+  - conda-forge/label/broken
+dependencies:
+  - r-base ==3.6.3
+  - python ==3.7.12
+  #- r-climate4r ==2.5.3
+  #- r-base >=3.6.3,<3.7
+  - r-climate4r.udg ==0.2.3
+  - r-loader.java ==1.1.1
+  - r-loader ==1.7.1
+  - r-loader.ecoms ==1.4.6
+  - r-transformer ==2.1.3
+  - r-downscaler ==3.3.3
+  - r-downscaler.keras ==1.0.0
+  - r-visualizer ==1.6.1
+  - r-convertr ==0.2.0
+  - r-geoprocessor ==0.2.0
+  - r-climate4r.climdex ==0.2.2
+  - r-climate4r.indices ==0.2.0
+  - r-loader.2nc ==0.1.2
+  - r-firedanger ==1.1.0
+  - r-value ==2.2.2
+  - r-climate4r.value ==0.0.2
+  - r-mopa ==1.0.0
+  - r-drought4r ==0.2.0
+  - r-climate4r.datasets ==0.0.1
+  
+  - iris
+  # Jupyter and JupyterHub dependencies
+  - r-irkernel
+  - jupyter
+  - jupyterhub
+  - notebook
+  - jupyterlab
+  - jupyter_nbextensions_configurator
+  # required for decouple binder and repo
+  - nbgitpuller
+  # required for jupyter books
+  - jupytext >=0.16
+  # Dependencies for notebooks
+  - r-devtools
+  - r-gridextra
+  - r-xtable
+  - r-magrittr
+  - r-httr
+  - r-lattice
+  - r-latticeextra
+  # Python dependencies from some notebooks and/or scripts
+  - xarray
+  - regionmask
+  # Shell scripts dependencies
+  - cdo
+  - nco
+  # optional jupyter labextensions (i.e. git) build dependencies
+  - jupyterlab-git
+  - nodejs
+  - pip
+  - wheel
