@@ -1,13 +1,15 @@
-name: ipcc-wgi-ar6-env
+name: ipcc-ar6-wg1-atlas-env
 channels:
   - conda-forge
-  - nodefaults
-  - conda-forge/label/broken
+  - nodefaults # only conda-forge dependencies
+  - conda-forge/label/broken # just in case some dependencies become "broken"
 dependencies:
+  # explicit dependency on R and Python versions
   - r-base ==3.6.3
   - python ==3.7.12
-  #- r-climate4r ==2.5.3
   #- r-base >=3.6.3,<3.7
+  #- r-climate4r ==2.5.4
+  # climate4R v2.5.4 dependencies
   - r-climate4r.udg ==0.2.3
   - r-loader.java ==1.1.1
   - r-loader ==1.7.1
@@ -27,8 +29,8 @@ dependencies:
   - r-mopa ==1.0.0
   - r-drought4r ==0.2.0
   - r-climate4r.datasets ==0.0.1
-  
   - iris
+
   # Jupyter and JupyterHub dependencies
   - r-irkernel
   - jupyter
@@ -36,11 +38,13 @@ dependencies:
   - notebook
   - jupyterlab
   - jupyter_nbextensions_configurator
+  - jupyterlab-git
   # required for decouple binder and repo
   - nbgitpuller
   # required for jupyter books
+  - jupyter-book
   - jupytext >=0.16
-  # Dependencies for notebooks
+  # R extra dependencies used by notebooks and/or scripts
   - r-devtools
   - r-gridextra
   - r-xtable
@@ -48,14 +52,43 @@ dependencies:
   - r-httr
   - r-lattice
   - r-latticeextra
-  # Python dependencies from some notebooks and/or scripts
+  # Python extra dependencies used by notebooks and/or scripts
   - xarray
   - regionmask
-  # Shell scripts dependencies
+  # Other extra dependencies used by notebooks and/or scripts
   - cdo
   - nco
-  # optional jupyter labextensions (i.e. git) build dependencies
-  - jupyterlab-git
-  - nodejs
+  # explici PIP dependency
   - pip
-  - wheel
+
+# conda minify on 20230614
+# - r-devtools=2.4.1
+# - r-climate4r.climdex=0.2.2
+# - r-loader.2nc=0.1.2
+# - r-drought4r=0.2.0
+# - r-geoprocessor=0.2.0
+# - r-climate4r.datasets=0.0.1
+# - r-xtable=1.8_4
+# - r-downscaler.keras=1.0.0
+# - r-climate4r.value=0.0.2
+# - r-firedanger=1.1.0
+# - r-visualizer=1.6.1
+# - r-mopa=1.0.0
+# - r-loader.ecoms=1.4.6
+# - r-climate4r.indices=0.2.0
+# - regionmask=0.10.0
+# 
+# - jupytext=1.14.6
+# - jupyter=1.0.0
+# - jupyterlab=3.6.4
+# - r-irkernel=1.2
+# - jupyterhub=4.0.1
+# - jupyterlab-git=0.41.0
+# - jupyter_nbextensions_configurator=0.6.1
+# - jupyter-book=0.15.1
+# - nbgitpuller=1.1.1
+# 
+# - cdo=1.9.9
+# - nco=4.9.9
+# - iris=3.1.0
+# - pip=23.1.2
