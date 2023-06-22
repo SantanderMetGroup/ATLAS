@@ -1,4 +1,4 @@
-name: ipcc-ar6-wg1-atlas-env
+name: binder-atlas-climate4r-v2.5.4
 channels:
   - conda-forge
   - nodefaults # only conda-forge dependencies
@@ -7,8 +7,6 @@ dependencies:
   # explicit dependency on R and Python versions
   - r-base ==3.6.3
   - python ==3.7.12
-  #- r-base >=3.6.3,<3.7
-  #- r-climate4r ==2.5.4
   # climate4R v2.5.4 dependencies
   - r-climate4r.udg ==0.2.3
   - r-loader.java ==1.1.1
@@ -33,12 +31,17 @@ dependencies:
 
   # Jupyter and JupyterHub dependencies
   - r-irkernel
-  - jupyter
-  - jupyterhub
-  - notebook
-  - jupyterlab
+  - jupyter #==1.0.0
+  - jupyterhub #==1.4.2
+  - notebook #==6.4.2
+  - jupyterlab #==3.1.4
   - jupyter_nbextensions_configurator
   - jupyterlab-git
+  - jupyterlab-github
+  - jupyterlab-topbar
+  - jupyterlab-topbar-text
+  - jupyterlab-system-monitor
+
   # required for decouple binder and repo
   - nbgitpuller
   # required for jupyter books
@@ -60,35 +63,3 @@ dependencies:
   - nco
   # explici PIP dependency
   - pip
-
-# conda minify on 20230614
-# - r-devtools=2.4.1
-# - r-climate4r.climdex=0.2.2
-# - r-loader.2nc=0.1.2
-# - r-drought4r=0.2.0
-# - r-geoprocessor=0.2.0
-# - r-climate4r.datasets=0.0.1
-# - r-xtable=1.8_4
-# - r-downscaler.keras=1.0.0
-# - r-climate4r.value=0.0.2
-# - r-firedanger=1.1.0
-# - r-visualizer=1.6.1
-# - r-mopa=1.0.0
-# - r-loader.ecoms=1.4.6
-# - r-climate4r.indices=0.2.0
-# - regionmask=0.10.0
-# 
-# - jupytext=1.14.6
-# - jupyter=1.0.0
-# - jupyterlab=3.6.4
-# - r-irkernel=1.2
-# - jupyterhub=4.0.1
-# - jupyterlab-git=0.41.0
-# - jupyter_nbextensions_configurator=0.6.1
-# - jupyter-book=0.15.1
-# - nbgitpuller=1.1.1
-# 
-# - cdo=1.9.9
-# - nco=4.9.9
-# - iris=3.1.0
-# - pip=23.1.2
