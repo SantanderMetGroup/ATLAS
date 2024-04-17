@@ -1,0 +1,829 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Create stripes of anual temperature and precipitation mean values. &#8212; IPCC-ATLAS Jupyter Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "PhantomAurelia/Atlas");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/stripes-plots_R';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Errata and problem reporting" href="../ERRATA.html" />
+    <link rel="prev" title="Using the 4th version of the IPCC WGI reference regions in R" href="reference-regions_R.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Repository supporting the implementation of FAIR principles in the IPCC-WGI Atlas
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Information</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../warming-levels/warming-levels.html">Global Warming Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data-sources/data-sources.html">Data sources used in the Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference-grids/reference-grids.html">Sets of reference grids</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/datasets-interactive-atlas.html">Code for reproducibility of the Interactive Atlas Dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference-regions/reference-regions.html">Sets of regions for regional synthesis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-aggregated-regionally/datasets-aggregated-regionally.html">Aggregated datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Notebooks</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Notebooks</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="regional-scatter-plots_R.html">Computing and visualizing regional climate change (temperature vs precipitation) for reference regions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="global-warming-levels_R.html">Computing and visualizing transient global warming levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bias-adjustment_R.html">Atlas notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CORDEX-overlaps_Python.html">Selecting reference regions used for every CORDEX domain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GeoTIFF-post-processing_R.html">GeoTIFF file post-processing: Spatial operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hatching-uncertainty_R.html">Calculation and hatching of the uncertainty in projected delta changes.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linear-trends_R.html">Computing and visualization of precipitation linear trends during the observed period (1980-2014)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference-grids_R.html">Using the Atlas reference grids in <code class="docutils literal notranslate"><span class="pre">R</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference-regions_Python.html">Using the 4th version of the IPCC WGI reference regions in Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference-regions_R.html">Using the 4th version of the IPCC WGI reference regions in R</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Create stripes of anual temperature and precipitation mean values.</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../ERRATA.html">Errata and problem reporting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/reproducibility.html">Reproducibility scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="auxiliary-material/auxiliary-material.html">Auxiliary Materials for Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../binder/binder.html">Binder image deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/maps/maps.html">Code for reproducibility of the Atlas Map figures of model projections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/observations/observations.html">Code for reproducibility of the ATLAS spatial maps of the observed linear trends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/bash-interpolation-scripts/bash-interpolation-scripts.html">Bash interpolation scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/bash-interpolation-scripts/AtlasCDOremappeR_CORDEX/atlasCDOremappeR.html">AtlasCDOremappeR for CORDEX RCM simulations</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/PhantomAurelia/Atlas/jb-test?urlpath=lab/tree/./notebooks/stripes-plots_R.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas/edit/jb-test/./notebooks/stripes-plots_R.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas/issues/new?title=Issue%20on%20page%20%2Fnotebooks/stripes-plots_R.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/stripes-plots_R.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Create stripes of anual temperature and precipitation mean values.</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-packages-and-functions">Load packages and functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compute-the-stripes">Compute the stripes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parameters-description">Parameters description</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stripes-of-global-mean-values-for-cmip6">Stripes of global mean values for CMIP6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regional-stripes">Regional stripes</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="highlight-default notranslate"><div class="highlight"><pre><span></span># Atlas notebooks
+
+***
+
+&gt; This notebook reproduces and extends parts of the figures and products of the AR6-WGI Atlas. It is part of a notebook collection available at https://github.com/IPCC-WG1/Atlas for reproducibility and reusability purposes. This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0).
+&gt;
+&gt; ![Creative Commons License &gt;](https://i.creativecommons.org/l/by/4.0/88x31.png)
+</pre></div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="create-stripes-of-anual-temperature-and-precipitation-mean-values">
+<span id="stripes-plots"></span><h1>Create stripes of anual temperature and precipitation mean values.<a class="headerlink" href="#create-stripes-of-anual-temperature-and-precipitation-mean-values" title="Permalink to this heading">#</a></h1>
+<p>13/7/2021</p>
+<p><strong>M. Iturbide</strong> (Santander Meteorology Group. Institute of Physics of Cantabria, CSIC-UC, Santander, Spain).</p>
+<p>This notebook creates stripes figures using data from <a class="reference external" href="https://github.com/IPCC-WG1/Atlas/tree/main/datasets-aggregated-regionally">datasets-aggregated-regionally</a>. The resulting figures show years in the x axis and model names in the y axis. Despite mean results are shown for each model and year, the values are not necessarily annual, as the user can select the season of interest.</p>
+<section id="load-packages-and-functions">
+<h2>Load packages and functions<a class="headerlink" href="#load-packages-and-functions" title="Permalink to this heading">#</a></h2>
+<p>This notebook is based on the R programming language and requires packages:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">magrittr</span></code> to pipe (<code class="docutils literal notranslate"><span class="pre">%&gt;%</span></code>) sequences of operations</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">httr</span></code> to handle URLs and HTTP</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lattice</span></code> and <code class="docutils literal notranslate"><span class="pre">latticeExtra</span></code> to produce the figures</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">RColorBrewer</span></code> for producing color palettes</p></li>
+</ul>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">magrittr</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">httr</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">lattice</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">latticeExtra</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">RColorBrewer</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The main function to generate the stripes is <code class="docutils literal notranslate"><span class="pre">computeStripes</span></code>, available in this repository. To load this functions in the working environment use the <code class="docutils literal notranslate"><span class="pre">source</span></code> R base function as follows.</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">source</span><span class="p">(</span><span class="s">&quot;../datasets-aggregated-regionally/scripts/computeStripes.R&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The script is available for download:
+<a class="reference download internal" download="" href="../_downloads/927cb8506c7e99437141595a9f901b3a/computeStripes.R"><code class="xref download docutils literal notranslate"><span class="pre">computeStripes.R</span></code></a></p>
+</section>
+<section id="compute-the-stripes">
+<h2>Compute the stripes<a class="headerlink" href="#compute-the-stripes" title="Permalink to this heading">#</a></h2>
+<section id="parameters-description">
+<h3>Parameters description<a class="headerlink" href="#parameters-description" title="Permalink to this heading">#</a></h3>
+<p>Here is a brief description of the <code class="docutils literal notranslate"><span class="pre">computeStripes</span></code> parameters and available choices for different configurations:</p>
+<ul class="simple">
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">project</span></code></strong> Any of the following character strings: “CMIP6”, “CMIP5” “CORDEX”.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">var</span></code></strong> Any of the following: “tas” (for temperature) “pr” (for precipitation).</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">experiment</span></code></strong> Any of the following strings for CORDEX and CMIP5: rcp26, rcp45, rcp85. Any of the following for CMIP6:”ssp126”, “ssp245”, “ssp370”, “ssp585”. Additionally, the historical scenario is always used as reference.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">season</span></code></strong> Numerical value indicating the target season (e.g. 1:12 for annual data, c(12, 1, 2) for winter).</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">area</span></code></strong> Any of the following: “land”, “sea”, “landsea”.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">region</span></code></strong> Acronym of any of the reference regions (e.g. “MED”) or “World” (or “full_domain” if project = “CORDEX”).</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">cordex.domain</span></code></strong> Any of the following character strings: “AFR”, “ANT”, “ARC”, “AUS”, “CAM”, “EAS”, “EUR”, “NAM”, “SAM”, “SEA”, “WAS”. Used only if project = “CORDEX”. If the region selected does not intersect the cordex domain, other domain is used and a warning message is printed.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">brewer.pal.name</span></code></strong> Brewer color palette name (e.g. “RdBu”).</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">rev.colors</span></code></strong> Logical indicating whether the color palette should be reversed.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">...</span></code></strong> Optional graphical parameters of the levelplot function (type ?levelplot).</p></li>
+</ul>
+<p>In the following cells we will play play with these paremeters to produce different results.</p>
+</section>
+<section id="stripes-of-global-mean-values-for-cmip6">
+<h3>Stripes of global mean values for CMIP6<a class="headerlink" href="#stripes-of-global-mean-values-for-cmip6" title="Permalink to this heading">#</a></h3>
+<p>The next call of <code class="docutils literal notranslate"><span class="pre">computeStripes</span></code> produces a stripes figure for CMIP6 (<code class="docutils literal notranslate"><span class="pre">project</span> <span class="pre">=</span> <span class="pre">&quot;CMIP6&quot;</span></code>) annual (<code class="docutils literal notranslate"><span class="pre">season</span> <span class="pre">=</span> <span class="pre">1:12</span></code>) mean precipitation (<code class="docutils literal notranslate"><span class="pre">var</span> <span class="pre">=</span> <span class="pre">&quot;pr&quot;</span></code>). The historical and ssp585 scenarios are considered (<code class="docutils literal notranslate"><span class="pre">experiment</span> <span class="pre">=</span> <span class="pre">&quot;ssp585&quot;</span></code>) for the global land surface (<code class="docutils literal notranslate"><span class="pre">region</span> <span class="pre">=</span> <span class="pre">&quot;world&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">area</span> <span class="pre">=</span> <span class="pre">&quot;land&quot;</span></code>).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">computeStripes</span><span class="p">(</span><span class="n">project</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;CMIP6&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">               </span><span class="n">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;pr&quot;</span><span class="p">,</span>
+<span class="w">               </span><span class="n">experiment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;ssp585&quot;</span><span class="p">,</span>
+<span class="w">               </span><span class="n">season</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">12</span><span class="p">,</span>
+<span class="w">               </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;land&quot;</span><span class="p">,</span>
+<span class="w">               </span><span class="n">region</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;world&quot;</span><span class="p">,</span>
+<span class="w">               </span><span class="n">cordex.domain</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NULL</span><span class="p">,</span>
+<span class="w">               </span><span class="n">brewer.pal.name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Blues&quot;</span><span class="p">,</span>
+<span class="w">               </span><span class="n">rev.colors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/8b3f46d8a83ff32984a79847e2d12b903a2110e9ea3ec7ea55711ca109f5973b.png" src="../_images/8b3f46d8a83ff32984a79847e2d12b903a2110e9ea3ec7ea55711ca109f5973b.png" />
+</div>
+</div>
+<p>Play with the parameter options for different configurations. For instance, change the variable (<code class="docutils literal notranslate"><span class="pre">var</span> <span class="pre">=</span> <span class="pre">&quot;tas&quot;</span></code>) or use additional graphical parameters (type <code class="docutils literal notranslate"><span class="pre">?levelplot</span></code> to check available parameters) to, for instance, change the title (<code class="docutils literal notranslate"><span class="pre">main</span> <span class="pre">=</span> <span class="pre">list(&quot;Stripes</span> <span class="pre">of</span> <span class="pre">Mediterranean</span> <span class="pre">mean</span> <span class="pre">temperature</span> <span class="pre">for</span> <span class="pre">CMIP6&quot;,</span> <span class="pre">cex</span> <span class="pre">=</span> <span class="pre">1.5)</span></code>) or the width of the colorkey (<code class="docutils literal notranslate"><span class="pre">colorkey</span> <span class="pre">=</span> <span class="pre">list(width</span> <span class="pre">=</span> <span class="pre">2)</span></code>).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">computeStripes</span><span class="p">(</span><span class="n">project</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;CMIP6&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">               </span><span class="n">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;tas&quot;</span><span class="p">,</span>
+<span class="w">               </span><span class="n">experiment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;ssp585&quot;</span><span class="p">,</span>
+<span class="w">               </span><span class="n">season</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">12</span><span class="p">,</span>
+<span class="w">               </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;land&quot;</span><span class="p">,</span>
+<span class="w">               </span><span class="n">region</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;world&quot;</span><span class="p">,</span>
+<span class="w">               </span><span class="n">cordex.domain</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NULL</span><span class="p">,</span>
+<span class="w">               </span><span class="n">brewer.pal.name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;RdBu&quot;</span><span class="p">,</span>
+<span class="w">               </span><span class="n">rev.colors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span>
+<span class="w">               </span><span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="s">&quot;Stripes of mean temperature for CMIP6&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">cex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1.5</span><span class="p">),</span>
+<span class="w">               </span><span class="n">colorkey</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/27c42f7da3e11e1684d4b7398d5eb20d13cebd4c4002ee560bfbf9107966e348.png" src="../_images/27c42f7da3e11e1684d4b7398d5eb20d13cebd4c4002ee560bfbf9107966e348.png" />
+</div>
+</div>
+</section>
+<section id="regional-stripes">
+<h3>Regional stripes<a class="headerlink" href="#regional-stripes" title="Permalink to this heading">#</a></h3>
+<p>Use the name of any of the <a class="reference external" href="https://github.com/IPCC-WG1/Atlas/tree/main/reference-regions">reference regions</a> available in this repository, for instance “MED” (Mediterranean) in the next example. As “MED” can be considered both land or sea, here we will select the mediterranean sea:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">computeStripes</span><span class="p">(</span><span class="n">project</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;CMIP6&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">               </span><span class="n">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;tas&quot;</span><span class="p">,</span>
+<span class="w">               </span><span class="n">experiment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;ssp585&quot;</span><span class="p">,</span>
+<span class="w">               </span><span class="n">season</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">12</span><span class="p">,</span>
+<span class="w">               </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;sea&quot;</span><span class="p">,</span>
+<span class="w">               </span><span class="n">region</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;MED&quot;</span><span class="p">,</span>
+<span class="w">               </span><span class="n">cordex.domain</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NULL</span><span class="p">,</span>
+<span class="w">               </span><span class="n">brewer.pal.name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;RdBu&quot;</span><span class="p">,</span>
+<span class="w">               </span><span class="n">rev.colors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/ece4c0fe243e2701ffc43799179d0fd96bacbbbf7fc69aa7b7f629f31667f36c.png" src="../_images/ece4c0fe243e2701ffc43799179d0fd96bacbbbf7fc69aa7b7f629f31667f36c.png" />
+</div>
+</div>
+<p>Lets consider summer values for CORDEX (<code class="docutils literal notranslate"><span class="pre">season</span> <span class="pre">=</span> <span class="pre">6:8</span></code> and <code class="docutils literal notranslate"><span class="pre">project</span> <span class="pre">=</span> <span class="pre">&quot;CORDEX&quot;</span></code>). We need to specify a CORDEX domain, for instance <code class="docutils literal notranslate"><span class="pre">cordex.domain</span> <span class="pre">=</span> <span class="pre">&quot;AFR&quot;</span></code> (we could also select “EUR”, as both domains cover the MED region). We will also change the color palette (<code class="docutils literal notranslate"><span class="pre">brewer.pal.name</span> <span class="pre">=</span> <span class="pre">&quot;RdGy&quot;</span></code>)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">computeStripes</span><span class="p">(</span><span class="n">project</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;CORDEX&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">               </span><span class="n">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;tas&quot;</span><span class="p">,</span>
+<span class="w">               </span><span class="n">experiment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;rcp85&quot;</span><span class="p">,</span>
+<span class="w">               </span><span class="n">season</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">6</span><span class="o">:</span><span class="m">8</span><span class="p">,</span>
+<span class="w">               </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;land&quot;</span><span class="p">,</span>
+<span class="w">               </span><span class="n">region</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;MED&quot;</span><span class="p">,</span>
+<span class="w">               </span><span class="n">cordex.domain</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;AFR&quot;</span><span class="p">,</span>
+<span class="w">               </span><span class="n">brewer.pal.name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;RdGy&quot;</span><span class="p">,</span>
+<span class="w">               </span><span class="n">rev.colors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/b038bd1acc2fff3c1e811ba04cfd823b6d2ea3230ffb202b34b93fd7c0f15cf8.png" src="../_images/b038bd1acc2fff3c1e811ba04cfd823b6d2ea3230ffb202b34b93fd7c0f15cf8.png" />
+</div>
+</div>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">sessionInfo</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>R version 3.6.3 (2020-02-29)
+Platform: x86_64-conda-linux-gnu (64-bit)
+Running under: Ubuntu 22.04.4 LTS
+
+Matrix products: default
+BLAS/LAPACK: /DATA/miniconda3/envs/atlas-jupyterbook/lib/libopenblasp-r0.3.25.so
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+ [3] LC_TIME=es_ES.UTF-8        LC_COLLATE=en_US.UTF-8    
+ [5] LC_MONETARY=es_ES.UTF-8    LC_MESSAGES=en_US.UTF-8   
+ [7] LC_PAPER=es_ES.UTF-8       LC_NAME=C                 
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=es_ES.UTF-8 LC_IDENTIFICATION=C       
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] RColorBrewer_1.1-2  latticeExtra_0.6-29 lattice_0.20-44    
+[4] httr_1.4.2          magrittr_2.0.1     
+
+loaded via a namespace (and not attached):
+ [1] uuid_0.1-4        R6_2.5.0          jpeg_0.1-8.1      rlang_0.4.11     
+ [5] fansi_0.4.2       tools_3.6.3       grid_3.6.3        png_0.1-7        
+ [9] utf8_1.2.1        htmltools_0.5.1.1 ellipsis_0.3.2    digest_0.6.27    
+[13] lifecycle_1.0.0   crayon_1.4.1      IRdisplay_1.0     repr_1.1.3       
+[17] base64enc_0.1-3   vctrs_0.3.8       IRkernel_1.2      evaluate_0.14    
+[21] pbdZMQ_0.3-5      compiler_3.6.3    pillar_1.6.1      jsonlite_1.7.2   
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "PhantomAurelia/Atlas",
+            ref: "jb-test",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "r"
+        },
+        kernelOptions: {
+            name: "ir",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'ir'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="reference-regions_R.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Using the 4th version of the IPCC WGI reference regions in R</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../ERRATA.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Errata and problem reporting</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-packages-and-functions">Load packages and functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compute-the-stripes">Compute the stripes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parameters-description">Parameters description</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stripes-of-global-mean-values-for-cmip6">Stripes of global mean values for CMIP6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regional-stripes">Regional stripes</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By David Domínguez Román
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

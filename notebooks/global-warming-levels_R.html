@@ -1,0 +1,1011 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Computing and visualizing transient global warming levels &#8212; IPCC-ATLAS Jupyter Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "PhantomAurelia/Atlas");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/global-warming-levels_R';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Atlas notebooks" href="bias-adjustment_R.html" />
+    <link rel="prev" title="Computing and visualizing regional climate change (temperature vs precipitation) for reference regions" href="regional-scatter-plots_R.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Repository supporting the implementation of FAIR principles in the IPCC-WGI Atlas
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Information</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../warming-levels/warming-levels.html">Global Warming Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data-sources/data-sources.html">Data sources used in the Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference-grids/reference-grids.html">Sets of reference grids</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/datasets-interactive-atlas.html">Code for reproducibility of the Interactive Atlas Dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference-regions/reference-regions.html">Sets of regions for regional synthesis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-aggregated-regionally/datasets-aggregated-regionally.html">Aggregated datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Notebooks</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Notebooks</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="regional-scatter-plots_R.html">Computing and visualizing regional climate change (temperature vs precipitation) for reference regions</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Computing and visualizing transient global warming levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bias-adjustment_R.html">Atlas notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CORDEX-overlaps_Python.html">Selecting reference regions used for every CORDEX domain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GeoTIFF-post-processing_R.html">GeoTIFF file post-processing: Spatial operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hatching-uncertainty_R.html">Calculation and hatching of the uncertainty in projected delta changes.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linear-trends_R.html">Computing and visualization of precipitation linear trends during the observed period (1980-2014)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference-grids_R.html">Using the Atlas reference grids in <code class="docutils literal notranslate"><span class="pre">R</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference-regions_Python.html">Using the 4th version of the IPCC WGI reference regions in Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference-regions_R.html">Using the 4th version of the IPCC WGI reference regions in R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stripes-plots_R.html">Create stripes of anual temperature and precipitation mean values.</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../ERRATA.html">Errata and problem reporting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/reproducibility.html">Reproducibility scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="auxiliary-material/auxiliary-material.html">Auxiliary Materials for Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../binder/binder.html">Binder image deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/maps/maps.html">Code for reproducibility of the Atlas Map figures of model projections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/observations/observations.html">Code for reproducibility of the ATLAS spatial maps of the observed linear trends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/bash-interpolation-scripts/bash-interpolation-scripts.html">Bash interpolation scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/bash-interpolation-scripts/AtlasCDOremappeR_CORDEX/atlasCDOremappeR.html">AtlasCDOremappeR for CORDEX RCM simulations</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/PhantomAurelia/Atlas/jb-test?urlpath=lab/tree/./notebooks/global-warming-levels_R.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas/edit/jb-test/./notebooks/global-warming-levels_R.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas/issues/new?title=Issue%20on%20page%20%2Fnotebooks/global-warming-levels_R.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/global-warming-levels_R.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Computing and visualizing transient global warming levels</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#package-dependencies">Package dependencies</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gwl-calculation">GWL calculation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-for-one-single-cmip5-gcm">Example for one single CMIP5 GCM</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reading-input-data">Reading input data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transient-gwl-calculation">Transient GWL calculation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#session-information">Session Information</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="highlight-default notranslate"><div class="highlight"><pre><span></span># Atlas notebooks
+
+***
+
+&gt; This notebook reproduces and extends parts of the figures and products of the AR6-WGI Atlas. It is part of a notebook collection available at https://github.com/IPCC-WG1/Atlas for reproducibility and reusability purposes. This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0).
+&gt;
+&gt; ![Creative Commons License &gt;](https://i.creativecommons.org/l/by/4.0/88x31.png)
+
+</pre></div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="computing-and-visualizing-transient-global-warming-levels">
+<span id="global-warming-levels-r"></span><h1>Computing and visualizing transient global warming levels<a class="headerlink" href="#computing-and-visualizing-transient-global-warming-levels" title="Permalink to this heading">#</a></h1>
+<p>30/6/2021</p>
+<p><em>J. Bedia</em> - <a class="reference external" href="http://www.meteo.unican.es">Santander Meteorology Group</a>. Dept. of Applied Mathematics and Computing Science. University of Cantabria, Santander, Spain.</p>
+<p>In this notebook we reproduce some of the key steps for the determination of transient Global Warming Levels (GWLs). The computation of the period corresponding to a given GWL is carried out by means of a external function available in the Atlas repository, which is applied in this notebook to a single model. The example illustrates the whole process of data access, data selection and preparation, computation of GWL periods and visualization.</p>
+<section id="package-dependencies">
+<h2>Package dependencies<a class="headerlink" href="#package-dependencies" title="Permalink to this heading">#</a></h2>
+<p>This notebook is based on R programming language and requires packages:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">magrittr</span></code> to pipe (<code class="docutils literal notranslate"><span class="pre">%&gt;%</span></code>) sequences of data operations improving readability</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">magrittr</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="gwl-calculation">
+<h2>GWL calculation<a class="headerlink" href="#gwl-calculation" title="Permalink to this heading">#</a></h2>
+<p>The function (warming-levels/scripts/getGWL.R) performs the key task of GWL determination. It is an atomic function to compute the timing of a user-defined transient Global Warming Level, that uses as input a numeric vector of mean global annual temperature projections for a given GCM. This numeric vector must be named, using the corresponding years as names. Both pre-industrial baseline (default to 1850-1900) and transient period (usually up to year 2100) are concatenated in a single input vector.</p>
+<p>The following example is intended to work with the global mean (land+sea) 2-m temperature data stored as <em>.csv</em> files in the <em>datasets-aggregated-regionally</em> directory.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">getGWL</span></code> function is loaded by issuing:</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">source</span><span class="p">(</span><span class="s">&quot;../warming-levels/scripts/getGWL.R&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The script is available for download:</p>
+<p><a class="reference download internal" download="" href="../_downloads/dfb30b22fffbebe904a0c18c71d6ea49/getGWL.R"><code class="xref download docutils literal notranslate"><span class="pre">getGWL.R</span></code></a></p>
+</section>
+<section id="example-for-one-single-cmip5-gcm">
+<h2>Example for one single CMIP5 GCM<a class="headerlink" href="#example-for-one-single-cmip5-gcm" title="Permalink to this heading">#</a></h2>
+<section id="reading-input-data">
+<h3>Reading input data<a class="headerlink" href="#reading-input-data" title="Permalink to this heading">#</a></h3>
+<p>The transient GWLs of +1.5, +2, +3 and +4<span class="math notranslate nohighlight">\(^\circ\)</span>C are here calculated for one single CMIP5 GCM. The <em>EC-EARTH r12i1p1</em> ensemble member simulations forced by the RCP 8.5 scenario are picked as an example. Their data are located by searching with an adequate pattern into the data directory:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">target</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;EC-EARTH&quot;</span>
+<span class="n">modelfiles</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list.files</span><span class="p">(</span><span class="s">&quot;../datasets-aggregated-regionally/data/CMIP5/CMIP5_tas_landsea&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                         </span><span class="n">full.names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span>
+<span class="w">                         </span><span class="n">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">target</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="nf">print</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1] &quot;../datasets-aggregated-regionally/data/CMIP5/CMIP5_tas_landsea/CMIP5_EC-EARTH_r12i1p1_historical.csv&quot;
+[2] &quot;../datasets-aggregated-regionally/data/CMIP5/CMIP5_tas_landsea/CMIP5_EC-EARTH_r12i1p1_rcp26.csv&quot;     
+[3] &quot;../datasets-aggregated-regionally/data/CMIP5/CMIP5_tas_landsea/CMIP5_EC-EARTH_r12i1p1_rcp45.csv&quot;     
+[4] &quot;../datasets-aggregated-regionally/data/CMIP5/CMIP5_tas_landsea/CMIP5_EC-EARTH_r12i1p1_rcp85.csv&quot;     
+</pre></div>
+</div>
+</div>
+</div>
+<p>The target GCM (and/or ensemble member, if it applies) can be directly chosen using the appropriate <code class="docutils literal notranslate"><span class="pre">target</span></code> pattern string, as in the example code above. Note that CMIP5 and CMIP6 datasets live in different directories, following the same reference syntax.</p>
+<p>First, the historical experiment is read. It will provide the baseline for the GWL calculation.</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">hist.regions</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">grep</span><span class="p">(</span><span class="s">&quot;historical&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">modelfiles</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span>
+<span class="w">                </span><span class="nf">read.table</span><span class="p">(</span><span class="n">header</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">sep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;,&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">dec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;.&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">comment.char</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;#&quot;</span><span class="p">)</span><span class="w"> </span>
+<span class="nf">str</span><span class="p">(</span><span class="n">hist.regions</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;data.frame&#39;:	1872 obs. of  60 variables:
+ $ date : Factor w/ 1872 levels &quot;1850-01&quot;,&quot;1850-02&quot;,..: 1 2 3 4 5 6 7 8 9 10 ...
+ $ GIC  : num  -23.4 -23.8 -23.1 -17.5 -10.8 ...
+ $ NWN  : num  -19.77 -19.2 -20.02 -9.23 -2.17 ...
+ $ NEN  : num  -27.88 -27.58 -21.15 -12.95 -4.83 ...
+ $ WNA  : num  -3.5 -1.19 -1.94 2.88 9.27 ...
+ $ CNA  : num  -3.256 -0.767 1.275 8.376 14.322 ...
+ $ ENA  : num  2.38 1.86 5.24 8.99 13.58 ...
+ $ NCA  : num  12.8 13.6 14.5 18.8 20.3 ...
+ $ SCA  : num  22.6 22.6 23.8 24.1 23.4 ...
+ $ CAR  : num  22.4 22.1 22.7 22.8 23.3 ...
+ $ NWS  : num  19.5 20.1 19.8 19.6 18.7 ...
+ $ NSA  : num  21.7 22.4 22.2 22.1 21.2 ...
+ $ NES  : num  21.9 21.8 21.7 21.6 21.2 ...
+ $ SAM  : num  20 20.1 19.4 19.3 18.7 ...
+ $ SWS  : num  15 15.7 14.8 14.2 12 ...
+ $ SES  : num  22.1 22 20.6 19.4 15.7 ...
+ $ SSA  : num  12.24 13.27 10.96 9.89 7.44 ...
+ $ NEU  : num  -0.885 -1.989 -0.688 3.378 5.005 ...
+ $ WCE  : num  -1.787 -0.202 3.175 6.775 11.896 ...
+ $ EEU  : num  -13.17 -8.55 -2.09 1.8 12.37 ...
+ $ MED  : num  7.32 8.66 10.59 11.55 16.02 ...
+ $ SAH  : num  13.9 17.2 21 23 24.9 ...
+ $ WAF  : num  22.3 23.9 24.7 23.6 23 ...
+ $ CAF  : num  20.8 21.9 21.7 21.4 20.9 ...
+ $ NEAF : num  21.3 22.8 22.2 23.9 23.6 ...
+ $ SEAF : num  21.3 21 20.5 21 20.8 ...
+ $ WSAF : num  19.6 19.8 19.5 18.9 16.5 ...
+ $ ESAF : num  20.2 20.5 19.9 18.9 17.6 ...
+ $ MDG  : num  23.1 23.4 23.1 22.8 22.3 ...
+ $ RAR  : num  -30 -36.73 -24.41 -13.99 -3.24 ...
+ $ WSB  : num  -22.6 -16.54 -9.09 -2.48 11.03 ...
+ $ ESB  : num  -29.85 -24.53 -15.45 -5.43 5.19 ...
+ $ RFE  : num  -25.21 -21.46 -12.54 -5.66 1.13 ...
+ $ WCA  : num  -1.907 -0.103 4.884 9.228 17.403 ...
+ $ ECA  : num  -14.9 -10.94 -5.11 2.3 8.83 ...
+ $ TIB  : num  -15.24 -12.138 -10.491 -3.001 0.421 ...
+ $ EAS  : num  1.47 4.01 7.14 13.37 16.18 ...
+ $ ARP  : num  14.2 17 19.2 24.2 27.1 ...
+ $ SAS  : num  15.2 17.8 20.3 25.3 25.7 ...
+ $ SEA  : num  23.5 23.6 23.8 23.9 24 ...
+ $ NAU  : num  25.6 25.2 24.7 24.7 23.4 ...
+ $ CAU  : num  28 27.8 25.8 19.5 16.7 ...
+ $ EAU  : num  21.8 22.6 21.1 18.3 15.9 ...
+ $ SAU  : num  18.7 18.9 18.2 15 13.7 ...
+ $ NZ   : num  16.3 17 15.8 14.2 13.1 ...
+ $ EAN  : num  -16.3 -20 -27.3 -30.1 -34.1 ...
+ $ WAN  : num  -6.67 -8.04 -13.27 -18.48 -18.4 ...
+ $ ARO  : num  -24.9 -34.1 -29.7 -19.6 -10.2 ...
+ $ NPO  : num  15.8 15.3 15.6 16.4 17.6 ...
+ $ EPO  : num  23.8 24 24 24.1 24 ...
+ $ SPO  : num  19.5 20 19.8 19 17.8 ...
+ $ NAO  : num  14.6 14.3 14.3 14.9 15.9 ...
+ $ EAO  : num  24 24.2 24.4 24.3 23.8 ...
+ $ SAO  : num  19.4 20.3 20.4 19.4 17.5 ...
+ $ ARS  : num  23.1 23.1 23.5 24.3 25.6 ...
+ $ BOB  : num  23.8 24.1 24.7 25.5 25.3 ...
+ $ EIO  : num  23.9 23.9 24.4 24.7 24.7 ...
+ $ SIO  : num  21.8 22.3 22.3 21.7 20.6 ...
+ $ SOO  : num  7.4 8.16 7.55 6.05 4.33 ...
+ $ world: num  10.6 10.9 11.6 12.6 13.4 ...
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<p>This file contains regionally-aggregated (land+sea) monthly temperature data for all the IPCC AR6 reference regions. From this file, we just retain the first (<code class="docutils literal notranslate"><span class="pre">date</span></code>) and last (<code class="docutils literal notranslate"><span class="pre">world</span></code>) columns, average by years and prepare a single named vector with the years:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">yrs</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">hist.regions</span><span class="p">[[</span><span class="s">&quot;date&quot;</span><span class="p">]]</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="nf">gsub</span><span class="p">(</span><span class="s">&quot;-.*&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">.</span><span class="p">)</span>
+<span class="n">hist</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">tapply</span><span class="p">(</span><span class="n">hist.regions</span><span class="p">[[</span><span class="s">&quot;world&quot;</span><span class="p">]],</span><span class="w"> </span><span class="n">INDEX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">yrs</span><span class="p">,</span><span class="w"> </span><span class="n">FUN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;mean&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">na.rm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span>
+<span class="nf">names</span><span class="p">(</span><span class="n">hist</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">unique</span><span class="p">(</span><span class="n">yrs</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We extracted the year as a string from the <code class="docutils literal notranslate"><span class="pre">date</span></code> column and computed the yearly average of the <code class="docutils literal notranslate"><span class="pre">world</span></code> averaged data. The last command sets the years as names for the numeric vector. We can now have a first look at the historical experiment temperature for this model.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">plot</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">as.integer</span><span class="p">(</span><span class="nf">names</span><span class="p">(</span><span class="n">hist</span><span class="p">)),</span>
+<span class="w">     </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hist</span><span class="p">,</span><span class="w"> </span>
+<span class="w">     </span><span class="n">ylab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;global tas (degC)&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">xlab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;year&quot;</span><span class="p">,</span>
+<span class="w">     </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;l&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;blue&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">las</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">)</span>
+<span class="nf">grid</span><span class="p">()</span>
+<span class="nf">title</span><span class="p">(</span><span class="nf">paste</span><span class="p">(</span><span class="n">target</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;historical tas&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/be3e50c7c3190536045717d5e4761b48909e346c8e1075d8c293d76cef105f73.png" src="../_images/be3e50c7c3190536045717d5e4761b48909e346c8e1075d8c293d76cef105f73.png" />
+</div>
+</div>
+<p>The same procedure is next carried out with the RCP 8.5 experiment data, adapting the pattern used in the regular expression to retrieve the corresponding data and repeating the rest of the steps:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">rcp85.regions</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">grep</span><span class="p">(</span><span class="s">&quot;rcp85&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">modelfiles</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span>
+<span class="w">                 </span><span class="nf">read.table</span><span class="p">(</span><span class="n">header</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">sep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;,&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">dec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;.&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">comment.char</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;#&quot;</span><span class="p">)</span>
+<span class="n">yrs</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">rcp85.regions</span><span class="p">[[</span><span class="s">&quot;date&quot;</span><span class="p">]]</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="nf">gsub</span><span class="p">(</span><span class="s">&quot;-.*&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">.</span><span class="p">)</span>
+<span class="n">rcp85</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">tapply</span><span class="p">(</span><span class="n">rcp85.regions</span><span class="p">[[</span><span class="s">&quot;world&quot;</span><span class="p">]],</span><span class="w"> </span><span class="n">INDEX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">yrs</span><span class="p">,</span><span class="w"> </span><span class="n">FUN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;mean&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">na.rm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span>
+<span class="nf">names</span><span class="p">(</span><span class="n">rcp85</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">unique</span><span class="p">(</span><span class="n">yrs</span><span class="p">)</span>
+
+<span class="nf">plot</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">as.integer</span><span class="p">(</span><span class="nf">names</span><span class="p">(</span><span class="n">rcp85</span><span class="p">)),</span>
+<span class="w">     </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rcp85</span><span class="p">,</span><span class="w"> </span>
+<span class="w">     </span><span class="n">ylab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;global tas (degC)&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">xlab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;year&quot;</span><span class="p">,</span>
+<span class="w">     </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;l&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;blue&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">las</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">)</span>
+<span class="nf">grid</span><span class="p">()</span>
+<span class="nf">title</span><span class="p">(</span><span class="nf">paste</span><span class="p">(</span><span class="n">target</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;RCP8.5 tas&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/fd120f78008d6dde14147f823643dc5debe7de63e3877b9160c059d852fd0eaa.png" src="../_images/fd120f78008d6dde14147f823643dc5debe7de63e3877b9160c059d852fd0eaa.png" />
+</div>
+</div>
+<p>We can now also plot the concatenated historical + RCP85 time series. A vertical dashed line is added to differentiate both experiments.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">tas</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">append</span><span class="p">(</span><span class="n">hist</span><span class="p">,</span><span class="w"> </span><span class="n">rcp85</span><span class="p">)</span>
+<span class="nf">plot</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">as.integer</span><span class="p">(</span><span class="nf">names</span><span class="p">(</span><span class="n">tas</span><span class="p">)),</span>
+<span class="w">     </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tas</span><span class="p">,</span><span class="w"> </span>
+<span class="w">     </span><span class="n">ylab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;global tas (degC)&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">xlab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;year&quot;</span><span class="p">,</span>
+<span class="w">     </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;l&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;blue&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">las</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">)</span>
+<span class="nf">grid</span><span class="p">()</span>
+<span class="nf">abline</span><span class="p">(</span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2006</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;red&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">lty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">)</span>
+<span class="nf">title</span><span class="p">(</span><span class="nf">paste</span><span class="p">(</span><span class="n">target</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;hist+RCP 8.5 tas&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/14b0df6500229e1448cb5c6ea994eb04e0d5bc0d92c25e6733659ac8c829fc54.png" src="../_images/14b0df6500229e1448cb5c6ea994eb04e0d5bc0d92c25e6733659ac8c829fc54.png" />
+</div>
+</div>
+</section>
+<section id="transient-gwl-calculation">
+<h3>Transient GWL calculation<a class="headerlink" href="#transient-gwl-calculation" title="Permalink to this heading">#</a></h3>
+<p>For the IPCC WGI Interactive Atlas, the time periods for which +1.5, +2, +3 and +4 degree transient Global Warming Levels (GWLs) are reached (with respect to pre-industrial 1850-1900 mean value) are computed for CMIP5 and CMIP6 data using a 20-year moving window.</p>
+<p>The default output of <code class="docutils literal notranslate"><span class="pre">getGWL</span></code> corresponds to the <strong>central year (n) of the 20-year period</strong> when the warming is first reached (the GWL period is thus <strong>[n-9, n+10]</strong>). This function will return <strong>‘NA’</strong> when the GWL is not reached before (the central year) 2100. Note that the 20-year window width can be adjusted by the user to other arbitrary lengths. In that case, the interval will adapt accordingly.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">tas</span></code> time series depicted in the previous time-series plot will serve as input for the <code class="docutils literal notranslate"><span class="pre">getGWL</span></code> function. In the next code chunk, the +1.5 degC GWL is calculated, considering the default baseline, pre-industrial period (1850-1900) and moving window width (20 years) used in the IPCC WG1 Atlas:</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="w"> </span><span class="n">gwl_1.5</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">getGWL</span><span class="p">(</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tas</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                   </span><span class="n">base.period</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1850</span><span class="p">,</span><span class="w"> </span><span class="m">1900</span><span class="p">),</span>
+<span class="w">                   </span><span class="n">proj.period</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1971</span><span class="p">,</span><span class="w"> </span><span class="m">2100</span><span class="p">),</span>
+<span class="w">                   </span><span class="n">window</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">20</span><span class="p">,</span>
+<span class="w">                   </span><span class="n">GWL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1.5</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="nf">print</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1] 2018
+attr(,&quot;interval&quot;)
+[1] 2009 2028
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<p>In this particular example, the function returns an integer value (<strong>2018</strong>), corresponding to the <em>central year (n) of the 20-year window</em> for the selected GWL period.</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">gwl_1.5</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output text_html">2018</div></div>
+</details>
+</div>
+<p>In addition, the period intervals (calculated in this case as <em>[n-9, n+10]</em>) are indicated by the <code class="docutils literal notranslate"><span class="pre">interval</span></code> attribute (<strong>2009-2028</strong>) and can be retrieved by:</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">attr</span><span class="p">(</span><span class="n">gwl_1.5</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;interval&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>2009</li><li>2028</li></ol>
+</div></div>
+</details>
+</div>
+<p>Therefore, the calculation of several GWLs for this GCM/experiment is straightforward with just looping over the <code class="docutils literal notranslate"><span class="pre">GWL</span></code> parameter:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">gwls</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1.5</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">)</span>
+<span class="n">central.years</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">()</span>
+<span class="nf">for </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="nf">length</span><span class="p">(</span><span class="n">gwls</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">central.years</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">getGWL</span><span class="p">(</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tas</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                               </span><span class="n">base.period</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1850</span><span class="p">,</span><span class="w"> </span><span class="m">1900</span><span class="p">),</span>
+<span class="w">                               </span><span class="n">proj.period</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1971</span><span class="p">,</span><span class="w"> </span><span class="m">2100</span><span class="p">),</span>
+<span class="w">                               </span><span class="n">window</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">20</span><span class="p">,</span>
+<span class="w">                               </span><span class="n">GWL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gwls</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="w"> </span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Finally, these warming levels are plotted on top of the GCM temperature series:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">plot</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">as.integer</span><span class="p">(</span><span class="nf">names</span><span class="p">(</span><span class="n">tas</span><span class="p">)),</span>
+<span class="w">     </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tas</span><span class="p">,</span><span class="w"> </span>
+<span class="w">     </span><span class="n">ylab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;global tas (degC)&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">xlab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;year&quot;</span><span class="p">,</span>
+<span class="w">     </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;l&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;blue&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">las</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">)</span>
+<span class="nf">grid</span><span class="p">()</span>
+<span class="nf">title</span><span class="p">(</span><span class="nf">paste</span><span class="p">(</span><span class="n">target</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;hist+RCP 8.5 tas&quot;</span><span class="p">))</span>
+
+<span class="c1">## Indicate GWLs as vertical lines</span>
+<span class="n">colors</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="nf">length</span><span class="p">(</span><span class="n">gwls</span><span class="p">)</span>
+<span class="n">line.type</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;dashed&quot;</span>
+<span class="nf">abline</span><span class="p">(</span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">central.years</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">colors</span><span class="p">,</span><span class="w"> </span><span class="n">lty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">line.type</span><span class="p">)</span>
+<span class="nf">legend</span><span class="p">(</span><span class="s">&quot;topleft&quot;</span><span class="p">,</span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;GWLs RCP8.5&quot;</span><span class="p">,</span>
+<span class="w">       </span><span class="nf">paste0</span><span class="p">(</span><span class="s">&quot;+&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">gwls</span><span class="p">,</span><span class="w"> </span><span class="s">&quot; degC (&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">central.years</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;)&quot;</span><span class="p">),</span>
+<span class="w">       </span><span class="n">lty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">line.type</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">colors</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/b2d026421c0bea041d29bf907f586a2560cb9b4edc26617e9817255aad48b6de.png" src="../_images/b2d026421c0bea041d29bf907f586a2560cb9b4edc26617e9817255aad48b6de.png" />
+</div>
+</div>
+<p>A more detailed script <a class="reference download internal" download="" href="../_downloads/2724a26e8b24c2e2bf3dfc50a70eaa7a/gwl_time_series_plots.R"><code class="xref download docutils literal notranslate"><span class="pre">gwl_time_series_plots.R</span></code></a> for representing the GWL spread of CMIP5 and CMIP6 multimodel ensembles with a flexible parameter setting is provided in the <code class="docutils literal notranslate"><span class="pre">warming-levels/scripts</span></code> directory.</p>
+</section>
+</section>
+<section id="session-information">
+<h2>Session Information<a class="headerlink" href="#session-information" title="Permalink to this heading">#</a></h2>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">sessionInfo</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>R version 3.6.3 (2020-02-29)
+Platform: x86_64-conda-linux-gnu (64-bit)
+Running under: Ubuntu 22.04.4 LTS
+
+Matrix products: default
+BLAS/LAPACK: /DATA/miniconda3/envs/atlas-jupyterbook/lib/libopenblasp-r0.3.25.so
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+ [3] LC_TIME=es_ES.UTF-8        LC_COLLATE=en_US.UTF-8    
+ [5] LC_MONETARY=es_ES.UTF-8    LC_MESSAGES=en_US.UTF-8   
+ [7] LC_PAPER=es_ES.UTF-8       LC_NAME=C                 
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=es_ES.UTF-8 LC_IDENTIFICATION=C       
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] magrittr_2.0.1
+
+loaded via a namespace (and not attached):
+ [1] fansi_0.4.2       digest_0.6.27     utf8_1.2.1        crayon_1.4.1     
+ [5] IRdisplay_1.0     repr_1.1.3        lifecycle_1.0.0   jsonlite_1.7.2   
+ [9] evaluate_0.14     pillar_1.6.1      rlang_0.4.11      uuid_0.1-4       
+[13] vctrs_0.3.8       ellipsis_0.3.2    IRkernel_1.2      tools_3.6.3      
+[17] compiler_3.6.3    base64enc_0.1-3   pbdZMQ_0.3-5      htmltools_0.5.1.1
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "PhantomAurelia/Atlas",
+            ref: "jb-test",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "r"
+        },
+        kernelOptions: {
+            name: "ir",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'ir'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="regional-scatter-plots_R.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Computing and visualizing regional climate change (temperature vs precipitation) for reference regions</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="bias-adjustment_R.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Atlas notebooks</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#package-dependencies">Package dependencies</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gwl-calculation">GWL calculation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-for-one-single-cmip5-gcm">Example for one single CMIP5 GCM</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reading-input-data">Reading input data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transient-gwl-calculation">Transient GWL calculation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#session-information">Session Information</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By David Domínguez Román
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,705 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Data sources used in the Atlas &#8212; IPCC-ATLAS Jupyter Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "PhantomAurelia/Atlas");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'data-sources/data-sources';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Sets of reference grids" href="../reference-grids/reference-grids.html" />
+    <link rel="prev" title="Global Warming Levels" href="../warming-levels/warming-levels.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Repository supporting the implementation of FAIR principles in the IPCC-WGI Atlas
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Information</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../warming-levels/warming-levels.html">Global Warming Levels</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Data sources used in the Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference-grids/reference-grids.html">Sets of reference grids</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/datasets-interactive-atlas.html">Code for reproducibility of the Interactive Atlas Dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference-regions/reference-regions.html">Sets of regions for regional synthesis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-aggregated-regionally/datasets-aggregated-regionally.html">Aggregated datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/notebooks.html">Notebooks</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Notebooks</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/regional-scatter-plots_R.html">Computing and visualizing regional climate change (temperature vs precipitation) for reference regions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/global-warming-levels_R.html">Computing and visualizing transient global warming levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/bias-adjustment_R.html">Atlas notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/CORDEX-overlaps_Python.html">Selecting reference regions used for every CORDEX domain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/GeoTIFF-post-processing_R.html">GeoTIFF file post-processing: Spatial operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/hatching-uncertainty_R.html">Calculation and hatching of the uncertainty in projected delta changes.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/linear-trends_R.html">Computing and visualization of precipitation linear trends during the observed period (1980-2014)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/reference-grids_R.html">Using the Atlas reference grids in <code class="docutils literal notranslate"><span class="pre">R</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/reference-regions_Python.html">Using the 4th version of the IPCC WGI reference regions in Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/reference-regions_R.html">Using the 4th version of the IPCC WGI reference regions in R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/stripes-plots_R.html">Create stripes of anual temperature and precipitation mean values.</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../ERRATA.html">Errata and problem reporting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/reproducibility.html">Reproducibility scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/auxiliary-material/auxiliary-material.html">Auxiliary Materials for Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../binder/binder.html">Binder image deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/maps/maps.html">Code for reproducibility of the Atlas Map figures of model projections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/observations/observations.html">Code for reproducibility of the ATLAS spatial maps of the observed linear trends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/bash-interpolation-scripts/bash-interpolation-scripts.html">Bash interpolation scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/bash-interpolation-scripts/AtlasCDOremappeR_CORDEX/atlasCDOremappeR.html">AtlasCDOremappeR for CORDEX RCM simulations</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas/edit/jb-test/./data-sources/data-sources.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas/issues/new?title=Issue%20on%20page%20%2Fdata-sources/data-sources.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/data-sources/data-sources.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Data sources used in the Atlas</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#observations">Observations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#climate-change-projections-cmip6-cmip5-and-cordex">Climate Change projections (CMIP6, CMIP5 and CORDEX)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#paleoclimate-simulations">Paleoclimate simulations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sea-level-rise-projections-ar6-wgi-chapter-9">Sea Level Rise projections (AR6 WGI Chapter 9)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#short-lived-climate-forcers-ar6-wgi-chapter-5">Short-lived climate forcers (AR6 WGI Chapter 5)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#socio-economic-data-population-and-anthropogenic-co2-emissions">Socio-economic data (population and Anthropogenic CO2 emissions)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#population-gridded-data-0-5">Population gridded data (0.5°)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anthropogenic-co2-emissions">Anthropogenic CO2 emissions</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="data-sources-used-in-the-atlas">
+<span id="data-sources"></span><h1>Data sources used in the Atlas<a class="headerlink" href="#data-sources-used-in-the-atlas" title="Permalink to this heading">#</a></h1>
+<p>The Atlas builds on several key observational and model simulated datasets made publicly available by different institutions and modeling centers, in some cases resulting from international collaborations such as <span id="id1">[<a class="reference internal" href="#id30" title="CMIP. https://www.wcrp-climate.org/wgcm-cmip."><em>CMIP</em></a>]</span> and <span id="id2">[<a class="reference internal" href="../intro.html#id40" title="Cordex – Coordinated Regional Climate Downscaling Experiment. https://cordex.org/."><em>Cordex – Coordinated Regional Climate Downscaling Experiment</em></a>]</span>. It also includes some datasets used in different chapters of AR6 WGI report. We acknowledge all institutions and modeling centers for making the data publicly available.</p>
+<section id="observations">
+<h2>Observations<a class="headerlink" href="#observations" title="Permalink to this heading">#</a></h2>
+<p>The observational datasets used in the Atlas are described in Table Atlas.SM.15. This repository contains information derived from the <span id="id3">[<a class="reference internal" href="../notebooks/linear-trends_R.html#id76" title="WFDE5 over land merged with ERA5 over the ocean (W5E5). https://dataservices.gfz-potsdam.de/pik/showshort.php?id=escidoc:4855898."><em>WFDE5 over Land Merged with ERA5 over the Ocean (W5E5)</em></a>]</span> (WFDE5 over land merged with ERA5 over the ocean).</p>
+</section>
+<section id="climate-change-projections-cmip6-cmip5-and-cordex">
+<h2>Climate Change projections (CMIP6, CMIP5 and CORDEX)<a class="headerlink" href="#climate-change-projections-cmip6-cmip5-and-cordex" title="Permalink to this heading">#</a></h2>
+<p>An inventory of the data sources of the model simulations used for the different experiments and scenarios is included here, indicating the availability of the different variables as well as auxiliary fixed fields, such as the land/sea mask (sftlf). The following documents provide a full overview of the simulations available:</p>
+<ul class="simple">
+<li><p><a class="reference download internal" download="" href="../_downloads/91b240c8e5746989fec2b3dbf8f463ac/CMIP5_simulations_ATLAS.xlsx"><code class="xref download docutils literal notranslate"><span class="pre">CMIP5_simulations_ATLAS.xlsx</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../_downloads/9db9bcf2b88d9f18e30f19efa24a88c4/CMIP6_simulations_ATLAS.xlsx"><code class="xref download docutils literal notranslate"><span class="pre">CMIP6_simulations_ATLAS.xlsx</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../_downloads/b13e37ab15f41183057e7a0ff4d68d46/CORDEX_simulations_ATLAS.xlsx"><code class="xref download docutils literal notranslate"><span class="pre">CORDEX_simulations_ATLAS.xlsx</span></code></a></p></li>
+</ul>
+<p>Full metadata is organized as machine-readable tables in the different CMIP5, CMIP6 and CORDEX folders. This includes the ESGF version used for each model and variable so the data is fully traceable. CMIP6 includes different temporal frequencies (day/mon) and realms (atmos, land, ocean, seaIce). The data consolidated here is a subset of the data available at ESGF for the relevant experiments used.
+README files in the different folders provide handle and/or ESGF search links pointing to the specific datasets used.</p>
+<p><span id="id4">[<a class="reference internal" href="#id20" title="ATLAS Datasets. https://raw.githack.com/IPCC-WG1/Atlas/devel/data-sources/Dataset_DOIs.html."><em>ATLAS Datasets</em></a>]</span> contains a searchable table with the DOIs for all datasets that provide them. Dataset DOIs provide provenance information at the dataset level. This table feeds from the <span id="id5">[<a class="reference internal" href="#id65" title="Metaclipcc/dataset_table.csv at master · metaclip/metaclipcc. https://github.com/metaclip/metaclipcc/blob/master/inst/dataset_table.csv."><em>Metaclipcc/Dataset_table.Csv at Master · Metaclip/Metaclipcc</em></a>]</span> in <span id="id6">[<a class="reference internal" href="../intro.html#id68" title="Joaquín Bedia, José Manuel Gutiérrez, Sixto Herrera, Maialen Iturbide, and Daniel San Martín. METACLIP: Metadata for climate products. http://www.metaclip.org/.">Bedia <em>et al.</em></a>]</span>.</p>
+<blockquote>
+<div><p>Note:</p>
+<p>This folder traces the exact version of the datasets used in the Atlas. Newer versions of these data may exist in the future for different reasons. Users should visit the ES-DOC Dataset Errata website <span id="id7">[<a class="reference internal" href="#id40" title="ES-DOC - Errata - Search. https://errata.es-doc.org/static/index.html."><em>ES-DOC - Errata - Search</em></a>]</span> to check the availability of newer versions or data retractions in the datasets stored in this repository.</p>
+</div></blockquote>
+<p>Broadly speaking, throughout this repository the term CMIP6 has been used mostly in reference to  the Scenario Model Intercomparison (ScenarioMIP). However, please note that other CMIP6-Endorsed MIPs are also included here, namely CORDEX (Coordinated Regional Climate Downscaling Experiment) and PMIP (Palaeoclimate Modelling Intercomparison Project).
+<span id="id8">[<a class="reference internal" href="#id46" title="GMD - Requirements for a global data infrastructure in support of CMIP6. https://gmd.copernicus.org/articles/11/3659/2018/."><em>GMD - Requirements for a Global Data Infrastructure in Support of CMIP6</em></a>]</span></p>
+</section>
+<section id="paleoclimate-simulations">
+<h2>Paleoclimate simulations<a class="headerlink" href="#paleoclimate-simulations" title="Permalink to this heading">#</a></h2>
+<p>The paleoclimate simulations used in the Interactive Atlas were generated by Dr Chris Brierley using model simulated data from PMIP3 (CMIP5) and PMIP4 (CMIP6) experiments. The data and code are available in the <span id="id9">[<a class="reference internal" href="#id54" title="IPCC-WG1/PMIP_for_AR6_Interactive_Atlas. https://github.com/IPCC-WG1/PMIP_for_AR6_Interactive_Atlas."><em>IPCC-WG1/PMIP_for_AR6_Interactive_Atlas</em></a>]</span> WGI GitHub repository.</p>
+</section>
+<section id="sea-level-rise-projections-ar6-wgi-chapter-9">
+<h2>Sea Level Rise projections (AR6 WGI Chapter 9)<a class="headerlink" href="#sea-level-rise-projections-ar6-wgi-chapter-9" title="Permalink to this heading">#</a></h2>
+<p>The sea level rise information used in the Interactive Atlas was obtained directly from Chapter 9.</p>
+</section>
+<section id="short-lived-climate-forcers-ar6-wgi-chapter-5">
+<h2>Short-lived climate forcers (AR6 WGI Chapter 5)<a class="headerlink" href="#short-lived-climate-forcers-ar6-wgi-chapter-5" title="Permalink to this heading">#</a></h2>
+<p>Information on surface Ozone, Particulate Matter (PM2.5), and Effective Radiative Forcing (ERF, due to aerosols) included in the Ineractive Atlas was obtained directly from Chapter 5.</p>
+</section>
+<section id="socio-economic-data-population-and-anthropogenic-co2-emissions">
+<h2>Socio-economic data (population and Anthropogenic CO2 emissions)<a class="headerlink" href="#socio-economic-data-population-and-anthropogenic-co2-emissions" title="Permalink to this heading">#</a></h2>
+<p>The Interactive Atlas also includes relevant socioeconomic data to provide context information on the SSPs used in the CMIP6 climate projections. This includes population data and CMIP6 forcing used by the modeling communit (anthropogenic CO2 emissions). This data is not included in this repository.</p>
+<section id="population-gridded-data-0-5">
+<h3>Population gridded data (0.5°)<a class="headerlink" href="#population-gridded-data-0-5" title="Permalink to this heading">#</a></h3>
+<p>Historical annual gridded population data for the period 1861-2005 is based on the HYDE3.2 database <span id="id10">[<a class="reference internal" href="#id41" title="ESSD - Anthropogenic land use estimates for the Holocene – HYDE 3.2. https://essd.copernicus.org/articles/9/927/2017/."><em>ESSD - Anthropogenic Land Use Estimates for the Holocene – HYDE 3.2</em></a>]</span>. Source: <em>ISIMIP2b</em><span id="id11">[<a class="reference internal" href="#id53" title="Input data set: Historical, gridded population. https://www.isimip.org/gettingstarted/details/31/."><em>Input Data Set: Historical, Gridded Population</em></a>]</span>. Annual gridded population data for the period 2006-2100 and for the different SSPs (1-5) is based on the population projections described in <span id="id12">[<a class="reference internal" href="#id58" title="B. Jones and B. C. O'Neill. Spatially explicit global population scenarios consistent with the Shared Socioeconomic Pathways. Environmental Research Letters, 11(8):084003, July 2016. doi:10.1088/1748-9326/11/8/084003.">Jones and O'Neill, 2016</a>]</span>. Source: <em>ISIMIP2b</em> annual values linearly interpolated from the original decadal population data.</p>
+</section>
+<section id="anthropogenic-co2-emissions">
+<h3>Anthropogenic CO2 emissions<a class="headerlink" href="#anthropogenic-co2-emissions" title="Permalink to this heading">#</a></h3>
+<section id="references">
+<h4>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h4>
+<div class="docutils container" id="id13">
+<div class="citation" id="id35" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">cor</a><span class="fn-bracket">]</span></span>
+<p>Cordex – Coordinated Regional Climate Downscaling Experiment. https://cordex.org/.</p>
+</div>
+<div class="citation" id="id53" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id11">Inp</a><span class="fn-bracket">]</span></span>
+<p>Input data set: Historical, gridded population. https://www.isimip.org/gettingstarted/details/31/.</p>
+</div>
+<div class="citation" id="id65" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">Met</a><span class="fn-bracket">]</span></span>
+<p>Metaclipcc/dataset_table.csv at master · metaclip/metaclipcc. https://github.com/metaclip/metaclipcc/blob/master/inst/dataset_table.csv.</p>
+</div>
+<div class="citation" id="id20" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">ATL</a><span class="fn-bracket">]</span></span>
+<p>ATLAS Datasets. https://raw.githack.com/IPCC-WG1/Atlas/devel/data-sources/Dataset_DOIs.html.</p>
+</div>
+<div class="citation" id="id30" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">CMI</a><span class="fn-bracket">]</span></span>
+<p>CMIP. https://www.wcrp-climate.org/wgcm-cmip.</p>
+</div>
+<div class="citation" id="id40" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id7">ESD</a><span class="fn-bracket">]</span></span>
+<p>ES-DOC - Errata - Search. https://errata.es-doc.org/static/index.html.</p>
+</div>
+<div class="citation" id="id41" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id10">ESS</a><span class="fn-bracket">]</span></span>
+<p>ESSD - Anthropogenic land use estimates for the Holocene – HYDE 3.2. https://essd.copernicus.org/articles/9/927/2017/.</p>
+</div>
+<div class="citation" id="id46" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id8">GMD</a><span class="fn-bracket">]</span></span>
+<p>GMD - Requirements for a global data infrastructure in support of CMIP6. https://gmd.copernicus.org/articles/11/3659/2018/.</p>
+</div>
+<div class="citation" id="id54" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id9">IPC</a><span class="fn-bracket">]</span></span>
+<p>IPCC-WG1/PMIP_for_AR6_Interactive_Atlas. https://github.com/IPCC-WG1/PMIP_for_AR6_Interactive_Atlas.</p>
+</div>
+<div class="citation" id="id83" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">WFD</a><span class="fn-bracket">]</span></span>
+<p>WFDE5 over land merged with ERA5 over the ocean (W5E5). https://dataservices.gfz-potsdam.de/pik/showshort.php?id=escidoc:4855898.</p>
+</div>
+<div class="citation" id="id63" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">BGutierrezH+</a><span class="fn-bracket">]</span></span>
+<p>Joaquín Bedia, José Manuel Gutiérrez, Sixto Herrera, Maialen Iturbide, and Daniel San Martín. METACLIP: Metadata for climate products. http://www.metaclip.org/.</p>
+</div>
+<div class="citation" id="id58" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id12">JONeill16</a><span class="fn-bracket">]</span></span>
+<p>B. Jones and B. C. O'Neill. Spatially explicit global population scenarios consistent with the Shared Socioeconomic Pathways. <em>Environmental Research Letters</em>, 11(8):084003, July 2016. <a class="reference external" href="https://doi.org/10.1088/1748-9326/11/8/084003">doi:10.1088/1748-9326/11/8/084003</a>.</p>
+</div>
+</div>
+</div>
+<script src="https://utteranc.es/client.js"
+        repo="PhantomAurelia/Atlas"
+        issue-term="pathname"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script></section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "PhantomAurelia/Atlas",
+            ref: "jb-test",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./data-sources"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../warming-levels/warming-levels.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Global Warming Levels</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../reference-grids/reference-grids.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Sets of reference grids</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#observations">Observations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#climate-change-projections-cmip6-cmip5-and-cordex">Climate Change projections (CMIP6, CMIP5 and CORDEX)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#paleoclimate-simulations">Paleoclimate simulations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sea-level-rise-projections-ar6-wgi-chapter-9">Sea Level Rise projections (AR6 WGI Chapter 9)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#short-lived-climate-forcers-ar6-wgi-chapter-5">Short-lived climate forcers (AR6 WGI Chapter 5)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#socio-economic-data-population-and-anthropogenic-co2-emissions">Socio-economic data (population and Anthropogenic CO2 emissions)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#population-gridded-data-0-5">Population gridded data (0.5°)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anthropogenic-co2-emissions">Anthropogenic CO2 emissions</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By David Domínguez Román
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

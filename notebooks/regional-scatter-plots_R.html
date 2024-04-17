@@ -1,0 +1,1222 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Computing and visualizing regional climate change (temperature vs precipitation) for reference regions &#8212; IPCC-ATLAS Jupyter Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "PhantomAurelia/Atlas");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/regional-scatter-plots_R';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Computing and visualizing transient global warming levels" href="global-warming-levels_R.html" />
+    <link rel="prev" title="Notebooks" href="notebooks.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Repository supporting the implementation of FAIR principles in the IPCC-WGI Atlas
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Information</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../warming-levels/warming-levels.html">Global Warming Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data-sources/data-sources.html">Data sources used in the Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference-grids/reference-grids.html">Sets of reference grids</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/datasets-interactive-atlas.html">Code for reproducibility of the Interactive Atlas Dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference-regions/reference-regions.html">Sets of regions for regional synthesis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-aggregated-regionally/datasets-aggregated-regionally.html">Aggregated datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Notebooks</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Notebooks</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Computing and visualizing regional climate change (temperature vs precipitation) for reference regions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="global-warming-levels_R.html">Computing and visualizing transient global warming levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bias-adjustment_R.html">Atlas notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CORDEX-overlaps_Python.html">Selecting reference regions used for every CORDEX domain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GeoTIFF-post-processing_R.html">GeoTIFF file post-processing: Spatial operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hatching-uncertainty_R.html">Calculation and hatching of the uncertainty in projected delta changes.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linear-trends_R.html">Computing and visualization of precipitation linear trends during the observed period (1980-2014)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference-grids_R.html">Using the Atlas reference grids in <code class="docutils literal notranslate"><span class="pre">R</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference-regions_Python.html">Using the 4th version of the IPCC WGI reference regions in Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference-regions_R.html">Using the 4th version of the IPCC WGI reference regions in R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stripes-plots_R.html">Create stripes of anual temperature and precipitation mean values.</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../ERRATA.html">Errata and problem reporting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/reproducibility.html">Reproducibility scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="auxiliary-material/auxiliary-material.html">Auxiliary Materials for Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../binder/binder.html">Binder image deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/maps/maps.html">Code for reproducibility of the Atlas Map figures of model projections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/observations/observations.html">Code for reproducibility of the ATLAS spatial maps of the observed linear trends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/bash-interpolation-scripts/bash-interpolation-scripts.html">Bash interpolation scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/bash-interpolation-scripts/AtlasCDOremappeR_CORDEX/atlasCDOremappeR.html">AtlasCDOremappeR for CORDEX RCM simulations</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/PhantomAurelia/Atlas/jb-test?urlpath=lab/tree/./notebooks/regional-scatter-plots_R.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas/edit/jb-test/./notebooks/regional-scatter-plots_R.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas/issues/new?title=Issue%20on%20page%20%2Fnotebooks/regional-scatter-plots_R.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/regional-scatter-plots_R.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Computing and visualizing regional climate change (temperature vs precipitation) for reference regions</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-packages-and-functions">Load packages and functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parameter-setting">Parameter setting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compute-delta-changes-and-figures">Compute delta changes and figures</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-matrices-of-delta-changes">Data matrices of delta changes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#session-information">Session Information</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <hr class="docutils" />
+<blockquote>
+<div><p>This notebook reproduces and extends parts of the figures and products of the AR6-WGI Atlas. It is part of a notebook collection available at <a class="github reference external" href="https://github.com/IPCC-WG1/Atlas">IPCC-WG1/Atlas</a> for reproducibility and reusability purposes. This work is licensed under a <a class="reference external" href="http://creativecommons.org/licenses/by/4.0">Creative Commons Attribution 4.0 International License</a>.</p>
+<p><img alt="Creative Commons License &gt;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></p>
+</div></blockquote>
+<section class="tex2jax_ignore mathjax_ignore" id="computing-and-visualizing-regional-climate-change-temperature-vs-precipitation-for-reference-regions">
+<h1>Computing and visualizing regional climate change (temperature vs precipitation) for reference regions<a class="headerlink" href="#computing-and-visualizing-regional-climate-change-temperature-vs-precipitation-for-reference-regions" title="Permalink to this heading">#</a></h1>
+<p>24/6/2021</p>
+<p><strong>M. Iturbide</strong> (Santander Meteorology Group. Institute of Physics of Cantabria, CSIC-UC, Santander, Spain).</p>
+<p>This notebook reproduces and extends parts of the regional figures of the AR6-WGI Atlas chapter. In particular, the scatter plots of regional climate change temperature vs. precipitation for the AR6 reference regions using CMIP5 and CMIP6 datasets (Figures Atlas.13, 16 ,17, 21, 22, 24, 26 and 29). This notebook builds on other sections of the repository: 1) auxiliary scripts from <a class="reference internal" href="../reproducibility/reproducibility.html#reproducibility"><span class="std std-ref">reproducibility</span></a>, and 2) CMIP5/6 - CORDEX <a class="reference internal" href="../datasets-aggregated-regionally/datasets-aggregated-regionally.html#datasets-aggregated-regionally"><span class="std std-ref">datasets-aggregated-regionally</span></a> for the WGI reference regions.</p>
+<section id="load-packages-and-functions">
+<h2>Load packages and functions<a class="headerlink" href="#load-packages-and-functions" title="Permalink to this heading">#</a></h2>
+<p>This notebook is based on the R programming language and requires packages:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">magrittr</span></code> to pipe (<code class="docutils literal notranslate"><span class="pre">%&gt;%</span></code>) sequences of operations</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">httr</span></code> to handle URLs and HTTP</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lattice</span></code> and <code class="docutils literal notranslate"><span class="pre">latticeExtra</span></code> to produce the figures</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gridExtra</span></code> to produce the final panel of plots</p></li>
+</ul>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">magrittr</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">httr</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">lattice</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">latticeExtra</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">gridExtra</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The main function to generate the boxplots and scatterplots is <code class="docutils literal notranslate"><span class="pre">computeFigures</span></code>, which internally uses functions <code class="docutils literal notranslate"><span class="pre">computeDeltas</span></code> and <code class="docutils literal notranslate"><span class="pre">computeOffset</span></code>, all available in this repository. To load these functions in the working environment use the <code class="docutils literal notranslate"><span class="pre">source</span></code> R base function as follows.</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">source</span><span class="p">(</span><span class="s">&quot;../datasets-aggregated-regionally/scripts/computeDeltas.R&quot;</span><span class="p">)</span>
+<span class="nf">source</span><span class="p">(</span><span class="s">&quot;../datasets-aggregated-regionally/scripts/computeFigures.R&quot;</span><span class="p">)</span>
+<span class="nf">source</span><span class="p">(</span><span class="s">&quot;../datasets-aggregated-regionally/scripts/computeOffset.R&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The scripts are available for download:</p>
+<ul class="simple">
+<li><p><a class="reference download internal" download="" href="../_downloads/ec752ad836190e21b59c5c206d63b608/computeDeltas.R"><code class="xref download docutils literal notranslate"><span class="pre">computeDeltas.R</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../_downloads/6db9ea4fa0b837be06f3e03f05909fa3/computeFigures.R"><code class="xref download docutils literal notranslate"><span class="pre">computeFigures.R</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="../_downloads/e0b43bd5e0e7fe3fc200f77d1c12fe5e/computeOffset.R"><code class="xref download docutils literal notranslate"><span class="pre">computeOffset.R</span></code></a></p></li>
+</ul>
+</section>
+<section id="parameter-setting">
+<h2>Parameter setting<a class="headerlink" href="#parameter-setting" title="Permalink to this heading">#</a></h2>
+<p>We define next some parameters, such as the seasons to show in the Precipitation vs Temperature scatterplots. E.g. for boreal winter and summer define:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">scatter.seasons</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">12</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">),</span><span class="w"> </span><span class="m">6</span><span class="o">:</span><span class="m">8</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Select baseline period (e.g. AR6 reference period in this example). Available years in the datasets are 1850-1900 and 1950-2100.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">ref.period</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1995</span><span class="o">:</span><span class="m">2014</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Select the area, i.e. “land”, “sea” or “landsea”</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">area</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;land&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Select reference regions (see reference-regions in this repository). Use <code class="docutils literal notranslate"><span class="pre">world</span></code> to generate global results.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">regions</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;ECA&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;EAS&quot;</span><span class="p">);</span><span class="w"> </span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Select a CORDEX domain from the following options: SAM, CAM, NAM, AFR, WAS, EAS, AUS, ANT, ARC, SEA and EUR</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">cordex.domain</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;EAS&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Finally, select figure axes ranges (ylim for temperature, xlim for precipitation percentage).
+Leave it as NULL for automatic axes ranges</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">ylim</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">NULL</span>
+<span class="n">xlim</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">NULL</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="compute-delta-changes-and-figures">
+<h2>Compute delta changes and figures<a class="headerlink" href="#compute-delta-changes-and-figures" title="Permalink to this heading">#</a></h2>
+<p>We are ready to apply the <code class="docutils literal notranslate"><span class="pre">computeFigures</span></code> function.</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">computeFigures</span><span class="p">(</span><span class="n">regions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">regions</span><span class="p">,</span>
+<span class="w">                      </span><span class="n">cordex.domain</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cordex.domain</span><span class="p">,</span>
+<span class="w">                      </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">area</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                      </span><span class="n">ref.period</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ref.period</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                      </span><span class="n">scatter.seasons</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scatter.seasons</span><span class="p">,</span>
+<span class="w">                      </span><span class="n">xlim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">xlim</span><span class="p">,</span>
+<span class="w">                      </span><span class="n">ylim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ylim</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:29:40] Computing annual delta changes for the Boxplot of region ECA
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:29:40] Computing CMIP5..
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:29:43] Computing CMIP6..
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:29:45] Computing CORDEX..
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:30:11] Computing seasonal delta changes for the Scatterplots of region ECA
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:30:11] Computing CMIP5..
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:30:19] Computing CMIP6..
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:30:35] Computing CORDEX..
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:30:46] Computing annual delta changes for the Boxplot of region EAS
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:30:46] Computing CMIP5..
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:30:49] Computing CMIP6..
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:30:52] Computing CORDEX..
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:31:13] Computing seasonal delta changes for the Scatterplots of region EAS
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:31:13] Computing CMIP5..
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:31:19] Computing CMIP6..
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:31:27] Computing CORDEX..
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<p>The output of the above call (<code class="docutils literal notranslate"><span class="pre">fig</span></code>) is a list of <code class="docutils literal notranslate"><span class="pre">trellis</span></code> class objects that can be easily arranged and displayed using the <code class="docutils literal notranslate"><span class="pre">grid.arrange</span></code> function from the <code class="docutils literal notranslate"><span class="pre">gridExtra</span></code> library.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">do.call</span><span class="p">(</span><span class="s">&quot;grid.arrange&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">fig</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/d78fcc3be2d082d2022e6492470efe991b394acd35fe011e140634cfab17c648.png" src="../_images/d78fcc3be2d082d2022e6492470efe991b394acd35fe011e140634cfab17c648.png" />
+</div>
+</div>
+<p>The legend and axis label information of these panels is the one shown in the AR6-WGI Atlas chapter figures. The first column shows the annual temperature delta changes. The second and third columns, the scatterplots of the seasonal temperature and precipitation changes. Each row corresponds to a different reference region (ECA and EAS in this worked example).</p>
+<p>We can now export the Figure as PDF. There are other export options such as <code class="docutils literal notranslate"><span class="pre">png</span></code> (type <code class="docutils literal notranslate"><span class="pre">?pdf</span></code> for help). The <code class="docutils literal notranslate"><span class="pre">Cairo</span></code> package provides other export options.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">outfilename</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sprintf</span><span class="p">(</span><span class="s">&quot;%s_%s_baseperiod_%s_ATvsAP.pdf&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">cordex.domain</span><span class="p">,</span><span class="w"> </span><span class="n">area</span><span class="p">,</span><span class="w"> </span><span class="nf">paste</span><span class="p">(</span><span class="nf">range</span><span class="p">(</span><span class="n">ref.period</span><span class="p">),</span><span class="w"> </span><span class="n">collapse</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;-&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="nf">pdf</span><span class="p">(</span><span class="n">outfilename</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nf">length</span><span class="p">(</span><span class="n">scatter.seasons</span><span class="p">)</span><span class="m">+1</span><span class="p">)</span><span class="o">*</span><span class="m">10</span><span class="o">/</span><span class="m">2</span><span class="o">*</span><span class="m">0.85</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">length</span><span class="p">(</span><span class="n">regions</span><span class="p">)</span><span class="o">*</span><span class="m">10</span><span class="o">/</span><span class="m">2</span><span class="o">*</span><span class="m">0.85</span><span class="p">)</span>
+<span class="w">  </span><span class="nf">do.call</span><span class="p">(</span><span class="s">&quot;grid.arrange&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">fig</span><span class="p">)</span>
+<span class="nf">dev.off</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><strong>png:</strong> 2</div></div>
+</div>
+<p>Play with arguments width and height to create different PDF sizes.</p>
+<p>Set the object <code class="docutils literal notranslate"><span class="pre">cordex.domain</span></code> as <code class="docutils literal notranslate"><span class="pre">FALSE</span></code> to exclude CORDEX from the final figure. For example, in order to compute global delta changes, we can set:</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">regions</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;world&quot;</span><span class="p">)</span>
+<span class="n">cordex.domain</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">FALSE</span>
+
+<span class="n">fig.w</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">computeFigures</span><span class="p">(</span><span class="n">regions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">regions</span><span class="p">,</span>
+<span class="w">                      </span><span class="n">cordex.domain</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cordex.domain</span><span class="p">,</span>
+<span class="w">                      </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">area</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                      </span><span class="n">ref.period</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ref.period</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                      </span><span class="n">scatter.seasons</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scatter.seasons</span><span class="p">,</span>
+<span class="w">                      </span><span class="n">xlim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">xlim</span><span class="p">,</span>
+<span class="w">                      </span><span class="n">ylim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ylim</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:31:34] Computing annual delta changes for the Boxplot of region world
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:31:34] Computing CMIP5..
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:31:36] Computing CMIP6..
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:31:38] Computing CORDEX..
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:32:05] Computing seasonal delta changes for the Scatterplots of region world
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:32:05] Computing CMIP5..
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:32:14] Computing CMIP6..
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:32:21] Computing CORDEX..
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">do.call</span><span class="p">(</span><span class="s">&quot;grid.arrange&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">fig.w</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/d0bec8f75af707811a17008db62bd62f59a3dfba6427a9852c65b130e8d4d377.png" src="../_images/d0bec8f75af707811a17008db62bd62f59a3dfba6427a9852c65b130e8d4d377.png" />
+</div>
+</div>
+<p>We have easily reproduced parts of the AR6-WGI Atlas chapter figures using the function <code class="docutils literal notranslate"><span class="pre">computeFigures</span></code>. To extend the results shown in the Atlas chapter, just use different parameter settings above, e.g. additional seasons, alternative baselines, etc.</p>
+<p>Furthermore, functions <code class="docutils literal notranslate"><span class="pre">computeDeltas</span></code> and <code class="docutils literal notranslate"><span class="pre">computeOffset</span></code> (which are internally applied by <code class="docutils literal notranslate"><span class="pre">computeFigures</span></code>) can also be applied directly to obtain the data behind the boxplots/scatterplots allowing for further plotting options, which we explore next.</p>
+</section>
+<section id="data-matrices-of-delta-changes">
+<h2>Data matrices of delta changes<a class="headerlink" href="#data-matrices-of-delta-changes" title="Permalink to this heading">#</a></h2>
+<p>In this last example, we will compute CMIP5 annual temperature changes for different Global Warming Levels. Therefore, the following parameters are set.</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">project</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;CMIP5&quot;</span><span class="w"> </span><span class="c1"># other options are CMIP6 and CORDEX</span>
+<span class="n">experiment</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;rcp85&quot;</span><span class="w"> </span>
+<span class="n">var</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;tas&quot;</span>
+<span class="n">season</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">12</span>
+<span class="n">ref.period</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1986</span><span class="o">:</span><span class="m">2005</span>
+<span class="n">periods</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;1.5&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;2&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;3&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;4&quot;</span><span class="p">)</span><span class="w"> </span>
+<span class="n">area</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;land&quot;</span>
+<span class="n">region</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;NSA&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;SES&quot;</span><span class="p">)</span>
+<span class="n">cordex.domain</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;SAM&quot;</span>
+
+<span class="n">WL.cmip5</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">computeDeltas</span><span class="p">(</span><span class="n">project</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">project</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                          </span><span class="n">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">var</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                          </span><span class="n">experiment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">experiment</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                          </span><span class="n">season</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">season</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                          </span><span class="n">ref.period</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ref.period</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                          </span><span class="n">periods</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">periods</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                          </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">area</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                          </span><span class="n">region</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">region</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                          </span><span class="n">cordex.domain</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cordex.domain</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ACCESS1-0_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ACCESS1-3_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>bcc-csm1-1_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>bcc-csm1-1-m_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CanESM2_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CCSM4_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CESM1-BGC_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CMCC-CM_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CMCC-CMS_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CNRM-CM5_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CSIRO-Mk3-6-0_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>EC-EARTH_r12i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>GFDL-CM3_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>GFDL-ESM2G_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>GFDL-ESM2G_r1i1p1.......rcp85------NO period
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>GFDL-ESM2M_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>GFDL-ESM2M_r1i1p1.......rcp85------NO period
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>HadGEM2-CC_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>HadGEM2-ES_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>inmcm4_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>inmcm4_r1i1p1.......rcp85------NO period
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>IPSL-CM5A-LR_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>IPSL-CM5A-MR_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>IPSL-CM5B-LR_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>MIROC-ESM_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>MIROC-ESM-CHEM_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>MIROC5_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>MIROC5_r1i1p1.......rcp85------NO period
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>MPI-ESM-LR_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>MPI-ESM-MR_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>MRI-CGCM3_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>MRI-CGCM3_r1i1p1.......rcp85------NO period
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>NorESM1-M_r1i1p1.......rcp85------
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>NorESM1-M_r1i1p1.......rcp85------NO period
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">cordex.domain</span></code> parameter will be ignored unless the project is CORDEX (<code class="docutils literal notranslate"><span class="pre">project</span> <span class="pre">&lt;-</span> <span class="pre">&quot;CORDEX&quot;</span></code>).</p>
+<p>The output of the <code class="docutils literal notranslate"><span class="pre">computeDeltas</span></code> function is a list of matrices, each corresponding to a different reference region. Each column of the matrix corresponds to the warming levels set before. E.g. for the SES region:</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">WL.cmip5</span><span class="o">$</span><span class="n">SES</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output text_html"><table class="dataframe">
+<caption>A matrix: 28 × 4 of type dbl</caption>
+<thead>
+	<tr><th></th><th scope=col>rcp85</th><th scope=col>rcp85</th><th scope=col>rcp85</th><th scope=col>rcp85</th></tr>
+</thead>
+<tbody>
+	<tr><th scope=row>ACCESS1-0_r1i1p1</th><td>0.9483292</td><td>1.4299875</td><td>2.460746</td><td>3.316342</td></tr>
+	<tr><th scope=row>ACCESS1-3_r1i1p1</th><td>1.1470417</td><td>1.5117708</td><td>2.427108</td><td>3.273229</td></tr>
+	<tr><th scope=row>bcc-csm1-1_r1i1p1</th><td>0.3947792</td><td>1.0546292</td><td>1.967492</td><td>3.097608</td></tr>
+	<tr><th scope=row>bcc-csm1-1-m_r1i1p1</th><td>0.7028111</td><td>0.8685500</td><td>1.773425</td><td>2.922742</td></tr>
+	<tr><th scope=row>CanESM2_r1i1p1</th><td>1.0021815</td><td>1.4546208</td><td>2.752146</td><td>3.829083</td></tr>
+	<tr><th scope=row>CCSM4_r1i1p1</th><td>0.6210013</td><td>1.1669375</td><td>2.127387</td><td>3.339333</td></tr>
+	<tr><th scope=row>CESM1-BGC_r1i1p1</th><td>0.6845792</td><td>1.1676000</td><td>2.062329</td><td>3.313937</td></tr>
+	<tr><th scope=row>CMCC-CM_r1i1p1</th><td>0.7409458</td><td>1.3561125</td><td>2.278021</td><td>3.326538</td></tr>
+	<tr><th scope=row>CMCC-CMS_r1i1p1</th><td>0.9705500</td><td>1.4402042</td><td>2.370708</td><td>3.405425</td></tr>
+	<tr><th scope=row>CNRM-CM5_r1i1p1</th><td>0.8366167</td><td>1.3981083</td><td>2.189842</td><td>3.274875</td></tr>
+	<tr><th scope=row>CSIRO-Mk3-6-0_r1i1p1</th><td>1.0670042</td><td>1.5795292</td><td>2.844288</td><td>3.816117</td></tr>
+	<tr><th scope=row>EC-EARTH_r12i1p1</th><td>0.5381833</td><td>0.8834292</td><td>1.876096</td><td>2.958067</td></tr>
+	<tr><th scope=row>GFDL-CM3_r1i1p1</th><td>0.9836042</td><td>1.6451250</td><td>2.691879</td><td>3.626942</td></tr>
+	<tr><th scope=row>GFDL-ESM2G_r1i1p1</th><td>1.2233958</td><td>1.7253083</td><td>2.800908</td><td>      NA</td></tr>
+	<tr><th scope=row>GFDL-ESM2M_r1i1p1</th><td>1.0523500</td><td>1.6082625</td><td>2.808379</td><td>      NA</td></tr>
+	<tr><th scope=row>HadGEM2-CC_r1i1p1</th><td>1.0337867</td><td>1.4512784</td><td>2.591049</td><td>3.326278</td></tr>
+	<tr><th scope=row>HadGEM2-ES_r1i1p1</th><td>0.8743534</td><td>1.2426534</td><td>2.104303</td><td>3.121641</td></tr>
+	<tr><th scope=row>inmcm4_r1i1p1</th><td>1.2622667</td><td>1.8953958</td><td>2.734242</td><td>      NA</td></tr>
+	<tr><th scope=row>IPSL-CM5A-LR_r1i1p1</th><td>0.6381226</td><td>1.0454042</td><td>2.164887</td><td>3.292792</td></tr>
+	<tr><th scope=row>IPSL-CM5A-MR_r1i1p1</th><td>0.6028292</td><td>1.2632875</td><td>2.462396</td><td>3.771575</td></tr>
+	<tr><th scope=row>IPSL-CM5B-LR_r1i1p1</th><td>0.6907500</td><td>1.1536042</td><td>1.970087</td><td>2.876000</td></tr>
+	<tr><th scope=row>MIROC-ESM_r1i1p1</th><td>0.8756792</td><td>1.4630167</td><td>2.241883</td><td>3.352113</td></tr>
+	<tr><th scope=row>MIROC-ESM-CHEM_r1i1p1</th><td>0.9714833</td><td>1.4255125</td><td>2.399029</td><td>3.431421</td></tr>
+	<tr><th scope=row>MIROC5_r1i1p1</th><td>1.0668667</td><td>1.3530708</td><td>2.071171</td><td>      NA</td></tr>
+	<tr><th scope=row>MPI-ESM-LR_r1i1p1</th><td>0.6644583</td><td>1.1644125</td><td>2.401737</td><td>3.817287</td></tr>
+	<tr><th scope=row>MPI-ESM-MR_r1i1p1</th><td>0.7945167</td><td>1.3526292</td><td>2.587158</td><td>3.999304</td></tr>
+	<tr><th scope=row>MRI-CGCM3_r1i1p1</th><td>0.8660792</td><td>1.4304833</td><td>2.233550</td><td>      NA</td></tr>
+	<tr><th scope=row>NorESM1-M_r1i1p1</th><td>0.9928250</td><td>1.5723208</td><td>2.492021</td><td>      NA</td></tr>
+</tbody>
+</table>
+</div></div>
+</details>
+</div>
+<p>Let’s plot the results for this region and each CMIP5 model.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">par</span><span class="p">(</span><span class="n">mar</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">15</span><span class="p">),</span><span class="w"> </span><span class="n">xpd</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span><span class="w"> </span><span class="c1"># make room for the legend</span>
+<span class="nf">plot</span><span class="p">(</span><span class="kc">NA</span><span class="p">,</span><span class="w"> </span><span class="n">xlim</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">1.5</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">),</span><span class="w"> </span><span class="n">ylim</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">4</span><span class="p">),</span><span class="w"> </span><span class="n">xlab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;GWL&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Temperature change in SES (deg. C)&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;n&quot;</span><span class="p">)</span>
+<span class="n">model.names</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">row.names</span><span class="p">(</span><span class="n">WL.cmip5</span><span class="o">$</span><span class="n">SES</span><span class="p">)</span>
+<span class="n">n.models</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">length</span><span class="p">(</span><span class="n">model.names</span><span class="p">)</span>
+<span class="n">line.colors</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">rainbow</span><span class="p">(</span><span class="n">n.models</span><span class="p">)</span>
+<span class="n">gwls</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">as.numeric</span><span class="p">(</span><span class="n">periods</span><span class="p">)</span>
+<span class="nf">for </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="n">n.models</span><span class="p">){</span>
+<span class="w">    </span><span class="nf">lines</span><span class="p">(</span><span class="n">gwls</span><span class="p">,</span><span class="w"> </span><span class="n">WL.cmip5</span><span class="o">$</span><span class="n">SES</span><span class="p">[</span><span class="n">i</span><span class="p">,],</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">line.colors</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+<span class="w">    </span><span class="nf">points</span><span class="p">(</span><span class="n">gwls</span><span class="p">,</span><span class="w"> </span><span class="n">WL.cmip5</span><span class="o">$</span><span class="n">SES</span><span class="p">[</span><span class="n">i</span><span class="p">,],</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">line.colors</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="w"> </span><span class="n">pch</span><span class="o">=</span><span class="m">16</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nf">legend</span><span class="p">(</span><span class="s">&quot;topright&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">legend</span><span class="o">=</span><span class="n">model.names</span><span class="p">,</span><span class="w"> </span><span class="n">pch</span><span class="o">=</span><span class="m">16</span><span class="p">,</span><span class="w"> </span><span class="n">lty</span><span class="o">=</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="o">=</span><span class="n">line.colors</span><span class="p">,</span><span class="w"> </span><span class="n">inset</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">-1</span><span class="p">,</span><span class="m">0</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/42865756bb98e7e2bf0bafa53ed48fd0398e5c14ab7d4cbfc64aa4db9e9cec23.png" src="../_images/42865756bb98e7e2bf0bafa53ed48fd0398e5c14ab7d4cbfc64aa4db9e9cec23.png" />
+</div>
+</div>
+<p>Once the data is obtained, the user is free to apply any additional operations. For instance, in the next cell we will compute the ensemble mean for the SES region using the <code class="docutils literal notranslate"><span class="pre">apply</span></code> function.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">WL.cmip5.mean</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">apply</span><span class="p">(</span><span class="n">WL.cmip5</span><span class="o">$</span><span class="n">SES</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">mean</span><span class="p">,</span><span class="w"> </span><span class="n">na.rm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">T</span><span class="p">)</span>
+<span class="nf">plot</span><span class="p">(</span><span class="n">gwls</span><span class="p">,</span><span class="w"> </span><span class="n">WL.cmip5.mean</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;b&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/ea930945aef4eb0c5362d5a6261063e3829092553a427d7e04a44ebe34e5a35d.png" src="../_images/ea930945aef4eb0c5362d5a6261063e3829092553a427d7e04a44ebe34e5a35d.png" />
+</div>
+</div>
+<p>Use a <code class="docutils literal notranslate"><span class="pre">for</span></code> or a <code class="docutils literal notranslate"><span class="pre">lapply</span></code> loop to apply the same operation for all available regions:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">WL.cmip5.mean</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">lapply</span><span class="p">(</span><span class="n">WL.cmip5</span><span class="p">,</span><span class="w"> </span><span class="nf">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="nf">apply</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">mean</span><span class="p">,</span><span class="w"> </span><span class="n">na.rm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">T</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Convert from <code class="docutils literal notranslate"><span class="pre">list</span></code> to <code class="docutils literal notranslate"><span class="pre">data.frame</span></code> and add WL names:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">data.frame</span><span class="p">(</span><span class="s">&quot;WL&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gwls</span><span class="p">,</span><span class="w"> </span><span class="n">WL.cmip5.mean</span><span class="p">)</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><table class="dataframe">
+<caption>A data.frame: 4 × 3</caption>
+<thead>
+	<tr><th scope=col>WL</th><th scope=col>NSA</th><th scope=col>SES</th></tr>
+	<tr><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+	<tr><td>1.5</td><td>1.080562</td><td>0.8659782</td></tr>
+	<tr><td>2.0</td><td>1.673109</td><td>1.3608302</td></tr>
+	<tr><td>3.0</td><td>2.962334</td><td>2.3530096</td></tr>
+	<tr><td>4.0</td><td>4.307700</td><td>3.3858477</td></tr>
+</tbody>
+</table>
+</div></div>
+</div>
+<p>We can use this data frame to illustrate the <code class="docutils literal notranslate"><span class="pre">lattice</span></code> plotting functionalities.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">xyplot</span><span class="p">(</span><span class="n">WL</span><span class="o">~</span><span class="n">SES</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">NSA</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">df</span><span class="p">,</span><span class="w"> </span>
+<span class="w">       </span><span class="n">xlab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Regional temperature change (deg. C)&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;GWL&quot;</span><span class="p">,</span>
+<span class="w">       </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;b&quot;</span><span class="p">,</span>
+<span class="w">       </span><span class="n">auto.key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/b5ec0b14b7d93ac132f79023f98b7a257598470b118fd616b90c103089e360f4.png" src="../_images/b5ec0b14b7d93ac132f79023f98b7a257598470b118fd616b90c103089e360f4.png" />
+</div>
+</div>
+</section>
+<section id="session-information">
+<h2>Session Information<a class="headerlink" href="#session-information" title="Permalink to this heading">#</a></h2>
+<div class="cell tag_hide-cell docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">sessionInfo</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>R version 3.6.3 (2020-02-29)
+Platform: x86_64-conda-linux-gnu (64-bit)
+Running under: Ubuntu 22.04.4 LTS
+
+Matrix products: default
+BLAS/LAPACK: /DATA/miniconda3/envs/atlas-jupyterbook/lib/libopenblasp-r0.3.25.so
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+ [3] LC_TIME=es_ES.UTF-8        LC_COLLATE=en_US.UTF-8    
+ [5] LC_MONETARY=es_ES.UTF-8    LC_MESSAGES=en_US.UTF-8   
+ [7] LC_PAPER=es_ES.UTF-8       LC_NAME=C                 
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=es_ES.UTF-8 LC_IDENTIFICATION=C       
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] gridExtra_2.3       latticeExtra_0.6-29 lattice_0.20-44    
+[4] httr_1.4.2          magrittr_2.0.1     
+
+loaded via a namespace (and not attached):
+ [1] uuid_0.1-4         R6_2.5.0           jpeg_0.1-8.1       rlang_0.4.11      
+ [5] fansi_0.4.2        tools_3.6.3        grid_3.6.3         gtable_0.3.0      
+ [9] png_0.1-7          utf8_1.2.1         htmltools_0.5.1.1  ellipsis_0.3.2    
+[13] digest_0.6.27      lifecycle_1.0.0    crayon_1.4.1       IRdisplay_1.0     
+[17] RColorBrewer_1.1-2 repr_1.1.3         base64enc_0.1-3    vctrs_0.3.8       
+[21] IRkernel_1.2       evaluate_0.14      pbdZMQ_0.3-5       compiler_3.6.3    
+[25] pillar_1.6.1       jsonlite_1.7.2    
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<script src="https://utteranc.es/client.js"
+        repo="PhantomAurelia/Atlas"
+        issue-term="pathname"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script></section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "PhantomAurelia/Atlas",
+            ref: "jb-test",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "r"
+        },
+        kernelOptions: {
+            name: "ir",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'ir'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="notebooks.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Notebooks</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="global-warming-levels_R.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Computing and visualizing transient global warming levels</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-packages-and-functions">Load packages and functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parameter-setting">Parameter setting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compute-delta-changes-and-figures">Compute delta changes and figures</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-matrices-of-delta-changes">Data matrices of delta changes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#session-information">Session Information</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By David Domínguez Román
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

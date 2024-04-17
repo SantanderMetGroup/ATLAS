@@ -1,0 +1,1470 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Using the 4th version of the IPCC WGI reference regions in Python &#8212; IPCC-ATLAS Jupyter Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "PhantomAurelia/Atlas");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/reference-regions_Python';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Using the 4th version of the IPCC WGI reference regions in R" href="reference-regions_R.html" />
+    <link rel="prev" title="Using the Atlas reference grids in R" href="reference-grids_R.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Repository supporting the implementation of FAIR principles in the IPCC-WGI Atlas
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Information</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../warming-levels/warming-levels.html">Global Warming Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data-sources/data-sources.html">Data sources used in the Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference-grids/reference-grids.html">Sets of reference grids</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/datasets-interactive-atlas.html">Code for reproducibility of the Interactive Atlas Dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference-regions/reference-regions.html">Sets of regions for regional synthesis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-aggregated-regionally/datasets-aggregated-regionally.html">Aggregated datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Notebooks</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Notebooks</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="regional-scatter-plots_R.html">Computing and visualizing regional climate change (temperature vs precipitation) for reference regions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="global-warming-levels_R.html">Computing and visualizing transient global warming levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bias-adjustment_R.html">Atlas notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CORDEX-overlaps_Python.html">Selecting reference regions used for every CORDEX domain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GeoTIFF-post-processing_R.html">GeoTIFF file post-processing: Spatial operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hatching-uncertainty_R.html">Calculation and hatching of the uncertainty in projected delta changes.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linear-trends_R.html">Computing and visualization of precipitation linear trends during the observed period (1980-2014)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference-grids_R.html">Using the Atlas reference grids in <code class="docutils literal notranslate"><span class="pre">R</span></code></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Using the 4th version of the IPCC WGI reference regions in Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference-regions_R.html">Using the 4th version of the IPCC WGI reference regions in R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stripes-plots_R.html">Create stripes of anual temperature and precipitation mean values.</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../ERRATA.html">Errata and problem reporting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/reproducibility.html">Reproducibility scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="auxiliary-material/auxiliary-material.html">Auxiliary Materials for Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../binder/binder.html">Binder image deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/maps/maps.html">Code for reproducibility of the Atlas Map figures of model projections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/observations/observations.html">Code for reproducibility of the ATLAS spatial maps of the observed linear trends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/bash-interpolation-scripts/bash-interpolation-scripts.html">Bash interpolation scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/bash-interpolation-scripts/AtlasCDOremappeR_CORDEX/atlasCDOremappeR.html">AtlasCDOremappeR for CORDEX RCM simulations</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/PhantomAurelia/Atlas/jb-test?urlpath=lab/tree/./notebooks/reference-regions_Python.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas/edit/jb-test/./notebooks/reference-regions_Python.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas/issues/new?title=Issue%20on%20page%20%2Fnotebooks/reference-regions_Python.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/reference-regions_Python.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Using the 4th version of the IPCC WGI reference regions in Python</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imports">Imports</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-the-reference-regions">Loading the reference regions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting">Plotting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-regions">Selecting Regions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-dataset">Example Dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-2d-integer-mask">Creating a 2D integer mask</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-3d-boolean-mask">Creating a 3D boolean mask</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#select-a-region-of-a-3d-mask">Select a region of a 3D mask</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mask-out-a-region">Mask out a region</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate-weighted-regional-averages">Calculate weighted regional averages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#restrict-the-mask-to-land-points">Restrict the mask to land points</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculating-weighed-averages-in-xarray-prior-to-version-0-15-1">Calculating weighed averages in xarray prior to version 0.15.1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">Requirements</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="highlight-default notranslate"><div class="highlight"><pre><span></span># Atlas notebooks
+
+***
+
+&gt; This notebook reproduces and extends parts of the figures and products of the AR6-WGI Atlas. It is part of a notebook collection available at https://github.com/IPCC-WG1/Atlas for reproducibility and reusability purposes. This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0).
+&gt;
+&gt; ![Creative Commons License &gt;](https://i.creativecommons.org/l/by/4.0/88x31.png)
+</pre></div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="using-the-4th-version-of-the-ipcc-wgi-reference-regions-in-python">
+<span id="reference-regions-python"></span><h1>Using the 4th version of the IPCC WGI reference regions in Python<a class="headerlink" href="#using-the-4th-version-of-the-ipcc-wgi-reference-regions-in-python" title="Permalink to this heading">#</a></h1>
+<p><strong>Companion to the paper “An update of IPCC climate reference regions for subcontinental analysis of climate model data: Definition and aggregated datasets” (July 2020).</strong></p>
+<p><em>Mathias Hauser</em> - Institute for Atmospheric and Climate Science, ETH Zurich, Zurich, Switzerland</p>
+<p>A new set of reference regions is defined in Iturbide et al. (2020) for reporting sub-continental climate information. Officially named IPCC-WGI-reference-regions-v4 they will be referred to as AR6 regions here. These regions update the IPCC <em>AR5 reference regions</em> <span id="id1">[<a class="reference internal" href="reference-regions_R.html#id11" title="ipcc AR5. AR5 Regions. https://www.ipcc-data.org/guidelines/pages/ar5_regions.html.">AR5</a>]</span>. This tutorial shows how the python package <em>regionmask</em> <span id="id2">[<a class="reference internal" href="#id67" title="Create masks of geographical regions — regionmask 0.9.0 documentation. https://regionmask.readthedocs.io/en/stable/."><em>Create Masks of Geographical Regions — Regionmask 0.9.0 Documentation</em></a>]</span> can be used to plot these regions, and to create masks for arbitrary latitude and longitude grids (Version 0.9.0 was used <span id="id3">[<a class="reference internal" href="#id43" title="Mathias Hauser, Aaron Spring, Julius Busecke, Martin van Driel, Ruth Lorenz, and readthedocs-assistant. Regionmask/regionmask: version 0.9.0. Zenodo, March 2022. doi:10.5281/zenodo.6324240.">Hauser <em>et al.</em>, 2022</a>]</span>). These masks can then be used to subset individual regions or to calculate regional averages. The package <em>xarray</em> <span id="id4">[<a class="reference internal" href="#id79" title="Xarray documentation. https://docs.xarray.dev/en/latest/index.html."><em>Xarray Documentation</em></a>]</span>  is used to load netCDF files <span id="id5">[<a class="reference internal" href="#id44" title="Stephan Hoyer and Joe Hamman. Xarray: N-D labeled Arrays and Datasets in Python. Journal of Open Research Software, 5(1):10, April 2017. doi:10.5334/jors.148.">Hoyer and Hamman, 2017</a>]</span>.</p>
+<p>This tutorial requires regionmask version 0.6.1 or later and xarray version 0.15.1 or later. Check the <a class="reference external" href="https://regionmask.readthedocs.io/en/stable/">documentation of regionmask</a> for details.</p>
+<section id="imports">
+<h2>Imports<a class="headerlink" href="#imports" title="Permalink to this heading">#</a></h2>
+<p>Import <code class="docutils literal notranslate"><span class="pre">regionmask</span></code> and check the version:</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">regionmask</span>
+<span class="n">regionmask</span><span class="o">.</span><span class="n">__version__</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;0.10.0&#39;
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<p>Import <code class="docutils literal notranslate"><span class="pre">xarray</span></code> and check the version:</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
+<span class="n">xr</span><span class="o">.</span><span class="n">set_options</span><span class="p">(</span><span class="n">display_style</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
+<span class="n">xr</span><span class="o">.</span><span class="n">__version__</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;0.20.2&#39;
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<p>Import additional packages</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cartopy.crs</span> <span class="k">as</span> <span class="nn">ccrs</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">np</span><span class="o">.</span><span class="n">set_printoptions</span><span class="p">(</span><span class="n">edgeitems</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="loading-the-reference-regions">
+<h2>Loading the reference regions<a class="headerlink" href="#loading-the-reference-regions" title="Permalink to this heading">#</a></h2>
+<p>The regions are available at <code class="docutils literal notranslate"><span class="pre">regionmask.defined_regions.ar6</span></code>. The whole set of 58 regions is available under (<code class="docutils literal notranslate"><span class="pre">ar6.all</span></code>). In addition the land (<code class="docutils literal notranslate"><span class="pre">ar6.land</span></code>) and ocean (<code class="docutils literal notranslate"><span class="pre">ar6.ocean</span></code>) regions are given separately. The numbering is kept consistent between the categories. Note that some regions are in the land and in the ocean categories (e.g. the Mediterranean).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">regionmask</span><span class="o">.</span><span class="n">defined_regions</span><span class="o">.</span><span class="n">ar6</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AR6 reference regions - Iturbide et al., 2020
+
+Attributes
+----------
+all : Regions
+    All regions (land + ocean).
+land : Regions
+    Land regions only
+ocean : Regions
+    Ocean regions only
+</pre></div>
+</div>
+</div>
+</div>
+<p>We will illustrate the use of regionmask with <code class="docutils literal notranslate"><span class="pre">regionmask.defined_regions.ar6.all</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ar6_all</span> <span class="o">=</span> <span class="n">regionmask</span><span class="o">.</span><span class="n">defined_regions</span><span class="o">.</span><span class="n">ar6</span><span class="o">.</span><span class="n">all</span>
+<span class="n">ar6_all</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading file &#39;IPCC-WGI-reference-regions-v4.zip&#39; from &#39;https://github.com/regionmask/regionmask/raw/main/data/IPCC-WGI-reference-regions-v4.zip&#39; to &#39;/home/runner/.cache/regionmask&#39;.
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;regionmask.Regions &#39;AR6 reference regions&#39;&gt;
+Source:   Iturbide et al., 2020 (Earth Syst. Sci. Data)
+overlap:  False
+
+Regions:
+ 0 GIC      Greenland/Iceland
+ 1 NWN      N.W.North-America
+ 2 NEN      N.E.North-America
+ 3 WNA        W.North-America
+ 4 CNA        C.North-America
+..  ..                    ...
+53 ARS            Arabian-Sea
+54 BOB          Bay-of-Bengal
+55 EIO Equatorial.Indic-Ocean
+56 SIO          S.Indic-Ocean
+57 SOO         Southern-Ocean
+
+[58 regions]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="plotting">
+<h2>Plotting<a class="headerlink" href="#plotting" title="Permalink to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">ar6_all.plot()</span></code> creates an cartopy map plot including the outline of all regions. It returns an <code class="docutils literal notranslate"><span class="pre">axes</span></code> instance.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">ar6_all</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/io/__init__.py:241: DownloadWarning: Downloading: https://naturalearth.s3.amazonaws.com/110m_physical/ne_110m_coastline.zip
+  warnings.warn(&#39;Downloading: {}&#39;.format(url), DownloadWarning)
+</pre></div>
+</div>
+<img alt="../_images/31338b9ecc442f2cba2a41512ddb3cf1f87de9ccb1e082b6b791f504bcf10a8d.png" src="../_images/31338b9ecc442f2cba2a41512ddb3cf1f87de9ccb1e082b6b791f504bcf10a8d.png" />
+</div>
+</div>
+<p>The plot can also be customized:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">subplot_kw</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">Robinson</span><span class="p">()))</span>
+
+<span class="n">text_kws</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;#67000d&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">bbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">pad</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;w&quot;</span><span class="p">))</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">ar6_all</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+    <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span>
+    <span class="n">add_ocean</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">line_kws</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+    <span class="n">coastlines</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">text_kws</span><span class="o">=</span><span class="n">text_kws</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">coastlines</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;0.5&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">0.5</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/share/miniconda/envs/test/lib/python3.7/site-packages/regionmask/core/plot.py:240: FutureWarning: &#39;coastlines&#39; has been renamed to &#39;add_coastlines&#39;
+  &quot;&#39;coastlines&#39; has been renamed to &#39;add_coastlines&#39;&quot;, FutureWarning
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:228: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  if len(multi_line_string) &gt; 1:
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:280: ShapelyDeprecationWarning: Iteration over multi-part geometries is deprecated and will be removed in Shapely 2.0. Use the `geoms` property to access the constituent parts of a multi-part geometry.
+  for line in multi_line_string:
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:347: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  if len(p_mline) &gt; 0:
+</pre></div>
+</div>
+<img alt="../_images/81f3f3aaddf541155f31bcc91c34bb8990603549894f9b59251dbbb96cc82236.png" src="../_images/81f3f3aaddf541155f31bcc91c34bb8990603549894f9b59251dbbb96cc82236.png" />
+</div>
+</div>
+</section>
+<section id="selecting-regions">
+<h2>Selecting Regions<a class="headerlink" href="#selecting-regions" title="Permalink to this heading">#</a></h2>
+<p>Selecting regions is done by indexing (note the double brackets):</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">new_zealand</span> <span class="o">=</span> <span class="n">ar6_all</span><span class="p">[[</span><span class="mi">43</span><span class="p">]]</span>
+<span class="n">new_zealand</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;regionmask.Regions &#39;AR6 reference regions&#39;&gt;
+Source:   Iturbide et al., 2020 (Earth Syst. Sci. Data)
+overlap:  False
+
+Regions:
+43 NZ New-Zealand
+
+[1 regions]
+</pre></div>
+</div>
+</div>
+</div>
+<p>We plot the selected region and color the ocean blue with <code class="docutils literal notranslate"><span class="pre">add_ocean=True</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">projection</span> <span class="o">=</span> <span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">(</span><span class="n">central_longitude</span><span class="o">=</span><span class="mi">180</span><span class="p">)</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">new_zealand</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">proj</span><span class="o">=</span><span class="n">projection</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;abbrev&quot;</span><span class="p">,</span> <span class="n">add_ocean</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_extent</span><span class="p">([</span><span class="mi">120</span><span class="p">,</span> <span class="mi">185</span><span class="p">,</span> <span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="o">-</span><span class="mi">60</span><span class="p">],</span> <span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/share/miniconda/envs/test/lib/python3.7/site-packages/regionmask/core/plot.py:232: FutureWarning: &#39;proj&#39; has been renamed to &#39;projection&#39;
+  warnings.warn(&quot;&#39;proj&#39; has been renamed to &#39;projection&#39;&quot;, FutureWarning)
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:228: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  if len(multi_line_string) &gt; 1:
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:239: ShapelyDeprecationWarning: Iteration over multi-part geometries is deprecated and will be removed in Shapely 2.0. Use the `geoms` property to access the constituent parts of a multi-part geometry.
+  line_strings = list(multi_line_string)
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:239: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  line_strings = list(multi_line_string)
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:280: ShapelyDeprecationWarning: Iteration over multi-part geometries is deprecated and will be removed in Shapely 2.0. Use the `geoms` property to access the constituent parts of a multi-part geometry.
+  for line in multi_line_string:
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:347: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  if len(p_mline) &gt; 0:
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:385: ShapelyDeprecationWarning: Iteration over multi-part geometries is deprecated and will be removed in Shapely 2.0. Use the `geoms` property to access the constituent parts of a multi-part geometry.
+  line_strings.extend(multi_line_string)
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:385: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  line_strings.extend(multi_line_string)
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/io/__init__.py:241: DownloadWarning: Downloading: https://naturalearth.s3.amazonaws.com/110m_physical/ne_110m_ocean.zip
+  warnings.warn(&#39;Downloading: {}&#39;.format(url), DownloadWarning)
+</pre></div>
+</div>
+<img alt="../_images/f0ff3dc4d138d2e07045a61c7a0d94e29fe5fbcd5295eb61da1120901664ee96.png" src="../_images/f0ff3dc4d138d2e07045a61c7a0d94e29fe5fbcd5295eb61da1120901664ee96.png" />
+</div>
+</div>
+<p>Regions can also be selected by their abbreviation or name, let’s select several regions at once:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">australasia</span> <span class="o">=</span> <span class="n">ar6_all</span><span class="p">[[</span><span class="s2">&quot;NZ&quot;</span><span class="p">,</span> <span class="s2">&quot;SEA&quot;</span><span class="p">,</span> <span class="s2">&quot;NAU&quot;</span><span class="p">,</span> <span class="s2">&quot;C.Australia&quot;</span><span class="p">,</span> <span class="s2">&quot;SAU&quot;</span><span class="p">]]</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">australasia</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">proj</span><span class="o">=</span><span class="n">projection</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;abbrev&quot;</span><span class="p">,</span> <span class="n">add_ocean</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/0084908cf4e45fcf20a593ec84a7868f711d0617c78e42a060dff2896eec265d.png" src="../_images/0084908cf4e45fcf20a593ec84a7868f711d0617c78e42a060dff2896eec265d.png" />
+</div>
+</div>
+</section>
+<section id="example-dataset">
+<h2>Example Dataset<a class="headerlink" href="#example-dataset" title="Permalink to this heading">#</a></h2>
+<p>In this example we will consider a NetCDF file with historical temperature simulations and show several analysis and visualizations at a global scale or filtering by regions. Therefore, we load an example dataset from the CMIP6 archive using <code class="docutils literal notranslate"><span class="pre">xarray</span></code>. The dataset corresponds to the following ESGF request:</p>
+<ul class="simple">
+<li><p>MIP Era: CMIP6</p></li>
+<li><p>Source ID: CESM2</p></li>
+<li><p>Experiment ID: historical</p></li>
+<li><p>Variant Label: r1i1p1f1</p></li>
+<li><p>Table ID: Amon</p></li>
+<li><p>Frequency: mon</p></li>
+<li><p>Variable: tas</p></li>
+</ul>
+<p>Note: if you do not have access to a tas dataset you can replace the code cell below with the following:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">tutorial</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;air_temperature&quot;</span><span class="p">)</span>
+<span class="n">tas</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">air</span>
+<span class="c1"># calculate monthly mean</span>
+<span class="n">tas</span> <span class="o">=</span> <span class="n">tas</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="s2">&quot;m&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fN</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;auxiliary-material/CMIP6Amon_tas_CanESM5_r1i1p1f1_historical_gn_185001-201412.nc&quot;</span><span class="p">)</span> 
+
+<span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="n">fN</span><span class="p">)</span>
+
+<span class="n">tas</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">tas</span>
+
+<span class="c1"># calculate annual mean</span>
+<span class="n">tas</span> <span class="o">=</span> <span class="n">tas</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;time.year&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s2">&quot;time&quot;</span><span class="p">)</span>
+<span class="n">tas</span> <span class="o">=</span> <span class="n">tas</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">year</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># convert to celsius</span>
+<span class="n">tas</span> <span class="o">=</span> <span class="n">tas</span> <span class="o">-</span> <span class="mf">273.15</span>
+
+<span class="n">tas</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output text_html"><pre>&lt;xarray.DataArray &#x27;tas&#x27; (time: 165, lat: 64, lon: 128)&gt;
+array([[[-45.430008, -45.761246, ..., -44.75174 , -45.091705],
+        [-45.896744, -46.590225, ..., -44.218903, -45.101715],
+        ...,
+        [-17.36702 , -17.171188, ..., -17.895187, -17.624313],
+        [-18.64714 , -18.557785, ..., -18.7753  , -18.694626]],
+
+       [[-44.4169  , -44.72325 , ..., -43.792145, -44.099274],
+        [-44.805893, -45.43962 , ..., -43.2538  , -44.080124],
+        ...,
+        [-16.245056, -16.032959, ..., -16.703278, -16.45105 ],
+        [-17.691727, -17.641739, ..., -17.772202, -17.741959]],
+
+       ...,
+
+       [[-42.882904, -43.175674, ..., -42.251236, -42.573135],
+        [-43.605988, -44.256134, ..., -41.999786, -42.84581 ],
+        ...,
+        [-14.617554, -14.334442, ..., -15.218384, -14.910461],
+        [-15.229614, -15.190063, ..., -15.348999, -15.286438]],
+
+       [[-42.611115, -42.900314, ..., -42.01175 , -42.32065 ],
+        [-42.784317, -43.42357 , ..., -41.23117 , -42.06967 ],
+        ...,
+        [-13.792969, -13.55722 , ..., -14.30069 , -14.045441],
+        [-14.829285, -14.778809, ..., -14.893127, -14.84668 ]]],
+      dtype=float32)
+Coordinates:
+  * lat      (lat) float64 -87.86 -85.1 -82.31 -79.53 ... 79.53 82.31 85.1 87.86
+  * lon      (lon) float64 0.0 2.812 5.625 8.438 ... 348.8 351.6 354.4 357.2
+    height   float64 ...
+  * time     (time) int64 1850 1851 1852 1853 1854 ... 2010 2011 2012 2013 2014</pre></div></div>
+</details>
+</div>
+<p>The example data is a temperature field. Let’s plot the first time step:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">proj</span> <span class="o">=</span> <span class="n">ccrs</span><span class="o">.</span><span class="n">Robinson</span><span class="p">()</span>
+
+<span class="n">f</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">subplot_kw</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="n">proj</span><span class="p">))</span>
+
+<span class="n">h</span> <span class="o">=</span> <span class="n">tas</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">pcolormesh</span><span class="p">(</span>
+    <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">(),</span> <span class="n">robust</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="mi">0</span>
+<span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">coastlines</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:228: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  if len(multi_line_string) &gt; 1:
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:239: ShapelyDeprecationWarning: Iteration over multi-part geometries is deprecated and will be removed in Shapely 2.0. Use the `geoms` property to access the constituent parts of a multi-part geometry.
+  line_strings = list(multi_line_string)
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:239: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  line_strings = list(multi_line_string)
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:280: ShapelyDeprecationWarning: Iteration over multi-part geometries is deprecated and will be removed in Shapely 2.0. Use the `geoms` property to access the constituent parts of a multi-part geometry.
+  for line in multi_line_string:
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:347: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  if len(p_mline) &gt; 0:
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:385: ShapelyDeprecationWarning: Iteration over multi-part geometries is deprecated and will be removed in Shapely 2.0. Use the `geoms` property to access the constituent parts of a multi-part geometry.
+  line_strings.extend(multi_line_string)
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:385: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  line_strings.extend(multi_line_string)
+</pre></div>
+</div>
+<img alt="../_images/72f125a64619491ec319ed213dd8617f9447fa718e38eb25cbe16a434f766529.png" src="../_images/72f125a64619491ec319ed213dd8617f9447fa718e38eb25cbe16a434f766529.png" />
+</div>
+</div>
+</section>
+<section id="creating-a-2d-integer-mask">
+<h2>Creating a 2D integer mask<a class="headerlink" href="#creating-a-2d-integer-mask" title="Permalink to this heading">#</a></h2>
+<p>We illustrate the creation of masks using the land regions:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ar6_land</span> <span class="o">=</span> <span class="n">regionmask</span><span class="o">.</span><span class="n">defined_regions</span><span class="o">.</span><span class="n">ar6</span><span class="o">.</span><span class="n">land</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Using <code class="docutils literal notranslate"><span class="pre">ar6_land.mask(lon,</span> <span class="pre">lat)</span></code> we can create an array where each grid cell is numbered according to the region it belongs to. Grid cells that are not part of any region are <code class="docutils literal notranslate"><span class="pre">NaN</span></code>. We can directly pass an xarray object containing <code class="docutils literal notranslate"><span class="pre">lon</span></code> and <code class="docutils literal notranslate"><span class="pre">lat</span></code> coordinates to the <code class="docutils literal notranslate"><span class="pre">mask</span></code> function.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mask_2D</span> <span class="o">=</span> <span class="n">ar6_land</span><span class="o">.</span><span class="n">mask</span><span class="p">(</span><span class="n">tas</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The resulting mask indicates which region each grid point belongs to and looks as follows:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">proj</span> <span class="o">=</span> <span class="n">ccrs</span><span class="o">.</span><span class="n">Robinson</span><span class="p">()</span>
+<span class="n">f</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">subplot_kw</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="n">proj</span><span class="p">))</span>
+
+<span class="n">h</span> <span class="o">=</span> <span class="n">mask_2D</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">pcolormesh</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">(),</span> <span class="n">add_colorbar</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">coastlines</span><span class="p">()</span>
+
+<span class="n">ar6_land</span><span class="o">.</span><span class="n">plot_regions</span><span class="p">(</span><span class="n">line_kws</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">lw</span><span class="o">=</span><span class="mf">0.5</span><span class="p">),</span> <span class="n">add_label</span><span class="o">=</span><span class="kc">False</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:228: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  if len(multi_line_string) &gt; 1:
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:239: ShapelyDeprecationWarning: Iteration over multi-part geometries is deprecated and will be removed in Shapely 2.0. Use the `geoms` property to access the constituent parts of a multi-part geometry.
+  line_strings = list(multi_line_string)
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:239: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  line_strings = list(multi_line_string)
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:280: ShapelyDeprecationWarning: Iteration over multi-part geometries is deprecated and will be removed in Shapely 2.0. Use the `geoms` property to access the constituent parts of a multi-part geometry.
+  for line in multi_line_string:
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:347: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  if len(p_mline) &gt; 0:
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:385: ShapelyDeprecationWarning: Iteration over multi-part geometries is deprecated and will be removed in Shapely 2.0. Use the `geoms` property to access the constituent parts of a multi-part geometry.
+  line_strings.extend(multi_line_string)
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:385: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  line_strings.extend(multi_line_string)
+</pre></div>
+</div>
+<img alt="../_images/e2233dbe8ca8361b2833d8a8b70f99c0eb6d9333c03f2fb579f3801752b3b764.png" src="../_images/e2233dbe8ca8361b2833d8a8b70f99c0eb6d9333c03f2fb579f3801752b3b764.png" />
+</div>
+</div>
+</section>
+<section id="creating-a-3d-boolean-mask">
+<h2>Creating a 3D boolean mask<a class="headerlink" href="#creating-a-3d-boolean-mask" title="Permalink to this heading">#</a></h2>
+<p>2D masks are good for plotting. However, to calculate weighted regional averages 3D boolean masks are more convenient. 3D masks are created as follows:</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mask_3D</span> <span class="o">=</span> <span class="n">ar6_land</span><span class="o">.</span><span class="n">mask_3D</span><span class="p">(</span><span class="n">tas</span><span class="p">)</span>
+<span class="n">mask_3D</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output text_html"><pre>&lt;xarray.DataArray &#x27;mask&#x27; (region: 46, lat: 64, lon: 128)&gt;
+array([[[False, False, ..., False, False],
+        [False, False, ..., False, False],
+        ...,
+        [False, False, ..., False, False],
+        [False, False, ..., False, False]],
+
+       [[False, False, ..., False, False],
+        [False, False, ..., False, False],
+        ...,
+        [False, False, ..., False, False],
+        [False, False, ..., False, False]],
+
+       ...,
+
+       [[ True,  True, ...,  True,  True],
+        [ True,  True, ...,  True,  True],
+        ...,
+        [False, False, ..., False, False],
+        [False, False, ..., False, False]],
+
+       [[False, False, ..., False, False],
+        [False, False, ..., False, False],
+        ...,
+        [False, False, ..., False, False],
+        [False, False, ..., False, False]]])
+Coordinates:
+  * lat      (lat) float64 -87.86 -85.1 -82.31 -79.53 ... 79.53 82.31 85.1 87.86
+    height   float64 2.0
+  * lon      (lon) float64 0.0 2.812 5.625 8.438 ... 348.8 351.6 354.4 357.2
+  * region   (region) int64 0 1 2 3 4 5 6 7 8 9 ... 37 38 39 40 41 42 43 44 45
+    abbrevs  (region) &lt;U4 &#x27;GIC&#x27; &#x27;NWN&#x27; &#x27;NEN&#x27; &#x27;WNA&#x27; ... &#x27;SAU&#x27; &#x27;NZ&#x27; &#x27;EAN&#x27; &#x27;WAN&#x27;
+    names    (region) &lt;U22 &#x27;Greenland/Iceland&#x27; ... &#x27;W.Antarctica&#x27;
+Attributes:
+    standard_name:  region</pre></div></div>
+</details>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">ar6_land.mask_3D</span></code> uses the same algorithm to determine if a gridpoint is in a region as for the 2D mask. However, it returns a <code class="docutils literal notranslate"><span class="pre">xarray.Dataset</span></code> with shape <code class="docutils literal notranslate"><span class="pre">region</span> <span class="pre">x</span> <span class="pre">lat</span> <span class="pre">x</span> <span class="pre">lon</span></code>. Gridpoints that belong to a region are <code class="docutils literal notranslate"><span class="pre">True</span></code>, all others are <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p>The first two regions look as follows:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">colors</span> <span class="k">as</span> <span class="n">mplc</span>
+
+<span class="n">cmap1</span> <span class="o">=</span> <span class="n">mplc</span><span class="o">.</span><span class="n">ListedColormap</span><span class="p">([</span><span class="s2">&quot;none&quot;</span><span class="p">,</span> <span class="s2">&quot;#9ecae1&quot;</span><span class="p">])</span>
+
+<span class="n">fg</span> <span class="o">=</span> <span class="n">mask_3D</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+    <span class="n">subplot_kws</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">()),</span>
+    <span class="n">col</span><span class="o">=</span><span class="s2">&quot;region&quot;</span><span class="p">,</span>
+    <span class="n">col_wrap</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="n">transform</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">(),</span>
+    <span class="n">add_colorbar</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">aspect</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span>
+    <span class="n">cmap</span><span class="o">=</span><span class="n">cmap1</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">fg</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">flatten</span><span class="p">():</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">coastlines</span><span class="p">(</span><span class="n">lw</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;0.5&quot;</span><span class="p">)</span>
+
+<span class="n">fg</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">hspace</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">wspace</span><span class="o">=</span><span class="mf">0.1</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:228: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  if len(multi_line_string) &gt; 1:
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:239: ShapelyDeprecationWarning: Iteration over multi-part geometries is deprecated and will be removed in Shapely 2.0. Use the `geoms` property to access the constituent parts of a multi-part geometry.
+  line_strings = list(multi_line_string)
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:239: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  line_strings = list(multi_line_string)
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:280: ShapelyDeprecationWarning: Iteration over multi-part geometries is deprecated and will be removed in Shapely 2.0. Use the `geoms` property to access the constituent parts of a multi-part geometry.
+  for line in multi_line_string:
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:347: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  if len(p_mline) &gt; 0:
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:385: ShapelyDeprecationWarning: Iteration over multi-part geometries is deprecated and will be removed in Shapely 2.0. Use the `geoms` property to access the constituent parts of a multi-part geometry.
+  line_strings.extend(multi_line_string)
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:385: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  line_strings.extend(multi_line_string)
+</pre></div>
+</div>
+<img alt="../_images/fa4c37084c2615e6e6d5e7d286c9c655babc535bdce4098c7d9d5c6fd14d9e6e.png" src="../_images/fa4c37084c2615e6e6d5e7d286c9c655babc535bdce4098c7d9d5c6fd14d9e6e.png" />
+</div>
+</div>
+<section id="select-a-region-of-a-3d-mask">
+<h3>Select a region of a 3D mask<a class="headerlink" href="#select-a-region-of-a-3d-mask" title="Permalink to this heading">#</a></h3>
+<p>As <code class="docutils literal notranslate"><span class="pre">mask_3D</span></code> contains region, abbrevs, and names as (non-dimension) coordinates we can use each of those to select an individual region:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 1) by the index of the region:</span>
+<span class="n">r1</span> <span class="o">=</span> <span class="n">mask_3D</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># 2) with the abbreviation</span>
+<span class="n">r2</span> <span class="o">=</span> <span class="n">mask_3D</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="p">(</span><span class="n">mask_3D</span><span class="o">.</span><span class="n">abbrevs</span> <span class="o">==</span> <span class="s2">&quot;CNA&quot;</span><span class="p">))</span>
+
+<span class="c1"># 3) with the long name:</span>
+<span class="n">r3</span> <span class="o">=</span> <span class="n">mask_3D</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="p">(</span><span class="n">mask_3D</span><span class="o">.</span><span class="n">names</span> <span class="o">==</span> <span class="s2">&quot;C.North-America&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="mask-out-a-region">
+<h2>Mask out a region<a class="headerlink" href="#mask-out-a-region" title="Permalink to this heading">#</a></h2>
+<p>Using <code class="docutils literal notranslate"><span class="pre">tas.where</span></code> a specific region can be ‘masked out’ (i.e. all data points outside of the region become NaN):</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tas_CNA</span> <span class="o">=</span> <span class="n">tas</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">r1</span><span class="p">)</span>
+
+<span class="n">proj</span> <span class="o">=</span> <span class="n">ccrs</span><span class="o">.</span><span class="n">Robinson</span><span class="p">()</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="n">proj</span><span class="p">)</span>
+
+<span class="n">tas_CNA</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">pcolormesh</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">())</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Central North America&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">coastlines</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:228: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  if len(multi_line_string) &gt; 1:
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:280: ShapelyDeprecationWarning: Iteration over multi-part geometries is deprecated and will be removed in Shapely 2.0. Use the `geoms` property to access the constituent parts of a multi-part geometry.
+  for line in multi_line_string:
+/usr/share/miniconda/envs/test/lib/python3.7/site-packages/cartopy/crs.py:347: ShapelyDeprecationWarning: __len__ for multi-part geometries is deprecated and will be removed in Shapely 2.0. Check the length of the `geoms` property instead to get the  number of parts of a multi-part geometry.
+  if len(p_mline) &gt; 0:
+</pre></div>
+</div>
+<img alt="../_images/516ff201bda6e298931c6c47d3fdcc34a9974019aa7551f8ea22eaf9e66d359a.png" src="../_images/516ff201bda6e298931c6c47d3fdcc34a9974019aa7551f8ea22eaf9e66d359a.png" />
+</div>
+</div>
+<p>Note this also works with a 2D mask, using <code class="docutils literal notranslate"><span class="pre">tas.where(mask_2D</span> <span class="pre">==</span> <span class="pre">2)</span></code>.</p>
+</section>
+<section id="calculate-weighted-regional-averages">
+<h2>Calculate weighted regional averages<a class="headerlink" href="#calculate-weighted-regional-averages" title="Permalink to this heading">#</a></h2>
+<p>Using the 3-dimensional mask it is possible to calculate weighted averages of all regions in one go, using the weighted method (requires xarray 0.15.1 or later). Here, we use <code class="docutils literal notranslate"><span class="pre">cos(lat)</span></code> as proxy of the grid area. This works well for the rectangular grid in our example. In general, it is better to the model’s own grid area.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">weights</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">tas</span><span class="o">.</span><span class="n">lat</span><span class="p">))</span>
+
+<span class="n">tas_regional</span> <span class="o">=</span> <span class="n">tas</span><span class="o">.</span><span class="n">weighted</span><span class="p">(</span><span class="n">mask_3D</span> <span class="o">*</span> <span class="n">weights</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;lat&quot;</span><span class="p">,</span> <span class="s2">&quot;lon&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s break down what happens here. By multiplying <code class="docutils literal notranslate"><span class="pre">mask_3D</span> <span class="pre">*</span> <span class="pre">weights</span></code> we get a DataArray where gridpoints within a region get a weight proportional to the gridcell area and all others get a weight of 0. <code class="docutils literal notranslate"><span class="pre">airtemps.weighted(mask_3D</span> <span class="pre">*</span> <span class="pre">weights)</span></code> creates an xarray object which can be used for weighted operations. From this we calculate the weighted mean over the lat and lon dimensions. The resulting dataarray has the dimensions <code class="docutils literal notranslate"><span class="pre">region</span> <span class="pre">x</span> <span class="pre">time</span></code>:</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tas_regional</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output text_html"><pre>&lt;xarray.DataArray &#x27;tas&#x27; (time: 165, region: 46)&gt;
+array([[-14.34435989,  -4.57573997, ..., -32.31694793, -20.89343577],
+       [-14.05052335,  -5.25600597, ..., -31.61877546, -21.7574261 ],
+       ...,
+       [-12.404766  ,  -2.08977824, ..., -29.92128283, -18.47642827],
+       [-11.14616891,  -2.25170586, ..., -29.97843364, -19.29482384]])
+Coordinates:
+    height   float64 2.0
+  * time     (time) int64 1850 1851 1852 1853 1854 ... 2010 2011 2012 2013 2014
+  * region   (region) int64 0 1 2 3 4 5 6 7 8 9 ... 37 38 39 40 41 42 43 44 45
+    abbrevs  (region) &lt;U4 &#x27;GIC&#x27; &#x27;NWN&#x27; &#x27;NEN&#x27; &#x27;WNA&#x27; ... &#x27;SAU&#x27; &#x27;NZ&#x27; &#x27;EAN&#x27; &#x27;WAN&#x27;
+    names    (region) &lt;U22 &#x27;Greenland/Iceland&#x27; ... &#x27;W.Antarctica&#x27;</pre></div></div>
+</details>
+</div>
+<p>The regionally-averaged time series can be plotted:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tas_regional</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="mi">6</span><span class="p">))</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">col</span><span class="o">=</span><span class="s2">&quot;region&quot;</span><span class="p">,</span> <span class="n">col_wrap</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">sharey</span><span class="o">=</span><span class="kc">False</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/720a2cc116944acd2b7b72cb631bf7c78835f40783f6ffc2a7b87ce0e0e0396a.png" src="../_images/720a2cc116944acd2b7b72cb631bf7c78835f40783f6ffc2a7b87ce0e0e0396a.png" />
+</div>
+</div>
+</section>
+<section id="restrict-the-mask-to-land-points">
+<h2>Restrict the mask to land points<a class="headerlink" href="#restrict-the-mask-to-land-points" title="Permalink to this heading">#</a></h2>
+<p>Combining the mask of the regions with a land-sea mask we can create a mask containing only land points. For simplicity we use the <code class="docutils literal notranslate"><span class="pre">natural_earth.land_110</span></code> regions to create a land mask but generally it is recommended to use the model’s original land/ sea mask.</p>
+<p>With this caveat in mind we can create the land-sea mask and plot it:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">land_110</span> <span class="o">=</span> <span class="n">regionmask</span><span class="o">.</span><span class="n">defined_regions</span><span class="o">.</span><span class="n">natural_earth</span><span class="o">.</span><span class="n">land_110</span>
+
+<span class="n">land_mask</span> <span class="o">=</span> <span class="n">land_110</span><span class="o">.</span><span class="n">mask_3D</span><span class="p">(</span><span class="n">tas</span><span class="p">)</span>
+
+<span class="c1"># add a plot</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">Robinson</span><span class="p">())</span>
+<span class="n">land_mask</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">(),</span> <span class="n">add_colorbar</span><span class="o">=</span><span class="kc">False</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_5633</span><span class="o">/</span><span class="mf">3765640021.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">land_110</span> <span class="o">=</span> <span class="n">regionmask</span><span class="o">.</span><span class="n">defined_regions</span><span class="o">.</span><span class="n">natural_earth</span><span class="o">.</span><span class="n">land_110</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> 
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">land_mask</span> <span class="o">=</span> <span class="n">land_110</span><span class="o">.</span><span class="n">mask_3D</span><span class="p">(</span><span class="n">tas</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> 
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># add a plot</span>
+
+<span class="nn">/usr/share/miniconda/envs/test/lib/python3.7/site-packages/regionmask/defined_regions/_natural_earth.py</span> in <span class="ni">land_110</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">303</span>             <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">304</span> 
+<span class="ne">--&gt; </span><span class="mi">305</span>             <span class="bp">self</span><span class="o">.</span><span class="n">_land_110</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_obtain_ne</span><span class="p">(</span><span class="n">_land_110</span><span class="p">,</span> <span class="o">**</span><span class="n">opt</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">306</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_land_110</span>
+<span class="g g-Whitespace">    </span><span class="mi">307</span> 
+
+<span class="nn">/usr/share/miniconda/envs/test/lib/python3.7/site-packages/regionmask/defined_regions/_natural_earth.py</span> in <span class="ni">_obtain_ne</span><span class="nt">(self, natural_earth_feature, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">462</span>             <span class="n">natural_earth_feature</span><span class="o">.</span><span class="n">resolution</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">463</span>             <span class="n">natural_earth_feature</span><span class="o">.</span><span class="n">category</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">464</span>             <span class="n">natural_earth_feature</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">465</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">466</span> 
+
+<span class="nn">/usr/share/miniconda/envs/test/lib/python3.7/site-packages/regionmask/defined_regions/_natural_earth.py</span> in <span class="ni">_get_shapefilename_cartopy</span><span class="nt">(resolution, category, name)</span>
+<span class="g g-Whitespace">    </span><span class="mi">518</span>     <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">cartopy_file</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">519</span>         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+<span class="ne">--&gt; </span><span class="mi">520</span>             <span class="s2">&quot;``regionmask.defined_regions.natural_earth`` is deprecated. Will not &quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">521</span>             <span class="sa">f</span><span class="s2">&quot;download new files via this interface. </span><span class="si">{</span><span class="n">ALTERNATIVE</span><span class="si">}</span><span class="s2">.&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">522</span>         <span class="p">)</span>
+
+<span class="ne">ValueError</span>: ``regionmask.defined_regions.natural_earth`` is deprecated. Will not download new files via this interface. Please use ``regionmask.defined_regions.natural_earth_v4_1_0`` or ``regionmask.defined_regions.natural_earth_v5_0_0`` instead.
+</pre></div>
+</div>
+</div>
+</div>
+<p>To create the combined mask we multiply the two:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mask_lsm</span> <span class="o">=</span> <span class="n">mask_3D</span> <span class="o">*</span> <span class="n">land_mask</span><span class="o">.</span><span class="n">squeeze</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Note the <code class="docutils literal notranslate"><span class="pre">.squeeze(drop=True)</span></code>. This is required to remove the region dimension from land_mask.</p>
+<p>The resulting <code class="docutils literal notranslate"><span class="pre">mask_lsm</span></code> is also a 3D mask which cannot be directly plotted. For this <code class="docutils literal notranslate"><span class="pre">regionmask.plot_3D_mask</span></code> is given as convenience function to flatten and plot 3D masks:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ar6_land</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">add_label</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">line_kws</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="n">proj</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">Robinson</span><span class="p">())</span>
+
+<span class="n">regionmask</span><span class="o">.</span><span class="n">plot_3D_mask</span><span class="p">(</span><span class="n">mask_lsm</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">(),</span> <span class="n">add_colorbar</span><span class="o">=</span><span class="kc">False</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/ddf72c50c822ccb8ea7ca02b33a3f0a75993b39bd418851b11e49172c3f2f1e3.png" src="../_images/ddf72c50c822ccb8ea7ca02b33a3f0a75993b39bd418851b11e49172c3f2f1e3.png" />
+</div>
+</div>
+<p>We can now again calculate the regional mean temperature for all land points:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tas_regional_land</span> <span class="o">=</span> <span class="n">tas</span><span class="o">.</span><span class="n">weighted</span><span class="p">(</span><span class="n">mask_lsm</span> <span class="o">*</span> <span class="n">weights</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;lat&quot;</span><span class="p">,</span> <span class="s2">&quot;lon&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>and compare it to the temperature of the land and ocean:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">sharex</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">axes</span> <span class="o">=</span> <span class="n">axes</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">ax</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">axes</span><span class="p">):</span>
+
+    <span class="n">ds</span> <span class="o">=</span> <span class="n">tas_regional</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">ds</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Land + Ocean&quot;</span><span class="p">)</span>
+
+    <span class="n">ds</span> <span class="o">=</span> <span class="n">tas_regional_land</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">ds</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Land only&quot;</span><span class="p">)</span>
+
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">names</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/6a6a087b30eaeb1d2a03c0c9d45d65007c26ea7b8292f45effadd3e83684f301.png" src="../_images/6a6a087b30eaeb1d2a03c0c9d45d65007c26ea7b8292f45effadd3e83684f301.png" />
+</div>
+</div>
+</section>
+<section id="calculating-weighed-averages-in-xarray-prior-to-version-0-15-1">
+<h2>Calculating weighed averages in xarray prior to version 0.15.1<a class="headerlink" href="#calculating-weighed-averages-in-xarray-prior-to-version-0-15-1" title="Permalink to this heading">#</a></h2>
+<p>xarray only offers weighted averages since version 0.15.1. For users of older versions the a <code class="docutils literal notranslate"><span class="pre">weighted_mean</span></code> function is provided below. This function can also compute the weighed mean over all regions (<code class="docutils literal notranslate"><span class="pre">weighted_mean(tas,</span> <span class="pre">mask_3D</span> <span class="pre">*</span> <span class="pre">weights,</span> <span class="pre">(&quot;lon&quot;,</span> <span class="pre">&quot;lat&quot;))</span></code>), however, it is less memory efficient and much slower than the one implemented in xarray.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">weighted_mean</span><span class="p">(</span><span class="n">da</span><span class="p">,</span> <span class="n">weights</span><span class="p">,</span> <span class="n">dim</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Reduce da by a weighted mean along some dimension(s).</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    da : DataArray</span>
+<span class="sd">        Object over which the weighted reduction operation is applied.    </span>
+<span class="sd">    weights : DataArray</span>
+<span class="sd">        An array of weights associated with the values in this Dataset.</span>
+<span class="sd">    dim : str or sequence of str, optional</span>
+<span class="sd">        Dimension(s) over which to apply the weighted `mean`.</span>
+<span class="sd">        </span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    weighted_mean : DataArray</span>
+<span class="sd">        New DataArray with weighted mean applied to its data and</span>
+<span class="sd">        the indicated dimension(s) removed.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">weighted_sum</span> <span class="o">=</span> <span class="p">(</span><span class="n">da</span> <span class="o">*</span> <span class="n">weights</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="n">dim</span><span class="p">,</span> <span class="n">skipna</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="c1"># need to mask weights where data is not valid</span>
+    <span class="n">masked_weights</span> <span class="o">=</span> <span class="n">weights</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">da</span><span class="o">.</span><span class="n">notnull</span><span class="p">())</span>
+    <span class="n">sum_of_weights</span> <span class="o">=</span> <span class="n">masked_weights</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="n">dim</span><span class="p">,</span> <span class="n">skipna</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">valid_weights</span> <span class="o">=</span> <span class="n">sum_of_weights</span> <span class="o">!=</span> <span class="mi">0</span>
+    <span class="n">sum_of_weights</span> <span class="o">=</span> <span class="n">sum_of_weights</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">valid_weights</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">weighted_sum</span> <span class="o">/</span> <span class="n">sum_of_weights</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this heading">#</a></h2>
+<p>Running this notebook requires the regionmask, netCDF4 and jupyter packages (all other packages are dependencies). regionmask itself is a pure Python package, but its dependencies are not. The easiest way to get them installed is to use <a class="reference external" href="http://conda.io/">conda</a>. The package is avilable on the conda-forge channel.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge regionmask xarray jupyter netCDF4
+</pre></div>
+</div>
+<section id="references">
+<h3>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h3>
+<div class="docutils container" id="id6">
+<div class="citation" id="id67" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">reg</a><span class="fn-bracket">]</span></span>
+<p>Create masks of geographical regions — regionmask 0.9.0 documentation. https://regionmask.readthedocs.io/en/stable/.</p>
+</div>
+<div class="citation" id="id79" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">Xar</a><span class="fn-bracket">]</span></span>
+<p>Xarray documentation. https://docs.xarray.dev/en/latest/index.html.</p>
+</div>
+<div class="citation" id="id8" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">AR5</a><span class="fn-bracket">]</span></span>
+<p>ipcc AR5. AR5 Regions. https://www.ipcc-data.org/guidelines/pages/ar5_regions.html.</p>
+</div>
+<div class="citation" id="id43" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">HSB+22</a><span class="fn-bracket">]</span></span>
+<p>Mathias Hauser, Aaron Spring, Julius Busecke, Martin van Driel, Ruth Lorenz, and readthedocs-assistant. Regionmask/regionmask: version 0.9.0. Zenodo, March 2022. <a class="reference external" href="https://doi.org/10.5281/zenodo.6324240">doi:10.5281/zenodo.6324240</a>.</p>
+</div>
+<div class="citation" id="id44" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">HH17</a><span class="fn-bracket">]</span></span>
+<p>Stephan Hoyer and Joe Hamman. Xarray: N-D labeled Arrays and Datasets in Python. <em>Journal of Open Research Software</em>, 5(1):10, April 2017. <a class="reference external" href="https://doi.org/10.5334/jors.148">doi:10.5334/jors.148</a>.</p>
+</div>
+</div>
+</div>
+<script src="https://utteranc.es/client.js"
+        repo="PhantomAurelia/Atlas"
+        issue-term="pathname"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script></section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "PhantomAurelia/Atlas",
+            ref: "jb-test",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="reference-grids_R.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Using the Atlas reference grids in <code class="docutils literal notranslate"><span class="pre">R</span></code></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="reference-regions_R.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Using the 4th version of the IPCC WGI reference regions in R</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imports">Imports</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-the-reference-regions">Loading the reference regions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting">Plotting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-regions">Selecting Regions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-dataset">Example Dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-2d-integer-mask">Creating a 2D integer mask</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-3d-boolean-mask">Creating a 3D boolean mask</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#select-a-region-of-a-3d-mask">Select a region of a 3D mask</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mask-out-a-region">Mask out a region</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate-weighted-regional-averages">Calculate weighted regional averages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#restrict-the-mask-to-land-points">Restrict the mask to land points</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculating-weighed-averages-in-xarray-prior-to-version-0-15-1">Calculating weighed averages in xarray prior to version 0.15.1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">Requirements</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By David Domínguez Román
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,1692 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Computing and visualization of precipitation linear trends during the observed period (1980-2014) &#8212; IPCC-ATLAS Jupyter Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "PhantomAurelia/Atlas");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/linear-trends_R';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Using the Atlas reference grids in R" href="reference-grids_R.html" />
+    <link rel="prev" title="Calculation and hatching of the uncertainty in projected delta changes." href="hatching-uncertainty_R.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Repository supporting the implementation of FAIR principles in the IPCC-WGI Atlas
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Information</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../warming-levels/warming-levels.html">Global Warming Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data-sources/data-sources.html">Data sources used in the Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference-grids/reference-grids.html">Sets of reference grids</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/datasets-interactive-atlas.html">Code for reproducibility of the Interactive Atlas Dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference-regions/reference-regions.html">Sets of regions for regional synthesis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-aggregated-regionally/datasets-aggregated-regionally.html">Aggregated datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Notebooks</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Notebooks</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="regional-scatter-plots_R.html">Computing and visualizing regional climate change (temperature vs precipitation) for reference regions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="global-warming-levels_R.html">Computing and visualizing transient global warming levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bias-adjustment_R.html">Atlas notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CORDEX-overlaps_Python.html">Selecting reference regions used for every CORDEX domain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GeoTIFF-post-processing_R.html">GeoTIFF file post-processing: Spatial operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hatching-uncertainty_R.html">Calculation and hatching of the uncertainty in projected delta changes.</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Computing and visualization of precipitation linear trends during the observed period (1980-2014)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference-grids_R.html">Using the Atlas reference grids in <code class="docutils literal notranslate"><span class="pre">R</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference-regions_Python.html">Using the 4th version of the IPCC WGI reference regions in Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference-regions_R.html">Using the 4th version of the IPCC WGI reference regions in R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stripes-plots_R.html">Create stripes of anual temperature and precipitation mean values.</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../ERRATA.html">Errata and problem reporting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/reproducibility.html">Reproducibility scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="auxiliary-material/auxiliary-material.html">Auxiliary Materials for Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../binder/binder.html">Binder image deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/maps/maps.html">Code for reproducibility of the Atlas Map figures of model projections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/observations/observations.html">Code for reproducibility of the ATLAS spatial maps of the observed linear trends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/bash-interpolation-scripts/bash-interpolation-scripts.html">Bash interpolation scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/bash-interpolation-scripts/AtlasCDOremappeR_CORDEX/atlasCDOremappeR.html">AtlasCDOremappeR for CORDEX RCM simulations</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/PhantomAurelia/Atlas/jb-test?urlpath=lab/tree/./notebooks/linear-trends_R.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas/edit/jb-test/./notebooks/linear-trends_R.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas/issues/new?title=Issue%20on%20page%20%2Fnotebooks/linear-trends_R.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/linear-trends_R.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Computing and visualization of precipitation linear trends during the observed period (1980-2014)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-packages">Load packages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-static-data">Load static data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-observations-from-the-user-data-gateway">Load observations from the User Data Gateway</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-data-from-file">Load data from file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compute-and-plot-trends">Compute and plot trends</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trend-significance">Trend significance</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anomaly-time-series">Anomaly time series</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#session-info">Session info</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="highlight-default notranslate"><div class="highlight"><pre><span></span># Atlas notebooks
+
+***
+
+&gt; This notebook reproduces and extends parts of the figures and products of the AR6-WGI Atlas. It is part of a notebook collection available at https://github.com/IPCC-WG1/Atlas for reproducibility and reusability purposes. This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0).
+&gt;
+&gt; ![Creative Commons License &gt;](https://i.creativecommons.org/l/by/4.0/88x31.png)
+</pre></div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="computing-and-visualization-of-precipitation-linear-trends-during-the-observed-period-1980-2014">
+<span id="linear-trends"></span><h1>Computing and visualization of precipitation linear trends during the observed period (1980-2014)<a class="headerlink" href="#computing-and-visualization-of-precipitation-linear-trends-during-the-observed-period-1980-2014" title="Permalink to this heading">#</a></h1>
+<p>07/07/2021</p>
+<p><strong>J. Baño-Medina</strong> (<a class="reference external" href="http://meteo.unican.es">Santander Meteorology Group</a>, Instituto de Física de Cantabria, CSIC-UC, Santander, Spain)</p>
+<p>We present an illustrative example to use the climate4R framework to depict the observed linear trends and the time series of precipitation anomalies over a selected time period for the W5E5 observational dataset. North America is used as an example target region. Indications are also provided to apply the methodology to other variables, such as temperature.</p>
+<section id="load-packages">
+<h2>Load packages<a class="headerlink" href="#load-packages" title="Permalink to this heading">#</a></h2>
+<p>This notebook relies on several climate4R packages. We start by extending the Java memory allocation, which will be used by <code class="docutils literal notranslate"><span class="pre">loadeR</span></code></p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">options</span><span class="p">(</span><span class="n">java.parameters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;-Xmx8g&quot;</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">loadeR</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">transformeR</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">visualizeR</span><span class="p">)</span><span class="w"> </span><span class="c1"># spatialPlot</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">geoprocessoR</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">climate4R.indices</span><span class="p">)</span><span class="w"> </span><span class="c1"># linearTrend</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Loading required package: rJava
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Loading required package: loadeR.java
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Java version 11x amd64 by Oracle Corporation detected
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>NetCDF Java Library v4.6.0-SNAPSHOT (23 Apr 2015) loaded and ready
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Loading required package: climate4R.UDG
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>climate4R.UDG version 0.2.3 (2021-07-05) is loaded
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Your current version of climate4R.UDG (v0.2.3) is not up-to-date
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Get the latest stable version (0.2.4) using &lt;devtools::install_github(&#39;SantanderMetGroup/climate4R.UDG&#39;)&gt;
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Please use &#39;citation(&quot;climate4R.UDG&quot;)&#39; to cite this package.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>loadeR version 1.7.1 (2021-07-05) is loaded
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Your current version of loadeR (v1.7.1) is not up-to-date
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Get the latest stable version (1.8.1) using &lt;devtools::install_github(c(&#39;SantanderMetGroup/climate4R.UDG&#39;,&#39;SantanderMetGroup/loadeR&#39;))&gt;
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Please use &#39;citation(&quot;loadeR&quot;)&#39; to cite this package.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    _______   ____  ___________________  __  ________ 
+   / ___/ /  / /  |/  / __  /_  __/ __/ / / / / __  / 
+  / /  / /  / / /|_/ / /_/ / / / / __/ / /_/ / /_/_/  
+ / /__/ /__/ / /  / / __  / / / / /__ /___  / / \ \ 
+ \___/____/_/_/  /_/_/ /_/ /_/  \___/    /_/\/   \_\ 
+ 
+      github.com/SantanderMetGroup/climate4R
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>transformeR version 2.1.3 (2021-08-04) is loaded
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Your current version of transformeR (v2.1.3) is not up-to-date
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Get the latest stable version (2.2.2) using &lt;devtools::install_github(&#39;SantanderMetGroup/transformeR&#39;)&gt;
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Please see &#39;citation(&quot;transformeR&quot;)&#39; to cite this package.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>visualizeR version 1.6.1 (2021-03-11) is loaded
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Your current version of visualizeR (v1.6.1) is not up-to-date
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Get the latest stable version (1.6.4) using &lt;devtools::install_github(&#39;SantanderMetGroup/visualizeR&#39;)&gt;
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Please see &#39;citation(&quot;visualizeR&quot;)&#39; to cite this package.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>geoprocessoR version 0.2.0 (2020-01-06) is loaded
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Your current version of geoprocessoR (v0.2.0) is not up-to-date
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Get the latest stable version (0.2.2) using &lt;devtools::install_github(&#39;SantanderMetGroup/geoprocessoR&#39;)&gt;
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Please see &#39;citation(&quot;geoprocessoR&quot;)&#39; to cite this package.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>climate4R.indices version 0.2.0 (2021-07-08) is loaded
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Your current version of climate4R.indices (v0.2.0) is not up-to-date
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Get the latest stable version (0.3.1) using &lt;devtools::install_github(&#39;SantanderMetGroup/climate4R.indices&#39;)&gt;
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Use &#39;indexShow()&#39; for an overview of the available climate indices and circIndexShow() for the circulation indices.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>NOTE: use package climate4R.climdex to calculate ETCCDI indices.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Attaching package: ‘climate4R.indices’
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following object is masked from ‘package:transformeR’:
+
+    lambWT
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<p>Along with other libraries, namely:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">magrittr</span></code> is used to pipe (%&gt;%) sequences of data operations</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gridExtra</span></code> provides plotting functionalities</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sp</span></code> and <code class="docutils literal notranslate"><span class="pre">rgdal</span></code> provide geospatial tools</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">RColorBrewer</span></code> provides color palettes</p></li>
+</ul>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">magrittr</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">sp</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">RColorBrewer</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">rgdal</span><span class="p">)</span><span class="w"> </span><span class="c1"># readOGR</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>rgdal: version: 1.5-16, (SVN revision 1050)
+Geospatial Data Abstraction Library extensions to R successfully loaded
+Loaded GDAL runtime: GDAL 3.2.1, released 2020/12/29
+Path to GDAL shared files: /DATA/miniconda3/envs/atlas-jupyterbook/share/gdal
+GDAL binary built with GEOS: TRUE 
+Loaded PROJ runtime: Rel. 7.2.0, November 1st, 2020, [PJ_VERSION: 720]
+Path to PROJ shared files: /DATA/miniconda3/envs/atlas-jupyterbook/share/proj
+PROJ CDN enabled: TRUE
+Linking to sp version:1.4-5
+To mute warnings of possible GDAL/OSR exportToProj4() degradation,
+use options(&quot;rgdal_show_exportToProj4_warnings&quot;=&quot;none&quot;) before loading rgdal.
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+</section>
+<section id="load-static-data">
+<h2>Load static data<a class="headerlink" href="#load-static-data" title="Permalink to this heading">#</a></h2>
+<p>We will load the polygons of the IPCC <span id="id1">[<a class="reference internal" href="#id15" title="Atlas/reference-regions at main · IPCC-WG1/Atlas. https://github.com/IPCC-WG1/Atlas/tree/main/reference-regions."><em>Atlas/Reference-Regions at Main · IPCC-WG1/Atlas</em></a>]</span>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">regs</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="nf">load</span><span class="p">(</span><span class="s">&quot;../reference-regions/IPCC-WGI-reference-regions-v4_R.rda&quot;</span><span class="p">))</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="nf">as</span><span class="p">(</span><span class="s">&quot;SpatialPolygons&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>In this notebook we will focus on a set of regions in North America. We will use the following character vector of the target region names to select them. Change it accordingly to adapt this notebook for other regions.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">regs.area</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;NWN&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;NEN&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;WNA&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;CNA&quot;</span><span class="p">,</span><span class="s">&quot;ENA&quot;</span><span class="p">,</span><span class="s">&quot;NCA&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1"># North America regions</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can now extract the subset of regions and show their outline as follows:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">regs</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">regs</span><span class="p">[</span><span class="n">regs.area</span><span class="p">]</span>
+<span class="nf">plot</span><span class="p">(</span><span class="n">regs</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/f0600e7bf7187af204d186c695aa3b59712e41774b2ba164b86f3a513f01d0c6.png" src="../_images/f0600e7bf7187af204d186c695aa3b59712e41774b2ba164b86f3a513f01d0c6.png" />
+</div>
+</div>
+<p>We load also the coastlines, to be used in the spatial maps below. These are available in the <a class="reference internal" href="auxiliary-material/auxiliary-material.html#auxiliary-material"><span class="std std-ref">auxiliary-material</span></a> folder:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">coast</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">readOGR</span><span class="p">(</span><span class="s">&quot;auxiliary-material/WORLD_coastline.shp&quot;</span><span class="p">)</span><span class="w"> </span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>OGR data source with driver: ESRI Shapefile 
+Source: &quot;/DATA/Users/ATLAS/repo/ATLAS_jupyterbook_repos/gh-santandermetgroup-atlas/notebooks/auxiliary-material/WORLD_coastline.shp&quot;, layer: &quot;WORLD_coastline&quot;
+with 127 features
+It has 2 fields
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="load-observations-from-the-user-data-gateway">
+<h2>Load observations from the User Data Gateway<a class="headerlink" href="#load-observations-from-the-user-data-gateway" title="Permalink to this heading">#</a></h2>
+<blockquote>
+<div><p>This section takes long to execute due to intensive remote data loading. See the next section (<span class="xref myst">Load data from file</span>) to load these data from a local copy available in the repository and continue with the notebook operations.</p>
+</div></blockquote>
+<p>The <em>Santander Climate Data Service</em> (SCDS) <span id="id2">[<a class="reference internal" href="#id45" title="Inicio | Servicio Climático de Datos. https://www.scds.es/es/."><em>Inicio | Servicio Climático de Datos</em></a>]</span> archives and provides access to a variety of climate datasets and contributes to international infrastructures, serving e.g. as data node for the Earth System Grid Federation (ESGF) or the IPCC Data Distribution Center (IPCC-DDC). This service is maintained by the <em>Santander Meteorology Group</em> (University of Cantabria - CSIC) and includes a THREDDS Data Server for remote data access with seamless integration with the climate4R framework for climate data postprocessing. This integration, the User Data Gateway (UDG), is handled by the <em>climate4R.UDG</em> <span id="id3">[<a class="reference internal" href="#id22" title="climate4R.UDG. Santander Meteorology Group (UC-CSIC), June 2022."><em>climate4R.UDG</em>, 2022</a>]</span> package, loaded automatically by the <em>loadeR</em> <span id="id4">[<a class="reference internal" href="#id78" title="What is loadeR? Santander Meteorology Group (UC-CSIC), July 2022."><em>What Is loadeR?</em>, 2022</a>]</span> package, which provides user-friendly access to a variety of remote data sources.</p>
+<p>To load data stored in the User Data Gateway (similar to loading data from a local directory), we first list the available datasets with function <code class="docutils literal notranslate"><span class="pre">UDG.datasets</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">UDG.datasets</span><span class="p">()</span><span class="o">$</span><span class="n">OBSERVATIONS</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Label names are returned, set argument full.info = TRUE to get more information
+</pre></div>
+</div>
+<div class="output text_html"><style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'WATCH_WFDEI'</li><li>'PIK_Obs-EWEMBI'</li><li>'E-OBS_v14_0.50regular'</li><li>'E-OBS_v14_0.44rotated'</li><li>'E-OBS_v14_0.25regular'</li><li>'E-OBS_v14_0.22rotated'</li><li>'E-OBS_v17_0.50regular'</li><li>'E-OBS_v17_0.44rotated'</li><li>'E-OBS_v17_0.25regular'</li><li>'E-OBS_v17_0.22rotated'</li><li>'E-OBS_v21e_0.10regular'</li><li>'UC-Spain02_11'</li><li>'UC-Spain02_22'</li><li>'UC-Spain02_44'</li><li>'GPCCmon'</li><li>'GPCC'</li><li>'GPCPmon'</li><li>'GPCP'</li><li>'CRU-TS'</li><li>'BEST'</li><li>'BESTmon'</li><li>'W5E5'</li></ol>
+</div></div>
+</div>
+<p>We see that, among others, the W5E5 dataset <span id="id5">[<a class="reference internal" href="#id76" title="WFDE5 over land merged with ERA5 over the ocean (W5E5). https://dataservices.gfz-potsdam.de/pik/showshort.php?id=escidoc:4855898."><em>WFDE5 over Land Merged with ERA5 over the Ocean (W5E5)</em></a>]</span> is available from the UDG. This dataset is global, but we can load just the region of interest. In this case, we provide the limits for a North American lon-lat window:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">lonLim</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">168.0</span><span class="p">,</span><span class="w"> </span><span class="m">-50</span><span class="p">)</span>
+<span class="n">latLim</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">2.2</span><span class="p">,</span><span class="w"> </span><span class="m">85</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We will also set the analysis period to 1980-2014:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">years</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1980</span><span class="o">:</span><span class="m">2014</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can check the available variables in a dataset and other basic information using the dataInventory function.</p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">dataInventory</span><span class="p">(</span><span class="s">&quot;W5E5&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The standard names used in climate4R (passed to function <code class="docutils literal notranslate"><span class="pre">loadGridData</span></code>) can be consulted as follows:</p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">C4R.vocavulary</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The variable of interest in this notebook is precipitation:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">var</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;pr&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>To load W5E5 we would just input the corresponding label to the <code class="docutils literal notranslate"><span class="pre">dataset</span></code> argument in <code class="docutils literal notranslate"><span class="pre">loadGridData</span></code>. In order to save memory, we load the data year by year in a loop and perform annual aggregation in each iteration. After using <code class="docutils literal notranslate"><span class="pre">bindGrid</span></code> (to join the yearly data sets) we end up with a climate4R Grid object containing yearly averages for the region selected. The following piece of code takes about 1 minute per year loaded (depends on your network connection speed).</p>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="n">grid.list</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list</span><span class="p">()</span>
+<span class="nf">for </span><span class="p">(</span><span class="n">year</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">years</span><span class="p">){</span>
+<span class="w">    </span><span class="nf">message</span><span class="p">(</span><span class="s">&quot; ** Reading year &quot;</span><span class="p">,</span><span class="w"> </span><span class="n">year</span><span class="p">)</span>
+<span class="w">    </span><span class="n">grid.list</span><span class="p">[[</span><span class="nf">as.character</span><span class="p">(</span><span class="n">year</span><span class="p">)]]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">loadGridData</span><span class="p">(</span>
+<span class="w">        </span><span class="n">dataset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;W5E5&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">var</span><span class="p">,</span>
+<span class="w">        </span><span class="n">latLim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">latLim</span><span class="p">,</span><span class="w"> </span><span class="n">lonLim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lonLim</span><span class="p">,</span><span class="w"> </span><span class="n">years</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">year</span>
+<span class="w">    </span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span>
+<span class="w">    </span><span class="nf">aggregateGrid</span><span class="p">(</span><span class="n">aggr.y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">FUN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;mean&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">na.rm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">))</span><span class="w"> </span>
+<span class="p">}</span>
+<span class="n">grid</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">bindGrid</span><span class="p">(</span><span class="n">grid.list</span><span class="p">,</span><span class="w"> </span><span class="n">dimension</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;time&quot;</span><span class="p">)</span><span class="w">                                         </span>
+</pre></div>
+</div>
+<p>This operation takes a long time, therefore it is convenient to save the resulting data. We can export the final dataset to NetCDF using the <code class="docutils literal notranslate"><span class="pre">loadeR.2nc</span></code> library, which provides the function <code class="docutils literal notranslate"><span class="pre">grid2nc</span></code>.</p>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">loadeR.2nc</span><span class="p">)</span>
+<span class="nf">grid2nc</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span><span class="w"> </span><span class="n">NetCDFOutFile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;auxiliary-material/W5E5_NorthAmerica_pr_1980-2014_yearly.nc4&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The resulting NetCDF is available as auxiliary material in this repository, therefore the previous data loading step can be skipped.</p>
+</section>
+<section id="load-data-from-file">
+<h2>Load data from file<a class="headerlink" href="#load-data-from-file" title="Permalink to this heading">#</a></h2>
+<p>Skip this section if you sucessfully loaded your data from the User Data Gateway. For a fast loading of the required data, you can use a copy of the yearly averaged precipitation available in the <code class="docutils literal notranslate"><span class="pre">auxiliary-material</span></code> folder:</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">grid</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">loadGridData</span><span class="p">(</span><span class="s">&quot;auxiliary-material/W5E5_NorthAmerica_pr_1980-2014_yearly.nc4&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;pr&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:34] Defining geo-location parameters
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:34] Defining time selection parameters
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:34] Retrieving data subset ...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:35] Done
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<p>### Plot climatology</p>
+<p>We can start by plotting the climatology of precipitation for the selected period and region. We define the geographical projection (WGS84) the same as the reference regions.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">grid</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">setGridProj</span><span class="p">(</span><span class="n">grid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">grid</span><span class="p">,</span><span class="w"> </span><span class="n">proj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">proj4string</span><span class="p">(</span><span class="n">regs</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message in proj4string(regs):
+“CRS object has comment, which is lost in output”
+</pre></div>
+</div>
+</div>
+</div>
+<p>We compute the climatology by calling the <code class="docutils literal notranslate"><span class="pre">climatology</span></code> function and then use <code class="docutils literal notranslate"><span class="pre">spatialPlot</span></code> from library <code class="docutils literal notranslate"><span class="pre">visualizeR</span></code> to depict it. Note that we introduce the IPCC regions of interest in the <code class="docutils literal notranslate"><span class="pre">sp.layout</span></code> argument.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">spatialPlot</span><span class="p">(</span><span class="nf">climatology</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span>
+<span class="w">            </span><span class="n">at</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">seq</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">),</span><span class="w"> </span>
+<span class="w">            </span><span class="n">set.min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">,</span>
+<span class="w">            </span><span class="n">set.max</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">,</span>
+<span class="w">            </span><span class="n">backdrop.theme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;coastline&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="n">col.regions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">brewer.pal</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">9</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;BuPu&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="nf">colorRampPalette</span><span class="p">(),</span>
+<span class="w">            </span><span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">paste0</span><span class="p">(</span><span class="s">&quot;Climatology of total precipitation (W5E5, &quot;</span><span class="p">,</span><span class="w"> </span><span class="nf">min</span><span class="p">(</span><span class="n">years</span><span class="p">),</span><span class="w"> </span><span class="s">&quot;-&quot;</span><span class="p">,</span><span class="w"> </span><span class="nf">max</span><span class="p">(</span><span class="n">years</span><span class="p">),</span><span class="w"> </span><span class="s">&quot;) - mm/day&quot;</span><span class="p">),</span>
+<span class="w">            </span><span class="n">sp.layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span>
+<span class="w">                </span><span class="nf">list</span><span class="p">(</span><span class="n">regs</span><span class="p">,</span><span class="w"> </span><span class="n">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">lwd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.6</span><span class="p">),</span>
+<span class="w">                </span><span class="nf">list</span><span class="p">(</span><span class="s">&quot;sp.text&quot;</span><span class="p">,</span><span class="w"> </span><span class="nf">coordinates</span><span class="p">(</span><span class="n">regs</span><span class="p">),</span><span class="w"> </span><span class="nf">names</span><span class="p">(</span><span class="n">regs</span><span class="p">),</span><span class="w"> </span><span class="n">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">cex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">)</span>
+<span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:35] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:36] - Done.
+</pre></div>
+</div>
+<img alt="../_images/fc6a5f8dd908e7c3c4271283917f9c56732ff1a92a6d35c41ae5cc4c03fad26a.png" src="../_images/fc6a5f8dd908e7c3c4271283917f9c56732ff1a92a6d35c41ae5cc4c03fad26a.png" />
+</div>
+</div>
+<p>We can use the <code class="docutils literal notranslate"><span class="pre">overGrid</span></code> function to mask the values outside the IPCC regions of interest to this use-case.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">grid</span><span class="w"> </span><span class="o">%&lt;&gt;%</span><span class="w"> </span><span class="nf">overGrid</span><span class="p">(</span><span class="n">regs</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message in showSRID(uprojargs, format = &quot;PROJ&quot;, multiline = &quot;NO&quot;):
+“Discarded datum Unknown based on WGS84 ellipsoid in CRS definition”
+</pre></div>
+</div>
+</div>
+</div>
+<p>Compare the resulting plot (same code as above):</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">spatialPlot</span><span class="p">(</span><span class="nf">climatology</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span>
+<span class="w">            </span><span class="n">at</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">seq</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">),</span><span class="w"> </span>
+<span class="w">            </span><span class="n">set.min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">,</span>
+<span class="w">            </span><span class="n">set.max</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">,</span>
+<span class="w">            </span><span class="n">backdrop.theme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;coastline&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="n">col.regions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">brewer.pal</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">9</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;BuPu&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="nf">colorRampPalette</span><span class="p">(),</span>
+<span class="w">            </span><span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">paste0</span><span class="p">(</span><span class="s">&quot;Climatology of total precipitation (W5E5, &quot;</span><span class="p">,</span><span class="w"> </span><span class="nf">min</span><span class="p">(</span><span class="n">years</span><span class="p">),</span><span class="w"> </span><span class="s">&quot;-&quot;</span><span class="p">,</span><span class="w"> </span><span class="nf">max</span><span class="p">(</span><span class="n">years</span><span class="p">),</span><span class="w"> </span><span class="s">&quot;) - mm/day&quot;</span><span class="p">),</span>
+<span class="w">            </span><span class="n">sp.layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span>
+<span class="w">                </span><span class="nf">list</span><span class="p">(</span><span class="n">regs</span><span class="p">,</span><span class="w"> </span><span class="n">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">lwd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.6</span><span class="p">),</span>
+<span class="w">                </span><span class="nf">list</span><span class="p">(</span><span class="s">&quot;sp.text&quot;</span><span class="p">,</span><span class="w"> </span><span class="nf">coordinates</span><span class="p">(</span><span class="n">regs</span><span class="p">),</span><span class="w"> </span><span class="nf">names</span><span class="p">(</span><span class="n">regs</span><span class="p">),</span><span class="w"> </span><span class="n">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">cex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">)</span>
+<span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:37] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:37] - Done.
+</pre></div>
+</div>
+<img alt="../_images/f91ebc5392095b4d61d7fec9c372cc7ab2493d4e838b8da482ebb16510b03584.png" src="../_images/f91ebc5392095b4d61d7fec9c372cc7ab2493d4e838b8da482ebb16510b03584.png" />
+</div>
+</div>
+</section>
+<section id="compute-and-plot-trends">
+<h2>Compute and plot trends<a class="headerlink" href="#compute-and-plot-trends" title="Permalink to this heading">#</a></h2>
+<p>Now, trends can be computed by means of the <code class="docutils literal notranslate"><span class="pre">linearTrend</span></code> function, which fits a linear model at gridbox level and returns all the involved statistics, including the p-value of the estimated slope. We subset the slope (“b”) among all the statistics returned, by calling <code class="docutils literal notranslate"><span class="pre">subsetGrid</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">trendGrid</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">linearTrend</span><span class="p">(</span><span class="n">grid</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="nf">subsetGrid</span><span class="p">(</span><span class="n">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;b&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The slope of the linear trend is estimated based on the temporal resolution of the data. Please consider using the function aggregateGrid prior to the call of linearTrend to adequate the data to your resolution of interest.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:37] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:37] - Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message:
+“Only one grid passed as input. Nothing was done”
+</pre></div>
+</div>
+</div>
+</div>
+<p>We could save these climate products as NetCDF files using the <code class="docutils literal notranslate"><span class="pre">loadeR.2nc</span></code> library.</p>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">grid2nc</span><span class="p">(</span><span class="n">trendGrid</span><span class="p">,</span><span class="w"> </span><span class="n">NetCDFOutFile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;trends.nc4&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>We rely again on <code class="docutils literal notranslate"><span class="pre">spatialPlot</span></code> from visualizeR, to show the map of trends.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">spatialPlot</span><span class="p">(</span><span class="n">trendGrid</span><span class="p">,</span><span class="w"> </span>
+<span class="w">            </span><span class="n">col.regions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">brewer.pal</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">9</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;BrBG&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="nf">colorRampPalette</span><span class="p">(),</span>
+<span class="w">            </span><span class="n">at</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">seq</span><span class="p">(</span><span class="m">-0.1</span><span class="p">,</span><span class="w"> </span><span class="m">0.1</span><span class="p">,</span><span class="w"> </span><span class="m">0.01</span><span class="p">),</span><span class="w"> </span>
+<span class="w">            </span><span class="n">set.min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">-0.1</span><span class="p">,</span>
+<span class="w">            </span><span class="n">set.max</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.1</span><span class="p">,</span>
+<span class="w">            </span><span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">paste</span><span class="p">(</span><span class="s">&quot;Linear trends of the annual total precipitaion (mm/day) - W5E5&quot;</span><span class="p">),</span>
+<span class="w">            </span><span class="n">sp.layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="w">  </span>
+<span class="w">            </span><span class="nf">list</span><span class="p">(</span><span class="n">regs</span><span class="p">,</span><span class="w"> </span><span class="n">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">lwd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.6</span><span class="p">),</span>
+<span class="w">            </span><span class="nf">list</span><span class="p">(</span><span class="n">coast</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;gray50&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">lwd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.6</span><span class="p">),</span><span class="w">  </span>
+<span class="w">            </span><span class="nf">list</span><span class="p">(</span><span class="s">&quot;sp.text&quot;</span><span class="p">,</span><span class="w"> </span><span class="nf">coordinates</span><span class="p">(</span><span class="n">regs</span><span class="p">),</span><span class="w"> </span><span class="nf">names</span><span class="p">(</span><span class="n">regs</span><span class="p">),</span><span class="w"> </span><span class="n">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">cex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">)</span>
+<span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/860c19278f4ebc891247fa14feb270f6ea8a399ce2bead0b778916b49fdd22e5.png" src="../_images/860c19278f4ebc891247fa14feb270f6ea8a399ce2bead0b778916b49fdd22e5.png" />
+</div>
+</div>
+<section id="trend-significance">
+<h3>Trend significance<a class="headerlink" href="#trend-significance" title="Permalink to this heading">#</a></h3>
+<p>Next, we show how to add trend statistical significance information as a hatching. For this purpose, we repeat the process but retrieving the p-values of the linear trends (instead of the slopes, as above). Therefore we subset the variable <code class="docutils literal notranslate"><span class="pre">pval</span></code> using <code class="docutils literal notranslate"><span class="pre">subsetGrid</span></code>. Finally, we convert the p-values to a binary field using a threshold of 0.1. In the resulting binary field, 0 indicates that the trend is significant and 1 means non-significant.</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">pvalGrid</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">linearTrend</span><span class="p">(</span><span class="n">grid</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="nf">subsetGrid</span><span class="p">(</span><span class="n">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;pval&quot;</span><span class="p">)</span>
+<span class="n">pvalGrid</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">binaryGrid</span><span class="p">(</span><span class="n">pvalGrid</span><span class="p">,</span><span class="w"> </span><span class="n">threshold</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.1</span><span class="p">,</span><span class="w"> </span><span class="n">condition</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;GT&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The slope of the linear trend is estimated based on the temporal resolution of the data. Please consider using the function aggregateGrid prior to the call of linearTrend to adequate the data to your resolution of interest.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:40] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:40] - Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message:
+“Only one grid passed as input. Nothing was done”
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<p>We can check the resulting grid by plotting the map.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">spatialPlot</span><span class="p">(</span><span class="n">pvalGrid</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/60a4cd9640a2db09b3e4bdff8671a9b1479eecc4371aaf8205163d28fcb0caa1.png" src="../_images/60a4cd9640a2db09b3e4bdff8671a9b1479eecc4371aaf8205163d28fcb0caa1.png" />
+</div>
+</div>
+<p>We build (<code class="docutils literal notranslate"><span class="pre">binaryGrid</span></code>) and apply (<code class="docutils literal notranslate"><span class="pre">gridArithmetics</span></code>) a mask to avoid R misusing NaN data out of the regions of interest when calculating the p-values.</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">mask</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">binaryGrid</span><span class="p">(</span><span class="nf">climatology</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span><span class="n">condition</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;GE&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">threshold</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">values</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="kc">NA</span><span class="p">,</span><span class="m">1</span><span class="p">))</span>
+<span class="n">pvalGrid</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">gridArithmetics</span><span class="p">(</span><span class="n">pvalGrid</span><span class="p">,</span><span class="w"> </span><span class="n">mask</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:43] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:43] - Done.
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">spatialPlot</span><span class="p">(</span><span class="n">pvalGrid</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/91c68ced973d8a88008ba518d273a329593228cb6d258e42388b353eeadc08a9.png" src="../_images/91c68ced973d8a88008ba518d273a329593228cb6d258e42388b353eeadc08a9.png" />
+</div>
+</div>
+<p>We can now use the p-values computed above to add a hatching pattern over the trend maps. To do so, we encapsulate the function <code class="docutils literal notranslate"><span class="pre">map.hatching</span></code> in a 2-way loop that corresponds to each line in a ‘x’ symbol. An ‘x’ would be associated whenever the condition is fullfilled, in our case whenever at least half the gridpoints of the upscaled grid are non-significant (i.e., 0-valued in the binary p-value object, <code class="docutils literal notranslate"><span class="pre">pvalGrid</span></code>). We use the <code class="docutils literal notranslate"><span class="pre">mean</span></code> fuction as the upscaling aggregation function, moving from a spatial resolution of half a degree in the trends field, to 2 degrees in the hatching. The upscaled (hatching) grid resolution is based on the <code class="docutils literal notranslate"><span class="pre">density</span></code> parameter of function <code class="docutils literal notranslate"><span class="pre">map.hatching</span></code>. In our case <code class="docutils literal notranslate"><span class="pre">density</span> <span class="pre">=</span> <span class="pre">4</span></code> and, therefore, the corresponding spatial resolution is 4 x 0.5 degrees = 2 degrees.</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">hatching.lines</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">lapply</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;45&quot;</span><span class="p">,</span><span class="s">&quot;-45&quot;</span><span class="p">),</span><span class="w"> </span><span class="n">FUN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">function</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nf">c</span><span class="p">(</span><span class="nf">map.hatching</span><span class="p">(</span><span class="n">clim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">climatology</span><span class="p">(</span><span class="n">pvalGrid</span><span class="p">),</span><span class="w"> </span>
+<span class="w">                 </span><span class="n">threshold</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.5</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                 </span><span class="n">condition</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;GE&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                 </span><span class="n">density</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span><span class="p">,</span>
+<span class="w">                 </span><span class="n">angle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">angle</span><span class="p">,</span><span class="w"> </span><span class="n">coverage.percent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">50</span><span class="p">,</span>
+<span class="w">                 </span><span class="n">upscaling.aggr.fun</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">FUN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;mean&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">na.rm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span>
+<span class="w">  </span><span class="p">),</span><span class="w"> </span>
+<span class="w">  </span><span class="s">&quot;which&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">lwd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.5</span><span class="p">)</span>
+<span class="p">})</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:43] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:43] - Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message in showSRID(uprojargs, format = &quot;PROJ&quot;, multiline = &quot;NO&quot;):
+“Discarded datum Unknown based on WGS84 ellipsoid in CRS definition”
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message in showSRID(uprojargs, format = &quot;PROJ&quot;, multiline = &quot;NO&quot;):
+“Discarded datum Unknown based on WGS84 ellipsoid in CRS definition”
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:44] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:44] - Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message in showSRID(uprojargs, format = &quot;PROJ&quot;, multiline = &quot;NO&quot;):
+“Discarded datum Unknown based on WGS84 ellipsoid in CRS definition”
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message in showSRID(uprojargs, format = &quot;PROJ&quot;, multiline = &quot;NO&quot;):
+“Discarded datum Unknown based on WGS84 ellipsoid in CRS definition”
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<p>We rely again on <code class="docutils literal notranslate"><span class="pre">spatialPlot</span></code> from visualizeR to plot the trend maps and include the p-value as hatching as a member of the <code class="docutils literal notranslate"><span class="pre">sp.layout</span></code> argument list.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">spatialPlot</span><span class="p">(</span><span class="n">trendGrid</span><span class="p">,</span><span class="w"> </span>
+<span class="w">            </span><span class="n">col.regions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">brewer.pal</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">9</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;BrBG&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="nf">colorRampPalette</span><span class="p">(),</span>
+<span class="w">            </span><span class="n">at</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">seq</span><span class="p">(</span><span class="m">-0.1</span><span class="p">,</span><span class="w"> </span><span class="m">0.1</span><span class="p">,</span><span class="w"> </span><span class="m">0.01</span><span class="p">),</span><span class="w"> </span>
+<span class="w">            </span><span class="n">set.min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">-0.1</span><span class="p">,</span>
+<span class="w">            </span><span class="n">set.max</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.1</span><span class="p">,</span>
+<span class="w">            </span><span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">paste</span><span class="p">(</span><span class="s">&quot;Linear trend of total precipitation (mm/day) - W5E5&quot;</span><span class="p">),</span>
+<span class="w">            </span><span class="n">sp.layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span>
+<span class="w">              </span><span class="n">hatching.lines</span><span class="p">[[</span><span class="m">1</span><span class="p">]],</span>
+<span class="w">              </span><span class="n">hatching.lines</span><span class="p">[[</span><span class="m">2</span><span class="p">]],</span><span class="w">  </span>
+<span class="w">              </span><span class="nf">list</span><span class="p">(</span><span class="n">regs</span><span class="p">,</span><span class="w"> </span><span class="n">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">lwd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.6</span><span class="p">),</span>
+<span class="w">              </span><span class="nf">list</span><span class="p">(</span><span class="n">coast</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;gray50&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">lwd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.6</span><span class="p">),</span><span class="w">  </span>
+<span class="w">              </span><span class="nf">list</span><span class="p">(</span><span class="s">&quot;sp.text&quot;</span><span class="p">,</span><span class="w"> </span><span class="nf">coordinates</span><span class="p">(</span><span class="n">regs</span><span class="p">),</span><span class="w"> </span><span class="nf">names</span><span class="p">(</span><span class="n">regs</span><span class="p">),</span><span class="w"> </span><span class="n">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">cex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">)</span>
+<span class="w">            </span><span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/29e7c1ecd4722d9ae127df6e27b14f160bde0486d96ec69afde4a7b49062c744.png" src="../_images/29e7c1ecd4722d9ae127df6e27b14f160bde0486d96ec69afde4a7b49062c744.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="anomaly-time-series">
+<h2>Anomaly time series<a class="headerlink" href="#anomaly-time-series" title="Permalink to this heading">#</a></h2>
+<p>Finally, we can have a look at the trends in average time series for each IPCC region. For this purpose, we loop over the IPCC regions to crop the field for each particular region. This will facilitate the spatial averaging over each region. To do so we rely on function <code class="docutils literal notranslate"><span class="pre">overGrid</span></code>.</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">grid.regs</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">lapply</span><span class="p">(</span><span class="nf">names</span><span class="p">(</span><span class="n">regs</span><span class="p">),</span><span class="w"> </span><span class="nf">function</span><span class="p">(</span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="nf">overGrid</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span><span class="w"> </span><span class="n">regs</span><span class="p">[</span><span class="n">r</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message in showSRID(uprojargs, format = &quot;PROJ&quot;, multiline = &quot;NO&quot;):
+“Discarded datum Unknown based on WGS84 ellipsoid in CRS definition”
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message in showSRID(uprojargs, format = &quot;PROJ&quot;, multiline = &quot;NO&quot;):
+“Discarded datum Unknown based on WGS84 ellipsoid in CRS definition”
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message in showSRID(uprojargs, format = &quot;PROJ&quot;, multiline = &quot;NO&quot;):
+“Discarded datum Unknown based on WGS84 ellipsoid in CRS definition”
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message in showSRID(uprojargs, format = &quot;PROJ&quot;, multiline = &quot;NO&quot;):
+“Discarded datum Unknown based on WGS84 ellipsoid in CRS definition”
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message in showSRID(uprojargs, format = &quot;PROJ&quot;, multiline = &quot;NO&quot;):
+“Discarded datum Unknown based on WGS84 ellipsoid in CRS definition”
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message in showSRID(uprojargs, format = &quot;PROJ&quot;, multiline = &quot;NO&quot;):
+“Discarded datum Unknown based on WGS84 ellipsoid in CRS definition”
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<p>Let’s check the corresponding map e.g. for NWN</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">spatialPlot</span><span class="p">(</span><span class="nf">climatology</span><span class="p">(</span><span class="n">grid.regs</span><span class="p">[[</span><span class="s">&quot;NWN&quot;</span><span class="p">]]),</span><span class="w"> </span>
+<span class="w">            </span><span class="n">col.regions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">brewer.pal</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">9</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;BuPu&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="nf">colorRampPalette</span><span class="p">()</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Done.
+</pre></div>
+</div>
+<img alt="../_images/cd6235a5c2ef4cc4a0af19a76b305c8151f1ee77d78cced57f535f5d131f5795.png" src="../_images/cd6235a5c2ef4cc4a0af19a76b305c8151f1ee77d78cced57f535f5d131f5795.png" />
+</div>
+</div>
+<p>We compute the anomalies by calling <code class="docutils literal notranslate"><span class="pre">scaleGrid</span></code> of <code class="docutils literal notranslate"><span class="pre">transformeR</span></code> and setting the argument <code class="docutils literal notranslate"><span class="pre">type</span> <span class="pre">=</span> <span class="pre">center</span></code> to substract the mean from the temporal series. Previously, we call <code class="docutils literal notranslate"><span class="pre">aggregateGrid</span></code> over the list of IPCC objets to average spatially over each region and, therefore, output the temporal series for every North American IPCC region.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">spatial.mean</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">function</span><span class="p">(</span><span class="n">grid</span><span class="p">)</span><span class="w"> </span><span class="nf">aggregateGrid</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span><span class="w"> </span><span class="n">aggr.spatial</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">FUN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;mean&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">na.rm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">))</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="nf">scaleGrid</span><span class="p">(</span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;center&quot;</span><span class="p">)</span>
+<span class="n">grid.anom</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">lapply</span><span class="p">(</span><span class="n">grid.regs</span><span class="p">,</span><span class="w"> </span><span class="n">spatial.mean</span><span class="p">)</span><span class="w">  </span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Scaling ...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Calculating areal weights...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Aggregating spatially...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Done
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Scaling ...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Calculating areal weights...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Aggregating spatially...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Done
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Scaling ...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Calculating areal weights...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Aggregating spatially...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Done
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Scaling ...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Calculating areal weights...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Aggregating spatially...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Done
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Scaling ...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Calculating areal weights...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Aggregating spatially...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Done
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Scaling ...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Calculating areal weights...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Aggregating spatially...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Done
+</pre></div>
+</div>
+</div>
+</div>
+<p>Finally, we will use <code class="docutils literal notranslate"><span class="pre">temporalPlot</span></code> (library <code class="docutils literal notranslate"><span class="pre">visualizeR</span></code>) to show these anomaly time series. <code class="docutils literal notranslate"><span class="pre">temporalPlot</span></code> uses the names of the grid objects to create the legend, region names in this case:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">names</span><span class="p">(</span><span class="n">grid.anom</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'NWN'</li><li>'NEN'</li><li>'WNA'</li><li>'CNA'</li><li>'ENA'</li><li>'NCA'</li></ol>
+</div></div>
+</div>
+<p>If we’d like to add the trend value to the legend, we only need to paste these values to the names of object <code class="docutils literal notranslate"><span class="pre">grid.anom</span></code> before calling <code class="docutils literal notranslate"><span class="pre">temporalPlot</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">trend.val</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">lapply</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="nf">length</span><span class="p">(</span><span class="n">grid.anom</span><span class="p">),</span><span class="w"> </span><span class="n">FUN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">aux</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">linearTrend</span><span class="p">(</span><span class="n">grid.anom</span><span class="p">[[</span><span class="n">x</span><span class="p">]])</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="nf">subsetGrid</span><span class="p">(</span><span class="n">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;b&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="nf">round</span><span class="p">(</span><span class="n">aux</span><span class="o">$</span><span class="n">Data</span><span class="p">[</span><span class="m">1</span><span class="p">],</span><span class="w"> </span><span class="n">digits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">)</span>
+<span class="p">})</span>
+<span class="nf">names</span><span class="p">(</span><span class="n">grid.anom</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sprintf</span><span class="p">(</span><span class="s">&quot;%s (%g mm/day/yr)&quot;</span><span class="p">,</span><span class="w"> </span><span class="nf">names</span><span class="p">(</span><span class="n">grid.anom</span><span class="p">),</span><span class="w"> </span><span class="n">trend.val</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The slope of the linear trend is estimated based on the temporal resolution of the data. Please consider using the function aggregateGrid prior to the call of linearTrend to adequate the data to your resolution of interest.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message:
+“Only one grid passed as input. Nothing was done”
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The slope of the linear trend is estimated based on the temporal resolution of the data. Please consider using the function aggregateGrid prior to the call of linearTrend to adequate the data to your resolution of interest.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message:
+“Only one grid passed as input. Nothing was done”
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The slope of the linear trend is estimated based on the temporal resolution of the data. Please consider using the function aggregateGrid prior to the call of linearTrend to adequate the data to your resolution of interest.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message:
+“Only one grid passed as input. Nothing was done”
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The slope of the linear trend is estimated based on the temporal resolution of the data. Please consider using the function aggregateGrid prior to the call of linearTrend to adequate the data to your resolution of interest.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message:
+“Only one grid passed as input. Nothing was done”
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The slope of the linear trend is estimated based on the temporal resolution of the data. Please consider using the function aggregateGrid prior to the call of linearTrend to adequate the data to your resolution of interest.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message:
+“Only one grid passed as input. Nothing was done”
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The slope of the linear trend is estimated based on the temporal resolution of the data. Please consider using the function aggregateGrid prior to the call of linearTrend to adequate the data to your resolution of interest.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:28:48] - Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message:
+“Only one grid passed as input. Nothing was done”
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">names</span><span class="p">(</span><span class="n">grid.anom</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'NWN (-0.004 mm/day/yr)'</li><li>'NEN (-0.001 mm/day/yr)'</li><li>'WNA (-0.005 mm/day/yr)'</li><li>'CNA (-0.006 mm/day/yr)'</li><li>'ENA (-0.001 mm/day/yr)'</li><li>'NCA (-0.003 mm/day/yr)'</li></ol>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">temporalPlot</span><span class="p">(</span><span class="n">grid.anom</span><span class="p">,</span>
+<span class="w">               </span><span class="n">xyplot.custom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span>
+<span class="w">                 </span><span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Precipitation anomaly time series (mm/day)&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">ylim</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">-0.65</span><span class="p">,</span><span class="w"> </span><span class="m">0.65</span><span class="p">)</span>
+<span class="w">               </span><span class="p">))</span><span class="w">      </span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pad applied on the interval: year
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pad applied on the interval: year
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pad applied on the interval: year
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pad applied on the interval: year
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pad applied on the interval: year
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pad applied on the interval: year
+</pre></div>
+</div>
+<img alt="../_images/7e8d78c3e65d3f9fb8634eed45b92f9d3e14574efb74fc04ecee3fb51b467ab9.png" src="../_images/7e8d78c3e65d3f9fb8634eed45b92f9d3e14574efb74fc04ecee3fb51b467ab9.png" />
+</div>
+</div>
+</section>
+<section id="session-info">
+<h2>Session info<a class="headerlink" href="#session-info" title="Permalink to this heading">#</a></h2>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">sessionInfo</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>R version 3.6.3 (2020-02-29)
+Platform: x86_64-conda-linux-gnu (64-bit)
+Running under: Ubuntu 22.04.4 LTS
+
+Matrix products: default
+BLAS/LAPACK: /DATA/miniconda3/envs/atlas-jupyterbook/lib/libopenblasp-r0.3.25.so
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8          LC_NUMERIC=C                 
+ [3] LC_TIME=es_ES.UTF-8           LC_COLLATE=en_US.UTF-8       
+ [5] LC_MONETARY=es_ES.UTF-8       LC_MESSAGES=en_US.UTF-8      
+ [7] LC_PAPER=es_ES.UTF-8          LC_NAME=es_ES.UTF-8          
+ [9] LC_ADDRESS=es_ES.UTF-8        LC_TELEPHONE=es_ES.UTF-8     
+[11] LC_MEASUREMENT=es_ES.UTF-8    LC_IDENTIFICATION=es_ES.UTF-8
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] rgdal_1.5-16            RColorBrewer_1.1-2      sp_1.4-5               
+ [4] magrittr_2.0.1          climate4R.indices_0.2.0 geoprocessoR_0.2.0     
+ [7] visualizeR_1.6.1        transformeR_2.1.3       loadeR_1.7.1           
+[10] climate4R.UDG_0.2.3     loadeR.java_1.1.1       rJava_1.0-4            
+
+loaded via a namespace (and not attached):
+ [1] viridis_0.6.1           maps_3.3.0              foreach_1.5.1          
+ [4] jsonlite_1.7.2          viridisLite_0.4.0       R.utils_2.10.1         
+ [7] SpecsVerification_0.5-3 dotCall64_1.0-1         kohonen_3.0.10         
+[10] sm_2.2-5.6              latticeExtra_0.6-29     pillar_1.6.1           
+[13] lattice_0.20-44         glue_1.4.2              RcppEigen_0.3.3.9.1    
+[16] uuid_0.1-4              digest_0.6.27           colorspace_2.0-1       
+[19] R.oo_1.24.0             htmltools_0.5.1.1       Matrix_1.3-3           
+[22] pkgconfig_2.0.3         raster_3.4-10           padr_0.5.3             
+[25] purrr_0.3.4             scales_1.1.1            jpeg_0.1-8.1           
+[28] CircStats_0.2-6         dtw_1.22-3              tibble_3.1.2           
+[31] proxy_0.4-25            generics_0.1.0          ggplot2_3.3.3          
+[34] ellipsis_0.3.2          repr_1.1.3              verification_1.42      
+[37] pbapply_1.4-3           gdalUtils_2.0.3.2       convertR_0.2.0         
+[40] crayon_1.4.1            easyVerification_0.4.5  evaluate_0.14          
+[43] R.methodsS3_1.8.1       fansi_0.4.2             MASS_7.3-54            
+[46] tools_3.6.3             data.table_1.14.0       lifecycle_1.0.0        
+[49] munsell_0.5.0           akima_0.6-2.1           compiler_3.6.3         
+[52] mapplots_1.5.1          rlang_0.4.11            grid_3.6.3             
+[55] RCurl_1.98-1.3          iterators_1.0.13        pbdZMQ_0.3-5           
+[58] IRkernel_1.2            spam_2.6-0              bitops_1.0-7           
+[61] tcltk_3.6.3             base64enc_0.1-3         boot_1.3-28            
+[64] vioplot_0.3.6           codetools_0.2-18        gtable_0.3.0           
+[67] abind_1.4-5             R6_2.5.0                gridExtra_2.3          
+[70] zoo_1.8-9               dplyr_1.0.6             udunits2_0.13          
+[73] utf8_1.2.1              parallel_3.6.3          IRdisplay_1.0          
+[76] Rcpp_1.0.6              fields_12.3             vctrs_0.3.8            
+[79] png_0.1-7               tidyselect_1.1.1       
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<div class="docutils container" id="id6">
+<div class="citation" id="id15" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">Atl</a><span class="fn-bracket">]</span></span>
+<p>Atlas/reference-regions at main · IPCC-WG1/Atlas. https://github.com/IPCC-WG1/Atlas/tree/main/reference-regions.</p>
+</div>
+<div class="citation" id="id45" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">Ini</a><span class="fn-bracket">]</span></span>
+<p>Inicio | Servicio Climático de Datos. https://www.scds.es/es/.</p>
+</div>
+<div class="citation" id="id76" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">WFD</a><span class="fn-bracket">]</span></span>
+<p>WFDE5 over land merged with ERA5 over the ocean (W5E5). https://dataservices.gfz-potsdam.de/pik/showshort.php?id=escidoc:4855898.</p>
+</div>
+<div class="citation" id="id78" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">Wha22</a><span class="fn-bracket">]</span></span>
+<p>What is loadeR? Santander Meteorology Group (UC-CSIC), July 2022.</p>
+</div>
+<div class="citation" id="id22" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">Cli22</a><span class="fn-bracket">]</span></span>
+<p>climate4R.UDG. Santander Meteorology Group (UC-CSIC), June 2022.</p>
+</div>
+</div>
+</div>
+<script src="https://utteranc.es/client.js"
+        repo="PhantomAurelia/Atlas"
+        issue-term="pathname"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script></section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "PhantomAurelia/Atlas",
+            ref: "jb-test",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "r"
+        },
+        kernelOptions: {
+            name: "ir",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'ir'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="hatching-uncertainty_R.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Calculation and hatching of the uncertainty in projected delta changes.</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="reference-grids_R.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Using the Atlas reference grids in <code class="docutils literal notranslate"><span class="pre">R</span></code></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-packages">Load packages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-static-data">Load static data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-observations-from-the-user-data-gateway">Load observations from the User Data Gateway</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-data-from-file">Load data from file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compute-and-plot-trends">Compute and plot trends</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trend-significance">Trend significance</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anomaly-time-series">Anomaly time series</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#session-info">Session info</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By David Domínguez Román
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

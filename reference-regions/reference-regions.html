@@ -1,0 +1,685 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Sets of regions for regional synthesis &#8212; IPCC-ATLAS Jupyter Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "PhantomAurelia/Atlas");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'reference-regions/reference-regions';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Aggregated datasets" href="../datasets-aggregated-regionally/datasets-aggregated-regionally.html" />
+    <link rel="prev" title="Code for reproducibility of the Interactive Atlas Dataset" href="../datasets-interactive-atlas/datasets-interactive-atlas.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Repository supporting the implementation of FAIR principles in the IPCC-WGI Atlas
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Information</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../warming-levels/warming-levels.html">Global Warming Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data-sources/data-sources.html">Data sources used in the Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference-grids/reference-grids.html">Sets of reference grids</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/datasets-interactive-atlas.html">Code for reproducibility of the Interactive Atlas Dataset</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Sets of regions for regional synthesis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-aggregated-regionally/datasets-aggregated-regionally.html">Aggregated datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/notebooks.html">Notebooks</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Notebooks</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/regional-scatter-plots_R.html">Computing and visualizing regional climate change (temperature vs precipitation) for reference regions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/global-warming-levels_R.html">Computing and visualizing transient global warming levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/bias-adjustment_R.html">Atlas notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/CORDEX-overlaps_Python.html">Selecting reference regions used for every CORDEX domain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/GeoTIFF-post-processing_R.html">GeoTIFF file post-processing: Spatial operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/hatching-uncertainty_R.html">Calculation and hatching of the uncertainty in projected delta changes.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/linear-trends_R.html">Computing and visualization of precipitation linear trends during the observed period (1980-2014)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/reference-grids_R.html">Using the Atlas reference grids in <code class="docutils literal notranslate"><span class="pre">R</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/reference-regions_Python.html">Using the 4th version of the IPCC WGI reference regions in Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/reference-regions_R.html">Using the 4th version of the IPCC WGI reference regions in R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/stripes-plots_R.html">Create stripes of anual temperature and precipitation mean values.</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../ERRATA.html">Errata and problem reporting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/reproducibility.html">Reproducibility scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/auxiliary-material/auxiliary-material.html">Auxiliary Materials for Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../binder/binder.html">Binder image deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/maps/maps.html">Code for reproducibility of the Atlas Map figures of model projections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/observations/observations.html">Code for reproducibility of the ATLAS spatial maps of the observed linear trends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/bash-interpolation-scripts/bash-interpolation-scripts.html">Bash interpolation scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/bash-interpolation-scripts/AtlasCDOremappeR_CORDEX/atlasCDOremappeR.html">AtlasCDOremappeR for CORDEX RCM simulations</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas/edit/jb-test/./reference-regions/reference-regions.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas/issues/new?title=Issue%20on%20page%20%2Freference-regions/reference-regions.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/reference-regions/reference-regions.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Sets of regions for regional synthesis</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ar6-wgi-reference-regions-ipcc-wgi-reference-regions-version-4">AR6-WGI Reference Regions: IPCC-WGI Reference Regions version 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ipcc-wgii-continental-regions">IPCC-WGII continental regions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#monsoon-regions">Monsoon regions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#river-basins">River basins</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#small-islands">Small islands</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ocean-biomes">Ocean biomes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="sets-of-regions-for-regional-synthesis">
+<span id="reference-regions"></span><h1>Sets of regions for regional synthesis<a class="headerlink" href="#sets-of-regions-for-regional-synthesis" title="Permalink to this heading">#</a></h1>
+<p>Several alternative sets of regions are included to facilitate the regional synthesis of information:</p>
+<ul class="simple">
+<li><p>IPCC AR6 WGI reference regions (land and mountain-range subregions are also defined using masks under <a class="reference internal" href="../notebooks/reference-grids_R.html#reference-grids"><span class="std std-ref">reference-grids</span></a>)</p></li>
+<li><p>IPCC AR6 WGII continental regions</p></li>
+<li><p>Monsoon regions</p></li>
+<li><p>River basins</p></li>
+<li><p>Small islands</p></li>
+<li><p>Ocean biomes</p></li>
+</ul>
+<p>These sets of regions can be displayed in an integrated viewer by clicking on the corresponding geojson files above.</p>
+<section id="ar6-wgi-reference-regions-ipcc-wgi-reference-regions-version-4">
+<h2>AR6-WGI Reference Regions: IPCC-WGI Reference Regions version 4<a class="headerlink" href="#ar6-wgi-reference-regions-ipcc-wgi-reference-regions-version-4" title="Permalink to this heading">#</a></h2>
+<p>Different sets of climatic reference regions have been proposed for the regional synthesis of historical trends and future climate change projections, and have been subsequently used in the different Assessment Reports of the IPCC WGI (we refer to these sets as <strong>IPCC-WGI reference regions</strong>). The 23 rectangular reference regions originally proposed in <span id="id1">[<a class="reference internal" href="#id41" title="F. Giorgi and R Francisco. Uncertainties in regional climate change prediction: a regional analysis of ensemble simulations with the HADCM2 coupled AOGCM | SpringerLink. https://link.springer.com/article/10.1007/PL00013733.">Giorgi and Francisco</a>]</span> (<strong>version 1</strong>) were used in the third (AR3) and fourth (AR4) IPCC Assessment reports. These regions were later modified using more flexible polygons in the IPCC SREX special report (<span id="id2">[<a class="reference internal" href="#id73" title="Sonia I. Seneviratne, Neville Nicholls, David Easterling, Clare M. Goodess, Shinjiro Kanae, James Kossin, Yali Luo, Jose Marengo, Kathleen McInnes, Mohammad Rahimi, Markus Reichstein, Asgeir Sorteberg, Carolina Vera, Xuebin Zhang, Matilde Rusticucci, Vladimir Semenov, Lisa V. Alexander, Simon Allen, Gerardo Benito, Tereza Cavazos, John Clague, Declan Conway, Paul M. Della-Marta, Markus Gerber, Sunling Gong, B. N. Goswami, Mark Hemer, Christian Huggel, Bart van den Hurk, Viatcheslav V. Kharin, Akio Kitoh, Albert M.G. Klein Tank, Guilong Li, Simon Mason, William McGuire, Geert Jan van Oldenborgh, Boris Orlowsky, Sharon Smith, Wassila Thiaw, Adonis Velegrakis, Pascal Yiou, Tingjun Zhang, Tianjun Zhou, and Francis W. Zwiers. Changes in Climate Extremes and their Impacts on the Natural Physical Environment. In Christopher B. Field, Vicente Barros, Thomas F. Stocker, and Qin Dahe, editors, Managing the Risks of Extreme Events and Disasters to Advance Climate Change Adaptation, pages 109–230. Cambridge University Press, first edition, May 2012. doi:10.1017/CBO9781139177245.006.">Seneviratne <em>et al.</em></a>]</span>, <strong>version 2</strong>) and then slightly modified and extended to 33 regions (by including island states, the Arctic and Antarctica) for the fifth Assessment Report (AR5, <span id="id3">[<a class="reference internal" href="#id17" title="Atlas of Global and Regional Climate Projections — IPCC. https://www.ipcc.ch/report/ar5/wg1/atlas-of-global-and-regional-climate-projections/."><em>Atlas of Global and Regional Climate Projections — IPCC</em></a>]</span>, <strong>version 3</strong>).</p>
+<img src="reference_regions_names.png" align="left" alt="" width="500" />
+<p>This repository includes technical and supplementary information for a recent update of these regions presented in <span id="id4">[<a class="reference internal" href="#id53" title="Maialen Iturbide, José M. Gutiérrez, Lincoln M. Alves, Joaquín Bedia, Ruth Cerezo-Mota, Ezequiel Cimadevilla, Antonio S. Cofiño, Alejandro Di Luca, Sergio Henrique Faria, Irina V. Gorodetskaya, Mathias Hauser, Sixto Herrera, Kevin Hennessy, Helene T. Hewitt, Richard G. Jones, Svitlana Krakovska, Rodrigo Manzanas, Daniel Martínez-Castro, Gemma T. Narisma, Intan S. Nurhati, Izidine Pinto, Sonia I. Seneviratne, Bart van den Hurk, and Carolina S. Vera. An update of IPCC climate reference regions for subcontinental analysis of climate model data: definition and aggregated datasets. Earth System Science Data, 12(4):2959–2970, November 2020. doi:10.5194/essd-12-2959-2020.">Iturbide <em>et al.</em>, 2020</a>]</span>, referred to as <strong>version 4</strong>, which is used in AR6-WGI (<strong>AR6-WGI Reference Regions</strong>). The updated reference regions are provided as polygons in different formats (CSV with coordinates, R data, shapefile and geojson) together with R and Python notebooks illustrating the use of these regions with worked examples.</p>
+<p>The CSV file contains the corner coordinates defining each region in <span id="id5">[<a class="reference internal" href="#id80" title="WGS 84: EPSG Projection – Spatial Reference. https://spatialreference.org/ref/epsg/wgs-84/."><em>WGS 84: EPSG Projection – Spatial Reference</em></a>]</span> and it is used to build the spatial objects (the R data file and the shapefile), which contain coordinate information at a 0.44º resolution. This additional information is created via linear interpolation, while keeping the original vertices defined in the CSV file. Note that, in the CSV file, region acronyms followed by the <code class="docutils literal notranslate"><span class="pre">*</span></code> suffix define the part of the polygon of the same name that extends beyond the 180º meridian (i.e. RAR, NPO, EPO and SPO). This distinction is not needed in the spatial objects (the R data object, shapefile and geojson), as the regions separated by the 180° meridian are merged and considered as a single polygon.</p>
+<p>Spatially averaged output from CMIP5 and CMIP6 global climate models (see <a class="reference internal" href="../data-sources/data-sources.html#data-sources"><span class="std std-ref">data-sources</span></a>) have been computed for the different reference regions and are available at the <a class="reference internal" href="../datasets-aggregated-regionally/datasets-aggregated-regionally.html#datasets-aggregated-regionally"><span class="std std-ref">datasets-aggregated-regionally</span></a> folder.</p>
+</section>
+<section id="ipcc-wgii-continental-regions">
+<h2>IPCC-WGII continental regions<a class="headerlink" href="#ipcc-wgii-continental-regions" title="Permalink to this heading">#</a></h2>
+<p>Comprises eight continental regions used in the WGII report (Africa, Antarctica, Asia, Australasia, Central and South America, Europe, North America, and Small Islands).</p>
+</section>
+<section id="monsoon-regions">
+<h2>Monsoon regions<a class="headerlink" href="#monsoon-regions" title="Permalink to this heading">#</a></h2>
+<p>Comprises the six land monsoon regions defined in WGI Chapter 8 (Section 8.3.2.4, Figure 8.11): North American monsoon (NAmerM, Jul-Sep), West African monsoon (WAfriM, Jun-Sep), South and Southeast Asian monsoon (SAsiaM, Jun-Sep), East Asian monsoon (EAsiaM, Jun-Aug), South American monsoon (SAmerM, Dec-Feb), Australian and Maritime Continent monsoon (AusMCM, Dec-Feb).</p>
+</section>
+<section id="river-basins">
+<h2>River basins<a class="headerlink" href="#river-basins" title="Permalink to this heading">#</a></h2>
+<p>Comprises 28 major river basins filtered from the world bank data catalogue (<span id="id6">[<a class="reference internal" href="#id57" title="Major River Basins of the World | Data Catalog. https://datacatalog.worldbank.org/search/dataset/0041426."><em>Major River Basins of the World | Data Catalog</em></a>]</span>). This dataset was facilitated by Aristeidis Koutroulis (Technical University of Crete) and Richard Betts (Met Office Hadley Centre), as part of IPCC WGII activities.</p>
+</section>
+<section id="small-islands">
+<h2>Small islands<a class="headerlink" href="#small-islands" title="Permalink to this heading">#</a></h2>
+<p>Comprises nine small island regions used in the Atlas Chapter (Section Atlas.10; Figure Atlas.4):  North Indian Ocean (ARB and BOB), West Indian Ocean, Midway-Hawaian Islands, Northwest tropics, Equatorial Pacific, Northwest SPCZ, Southwest SPCZ, Southern subtropics and the Caribbean.</p>
+</section>
+<section id="ocean-biomes">
+<h2>Ocean biomes<a class="headerlink" href="#ocean-biomes" title="Permalink to this heading">#</a></h2>
+<p>Ocean regions or biomes as defined by <span id="id7">[<a class="reference internal" href="#id45" title="Luke Gregor, Alice D. Lebehot, Schalk Kok, and Pedro M. Scheel Monteiro. A comparative assessment of the uncertainties of global surface ocean CO\textsubscript 2 estimates using a machine-learning ensemble (CSIR-ML6 version 2019a) – have we hit the wall? Geoscientific Model Development, 12(12):5113–5136, December 2019. doi:10.5194/gmd-12-5113-2019.">Gregor <em>et al.</em></a>]</span>, clustering and expanding the open ocean biomes defined by <span id="id8">[<a class="reference internal" href="#id40" title="A. R. Fay and G. A. McKinley. Global open-ocean biomes: mean and temporal variability. Earth System Science Data, 6(2):273–284, August 2014. doi:10.5194/essd-6-273-2014.">Fay and McKinley</a>]</span> on a 1° × 1° grid. The regions are:</p>
+<ul class="simple">
+<li><p>Northern Hemisphere High Latitudes (NH-HL),</p></li>
+<li><p>Northern Hemisphere Subtropics (NH-ST),</p></li>
+<li><p>Equatorial (EQU)</p></li>
+<li><p>Southern Hemisphere High Latitudes (SH-HL)</p></li>
+<li><p>Southern Hemisphere Subtropics (SH-ST)</p></li>
+<li><p>Eastern Boundaries (EastBound)</p></li>
+<li><p>Amazon River (AmzOut)</p></li>
+<li><p>Gulf of Mexico (GulfMex)</p></li>
+<li><p>Arabian Sea (ArabSea)</p></li>
+<li><p>Indonesian Flowthrough (IndoFlow)</p></li>
+</ul>
+<section id="references">
+<h3>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h3>
+<div class="docutils container" id="id9">
+<div class="citation" id="id17" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">Atl</a><span class="fn-bracket">]</span></span>
+<p>Atlas of Global and Regional Climate Projections — IPCC. https://www.ipcc.ch/report/ar5/wg1/atlas-of-global-and-regional-climate-projections/.</p>
+</div>
+<div class="citation" id="id57" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">Maj</a><span class="fn-bracket">]</span></span>
+<p>Major River Basins of the World | Data Catalog. https://datacatalog.worldbank.org/search/dataset/0041426.</p>
+</div>
+<div class="citation" id="id80" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">WGS</a><span class="fn-bracket">]</span></span>
+<p>WGS 84: EPSG Projection – Spatial Reference. https://spatialreference.org/ref/epsg/wgs-84/.</p>
+</div>
+<div class="citation" id="id40" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id8">FM14</a><span class="fn-bracket">]</span></span>
+<p>A. R. Fay and G. A. McKinley. Global open-ocean biomes: mean and temporal variability. <em>Earth System Science Data</em>, 6(2):273–284, August 2014. <a class="reference external" href="https://doi.org/10.5194/essd-6-273-2014">doi:10.5194/essd-6-273-2014</a>.</p>
+</div>
+<div class="citation" id="id41" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">GF</a><span class="fn-bracket">]</span></span>
+<p>F. Giorgi and R Francisco. Uncertainties in regional climate change prediction: a regional analysis of ensemble simulations with the HADCM2 coupled AOGCM | SpringerLink. https://link.springer.com/article/10.1007/PL00013733.</p>
+</div>
+<div class="citation" id="id45" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id7">GLKSM19</a><span class="fn-bracket">]</span></span>
+<p>Luke Gregor, Alice D. Lebehot, Schalk Kok, and Pedro M. Scheel Monteiro. A comparative assessment of the uncertainties of global surface ocean CO\textsubscript 2 estimates using a machine-learning ensemble (CSIR-ML6 version 2019a) – have we hit the wall? <em>Geoscientific Model Development</em>, 12(12):5113–5136, December 2019. <a class="reference external" href="https://doi.org/10.5194/gmd-12-5113-2019">doi:10.5194/gmd-12-5113-2019</a>.</p>
+</div>
+<div class="citation" id="id53" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">IGutierrezA+20</a><span class="fn-bracket">]</span></span>
+<p>Maialen Iturbide, José M. Gutiérrez, Lincoln M. Alves, Joaquín Bedia, Ruth Cerezo-Mota, Ezequiel Cimadevilla, Antonio S. Cofiño, Alejandro Di Luca, Sergio Henrique Faria, Irina V. Gorodetskaya, Mathias Hauser, Sixto Herrera, Kevin Hennessy, Helene T. Hewitt, Richard G. Jones, Svitlana Krakovska, Rodrigo Manzanas, Daniel Martínez-Castro, Gemma T. Narisma, Intan S. Nurhati, Izidine Pinto, Sonia I. Seneviratne, Bart van den Hurk, and Carolina S. Vera. An update of IPCC climate reference regions for subcontinental analysis of climate model data: definition and aggregated datasets. <em>Earth System Science Data</em>, 12(4):2959–2970, November 2020. <a class="reference external" href="https://doi.org/10.5194/essd-12-2959-2020">doi:10.5194/essd-12-2959-2020</a>.</p>
+</div>
+<div class="citation" id="id73" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">SNE+12</a><span class="fn-bracket">]</span></span>
+<p>Sonia I. Seneviratne, Neville Nicholls, David Easterling, Clare M. Goodess, Shinjiro Kanae, James Kossin, Yali Luo, Jose Marengo, Kathleen McInnes, Mohammad Rahimi, Markus Reichstein, Asgeir Sorteberg, Carolina Vera, Xuebin Zhang, Matilde Rusticucci, Vladimir Semenov, Lisa V. Alexander, Simon Allen, Gerardo Benito, Tereza Cavazos, John Clague, Declan Conway, Paul M. Della-Marta, Markus Gerber, Sunling Gong, B. N. Goswami, Mark Hemer, Christian Huggel, Bart van den Hurk, Viatcheslav V. Kharin, Akio Kitoh, Albert M.G. Klein Tank, Guilong Li, Simon Mason, William McGuire, Geert Jan van Oldenborgh, Boris Orlowsky, Sharon Smith, Wassila Thiaw, Adonis Velegrakis, Pascal Yiou, Tingjun Zhang, Tianjun Zhou, and Francis W. Zwiers. Changes in Climate Extremes and their Impacts on the Natural Physical Environment. In Christopher B. Field, Vicente Barros, Thomas F. Stocker, and Qin Dahe, editors, <em>Managing the Risks of Extreme Events and Disasters to Advance Climate Change Adaptation</em>, pages 109–230. Cambridge University Press, first edition, May 2012. <a class="reference external" href="https://doi.org/10.1017/CBO9781139177245.006">doi:10.1017/CBO9781139177245.006</a>.</p>
+</div>
+</div>
+</div>
+<script src="https://utteranc.es/client.js"
+        repo="PhantomAurelia/Atlas"
+        issue-term="pathname"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script></section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "PhantomAurelia/Atlas",
+            ref: "jb-test",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./reference-regions"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../datasets-interactive-atlas/datasets-interactive-atlas.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Code for reproducibility of the Interactive Atlas Dataset</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../datasets-aggregated-regionally/datasets-aggregated-regionally.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Aggregated datasets</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ar6-wgi-reference-regions-ipcc-wgi-reference-regions-version-4">AR6-WGI Reference Regions: IPCC-WGI Reference Regions version 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ipcc-wgii-continental-regions">IPCC-WGII continental regions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#monsoon-regions">Monsoon regions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#river-basins">River basins</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#small-islands">Small islands</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ocean-biomes">Ocean biomes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By David Domínguez Román
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

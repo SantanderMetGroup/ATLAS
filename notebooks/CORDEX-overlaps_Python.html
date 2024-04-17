@@ -1,0 +1,2776 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Selecting reference regions used for every CORDEX domain &#8212; IPCC-ATLAS Jupyter Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "PhantomAurelia/Atlas");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/CORDEX-overlaps_Python';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="GeoTIFF file post-processing: Spatial operations" href="GeoTIFF-post-processing_R.html" />
+    <link rel="prev" title="Atlas notebooks" href="bias-adjustment_R.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Repository supporting the implementation of FAIR principles in the IPCC-WGI Atlas
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Information</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../warming-levels/warming-levels.html">Global Warming Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data-sources/data-sources.html">Data sources used in the Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference-grids/reference-grids.html">Sets of reference grids</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/datasets-interactive-atlas.html">Code for reproducibility of the Interactive Atlas Dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference-regions/reference-regions.html">Sets of regions for regional synthesis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-aggregated-regionally/datasets-aggregated-regionally.html">Aggregated datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Notebooks</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Notebooks</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="regional-scatter-plots_R.html">Computing and visualizing regional climate change (temperature vs precipitation) for reference regions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="global-warming-levels_R.html">Computing and visualizing transient global warming levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bias-adjustment_R.html">Atlas notebooks</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Selecting reference regions used for every CORDEX domain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GeoTIFF-post-processing_R.html">GeoTIFF file post-processing: Spatial operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hatching-uncertainty_R.html">Calculation and hatching of the uncertainty in projected delta changes.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linear-trends_R.html">Computing and visualization of precipitation linear trends during the observed period (1980-2014)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference-grids_R.html">Using the Atlas reference grids in <code class="docutils literal notranslate"><span class="pre">R</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference-regions_Python.html">Using the 4th version of the IPCC WGI reference regions in Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference-regions_R.html">Using the 4th version of the IPCC WGI reference regions in R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stripes-plots_R.html">Create stripes of anual temperature and precipitation mean values.</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../ERRATA.html">Errata and problem reporting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/reproducibility.html">Reproducibility scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="auxiliary-material/auxiliary-material.html">Auxiliary Materials for Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../binder/binder.html">Binder image deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/maps/maps.html">Code for reproducibility of the Atlas Map figures of model projections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/observations/observations.html">Code for reproducibility of the ATLAS spatial maps of the observed linear trends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/bash-interpolation-scripts/bash-interpolation-scripts.html">Bash interpolation scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/bash-interpolation-scripts/AtlasCDOremappeR_CORDEX/atlasCDOremappeR.html">AtlasCDOremappeR for CORDEX RCM simulations</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/PhantomAurelia/Atlas/jb-test?urlpath=lab/tree/./notebooks/CORDEX-overlaps_Python.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas/edit/jb-test/./notebooks/CORDEX-overlaps_Python.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas/issues/new?title=Issue%20on%20page%20%2Fnotebooks/CORDEX-overlaps_Python.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/CORDEX-overlaps_Python.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Selecting reference regions used for every CORDEX domain</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-packages">Load packages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-the-reference-regions">Loading the reference regions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-reference-grids-0-5-degree">Loading reference grids (0.5 degree)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-cordex-domains">Defining CORDEX domains</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculating-overlaps">Calculating overlaps</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-those-reference-regions-that-overlap-larger-than-80-for-every-cordex-domain">Selecting those reference regions that overlap larger than 80% for every CORDEX domain</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#session-info">Session info</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="highlight-default notranslate"><div class="highlight"><pre><span></span># Atlas notebooks
+
+***
+
+&gt; This notebook reproduces and extends parts of the figures and products of the AR6-WGI Atlas. It is part of a notebook collection available at https://github.com/IPCC-WG1/Atlas for reproducibility and reusability purposes. This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0).
+&gt;
+&gt; ![Creative Commons License &gt;](https://i.creativecommons.org/l/by/4.0/88x31.png)
+</pre></div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="selecting-reference-regions-used-for-every-cordex-domain">
+<span id="cordex-overlaps-python"></span><h1>Selecting reference regions used for every CORDEX domain<a class="headerlink" href="#selecting-reference-regions-used-for-every-cordex-domain" title="Permalink to this heading">#</a></h1>
+<p>12/07/2021</p>
+<p><strong>J. Diez-Sierra</strong> (<a class="reference external" href="http://meteo.unican.es">Santander Meteorology Group</a>, Instituto de Física de Cantabria, CSIC-UC, Santander, Spain)</p>
+<p>For the different CORDEX domains, aggregated results are calculated only in those reference regions (Iturbide et al. 2020) with overlap larger than 80%. Reference overlapped regions resulting for every CORDEX domain are calculated with the present script. Regular geographic grids for every CORDEX domain are obtained from Table 2 in the CORDEX specification archive: <span id="id1">[<a class="reference internal" href="#id15" title="O.B. Christensen, W.J. Gutowski, G. Nikulin, and S. Legutke. CORDEX Archive Design.">Christensen <em>et al.</em></a>]</span>.</p>
+<section id="load-packages">
+<h2>Load packages<a class="headerlink" href="#load-packages" title="Permalink to this heading">#</a></h2>
+<p>This script requires regionmask version 0.6.1 or later and xarray version 0.15.1 or later. Check the documentation of regionmask for details.</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">regionmask</span>
+<span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="loading-the-reference-regions">
+<h2>Loading the reference regions<a class="headerlink" href="#loading-the-reference-regions" title="Permalink to this heading">#</a></h2>
+<p>The regions are available at regionmask.defined_regions.ar6. The whole set of 58 regions is available under (ar6.all). In addition the land (ar6.land) and ocean (ar6.ocean) regions are given separately. The numbering is kept consistent between the categories. Note that some regions are in the land and in the ocean categories (e.g. the Mediterranean).</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ar6_all</span> <span class="o">=</span> <span class="n">regionmask</span><span class="o">.</span><span class="n">defined_regions</span><span class="o">.</span><span class="n">ar6</span><span class="o">.</span><span class="n">all</span>
+<span class="n">ar6_all</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading file &#39;IPCC-WGI-reference-regions-v4.zip&#39; from &#39;https://github.com/regionmask/regionmask/raw/main/data/IPCC-WGI-reference-regions-v4.zip&#39; to &#39;/home/antonio/.cache/regionmask&#39;.
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;regionmask.Regions &#39;AR6 reference regions&#39;&gt;
+Source:   Iturbide et al., 2020 (Earth Syst. Sci. Data)
+overlap:  False
+
+Regions:
+ 0 GIC      Greenland/Iceland
+ 1 NWN      N.W.North-America
+ 2 NEN      N.E.North-America
+ 3 WNA        W.North-America
+ 4 CNA        C.North-America
+..  ..                    ...
+53 ARS            Arabian-Sea
+54 BOB          Bay-of-Bengal
+55 EIO Equatorial.Indic-Ocean
+56 SIO          S.Indic-Ocean
+57 SOO         Southern-Ocean
+
+[58 regions]
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ar6_all</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;GeoAxesSubplot:&gt;
+</pre></div>
+</div>
+<img alt="../_images/31338b9ecc442f2cba2a41512ddb3cf1f87de9ccb1e082b6b791f504bcf10a8d.png" src="../_images/31338b9ecc442f2cba2a41512ddb3cf1f87de9ccb1e082b6b791f504bcf10a8d.png" />
+</div>
+</div>
+</section>
+<section id="loading-reference-grids-0-5-degree">
+<h2>Loading reference grids (0.5 degree)<a class="headerlink" href="#loading-reference-grids-0-5-degree" title="Permalink to this heading">#</a></h2>
+<p>Global longitude and latitude, at the same resoluction as aggregated results for CORDEX domain (0.5 degree), is obtained from the WFDE5 dataset in order to compare the total area covered for every reference region with those overlapped with each CORDEX domains.</p>
+<p>Bellow we calculate the number of grid boxes that fall in every reference regions. We use cos(lat) as proxy of the grid area. This works well for the rectangular grid in our example. In general, it is better to the model’s own grid area.</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s2">&quot;../reference-grids/land_sea_mask_05degree.nc4&quot;</span><span class="p">)</span>
+<span class="n">XX_WORLD</span><span class="p">,</span> <span class="n">YY_WORLD</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">lon</span><span class="p">,</span> <span class="n">ds</span><span class="o">.</span><span class="n">lat</span><span class="p">)</span>
+<span class="n">mask_2d_WORLD</span> <span class="o">=</span> <span class="n">ar6_all</span><span class="o">.</span><span class="n">mask</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">lon</span><span class="p">,</span> <span class="n">ds</span><span class="o">.</span><span class="n">lat</span><span class="p">)</span>
+<span class="n">weights_WORLD</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">YY_WORLD</span><span class="p">))</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="defining-cordex-domains">
+<h2>Defining CORDEX domains<a class="headerlink" href="#defining-cordex-domains" title="Permalink to this heading">#</a></h2>
+<p>Regular geographic grids for every CORDEX domain are obtained from Table 2 in the CORDEX specification archive <span id="id2">[<a class="reference internal" href="#id15" title="O.B. Christensen, W.J. Gutowski, G. Nikulin, and S. Legutke. CORDEX Archive Design.">Christensen <em>et al.</em></a>]</span>. Note that CORDEX corner definition can present some differences among simulations. Note also that native rotated-pole projections occupy a smaller area than regular grids.</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">regular_CORDEX_grids</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;auxiliary-material/regular-CORDEX-grids.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">regular_CORDEX_grids</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Area</th>
+      <th>deg</th>
+      <th>Nlon</th>
+      <th>Nlat</th>
+      <th>West</th>
+      <th>East</th>
+      <th>South</th>
+      <th>North</th>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>NAM-44i</th>
+      <td>North America</td>
+      <td>0.500</td>
+      <td>300</td>
+      <td>129</td>
+      <td>-171.7500</td>
+      <td>-22.2500</td>
+      <td>12.2500</td>
+      <td>76.2500</td>
+    </tr>
+    <tr>
+      <th>CAM-44i</th>
+      <td>Central America</td>
+      <td>0.500</td>
+      <td>207</td>
+      <td>111</td>
+      <td>-124.7500</td>
+      <td>-21.7500</td>
+      <td>-19.7500</td>
+      <td>35.2500</td>
+    </tr>
+    <tr>
+      <th>SAM-44i</th>
+      <td>South America</td>
+      <td>0.500</td>
+      <td>181</td>
+      <td>155</td>
+      <td>-106.2500</td>
+      <td>-16.2500</td>
+      <td>-58.2500</td>
+      <td>18.7500</td>
+    </tr>
+    <tr>
+      <th>ARC-44i</th>
+      <td>Arctic</td>
+      <td>0.500</td>
+      <td>720</td>
+      <td>83</td>
+      <td>-179.7500</td>
+      <td>179.7500</td>
+      <td>48.7500</td>
+      <td>89.7500</td>
+    </tr>
+    <tr>
+      <th>AFR-44i</th>
+      <td>Africa</td>
+      <td>0.500</td>
+      <td>173</td>
+      <td>179</td>
+      <td>-25.2500</td>
+      <td>60.7500</td>
+      <td>-46.2500</td>
+      <td>42.7500</td>
+    </tr>
+    <tr>
+      <th>EUR-44i</th>
+      <td>Europe</td>
+      <td>0.500</td>
+      <td>221</td>
+      <td>103</td>
+      <td>-44.7500</td>
+      <td>65.2500</td>
+      <td>21.7500</td>
+      <td>72.7500</td>
+    </tr>
+    <tr>
+      <th>MED-44i</th>
+      <td>Mediterranean</td>
+      <td>0.500</td>
+      <td>144</td>
+      <td>65</td>
+      <td>-20.7500</td>
+      <td>51.7500</td>
+      <td>25.2500</td>
+      <td>57.2500</td>
+    </tr>
+    <tr>
+      <th>MNA-44i</th>
+      <td>Middle East and North Africa</td>
+      <td>0.500</td>
+      <td>206</td>
+      <td>106</td>
+      <td>-26.7500</td>
+      <td>75.7500</td>
+      <td>-7.2500</td>
+      <td>45.2500</td>
+    </tr>
+    <tr>
+      <th>EAS-44i</th>
+      <td>East Asia</td>
+      <td>0.500</td>
+      <td>227</td>
+      <td>157</td>
+      <td>62.7500</td>
+      <td>175.7500</td>
+      <td>-18.7500</td>
+      <td>59.2500</td>
+    </tr>
+    <tr>
+      <th>WAS-44i</th>
+      <td>South Asia</td>
+      <td>0.500</td>
+      <td>195</td>
+      <td>124</td>
+      <td>19.2500</td>
+      <td>116.2500</td>
+      <td>-15.7500</td>
+      <td>45.7500</td>
+    </tr>
+    <tr>
+      <th>CAS-44i</th>
+      <td>Central Asia</td>
+      <td>0.500</td>
+      <td>260</td>
+      <td>133</td>
+      <td>10.7500</td>
+      <td>140.2500</td>
+      <td>17.7500</td>
+      <td>69.7500</td>
+    </tr>
+    <tr>
+      <th>ANT-44i</th>
+      <td>Antarctica</td>
+      <td>0.500</td>
+      <td>720</td>
+      <td>70</td>
+      <td>-179.7500</td>
+      <td>179.7500</td>
+      <td>-89.7500</td>
+      <td>-55.2500</td>
+    </tr>
+    <tr>
+      <th>AUS-44i</th>
+      <td>Australasia</td>
+      <td>0.500</td>
+      <td>238</td>
+      <td>133</td>
+      <td>88.7500</td>
+      <td>207.2500</td>
+      <td>-53.2500</td>
+      <td>12.7500</td>
+    </tr>
+    <tr>
+      <th>MNA-22i</th>
+      <td>Middle East and North Africa</td>
+      <td>0.250</td>
+      <td>410</td>
+      <td>209</td>
+      <td>-26.6250</td>
+      <td>75.6250</td>
+      <td>-6.8750</td>
+      <td>45.1250</td>
+    </tr>
+    <tr>
+      <th>SEA-22i</th>
+      <td>South East Asia</td>
+      <td>0.250</td>
+      <td>233</td>
+      <td>172</td>
+      <td>89.1250</td>
+      <td>147.1250</td>
+      <td>-15.3750</td>
+      <td>27.3750</td>
+    </tr>
+    <tr>
+      <th>EUR-11i</th>
+      <td>Europe high res.</td>
+      <td>0.125</td>
+      <td>881</td>
+      <td>408</td>
+      <td>-44.8125</td>
+      <td>65.1875</td>
+      <td>21.8125</td>
+      <td>72.6875</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</details>
+</div>
+<p>Selecting CORDEX domains</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">CORDEX_doms</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;NAM-44i&#39;</span><span class="p">,</span><span class="s1">&#39;CAM-44i&#39;</span><span class="p">,</span><span class="s1">&#39;SAM-44i&#39;</span><span class="p">,</span><span class="s1">&#39;ARC-44i&#39;</span><span class="p">,</span><span class="s1">&#39;AFR-44i&#39;</span><span class="p">,</span><span class="s1">&#39;EUR-44i&#39;</span><span class="p">,</span><span class="s1">&#39;MED-44i&#39;</span><span class="p">,</span>
+                  <span class="s1">&#39;MNA-44i&#39;</span><span class="p">,</span><span class="s1">&#39;SEA-22i&#39;</span><span class="p">,</span><span class="s1">&#39;EAS-44i&#39;</span><span class="p">,</span><span class="s1">&#39;WAS-44i&#39;</span><span class="p">,</span><span class="s1">&#39;CAS-44i&#39;</span><span class="p">,</span><span class="s1">&#39;ANT-44i&#39;</span><span class="p">,</span><span class="s1">&#39;AUS-44i&#39;</span><span class="p">]</span> 
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="calculating-overlaps">
+<h2>Calculating overlaps<a class="headerlink" href="#calculating-overlaps" title="Permalink to this heading">#</a></h2>
+<p>Empty dataframe to add the results on the percentage of overlapping area:</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Overlaps_CORDEX_ReferenceRegions</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">index</span> <span class="o">=</span> <span class="n">CORDEX_doms</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">ar6_all</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Overlap calculation comparing the number of cells that fall inside every reference region, using the coordinates lon and lat from the file land_sea_mask_05degree.nc4, with those that fall inside the regular grid for every CORDEX domain.</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">dom</span> <span class="ow">in</span> <span class="n">CORDEX_doms</span><span class="p">:</span>
+    <span class="n">lon</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">regular_CORDEX_grids</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">dom</span><span class="p">][</span><span class="s1">&#39;West&#39;</span><span class="p">],</span> <span class="n">regular_CORDEX_grids</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">dom</span><span class="p">][</span><span class="s1">&#39;East&#39;</span><span class="p">]</span><span class="o">+</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+    <span class="n">lat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">regular_CORDEX_grids</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">dom</span><span class="p">][</span><span class="s1">&#39;South&#39;</span><span class="p">],</span> <span class="n">regular_CORDEX_grids</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">dom</span><span class="p">][</span><span class="s1">&#39;North&#39;</span><span class="p">]</span><span class="o">+</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+    <span class="n">XX</span><span class="p">,</span> <span class="n">YY</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">lon</span><span class="p">,</span> <span class="n">lat</span><span class="p">)</span>
+    <span class="n">mask_2d_domain</span> <span class="o">=</span> <span class="n">ar6_all</span><span class="o">.</span><span class="n">mask</span><span class="p">(</span><span class="n">lon</span><span class="p">,</span> <span class="n">lat</span><span class="p">)</span>
+    <span class="n">weights_domain</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">YY</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">reg</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">mask_2d_domain</span><span class="o">.</span><span class="n">values</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">reg</span><span class="p">):</span>
+            <span class="n">pos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">mask_2d_domain</span><span class="o">.</span><span class="n">values</span> <span class="o">==</span> <span class="n">reg</span><span class="p">)</span>
+            <span class="n">pos_w</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">mask_2d_WORLD</span><span class="o">.</span><span class="n">values</span> <span class="o">==</span> <span class="n">reg</span><span class="p">)</span>
+            <span class="n">Overlaps_CORDEX_ReferenceRegions</span><span class="p">[</span><span class="n">reg</span><span class="p">]</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">dom</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ones_like</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">*</span><span class="n">weights_domain</span><span class="p">[</span><span class="n">pos</span><span class="p">])</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ones_like</span><span class="p">(</span><span class="n">pos_w</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">*</span><span class="n">weights_WORLD</span><span class="p">[</span><span class="n">pos_w</span><span class="p">]),</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Set the name for the reference regions, convert nan to 0 and transpose matrix</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Overlaps_CORDEX_ReferenceRegions</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">ar6_all</span><span class="o">.</span><span class="n">regions</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="o">.</span><span class="n">abbrev</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">Overlaps_CORDEX_ReferenceRegions</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
+<span class="n">Overlaps_CORDEX_ReferenceRegions</span> <span class="o">=</span> <span class="n">Overlaps_CORDEX_ReferenceRegions</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Overlap results (as %)</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Overlaps_CORDEX_ReferenceRegions</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>NAM-44i</th>
+      <th>CAM-44i</th>
+      <th>SAM-44i</th>
+      <th>ARC-44i</th>
+      <th>AFR-44i</th>
+      <th>EUR-44i</th>
+      <th>MED-44i</th>
+      <th>MNA-44i</th>
+      <th>SEA-22i</th>
+      <th>EAS-44i</th>
+      <th>WAS-44i</th>
+      <th>CAS-44i</th>
+      <th>ANT-44i</th>
+      <th>AUS-44i</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>GIC</th>
+      <td>60.45</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>41.04</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>NWN</th>
+      <td>98.06</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>NEN</th>
+      <td>94.44</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>WNA</th>
+      <td>100.00</td>
+      <td>8.77</td>
+      <td>0.00</td>
+      <td>9.64</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>CNA</th>
+      <td>100.00</td>
+      <td>32.76</td>
+      <td>0.00</td>
+      <td>6.20</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>ENA</th>
+      <td>100.00</td>
+      <td>32.30</td>
+      <td>0.00</td>
+      <td>8.27</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>NCA</th>
+      <td>100.00</td>
+      <td>100.00</td>
+      <td>4.27</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>SCA</th>
+      <td>63.87</td>
+      <td>100.00</td>
+      <td>85.09</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>CAR</th>
+      <td>100.00</td>
+      <td>100.00</td>
+      <td>54.81</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>NWS</th>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>NSA</th>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>NES</th>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>SAM</th>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>SWS</th>
+      <td>0.00</td>
+      <td>17.32</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>SES</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>SSA</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>6.38</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>NEU</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>99.92</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>24.67</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>41.41</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>WCE</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>60.87</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>95.42</td>
+      <td>5.76</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>4.82</td>
+      <td>74.33</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>EEU</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>78.99</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>41.05</td>
+      <td>3.08</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>6.14</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>MED</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>87.88</td>
+      <td>100.00</td>
+      <td>100.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>42.00</td>
+      <td>59.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>SAH</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>2.09</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>51.49</td>
+      <td>29.27</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>32.39</td>
+      <td>36.35</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>WAF</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>8.46</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>CAF</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>88.61</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>47.16</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>NEAF</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>SEAF</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>80.15</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>WSAF</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>8.69</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>ESAF</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>34.82</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>MDG</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>26.20</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>RAR</th>
+      <td>1.89</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>12.27</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>32.36</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>WSB</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>78.99</td>
+      <td>0.00</td>
+      <td>18.33</td>
+      <td>0.00</td>
+      <td>1.64</td>
+      <td>0.00</td>
+      <td>71.11</td>
+      <td>6.14</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>ESB</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>78.99</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>77.57</td>
+      <td>4.07</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>RFE</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>86.21</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>69.09</td>
+      <td>0.00</td>
+      <td>28.74</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>WCA</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>56.46</td>
+      <td>75.00</td>
+      <td>32.55</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>32.90</td>
+      <td>100.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>ECA</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>2.67</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>100.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>TIB</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>3.06</td>
+      <td>1.75</td>
+      <td>100.00</td>
+      <td>100.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>EAS</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>32.94</td>
+      <td>100.00</td>
+      <td>36.11</td>
+      <td>93.25</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>ARP</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>55.01</td>
+      <td>26.63</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>82.35</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>SAS</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>1.36</td>
+      <td>7.49</td>
+      <td>0.00</td>
+      <td>37.02</td>
+      <td>19.30</td>
+      <td>96.60</td>
+      <td>100.00</td>
+      <td>78.74</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>SEA</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>98.84</td>
+      <td>100.00</td>
+      <td>52.33</td>
+      <td>5.66</td>
+      <td>0.00</td>
+      <td>81.37</td>
+    </tr>
+    <tr>
+      <th>NAU</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>46.30</td>
+      <td>90.23</td>
+      <td>8.75</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+    </tr>
+    <tr>
+      <th>CAU</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+    </tr>
+    <tr>
+      <th>EAU</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+    </tr>
+    <tr>
+      <th>SAU</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+    </tr>
+    <tr>
+      <th>NZ</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+    </tr>
+    <tr>
+      <th>EAN</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>WAN</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>ARO</th>
+      <td>9.21</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>1.48</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>NPO</th>
+      <td>45.62</td>
+      <td>9.88</td>
+      <td>1.72</td>
+      <td>8.31</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>7.08</td>
+      <td>33.74</td>
+      <td>0.00</td>
+      <td>2.14</td>
+      <td>0.00</td>
+      <td>9.76</td>
+    </tr>
+    <tr>
+      <th>EPO</th>
+      <td>0.00</td>
+      <td>30.20</td>
+      <td>16.34</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>4.89</td>
+      <td>25.59</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>49.19</td>
+    </tr>
+    <tr>
+      <th>SPO</th>
+      <td>0.00</td>
+      <td>10.28</td>
+      <td>25.14</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>4.24</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>1.33</td>
+      <td>33.87</td>
+    </tr>
+    <tr>
+      <th>NAO</th>
+      <td>77.79</td>
+      <td>56.11</td>
+      <td>20.53</td>
+      <td>14.51</td>
+      <td>14.02</td>
+      <td>47.82</td>
+      <td>11.13</td>
+      <td>17.94</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>EAO</th>
+      <td>0.00</td>
+      <td>45.10</td>
+      <td>57.68</td>
+      <td>0.00</td>
+      <td>64.21</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>56.15</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>SAO</th>
+      <td>0.00</td>
+      <td>7.63</td>
+      <td>59.49</td>
+      <td>0.00</td>
+      <td>58.88</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.06</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>ARS</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>33.17</td>
+      <td>3.92</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>57.64</td>
+      <td>100.00</td>
+      <td>20.66</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>BOB</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>39.88</td>
+      <td>100.00</td>
+      <td>100.00</td>
+      <td>10.31</td>
+      <td>0.00</td>
+      <td>21.81</td>
+    </tr>
+    <tr>
+      <th>EIO</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>29.83</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>53.28</td>
+      <td>8.77</td>
+      <td>66.88</td>
+      <td>100.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>9.87</td>
+    </tr>
+    <tr>
+      <th>SIO</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>22.54</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>7.50</td>
+      <td>27.54</td>
+      <td>22.19</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>33.99</td>
+    </tr>
+    <tr>
+      <th>SOO</th>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>6.65</td>
+      <td>0.00</td>
+      <td>13.15</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>47.89</td>
+      <td>15.37</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</details>
+</div>
+</section>
+<section id="selecting-those-reference-regions-that-overlap-larger-than-80-for-every-cordex-domain">
+<h2>Selecting those reference regions that overlap larger than 80% for every CORDEX domain<a class="headerlink" href="#selecting-those-reference-regions-that-overlap-larger-than-80-for-every-cordex-domain" title="Permalink to this heading">#</a></h2>
+<p>Select those regions that overlap larger than 80%</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">threshold</span> <span class="o">=</span> <span class="mi">80</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">dom</span> <span class="ow">in</span> <span class="n">CORDEX_doms</span><span class="p">:</span>
+    <span class="n">AR6_dom</span> <span class="o">=</span> <span class="n">Overlaps_CORDEX_ReferenceRegions</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;`</span><span class="si">{</span><span class="n">dom</span><span class="si">}</span><span class="s1">`&gt;80&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">index</span>    
+    <span class="nb">print</span><span class="p">(</span><span class="n">dom</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">AR6_dom</span><span class="o">.</span><span class="n">tolist</span><span class="p">()))</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>NAM-44i: [&#39;NWN&#39;, &#39;NEN&#39;, &#39;WNA&#39;, &#39;CNA&#39;, &#39;ENA&#39;, &#39;NCA&#39;, &#39;CAR&#39;]
+CAM-44i: [&#39;NCA&#39;, &#39;SCA&#39;, &#39;CAR&#39;, &#39;NWS&#39;, &#39;NSA&#39;, &#39;NES&#39;, &#39;SAM&#39;]
+SAM-44i: [&#39;SCA&#39;, &#39;NWS&#39;, &#39;NSA&#39;, &#39;NES&#39;, &#39;SAM&#39;, &#39;SWS&#39;, &#39;SES&#39;, &#39;SSA&#39;]
+ARC-44i: [&#39;GIC&#39;, &#39;NWN&#39;, &#39;NEN&#39;, &#39;NEU&#39;, &#39;RAR&#39;, &#39;RFE&#39;, &#39;ARO&#39;]
+AFR-44i: [&#39;MED&#39;, &#39;SAH&#39;, &#39;WAF&#39;, &#39;CAF&#39;, &#39;NEAF&#39;, &#39;SEAF&#39;, &#39;WSAF&#39;, &#39;ESAF&#39;, &#39;MDG&#39;, &#39;ARP&#39;]
+EUR-44i: [&#39;NEU&#39;, &#39;WCE&#39;, &#39;EEU&#39;, &#39;MED&#39;]
+MED-44i: [&#39;WCE&#39;, &#39;MED&#39;]
+MNA-44i: [&#39;MED&#39;, &#39;SAH&#39;, &#39;WAF&#39;, &#39;CAF&#39;, &#39;NEAF&#39;, &#39;SEAF&#39;, &#39;WCA&#39;, &#39;ARP&#39;, &#39;ARS&#39;]
+SEA-22i: [&#39;SEA&#39;]
+EAS-44i: [&#39;ECA&#39;, &#39;TIB&#39;, &#39;EAS&#39;, &#39;SAS&#39;, &#39;SEA&#39;, &#39;NAU&#39;, &#39;BOB&#39;]
+WAS-44i: [&#39;NEAF&#39;, &#39;SEAF&#39;, &#39;WCA&#39;, &#39;ECA&#39;, &#39;TIB&#39;, &#39;ARP&#39;, &#39;SAS&#39;, &#39;ARS&#39;, &#39;BOB&#39;, &#39;EIO&#39;]
+CAS-44i: [&#39;EEU&#39;, &#39;WSB&#39;, &#39;ESB&#39;, &#39;WCA&#39;, &#39;ECA&#39;, &#39;TIB&#39;, &#39;EAS&#39;, &#39;ARP&#39;]
+ANT-44i: [&#39;EAN&#39;, &#39;WAN&#39;]
+AUS-44i: [&#39;SEA&#39;, &#39;NAU&#39;, &#39;CAU&#39;, &#39;EAU&#39;, &#39;SAU&#39;, &#39;NZ&#39;]
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+</section>
+<section id="session-info">
+<h2>Session info<a class="headerlink" href="#session-info" title="Permalink to this heading">#</a></h2>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>conda<span class="w"> </span>list
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span># packages in environment at /DATA/miniconda3/envs/atlas-jupyterbook:
+#
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                 conda_forge    conda-forge
+_openmp_mutex             4.5                       2_gnu    conda-forge
+_r-mutex                  1.0.1               anacondar_1    conda-forge
+accessible-pygments       0.0.4              pyhd8ed1ab_0    conda-forge
+affine                    2.4.0              pyhd8ed1ab_0    conda-forge
+aiofiles                  22.1.0             pyhd8ed1ab_0    conda-forge
+aiosqlite                 0.19.0             pyhd8ed1ab_0    conda-forge
+alabaster                 0.7.13             pyhd8ed1ab_0    conda-forge
+alembic                   1.13.1             pyhd8ed1ab_0    conda-forge
+alsa-lib                  1.1.5             h516909a_1002    conda-forge
+antlr-python-runtime      4.7.2           py37h89c1867_1003    conda-forge
+anyio                     3.7.1              pyhd8ed1ab_0    conda-forge
+argon2-cffi               23.1.0             pyhd8ed1ab_0    conda-forge
+argon2-cffi-bindings      21.2.0           py37h540881e_2    conda-forge
+arrow                     1.2.3              pyhd8ed1ab_0    conda-forge
+async_generator           1.10                       py_0    conda-forge
+attrs                     23.2.0             pyh71513ae_0    conda-forge
+babel                     2.14.0             pyhd8ed1ab_0    conda-forge
+backcall                  0.2.0              pyh9f0ad1d_0    conda-forge
+backports                 1.0                pyhd8ed1ab_3    conda-forge
+backports.functools_lru_cache 2.0.0              pyhd8ed1ab_0    conda-forge
+beautifulsoup4            4.12.3             pyha770c72_0    conda-forge
+binutils_impl_linux-64    2.39                 he00db2b_1    conda-forge
+binutils_linux-64         2.39                h5fc0e48_13    conda-forge
+bleach                    6.1.0              pyhd8ed1ab_0    conda-forge
+blinker                   1.6.3              pyhd8ed1ab_0    conda-forge
+branca                    0.7.1              pyhd8ed1ab_0    conda-forge
+brotli                    1.1.0                hd590300_1    conda-forge
+brotli-bin                1.1.0                hd590300_1    conda-forge
+brotli-python             1.0.9            py37hd23a5d3_7    conda-forge
+bwidget                   1.9.14               ha770c72_1    conda-forge
+bzip2                     1.0.8                hd590300_5    conda-forge
+c-ares                    1.28.1               hd590300_0    conda-forge
+ca-certificates           2024.2.2             hbcca054_0    conda-forge
+cached-property           1.5.2                hd8ed1ab_1    conda-forge
+cached_property           1.5.2              pyha770c72_1    conda-forge
+cairo                     1.16.0            h6cf1ce9_1008    conda-forge
+cartopy                   0.19.0.post1     py37h0c48da3_1    conda-forge
+cdo                       1.9.9               had776b3_14    conda-forge
+certifi                   2024.2.2           pyhd8ed1ab_0    conda-forge
+certipy                   0.1.3                      py_0    conda-forge
+cf-units                  3.0.1            py37hb1e94ed_2    conda-forge
+cffi                      1.15.1           py37h43b0acd_1    conda-forge
+cfitsio                   3.470                hb418390_7    conda-forge
+cftime                    1.6.2            py37hc105733_0    conda-forge
+charset-normalizer        3.3.2              pyhd8ed1ab_0    conda-forge
+click                     7.1.2              pyh9f0ad1d_0    conda-forge
+click-plugins             1.1.1                      py_0    conda-forge
+cligj                     0.7.2              pyhd8ed1ab_1    conda-forge
+cloudpickle               2.2.1              pyhd8ed1ab_0    conda-forge
+colorama                  0.4.6              pyhd8ed1ab_0    conda-forge
+comm                      0.2.2              pyhd8ed1ab_0    conda-forge
+configurable-http-proxy   4.5.4                h5556789_2    conda-forge
+cryptography              38.0.2           py37h38fbfac_1    conda-forge
+curl                      7.86.0               h7bff187_1    conda-forge
+cycler                    0.11.0             pyhd8ed1ab_0    conda-forge
+dask-core                 2022.2.0           pyhd8ed1ab_0    conda-forge
+dataclasses               0.8                pyhc8e2a94_3    conda-forge
+debugpy                   1.6.3            py37hd23a5d3_0    conda-forge
+decorator                 5.1.1              pyhd8ed1ab_0    conda-forge
+defusedxml                0.7.1              pyhd8ed1ab_0    conda-forge
+docutils                  0.18.1           py37h89c1867_1    conda-forge
+eccodes                   2.21.0               ha0e6eb6_0    conda-forge
+entrypoints               0.4                pyhd8ed1ab_0    conda-forge
+esmf                      8.1.0           nompi_hed08645_0    conda-forge
+exceptiongroup            1.2.0              pyhd8ed1ab_2    conda-forge
+expat                     2.6.2                h59595ed_0    conda-forge
+fftw                      3.3.10          nompi_hc118613_108    conda-forge
+fiona                     1.8.18           py37h17d6ad9_1    conda-forge
+folium                    0.16.0             pyhd8ed1ab_0    conda-forge
+font-ttf-dejavu-sans-mono 2.37                 hab24e00_0    conda-forge
+font-ttf-inconsolata      3.000                h77eed37_0    conda-forge
+font-ttf-source-code-pro  2.038                h77eed37_0    conda-forge
+font-ttf-ubuntu           0.83                 h77eed37_1    conda-forge
+fontconfig                2.14.2               h14ed4e7_0    conda-forge
+fonts-conda-ecosystem     1                             0    conda-forge
+fonts-conda-forge         1                             0    conda-forge
+fonttools                 4.38.0           py37h540881e_0    conda-forge
+fqdn                      1.5.1              pyhd8ed1ab_0    conda-forge
+freetype                  2.12.1               h267a509_2    conda-forge
+freexl                    1.0.6                h166bdaf_1    conda-forge
+fribidi                   1.0.10               h36c2ea0_0    conda-forge
+fsspec                    2023.1.0           pyhd8ed1ab_0    conda-forge
+gcc_impl_linux-64         9.5.0               h99780fb_19    conda-forge
+gcc_linux-64              9.5.0               h4258300_13    conda-forge
+gdal                      3.2.1            py37hc5bc4e4_7    conda-forge
+geopandas                 0.10.2             pyhd8ed1ab_1    conda-forge
+geopandas-base            0.10.2             pyha770c72_1    conda-forge
+geos                      3.9.1                h9c3ff4c_2    conda-forge
+geotiff                   1.6.0                h2b14fbe_4    conda-forge
+gettext                   0.22.5               h59595ed_2    conda-forge
+gettext-tools             0.22.5               h59595ed_2    conda-forge
+gfortran_impl_linux-64    9.5.0               hf1096a2_19    conda-forge
+gfortran_linux-64         9.5.0               hdb51d14_13    conda-forge
+giflib                    5.2.2                hd590300_0    conda-forge
+gitdb                     4.0.11             pyhd8ed1ab_0    conda-forge
+gitpython                 3.1.43             pyhd8ed1ab_0    conda-forge
+graphite2                 1.3.13            h59595ed_1003    conda-forge
+greenlet                  1.1.3            py37hd23a5d3_0    conda-forge
+gsl                       2.6                  he838d99_2    conda-forge
+gxx_impl_linux-64         9.5.0               h99780fb_19    conda-forge
+gxx_linux-64              9.5.0               h43f449f_13    conda-forge
+harfbuzz                  3.1.1                h83ec7ef_0    conda-forge
+hdf4                      4.2.15               h9772cbc_5    conda-forge
+hdf5                      1.10.6          nompi_h6a2412b_1114    conda-forge
+icu                       68.2                 h9c3ff4c_0    conda-forge
+idna                      3.7                pyhd8ed1ab_0    conda-forge
+imagesize                 1.4.1              pyhd8ed1ab_0    conda-forge
+importlib-metadata        4.11.4           py37h89c1867_0    conda-forge
+importlib_metadata        4.11.4               hd8ed1ab_0    conda-forge
+importlib_resources       6.0.0              pyhd8ed1ab_0    conda-forge
+ipykernel                 6.16.2             pyh210e3f2_0    conda-forge
+ipython                   7.33.0           py37h89c1867_0    conda-forge
+ipython_genutils          0.2.0                      py_1    conda-forge
+ipywidgets                8.1.2              pyhd8ed1ab_0    conda-forge
+iris                      3.1.0              pyhd8ed1ab_3    conda-forge
+isoduration               20.11.0            pyhd8ed1ab_0    conda-forge
+jasper                    1.900.1           h07fcdf6_1006    conda-forge
+jedi                      0.19.1             pyhd8ed1ab_0    conda-forge
+jinja2                    3.1.3              pyhd8ed1ab_0    conda-forge
+joblib                    1.3.2              pyhd8ed1ab_0    conda-forge
+jpeg                      9e                   h0b41bf4_3    conda-forge
+json-c                    0.15                 h98cffda_0    conda-forge
+json5                     0.9.25             pyhd8ed1ab_0    conda-forge
+jsonpointer               2.0                        py_0    conda-forge
+jsonschema                4.17.3             pyhd8ed1ab_0    conda-forge
+jsonschema-with-format-nongpl 4.17.3             pyhd8ed1ab_0    conda-forge
+jupyter                   1.0.0             pyhd8ed1ab_10    conda-forge
+jupyter-book              0.15.1             pyhd8ed1ab_0    conda-forge
+jupyter-cache             0.5.0              pyhd8ed1ab_0    conda-forge
+jupyter-resource-usage    0.7.1              pyhd8ed1ab_0    conda-forge
+jupyter-server-mathjax    0.2.6              pyh5bfe37b_1    conda-forge
+jupyter_client            7.4.9              pyhd8ed1ab_0    conda-forge
+jupyter_console           6.5.1              pyhd8ed1ab_0    conda-forge
+jupyter_contrib_core      0.4.0              pyhd8ed1ab_0    conda-forge
+jupyter_core              4.11.1           py37h89c1867_0    conda-forge
+jupyter_events            0.6.3              pyhd8ed1ab_1    conda-forge
+jupyter_nbextensions_configurator 0.6.1              pyhd8ed1ab_0    conda-forge
+jupyter_server            1.23.4             pyhd8ed1ab_0    conda-forge
+jupyter_server_fileid     0.9.1              pyhd8ed1ab_0    conda-forge
+jupyter_server_ydoc       0.8.0              pyhd8ed1ab_0    conda-forge
+jupyter_telemetry         0.1.0              pyhd8ed1ab_1    conda-forge
+jupyter_ydoc              0.2.4              pyhd8ed1ab_0    conda-forge
+jupyterhub                4.1.5              pyh31011fe_0    conda-forge
+jupyterhub-base           4.1.5              pyh31011fe_0    conda-forge
+jupyterlab                3.6.7              pyhd8ed1ab_0    conda-forge
+jupyterlab-git            0.44.0             pyhd8ed1ab_0    conda-forge
+jupyterlab-github         3.0.1              pyhd8ed1ab_0    conda-forge
+jupyterlab-system-monitor 0.8.0              pyhd8ed1ab_2    conda-forge
+jupyterlab-topbar         0.6.1              pyhd8ed1ab_2    conda-forge
+jupyterlab-topbar-text    0.6.2              pyhd8ed1ab_0    conda-forge
+jupyterlab_pygments       0.3.0              pyhd8ed1ab_0    conda-forge
+jupyterlab_server         2.24.0             pyhd8ed1ab_0    conda-forge
+jupyterlab_widgets        3.0.10             pyhd8ed1ab_0    conda-forge
+jupytext                  1.15.2             pyh5da7574_0    conda-forge
+kealib                    1.4.14               hcc255d8_2    conda-forge
+kernel-headers_linux-64   2.6.32              he073ed8_17    conda-forge
+keyutils                  1.6.1                h166bdaf_0    conda-forge
+kiwisolver                1.4.4            py37h7cecad7_0    conda-forge
+krb5                      1.19.3               h3790be6_0    conda-forge
+latexcodec                2.0.1              pyh9f0ad1d_0    conda-forge
+lcms2                     2.12                 hddcbb42_0    conda-forge
+ld_impl_linux-64          2.39                 hcc3a1bd_1    conda-forge
+libaec                    1.1.3                h59595ed_0    conda-forge
+libasprintf               0.22.5               h661eb56_2    conda-forge
+libasprintf-devel         0.22.5               h661eb56_2    conda-forge
+libblas                   3.9.0           20_linux64_openblas    conda-forge
+libboost-headers          1.84.0               ha770c72_2    conda-forge
+libbrotlicommon           1.1.0                hd590300_1    conda-forge
+libbrotlidec              1.1.0                hd590300_1    conda-forge
+libbrotlienc              1.1.0                hd590300_1    conda-forge
+libcblas                  3.9.0           20_linux64_openblas    conda-forge
+libcurl                   7.86.0               h7bff187_1    conda-forge
+libdap4                   3.20.6               hd7c4107_2    conda-forge
+libedit                   3.1.20191231         he28a2e2_2    conda-forge
+libev                     4.33                 hd590300_2    conda-forge
+libexpat                  2.6.2                h59595ed_0    conda-forge
+libffi                    3.4.2                h7f98852_5    conda-forge
+libgcc-devel_linux-64     9.5.0               h0a57e50_19    conda-forge
+libgcc-ng                 13.2.0               h807b86a_5    conda-forge
+libgdal                   3.2.1                h38ff51b_7    conda-forge
+libgettextpo              0.22.5               h59595ed_2    conda-forge
+libgettextpo-devel        0.22.5               h59595ed_2    conda-forge
+libgfortran-ng            13.2.0               h69a702a_5    conda-forge
+libgfortran5              13.2.0               ha4646dd_5    conda-forge
+libgit2                   1.1.1                hee63804_1    conda-forge
+libglib                   2.74.1               h7a41b64_0    conda-forge
+libgomp                   13.2.0               h807b86a_5    conda-forge
+libiconv                  1.17                 hd590300_2    conda-forge
+libkml                    1.3.0             h01aab08_1018    conda-forge
+liblapack                 3.9.0           20_linux64_openblas    conda-forge
+libnetcdf                 4.7.4           nompi_h56d31a8_107    conda-forge
+libnghttp2                1.51.0               hdcd2b5c_0    conda-forge
+libnsl                    2.0.1                hd590300_0    conda-forge
+libopenblas               0.3.25          pthreads_h413a1c8_0    conda-forge
+libpng                    1.6.43               h2797004_0    conda-forge
+libpq                     13.5                 hd57d9b9_1    conda-forge
+librttopo                 1.1.0                h1185371_6    conda-forge
+libsanitizer              9.5.0               h2f262e1_19    conda-forge
+libsodium                 1.0.18               h36c2ea0_1    conda-forge
+libspatialindex           1.9.3                h9c3ff4c_4    conda-forge
+libspatialite             5.0.1                he52d314_3    conda-forge
+libsqlite                 3.45.2               h2797004_0    conda-forge
+libssh2                   1.10.0               haa6b8db_3    conda-forge
+libstdcxx-devel_linux-64  9.5.0               h0a57e50_19    conda-forge
+libstdcxx-ng              13.2.0               h7e041cc_5    conda-forge
+libtiff                   4.2.0                hbd63e13_2    conda-forge
+libudunits2               2.2.28               h40f5838_3    conda-forge
+libuuid                   2.38.1               h0b41bf4_0    conda-forge
+libuv                     1.44.2               hd590300_1    conda-forge
+libwebp-base              1.4.0                hd590300_0    conda-forge
+libxcb                    1.16                 hd590300_0    conda-forge
+libxml2                   2.9.12               h72842e0_0    conda-forge
+libzlib                   1.2.13               hd590300_5    conda-forge
+linkify-it-py             2.0.3              pyhd8ed1ab_0    conda-forge
+locket                    1.0.0              pyhd8ed1ab_0    conda-forge
+lz4-c                     1.9.3                h9c3ff4c_1    conda-forge
+make                      4.3                  hd18ef5c_1    conda-forge
+mako                      1.3.3              pyhd8ed1ab_0    conda-forge
+mapclassify               2.5.0              pyhd8ed1ab_1    conda-forge
+markdown-it-py            2.2.0              pyhd8ed1ab_0    conda-forge
+markupsafe                2.1.1            py37h540881e_1    conda-forge
+matplotlib-base           3.5.3            py37hf395dca_2    conda-forge
+matplotlib-inline         0.1.7              pyhd8ed1ab_0    conda-forge
+mdit-py-plugins           0.3.5              pyhd8ed1ab_0    conda-forge
+mdurl                     0.1.2              pyhd8ed1ab_0    conda-forge
+mistune                   3.0.2              pyhd8ed1ab_0    conda-forge
+munch                     2.5.0                      py_0    conda-forge
+munkres                   1.1.4              pyh9f0ad1d_0    conda-forge
+myst-nb                   0.17.2             pyhd8ed1ab_0    conda-forge
+myst-parser               0.18.1             pyhd8ed1ab_0    conda-forge
+nbclassic                 1.0.0              pyhb4ecaf3_1    conda-forge
+nbclient                  0.5.13             pyhd8ed1ab_0    conda-forge
+nbconvert                 7.6.0              pyhd8ed1ab_0    conda-forge
+nbconvert-core            7.6.0              pyhd8ed1ab_0    conda-forge
+nbconvert-pandoc          7.6.0              pyhd8ed1ab_0    conda-forge
+nbdime                    3.2.1              pyhd8ed1ab_0    conda-forge
+nbformat                  5.8.0              pyhd8ed1ab_0    conda-forge
+nbgitpuller               1.2.1              pyhd8ed1ab_0    conda-forge
+nco                       4.9.9                h1e74faa_0    conda-forge
+ncurses                   6.4.20240210         h59595ed_0    conda-forge
+nest-asyncio              1.6.0              pyhd8ed1ab_0    conda-forge
+netcdf-fortran            4.5.3           nompi_h996563d_103    conda-forge
+netcdf4                   1.5.6           nompi_py37hf7b6e46_102    conda-forge
+networkx                  2.7                pyhd8ed1ab_0    conda-forge
+nodejs                    14.20.1              hb42c98f_1    conda-forge
+notebook                  6.5.6              pyha770c72_0    conda-forge
+notebook-shim             0.2.4              pyhd8ed1ab_0    conda-forge
+numpy                     1.21.6           py37h976b520_0    conda-forge
+oauthlib                  3.2.2              pyhd8ed1ab_0    conda-forge
+olefile                   0.47               pyhd8ed1ab_0    conda-forge
+openjdk                   11.0.1            h600c080_1018    conda-forge
+openjpeg                  2.4.0                hb52868f_1    conda-forge
+openssl                   1.1.1w               hd590300_0    conda-forge
+ossuuid                   1.6.2             hf484d3e_1000    conda-forge
+packaging                 23.2               pyhd8ed1ab_0    conda-forge
+pamela                    1.1.0              pyh1a96a4e_0    conda-forge
+pandas                    1.3.5            py37he8f5f7f_0    conda-forge
+pandoc                    3.1.13               ha770c72_0    conda-forge
+pandocfilters             1.5.0              pyhd8ed1ab_0    conda-forge
+pango                     1.48.10              h54213e6_2    conda-forge
+parso                     0.8.4              pyhd8ed1ab_0    conda-forge
+partd                     1.4.1              pyhd8ed1ab_0    conda-forge
+pcre                      8.45                 h9c3ff4c_0    conda-forge
+pcre2                     10.37                hc3806b6_1    conda-forge
+pexpect                   4.9.0              pyhd8ed1ab_0    conda-forge
+pickleshare               0.7.5                   py_1003    conda-forge
+pillow                    8.2.0            py37h4600e1f_1    conda-forge
+pip                       24.0               pyhd8ed1ab_0    conda-forge
+pixman                    0.43.2               h59595ed_0    conda-forge
+pkgutil-resolve-name      1.3.10             pyhd8ed1ab_1    conda-forge
+platformdirs              4.0.0              pyhd8ed1ab_0    conda-forge
+pooch                     1.8.1              pyhd8ed1ab_0    conda-forge
+poppler                   0.89.0               h2de54a5_5    conda-forge
+poppler-data              0.4.12               hd8ed1ab_0    conda-forge
+postgresql                13.5                 h2510834_1    conda-forge
+proj                      7.2.0                h277dcde_2    conda-forge
+prometheus_client         0.17.1             pyhd8ed1ab_0    conda-forge
+prompt-toolkit            3.0.42             pyha770c72_0    conda-forge
+prompt_toolkit            3.0.42               hd8ed1ab_0    conda-forge
+psutil                    5.9.3            py37h540881e_0    conda-forge
+pthread-stubs             0.4               h36c2ea0_1001    conda-forge
+ptyprocess                0.7.0              pyhd3deb0d_0    conda-forge
+pybtex                    0.24.0             pyhd8ed1ab_2    conda-forge
+pybtex-docutils           1.0.2            py37h89c1867_1    conda-forge
+pycparser                 2.21               pyhd8ed1ab_0    conda-forge
+pycurl                    7.45.1           py37haaec8a5_2    conda-forge
+pydata-sphinx-theme       0.13.3             pyhd8ed1ab_0    conda-forge
+pygments                  2.17.2             pyhd8ed1ab_0    conda-forge
+pyjwt                     2.8.0              pyhd8ed1ab_1    conda-forge
+pyopenssl                 23.2.0             pyhd8ed1ab_1    conda-forge
+pyparsing                 3.1.2              pyhd8ed1ab_0    conda-forge
+pyproj                    3.1.0            py37h20b8899_3    conda-forge
+pyrsistent                0.18.1           py37h540881e_1    conda-forge
+pyshp                     2.3.1              pyhd8ed1ab_0    conda-forge
+pysocks                   1.7.1            py37h89c1867_5    conda-forge
+python                    3.7.12          hb7a2778_100_cpython    conda-forge
+python-dateutil           2.9.0              pyhd8ed1ab_0    conda-forge
+python-fastjsonschema     2.19.1             pyhd8ed1ab_0    conda-forge
+python-json-logger        2.0.7              pyhd8ed1ab_0    conda-forge
+python-xxhash             3.0.0            py37h540881e_1    conda-forge
+python_abi                3.7                     4_cp37m    conda-forge
+pytz                      2024.1             pyhd8ed1ab_0    conda-forge
+pyyaml                    6.0              py37h540881e_4    conda-forge
+pyzmq                     24.0.1           py37h0c0c2a8_0    conda-forge
+qtconsole-base            5.4.4              pyha770c72_0    conda-forge
+qtpy                      2.4.1              pyhd8ed1ab_0    conda-forge
+r-abind                   1.4_5           r36h6115d3f_1003    conda-forge
+r-akima                   0.6_2.1           r36h5861495_1    conda-forge
+r-askpass                 1.1               r36hcfec24a_2    conda-forge
+r-assertthat              0.2.1             r36h6115d3f_2    conda-forge
+r-backports               1.2.1             r36hcfec24a_0    conda-forge
+r-base                    3.6.3                hbcea092_8    conda-forge
+r-base64enc               0.1_3           r36hcfec24a_1004    conda-forge
+r-bitops                  1.0_7             r36hcfec24a_0    conda-forge
+r-boot                    1.3_28            r36hc72bb7e_0    conda-forge
+r-brew                    1.0_6           r36h6115d3f_1003    conda-forge
+r-brio                    1.1.2             r36hcfec24a_0    conda-forge
+r-cachem                  1.0.5             r36hcfec24a_0    conda-forge
+r-callr                   3.7.0             r36hc72bb7e_0    conda-forge
+r-circstats               0.2_6                  r36_1002    conda-forge
+r-class                   7.3_19            r36hcfec24a_0    conda-forge
+r-cli                     2.5.0             r36hc72bb7e_0    conda-forge
+r-climate4r.climdex       0.2.2             r36ha770c72_3    conda-forge
+r-climate4r.datasets      0.0.1             r36ha770c72_3    conda-forge
+r-climate4r.indices       0.2.0             r36ha770c72_3    conda-forge
+r-climate4r.udg           0.2.3             r36ha770c72_1    conda-forge
+r-climate4r.value         0.0.2             r36ha770c72_1    conda-forge
+r-climdex.pcic            1.1_11            r36h03ef668_0    conda-forge
+r-clipr                   0.7.1             r36h142f84f_0    conda-forge
+r-codetools               0.2_18            r36hc72bb7e_0    conda-forge
+r-colorspace              2.0_1             r36hcfec24a_0    conda-forge
+r-commonmark              1.7             r36hcfec24a_1002    conda-forge
+r-config                  0.3.1             r36hc72bb7e_0    conda-forge
+r-convertr                0.2.0             r36ha770c72_0    conda-forge
+r-covr                    3.5.1             r36h03ef668_0    conda-forge
+r-crayon                  1.4.1             r36hc72bb7e_0    conda-forge
+r-credentials             1.3.0             r36h6115d3f_0    conda-forge
+r-crosstalk               1.1.1             r36hc72bb7e_0    conda-forge
+r-curl                    4.3.1             r36hcfec24a_0    conda-forge
+r-data.table              1.14.0            r36hcfec24a_0    conda-forge
+r-deepnet                 0.2.1             r36hc72bb7e_3    conda-forge
+r-deldir                  0.2_10            r36h859d828_0    conda-forge
+r-desc                    1.3.0             r36hc72bb7e_0    conda-forge
+r-devtools                2.4.1             r36hc72bb7e_0    conda-forge
+r-diffobj                 0.3.4             r36hcfec24a_0    conda-forge
+r-digest                  0.6.27            r36h03ef668_0    conda-forge
+r-dismo                   1.3_3             r36h36c2ea0_0    conda-forge
+r-dotcall64               1.0_1             r36h859d828_0    conda-forge
+r-downscaler              3.3.3             r36ha770c72_0    conda-forge
+r-downscaler.keras        1.0.0             r36ha770c72_1    conda-forge
+r-dplyr                   1.0.6             r36h03ef668_1    conda-forge
+r-drought4r               0.2.0             r36ha770c72_0    conda-forge
+r-dt                      0.18              r36hc72bb7e_0    conda-forge
+r-dtw                     1.22_3            r36h516909a_0    conda-forge
+r-e1071                   1.7_7             r36h03ef668_0    conda-forge
+r-earth                   5.3.0             r36h580db52_1    conda-forge
+r-easyverification        0.4.5             r36ha503ecb_0    conda-forge
+r-ellipsis                0.3.2             r36hcfec24a_0    conda-forge
+r-evaluate                0.14              r36h6115d3f_2    conda-forge
+r-evd                     2.3_3           r36hcdcec82_1003    conda-forge
+r-fansi                   0.4.2             r36hcfec24a_0    conda-forge
+r-farver                  2.1.0             r36h03ef668_0    conda-forge
+r-fastmap                 1.1.0             r36h03ef668_0    conda-forge
+r-fields                  12.3              r36h859d828_0    conda-forge
+r-firedanger              1.1.0             r36ha770c72_3    conda-forge
+r-foreach                 1.5.1             r36h142f84f_0    conda-forge
+r-formula                 1.2_4             r36h142f84f_0    conda-forge
+r-fs                      1.5.0             r36h0357c0b_0    conda-forge
+r-gdalutils               2.0.3.2           r36h6115d3f_1    conda-forge
+r-generics                0.1.0             r36hc72bb7e_0    conda-forge
+r-geoprocessor            0.2.0             r36ha770c72_0    conda-forge
+r-gert                    1.3.0             r36hbd84cd2_0    conda-forge
+r-ggplot2                 3.3.3             r36hc72bb7e_0    conda-forge
+r-gh                      1.3.0             r36hc72bb7e_0    conda-forge
+r-git2r                   0.28.0            r36hf628c3e_0    conda-forge
+r-gitcreds                0.1.1             r36hc72bb7e_0    conda-forge
+r-glmnet                  4.1_1             r36h859d828_0    conda-forge
+r-glue                    1.4.2             r36hcfec24a_0    conda-forge
+r-goftest                 1.2_2             r36hcdcec82_1    conda-forge
+r-gridextra               2.3             r36h6115d3f_1003    conda-forge
+r-gtable                  0.3.0             r36h6115d3f_3    conda-forge
+r-gtools                  3.8.2             r36hcdcec82_1    conda-forge
+r-here                    1.0.1             r36hc72bb7e_0    conda-forge
+r-highr                   0.9               r36hc72bb7e_0    conda-forge
+r-htmltools               0.5.1.1           r36h03ef668_0    conda-forge
+r-htmlwidgets             1.5.3             r36hc72bb7e_0    conda-forge
+r-httr                    1.4.2             r36h6115d3f_0    conda-forge
+r-ini                     0.3.1           r36h6115d3f_1003    conda-forge
+r-irdisplay               1.0               r36hd8ed1ab_0    conda-forge
+r-irkernel                1.2               r36hc72bb7e_0    conda-forge
+r-isoband                 0.2.4             r36h03ef668_0    conda-forge
+r-iterators               1.0.13            r36h142f84f_0    conda-forge
+r-jpeg                    0.1_8.1           r36hcdcec82_1    conda-forge
+r-jsonlite                1.7.2             r36hcfec24a_0    conda-forge
+r-keras                   2.4.0             r36hc72bb7e_0    conda-forge
+r-knitr                   1.33              r36hc72bb7e_0    conda-forge
+r-kohonen                 3.0.10            r36he1b5a44_1    conda-forge
+r-labeling                0.4.2             r36h142f84f_0    conda-forge
+r-later                   1.2.0             r36h03ef668_0    conda-forge
+r-lattice                 0.20_44           r36hcfec24a_0    conda-forge
+r-latticeextra            0.6_29            r36h6115d3f_1    conda-forge
+r-lazyeval                0.2.2             r36hcfec24a_2    conda-forge
+r-lifecycle               1.0.0             r36hc72bb7e_0    conda-forge
+r-lmomco                  2.3.6             r36hc72bb7e_0    conda-forge
+r-lmoments                1.3_1             r36hc8faad4_3    conda-forge
+r-loader                  1.7.1             r36ha770c72_3    conda-forge
+r-loader.2nc              0.1.2             r36ha770c72_3    conda-forge
+r-loader.ecoms            1.4.6             r36ha770c72_0    conda-forge
+r-loader.java             1.1.1             r36ha770c72_0    conda-forge
+r-lpsolve                 5.6.15            r36hcdcec82_1    conda-forge
+r-lubridate               1.7.10            r36h03ef668_0    conda-forge
+r-magrittr                2.0.1             r36hcfec24a_1    conda-forge
+r-mapplots                1.5.1           r36h6115d3f_1002    conda-forge
+r-maps                    3.3.0           r36hcdcec82_1004    conda-forge
+r-markdown                1.1               r36hcfec24a_1    conda-forge
+r-mass                    7.3_54            r36hcfec24a_0    conda-forge
+r-matrix                  1.3_3             r36he454529_0    conda-forge
+r-memoise                 2.0.0             r36hc72bb7e_0    conda-forge
+r-mgcv                    1.8_35            r36he454529_0    conda-forge
+r-mime                    0.10              r36hcfec24a_0    conda-forge
+r-mopa                    1.0.0             r36ha770c72_0    conda-forge
+r-munsell                 0.5.0           r36h6115d3f_1003    conda-forge
+r-ncdf4                   1.17              r36h4fa2c38_4    conda-forge
+r-nlme                    3.1_152           r36h859d828_0    conda-forge
+r-openssl                 1.4.4             r36he36bf35_0    conda-forge
+r-padr                    0.5.3             r36h0357c0b_0    conda-forge
+r-pbapply                 1.4_3             r36h6115d3f_0    conda-forge
+r-pbdzmq                  0.3_5             r36h42bf92c_1    conda-forge
+r-pcict                   0.5_4.1           r36hcdcec82_0    conda-forge
+r-pillar                  1.6.1             r36hc72bb7e_0    conda-forge
+r-pkgbuild                1.2.0             r36hc72bb7e_0    conda-forge
+r-pkgconfig               2.0.3             r36h6115d3f_1    conda-forge
+r-pkgload                 1.2.1             r36h03ef668_0    conda-forge
+r-plotmo                  3.6.0             r36h6115d3f_0    conda-forge
+r-plotrix                 3.8_1             r36hc72bb7e_0    conda-forge
+r-png                     0.1_7           r36hcfec24a_1004    conda-forge
+r-polyclip                1.10_0            r36h0357c0b_2    conda-forge
+r-praise                  1.0.0           r36h6115d3f_1004    conda-forge
+r-presenceabsence         1.1.9             r36hc72bb7e_0    conda-forge
+r-prettyunits             1.1.1             r36h6115d3f_1    conda-forge
+r-processx                3.5.2             r36hcfec24a_0    conda-forge
+r-promises                1.2.0.1           r36h03ef668_0    conda-forge
+r-proxy                   0.4_25            r36hcfec24a_0    conda-forge
+r-ps                      1.6.0             r36hcfec24a_0    conda-forge
+r-purrr                   0.3.4             r36hcfec24a_1    conda-forge
+r-r.methodss3             1.8.1             r36h6115d3f_0    conda-forge
+r-r.oo                    1.24.0            r36h6115d3f_0    conda-forge
+r-r.utils                 2.10.1            r36h6115d3f_0    conda-forge
+r-r6                      2.5.0             r36hc72bb7e_0    conda-forge
+r-randomforest            4.6_14          r36h580db52_1004    conda-forge
+r-ranger                  0.12.1            r36h0357c0b_1    conda-forge
+r-rappdirs                0.3.3             r36hcfec24a_0    conda-forge
+r-raster                  3.4_10            r36h03ef668_0    conda-forge
+r-rcmdcheck               1.3.3             r36h6115d3f_3    conda-forge
+r-rcolorbrewer            1.1_2           r36h6115d3f_1003    conda-forge
+r-rcpp                    1.0.6             r36h03ef668_0    conda-forge
+r-rcpparmadillo           0.10.4.0.0        r36h306847c_0    conda-forge
+r-rcppeigen               0.3.3.9.1         r36h306847c_0    conda-forge
+r-rcpptoml                0.1.7             r36h03ef668_0    conda-forge
+r-rcurl                   1.98_1.3          r36hcfec24a_0    conda-forge
+r-rematch2                2.1.2             r36h6115d3f_1    conda-forge
+r-remotes                 2.3.0             r36hc72bb7e_0    conda-forge
+r-repr                    1.1.3             r36h785f33e_0    conda-forge
+r-reticulate              1.28              r36h38f115c_0    conda-forge
+r-rex                     1.2.0             r36h6115d3f_1    conda-forge
+r-rgdal                   1.5_16            r36hb42392b_3    conda-forge
+r-rjava                   1.0_4             r36hcfec24a_0    conda-forge
+r-rlang                   0.4.11            r36hcfec24a_0    conda-forge
+r-roxygen2                7.1.1             r36h0357c0b_0    conda-forge
+r-rpart                   4.1_15            r36hcfec24a_2    conda-forge
+r-rprojroot               2.0.2             r36hc72bb7e_0    conda-forge
+r-rstudioapi              0.13              r36hc72bb7e_0    conda-forge
+r-rversions               2.0.2             r36h6115d3f_0    conda-forge
+r-sampling                2.9               r36h7f98852_0    conda-forge
+r-scales                  1.1.1             r36h6115d3f_0    conda-forge
+r-sessioninfo             1.1.1           r36h6115d3f_1002    conda-forge
+r-shape                   1.4.6             r36ha770c72_0    conda-forge
+r-signal                  0.7_6           r36h86c2bf4_1006    conda-forge
+r-sm                      2.2_5.6         r36h580db52_1004    conda-forge
+r-sp                      1.4_5             r36hcfec24a_0    conda-forge
+r-spam                    2.6_0             r36h52d45c5_0    conda-forge
+r-spatstat                1.64_1            r36h0357c0b_0    conda-forge
+r-spatstat.data           2.1_0             r36hc72bb7e_0    conda-forge
+r-spatstat.utils          2.1_0             r36h7f98852_0    conda-forge
+r-specsverification       0.5_3             r36ha503ecb_3    conda-forge
+r-spei                    1.7               r36hc72bb7e_0    conda-forge
+r-splancs                 2.01_42           r36h859d828_0    conda-forge
+r-sticky                  0.5.6.1           r36hc72bb7e_0    conda-forge
+r-stringi                 1.6.2             r36hcabe038_0    conda-forge
+r-stringr                 1.4.0             r36h6115d3f_2    conda-forge
+r-survival                3.2_11            r36hcfec24a_0    conda-forge
+r-sys                     3.4               r36hcfec24a_0    conda-forge
+r-teachingdemos           2.12              r36h6115d3f_1    conda-forge
+r-tensor                  1.5             r36h6115d3f_1003    conda-forge
+r-tensorflow              2.6.0             r36hc72bb7e_1    conda-forge
+r-testthat                3.0.2             r36h03ef668_0    conda-forge
+r-tfautograph             0.3.2             r36hc72bb7e_3    conda-forge
+r-tfruns                  1.5.0             r36hc72bb7e_0    conda-forge
+r-tibble                  3.1.2             r36hcfec24a_0    conda-forge
+r-tidyselect              1.1.1             r36hc72bb7e_0    conda-forge
+r-transformer             2.1.3             r36ha770c72_0    conda-forge
+r-tree                    1.0_40            r36hcdcec82_1    conda-forge
+r-udunits2                0.13            r36hcdcec82_1004    conda-forge
+r-usethis                 2.0.1             r36hc72bb7e_0    conda-forge
+r-utf8                    1.2.1             r36hcfec24a_0    conda-forge
+r-uuid                    0.1_4             r36hcdcec82_1    conda-forge
+r-value                   2.2.2             r36ha770c72_3    conda-forge
+r-vctrs                   0.3.8             r36hcfec24a_1    conda-forge
+r-verification            1.42            r36h6115d3f_1002    conda-forge
+r-vioplot                 0.3.6             r36hc72bb7e_0    conda-forge
+r-viridis                 0.6.1             r36hc72bb7e_0    conda-forge
+r-viridislite             0.4.0             r36hc72bb7e_0    conda-forge
+r-visualizer              1.6.1             r36ha770c72_1    conda-forge
+r-waldo                   0.2.5             r36hc72bb7e_0    conda-forge
+r-whisker                 0.4               r36h6115d3f_1    conda-forge
+r-withr                   2.4.2             r36hc72bb7e_0    conda-forge
+r-xfun                    0.23              r36hcfec24a_0    conda-forge
+r-xml2                    1.3.2             r36h0357c0b_1    conda-forge
+r-xopen                   1.0.0           r36h6115d3f_1003    conda-forge
+r-xtable                  1.8_4             r36h6115d3f_3    conda-forge
+r-yaml                    2.2.1             r36hcfec24a_1    conda-forge
+r-zeallot                 0.1.0           r36h6115d3f_1002    conda-forge
+r-zip                     2.1.1             r36hcfec24a_0    conda-forge
+r-zoo                     1.8_9             r36hcfec24a_0    conda-forge
+rasterio                  1.2.6            py37hd5c4cce_0    conda-forge
+readline                  8.2                  h8228510_1    conda-forge
+regionmask                0.10.0             pyhd8ed1ab_0    conda-forge
+requests                  2.31.0             pyhd8ed1ab_0    conda-forge
+rfc3339-validator         0.1.4              pyhd8ed1ab_0    conda-forge
+rfc3986-validator         0.1.1              pyh9f0ad1d_0    conda-forge
+rtree                     1.0.1            py37h0b55af0_0    conda-forge
+ruamel.yaml               0.17.21          py37h540881e_1    conda-forge
+ruamel.yaml.clib          0.2.6            py37h540881e_1    conda-forge
+scikit-learn              1.0.2            py37hf9e9bfc_0    conda-forge
+scipy                     1.7.3            py37hf2a6cf1_0    conda-forge
+sed                       4.8                  he412f7d_0    conda-forge
+send2trash                1.8.3              pyh0d859eb_0    conda-forge
+setuptools                59.8.0           py37h89c1867_1    conda-forge
+shapely                   1.8.0            py37h48c49eb_0    conda-forge
+six                       1.16.0             pyh6c4a22f_0    conda-forge
+smmap                     5.0.0              pyhd8ed1ab_0    conda-forge
+sniffio                   1.3.1              pyhd8ed1ab_0    conda-forge
+snowballstemmer           2.2.0              pyhd8ed1ab_0    conda-forge
+snuggs                    1.4.7                      py_0    conda-forge
+soupsieve                 2.3.2.post1        pyhd8ed1ab_0    conda-forge
+sphinx                    5.0.2              pyh6c4a22f_0    conda-forge
+sphinx-book-theme         1.0.1              pyhd8ed1ab_0    conda-forge
+sphinx-comments           0.0.3              pyh9f0ad1d_0    conda-forge
+sphinx-copybutton         0.5.2              pyhd8ed1ab_0    conda-forge
+sphinx-design             0.3.0              pyhd8ed1ab_0    conda-forge
+sphinx-external-toc       0.3.1              pyhd8ed1ab_1    conda-forge
+sphinx-jupyterbook-latex  0.5.2              pyhd8ed1ab_0    conda-forge
+sphinx-multitoc-numbering 0.1.3              pyhd8ed1ab_0    conda-forge
+sphinx-thebe              0.2.1              pyhd8ed1ab_0    conda-forge
+sphinx-togglebutton       0.3.2              pyhd8ed1ab_0    conda-forge
+sphinxcontrib-applehelp   1.0.4              pyhd8ed1ab_0    conda-forge
+sphinxcontrib-bibtex      2.5.0              pyhd8ed1ab_0    conda-forge
+sphinxcontrib-devhelp     1.0.2                      py_0    conda-forge
+sphinxcontrib-htmlhelp    2.0.1              pyhd8ed1ab_0    conda-forge
+sphinxcontrib-jsmath      1.0.1              pyhd8ed1ab_0    conda-forge
+sphinxcontrib-qthelp      1.0.3                      py_0    conda-forge
+sphinxcontrib-serializinghtml 1.1.5              pyhd8ed1ab_2    conda-forge
+sqlalchemy                1.4.42           py37h540881e_0    conda-forge
+sqlite                    3.45.2               h2c6b66d_0    conda-forge
+sysroot_linux-64          2.12                he073ed8_17    conda-forge
+tabulate                  0.9.0              pyhd8ed1ab_1    conda-forge
+tempest-remap             2.0.5                h1b20e2d_0    conda-forge
+terminado                 0.17.1             pyh41d4057_0    conda-forge
+threadpoolctl             3.1.0              pyh8a188c0_0    conda-forge
+tiledb                    2.2.9                h91fcb0e_0    conda-forge
+tinycss2                  1.2.1              pyhd8ed1ab_0    conda-forge
+tk                        8.6.13          noxft_h4845f30_101    conda-forge
+tktable                   2.10                 h0c5db8f_5    conda-forge
+toml                      0.10.2             pyhd8ed1ab_0    conda-forge
+tomli                     2.0.1              pyhd8ed1ab_0    conda-forge
+toolz                     0.12.1             pyhd8ed1ab_0    conda-forge
+tornado                   6.2              py37h540881e_0    conda-forge
+traitlets                 5.9.0              pyhd8ed1ab_0    conda-forge
+typing-extensions         4.7.1                hd8ed1ab_0    conda-forge
+typing_extensions         4.7.1              pyha770c72_0    conda-forge
+tzcode                    2024a                h3f72095_0    conda-forge
+tzdata                    2024a                h0c530f3_0    conda-forge
+uc-micro-py               1.0.3              pyhd8ed1ab_0    conda-forge
+udunits2                  2.2.28               h40f5838_3    conda-forge
+unicodedata2              14.0.0           py37h540881e_1    conda-forge
+uri-template              1.3.0              pyhd8ed1ab_0    conda-forge
+uriparser                 0.9.7                h59595ed_1    conda-forge
+urllib3                   2.2.1              pyhd8ed1ab_0    conda-forge
+wcwidth                   0.2.10             pyhd8ed1ab_0    conda-forge
+webcolors                 1.13               pyhd8ed1ab_0    conda-forge
+webencodings              0.5.1              pyhd8ed1ab_2    conda-forge
+websocket-client          1.6.1              pyhd8ed1ab_0    conda-forge
+wheel                     0.42.0             pyhd8ed1ab_0    conda-forge
+widgetsnbextension        4.0.10             pyhd8ed1ab_0    conda-forge
+xarray                    0.20.2             pyhd8ed1ab_0    conda-forge
+xerces-c                  3.2.3                h9d8b166_3    conda-forge
+xorg-fixesproto           5.0               h7f98852_1002    conda-forge
+xorg-inputproto           2.3.2             h7f98852_1002    conda-forge
+xorg-kbproto              1.0.7             h7f98852_1002    conda-forge
+xorg-libice               1.1.1                hd590300_0    conda-forge
+xorg-libsm                1.2.4                h7391055_0    conda-forge
+xorg-libx11               1.7.2                h7f98852_0    conda-forge
+xorg-libxau               1.0.11               hd590300_0    conda-forge
+xorg-libxdmcp             1.1.3                h7f98852_0    conda-forge
+xorg-libxext              1.3.4                h0b41bf4_2    conda-forge
+xorg-libxfixes            5.0.3             h7f98852_1004    conda-forge
+xorg-libxi                1.7.10               h7f98852_0    conda-forge
+xorg-libxrender           0.9.10            h7f98852_1003    conda-forge
+xorg-libxtst              1.2.3             h7f98852_1002    conda-forge
+xorg-recordproto          1.14.2            h7f98852_1002    conda-forge
+xorg-renderproto          0.11.1            h7f98852_1002    conda-forge
+xorg-xextproto            7.3.0             h0b41bf4_1003    conda-forge
+xorg-xproto               7.0.31            h7f98852_1007    conda-forge
+xxhash                    0.8.0                h7f98852_3    conda-forge
+xyzservices               2023.5.0           pyhd8ed1ab_0    conda-forge
+xz                        5.2.6                h166bdaf_0    conda-forge
+y-py                      0.5.4            py37hbd0741f_0    conda-forge
+yaml                      0.2.5                h7f98852_2    conda-forge
+ypy-websocket             0.8.2              pyhd8ed1ab_0    conda-forge
+zeromq                    4.3.5                h59595ed_1    conda-forge
+zipp                      3.15.0             pyhd8ed1ab_0    conda-forge
+zlib                      1.2.13               hd590300_5    conda-forge
+zstd                      1.4.9                ha95c52a_0    conda-forge
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<div class="docutils container" id="id3">
+<div class="citation" id="id15" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>CGNL<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id1">1</a>,<a role="doc-backlink" href="#id2">2</a>)</span>
+<p>O.B. Christensen, W.J. Gutowski, G. Nikulin, and S. Legutke. CORDEX Archive Design.</p>
+</div>
+</div>
+</div>
+<script src="https://utteranc.es/client.js"
+        repo="PhantomAurelia/Atlas"
+        issue-term="pathname"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script></section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "PhantomAurelia/Atlas",
+            ref: "jb-test",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="bias-adjustment_R.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Atlas notebooks</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="GeoTIFF-post-processing_R.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">GeoTIFF file post-processing: Spatial operations</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-packages">Load packages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-the-reference-regions">Loading the reference regions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-reference-grids-0-5-degree">Loading reference grids (0.5 degree)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-cordex-domains">Defining CORDEX domains</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculating-overlaps">Calculating overlaps</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-those-reference-regions-that-overlap-larger-than-80-for-every-cordex-domain">Selecting those reference regions that overlap larger than 80% for every CORDEX domain</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#session-info">Session info</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By David Domínguez Román
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

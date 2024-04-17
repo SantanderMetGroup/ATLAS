@@ -1,0 +1,1630 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Atlas notebooks &#8212; IPCC-ATLAS Jupyter Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "PhantomAurelia/Atlas");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/bias-adjustment_R';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Selecting reference regions used for every CORDEX domain" href="CORDEX-overlaps_Python.html" />
+    <link rel="prev" title="Computing and visualizing transient global warming levels" href="global-warming-levels_R.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Repository supporting the implementation of FAIR principles in the IPCC-WGI Atlas
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Information</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../warming-levels/warming-levels.html">Global Warming Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data-sources/data-sources.html">Data sources used in the Atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference-grids/reference-grids.html">Sets of reference grids</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/datasets-interactive-atlas.html">Code for reproducibility of the Interactive Atlas Dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference-regions/reference-regions.html">Sets of regions for regional synthesis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-aggregated-regionally/datasets-aggregated-regionally.html">Aggregated datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Notebooks</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Notebooks</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="regional-scatter-plots_R.html">Computing and visualizing regional climate change (temperature vs precipitation) for reference regions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="global-warming-levels_R.html">Computing and visualizing transient global warming levels</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Atlas notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CORDEX-overlaps_Python.html">Selecting reference regions used for every CORDEX domain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GeoTIFF-post-processing_R.html">GeoTIFF file post-processing: Spatial operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hatching-uncertainty_R.html">Calculation and hatching of the uncertainty in projected delta changes.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linear-trends_R.html">Computing and visualization of precipitation linear trends during the observed period (1980-2014)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference-grids_R.html">Using the Atlas reference grids in <code class="docutils literal notranslate"><span class="pre">R</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference-regions_Python.html">Using the 4th version of the IPCC WGI reference regions in Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference-regions_R.html">Using the 4th version of the IPCC WGI reference regions in R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stripes-plots_R.html">Create stripes of anual temperature and precipitation mean values.</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../ERRATA.html">Errata and problem reporting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/reproducibility.html">Reproducibility scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="auxiliary-material/auxiliary-material.html">Auxiliary Materials for Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../binder/binder.html">Binder image deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/maps/maps.html">Code for reproducibility of the Atlas Map figures of model projections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/observations/observations.html">Code for reproducibility of the ATLAS spatial maps of the observed linear trends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/bash-interpolation-scripts/bash-interpolation-scripts.html">Bash interpolation scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets-interactive-atlas/bash-interpolation-scripts/AtlasCDOremappeR_CORDEX/atlasCDOremappeR.html">AtlasCDOremappeR for CORDEX RCM simulations</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/PhantomAurelia/Atlas/jb-test?urlpath=lab/tree/./notebooks/bias-adjustment_R.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas/edit/jb-test/./notebooks/bias-adjustment_R.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/PhantomAurelia/Atlas/issues/new?title=Issue%20on%20page%20%2Fnotebooks/bias-adjustment_R.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/bias-adjustment_R.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Atlas notebooks</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bias-adjustment-of-model-temperatures-for-the-calculation-of-extreme-indices">Bias adjustment of model temperatures for the calculation of extreme indices</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-packages">Loading packages</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-the-parameters-of-the-experiment">Defining the parameters of the experiment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-datasets">Loading datasets</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#online-from-the-user-data-gateway-thredds-access-portal-udg-tap">Online from the User Data Gateway - Thredds Access Portal (UDG-TAP)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#from-local-files">From local files</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-biases">Model biases</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bias-adjustment">Bias adjustment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculation-of-extreme-temperature-indices">Calculation of extreme temperature indices</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#session-info">Session info</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="atlas-notebooks">
+<h1>Atlas notebooks<a class="headerlink" href="#atlas-notebooks" title="Permalink to this heading">#</a></h1>
+<hr class="docutils" />
+<blockquote>
+<div><p>This notebook reproduces and extends parts of the figures and products of the AR6-WGI Atlas. It is part of a notebook collection available at <a class="github reference external" href="https://github.com/IPCC-WG1/Atlas">IPCC-WG1/Atlas</a> for reproducibility and reusability purposes. This work is licensed under a <a class="reference external" href="http://creativecommons.org/licenses/by/4.0">Creative Commons Attribution 4.0 International License</a>.</p>
+<p><img alt="Creative Commons License &gt;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></p>
+</div></blockquote>
+<section id="bias-adjustment-of-model-temperatures-for-the-calculation-of-extreme-indices">
+<h2>Bias adjustment of model temperatures for the calculation of extreme indices<a class="headerlink" href="#bias-adjustment-of-model-temperatures-for-the-calculation-of-extreme-indices" title="Permalink to this heading">#</a></h2>
+<p>29/6/2021</p>
+<p><strong>A. Casanueva</strong> (<a class="reference external" href="http://meteo.unican.es">Santander Meteorology Group</a>. Dept. Applied Mathematics and Compute Science, University of Cantabria, Santander, Spain)</p>
+<p>Bias adjustment is used in the IPCC interactive Atlas for the calculation of absolute threshold-based indices, namely the number of days with maximum temperature above 35ºC (TX35) and above 40ºC (TX40), and the number of frost days (minimum temperature below 0ºC). More details about bias adjustment can be found in the Atlas chapter from the IPCC-AR6 (Cross-Chapter Box 10.2: “Issues in bias adjustment”) and in <a class="reference external" href="https://doi.org/10.1002/asl.978">Casanueva et al. 2020</a>.</p>
+<p>Among the wide variety of methods typically used by the climate community for bias adjustment, this notebook focuses on ISIMIP3 (<a class="reference external" href="https://doi.org/10.5194/gmd-12-3055-2019">Lange 2019</a>), a parametric quantile mapping alternative which has been designed to robustly adjust biases in all percentiles of a distribution whilst preserving their trends. In particular, we use ISIMIP3 in this example to bias-adjust temperature from the r12i1p1 run of the EC-EARTH global climate model, included in the fifth phase of the Coupled Model Intercomparison Project (CMIP5), over the Iberian Peninsula using as reference the W5E5 observational dataset (<a class="reference external" href="https://doi.org/10.5194/essd-12-2097-202">Cucchi et al. 2020</a>). We focus on the boreal summer season (June-July-August) for the calculation of bias-adjusted TX35.</p>
+<section id="loading-packages">
+<h3>Loading packages<a class="headerlink" href="#loading-packages" title="Permalink to this heading">#</a></h3>
+<p>This notebook is based on the R programming language and requires the following <a class="reference external" href="https://github.com/SantanderMetGroup/climate4R">climate4R</a> packages:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">loadeR</span></code> to load climate model and observational datasets (<a class="reference external" href="https://doi.org/10.1016/j.envsoft.2018.09.009">Iturbide et al. 2019</a>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">climate4R.UDG</span></code> to access harmonized climate data via the <a class="reference external" href="http://meteo.unican.es/udg-tap/">Santander Meteorology Group UDG-TAP</a>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">transformeR</span></code> to manipulate climate data (<a class="reference external" href="https://doi.org/10.1016/j.envsoft.2018.09.009">Iturbide et al. 2019</a>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">downscaleR</span></code> to adjust systematic model biases (<a class="reference external" href="https://doi.org/10.5194/gmd-13-1711-2020">Bedia et al. 2020</a>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">climate4R.indices</span></code> to compute climate indices (<a class="reference external" href="https://doi.org/10.1016/j.envsoft.2018.09.009">Iturbide et al. 2019</a>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">visualizeR</span></code> to produce graphical representations of the results (<a class="reference external" href="https://doi.org/10.1016/j.envsoft.2017.09.008">Frías et al. 2018</a>).</p></li>
+</ul>
+<p>Along with:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">rgdal</span></code> to work with spatial data (<a class="reference external" href="https://CRAN.R-project.org/package=rgdal">Bivand et al., 2018</a>).</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">loadeR</span><span class="p">)</span><span class="w"> </span>
+<span class="nf">library</span><span class="p">(</span><span class="n">climate4R.UDG</span><span class="p">)</span><span class="w"> </span>
+<span class="nf">library</span><span class="p">(</span><span class="n">transformeR</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">downscaleR</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">climate4R.indices</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">visualizeR</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">rgdal</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Loading required package: rJava
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Loading required package: loadeR.java
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Java version 11x amd64 by Oracle Corporation detected
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>NetCDF Java Library v4.6.0-SNAPSHOT (23 Apr 2015) loaded and ready
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Loading required package: climate4R.UDG
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>climate4R.UDG version 0.2.3 (2021-07-05) is loaded
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Your current version of climate4R.UDG (v0.2.3) is not up-to-date
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Get the latest stable version (0.2.4) using &lt;devtools::install_github(&#39;SantanderMetGroup/climate4R.UDG&#39;)&gt;
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Please use &#39;citation(&quot;climate4R.UDG&quot;)&#39; to cite this package.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>loadeR version 1.7.1 (2021-07-05) is loaded
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Your current version of loadeR (v1.7.1) is not up-to-date
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Get the latest stable version (1.8.1) using &lt;devtools::install_github(c(&#39;SantanderMetGroup/climate4R.UDG&#39;,&#39;SantanderMetGroup/loadeR&#39;))&gt;
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Please use &#39;citation(&quot;loadeR&quot;)&#39; to cite this package.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    _______   ____  ___________________  __  ________ 
+   / ___/ /  / /  |/  / __  /_  __/ __/ / / / / __  / 
+  / /  / /  / / /|_/ / /_/ / / / / __/ / /_/ / /_/_/  
+ / /__/ /__/ / /  / / __  / / / / /__ /___  / / \ \ 
+ \___/____/_/_/  /_/_/ /_/ /_/  \___/    /_/\/   \_\ 
+ 
+      github.com/SantanderMetGroup/climate4R
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>transformeR version 2.1.3 (2021-08-04) is loaded
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Your current version of transformeR (v2.1.3) is not up-to-date
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Get the latest stable version (2.2.2) using &lt;devtools::install_github(&#39;SantanderMetGroup/transformeR&#39;)&gt;
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Please see &#39;citation(&quot;transformeR&quot;)&#39; to cite this package.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>downscaleR version 3.3.3 (2021-07-05) is loaded
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Your current version of downscaleR (v3.3.3) is not up-to-date
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Get the latest stable version (3.3.4) using &lt;devtools::install_github(c(&#39;SantanderMetGroup/transformeR&#39;,&#39;SantanderMetGroup/downscaleR&#39;))&gt;
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Please use &#39;citation(&quot;downscaleR&quot;)&#39; to cite this package.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>climate4R.indices version 0.2.0 (2021-07-08) is loaded
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Your current version of climate4R.indices (v0.2.0) is not up-to-date
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Get the latest stable version (0.3.1) using &lt;devtools::install_github(&#39;SantanderMetGroup/climate4R.indices&#39;)&gt;
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Use &#39;indexShow()&#39; for an overview of the available climate indices and circIndexShow() for the circulation indices.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>NOTE: use package climate4R.climdex to calculate ETCCDI indices.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Attaching package: ‘climate4R.indices’
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following object is masked from ‘package:transformeR’:
+
+    lambWT
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>visualizeR version 1.6.1 (2021-03-11) is loaded
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Your current version of visualizeR (v1.6.1) is not up-to-date
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Get the latest stable version (1.6.4) using &lt;devtools::install_github(&#39;SantanderMetGroup/visualizeR&#39;)&gt;
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Please see &#39;citation(&quot;visualizeR&quot;)&#39; to cite this package.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Loading required package: sp
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>rgdal: version: 1.5-16, (SVN revision 1050)
+Geospatial Data Abstraction Library extensions to R successfully loaded
+Loaded GDAL runtime: GDAL 3.2.1, released 2020/12/29
+Path to GDAL shared files: /DATA/miniconda3/envs/atlas-jupyterbook/share/gdal
+GDAL binary built with GEOS: TRUE 
+Loaded PROJ runtime: Rel. 7.2.0, November 1st, 2020, [PJ_VERSION: 720]
+Path to PROJ shared files: /DATA/miniconda3/envs/atlas-jupyterbook/share/proj
+PROJ CDN enabled: TRUE
+Linking to sp version:1.4-5
+To mute warnings of possible GDAL/OSR exportToProj4() degradation,
+use options(&quot;rgdal_show_exportToProj4_warnings&quot;=&quot;none&quot;) before loading rgdal.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="defining-the-parameters-of-the-experiment">
+<h3>Defining the parameters of the experiment<a class="headerlink" href="#defining-the-parameters-of-the-experiment" title="Permalink to this heading">#</a></h3>
+<p>We start by setting the general parameters that define the experiment to perform: spatial extent (Iberian Peninsula), season (June-July-August), baseline/historical period (1986-2005) and future period/emission scenario (2041-2060, RCP8.5) of interest. We set likewise the codes which identify the desired datasets in the <a class="reference external" href="http://meteo.unican.es/udg-tap/">Santander Meteorology Group UDG-TAP</a> , here W5E5 and EC-EARTH (historical and RCP8.5). Check other available, harmonized datasets with <code class="docutils literal notranslate"><span class="pre">?UDG.datasets</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">lons</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">-9.25</span><span class="p">,</span><span class="w"> </span><span class="m">3.5</span><span class="p">)</span><span class="w">  </span><span class="c1"># Iberian Peninsula</span>
+<span class="n">lats</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">36</span><span class="p">,</span><span class="w"> </span><span class="m">44</span><span class="p">)</span><span class="w">   </span><span class="c1"># Iberian Peninsula</span>
+
+<span class="n">season</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">6</span><span class="o">:</span><span class="m">8</span><span class="w">  </span><span class="c1"># June-July-August</span>
+<span class="n">years.hist</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1986</span><span class="o">:</span><span class="m">2005</span>
+<span class="n">years.rcp</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">2041</span><span class="o">:</span><span class="m">2060</span>
+
+<span class="n">dataset.obs</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;W5E5&quot;</span><span class="w"> </span>
+<span class="n">dataset.hist</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;CMIP5_EC-EARTH_r12i1p1_historical&quot;</span>
+<span class="n">dataset.rcp</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;CMIP5_EC-EARTH_r12i1p1_rcp85&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="loading-datasets">
+<h3>Loading datasets<a class="headerlink" href="#loading-datasets" title="Permalink to this heading">#</a></h3>
+<p>Next, we will see two alternative ways to load in memory the datasets that are needed to run this experiment. On the one hand, both W5E5 and EC-EARTH can be accessed from the <a class="reference external" href="http://meteo.unican.es/udg-tap/">Santander Meteorology Group UDG-TAP</a>, a THREDDS-based service that provides access to a wide catalogue of popular climate datasets. On the other hand, for the sake of time, these data have been also stored locally as <code class="docutils literal notranslate"><span class="pre">NetCDF</span></code> files and can be directly loaded from the <code class="docutils literal notranslate"><span class="pre">auxiliary-material</span></code> folder. In both cases, the datasets can be easily accessed via the <code class="docutils literal notranslate"><span class="pre">loadGridData</span></code> function.</p>
+<section id="online-from-the-user-data-gateway-thredds-access-portal-udg-tap">
+<h4>Online from the User Data Gateway - Thredds Access Portal (UDG-TAP)<a class="headerlink" href="#online-from-the-user-data-gateway-thredds-access-portal-udg-tap" title="Permalink to this heading">#</a></h4>
+<blockquote>
+<div><p>This section takes long to execute due to intensive remote data loading. See the next section (<span class="xref myst">From local files</span>) to load these data from a local copy available in the repository and continue with the notebook operations.</p>
+</div></blockquote>
+<p>Previously defined parameters are used to load daily observed (W5E5) and simulated (EC-EARTH) temperatures from the UDG-TAP. For EC-EARTH, both historical and future (i.e. RCP8.5) simulations are needed. It is important to note that not only mean, but also minimum and maximum temperatures are required by the ISIMIP3 method to adjust maximum and minimum temperature, which are obtained from the correction of the amplitude and skewness of the diurnal temperature cycle.</p>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="n">load.data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">function </span><span class="p">(</span><span class="n">dset</span><span class="p">,</span><span class="w"> </span><span class="n">years</span><span class="p">,</span><span class="w"> </span><span class="n">var</span><span class="p">)</span><span class="w"> </span><span class="nf">loadGridData</span><span class="p">(</span><span class="n">dataset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dset</span><span class="p">,</span><span class="w"> </span><span class="n">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">var</span><span class="p">,</span>
+<span class="w">                                                 </span><span class="n">years</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">years</span><span class="p">,</span>
+<span class="w">                                                 </span><span class="n">latLim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lats</span><span class="p">,</span><span class="w"> </span><span class="n">lonLim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lons</span><span class="p">,</span>
+<span class="w">                                                 </span><span class="n">season</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">season</span><span class="p">)</span><span class="w"> </span>
+<span class="c1"># Loading mean temperature</span>
+<span class="n">y.tas</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">load.data</span><span class="p">(</span><span class="n">dataset.obs</span><span class="p">,</span><span class="w"> </span><span class="n">years.hist</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;tas&quot;</span><span class="p">)</span>
+<span class="n">x.tas</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">load.data</span><span class="p">(</span><span class="n">dataset.hist</span><span class="p">,</span><span class="w"> </span><span class="n">years.hist</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;tas&quot;</span><span class="p">)</span>
+<span class="n">newdata.tas</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">load.data</span><span class="p">(</span><span class="n">dataset.rcp</span><span class="p">,</span><span class="w"> </span><span class="n">years.rcp</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;tas&quot;</span><span class="p">)</span>
+
+<span class="c1"># Loading minimum temperature</span>
+<span class="n">y.tasmin</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">load.data</span><span class="p">(</span><span class="n">dataset.obs</span><span class="p">,</span><span class="w"> </span><span class="n">years.hist</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;tasmin&quot;</span><span class="p">)</span>
+<span class="n">x.tasmin</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">load.data</span><span class="p">(</span><span class="n">dataset.hist</span><span class="p">,</span><span class="w"> </span><span class="n">years.hist</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;tasmin&quot;</span><span class="p">)</span>
+<span class="n">newdata.tasmin</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">load.data</span><span class="p">(</span><span class="n">dataset.rcp</span><span class="p">,</span><span class="w"> </span><span class="n">years.rcp</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;tasmin&quot;</span><span class="p">)</span>
+
+<span class="c1"># Loading maximum temperature</span>
+<span class="n">y.tasmax</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">load.data</span><span class="p">(</span><span class="n">dataset.obs</span><span class="p">,</span><span class="w"> </span><span class="n">years.hist</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;tasmax&quot;</span><span class="p">)</span>
+<span class="n">x.tasmax</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">load.data</span><span class="p">(</span><span class="n">dataset.hist</span><span class="p">,</span><span class="w"> </span><span class="n">years.hist</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;tasmax&quot;</span><span class="p">)</span>
+<span class="n">newdata.tasmax</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">load.data</span><span class="p">(</span><span class="n">dataset.rcp</span><span class="p">,</span><span class="w"> </span><span class="n">years.rcp</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;tasmax&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Due to the spatial mismatch between model and observations, we upscale W5E5 from its original resolution (0.5º) to a 1º regular grid similar to that of EC-EARTH (1.125º). See <a class="reference external" href="https://doi.org/10.1002/asl.978">Casanueva et al. 2020</a> for a discussion on this procedure.</p>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="n">upscale</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">function</span><span class="p">(</span><span class="n">grid</span><span class="p">)</span><span class="w"> </span><span class="nf">redim</span><span class="p">(</span><span class="nf">upscaleGrid</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span><span class="w"> </span><span class="n">times</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">aggr.fun</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">FUN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;mean&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">na.rm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)),</span><span class="w"> </span>
+<span class="w">                                </span><span class="n">drop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span>
+<span class="n">y.tas</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">upscale</span><span class="p">(</span><span class="n">y.tas</span><span class="p">)</span>
+<span class="n">y.tasmax</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">upscale</span><span class="p">(</span><span class="n">y.tasmax</span><span class="p">)</span>
+<span class="n">y.tasmin</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">upscale</span><span class="p">(</span><span class="n">y.tasmin</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="from-local-files">
+<h4>From local files<a class="headerlink" href="#from-local-files" title="Permalink to this heading">#</a></h4>
+<p>Alternatively, these data (both W5E5 and EC-EARTH, for the Iberian Peninsula and the selected time slices) can be directly loaded from the <code class="docutils literal notranslate"><span class="pre">auxiliary-material</span></code> folder by using the <code class="docutils literal notranslate"><span class="pre">loadGridData</span></code> function (skip this section if you have sucessfully loaded your data from the UDG-TAP).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">file.obs</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;auxiliary-material/W5E5_IP_tas-tasmin-tasmax_1986-2005_JJA.nc&quot;</span>
+<span class="n">file.hist</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;auxiliary-material/CMIP5_EC-EARTH_r12i1p1_historical_IP_tas-tasmin-tasmax_1986-2005_JJA.nc&quot;</span>
+<span class="n">file.rcp</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;auxiliary-material/CMIP5_EC-EARTH_r12i1p1_rcp85_IP_tas-tasmin-tasmax_2041-2060_JJA.nc&quot;</span>
+
+<span class="c1"># Loading mean temperature</span>
+<span class="n">y.tas</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">loadGridData</span><span class="p">(</span><span class="n">file.obs</span><span class="p">,</span><span class="w"> </span><span class="n">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;tas&quot;</span><span class="p">)</span>
+<span class="n">x.tas</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">loadGridData</span><span class="p">(</span><span class="n">file.hist</span><span class="p">,</span><span class="w"> </span><span class="n">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;tas&quot;</span><span class="p">)</span>
+<span class="n">newdata.tas</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">loadGridData</span><span class="p">(</span><span class="n">file.rcp</span><span class="p">,</span><span class="w"> </span><span class="n">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;tas&quot;</span><span class="p">)</span>
+
+<span class="c1"># Loading minimum temperature</span>
+<span class="n">y.tasmin</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">loadGridData</span><span class="p">(</span><span class="n">file.obs</span><span class="p">,</span><span class="w"> </span><span class="n">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;tasmin&quot;</span><span class="p">)</span>
+<span class="n">x.tasmin</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">loadGridData</span><span class="p">(</span><span class="n">file.hist</span><span class="p">,</span><span class="w"> </span><span class="n">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;tasmin&quot;</span><span class="p">)</span>
+<span class="n">newdata.tasmin</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">loadGridData</span><span class="p">(</span><span class="n">file.rcp</span><span class="p">,</span><span class="w"> </span><span class="n">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;tasmin&quot;</span><span class="p">)</span>
+
+<span class="c1"># Loading maximum temperature</span>
+<span class="n">y.tasmax</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">loadGridData</span><span class="p">(</span><span class="n">file.obs</span><span class="p">,</span><span class="w"> </span><span class="n">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;tasmax&quot;</span><span class="p">)</span>
+<span class="n">x.tasmax</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">loadGridData</span><span class="p">(</span><span class="n">file.hist</span><span class="p">,</span><span class="w"> </span><span class="n">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;tasmax&quot;</span><span class="p">)</span>
+<span class="n">newdata.tasmax</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">loadGridData</span><span class="p">(</span><span class="n">file.rcp</span><span class="p">,</span><span class="w"> </span><span class="n">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;tasmax&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:37] Defining geo-location parameters
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:37] Defining time selection parameters
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:37] Retrieving data subset ...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:37] Done
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:37] Defining geo-location parameters
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:37] Defining time selection parameters
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:37] Retrieving data subset ...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:38] Done
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:38] Defining geo-location parameters
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:38] Defining time selection parameters
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:38] Retrieving data subset ...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:38] Done
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:38] Defining geo-location parameters
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:38] Defining time selection parameters
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:38] Retrieving data subset ...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:39] Done
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:39] Defining geo-location parameters
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:39] Defining time selection parameters
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:39] Retrieving data subset ...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:39] Done
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:39] Defining geo-location parameters
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:39] Defining time selection parameters
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:39] Retrieving data subset ...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:39] Done
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:39] Defining geo-location parameters
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:39] Defining time selection parameters
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:39] Retrieving data subset ...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:40] Done
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:40] Defining geo-location parameters
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:40] Defining time selection parameters
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:40] Retrieving data subset ...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:40] Done
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:40] Defining geo-location parameters
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:40] Defining time selection parameters
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:40] Retrieving data subset ...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:41] Done
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="model-biases">
+<h3>Model biases<a class="headerlink" href="#model-biases" title="Permalink to this heading">#</a></h3>
+<p>We continue by exploring EC-EARTH systematic biases compared to W5E5. For this purpose we interpolate the historical EC-EARTH simulations (recall, at 1.125º) to the W5E5’s grid (at 1º) with <code class="docutils literal notranslate"><span class="pre">interpGrid</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">hist.tas</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">interpGrid</span><span class="p">(</span><span class="n">x.tas</span><span class="p">,</span><span class="w"> </span><span class="n">new.coordinates</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">getGrid</span><span class="p">(</span><span class="n">y.tas</span><span class="p">),</span><span class="w"> </span><span class="n">method</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;nearest&quot;</span><span class="p">)</span>
+<span class="n">hist.tasmin</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">interpGrid</span><span class="p">(</span><span class="n">x.tasmin</span><span class="p">,</span><span class="w"> </span><span class="n">new.coordinates</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">getGrid</span><span class="p">(</span><span class="n">y.tasmin</span><span class="p">),</span><span class="w"> </span><span class="n">method</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;nearest&quot;</span><span class="p">)</span>
+<span class="n">hist.tasmax</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">interpGrid</span><span class="p">(</span><span class="n">x.tasmax</span><span class="p">,</span><span class="w"> </span><span class="n">new.coordinates</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">getGrid</span><span class="p">(</span><span class="n">y.tasmax</span><span class="p">),</span><span class="w"> </span><span class="n">method</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;nearest&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:41] Calculating nearest neighbors...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:41] Performing nearest interpolation... may take a while
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:41] Done
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:41] Calculating nearest neighbors...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:41] Performing nearest interpolation... may take a while
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:41] Done
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:41] Calculating nearest neighbors...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:41] Performing nearest interpolation... may take a while
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:41] Done
+</pre></div>
+</div>
+</div>
+</div>
+<p>Please note that nearest neighbour interpolation is internally performed within the <code class="docutils literal notranslate"><span class="pre">biasCorrection</span></code> function (which will be used later) when observations and model grids do not match. Nevertheless, we explicitly do it here for biases calculation. Mean bias of daily mean, maximum and minimum temperature during the historical period are computed with <code class="docutils literal notranslate"><span class="pre">gridArithmetics</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">bias.tas</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">gridArithmetics</span><span class="p">(</span><span class="nf">climatology</span><span class="p">(</span><span class="n">hist.tas</span><span class="p">),</span><span class="w"> </span><span class="nf">climatology</span><span class="p">(</span><span class="n">y.tas</span><span class="p">),</span><span class="w"> </span><span class="n">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;-&quot;</span><span class="p">)</span>
+<span class="n">bias.tasmax</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">gridArithmetics</span><span class="p">(</span><span class="nf">climatology</span><span class="p">(</span><span class="n">hist.tasmax</span><span class="p">),</span><span class="w"> </span><span class="nf">climatology</span><span class="p">(</span><span class="n">y.tasmax</span><span class="p">),</span><span class="w"> </span><span class="n">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;-&quot;</span><span class="p">)</span>
+<span class="n">bias.tasmin</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">gridArithmetics</span><span class="p">(</span><span class="nf">climatology</span><span class="p">(</span><span class="n">hist.tasmin</span><span class="p">),</span><span class="w"> </span><span class="nf">climatology</span><span class="p">(</span><span class="n">y.tasmin</span><span class="p">),</span><span class="w"> </span><span class="n">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;-&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:41] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:41] - Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:41] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:41] - Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:41] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:41] - Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:41] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:41] - Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:41] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:41] - Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:41] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:41] - Done.
+</pre></div>
+</div>
+</div>
+</div>
+<p>The results are plotted with the <code class="docutils literal notranslate"><span class="pre">spatialPlot</span></code> function from the <code class="docutils literal notranslate"><span class="pre">visualizeR</span></code> package.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">spatialPlot</span><span class="p">(</span><span class="nf">suppressMessages</span><span class="p">(</span><span class="nf">makeMultiGrid</span><span class="p">(</span><span class="n">bias.tas</span><span class="p">,</span><span class="w"> </span><span class="n">bias.tasmax</span><span class="p">,</span><span class="w"> </span><span class="n">bias.tasmin</span><span class="p">,</span><span class="w"> </span><span class="n">skip.temporal.check</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)),</span><span class="w"> </span>
+<span class="w">            </span><span class="n">backdrop.theme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;coastline&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">            </span><span class="n">names.attr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;Mean temperature&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Maximum Temperature&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Minimum Temperature&quot;</span><span class="p">),</span>
+<span class="w">            </span><span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;EC-EARTH biases (degC)&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">),</span><span class="w"> </span><span class="n">as.table</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span>
+<span class="w">            </span><span class="n">set.min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">-6</span><span class="p">,</span><span class="w"> </span><span class="n">set.max</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">6</span><span class="p">,</span><span class="w"> </span><span class="n">at</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">seq</span><span class="p">(</span><span class="m">-6</span><span class="p">,</span><span class="w"> </span><span class="m">6</span><span class="p">,</span><span class="w"> </span><span class="m">12</span><span class="o">/</span><span class="m">20</span><span class="p">),</span><span class="w"> </span><span class="n">rev.colors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/23b9203b0d134e428be2eaa2cf99f3c8a26b58015d0e99c5319e214693498b27.png" src="../_images/23b9203b0d134e428be2eaa2cf99f3c8a26b58015d0e99c5319e214693498b27.png" />
+</div>
+</div>
+<p>Similarly, we can also visualize the EC-EARTH bias for TX35 (number of days per year with maximum temperature above 35º) during the historical period. This index can be easily computed with the <code class="docutils literal notranslate"><span class="pre">indexGrid</span></code> function:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># Observed TX35, year by year</span>
+<span class="n">index.obs</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">redim</span><span class="p">(</span><span class="nf">indexGrid</span><span class="p">(</span><span class="n">tx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y.tasmax</span><span class="p">,</span><span class="w"> </span><span class="n">index.code</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;TXth&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">th</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">35</span><span class="p">,</span><span class="w"> </span><span class="n">time.resolution</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;year&quot;</span><span class="p">),</span><span class="w"> </span>
+<span class="w">                   </span><span class="n">drop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span>
+<span class="c1"># Simulated TX35, year by year</span>
+<span class="n">index.raw</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">redim</span><span class="p">(</span><span class="nf">indexGrid</span><span class="p">(</span><span class="n">tx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hist.tasmax</span><span class="p">,</span><span class="w"> </span><span class="n">index.code</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;TXth&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">th</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">35</span><span class="p">,</span><span class="w"> </span><span class="n">time.resolution</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;year&quot;</span><span class="p">),</span><span class="w"> </span>
+<span class="w">                   </span><span class="n">drop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span>
+
+<span class="n">tx35.obs</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">climatology</span><span class="p">(</span><span class="n">index.obs</span><span class="p">)</span><span class="w">  </span><span class="c1"># Mean value</span>
+<span class="n">tx35.raw</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">climatology</span><span class="p">(</span><span class="n">index.raw</span><span class="p">)</span><span class="w">  </span><span class="c1"># Mean value</span>
+<span class="n">bias.tx35</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">gridArithmetics</span><span class="p">(</span><span class="n">tx35.raw</span><span class="p">,</span><span class="w"> </span><span class="n">tx35.obs</span><span class="p">,</span><span class="w"> </span><span class="n">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;-&quot;</span><span class="p">)</span><span class="w">  </span><span class="c1"># Bias</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:42] Calculating TXth ...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:42] Done
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:42] Calculating TXth ...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:42] Done
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:42] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:42] - Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:42] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:42] - Done.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">spatialPlot</span><span class="p">(</span><span class="n">bias.tx35</span><span class="p">,</span><span class="w"> </span><span class="n">backdrop.theme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;coastline&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;EC-EARTH bias in TX35 (days/year)&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">            </span><span class="n">set.min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">-30</span><span class="p">,</span><span class="w"> </span><span class="n">set.max</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">30</span><span class="p">,</span><span class="w"> </span>
+<span class="w">            </span><span class="n">at</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">seq</span><span class="p">(</span><span class="m">-30</span><span class="p">,</span><span class="w"> </span><span class="m">30</span><span class="p">,</span><span class="w"> </span><span class="m">60</span><span class="o">/</span><span class="m">20</span><span class="p">),</span>
+<span class="w">            </span><span class="n">rev.colors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/bf2928dd08726854ed050394c49822db7ec69cf78977803469f9a0330335f6d7.png" src="../_images/bf2928dd08726854ed050394c49822db7ec69cf78977803469f9a0330335f6d7.png" />
+</div>
+</div>
+</section>
+<section id="bias-adjustment">
+<h3>Bias adjustment<a class="headerlink" href="#bias-adjustment" title="Permalink to this heading">#</a></h3>
+<p>Three individual adjustments need to be done to get bias-adjusted daily minimum and maximum temperatures with the ISIMIP3 method:</p>
+<ol class="arabic simple">
+<li><p>Bias adjustment of mean temperature</p></li>
+<li><p>Bias adjustment of temperature range</p></li>
+<li><p>Bias adjustment of temperature skewness</p></li>
+</ol>
+<p>In this example, the three steps are next undertaken to correct both historical and future model simulations.</p>
+<p>We start by calculating the temperature range and skewness for the observations and (historical and future) simulations using the <code class="docutils literal notranslate"><span class="pre">gridArithmetics</span></code> function:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># Range</span>
+<span class="n">y.range</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">gridArithmetics</span><span class="p">(</span><span class="n">y.tasmax</span><span class="p">,</span><span class="w"> </span><span class="n">y.tasmin</span><span class="p">,</span><span class="w"> </span><span class="n">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;-&quot;</span><span class="p">)</span>
+<span class="n">x.range</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">gridArithmetics</span><span class="p">(</span><span class="n">x.tasmax</span><span class="p">,</span><span class="w"> </span><span class="n">x.tasmin</span><span class="p">,</span><span class="w"> </span><span class="n">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;-&quot;</span><span class="p">)</span>
+<span class="n">newdata.range</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">gridArithmetics</span><span class="p">(</span><span class="n">newdata.tasmax</span><span class="p">,</span><span class="w"> </span><span class="n">newdata.tasmin</span><span class="p">,</span><span class="w"> </span><span class="n">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;-&quot;</span><span class="p">)</span>
+
+<span class="c1"># Skewness</span>
+<span class="n">y.skew</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">gridArithmetics</span><span class="p">(</span><span class="nf">gridArithmetics</span><span class="p">(</span><span class="n">y.tas</span><span class="p">,</span><span class="w"> </span><span class="n">y.tasmin</span><span class="p">,</span><span class="w"> </span><span class="n">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;-&quot;</span><span class="p">),</span><span class="w"> </span><span class="n">y.range</span><span class="p">,</span><span class="w"> </span><span class="n">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;/&quot;</span><span class="p">)</span>
+<span class="n">x.skew</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">gridArithmetics</span><span class="p">(</span><span class="nf">gridArithmetics</span><span class="p">(</span><span class="n">x.tas</span><span class="p">,</span><span class="n">x.tasmin</span><span class="p">,</span><span class="w"> </span><span class="n">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;-&quot;</span><span class="p">),</span><span class="w"> </span><span class="n">x.range</span><span class="p">,</span><span class="w"> </span><span class="n">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;/&quot;</span><span class="p">)</span>
+<span class="n">newdata.skew</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">gridArithmetics</span><span class="p">(</span><span class="nf">gridArithmetics</span><span class="p">(</span><span class="n">newdata.tas</span><span class="p">,</span><span class="w"> </span><span class="n">newdata.tasmin</span><span class="p">,</span><span class="w"> </span><span class="n">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;-&quot;</span><span class="p">),</span><span class="w"> </span>
+<span class="w">                                </span><span class="n">newdata.range</span><span class="p">,</span><span class="w"> </span><span class="n">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;/&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Next, the <code class="docutils literal notranslate"><span class="pre">biasCorrection</span></code> function is used to perform the three steps mentioned above, by indicating the ISIMIP3 method and related arguments as inputs. Other (methodologically simpler) methods are also available in <code class="docutils literal notranslate"><span class="pre">biasCorrection</span></code>; the reader is referred to the function documentation for more details.</p>
+<p>1.Bias adjustment of daily mean temperature:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># List of arguments that have to be passed to the &quot;biasCorrection&quot; function when using the ISIMIP3 method</span>
+<span class="n">isimip3.args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">lower_bound</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NULL</span><span class="p">,</span><span class="n">lower_threshold</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NULL</span><span class="p">,</span><span class="w"> </span><span class="n">upper_bound</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NULL</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                    </span><span class="n">upper_threshold</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NULL</span><span class="p">,</span><span class="w">  </span><span class="n">randomization_seed</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="kc">NULL</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                    </span><span class="n">detrend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">array</span><span class="p">(</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">dim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">),</span><span class="w"> </span><span class="n">rotation_matrices</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NULL</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                    </span><span class="n">n_quantiles</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">50</span><span class="p">,</span><span class="w"> </span><span class="n">distribution</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;normal&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                    </span><span class="n">trend_preservation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">array</span><span class="p">(</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;additive&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">dim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">),</span><span class="w"> </span>
+<span class="w">                    </span><span class="n">adjust_p_values</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">array</span><span class="p">(</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">dim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">),</span><span class="w"> </span><span class="n">if_all_invalid_use</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NULL</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                    </span><span class="n">invalid_value_warnings</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span>
+
+<span class="c1"># Adjusting historical simulations</span>
+<span class="n">bc.tas.hist</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">biasCorrection</span><span class="p">(</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y.tas</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x.tas</span><span class="p">,</span><span class="w"> </span><span class="n">newdata</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x.tas</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;precipitation&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                         </span><span class="n">method</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;isimip3&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">isimip3.args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">isimip3.args</span><span class="p">)</span>
+<span class="c1"># Adjusting future simulations</span>
+<span class="n">bc.tas</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">biasCorrection</span><span class="p">(</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y.tas</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x.tas</span><span class="p">,</span><span class="w"> </span><span class="n">newdata</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newdata.tas</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;precipitation&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                         </span><span class="n">method</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;isimip3&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">isimip3.args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">isimip3.args</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:43] Trying to determine the time zone...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:43] Time zone identified and set to GMT
+See &#39;setGridDates.asPOSIXlt&#39; to change the time zone
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:43] Trying to determine the time zone...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:43] Time zone identified and set to GMT
+See &#39;setGridDates.asPOSIXlt&#39; to change the time zone
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:43] Trying to determine the time zone...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:43] Time zone identified and set to GMT
+See &#39;setGridDates.asPOSIXlt&#39; to change the time zone
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:44] Argument precipitation is set as FALSE, please ensure that this matches your data.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:44] Number of windows considered: 1...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:25:44] Bias-correcting 1 members separately...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:07] Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:07] Trying to determine the time zone...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:07] Time zone identified and set to GMT
+See &#39;setGridDates.asPOSIXlt&#39; to change the time zone
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:07] Trying to determine the time zone...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:07] Time zone identified and set to GMT
+See &#39;setGridDates.asPOSIXlt&#39; to change the time zone
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:07] Trying to determine the time zone...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:07] Time zone identified and set to GMT
+See &#39;setGridDates.asPOSIXlt&#39; to change the time zone
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:07] Argument precipitation is set as FALSE, please ensure that this matches your data.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:08] Number of windows considered: 1...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:08] Bias-correcting 1 members separately...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:26] Done.
+</pre></div>
+</div>
+</div>
+</div>
+<p>2.Bias ajustment of the daily temperature range:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># List of arguments that have to be passed to the &quot;biasCorrection&quot; function when using the ISIMIP3 method</span>
+<span class="n">isimip3.range.args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">lower_bound</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">lower_threshold</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.01</span><span class="p">,</span><span class="w"> </span><span class="n">upper_bound</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NULL</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                            </span><span class="n">upper_threshold</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NULL</span><span class="p">,</span><span class="w"> </span><span class="n">randomization_seed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NULL</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                            </span><span class="n">detrend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">array</span><span class="p">(</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">dim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">),</span><span class="w"> </span><span class="n">rotation_matrices</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="kc">NULL</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                            </span><span class="n">n_quantiles</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">50</span><span class="p">,</span><span class="w"> </span><span class="n">distribution</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;rice&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                            </span><span class="n">trend_preservation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">array</span><span class="p">(</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;mixed&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">dim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">),</span>
+<span class="w">                            </span><span class="n">adjust_p_values</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">array</span><span class="p">(</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">dim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">),</span><span class="w"> </span><span class="n">if_all_invalid_use</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NULL</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                            </span><span class="n">invalid_value_warnings</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span>
+
+<span class="c1"># Adjusting historical simulations</span>
+<span class="n">bc.range.hist</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">biasCorrection</span><span class="p">(</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y.range</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x.range</span><span class="p">,</span><span class="w"> </span><span class="n">newdata</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x.range</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;precipitation&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                                </span><span class="n">method</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;isimip3&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">isimip3.args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">isimip3.range.args</span><span class="p">)</span>
+<span class="c1"># Adjusting future simulations                           </span>
+<span class="n">bc.range</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">biasCorrection</span><span class="p">(</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y.range</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x.range</span><span class="p">,</span><span class="w"> </span><span class="n">newdata</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newdata.range</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;precipitation&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                           </span><span class="n">method</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;isimip3&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">isimip3.args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">isimip3.range.args</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:26] Trying to determine the time zone...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:26] Time zone identified and set to GMT
+See &#39;setGridDates.asPOSIXlt&#39; to change the time zone
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:26] Trying to determine the time zone...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:26] Time zone identified and set to GMT
+See &#39;setGridDates.asPOSIXlt&#39; to change the time zone
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:26] Trying to determine the time zone...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:26] Time zone identified and set to GMT
+See &#39;setGridDates.asPOSIXlt&#39; to change the time zone
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:26] Argument precipitation is set as FALSE, please ensure that this matches your data.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:27] Number of windows considered: 1...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:27] Bias-correcting 1 members separately...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:42] Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:42] Trying to determine the time zone...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:42] Time zone identified and set to GMT
+See &#39;setGridDates.asPOSIXlt&#39; to change the time zone
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:42] Trying to determine the time zone...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:42] Time zone identified and set to GMT
+See &#39;setGridDates.asPOSIXlt&#39; to change the time zone
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:42] Trying to determine the time zone...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:42] Time zone identified and set to GMT
+See &#39;setGridDates.asPOSIXlt&#39; to change the time zone
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:42] Argument precipitation is set as FALSE, please ensure that this matches your data.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:43] Number of windows considered: 1...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:43] Bias-correcting 1 members separately...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:53] Done.
+</pre></div>
+</div>
+</div>
+</div>
+<p>3.Bias adjustment of the daily temperature skewness:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># List of arguments that have to be passed to the &quot;biasCorrection&quot; function when using the ISIMIP3 method</span>
+<span class="n">isimip3.skew.args</span><span class="w">  </span><span class="o">=</span><span class="w">  </span><span class="nf">list</span><span class="p">(</span><span class="n">lower_bound</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="nf">c</span><span class="p">(</span><span class="m">0</span><span class="p">),</span><span class="w"> </span><span class="n">lower_threshold</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="nf">c</span><span class="p">(</span><span class="m">0.0001</span><span class="p">),</span><span class="w"> </span><span class="n">upper_bound</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">),</span><span class="w"> </span>
+<span class="w">                           </span><span class="n">upper_threshold</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="nf">c</span><span class="p">(</span><span class="m">0.9999</span><span class="p">),</span><span class="w"> </span><span class="n">randomization_seed</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="kc">NULL</span><span class="p">,</span>
+<span class="w">                           </span><span class="n">detrend</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="nf">array</span><span class="p">(</span><span class="n">data</span><span class="w">  </span><span class="o">=</span><span class="w">  </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">dim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">),</span><span class="w"> </span><span class="n">rotation_matrices</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="nf">c</span><span class="p">(</span><span class="kc">NULL</span><span class="p">),</span><span class="w"> </span>
+<span class="w">                           </span><span class="n">n_quantiles</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">50</span><span class="p">,</span><span class="w"> </span><span class="n">distribution</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;beta&quot;</span><span class="p">),</span><span class="w"> </span>
+<span class="w">                           </span><span class="n">trend_preservation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">array</span><span class="p">(</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;bounded&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">dim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">),</span><span class="w"> </span>
+<span class="w">                           </span><span class="n">adjust_p_values</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">array</span><span class="p">(</span><span class="n">data</span><span class="w">  </span><span class="o">=</span><span class="w">  </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">dim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">),</span><span class="w"> </span><span class="n">if_all_invalid_use</span><span class="w">  </span><span class="o">=</span><span class="w">  </span><span class="nf">c</span><span class="p">(</span><span class="kc">NULL</span><span class="p">),</span>
+<span class="w">                           </span><span class="n">invalid_value_warnings</span><span class="w">  </span><span class="o">=</span><span class="w">  </span><span class="kc">FALSE</span><span class="p">)</span>
+
+<span class="c1"># Adjusting historical simulations</span>
+<span class="n">bc.skew.hist</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">biasCorrection</span><span class="p">(</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y.skew</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x.skew</span><span class="p">,</span><span class="w"> </span><span class="n">newdata</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x.skew</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;precipitation&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                          </span><span class="n">method</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;isimip3&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">isimip3.args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">isimip3.skew.args</span><span class="p">)</span>
+<span class="c1"># Adjusting future simulations</span>
+<span class="n">bc.skew</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">biasCorrection</span><span class="p">(</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y.skew</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x.skew</span><span class="p">,</span><span class="w"> </span><span class="n">newdata</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newdata.skew</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;precipitation&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                          </span><span class="n">method</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;isimip3&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">isimip3.args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">isimip3.skew.args</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:53] Trying to determine the time zone...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:53] Time zone identified and set to GMT
+See &#39;setGridDates.asPOSIXlt&#39; to change the time zone
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:53] Trying to determine the time zone...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:53] Time zone identified and set to GMT
+See &#39;setGridDates.asPOSIXlt&#39; to change the time zone
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:53] Trying to determine the time zone...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:53] Time zone identified and set to GMT
+See &#39;setGridDates.asPOSIXlt&#39; to change the time zone
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:53] Argument precipitation is set as FALSE, please ensure that this matches your data.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:54] Number of windows considered: 1...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:26:54] Bias-correcting 1 members separately...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:27:04] Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:27:04] Trying to determine the time zone...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:27:04] Time zone identified and set to GMT
+See &#39;setGridDates.asPOSIXlt&#39; to change the time zone
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:27:04] Trying to determine the time zone...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:27:04] Time zone identified and set to GMT
+See &#39;setGridDates.asPOSIXlt&#39; to change the time zone
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:27:04] Trying to determine the time zone...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:27:04] Time zone identified and set to GMT
+See &#39;setGridDates.asPOSIXlt&#39; to change the time zone
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:27:05] Argument precipitation is set as FALSE, please ensure that this matches your data.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:27:05] Number of windows considered: 1...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:27:05] Bias-correcting 1 members separately...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:27:15] Done.
+</pre></div>
+</div>
+</div>
+</div>
+<p>Once these three steps are completed, the bias-adjusted daily maximum and minimum temperature can be obtained as follows:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># Bias-adjusted historical temperatures</span>
+<span class="n">bc.tasmin.hist</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">gridArithmetics</span><span class="p">(</span><span class="n">bc.tas.hist</span><span class="p">,</span><span class="w"> </span><span class="nf">gridArithmetics</span><span class="p">(</span><span class="n">bc.range.hist</span><span class="p">,</span><span class="w"> </span><span class="n">bc.skew.hist</span><span class="p">,</span><span class="w"> </span><span class="n">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;*&quot;</span><span class="p">),</span><span class="w"> </span>
+<span class="w">                                  </span><span class="n">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;-&quot;</span><span class="p">)</span>
+<span class="n">bc.tasmax.hist</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">gridArithmetics</span><span class="p">(</span><span class="n">bc.tasmin.hist</span><span class="p">,</span><span class="w"> </span><span class="n">bc.range.hist</span><span class="p">,</span><span class="w"> </span><span class="n">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;+&quot;</span><span class="p">)</span>
+
+<span class="c1"># Bias-adjusted future temperatures</span>
+<span class="n">bc.tasmin</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">gridArithmetics</span><span class="p">(</span><span class="n">bc.tas</span><span class="p">,</span><span class="w"> </span><span class="nf">gridArithmetics</span><span class="p">(</span><span class="n">bc.range</span><span class="p">,</span><span class="w"> </span><span class="n">bc.skew</span><span class="p">,</span><span class="w"> </span><span class="n">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;*&quot;</span><span class="p">),</span><span class="w"> </span>
+<span class="w">                             </span><span class="n">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;-&quot;</span><span class="p">)</span>
+<span class="n">bc.tasmax</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">gridArithmetics</span><span class="p">(</span><span class="n">bc.tasmin</span><span class="p">,</span><span class="w"> </span><span class="n">bc.range</span><span class="p">,</span><span class="w"> </span><span class="n">operator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;+&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="calculation-of-extreme-temperature-indices">
+<h3>Calculation of extreme temperature indices<a class="headerlink" href="#calculation-of-extreme-temperature-indices" title="Permalink to this heading">#</a></h3>
+<p>Finally, we use the <code class="docutils literal notranslate"><span class="pre">indexGrid</span></code> function to compute historical and future TX35 based on the bias-adjusted daily maximum temperature which has been obtained from the application of the ISIMIP3 method.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># Bias-adjusted TX35 for the historical period, year by year</span>
+<span class="n">index.hist</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">redim</span><span class="p">(</span><span class="nf">indexGrid</span><span class="p">(</span><span class="n">tx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bc.tasmax.hist</span><span class="p">,</span><span class="w"> </span><span class="n">index.code</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;TXth&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">th</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">35</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                              </span><span class="n">time.resolution</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;year&quot;</span><span class="p">),</span><span class="w"> </span><span class="n">drop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span>
+<span class="n">tx35.hist</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">climatology</span><span class="p">(</span><span class="n">index.hist</span><span class="p">)</span><span class="w">  </span><span class="c1"># Mean value (number of days/year)</span>
+
+<span class="c1"># Bias-adjusted TX35 for the future period of interest, year by year</span>
+<span class="n">index.rcp</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">redim</span><span class="p">(</span><span class="nf">indexGrid</span><span class="p">(</span><span class="n">tx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bc.tasmax</span><span class="p">,</span><span class="w"> </span><span class="n">index.code</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;TXth&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">th</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">35</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                             </span><span class="n">time.resolution</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;year&quot;</span><span class="p">),</span><span class="w"> </span><span class="n">drop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span>
+<span class="n">tx35.rcp</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">climatology</span><span class="p">(</span><span class="n">index.rcp</span><span class="p">)</span><span class="w"> </span><span class="c1"># Mean value (number of days/year)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:27:16] Calculating TXth ...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:27:16] Done
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:27:16] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:27:16] - Done.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:27:16] Calculating TXth ...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:27:16] Done
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:27:16] - Computing climatology...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2024-04-17 11:27:16] - Done.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">spatialPlot</span><span class="p">(</span><span class="nf">makeMultiGrid</span><span class="p">(</span><span class="n">tx35.hist</span><span class="p">,</span><span class="w"> </span><span class="n">tx35.rcp</span><span class="p">,</span><span class="w"> </span><span class="n">skip.temporal.check</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">),</span><span class="w"> </span><span class="n">backdrop.theme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;coastline&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">            </span><span class="n">color.them</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Reds&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">names.attr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;Historical (1986-2005)&quot;</span><span class="p">,</span><span class="s">&quot;Projected (2041-2060, RCP8.5)&quot;</span><span class="p">),</span>
+<span class="w">            </span><span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Bias-adjusted TX35 (days/year)&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">as.table</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">set.min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">set.max</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">60</span><span class="p">,</span><span class="w"> </span><span class="n">at</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">seq</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">60</span><span class="p">,</span><span class="m">5</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/7c726cab8d2c8eed0e509f52a56b9e4776475b5a7f6d139894d9de69d5a13096.png" src="../_images/7c726cab8d2c8eed0e509f52a56b9e4776475b5a7f6d139894d9de69d5a13096.png" />
+</div>
+</div>
+</section>
+<section id="session-info">
+<h3>Session info<a class="headerlink" href="#session-info" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">sessionInfo</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>R version 3.6.3 (2020-02-29)
+Platform: x86_64-conda-linux-gnu (64-bit)
+Running under: Ubuntu 22.04.4 LTS
+
+Matrix products: default
+BLAS/LAPACK: /DATA/miniconda3/envs/atlas-jupyterbook/lib/libopenblasp-r0.3.25.so
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8          LC_NUMERIC=C                 
+ [3] LC_TIME=es_ES.UTF-8           LC_COLLATE=en_US.UTF-8       
+ [5] LC_MONETARY=es_ES.UTF-8       LC_MESSAGES=en_US.UTF-8      
+ [7] LC_PAPER=es_ES.UTF-8          LC_NAME=es_ES.UTF-8          
+ [9] LC_ADDRESS=es_ES.UTF-8        LC_TELEPHONE=es_ES.UTF-8     
+[11] LC_MEASUREMENT=es_ES.UTF-8    LC_IDENTIFICATION=es_ES.UTF-8
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] rgdal_1.5-16            sp_1.4-5                visualizeR_1.6.1       
+ [4] climate4R.indices_0.2.0 downscaleR_3.3.3        transformeR_2.1.3      
+ [7] loadeR_1.7.1            climate4R.UDG_0.2.3     loadeR.java_1.1.1      
+[10] rJava_1.0-4            
+
+loaded via a namespace (and not attached):
+ [1] CircStats_0.2-6         bitops_1.0-7            RColorBrewer_1.1-2     
+ [4] rprojroot_2.0.2         evd_2.3-3               sticky_0.5.6.1         
+ [7] repr_1.1.3              tools_3.6.3             padr_0.5.3             
+[10] utf8_1.2.1              R6_2.5.0                sm_2.2-5.6             
+[13] colorspace_2.0-1        withr_2.4.2             tidyselect_1.1.1       
+[16] gridExtra_2.3           compiler_3.6.3          glmnet_4.1-1           
+[19] scales_1.1.1            pbapply_1.4-3           dtw_1.22-3             
+[22] proxy_0.4-25            rappdirs_0.3.3          pbdZMQ_0.3-5           
+[25] digest_0.6.27           vioplot_0.3.6           base64enc_0.1-3        
+[28] jpeg_0.1-8.1            pkgconfig_2.0.3         htmltools_0.5.1.1      
+[31] akima_0.6-2.1           maps_3.3.0              rlang_0.4.11           
+[34] shape_1.4.6             mapplots_1.5.1          generics_0.1.0         
+[37] zoo_1.8-9               jsonlite_1.7.2          dplyr_1.0.6            
+[40] RCurl_1.98-1.3          magrittr_2.0.1          verification_1.42      
+[43] dotCall64_1.0-1         Matrix_1.3-3            Rcpp_1.0.6             
+[46] IRkernel_1.2            munsell_0.5.0           fansi_0.4.2            
+[49] abind_1.4-5             reticulate_1.28         viridis_0.6.1          
+[52] lifecycle_1.0.0         MASS_7.3-54             grid_3.6.3             
+[55] parallel_3.6.3          crayon_1.4.1            udunits2_0.13          
+[58] lattice_0.20-44         IRdisplay_1.0           convertR_0.2.0         
+[61] splines_3.6.3           pillar_1.6.1            tcltk_3.6.3            
+[64] uuid_0.1-4              boot_1.3-28             codetools_0.2-18       
+[67] glue_1.4.2              evaluate_0.14           latticeExtra_0.6-29    
+[70] kohonen_3.0.10          data.table_1.14.0       png_0.1-7              
+[73] vctrs_0.3.8             spam_2.6-0              foreach_1.5.1          
+[76] gtable_0.3.0            purrr_0.3.4             ggplot2_3.3.3          
+[79] RcppEigen_0.3.3.9.1     survival_3.2-11         viridisLite_0.4.0      
+[82] tibble_3.1.2            iterators_1.0.13        SpecsVerification_0.5-3
+[85] fields_12.3             deepnet_0.2.1           ellipsis_0.3.2         
+[88] easyVerification_0.4.5  here_1.0.1             
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="references">
+<h3>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Bedia, J., Baño-Medina, J., Legasa, M.N., Iturbide, M., Manzanas, R., Herrera, S., Casanueva, A., San-Martín, D., Cofiño, A.S. and Gutiérrez, J.M. (2020) Statistical downscaling with the downscaleR package (v3.1.0): contribution to the VALUE intercomparison experiment. Geoscientific Model Developmen, 13, 1711–1735.
+<a class="reference external" href="https://doi.org/10.5194/gmd-13-1711-2020">https://doi.org/10.5194/gmd-13-1711-2020</a>.</p></li>
+<li><p>Bivand R.S., Keitt T., Rowlingson B. (2018). rgdal: Bindings for the ‘Geospatial’ Data Abstraction Library. R package version 1.3-6. <a class="reference external" href="https://CRAN.R-project.org/package=rgdal">https://CRAN.R-project.org/package=rgdal</a></p></li>
+<li><p>Casanueva, A, Herrera, S, Iturbide, M, et al. (2020) Testing bias adjustment methods for regional climate change applications under observational uncertainty and resolution mismatch. Atmos Sci Lett. 21: 21:e978. <a class="reference external" href="https://doi.org/10.1002/asl.978">https://doi.org/10.1002/asl.978</a></p></li>
+<li><p>Cucchi, M.,Weedon, G. P., Amici, A., Bellouin, N., Lange, S., Schmied, H. M., Hersbach, H. and Buontempo, C. (2020) WFDE5: bias-adjusted ERA5 reanalysis data for impact studies. Earth System Science Data, 12, 2097–2120,  <a class="reference external" href="https://doi.org/10.5194/essd-12-2097-2020">https://doi.org/10.5194/essd-12-2097-2020</a>.</p></li>
+<li><p>Frías, M.D., Iturbide, M., Manzanas, R., Bedia, J., Fernández, J., Herrera, S., Cofiño, A.S., Gutiérrez, J.M. (2018). An R package to visualize and communicate uncertainty in seasonal climate prediction. Environ. Model. Software 99, 101–110. <a class="reference external" href="https://doi.org/10.1016/j.envsoft.2017.09.008">https://doi.org/10.1016/j.envsoft.2017.09.008</a>.</p></li>
+<li><p>Iturbide, M., Bedia, J., Herrera, S., Baño-Medina, J., Fernández, J., Frías, M. D., Manzanas, R., San-Martín, D., Cimadevilla, E., Cofiño, A. S., and Gutiérrez, J. M. (2019) The R-based climate4R open framework for reproducible climate data access and post-processing, Environ. Modell. Softw., 111, 42–54,
+<a class="reference external" href="https://doi.org/10.1016/j.envsoft.2018.09.009">https://doi.org/10.1016/j.envsoft.2018.09.009</a>.</p></li>
+<li><p>Lange, S. (2019) Trend-preserving bias adjustment and statistical downscaling with ISIMIP3BASD (v1.0). Geoscientific Model Development, 12, 3055–3070. <a class="reference external" href="https://doi.org/10.5194/gmd-12-3055-2019">https://doi.org/10.5194/gmd-12-3055-2019</a>.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "PhantomAurelia/Atlas",
+            ref: "jb-test",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "r"
+        },
+        kernelOptions: {
+            name: "ir",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'ir'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="global-warming-levels_R.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Computing and visualizing transient global warming levels</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="CORDEX-overlaps_Python.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Selecting reference regions used for every CORDEX domain</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bias-adjustment-of-model-temperatures-for-the-calculation-of-extreme-indices">Bias adjustment of model temperatures for the calculation of extreme indices</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-packages">Loading packages</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-the-parameters-of-the-experiment">Defining the parameters of the experiment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-datasets">Loading datasets</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#online-from-the-user-data-gateway-thredds-access-portal-udg-tap">Online from the User Data Gateway - Thredds Access Portal (UDG-TAP)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#from-local-files">From local files</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-biases">Model biases</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bias-adjustment">Bias adjustment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculation-of-extreme-temperature-indices">Calculation of extreme temperature indices</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#session-info">Session info</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By David Domínguez Román
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
