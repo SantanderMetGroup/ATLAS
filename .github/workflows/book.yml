@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-    - jupyterbokk
+    - jupyterbook
 
 # This job installs dependencies, build the book, and pushes it to `gh-pages`
 jobs:
