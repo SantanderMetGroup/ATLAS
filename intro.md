@@ -66,11 +66,3 @@ The [errata](ERRATA) of the Atlas covers both the content (products, such as plo
 ```{bibliography}
 :filter: docname in docnames
 ```
-
-<script src="https://utteranc.es/client.js"
-        repo="SantanderMetGroup/ATLAS"
-        issue-term="pathname"
-        theme="preferred-color-scheme"
-        crossorigin="anonymous"
-        async>
-</script>
