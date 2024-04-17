@@ -14,7 +14,7 @@ End-to-end scripts used for the preparation of key figures of the IPCC WGI AR6 A
 
 
 <script src="https://utteranc.es/client.js"
-        repo="PhantomAurelia/Atlas"
+        repo="SantanderMetGroup/ATLAS"
         issue-term="pathname"
         theme="preferred-color-scheme"
         crossorigin="anonymous"

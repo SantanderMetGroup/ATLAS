@@ -2,7 +2,8 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: IPCC-ATLAS Jupyter Book
-author: David Domínguez Román
+author: David Domínguez Román, Antonio S. Cofiño and SantanderMetGroup
+copyright: 2024 
 logo: logo.png
 # Auto-exclude files not in the toc
 only_build_toc_files        : true
@@ -10,7 +11,7 @@ only_build_toc_files        : true
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: cache
-  cache: jb-cache/
+  cache: _jb-cache/
   timeout: -1
 # Define the name of the latex output file for PDF builds
 latex:
@@ -28,15 +29,16 @@ sphinx:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/PhantomAurelia/Atlas  # Online location of your book
+  url: https://github.com/SantanderMetGroup/ATLAS  # Online location of your book
   path_to_book: .  # Optional path to your book, relative to the repository root
-  branch: jb-test  # Which branch of the repository should be used when creating links (optional)
+  branch: jupyterbook  # Which branch of the repository should be used when creating links (optional)
 
 # Adding the launch buttons
 launch_buttons:
   notebook_interface: "jupyterlab"
   binderhub_url: "https://mybinder.org"
-  thebe                  : true
+  jupyterhub_url: "https://data.meteo.unican.es/ganymede"
+  thebe: true
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
@@ -45,6 +47,6 @@ html:
   use_repository_button: true
   comments:
     utterances:
-      repo: "PhantomAurelia/Atlas"
+      repo: "SantanderMetGroup/ATLAS"
     hypothesis: true
 

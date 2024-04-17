@@ -90,7 +90,7 @@ The script `observationsTrendsSnow.R` provide, for instance, the following figur
 
 
 <script src="https://utteranc.es/client.js"
-        repo="PhantomAurelia/Atlas"
+        repo="SantanderMetGroup/ATLAS"
         issue-term="pathname"
         theme="preferred-color-scheme"
         crossorigin="anonymous"

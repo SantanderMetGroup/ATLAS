@@ -52,7 +52,7 @@ Historical annual gridded population data for the period 1861-2005 is based on t
 :filter: docname in docnames
 ```
 <script src="https://utteranc.es/client.js"
-        repo="PhantomAurelia/Atlas"
+        repo="SantanderMetGroup/ATLAS"
         issue-term="pathname"
         theme="preferred-color-scheme"
         crossorigin="anonymous"

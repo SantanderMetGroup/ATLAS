@@ -68,7 +68,7 @@ The [errata](ERRATA) of the Atlas covers both the content (products, such as plo
 ```
 
 <script src="https://utteranc.es/client.js"
-        repo="PhantomAurelia/Atlas"
+        repo="SantanderMetGroup/ATLAS"
         issue-term="pathname"
         theme="preferred-color-scheme"
         crossorigin="anonymous"

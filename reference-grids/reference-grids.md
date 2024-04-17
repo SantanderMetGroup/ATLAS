@@ -31,7 +31,7 @@ Includes auxiliary masks used to filter out gridboxes with no observational data
 
 
 <script src="https://utteranc.es/client.js"
-        repo="PhantomAurelia/Atlas"
+        repo="SantanderMetGroup/ATLAS"
         issue-term="pathname"
         theme="preferred-color-scheme"
         crossorigin="anonymous"

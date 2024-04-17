@@ -33,7 +33,7 @@ A similar repository for GWL calculation is maintained by {cite:authorpar}`Matha
 ```
 
 <script src="https://utteranc.es/client.js"
-        repo="PhantomAurelia/Atlas"
+        repo="SantanderMetGroup/ATLAS"
         issue-term="pathname"
         theme="preferred-color-scheme"
         crossorigin="anonymous"

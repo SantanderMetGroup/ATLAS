@@ -29,7 +29,7 @@ AUS    | SEA, NAU, CAU, EAU, SAU, NZ
 ```
 
 <script src="https://utteranc.es/client.js"
-        repo="PhantomAurelia/Atlas"
+        repo="SantanderMetGroup/ATLAS"
         issue-term="pathname"
         theme="preferred-color-scheme"
         crossorigin="anonymous"
