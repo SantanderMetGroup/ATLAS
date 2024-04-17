@@ -7,3 +7,4 @@ ATLAS.Rproj
 .ipynb_checkpoints
 ignore
 Atlas.Rproj
+_build

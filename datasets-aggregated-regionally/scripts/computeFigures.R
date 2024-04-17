@@ -259,7 +259,7 @@ computeFigures <- function(regions,
     
     bp <- xyplot(value~term, data = df, ylim = ylim, pch = 19, 
                  ylab = NULL, #list(ylab, cex = 1.2), 
-                 aspect = "45",
+                 aspect = "39",
                  # scales=list(x=list(at=c(2,5,8), alternating=2, tck = c(0,1))
                  scales = list(x = list(at = 1, cex = 1, col = "white"), y = list(cex = 1)),
                  col = col, cex = 0.7, 
@@ -466,7 +466,7 @@ computeFigures <- function(regions,
      
       
       
-      xyplot(y~x, data = dfs, xlim = xlimk, ylim = ylimk, pch = 19, aspect = "45", 
+      xyplot(y~x, data = dfs, xlim = xlimk, ylim = ylimk, pch = 19, aspect = "39", 
              # scales = list(x = list(rot = 90)),
              col = col, cex = 0.7, ylab = NULL, #ylab = list(bquote(Delta*"T(ºC)"), cex = 1.2), 
              xlab = NULL,#xlab = list(bquote(Delta*"P(%)"), cex = 1.2),
