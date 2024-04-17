@@ -1,4 +1,4 @@
-name: deploy-book
+name: build-deploy-book
 
 # Only run this when the master branch changes
 on:
@@ -7,20 +7,27 @@ on:
     branches:
     - jupyterbook
 
-# This job installs dependencies, build the book, and pushes it to `gh-pages`
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+      # This job installs dependencies, build the book, and pushes it to `gh-pages`
 jobs:
-  deploy-book:
+  build:
     runs-on: ubuntu-latest
     defaults:
       run:
         shell: bash -l {0}
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout
+      uses: actions/checkout@v4
 
     # Install dependencies
     # Install Mambaforge
 
-    - uses: conda-incubator/setup-miniconda@v3
+    - name: Setup Jupyterbook
+      uses: conda-incubator/setup-miniconda@v3
       with:
         environment-file: binder/conda/environment.yml
         mamba-version: "*"
@@ -29,14 +36,21 @@ jobs:
     - name: Build the book
       run: |
         jupyter-book build .
-    
-    # Upload the book's HTML as an artifact
+  
+      # Upload the book's HTML as an artifact
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v2
+      uses: actions/upload-pages-artifact@v3
       with:
         path: "_build/html"
-
-    # Deploy the book's HTML to GitHub Pages
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v2
+  
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      # Deploy the book's HTML to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
