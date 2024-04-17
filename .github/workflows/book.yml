@@ -15,16 +15,15 @@ jobs:
       run:
         shell: bash -l {0}
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
     # Install dependencies
     # Install Mambaforge
 
-    - uses: conda-incubator/setup-miniconda@v2
+    - uses: conda-incubator/setup-miniconda@v3
       with:
         environment-file: binder/conda/environment.yml
-        miniforge-version: latest
-        miniforge-variant: Mambaforge
+        mamba-version: "*"
     # Build the book
     - name: Build the book
       run: |
