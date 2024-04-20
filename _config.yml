@@ -3,7 +3,7 @@
 
 title: IPCC-ATLAS Jupyter Book
 author: David Domínguez Román, Antonio S. Cofiño and SantanderMetGroup
-copyright: 2024 
+copyright: "2024" 
 logo: logo.png
 # Auto-exclude files not in the toc
 only_build_toc_files        : true
@@ -50,6 +50,5 @@ html:
       repo: "SantanderMetGroup/ATLAS"
       issue-term: "pathname"
       theme: "preferred-color-scheme"
-
-    #hypothesis: true
+    hypothesis: true
 

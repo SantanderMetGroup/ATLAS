@@ -6,7 +6,7 @@ channels:
 dependencies:
   # explicit dependency on R and Python versions
   - r-base ==3.6.3
-  - python ==3.7.12
+  - python ==3.7
   # climate4R v2.5.4 dependencies
   - r-climate4r.udg ==0.2.3
   - r-loader.java ==1.1.1
@@ -47,6 +47,7 @@ dependencies:
   # required for jupyter books
   - jupyter-book
   - jupytext >=0.16
+  - docutils <0.18|>=0.20 # BUG with bib and HTML layout: https://github.com/mcmtroffaes/sphinxcontrib-bibtex/issues/322
   # R extra dependencies used by notebooks and/or scripts
   - r-devtools
   - r-gridextra
