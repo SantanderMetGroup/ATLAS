@@ -1,18 +1,20 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
-
 title: IPCC-ATLAS Jupyter Book
 author: David Domínguez Román, Antonio S. Cofiño and SantanderMetGroup
-copyright: "2024" 
-logo: logo.png
+copyright: "2024. This work is openly licensed via CC BY 4.0" 
+logo: logo.svg
+
 # Auto-exclude files not in the toc
-only_build_toc_files        : true
+only_build_toc_files: true
+
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: cache
   cache: _jb-cache/
   timeout: -1
+
 # Define the name of the latex output file for PDF builds
 latex:
   latex_documents:
@@ -39,6 +41,7 @@ launch_buttons:
   binderhub_url: "https://mybinder.org"
   jupyterhub_url: "https://data.meteo.unican.es/ganymede"
   thebe: true
+
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
