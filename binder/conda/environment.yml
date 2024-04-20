@@ -6,7 +6,7 @@ channels:
 dependencies:
   # explicit dependency on R and Python versions
   - r-base ==3.6.3
-  - python ==3.7
+  - python ==3.7.12
   # climate4R v2.5.4 dependencies
   - r-climate4r.udg ==0.2.3
   - r-loader.java ==1.1.1
