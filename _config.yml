@@ -29,6 +29,11 @@ sphinx:
   config:
     bibtex_reference_style: author_year
 
+parse:
+  myst_substitutions:
+    repo_url: https://github.com/SantanderMetGroup/ATLAS
+    repo_branch: jupyterbook
+
 # Information about where the book exists on the web
 repository:
   url: https://github.com/SantanderMetGroup/ATLAS  # Online location of your book
