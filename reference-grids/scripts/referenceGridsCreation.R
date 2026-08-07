@@ -57,6 +57,8 @@ glo3i <- "orog_GLO-3i_masked.nc"
 mask <- loadGridData(glo3i, var = "orog")
 
 ## 0.03125º reference grid/mask 
+mask <- gridArithmetics(mask, 0, 1, operator = c("*", "+"))
+mask$Data[which(is.na(mask$Data))] <- 0
 mask$Variable$varName <- "sftlf"
 attr(mask$Variable, "description") <- "land sea mask"
 attr(mask$Variable, "longname") <- "land sea mask"
