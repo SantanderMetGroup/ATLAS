@@ -30,7 +30,7 @@ This repository provides the scripts and notebooks, as well as the required auxi
 
 ## New Reference Regions
 
-<img src="reference-regions/reference_regions.png" align="left" alt="" width="500" />
+<img src="reference-regions/WGI-reference-regions-v4/IPCC-WGI-reference-regions-v4.png" align="left" alt="" width="500" />
 
 A new set of reference regions was produced building on the popular [IPCC AR5 reference regions](http://www.ipcc-data.org/guidelines/pages/ar5_regions.html) developed for reporting sub-continental CMIP5 projections (with typical resolution of 2&deg;) over a reduced number of regions. The increased resolution of CMIP6 and CORDEX projections (typically 1&deg; and 0.5&deg;) allowed to increase the number of regions for a better representation of different climates, resulting in new set of **46 land and 14 ocean reference regions** ([Iturbide et al. 2020](https://doi.org/10.5194/essd-12-2959-2020)). The coordinates delimiting the regions (CSV and shapefiles) and other related datasets are available at the [reference-regions](./reference-regions) repository folder.
 
