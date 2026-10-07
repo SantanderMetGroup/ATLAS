@@ -15,7 +15,7 @@ These sets of regions can be displayed in an integrated viewer by clicking on th
 
 Different sets of climatic reference regions have been proposed for the regional synthesis of historical trends and future climate change projections, and have been subsequently used in the different Assessment Reports of the IPCC WGI (we refer to these sets as **IPCC-WGI reference regions**). The 23 rectangular reference regions originally proposed in [Giorgi and Francisco, 2000](https://doi.org/10.1007/PL00013733) (**version 1**) were used in the third (AR3) and fourth (AR4) IPCC Assessment reports. These regions were later modified using more flexible polygons in the IPCC SREX special report ([Seneviratne et al., 2012](https://www.ipcc.ch/site/assets/uploads/2018/03/SREX-Chap3_FINAL-1.pdf), **version 2**) and then slightly modified and extended to 33 regions (by including island states, the Arctic and Antarctica) for the fifth Assessment Report (AR5, [van Oldenborgh et al., 2013](https://www.ipcc.ch/report/ar5/wg1/atlas-of-global-and-regional-climate-projections), **version 3**). 
 
-<img src="reference_regions_names.png" align="left" alt="" width="500" />
+<img src="IPCC-WGI-reference-regions-v4/IPCC-WGI-reference-regions-v4_names.png" align="left" alt="" width="500" />
 
 This repository includes technical and supplementary information for a recent update of these regions presented in [Iturbide et al. (2020)](https://doi.org/10.5194/essd-12-2959-2020), referred to as **version 4**, which is used in AR6-WGI (**AR6-WGI Reference Regions**). The updated reference regions are provided as polygons in different formats (CSV with coordinates, R data, shapefile and geojson) together with R and Python notebooks illustrating the use of these regions with worked examples.
 
